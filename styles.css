@@ -517,8 +517,20 @@ h3 {
 }
 
 .packages-section {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding: 92px 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+  background: #06101d;
+}
+
+.packages-section > .section-heading,
+.packages-section > .pricing-grid,
+.packages-section > .addon-panel {
+  width: min(var(--max-width), calc(100% - 36px));
+  margin-inline: auto;
 }
 
 .pricing-grid {
@@ -838,6 +850,7 @@ h3 {
 
 .faq-list details {
   padding: 0;
+  background: var(--surface-2);
 }
 
 .faq-list summary {
