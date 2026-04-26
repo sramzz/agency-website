@@ -793,7 +793,7 @@ h3 {
   gap: 28px;
   align-items: start;
   margin-top: 24px;
-  padding: clamp(24px, 4vw, 36px);
+  padding: 34px;
   border: 1px solid rgba(60, 186, 178, 0.54);
   border-radius: 20px;
   background: var(--surface-2);
@@ -911,15 +911,57 @@ h3 {
 
   .section-heading,
   .split-section,
+  .addon-panel,
   .growth-management {
     grid-template-columns: 1fr;
   }
 
   .service-grid,
+  .pillars-grid,
+  .benefit-grid,
   .pricing-grid,
   .proof-grid,
+  .metric-row,
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2,
+  .growth-management h2 {
+    font-size: 3.2rem;
+  }
+
+  .addon-panel h2 {
+    font-size: 2.8rem;
+  }
+
+  .timeline::before {
+    left: 26px;
+  }
+
+  .timeline li,
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    justify-self: stretch;
+    width: 100%;
+    padding-left: 72px;
+  }
+
+  .timeline li::after,
+  .timeline li:nth-child(odd)::after,
+  .timeline li:nth-child(even)::after {
+    left: 17px;
+    right: auto;
+  }
+
+  .timeline span {
+    position: absolute;
+    top: 22px;
+    left: 46px;
   }
 
   .price-card {
@@ -955,11 +997,13 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.85rem, 15vw, 4rem);
+    font-size: 3.25rem;
   }
 
-  h2 {
-    font-size: clamp(2.05rem, 11vw, 3rem);
+  h2,
+  .growth-management h2,
+  .addon-panel h2 {
+    font-size: 2.45rem;
   }
 
   .hero-actions,
@@ -969,8 +1013,11 @@ h3 {
 
   .hero-stats,
   .service-grid,
+  .pillars-grid,
+  .benefit-grid,
   .pricing-grid,
   .proof-grid,
+  .metric-row,
   .process-list {
     grid-template-columns: 1fr;
   }
@@ -989,7 +1036,26 @@ h3 {
   }
 
   .service-card,
+  .pillar-card,
+  .benefit-card,
   .process-list li {
     min-height: auto;
+  }
+
+  .growth-management,
+  .final-cta,
+  .addon-panel {
+    padding: 28px;
+  }
+
+  .timeline li,
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    grid-template-columns: 1fr;
+    padding: 68px 20px 20px;
+  }
+
+  .timeline span {
+    left: 20px;
   }
 }
