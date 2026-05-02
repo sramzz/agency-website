@@ -14,6 +14,11 @@ const normalize = (html) =>
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+const pricingCards = (html) => {
+  const pricingGrid = html.match(/<div class="pricing-grid"[\s\S]*?<\/div>\s*<p class="pricing-note">/);
+  assert.ok(pricingGrid, "pricing grid should exist");
+  return pricingGrid[0].match(/<article[\s\S]*?<\/article>/g) || [];
+};
 
 const englishSteps = [
   "Demo Meeting",
@@ -74,6 +79,26 @@ test("home pages link to onboarding in desktop and mobile navigation", () => {
 
   assert.equal((english.match(/href="\/agencia\/onboarding\.html"/g) || []).length, 2);
   assert.equal((spanish.match(/href="\/agencia\/onboarding-es\.html"/g) || []).length, 2);
+});
+
+test("all packages include the Google Ads campaign service", () => {
+  const englishCards = pricingCards(read("index.html"));
+  const spanishCards = pricingCards(read("es.html"));
+  const englishService =
+    "Google Ads campaign setup: AUD 300 + ad budget, with a minimum AUD 300 campaign budget recommended for stronger results";
+  const spanishService =
+    "Configuracion de campana de Google Ads: AUD 300 + presupuesto publicitario, con minimo recomendado de AUD 300 para mejores resultados";
+
+  assert.equal(englishCards.length, 3);
+  assert.equal(spanishCards.length, 3);
+
+  for (const card of englishCards) {
+    assert.equal(normalize(card).includes(englishService), true);
+  }
+
+  for (const card of spanishCards) {
+    assert.equal(normalize(card).includes(spanishService), true);
+  }
 });
 
 test("onboarding pages link to each other through the language switcher", () => {
