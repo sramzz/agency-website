@@ -1,6 +1,6 @@
 # Screenshot and Test Workflow
 
-Use this note when changing package copy, onboarding copy, or layout. It records the workflow that worked after the Google Ads package update, plus the traps to avoid.
+Use this note when changing package copy, onboarding copy, route structure, or layout.
 
 ## Tests
 
@@ -20,12 +20,11 @@ assert.equal(normalize(card).includes(expectedText), true);
 
 ## Local Server
 
-The HTML files reference assets with absolute `/agencia/...` paths, so serving the repo directly at `/` makes CSS and JS 404. Mount the repo under `/private/tmp/agencia` and serve `/private/tmp`.
+The HTML files reference assets from the root, so serve the repo directly at `/`.
 
 ```sh
-ln -sfn "$PWD" /private/tmp/agencia
-python3 -m http.server 4176 --directory /private/tmp
-curl -I http://127.0.0.1:4176/agencia/styles.css
+python3 -m http.server 4176 --directory "$PWD"
+curl -I http://127.0.0.1:4176/styles.css
 ```
 
 The `curl` check should return `200 OK`. If it returns `404`, screenshots will look unstyled and are not valid review evidence.
@@ -47,17 +46,17 @@ These commands are fine for first-viewport desktop screenshots:
   --run-all-compositor-stages-before-draw \
   --force-device-scale-factor=1 \
   --window-size=1280,1100 \
-  --screenshot=/private/tmp/agency-index-desktop.png \
-  http://127.0.0.1:4176/agencia/
+  --screenshot=/private/tmp/ranking-rebels-index-desktop.png \
+  http://127.0.0.1:4176/
 ```
 
 Repeat with these URLs and output names:
 
 ```text
-http://127.0.0.1:4176/agencia/                 -> /private/tmp/agency-index-desktop.png
-http://127.0.0.1:4176/agencia/es.html          -> /private/tmp/agency-es-desktop.png
-http://127.0.0.1:4176/agencia/onboarding.html  -> /private/tmp/agency-onboarding-desktop.png
-http://127.0.0.1:4176/agencia/onboarding-es.html -> /private/tmp/agency-onboarding-es-desktop.png
+http://127.0.0.1:4176/                         -> /private/tmp/ranking-rebels-index-desktop.png
+http://127.0.0.1:4176/es/                      -> /private/tmp/ranking-rebels-es-desktop.png
+http://127.0.0.1:4176/onboarding/              -> /private/tmp/ranking-rebels-onboarding-desktop.png
+http://127.0.0.1:4176/google-ads-management/   -> /private/tmp/ranking-rebels-google-ads-desktop.png
 ```
 
 ## Accurate Mobile and Section Screenshots
@@ -75,7 +74,7 @@ Start Chrome once:
   --disable-sync \
   --no-first-run \
   --remote-debugging-port=9234 \
-  --user-data-dir=/private/tmp/chrome-agency-cdp \
+  --user-data-dir=/private/tmp/chrome-ranking-rebels-cdp \
   about:blank
 ```
 
@@ -168,40 +167,40 @@ async function capture({ url, path, width = 390, height = 844, selector }) {
   ws.close();
 }
 
-const base = 'http://127.0.0.1:4176/agencia/';
+const base = 'http://127.0.0.1:4176/';
 
-await capture({ url: base, path: '/private/tmp/agency-index-mobile.png' });
-await capture({ url: `${base}es.html`, path: '/private/tmp/agency-es-mobile.png' });
-await capture({ url: `${base}onboarding.html`, path: '/private/tmp/agency-onboarding-mobile.png' });
-await capture({ url: `${base}onboarding-es.html`, path: '/private/tmp/agency-onboarding-es-mobile.png' });
+await capture({ url: base, path: '/private/tmp/ranking-rebels-index-mobile.png' });
+await capture({ url: `${base}es/`, path: '/private/tmp/ranking-rebels-es-mobile.png' });
+await capture({ url: `${base}onboarding/`, path: '/private/tmp/ranking-rebels-onboarding-mobile.png' });
+await capture({ url: `${base}google-ads-management/`, path: '/private/tmp/ranking-rebels-google-ads-mobile.png' });
 
 await capture({
   url: base,
   selector: '#plans',
   width: 1280,
   height: 1500,
-  path: '/private/tmp/agency-plans-desktop-tallsection.png',
+  path: '/private/tmp/ranking-rebels-plans-desktop-tallsection.png',
 });
 await capture({
-  url: `${base}es.html`,
-  selector: '#planes',
+  url: `${base}locations/`,
+  selector: '.grid',
   width: 1280,
   height: 1500,
-  path: '/private/tmp/agency-planes-desktop-tallsection.png',
+  path: '/private/tmp/ranking-rebels-locations-desktop-tallsection.png',
 });
 await capture({
   url: base,
   selector: '#plans',
   width: 390,
   height: 1800,
-  path: '/private/tmp/agency-plans-mobile-tallsection.png',
+  path: '/private/tmp/ranking-rebels-plans-mobile-tallsection.png',
 });
 await capture({
-  url: `${base}es.html`,
-  selector: '#planes',
+  url: `${base}locations/`,
+  selector: '.grid',
   width: 390,
   height: 1800,
-  path: '/private/tmp/agency-planes-mobile-tallsection.png',
+  path: '/private/tmp/ranking-rebels-locations-mobile-tallsection.png',
 });
 NODE
 ```

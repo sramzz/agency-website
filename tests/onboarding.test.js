@@ -4,9 +4,46 @@ const path = require("node:path");
 const test = require("node:test");
 
 const root = path.resolve(__dirname, "..");
-
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const exists = (file) => fs.existsSync(path.join(root, file));
+
+const routes = [
+  "/",
+  "/onboarding/",
+  "/case-studies/",
+  "/contact/",
+  "/seo-agency/",
+  "/local-seo/",
+  "/technical-seo/",
+  "/seo-content/",
+  "/google-business-profile/",
+  "/google-ads-management/",
+  "/locations/",
+  "/locations/australia/",
+  "/locations/australia/melbourne/",
+  "/locations/australia/sydney/",
+  "/locations/australia/brisbane/",
+  "/locations/australia/gold-coast/",
+  "/locations/europe/",
+  "/locations/europe/netherlands/",
+  "/locations/europe/london/",
+  "/locations/europe/madrid/",
+  "/locations/europe/barcelona/",
+  "/locations/europe/milan/",
+  "/locations/europe/munich/",
+  "/locations/europe/zurich/",
+  "/es/",
+  "/es/onboarding/",
+];
+
+const routeToFile = (route) => {
+  if (route === "/") return "index.html";
+  return `${route.replace(/^\/|\/$/g, "")}/index.html`;
+};
+
+const htmlFiles = () =>
+  routes.map(routeToFile).filter((file) => file.endsWith(".html"));
+
 const normalize = (html) =>
   html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -14,122 +51,77 @@ const normalize = (html) =>
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-const pricingCards = (html) => {
-  const pricingGrid = html.match(/<div class="pricing-grid"[\s\S]*?<\/div>\s*<p class="pricing-note">/);
-  assert.ok(pricingGrid, "pricing grid should exist");
-  return pricingGrid[0].match(/<article[\s\S]*?<\/article>/g) || [];
-};
 
-const englishSteps = [
-  "Demo Meeting",
-  "Letter of Intent Signed",
-  "First Payment Completed",
-  "Strategy Brief Meeting",
-  "SEO Foundations",
-  "First Delivery",
-  "Review & Adjustments",
-  "Launch & Tracking",
-  "Monthly Growth Meeting",
-  "Continuous Optimization",
-];
-
-const spanishSteps = [
-  "Reunion de demo",
-  "Carta de intencion firmada",
-  "Primer pago completado",
-  "Reunion de brief estrategico",
-  "Bases SEO",
-  "Primera entrega",
-  "Revision y ajustes",
-  "Lanzamiento y seguimiento",
-  "Reunion mensual de crecimiento",
-  "Optimizacion continua",
-];
-
-test("bilingual onboarding pages exist", () => {
-  assert.equal(exists("onboarding.html"), true);
-  assert.equal(exists("onboarding-es.html"), true);
-});
-
-test("onboarding pages include all ten journey steps", () => {
-  const english = normalize(read("onboarding.html"));
-  const spanish = normalize(read("onboarding-es.html"));
-
-  for (const step of englishSteps) {
-    assert.match(english, new RegExp(step.replace("&", "&amp;|&"), "i"));
-  }
-
-  for (const step of spanishSteps) {
-    assert.match(spanish, new RegExp(step, "i"));
+test("all planned static routes exist as clean index pages", () => {
+  for (const route of routes) {
+    assert.equal(exists(routeToFile(route)), true, `${route} should exist`);
   }
 });
 
-test("onboarding timelines use ordered accessible markup", () => {
-  for (const file of ["onboarding.html", "onboarding-es.html"]) {
+test("all pages use root-domain SEO metadata without /agencia", () => {
+  for (const route of routes) {
+    const file = routeToFile(route);
     const html = read(file);
-    assert.match(html, /<ol[^>]+class="[^"]*onboarding-timeline[^"]*"/);
-    assert.match(html, /aria-label="[^"]*onboarding[^"]*"/i);
-    assert.equal((html.match(/class="[^"]*onboarding-step[^"]*"/g) || []).length, 10);
+    assert.equal((html.match(/<title>/g) || []).length, 1, `${file} should have one title`);
+    assert.equal((html.match(/name="description"/g) || []).length, 1, `${file} should have one description`);
+    assert.equal((html.match(/rel="canonical"/g) || []).length, 1, `${file} should have one canonical`);
+    assert.match(html, new RegExp(`href="https://rankingrebels\\.com${route === "/" ? "/" : route}"`), `${file} canonical should match route`);
+    assert.doesNotMatch(html, /\/agencia\b|PLACEHOLDER Brand|PLACEHOLDER Marca/);
   }
 });
 
-test("home pages link to onboarding in desktop and mobile navigation", () => {
-  const english = read("index.html");
-  const spanish = read("es.html");
-
-  assert.equal((english.match(/href="\/agencia\/onboarding\.html"/g) || []).length, 2);
-  assert.equal((spanish.match(/href="\/agencia\/onboarding-es\.html"/g) || []).length, 2);
+test("home page has Organization schema and visible proof placeholders", () => {
+  const html = read("index.html");
+  const scripts = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) =>
+    JSON.parse(match[1])
+  );
+  const organization = scripts.find((schema) => schema["@type"] === "Organization");
+  assert.ok(organization, "Organization schema should exist");
+  assert.equal(organization.name, "Ranking Rebels");
+  assert.equal(organization.url, "https://rankingrebels.com/");
+  assert.equal(organization.email, "info@rankingrebels.com");
+  assert.match(normalize(html), /Proof placeholders until verified client results are ready/i);
 });
 
-test("all packages include the Google Ads campaign service", () => {
-  const englishCards = pricingCards(read("index.html"));
-  const spanishCards = pricingCards(read("es.html"));
-  const englishService =
-    "Google Ads campaign setup: AUD 300 + ad budget, with a minimum AUD 300 campaign budget recommended for stronger results";
-  const spanishService =
-    "Configuracion de campana de Google Ads: AUD 300 + presupuesto publicitario, con minimo recomendado de AUD 300 para mejores resultados";
-
-  assert.equal(englishCards.length, 3);
-  assert.equal(spanishCards.length, 3);
-
-  for (const card of englishCards) {
-    assert.equal(normalize(card).includes(englishService), true);
-  }
-
-  for (const card of spanishCards) {
-    assert.equal(normalize(card).includes(spanishService), true);
+test("FAQ schema only appears on pages with visible FAQ details", () => {
+  for (const file of htmlFiles()) {
+    const html = read(file);
+    const hasFaqSchema = /"@type"\s*:\s*"FAQPage"/.test(html);
+    const hasVisibleFaq = /<section[^>]+class="[^"]*faq/.test(html) && /<details>/.test(html);
+    assert.equal(hasFaqSchema, hasVisibleFaq, `${file} FAQ schema should match visible FAQ`);
   }
 });
 
-test("onboarding pages link to each other through the language switcher", () => {
-  const english = read("onboarding.html");
-  const spanish = read("onboarding-es.html");
+test("crawlable navigation and hub links expose core SEO routes", () => {
+  const home = read("index.html");
+  for (const href of [
+    "/seo-agency/",
+    "/local-seo/",
+    "/google-ads-management/",
+    "/locations/",
+    "/case-studies/",
+    "/contact/",
+  ]) {
+    assert.match(home, new RegExp(`href="${href}"`), `home should link to ${href}`);
+  }
 
-  assert.match(english, /href="\/agencia\/onboarding-es\.html"[^>]*>ES<\/a>/);
-  assert.match(english, /href="\/agencia\/onboarding\.html"[^>]*aria-current="page"[^>]*>EN<\/a>/);
-  assert.match(spanish, /href="\/agencia\/onboarding-es\.html"[^>]*aria-current="page"[^>]*>ES<\/a>/);
-  assert.match(spanish, /href="\/agencia\/onboarding\.html"[^>]*>EN<\/a>/);
+  assert.match(read("locations/index.html"), /href="\/locations\/australia\/"/);
+  assert.match(read("locations/index.html"), /href="\/locations\/europe\/"/);
+  assert.match(read("locations/australia/index.html"), /href="\/locations\/australia\/melbourne\/"/);
+  assert.match(read("locations/europe/index.html"), /href="\/locations\/europe\/netherlands\/"/);
 });
 
-test("new local links point to existing pages or valid anchors", () => {
-  const htmlFiles = ["index.html", "es.html", "onboarding.html", "onboarding-es.html"];
-  const routeToFile = {
-    "/agencia/": "index.html",
-    "/agencia/es.html": "es.html",
-    "/agencia/onboarding.html": "onboarding.html",
-    "/agencia/onboarding-es.html": "onboarding-es.html",
-    "/agencia/styles.css": "styles.css",
-  };
+test("all local links resolve to existing clean routes or valid anchors", () => {
+  const fileByRoute = new Map(routes.map((route) => [route, routeToFile(route)]));
 
-  for (const file of htmlFiles) {
+  for (const file of htmlFiles()) {
     const html = read(file);
     const ids = new Set([...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]));
     const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
 
     for (const href of hrefs) {
-      if (href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("tel:")) {
-        continue;
-      }
+      if (/^(https?:|mailto:|tel:)/.test(href)) continue;
+      if (/\.(css|js|png|jpg|jpeg|webp|svg|ico|xml|txt)$/i.test(href)) continue;
 
       if (href.startsWith("#")) {
         assert.equal(ids.has(href.slice(1)), true, `${file} has missing anchor ${href}`);
@@ -137,37 +129,50 @@ test("new local links point to existing pages or valid anchors", () => {
       }
 
       const [route, anchor] = href.split("#");
-      const linkedFile = routeToFile[route];
+      const linkedFile = fileByRoute.get(route);
       assert.ok(linkedFile, `${file} has unknown local route ${href}`);
       assert.equal(exists(linkedFile), true, `${file} links to missing ${linkedFile}`);
 
-      if (anchor && linkedFile.endsWith(".html")) {
-        const linkedHtml = read(linkedFile);
-        assert.match(linkedHtml, new RegExp(`\\sid="${anchor}"`), `${file} links to missing ${href}`);
+      if (anchor) {
+        assert.match(read(linkedFile), new RegExp(`\\sid="${anchor}"`), `${file} links to missing ${href}`);
       }
     }
   }
 });
 
-test("stylesheet keeps the Ocean Depth system flat and palette-bound", () => {
-  const css = read("styles.css");
-  const allowedHex = new Set([
-    "#e8f0f5",
-    "#8fa5b5",
-    "#3cbab2",
-    "#0b1a28",
-    "#142637",
-    "#102232",
-    "#06101d",
-    "#172c3f",
-    "#ffffff",
-    "#050607",
-  ]);
+test("onboarding includes Google Ads access, budget, analytics, and conversion tracking", () => {
+  const english = normalize(read("onboarding/index.html"));
+  const spanish = normalize(read("es/onboarding/index.html"));
 
-  assert.doesNotMatch(css, /gradient/i);
+  for (const expected of ["Google Ads access", "Analytics", "conversion tracking", "ad spend"]) {
+    assert.match(english, new RegExp(expected, "i"));
+  }
 
-  const hexValues = [...css.matchAll(/#[0-9a-fA-F]{3,8}\b/g)].map((match) => match[0].toLowerCase());
-  for (const value of hexValues) {
-    assert.ok(allowedHex.has(value), `Unexpected CSS color ${value}`);
+  for (const expected of ["acceso a Google Ads", "Analytics", "conversiones", "presupuesto publicitario"]) {
+    assert.match(spanish, new RegExp(expected, "i"));
+  }
+});
+
+test("robots and sitemap expose the full rankingrebels.com URL set", () => {
+  assert.equal(exists("robots.txt"), true);
+  assert.equal(exists("sitemap.xml"), true);
+
+  const robots = read("robots.txt");
+  const sitemap = read("sitemap.xml");
+  assert.match(robots, /Sitemap: https:\/\/rankingrebels\.com\/sitemap\.xml/);
+
+  for (const route of routes) {
+    assert.match(sitemap, new RegExp(`<loc>https://rankingrebels\\.com${route === "/" ? "/" : route}</loc>`));
+  }
+});
+
+test("Ranking Rebels placeholder contact details are consistent", () => {
+  for (const file of htmlFiles()) {
+    const html = read(file);
+    assert.match(html, /Ranking Rebels/);
+    assert.match(html, /info@rankingrebels\.com/);
+    assert.match(html, /https:\/\/wa\.me\/61000000000/);
+    assert.match(html, /\+61 000 000 000/);
+    assert.doesNotMatch(html, /hello@yourbrand\.com|hola@tumarca\.com|fake testimonial|guaranteed rankings/i);
   }
 });
