@@ -200,6 +200,7 @@ a {
 .stack {
   display: grid;
   gap: 18px;
+  min-width: 0;
 }
 
 .eyebrow,
@@ -232,7 +233,7 @@ h3 {
 
 h1 {
   max-width: 860px;
-  font-size: clamp(3.4rem, 8vw, 6.8rem);
+  font-size: clamp(3.4rem, 8vw, 5.4rem);
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -280,6 +281,7 @@ p {
 }
 
 .hero-panel {
+  min-width: 0;
   min-height: 560px;
   padding: clamp(18px, 3vw, 28px);
   box-shadow: 0 24px 80px rgba(255, 48, 79, 0.12);
@@ -395,6 +397,7 @@ p {
 .card,
 .feature-card,
 .route-card {
+  min-width: 0;
   padding: 24px;
 }
 
@@ -426,6 +429,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  min-width: 0;
   min-height: 580px;
   padding: 28px;
 }
