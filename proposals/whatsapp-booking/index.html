@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="description" content="A WhatsApp booking assistant for independent barbers, created by Ranking Rebels." />
+    <title>WhatsApp Booking Assistant for Barbers | Ranking Rebels</title>
+    <link rel="stylesheet" href="/proposals/whatsapp-booking/styles.css" />
+    <script src="/proposals/whatsapp-booking/script.js" defer></script>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="#top" aria-label="WhatsApp Booking Assistant home">
+        <span class="brand-mark">RR</span>
+        <span>Booking Assistant<small>by Ranking Rebels</small></span>
+      </a>
+      <div class="top-actions">
+        <span class="private-label">Private preview</span>
+        <nav class="language-switcher" aria-label="Language selector">
+          <a href="/proposals/whatsapp-booking/es/" lang="es">ES</a>
+          <a href="/proposals/whatsapp-booking/" lang="en" aria-current="page">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="shell hero">
+        <div class="hero-copy">
+          <p class="eyebrow">WhatsApp booking for independent barbers</p>
+          <h1>Your clients book. <span class="accent">Your calendar runs itself.</span></h1>
+          <p class="lede">Let clients check availability, confirm appointments and receive reminders without pulling you away from the chair.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/61000000000?text=Hi%20Ranking%20Rebels%2C%20I%27d%20like%20to%20book%20a%20demo%20of%20the%20WhatsApp%20Booking%20Assistant." target="_blank" rel="noopener">Book a demo</a>
+            <a class="button button-secondary" href="#how-it-works">See how it works</a>
+          </div>
+          <p class="availability-note">Limited spots for new barbershops</p>
+        </div>
+
+        <div class="phone-stage" aria-label="Example WhatsApp booking conversation">
+          <div class="phone">
+            <div class="phone-head"><strong>Northside Barber</strong><span class="online">Automated</span></div>
+            <div class="chat">
+              <div class="bubble in">Hi, do you have time for a haircut on Friday?</div>
+              <div class="bubble out"><strong>Booking assistant</strong>Yes. Alex is available at 10:30, 14:00 and 16:30. Which works for you?</div>
+              <div class="bubble in">14:00 please.</div>
+              <div class="bubble out"><strong>Booking assistant</strong>Booked for Friday at 14:00. I have added it to the calendar and will remind you before the appointment.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <p class="section-kicker">The everyday problem</p>
+            <h2>Stop managing appointments between haircuts.</h2>
+            <p>Every availability question, calendar update and reminder interrupts your work. The assistant handles the repetitive parts while you stay in control of the schedule.</p>
+          </div>
+          <div class="problem-grid">
+            <article class="card"><span class="card-number">01 / Messages</span><h3>Repeated availability questions</h3><p>Clients get available times directly in WhatsApp without waiting for a manual reply.</p></article>
+            <article class="card"><span class="card-number">02 / Admin</span><h3>Manual calendar updates</h3><p>Confirmed bookings are added to Google Calendar automatically with the appointment details.</p></article>
+            <article class="card"><span class="card-number">03 / No-shows</span><h3>Appointments get forgotten</h3><p>Scheduled reminders keep the appointment visible without you chasing every client.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="shell">
+          <div class="section-head">
+            <p class="section-kicker">One connected flow</p>
+            <h2>From first message to occupied chair.</h2>
+            <p>Explore each step of the booking journey.</p>
+          </div>
+          <div class="demo-wrap">
+            <div class="tabs" role="tablist" aria-label="Booking flow">
+              <button class="tab" id="tab-book" role="tab" aria-selected="true" aria-controls="panel-book"><span>01</span>WhatsApp booking</button>
+              <button class="tab" id="tab-calendar" role="tab" aria-selected="false" aria-controls="panel-calendar" tabindex="-1"><span>02</span>Google Calendar</button>
+              <button class="tab" id="tab-reminders" role="tab" aria-selected="false" aria-controls="panel-reminders" tabindex="-1"><span>03</span>Reminders</button>
+            </div>
+            <div>
+              <section class="panel" id="panel-book" role="tabpanel" aria-labelledby="tab-book">
+                <div class="panel-inner"><div class="panel-copy"><p class="step-label">Step 01</p><h3>Clients choose from real availability</h3><p>The assistant checks the barber's day and offers open times inside WhatsApp. The client selects one and confirms.</p></div><div class="ui-card"><p class="ui-label">Friday availability</p><div class="slots"><div class="slot">10:30</div><div class="slot selected">14:00</div><div class="slot">16:30</div><div class="slot">18:00</div></div></div></div>
+              </section>
+              <section class="panel" id="panel-calendar" role="tabpanel" aria-labelledby="tab-calendar" hidden>
+                <div class="panel-inner"><div class="panel-copy"><p class="step-label">Step 02</p><h3>The appointment lands in Google Calendar</h3><p>The barber receives the booking details in WhatsApp and the event is created automatically in the connected calendar.</p></div><div class="ui-card"><p class="ui-label">Google Calendar / Friday</p><div class="calendar-lines"><div class="calendar-line">10:30 &middot; Beard trim</div><div class="calendar-line active">14:00 &middot; Haircut &middot; Jamie</div><div class="calendar-line">16:30 &middot; Open</div></div></div></div>
+              </section>
+              <section class="panel" id="panel-reminders" role="tabpanel" aria-labelledby="tab-reminders" hidden>
+                <div class="panel-inner"><div class="panel-copy"><p class="step-label">Step 03</p><h3>Reminders go out automatically</h3><p>The client receives timely WhatsApp reminders, helping the appointment stay top of mind.</p></div><div class="ui-card"><p class="ui-label">Reminder schedule</p><div class="reminder-list"><div class="reminder"><span>2 days before</span><strong>Ready</strong></div><div class="reminder"><span>1 day before</span><strong>Ready</strong></div><div class="reminder"><span>2 hours before</span><strong>Ready</strong></div></div></div></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head"><p class="section-kicker">The outcome</p><h2>Less admin. More booked time.</h2></div>
+          <div class="benefit-grid">
+            <article class="card"><span class="card-number">01 / Focus</span><h3>Stay with the client in your chair</h3><p>Routine booking questions no longer require constant manual replies.</p></article>
+            <article class="card"><span class="card-number">02 / Attendance</span><h3>Keep appointments visible</h3><p>Automatic reminders reduce the chance that a client simply forgets.</p></article>
+            <article class="card"><span class="card-number">03 / Experience</span><h3>Let clients book where they already chat</h3><p>No new app or unfamiliar booking portal for the client to learn.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head"><p class="section-kicker">Core capabilities</p><h2>The booking work, connected.</h2></div>
+          <div class="feature-grid">
+            <article class="card feature-card"><span>WA</span><div><h3>WhatsApp availability</h3><p>Offer open days and times directly in the conversation.</p></div></article>
+            <article class="card feature-card"><span>OK</span><div><h3>Client confirmation</h3><p>Capture the selected service, day and time before creating the booking.</p></div></article>
+            <article class="card feature-card"><span>GC</span><div><h3>Google Calendar sync</h3><p>Create the event automatically and keep the barber's schedule centralised.</p></div></article>
+            <article class="card feature-card"><span>3X</span><div><h3>Timed reminders</h3><p>Send reminders 2 days before, 1 day before and 2 hours before.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell coming-soon">
+          <div><span class="soon-badge">Coming soon</span><h2>Payment inside the booking flow.</h2><p class="lede">Give clients the option to secure an appointment from WhatsApp when they book.</p></div>
+          <div class="soon-mark" aria-hidden="true">+1</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head"><p class="section-kicker">Questions</p><h2>Before your demo.</h2></div>
+          <div class="faq">
+            <details><summary>Does the client need another app?</summary><p>No. The booking conversation happens in WhatsApp, where the client already communicates.</p></details>
+            <details><summary>Can I keep using Google Calendar?</summary><p>Yes. Confirmed appointments are created in the connected Google Calendar so your agenda remains in one place.</p></details>
+            <details><summary>Does this work for a solo barber?</summary><p>Yes. The initial setup is focused on independent barbers, with a flow that can also support growing barbershops.</p></details>
+            <details><summary>What happens during the demo?</summary><p>We walk through the booking journey, discuss your current schedule and identify how the assistant would fit your business.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell cta-section">
+        <div class="cta-box">
+          <div class="cta-copy"><p class="section-kicker">Limited onboarding availability</p><h2>See your booking flow in action.</h2><p>Message Ranking Rebels to coordinate a focused demo for your barbershop.</p></div>
+          <div class="cta-actions"><a class="button button-primary" href="https://wa.me/61000000000?text=Hi%20Ranking%20Rebels%2C%20I%27d%20like%20to%20book%20a%20demo%20of%20the%20WhatsApp%20Booking%20Assistant." target="_blank" rel="noopener">Book a demo</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer"><p><strong>WhatsApp Booking Assistant</strong> by Ranking Rebels</p><p>Demo line: +61 000 000 000</p></footer>
+  </body>
+</html>

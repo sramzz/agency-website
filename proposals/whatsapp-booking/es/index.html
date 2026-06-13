@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="description" content="Asistente de citas por WhatsApp para barberos independientes, creado por Ranking Rebels." />
+    <title>Asistente de citas por WhatsApp para barberos | Ranking Rebels</title>
+    <link rel="stylesheet" href="/proposals/whatsapp-booking/styles.css" />
+    <script src="/proposals/whatsapp-booking/script.js" defer></script>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="#top" aria-label="Inicio del Asistente de citas por WhatsApp">
+        <span class="brand-mark">RR</span>
+        <span>Asistente de citas<small>por Ranking Rebels</small></span>
+      </a>
+      <div class="top-actions">
+        <span class="private-label">Vista privada</span>
+        <nav class="language-switcher" aria-label="Selector de idioma">
+          <a href="/proposals/whatsapp-booking/es/" lang="es" aria-current="page">ES</a>
+          <a href="/proposals/whatsapp-booking/" lang="en">EN</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="shell hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Reservas por WhatsApp para barberos independientes</p>
+          <h1>Tus clientes reservan. <span class="accent">Tu agenda se organiza sola.</span></h1>
+          <p class="lede">Permite que tus clientes consulten disponibilidad, confirmen su cita y reciban recordatorios sin interrumpirte mientras trabajas.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/61000000000?text=Hola%20Ranking%20Rebels%2C%20quiero%20coordinar%20una%20demo%20del%20Asistente%20de%20citas%20por%20WhatsApp." target="_blank" rel="noopener">Agendar una demo</a>
+            <a class="button button-secondary" href="#como-funciona">Ver c&oacute;mo funciona</a>
+          </div>
+          <p class="availability-note">Plazas limitadas para nuevas barber&iacute;as</p>
+        </div>
+
+        <div class="phone-stage" aria-label="Ejemplo de una reserva por WhatsApp">
+          <div class="phone">
+            <div class="phone-head"><strong>Northside Barber</strong><span class="online">Autom&aacute;tico</span></div>
+            <div class="chat">
+              <div class="bubble in">Hola, &iquest;tienes tiempo para un corte el viernes?</div>
+              <div class="bubble out"><strong>Asistente de citas</strong>S&iacute;. Alex est&aacute; disponible a las 10:30, 14:00 y 16:30. &iquest;Qu&eacute; hora prefieres?</div>
+              <div class="bubble in">A las 14:00.</div>
+              <div class="bubble out"><strong>Asistente de citas</strong>Reserva confirmada para el viernes a las 14:00. La he a&ntilde;adido al calendario y te recordar&eacute; la cita.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head">
+            <p class="section-kicker">El problema diario</p>
+            <h2>Deja de gestionar citas entre cortes.</h2>
+            <p>Cada consulta de disponibilidad, cambio de agenda y recordatorio interrumpe tu trabajo. El asistente resuelve las tareas repetitivas mientras t&uacute; mantienes el control.</p>
+          </div>
+          <div class="problem-grid">
+            <article class="card"><span class="card-number">01 / Mensajes</span><h3>Las mismas consultas de disponibilidad</h3><p>Los clientes reciben horarios disponibles en WhatsApp sin esperar una respuesta manual.</p></article>
+            <article class="card"><span class="card-number">02 / Gesti&oacute;n</span><h3>Actualizaciones manuales</h3><p>Las reservas confirmadas se a&ntilde;aden autom&aacute;ticamente a Google Calendar con todos los detalles.</p></article>
+            <article class="card"><span class="card-number">03 / Ausencias</span><h3>Las citas se olvidan</h3><p>Los recordatorios programados mantienen la cita presente sin perseguir a cada cliente.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <div class="shell">
+          <div class="section-head">
+            <p class="section-kicker">Un flujo conectado</p>
+            <h2>Del primer mensaje al sill&oacute;n ocupado.</h2>
+            <p>Explora cada paso del proceso de reserva.</p>
+          </div>
+          <div class="demo-wrap">
+            <div class="tabs" role="tablist" aria-label="Flujo de reserva">
+              <button class="tab" id="tab-reserva" role="tab" aria-selected="true" aria-controls="panel-reserva"><span>01</span>Reserva en WhatsApp</button>
+              <button class="tab" id="tab-calendario" role="tab" aria-selected="false" aria-controls="panel-calendario" tabindex="-1"><span>02</span>Google Calendar</button>
+              <button class="tab" id="tab-recordatorios" role="tab" aria-selected="false" aria-controls="panel-recordatorios" tabindex="-1"><span>03</span>Recordatorios</button>
+            </div>
+            <div>
+              <section class="panel" id="panel-reserva" role="tabpanel" aria-labelledby="tab-reserva">
+                <div class="panel-inner"><div class="panel-copy"><p class="step-label">Paso 01</p><h3>El cliente elige entre horarios disponibles</h3><p>El asistente consulta el d&iacute;a del barbero y ofrece las horas libres dentro de WhatsApp. El cliente selecciona una y confirma.</p></div><div class="ui-card"><p class="ui-label">Disponibilidad del viernes</p><div class="slots"><div class="slot">10:30</div><div class="slot selected">14:00</div><div class="slot">16:30</div><div class="slot">18:00</div></div></div></div>
+              </section>
+              <section class="panel" id="panel-calendario" role="tabpanel" aria-labelledby="tab-calendario" hidden>
+                <div class="panel-inner"><div class="panel-copy"><p class="step-label">Paso 02</p><h3>La cita aparece en Google Calendar</h3><p>El barbero recibe los detalles por WhatsApp y el evento se crea autom&aacute;ticamente en el calendario conectado.</p></div><div class="ui-card"><p class="ui-label">Google Calendar / Viernes</p><div class="calendar-lines"><div class="calendar-line">10:30 &middot; Barba</div><div class="calendar-line active">14:00 &middot; Corte &middot; Jamie</div><div class="calendar-line">16:30 &middot; Libre</div></div></div></div>
+              </section>
+              <section class="panel" id="panel-recordatorios" role="tabpanel" aria-labelledby="tab-recordatorios" hidden>
+                <div class="panel-inner"><div class="panel-copy"><p class="step-label">Paso 03</p><h3>Los recordatorios salen solos</h3><p>El cliente recibe recordatorios oportunos por WhatsApp para que no pierda de vista su cita.</p></div><div class="ui-card"><p class="ui-label">Programaci&oacute;n de recordatorios</p><div class="reminder-list"><div class="reminder"><span>2 d&iacute;as antes</span><strong>Listo</strong></div><div class="reminder"><span>1 d&iacute;a antes</span><strong>Listo</strong></div><div class="reminder"><span>2 horas antes</span><strong>Listo</strong></div></div></div></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head"><p class="section-kicker">El resultado</p><h2>Menos gesti&oacute;n. M&aacute;s horas reservadas.</h2></div>
+          <div class="benefit-grid">
+            <article class="card"><span class="card-number">01 / Enfoque</span><h3>Conc&eacute;ntrate en quien est&aacute; en tu sill&oacute;n</h3><p>Las consultas rutinarias dejan de exigir respuestas manuales constantes.</p></article>
+            <article class="card"><span class="card-number">02 / Asistencia</span><h3>Mant&eacute;n cada cita presente</h3><p>Los recordatorios autom&aacute;ticos reducen la posibilidad de que el cliente se olvide.</p></article>
+            <article class="card"><span class="card-number">03 / Experiencia</span><h3>Reserva donde tus clientes ya conversan</h3><p>El cliente no necesita aprender a usar otra aplicaci&oacute;n ni un portal desconocido.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head"><p class="section-kicker">Funciones principales</p><h2>Todo el trabajo de reserva, conectado.</h2></div>
+          <div class="feature-grid">
+            <article class="card feature-card"><span>WA</span><div><h3>Disponibilidad por WhatsApp</h3><p>Ofrece d&iacute;as y horas libres directamente en la conversaci&oacute;n.</p></div></article>
+            <article class="card feature-card"><span>OK</span><div><h3>Confirmaci&oacute;n del cliente</h3><p>Registra el servicio, d&iacute;a y hora seleccionados antes de crear la reserva.</p></div></article>
+            <article class="card feature-card"><span>GC</span><div><h3>Sincronizaci&oacute;n con Google Calendar</h3><p>Crea el evento autom&aacute;ticamente y centraliza la agenda del barbero.</p></div></article>
+            <article class="card feature-card"><span>3X</span><div><h3>Recordatorios programados</h3><p>Env&iacute;a avisos 2 d&iacute;as antes, 1 d&iacute;a antes y 2 horas antes.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell coming-soon">
+          <div><span class="soon-badge">Pr&oacute;ximamente</span><h2>Pago dentro del flujo de reserva.</h2><p class="lede">Permite que el cliente asegure su cita desde WhatsApp en el momento de reservar.</p></div>
+          <div class="soon-mark" aria-hidden="true">+1</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell">
+          <div class="section-head"><p class="section-kicker">Preguntas</p><h2>Antes de tu demo.</h2></div>
+          <div class="faq">
+            <details><summary>&iquest;El cliente necesita otra aplicaci&oacute;n?</summary><p>No. La conversaci&oacute;n de reserva sucede en WhatsApp, donde el cliente ya se comunica.</p></details>
+            <details><summary>&iquest;Puedo seguir usando Google Calendar?</summary><p>S&iacute;. Las citas confirmadas se crean en el calendario conectado para mantener tu agenda en un solo lugar.</p></details>
+            <details><summary>&iquest;Funciona para un barbero independiente?</summary><p>S&iacute;. La configuraci&oacute;n inicial est&aacute; enfocada en barberos independientes y tambi&eacute;n puede acompa&ntilde;ar a barber&iacute;as en crecimiento.</p></details>
+            <details><summary>&iquest;Qu&eacute; veremos durante la demo?</summary><p>Recorreremos el proceso de reserva, hablaremos de tu agenda actual y veremos c&oacute;mo encaja el asistente en tu negocio.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell cta-section">
+        <div class="cta-box">
+          <div class="cta-copy"><p class="section-kicker">Disponibilidad limitada</p><h2>Mira tu flujo de reservas en acci&oacute;n.</h2><p>Escribe a Ranking Rebels para coordinar una demo enfocada en tu barber&iacute;a.</p></div>
+          <div class="cta-actions"><a class="button button-primary" href="https://wa.me/61000000000?text=Hola%20Ranking%20Rebels%2C%20quiero%20coordinar%20una%20demo%20del%20Asistente%20de%20citas%20por%20WhatsApp." target="_blank" rel="noopener">Agendar una demo</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer"><p><strong>Asistente de citas por WhatsApp</strong> de Ranking Rebels</p><p>L&iacute;nea de demo: +61 000 000 000</p></footer>
+  </body>
+</html>
