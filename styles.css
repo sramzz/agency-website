@@ -333,6 +333,10 @@ p {
   background: var(--surface);
 }
 
+.hero-panel .search-result + .search-result {
+  margin-top: 16px;
+}
+
 .lead-flow {
   display: grid;
   gap: 10px;
