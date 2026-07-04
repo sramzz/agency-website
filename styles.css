@@ -366,6 +366,15 @@ p {
   padding: 82px 0;
 }
 
+.compact-section {
+  max-width: 800px;
+  padding: 28px 0 64px;
+}
+
+.compact-section h2 {
+  margin-top: 10px;
+}
+
 .section-heading {
   max-width: 800px;
   margin-bottom: 30px;
