@@ -70,7 +70,7 @@ test("all pages use root-domain SEO metadata without /agencia", () => {
   }
 });
 
-test("home page has Organization schema and verified Smarketing proof", () => {
+test("home page has Organization schema and verified Smarketing Business Profile proof", () => {
   const html = read("index.html");
   const scripts = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) =>
     JSON.parse(match[1])
@@ -80,15 +80,26 @@ test("home page has Organization schema and verified Smarketing proof", () => {
   assert.equal(organization.name, "Ranking Rebels");
   assert.equal(organization.url, "https://rankingrebels.com/");
   assert.equal(organization.email, "info@rankingrebels.com");
-  assert.match(normalize(html), /Client results · Smarketing partnership/i);
-  assert.match(normalize(html), /457K impressions/i);
+  assert.match(normalize(html), /Local visibility results · Smarketing partnership/i);
+  assert.match(normalize(html), /2,458 interactions/i);
   for (const asset of [
-    "assets/smarketing/seo-growth-overview.jpg",
-    "assets/smarketing/seo-search-visibility.jpg",
-    "assets/smarketing/seo-performance-trend.jpg",
+    "assets/smarketing/gbp-interactions-growth.jpeg",
+    "assets/smarketing/gbp-directions-growth.jpeg",
+    "assets/smarketing/gbp-calls-growth.jpeg",
+    "assets/smarketing/gbp-website-clicks-growth.jpeg",
   ]) {
     assert.ok(fs.existsSync(path.join(root, asset)), `${asset} should exist`);
     assert.match(html, new RegExp(`src="/${asset}"`), `home should render ${asset}`);
+  }
+
+  const caseStudies = read("case-studies/index.html");
+  for (const asset of [
+    "assets/smarketing/gbp-interactions-323.jpeg",
+    "assets/smarketing/gbp-directions-256.jpeg",
+    "assets/smarketing/gbp-calls-61.jpeg",
+  ]) {
+    assert.ok(fs.existsSync(path.join(root, asset)), `${asset} should exist`);
+    assert.match(caseStudies, new RegExp(`src="/${asset}"`), `case studies should render ${asset}`);
   }
 });
 

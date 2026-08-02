@@ -552,6 +552,11 @@ p {
   gap: 16px;
 }
 
+.featured-results,
+.case-study-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .result-card {
   min-width: 0;
   margin: 0;
@@ -569,7 +574,7 @@ p {
 
 .result-image {
   display: block;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background: #fff;
@@ -579,7 +584,7 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 220ms ease;
 }
 
@@ -655,7 +660,22 @@ p {
 }
 
 .case-study-gallery .result-card figcaption {
-  min-height: 210px;
+  min-height: 175px;
+}
+
+.case-result-group + .case-result-group {
+  margin-top: 54px;
+}
+
+.case-group-heading {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin-bottom: 20px;
+}
+
+.case-group-heading h3 {
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
 }
 
 .timeline {
