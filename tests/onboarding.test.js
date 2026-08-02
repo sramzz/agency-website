@@ -108,7 +108,7 @@ test("Smarketing proof media stays constrained to the shared responsive containe
   assert.match(css, /--page-gutter:\s*clamp\(18px,\s*4vw,\s*48px\)/);
   assert.match(css, /width:\s*min\(var\(--max-width\),\s*calc\(100%\s*-\s*var\(--page-gutter\)\s*-\s*var\(--page-gutter\)\)\)/);
   assert.match(css, /\.proof-gallery\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*40%\)\)[\s\S]*?justify-content:\s*space-between/);
-  assert.match(css, /\.result-image\s*\{[\s\S]*?aspect-ratio:\s*16\s*\/\s*9[\s\S]*?max-width:\s*100%/);
+  assert.match(css, /\.result-image\s*\{[\s\S]*?aspect-ratio:\s*2\s*\/\s*1[\s\S]*?max-width:\s*100%/);
   assert.match(css, /\.result-image img\s*\{[\s\S]*?max-width:\s*100%[\s\S]*?object-fit:\s*contain/);
 });
 

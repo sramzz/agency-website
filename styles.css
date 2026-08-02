@@ -581,7 +581,7 @@ p {
   width: 100%;
   min-width: 0;
   max-width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background: #fff;
@@ -594,11 +594,6 @@ p {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: transform 220ms ease;
-}
-
-.result-card:hover .result-image img {
-  transform: scale(1.025);
 }
 
 .result-card figcaption {
