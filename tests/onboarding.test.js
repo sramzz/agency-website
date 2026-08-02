@@ -103,6 +103,14 @@ test("home page has Organization schema and verified Smarketing Business Profile
   }
 });
 
+test("Smarketing proof media stays constrained to the shared responsive container", () => {
+  const css = read("styles.css");
+  assert.match(css, /--page-gutter:\s*clamp\(18px,\s*4vw,\s*48px\)/);
+  assert.match(css, /width:\s*min\(var\(--max-width\),\s*calc\(100%\s*-\s*var\(--page-gutter\)\s*-\s*var\(--page-gutter\)\)\)/);
+  assert.match(css, /\.result-image\s*\{[\s\S]*?aspect-ratio:\s*16\s*\/\s*9[\s\S]*?max-width:\s*100%/);
+  assert.match(css, /\.result-image img\s*\{[\s\S]*?max-width:\s*100%[\s\S]*?object-fit:\s*contain/);
+});
+
 test("FAQ schema only appears on pages with visible FAQ details", () => {
   for (const file of htmlFiles()) {
     const html = read(file);
