@@ -70,7 +70,7 @@ test("all pages use root-domain SEO metadata without /agencia", () => {
   }
 });
 
-test("home page has Organization schema and visible proof placeholders", () => {
+test("home page has Organization schema and verified Smarketing proof", () => {
   const html = read("index.html");
   const scripts = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) =>
     JSON.parse(match[1])
@@ -80,7 +80,16 @@ test("home page has Organization schema and visible proof placeholders", () => {
   assert.equal(organization.name, "Ranking Rebels");
   assert.equal(organization.url, "https://rankingrebels.com/");
   assert.equal(organization.email, "info@rankingrebels.com");
-  assert.match(normalize(html), /Proof placeholders until verified client results are ready/i);
+  assert.match(normalize(html), /Client results · Smarketing partnership/i);
+  assert.match(normalize(html), /457K impressions/i);
+  for (const asset of [
+    "assets/smarketing/seo-growth-overview.jpg",
+    "assets/smarketing/seo-search-visibility.jpg",
+    "assets/smarketing/seo-performance-trend.jpg",
+  ]) {
+    assert.ok(fs.existsSync(path.join(root, asset)), `${asset} should exist`);
+    assert.match(html, new RegExp(`src="/${asset}"`), `home should render ${asset}`);
+  }
 });
 
 test("FAQ schema only appears on pages with visible FAQ details", () => {
