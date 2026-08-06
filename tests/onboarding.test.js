@@ -122,6 +122,33 @@ test("plans appear only on the Australia hub", () => {
   assert.equal((australia.match(heading) || []).length, 1);
 });
 
+test("home page presents AI process automation in business language", () => {
+  const html = read("index.html");
+  const section = html.match(/<section id="ai-automation"[\s\S]*?<\/section>/)?.[0];
+
+  assert.ok(section, "home should include the AI automation section");
+  assert.match(html, /href="#ai-automation">Explore AI automation<\/a>/);
+  assert.match(html, /name="description" content="[^"]*AI process automation/i);
+  assert.equal((section.match(/<li>/g) || []).length, 5, "automation process should have five stages");
+  assert.equal((section.match(/<article class="feature-card">/g) || []).length, 4, "automation section should have four scenarios");
+
+  for (const expected of [
+    "Find the bottleneck",
+    "Map the work",
+    "Write the playbook",
+    "Automate the fixed steps",
+    "Add the AI agent",
+    "WhatsApp sales agent",
+    "Monthly sales reports",
+    "Connected calendars",
+    "Client update packs",
+  ]) {
+    assert.match(section, new RegExp(expected, "i"));
+  }
+
+  assert.match(section, /href="https:\/\/wa\.me\/61439499441"[^>]*>Show me what to automate<\/a>/);
+});
+
 test("FAQ schema only appears on pages with visible FAQ details", () => {
   for (const file of htmlFiles()) {
     const html = read(file);
