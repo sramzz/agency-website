@@ -83,6 +83,16 @@ test("home page has Organization schema and visible proof placeholders", () => {
   assert.match(normalize(html), /Proof placeholders until verified client results are ready/i);
 });
 
+test("plans appear only on the Australia hub", () => {
+  const home = read("index.html");
+  const australia = read("locations/australia/index.html");
+  const heading = /Start with foundations\. Grow into dominance\./g;
+
+  assert.doesNotMatch(home, /id="plans"|Start with foundations\. Grow into dominance\./);
+  assert.equal((australia.match(/id="plans"/g) || []).length, 1);
+  assert.equal((australia.match(heading) || []).length, 1);
+});
+
 test("FAQ schema only appears on pages with visible FAQ details", () => {
   for (const file of htmlFiles()) {
     const html = read(file);
