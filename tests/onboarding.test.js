@@ -205,13 +205,30 @@ test("robots and sitemap expose the full rankingrebels.com URL set", () => {
   }
 });
 
-test("Ranking Rebels placeholder contact details are consistent", () => {
-  for (const file of htmlFiles()) {
+test("Ranking Rebels contact details follow regional phone routing", () => {
+  const australian = {
+    display: /\+61 439 499 441/,
+    whatsapp: "61439499441",
+  };
+  const dutch = {
+    display: /\+31 613 390 178/,
+    whatsapp: "31613390178",
+  };
+
+  for (const route of routes) {
+    const file = routeToFile(route);
     const html = read(file);
+    const expected = route.startsWith("/locations/europe/") ? dutch : australian;
+    const unexpected = expected === dutch ? australian : dutch;
+    const whatsappTargets = [...html.matchAll(/https:\/\/wa\.me\/(\d+)/g)].map((match) => match[1]);
+
     assert.match(html, /Ranking Rebels/);
     assert.match(html, /info@rankingrebels\.com/);
-    assert.match(html, /https:\/\/wa\.me\/61000000000/);
-    assert.match(html, /\+61 000 000 000/);
+    assert.ok(whatsappTargets.length > 0, `${file} should include a WhatsApp CTA`);
+    assert.equal(whatsappTargets.every((target) => target === expected.whatsapp), true, `${file} should use the regional WhatsApp number`);
+    assert.match(html, expected.display);
+    assert.doesNotMatch(html, unexpected.display);
+    assert.doesNotMatch(html, /61000000000|\+61 000 000 000|WhatsApp placeholder|Final phone number is pending/);
     assert.doesNotMatch(html, /hello@yourbrand\.com|hola@tumarca\.com|fake testimonial|guaranteed rankings/i);
   }
 });
