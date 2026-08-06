@@ -63,14 +63,14 @@ test("language pages cross-link and load shared assets", () => {
   }
 });
 
-test("localized WhatsApp demo CTAs use the dummy number and message", () => {
+test("localized WhatsApp demo CTAs use the demo number and message", () => {
   const english = read(pages.en);
   const spanish = read(pages.es);
 
-  assert.match(english, /https:\/\/wa\.me\/61000000000\?text=Hi%20Ranking%20Rebels/);
-  assert.match(spanish, /https:\/\/wa\.me\/61000000000\?text=Hola%20Ranking%20Rebels/);
-  assert.match(english, /\+61 000 000 000/);
-  assert.match(spanish, /\+61 000 000 000/);
+  assert.match(english, /https:\/\/wa\.me\/61424924060\?text=Hi%20Ranking%20Rebels/);
+  assert.match(spanish, /https:\/\/wa\.me\/61424924060\?text=Hola%20Ranking%20Rebels/);
+  assert.match(english, /\+61424924060/);
+  assert.match(spanish, /\+61424924060/);
 });
 
 test("both pages contain the complete booking flow and accessible interactions", () => {

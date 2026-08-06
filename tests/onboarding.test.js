@@ -70,7 +70,7 @@ test("all pages use root-domain SEO metadata without /agencia", () => {
   }
 });
 
-test("home page has Organization schema and visible proof placeholders", () => {
+test("home page has Organization schema and verified Smarketing Business Profile proof", () => {
   const html = read("index.html");
   const scripts = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) =>
     JSON.parse(match[1])
@@ -80,7 +80,36 @@ test("home page has Organization schema and visible proof placeholders", () => {
   assert.equal(organization.name, "Ranking Rebels");
   assert.equal(organization.url, "https://rankingrebels.com/");
   assert.equal(organization.email, "info@rankingrebels.com");
-  assert.match(normalize(html), /Proof placeholders until verified client results are ready/i);
+  assert.match(normalize(html), /Local visibility results · Smarketing partnership/i);
+  assert.match(normalize(html), /2,458 interactions/i);
+  for (const asset of [
+    "assets/smarketing/gbp-interactions-growth.jpeg",
+    "assets/smarketing/gbp-directions-growth.jpeg",
+    "assets/smarketing/gbp-calls-growth.jpeg",
+    "assets/smarketing/gbp-website-clicks-growth.jpeg",
+  ]) {
+    assert.ok(fs.existsSync(path.join(root, asset)), `${asset} should exist`);
+    assert.match(html, new RegExp(`src="/${asset}"`), `home should render ${asset}`);
+  }
+
+  const caseStudies = read("case-studies/index.html");
+  for (const asset of [
+    "assets/smarketing/gbp-interactions-323.jpeg",
+    "assets/smarketing/gbp-directions-256.jpeg",
+    "assets/smarketing/gbp-calls-61.jpeg",
+  ]) {
+    assert.ok(fs.existsSync(path.join(root, asset)), `${asset} should exist`);
+    assert.match(caseStudies, new RegExp(`src="/${asset}"`), `case studies should render ${asset}`);
+  }
+});
+
+test("Smarketing proof media stays constrained to the shared responsive container", () => {
+  const css = read("styles.css");
+  assert.match(css, /--page-gutter:\s*clamp\(18px,\s*4vw,\s*48px\)/);
+  assert.match(css, /width:\s*min\(var\(--max-width\),\s*calc\(100%\s*-\s*var\(--page-gutter\)\s*-\s*var\(--page-gutter\)\)\)/);
+  assert.match(css, /\.proof-gallery\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*40%\)\)[\s\S]*?justify-content:\s*space-between/);
+  assert.match(css, /\.result-image\s*\{[\s\S]*?aspect-ratio:\s*2\s*\/\s*1[\s\S]*?max-width:\s*100%/);
+  assert.match(css, /\.result-image img\s*\{[\s\S]*?max-width:\s*100%[\s\S]*?object-fit:\s*contain/);
 });
 
 test("plans appear only on the Australia hub", () => {
