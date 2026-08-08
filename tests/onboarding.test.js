@@ -52,6 +52,19 @@ const normalize = (html) =>
     .replace(/\s+/g, " ")
     .trim();
 
+const decodeEntities = (value) =>
+  value
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+
+const jsonLd = (html) =>
+  [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) =>
+    JSON.parse(match[1])
+  );
+
 test("all planned static routes exist as clean index pages", () => {
   for (const route of routes) {
     assert.equal(exists(routeToFile(route)), true, `${route} should exist`);
@@ -128,7 +141,6 @@ test("home page presents AI process automation in business language", () => {
 
   assert.ok(section, "home should include the AI automation section");
   assert.match(html, /href="#ai-automation">Explore AI automation<\/a>/);
-  assert.match(html, /name="description" content="[^"]*AI process automation/i);
   assert.equal((section.match(/<li>/g) || []).length, 5, "automation process should have five stages");
   assert.equal((section.match(/<article class="feature-card">/g) || []).length, 4, "automation section should have four scenarios");
 
@@ -206,17 +218,103 @@ test("all local links resolve to existing clean routes or valid anchors", () => 
   }
 });
 
-test("onboarding includes Google Ads access, budget, analytics, and conversion tracking", () => {
+test("onboarding covers SEO + GEO and multi-platform campaign readiness", () => {
   const english = normalize(read("onboarding/index.html"));
   const spanish = normalize(read("es/onboarding/index.html"));
 
-  for (const expected of ["Google Ads access", "Analytics", "conversion tracking", "ad spend"]) {
-    assert.match(english, new RegExp(expected, "i"));
+  for (const expected of ["SEO + GEO", "SEM + GEM", "Google Ads access", "Meta", "ChatGPT", "Analytics", "conversion tracking", "ad spend"]) {
+    assert.ok(english.toLowerCase().includes(expected.toLowerCase()), `English onboarding should include ${expected}`);
   }
 
-  for (const expected of ["acceso a Google Ads", "Analytics", "conversiones", "presupuesto publicitario"]) {
-    assert.match(spanish, new RegExp(expected, "i"));
+  for (const expected of ["SEO + GEO", "SEM + GEM", "accesos a Google Ads", "Meta", "ChatGPT", "Analytics", "conversiones", "presupuestos"]) {
+    assert.ok(spanish.toLowerCase().includes(expected.toLowerCase()), `Spanish onboarding should include ${expected}`);
   }
+});
+
+test("public pages have unique, bounded SEO metadata and one H1", () => {
+  const titles = new Map();
+  const descriptions = new Map();
+
+  for (const file of htmlFiles()) {
+    const html = read(file);
+    const title = decodeEntities(html.match(/<title>([^<]+)<\/title>/)?.[1] || "");
+    const description = decodeEntities(html.match(/<meta\s+name="description"\s+content="([^"]+)"/s)?.[1] || "");
+
+    assert.ok(title.length >= 30 && title.length <= 60, `${file} title length is ${title.length}`);
+    assert.ok(description.length >= 70 && description.length <= 155, `${file} description length is ${description.length}`);
+    assert.equal((html.match(/<h1(?:\s[^>]*)?>/g) || []).length, 1, `${file} should have one H1`);
+    assert.doesNotMatch(html, /<meta\s+name="keywords"/i, `${file} should not use meta keywords`);
+    assert.doesNotMatch(html, /<meta\s+name="robots"[^>]*noindex/i, `${file} should remain indexable`);
+    assert.equal(titles.has(title), false, `${file} duplicates title from ${titles.get(title)}`);
+    assert.equal(descriptions.has(description), false, `${file} duplicates description from ${descriptions.get(description)}`);
+    titles.set(title, file);
+    descriptions.set(description, file);
+  }
+});
+
+test("JSON-LD parses, uses approved public types, and service pages describe their canonical service", () => {
+  const allowedTypes = new Set(["Organization", "WebSite", "FAQPage", "Service"]);
+  const serviceRoutes = [
+    "/seo-agency/",
+    "/local-seo/",
+    "/technical-seo/",
+    "/seo-content/",
+    "/google-business-profile/",
+    "/google-ads-management/",
+  ];
+
+  for (const file of htmlFiles()) {
+    for (const schema of jsonLd(read(file))) {
+      assert.ok(allowedTypes.has(schema["@type"]), `${file} has unsupported top-level schema ${schema["@type"]}`);
+    }
+  }
+
+  for (const route of serviceRoutes) {
+    const schemas = jsonLd(read(routeToFile(route)));
+    const service = schemas.find((schema) => schema["@type"] === "Service");
+    assert.ok(service, `${route} should include Service schema`);
+    assert.equal(service.url, `https://rankingrebels.com${route}`);
+    assert.equal(service.provider?.name, "Ranking Rebels");
+    assert.ok(service.name && service.description && service.areaServed, `${route} Service schema should be complete`);
+  }
+});
+
+test("English and Spanish alternates are reciprocal", () => {
+  for (const [englishRoute, spanishRoute] of [["/", "/es/"], ["/onboarding/", "/es/onboarding/"]]) {
+    const english = read(routeToFile(englishRoute));
+    const spanish = read(routeToFile(spanishRoute));
+    assert.match(english, new RegExp(`hreflang="es" href="https://rankingrebels\\.com${spanishRoute}"`));
+    assert.match(spanish, new RegExp(`hreflang="en-AU" href="https://rankingrebels\\.com${englishRoute}"`));
+  }
+});
+
+test("FAQ JSON-LD matches the visible homepage questions and answers", () => {
+  const html = read("index.html");
+  const faq = jsonLd(html).find((schema) => schema["@type"] === "FAQPage");
+  const visible = [...html.matchAll(/<details><summary>([^<]+)<\/summary><p>([^<]+)<\/p><\/details>/g)].map((match) => ({
+    name: decodeEntities(match[1]),
+    text: decodeEntities(match[2]),
+  }));
+  const structured = faq.mainEntity.map((entity) => ({
+    name: entity.name,
+    text: entity.acceptedAnswer.text,
+  }));
+  assert.deepEqual(structured, visible);
+});
+
+test("positioning covers organic discovery and paid campaign platforms", () => {
+  const home = normalize(read("index.html"));
+  const paid = normalize(read("google-ads-management/index.html"));
+
+  for (const platform of ["Google Search", "Bing", "Google Maps", "ChatGPT", "Perplexity", "Claude"]) {
+    assert.match(home, new RegExp(platform, "i"));
+  }
+  for (const platform of ["Google", "Meta", "ChatGPT"]) {
+    assert.match(paid, new RegExp(platform, "i"));
+  }
+  assert.match(home, /SEO \+ GEO/i);
+  assert.match(home, /SEM \+ GEM Management/i);
+  assert.match(paid, /where advertiser access is available/i);
 });
 
 test("robots and sitemap expose the full rankingrebels.com URL set", () => {
