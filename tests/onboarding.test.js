@@ -71,6 +71,25 @@ test("all planned static routes exist as clean index pages", () => {
   }
 });
 
+test("editorial redesign is scoped to public routes only", () => {
+  for (const file of htmlFiles()) {
+    const html = read(file);
+    assert.match(html, /<body class="editorial-site">/, `${file} should use the editorial public-site scope`);
+    assert.match(html, /<meta name="theme-color" content="#050609"\s*\/>/, `${file} should declare the dark browser theme`);
+    assert.match(html, /family=Oswald/, `${file} should load the editorial display typeface`);
+    assert.doesNotMatch(html, /href="#"/, `${file} should not contain placeholder links`);
+  }
+
+  for (const file of [
+    "proposals/winpress/index.html",
+    "proposals/winpress/es/index.html",
+    "proposals/whatsapp-booking/index.html",
+    "proposals/whatsapp-booking/es/index.html",
+  ]) {
+    assert.doesNotMatch(read(file), /<body class="editorial-site">/, `${file} should keep its private proposal presentation`);
+  }
+});
+
 test("all pages use root-domain SEO metadata without /agencia", () => {
   for (const route of routes) {
     const file = routeToFile(route);
@@ -199,7 +218,7 @@ test("all local links resolve to existing clean routes or valid anchors", () => 
 
     for (const href of hrefs) {
       if (/^(https?:|mailto:|tel:)/.test(href)) continue;
-      if (/\.(css|js|png|jpg|jpeg|webp|svg|ico|xml|txt)$/i.test(href)) continue;
+      if (/\.(css|js|png|jpg|jpeg|webp|svg|ico|xml|txt)(?:\?[^#]*)?$/i.test(href)) continue;
 
       if (href.startsWith("#")) {
         assert.equal(ids.has(href.slice(1)), true, `${file} has missing anchor ${href}`);
