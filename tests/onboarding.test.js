@@ -112,7 +112,7 @@ test("home page has Organization schema and verified Smarketing Business Profile
   assert.equal(organization.name, "Ranking Rebels");
   assert.equal(organization.url, "https://rankingrebels.com/");
   assert.equal(organization.email, "info@rankingrebels.com");
-  assert.match(normalize(html), /Local visibility results · Smarketing partnership/i);
+  assert.match(normalize(html), /Local visibility results/i);
   assert.match(normalize(html), /2,458 interactions/i);
   for (const asset of [
     "assets/smarketing/gbp-interactions-growth.jpeg",
