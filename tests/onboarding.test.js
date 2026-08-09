@@ -213,7 +213,7 @@ test("public navigation consistently presents the four service pillars", () => {
     ["/seo-agency/", "SEO + GEO"],
     ["/local-seo/", "Local SEO"],
     ["/google-ads-management/", "SEM + GEM"],
-    ["/#ai-automation", "AI Automation"],
+    ["/#ai-automation", "AI Process Automation"],
   ];
 
   for (const file of htmlFiles()) {
