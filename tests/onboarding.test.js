@@ -208,6 +208,28 @@ test("crawlable navigation and hub links expose core SEO routes", () => {
   assert.match(read("locations/europe/index.html"), /href="\/locations\/europe\/netherlands\/"/);
 });
 
+test("public navigation consistently presents the four service pillars", () => {
+  const serviceLinks = [
+    ["/seo-agency/", "SEO + GEO"],
+    ["/local-seo/", "Local SEO"],
+    ["/google-ads-management/", "SEM + GEM"],
+    ["/#ai-automation", "AI Automation"],
+  ];
+
+  for (const file of htmlFiles()) {
+    const html = read(file);
+    const desktop = html.match(/<nav class="desktop-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || "";
+    const mobile = html.match(/<nav id="mobile-nav" class="mobile-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || "";
+
+    assert.equal((desktop.match(/<a /g) || []).length, 4, `${file} desktop navigation should have four services`);
+    for (const [href, label] of serviceLinks) {
+      const link = new RegExp(`href="${href.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">${label.replace(/\+/g, "\\+")}<\\/a>`);
+      assert.match(desktop, link, `${file} desktop navigation should include ${label}`);
+      assert.match(mobile, link, `${file} mobile navigation should include ${label}`);
+    }
+  }
+});
+
 test("all local links resolve to existing clean routes or valid anchors", () => {
   const fileByRoute = new Map(routes.map((route) => [route, routeToFile(route)]));
 
