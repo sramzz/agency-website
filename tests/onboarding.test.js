@@ -234,6 +234,33 @@ test("Australia hub follows the approved conversion journey with accurate proof"
   assert.doesNotMatch(copy, /(Australian|Australia-specific) (client|project|result)/i);
 });
 
+test("Australia hero uses the supplied accurate map with accessible city links", () => {
+  const html = read("locations/australia/index.html");
+  const css = read("styles.css");
+  const map = html.match(/<aside class="australia-map-stage"[\s\S]*?<\/aside>/)?.[0];
+
+  assert.ok(map, "Australia hero should include the editorial map stage");
+  assert.equal(exists("assets/Maps/australia-svgrepo-com.svg"), true, "supplied Australia SVG should remain available");
+  assert.match(map, /M434\.071,449\.363/, "Tasmania geometry should come from the supplied SVG");
+  assert.match(map, /M511\.913,270\.556/, "mainland geometry should come from the supplied SVG");
+  assert.equal((map.match(/class="market-marker"/g) || []).length, 4, "map should expose four interactive markers");
+  assert.equal((map.match(/class="market-label"/g) || []).length, 4, "desktop map should expose four visible labels");
+
+  let previousCityIndex = -1;
+  for (const city of ["brisbane", "gold-coast", "sydney", "melbourne"]) {
+    const href = `href="/locations/australia/${city}/"`;
+    assert.equal((map.match(new RegExp(href, "g")) || []).length, 2, `${city} should have a map and text link`);
+    const cityIndex = map.lastIndexOf(href);
+    assert.ok(cityIndex > previousCityIndex, `${city} should appear in north-to-south index order`);
+    previousCityIndex = cityIndex;
+  }
+
+  assert.equal((map.match(/tabindex="0" aria-label="Explore [^"]+ search strategy"/g) || []).length, 4);
+  assert.doesNotMatch(map, /map-grid|map-route|map-outline|map-topline|australia-map-panel/);
+  assert.doesNotMatch(css, /\.australia-map \.map-grid|\.australia-map \.map-route|@keyframes australia-route/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.australia-map \.market-pulse[\s\S]*?animation: none/);
+});
+
 test("home page presents AI process automation in business language", () => {
   const html = read("index.html");
   const section = html.match(/<section id="ai-automation"[\s\S]*?<\/section>/)?.[0];

@@ -2622,125 +2622,160 @@ p {
   text-transform: uppercase;
 }
 
-.australia-map-panel {
+.australia-map-stage {
+  position: relative;
   min-width: 0;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  background: rgba(18, 5, 11, 0.76);
-  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.35), 0 0 80px rgba(255, 48, 79, 0.08);
+  align-self: center;
+  isolation: isolate;
 }
 
-.map-topline {
+.australia-map-stage::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 10% 6% 20% 16%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 48, 79, 0.16), rgba(255, 48, 79, 0.025) 48%, transparent 72%);
+  filter: blur(24px);
+}
+
+.map-caption {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  padding: 17px 20px;
-  border-bottom: 1px solid var(--border);
+  gap: 24px;
+  margin-bottom: 8px;
+  padding: 0 3%;
   color: var(--secondary);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.64rem;
+  font-size: 0.62rem;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.map-topline span:first-child {
-  color: var(--neutral);
+.map-caption span:first-child {
+  color: var(--accent);
 }
 
 .australia-map {
   display: block;
-  width: 100%;
+  width: min(100%, 690px);
   height: auto;
-  padding: 8px;
+  overflow: visible;
 }
 
-.australia-map .map-grid {
+.australia-map .map-land path {
+  fill: url(#map-land-fill);
+  stroke: rgba(248, 250, 252, 0.26);
+  stroke-width: 1.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.australia-map .east-coast-accent {
   fill: none;
-  stroke: rgba(148, 163, 184, 0.075);
+  stroke: var(--tertiary);
+  stroke-linecap: round;
+  stroke-width: 2.2;
+  opacity: 0.72;
+  vector-effect: non-scaling-stroke;
+}
+
+.australia-map .market-leader {
+  fill: none;
+  stroke: rgba(248, 250, 252, 0.34);
   stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  transition: stroke 160ms ease;
 }
 
-.australia-map .map-outline,
-.australia-map .tasmania {
-  fill: url(#map-fill);
-  stroke: rgba(255, 255, 255, 0.24);
-  stroke-width: 2;
-}
-
-.australia-map .map-route {
-  fill: none;
-  stroke: var(--tertiary);
-  stroke-width: 2;
-  stroke-dasharray: 8 9;
-  opacity: 0.6;
-  animation: australia-route 12s linear infinite;
-}
-
-.australia-map .map-marker circle:first-child {
-  fill: rgba(255, 48, 79, 0.1);
-  stroke: var(--tertiary);
-  stroke-width: 2;
-  transition: fill 160ms ease, transform 160ms ease;
+.australia-map .market-pulse {
+  fill: rgba(255, 48, 79, 0.12);
+  stroke: rgba(255, 48, 79, 0.72);
+  stroke-width: 1;
   transform-box: fill-box;
   transform-origin: center;
+  animation: market-pulse 2.8s ease-out infinite;
 }
 
-.australia-map .map-marker circle:nth-child(2) {
+.australia-map .market-dot {
   fill: var(--accent);
-  filter: url(#map-glow);
+  filter: url(#market-glow);
 }
 
-.australia-map .map-marker text {
+.australia-map .market-label {
   fill: var(--neutral);
   font-family: "JetBrains Mono", monospace;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.australia-map .map-marker:hover circle:first-child,
-.australia-map .map-marker:focus circle:first-child {
-  fill: rgba(255, 48, 79, 0.34);
-  transform: scale(1.18);
+.australia-map .market-marker:hover .market-leader,
+.australia-map .market-marker:focus .market-leader {
+  stroke: var(--tertiary);
+}
+
+.australia-map .market-marker:hover .market-pulse,
+.australia-map .market-marker:focus .market-pulse {
+  fill: rgba(255, 48, 79, 0.4);
+  stroke: var(--accent);
 }
 
 .map-city-links {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 0;
+  margin: 16px 0 0;
   padding: 0;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
   list-style: none;
 }
 
 .map-city-links li + li {
-  border-left: 1px solid var(--border);
+  border-left: 1px solid rgba(148, 163, 184, 0.16);
 }
 
 .map-city-links a {
   display: grid;
-  place-items: center;
-  min-height: 48px;
-  padding: 10px 6px;
-  color: var(--secondary);
+  grid-template-columns: 1fr auto;
+  gap: 5px 10px;
+  min-height: 72px;
+  padding: 13px clamp(8px, 1.4vw, 15px);
+  transition: background 150ms ease;
+}
+
+.map-city-links span {
+  grid-column: 1 / -1;
+  color: var(--accent);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.06em;
-  text-align: center;
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: background 150ms ease, color 150ms ease;
+}
+
+.map-city-links strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 0.86rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.map-city-links i {
+  color: var(--tertiary);
+  font-style: normal;
 }
 
 .map-city-links a:hover,
 .map-city-links a:focus-visible {
-  background: var(--surface-card);
-  color: var(--neutral);
+  background: rgba(255, 48, 79, 0.08);
 }
 
-@keyframes australia-route {
-  to { stroke-dashoffset: -170; }
+@keyframes market-pulse {
+  0%, 34% { opacity: 0.92; transform: scale(0.72); }
+  70%, 100% { opacity: 0; transform: scale(1.6); }
 }
 
 .metric-strip {
@@ -3127,7 +3162,7 @@ p {
     min-height: auto;
   }
 
-  .australia-map-panel {
+  .australia-map-stage {
     width: min(100%, 680px);
   }
 
@@ -3154,16 +3189,38 @@ p {
     font-size: clamp(3rem, 14vw, 4.25rem);
   }
 
-  .map-city-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .australia-map-stage {
+    overflow: hidden;
   }
 
-  .map-city-links li:nth-child(3) {
+  .australia-map {
+    width: 124%;
+    max-width: none;
+    margin-left: -7%;
+  }
+
+  .australia-map .market-label,
+  .australia-map .market-leader {
+    display: none;
+  }
+
+  .map-city-links {
+    grid-template-columns: 1fr;
+  }
+
+  .map-city-links li + li {
+    border-top: 1px solid rgba(148, 163, 184, 0.16);
     border-left: 0;
   }
 
-  .map-city-links li:nth-child(n + 3) {
-    border-top: 1px solid var(--border);
+  .map-city-links a {
+    grid-template-columns: 78px 1fr auto;
+    align-items: center;
+    min-height: 58px;
+  }
+
+  .map-city-links span {
+    grid-column: auto;
   }
 
   .metric-strip,
@@ -3213,15 +3270,23 @@ p {
 }
 
 @media (max-width: 430px) {
-  .australia-map-panel {
-    margin-inline: -4px;
+  .map-caption {
+    padding-inline: 0;
   }
 
-  .australia-map .map-marker text {
-    font-size: 16px;
+  .map-city-links a {
+    grid-template-columns: 70px 1fr auto;
   }
 
   .australia-page .australia-hero .button {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .australia-map .market-pulse {
+    animation: none;
+    opacity: 0.72;
+    transform: none;
   }
 }
