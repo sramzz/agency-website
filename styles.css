@@ -2671,15 +2671,6 @@ p {
   vector-effect: non-scaling-stroke;
 }
 
-.australia-map .east-coast-accent {
-  fill: none;
-  stroke: var(--tertiary);
-  stroke-linecap: round;
-  stroke-width: 2.2;
-  opacity: 0.72;
-  vector-effect: non-scaling-stroke;
-}
-
 .australia-map .market-leader {
   fill: none;
   stroke: rgba(248, 250, 252, 0.34);
@@ -3194,9 +3185,9 @@ p {
   }
 
   .australia-map {
-    width: 124%;
+    width: 185%;
     max-width: none;
-    margin-left: -7%;
+    margin-left: -64%;
   }
 
   .australia-map .market-label,
