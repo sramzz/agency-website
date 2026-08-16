@@ -2595,3 +2595,633 @@ p {
     animation: none;
   }
 }
+
+/* Australia search command map */
+.australia-page .australia-hero {
+  grid-template-columns: minmax(0, 1.04fr) minmax(440px, 0.96fr);
+  gap: clamp(44px, 6vw, 92px);
+  min-height: min(840px, calc(100vh - 72px));
+  background:
+    radial-gradient(circle at 78% 24%, rgba(255, 48, 79, 0.12), transparent 30%),
+    linear-gradient(112deg, #12050b 0%, #050609 72%);
+}
+
+.australia-page .australia-hero .hero-copy {
+  max-width: 680px;
+}
+
+.australia-page .australia-hero h1 {
+  font-size: clamp(3.65rem, 6.8vw, 5.8rem);
+}
+
+.australia-page .hero-microcopy {
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.australia-map-panel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: rgba(18, 5, 11, 0.76);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.35), 0 0 80px rgba(255, 48, 79, 0.08);
+}
+
+.map-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.map-topline span:first-child {
+  color: var(--neutral);
+}
+
+.australia-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+}
+
+.australia-map .map-grid {
+  fill: none;
+  stroke: rgba(148, 163, 184, 0.075);
+  stroke-width: 1;
+}
+
+.australia-map .map-outline,
+.australia-map .tasmania {
+  fill: url(#map-fill);
+  stroke: rgba(255, 255, 255, 0.24);
+  stroke-width: 2;
+}
+
+.australia-map .map-route {
+  fill: none;
+  stroke: var(--tertiary);
+  stroke-width: 2;
+  stroke-dasharray: 8 9;
+  opacity: 0.6;
+  animation: australia-route 12s linear infinite;
+}
+
+.australia-map .map-marker circle:first-child {
+  fill: rgba(255, 48, 79, 0.1);
+  stroke: var(--tertiary);
+  stroke-width: 2;
+  transition: fill 160ms ease, transform 160ms ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.australia-map .map-marker circle:nth-child(2) {
+  fill: var(--accent);
+  filter: url(#map-glow);
+}
+
+.australia-map .map-marker text {
+  fill: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.australia-map .map-marker:hover circle:first-child,
+.australia-map .map-marker:focus circle:first-child {
+  fill: rgba(255, 48, 79, 0.34);
+  transform: scale(1.18);
+}
+
+.map-city-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
+}
+
+.map-city-links li + li {
+  border-left: 1px solid var(--border);
+}
+
+.map-city-links a {
+  display: grid;
+  place-items: center;
+  min-height: 48px;
+  padding: 10px 6px;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.map-city-links a:hover,
+.map-city-links a:focus-visible {
+  background: var(--surface-card);
+  color: var(--neutral);
+}
+
+@keyframes australia-route {
+  to { stroke-dashoffset: -170; }
+}
+
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.metric-strip article {
+  display: grid;
+  align-content: space-between;
+  min-height: 220px;
+  padding: 26px clamp(18px, 2.5vw, 32px);
+}
+
+.metric-strip article + article {
+  border-left: 1px solid var(--border);
+}
+
+.metric-source,
+.why-index,
+.evidence-card figcaption span {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.metric-strip strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.7rem, 5vw, 4.3rem);
+  line-height: 1;
+}
+
+.metric-strip p {
+  font-size: 0.85rem;
+}
+
+.australia-problem {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(42px, 7vw, 96px);
+}
+
+.problem-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  border-top: 1px solid var(--border);
+}
+
+.problem-list article {
+  display: grid;
+  gap: 12px;
+  min-height: 245px;
+  padding: 26px;
+  border-bottom: 1px solid var(--border);
+}
+
+.problem-list article:nth-child(odd) {
+  border-right: 1px solid var(--border);
+}
+
+.problem-list span,
+.system-flow > li > span,
+.process-track > li > span {
+  color: var(--tertiary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.problem-list p,
+.system-flow p,
+.process-track p,
+.why-grid p,
+.city-card p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.system-section {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(46px, 8vw, 110px);
+}
+
+.system-intro {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+  display: grid;
+  gap: 20px;
+}
+
+.system-flow {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
+}
+
+.system-flow li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.system-flow li div {
+  display: grid;
+  gap: 10px;
+}
+
+.case-study-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  gap: clamp(40px, 7vw, 90px);
+  align-items: end;
+}
+
+.case-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 clamp(32px, 5vw, 52px);
+  border-top: 1px solid var(--border);
+}
+
+.case-metrics div {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.case-metrics div:nth-child(odd) {
+  border-right: 1px solid var(--border);
+}
+
+.case-metrics dt {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.case-metrics dd {
+  margin: 4px 0 0;
+  color: var(--secondary);
+  font-size: 0.76rem;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: 18px;
+}
+
+.evidence-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface-card);
+}
+
+.evidence-card-featured {
+  grid-row: span 2;
+}
+
+.evidence-card a {
+  display: block;
+  min-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.evidence-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  max-height: 380px;
+  object-fit: contain;
+  transition: transform 220ms ease;
+}
+
+.evidence-card-featured img {
+  min-height: 430px;
+}
+
+.evidence-card:hover img {
+  transform: scale(1.015);
+}
+
+.evidence-card figcaption {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 22px;
+}
+
+.evidence-card figcaption strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.evidence-card figcaption p {
+  font-size: 0.8rem;
+}
+
+.australia-case-study .action-row {
+  margin-top: 24px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+}
+
+.why-grid article {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-height: 280px;
+  padding: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.why-grid article + article {
+  border-left: 1px solid var(--border);
+}
+
+.process-track {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
+}
+
+.process-track li {
+  display: grid;
+  align-content: start;
+  gap: 17px;
+  min-height: 265px;
+  padding: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.process-track li + li {
+  border-left: 1px solid var(--border);
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.city-card {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  min-height: 300px;
+  padding: clamp(26px, 4vw, 42px);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface-card);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.city-card::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  width: 230px;
+  height: 230px;
+  border: 1px solid rgba(255, 48, 79, 0.22);
+  border-radius: 50%;
+  box-shadow: 0 0 0 30px rgba(255, 48, 79, 0.035), 0 0 0 60px rgba(255, 48, 79, 0.02);
+}
+
+.city-card:hover {
+  border-color: rgba(255, 48, 79, 0.64);
+  transform: translateY(-4px);
+}
+
+.city-card > span,
+.city-card > i {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.city-card > strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.city-card > p {
+  max-width: 430px;
+}
+
+.city-card > i {
+  align-self: end;
+  color: var(--neutral);
+}
+
+.australia-pricing .price-card {
+  min-height: 610px;
+}
+
+.australia-final-cta > p:not(.eyebrow) {
+  max-width: 620px;
+}
+
+.australia-final-cta .hero-actions {
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .australia-page .australia-hero {
+    grid-template-columns: minmax(0, 0.9fr) minmax(400px, 1.1fr);
+    gap: 38px;
+  }
+
+  .metric-strip,
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-strip article:nth-child(3),
+  .why-grid article:nth-child(3) {
+    border-left: 0;
+  }
+
+  .metric-strip article:nth-child(-n + 2),
+  .why-grid article:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .process-track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .process-track li:nth-child(4) {
+    border-left: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .australia-page .australia-hero,
+  .australia-problem,
+  .system-section,
+  .case-study-lead {
+    grid-template-columns: 1fr;
+  }
+
+  .australia-page .australia-hero {
+    min-height: auto;
+  }
+
+  .australia-map-panel {
+    width: min(100%, 680px);
+  }
+
+  .system-intro {
+    position: static;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .evidence-card-featured {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .evidence-card-featured img {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .australia-page .australia-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.25rem);
+  }
+
+  .map-city-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .map-city-links li:nth-child(3) {
+    border-left: 0;
+  }
+
+  .map-city-links li:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
+  }
+
+  .metric-strip,
+  .problem-list,
+  .case-metrics,
+  .evidence-grid,
+  .why-grid,
+  .process-track,
+  .city-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-strip article,
+  .problem-list article,
+  .why-grid article,
+  .process-track li {
+    min-height: auto;
+  }
+
+  .metric-strip article + article,
+  .problem-list article:nth-child(odd),
+  .case-metrics div:nth-child(odd),
+  .why-grid article + article,
+  .process-track li + li {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .metric-strip article {
+    gap: 24px;
+  }
+
+  .evidence-card-featured {
+    grid-column: auto;
+  }
+
+  .evidence-card img,
+  .evidence-card-featured img {
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 1.65 / 1;
+  }
+
+  .city-card {
+    min-height: 270px;
+  }
+}
+
+@media (max-width: 430px) {
+  .australia-map-panel {
+    margin-inline: -4px;
+  }
+
+  .australia-map .map-marker text {
+    font-size: 16px;
+  }
+
+  .australia-page .australia-hero .button {
+    width: 100%;
+  }
+}
