@@ -2657,9 +2657,14 @@ p {
   color: var(--accent);
 }
 
+.map-composition {
+  position: relative;
+  min-height: clamp(410px, 36vw, 470px);
+}
+
 .australia-map {
   display: block;
-  width: min(100%, 690px);
+  width: min(70%, 500px);
   height: auto;
   overflow: visible;
 }
@@ -2711,6 +2716,79 @@ p {
 .australia-map .market-marker:focus .market-pulse {
   fill: rgba(255, 48, 79, 0.4);
   stroke: var(--accent);
+}
+
+.overview-map .market-label,
+.overview-map .market-leader {
+  display: none;
+}
+
+.map-zoom-frame {
+  position: absolute;
+  right: -4%;
+  bottom: 0;
+  width: min(52%, 300px);
+  aspect-ratio: 1;
+}
+
+.map-zoom-frame::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 18%;
+  left: -25%;
+  width: 34%;
+  height: 2px;
+  background: var(--tertiary);
+  opacity: 0.72;
+  transform: rotate(-30deg);
+  transform-origin: right center;
+}
+
+.map-zoom-window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid var(--tertiary);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 42% 50%, rgba(255, 48, 79, 0.12), transparent 52%),
+    rgba(5, 6, 9, 0.98);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45), 0 0 38px rgba(255, 48, 79, 0.08);
+}
+
+.map-zoom-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map-zoom-svg .zoom-land {
+  fill: #17090e;
+  stroke: rgba(248, 250, 252, 0.25);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-zoom-svg .zoom-marker path {
+  fill: none;
+  stroke: rgba(248, 250, 252, 0.42);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.map-zoom-svg .zoom-marker circle {
+  fill: var(--accent);
+  filter: drop-shadow(0 0 3px rgba(255, 138, 0, 0.85));
+}
+
+.map-zoom-svg .zoom-marker text {
+  fill: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .map-city-links {
@@ -3184,14 +3262,26 @@ p {
     overflow: hidden;
   }
 
-  .australia-map {
-    width: 185%;
-    max-width: none;
-    margin-left: -64%;
+  .map-composition {
+    display: grid;
+    min-height: 0;
   }
 
-  .australia-map .market-label,
-  .australia-map .market-leader {
+  .australia-map {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .map-zoom-frame {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(92%, 350px);
+    margin: 12px auto 0;
+  }
+
+  .map-zoom-frame::before {
     display: none;
   }
 

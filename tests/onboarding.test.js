@@ -240,7 +240,7 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   const map = html.match(/<aside class="australia-map-stage"[\s\S]*?<\/aside>/)?.[0];
 
   assert.ok(map, "Australia hero should include the editorial map stage");
-  assert.match(html, /href="\/styles\.css\?v=20260816-map3"/, "Australia page should bust the previous map stylesheet cache");
+  assert.match(html, /href="\/styles\.css\?v=20260816-map6"/, "Australia page should bust the previous map stylesheet cache");
   assert.equal(exists("assets/Maps/australia-svgrepo-com.svg"), true, "supplied Australia SVG should remain available");
   assert.match(map, /M434\.071,449\.363/, "Tasmania geometry should come from the supplied SVG");
   assert.match(map, /M511\.913,270\.556/, "mainland geometry should come from the supplied SVG");
@@ -248,7 +248,11 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   assert.equal((map.match(/class="market-label"/g) || []).length, 4, "desktop map should expose four visible labels");
   assert.equal((map.match(/class="market-label" fill="#f8fafc"/g) || []).length, 4, "SVG labels should remain legible before CSS loads");
   assert.doesNotMatch(map, /east-coast-accent/, "map should not draw an artificial east-coast line");
-  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.australia-map \{[\s\S]*?width: 185%[\s\S]*?margin-left: -64%/, "mobile map should crop into the east coast");
+  assert.match(map, /class="australia-map overview-map" viewBox="-10 0 540 512"/, "overview should show the full country");
+  assert.match(map, /class="map-zoom-frame"[\s\S]*?class="map-zoom-svg" viewBox="390 220 280 280"/, "map should include a separate east-coast magnifier");
+  assert.match(map, /href="#australia-mainland-shape"/);
+  assert.match(map, /href="#australia-tasmania-shape"/);
+  assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.australia-map \{[\s\S]*?width: 100%[\s\S]*?margin-left: 0/, "mobile should retain the full-country overview");
 
   let previousCityIndex = -1;
   for (const city of ["brisbane", "gold-coast", "sydney", "melbourne"]) {
