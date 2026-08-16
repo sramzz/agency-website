@@ -240,11 +240,13 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   const map = html.match(/<aside class="australia-map-stage"[\s\S]*?<\/aside>/)?.[0];
 
   assert.ok(map, "Australia hero should include the editorial map stage");
+  assert.match(html, /href="\/styles\.css\?v=20260816-map2"/, "Australia page should bust the pre-map stylesheet cache");
   assert.equal(exists("assets/Maps/australia-svgrepo-com.svg"), true, "supplied Australia SVG should remain available");
   assert.match(map, /M434\.071,449\.363/, "Tasmania geometry should come from the supplied SVG");
   assert.match(map, /M511\.913,270\.556/, "mainland geometry should come from the supplied SVG");
   assert.equal((map.match(/class="market-marker"/g) || []).length, 4, "map should expose four interactive markers");
   assert.equal((map.match(/class="market-label"/g) || []).length, 4, "desktop map should expose four visible labels");
+  assert.equal((map.match(/class="market-label" fill="#f8fafc"/g) || []).length, 4, "SVG labels should remain legible before CSS loads");
 
   let previousCityIndex = -1;
   for (const city of ["brisbane", "gold-coast", "sydney", "melbourne"]) {
