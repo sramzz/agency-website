@@ -1407,6 +1407,1195 @@ p {
   }
 }
 
+/* Melbourne commercial landing page */
+.melbourne-page .skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  padding: 10px 14px;
+  background: var(--neutral);
+  color: var(--primary);
+  font-weight: 700;
+  transform: translateY(-160%);
+}
+
+.melbourne-page .skip-link:focus {
+  transform: translateY(0);
+}
+
+.melbourne-page .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.melbourne-page main > section {
+  scroll-margin-top: 72px;
+}
+
+.melbourne-page .melbourne-hero {
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  min-height: min(850px, calc(100vh - 72px));
+  padding-top: clamp(70px, 7vw, 100px);
+  background:
+    radial-gradient(circle at 82% 28%, rgba(255, 48, 79, 0.13), transparent 28%),
+    var(--primary);
+}
+
+.melbourne-page .melbourne-hero h1 {
+  max-width: 780px;
+  font-size: clamp(3.5rem, 6vw, 5.25rem);
+}
+
+.melbourne-page .melbourne-hero h1 span,
+.melbourne-page .audit-copy h2 span,
+.melbourne-page .rebel-section h2 span,
+.melbourne-page .problem-close span {
+  color: var(--tertiary);
+}
+
+.melbourne-page .hero-support {
+  max-width: 660px;
+  color: #c7ccd4;
+  font-size: 0.95rem;
+}
+
+.melbourne-page .intelligence-panel {
+  position: relative;
+  min-width: 0;
+  padding: clamp(22px, 3vw, 34px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 48, 79, 0.45);
+  border-radius: 18px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    #0c080c;
+  background-size: 32px 32px;
+  box-shadow: 0 28px 90px rgba(255, 48, 79, 0.14);
+}
+
+.melbourne-page .intelligence-panel::before {
+  content: "";
+  position: absolute;
+  top: 16%;
+  right: -55px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(255, 48, 79, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 70px rgba(255, 48, 79, 0.08);
+}
+
+.melbourne-page .intelligence-topline,
+.melbourne-page .intelligence-city > span,
+.melbourne-page .intelligence-output,
+.melbourne-page .signal-list {
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;
+}
+
+.melbourne-page .intelligence-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+}
+
+.melbourne-page .intelligence-city {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 42px 0 32px;
+}
+
+.melbourne-page .intelligence-city p {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.melbourne-page .intelligence-city > span:last-child {
+  grid-column: 2;
+  color: var(--accent);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+}
+
+.melbourne-page .signal-dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--tertiary);
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 7px rgba(255, 48, 79, 0.09);
+}
+
+.melbourne-page .signal-dot::after {
+  content: "";
+  position: absolute;
+  inset: -9px;
+  border: 1px solid rgba(255, 48, 79, 0.55);
+  border-radius: inherit;
+  animation: melbourne-signal 2.6s ease-out infinite;
+}
+
+.melbourne-page .signal-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.melbourne-page .signal-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+  border-top: 1px solid var(--border);
+}
+
+.melbourne-page .signal-list dt,
+.melbourne-page .signal-list dd {
+  margin: 0;
+}
+
+.melbourne-page .signal-list dt {
+  color: #c7ccd4;
+  font-size: 0.69rem;
+  letter-spacing: 0.08em;
+}
+
+.melbourne-page .signal-list dd {
+  color: var(--tertiary);
+  font-size: 1.2rem;
+}
+
+.melbourne-page .intelligence-output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid rgba(255, 48, 79, 0.35);
+  background: rgba(255, 48, 79, 0.08);
+  color: var(--neutral);
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+}
+
+.melbourne-page .intelligence-output strong {
+  color: var(--tertiary);
+  font-size: 1.45rem;
+}
+
+.melbourne-page .results-strip {
+  background: #0b070a !important;
+}
+
+.melbourne-page .results-strip .proof-intro {
+  align-items: end;
+  margin-bottom: 36px;
+}
+
+.melbourne-page .results-strip .section-heading {
+  margin-bottom: 0;
+}
+
+.melbourne-page .results-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 24px;
+}
+
+.melbourne-page .results-metrics div {
+  min-width: 0;
+  padding: 8px clamp(16px, 2.8vw, 34px) 20px;
+  border-left: 1px solid var(--border);
+}
+
+.melbourne-page .results-metrics div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.melbourne-page .results-metrics dt {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.55rem, 5vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.melbourne-page .results-metrics div:nth-child(2) dt {
+  color: var(--tertiary);
+}
+
+.melbourne-page .results-metrics dd {
+  margin: 10px 0 0;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .problem-section {
+  padding-bottom: 0;
+  background: var(--primary) !important;
+}
+
+.melbourne-page .problem-states,
+.melbourne-page .process-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.melbourne-page .problem-states {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.melbourne-page .problem-states li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  min-height: 220px;
+  padding: 30px;
+  border-left: 1px solid var(--border);
+}
+
+.melbourne-page .problem-states li:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.melbourne-page .problem-states li > span,
+.melbourne-page .principles-grid article > span,
+.melbourne-page .process-list li > span {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+}
+
+.melbourne-page .problem-states h3 {
+  margin-bottom: 16px;
+}
+
+.melbourne-page .problem-close {
+  max-width: 1000px;
+  padding: clamp(70px, 9vw, 118px) 0;
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.8rem, 7vw, 5.6rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.melbourne-page .discovery-system-section {
+  background:
+    radial-gradient(circle at 78% 54%, rgba(255, 48, 79, 0.12), transparent 31%),
+    var(--surface) !important;
+}
+
+.melbourne-page .system-map {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) 70px minmax(240px, 1fr) 70px minmax(180px, 0.8fr);
+  align-items: center;
+  gap: 12px;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    rgba(5, 6, 9, 0.7);
+  background-size: 38px 38px;
+}
+
+.melbourne-page .system-inputs {
+  display: grid;
+  gap: 9px;
+}
+
+.melbourne-page .system-inputs span {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  background: var(--surface-card);
+  color: #c7ccd4;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .system-connector {
+  position: relative;
+  height: 1px;
+  overflow: visible;
+  background: linear-gradient(90deg, var(--border), var(--tertiary), var(--border));
+  background-size: 200% 100%;
+  animation: melbourne-flow 3s linear infinite;
+}
+
+.melbourne-page .system-connector span {
+  position: absolute;
+  top: -4px;
+  right: -1px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  box-shadow: 0 0 15px rgba(255, 48, 79, 0.8);
+}
+
+.melbourne-page .system-core {
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--tertiary);
+  background: rgba(255, 48, 79, 0.07);
+  text-align: center;
+  box-shadow: 0 0 55px rgba(255, 48, 79, 0.1);
+}
+
+.melbourne-page .system-core p,
+.melbourne-page .system-outcome strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.melbourne-page .system-core ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 12px;
+  margin: 22px 0 0;
+  padding: 0;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.melbourne-page .system-outcome {
+  display: grid;
+  gap: 12px;
+  padding: 28px 20px;
+  border-top: 1px solid var(--tertiary);
+  border-bottom: 1px solid var(--tertiary);
+}
+
+.melbourne-page .system-outcome span {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .optimise-section {
+  background: var(--primary) !important;
+}
+
+.melbourne-page .optimise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.melbourne-page .optimise-grid article {
+  min-height: 240px;
+  padding: clamp(24px, 4vw, 42px);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(255, 48, 79, 0.035), transparent 55%);
+}
+
+.melbourne-page .optimise-grid h3 {
+  margin: 30px 0 14px;
+  font-size: clamp(1.65rem, 3vw, 2.3rem);
+}
+
+.melbourne-page .optimise-grid small {
+  display: block;
+  margin-top: 20px;
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.61rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .case-study-section,
+.melbourne-page .market-section,
+.melbourne-page .audit-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  gap: clamp(42px, 7vw, 90px);
+  align-items: start;
+}
+
+.melbourne-page .case-study-section {
+  background: var(--surface) !important;
+}
+
+.melbourne-page .case-label {
+  width: fit-content;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 138, 0, 0.45);
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .case-context {
+  display: grid;
+  gap: 0;
+  margin: 0 0 28px;
+}
+
+.melbourne-page .case-context div {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+
+.melbourne-page .case-context dt {
+  margin-bottom: 7px;
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.melbourne-page .case-context dd {
+  margin: 0;
+  color: var(--secondary);
+}
+
+.melbourne-page .case-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.melbourne-page .case-metrics div {
+  min-height: 210px;
+  padding: clamp(24px, 4vw, 38px);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.melbourne-page .case-metrics dt {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.melbourne-page .case-metrics dd {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .case-metrics dd span {
+  color: var(--tertiary);
+}
+
+.melbourne-page .rebel-section {
+  background:
+    linear-gradient(115deg, rgba(255, 48, 79, 0.13), transparent 42%),
+    var(--primary) !important;
+}
+
+.melbourne-page .rebel-section h2 {
+  max-width: 1080px;
+  margin-top: 24px;
+  font-size: clamp(3rem, 8vw, 6.4rem);
+  line-height: 0.9;
+}
+
+.melbourne-page .rebel-statement {
+  margin: 28px 0 52px;
+  color: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+}
+
+.melbourne-page .principles-grid article {
+  min-height: 210px;
+  padding: 28px 24px;
+  border-left: 1px solid var(--border);
+}
+
+.melbourne-page .principles-grid article:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.melbourne-page .principles-grid h3 {
+  margin: 34px 0 14px;
+  font-size: 1.2rem;
+}
+
+.melbourne-page .process-section {
+  background: var(--surface) !important;
+}
+
+.melbourne-page .process-list {
+  position: relative;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+}
+
+.melbourne-page .process-list::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--tertiary), var(--border));
+}
+
+.melbourne-page .process-list li {
+  position: relative;
+  min-height: 220px;
+  padding: 50px 30px 24px 0;
+}
+
+.melbourne-page .process-list li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--tertiary);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.melbourne-page .process-list h3 {
+  margin: 22px 0 14px;
+  font-size: 1.7rem;
+}
+
+.melbourne-page .market-section {
+  align-items: center;
+  background: var(--primary) !important;
+}
+
+.melbourne-page .market-note {
+  padding-left: 16px;
+  border-left: 2px solid var(--tertiary);
+  color: #c7ccd4;
+  font-size: 0.86rem;
+}
+
+.melbourne-page .market-network {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at center, rgba(255, 48, 79, 0.1), transparent 35%),
+    linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px);
+  background-size: auto, 34px 34px, 34px 34px;
+}
+
+.melbourne-page .market-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--tertiary);
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 55px rgba(255, 48, 79, 0.2);
+  transform: translate(-50%, -50%);
+}
+
+.melbourne-page .market-core span {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.1em;
+}
+
+.melbourne-page .market-core strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.melbourne-page .market-network ul {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.melbourne-page .market-network li {
+  position: absolute;
+  z-index: 2;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  background: rgba(5, 6, 9, 0.92);
+  color: #c7ccd4;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .market-network li:nth-child(1) { top: 11%; left: 10%; }
+.melbourne-page .market-network li:nth-child(2) { top: 13%; right: 10%; }
+.melbourne-page .market-network li:nth-child(3) { top: 42%; left: 4%; }
+.melbourne-page .market-network li:nth-child(4) { top: 43%; right: 4%; }
+.melbourne-page .market-network li:nth-child(5) { bottom: 11%; left: 11%; }
+.melbourne-page .market-network li:nth-child(6) { bottom: 12%; right: 7%; }
+.melbourne-page .market-network li:nth-child(7) { bottom: 3%; left: 42%; }
+
+.melbourne-page .market-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 48, 79, 0.6), transparent);
+  transform-origin: center;
+}
+
+.melbourne-page .line-one { transform: translate(-50%, -50%) rotate(28deg); }
+.melbourne-page .line-two { transform: translate(-50%, -50%) rotate(-34deg); }
+
+.melbourne-page .solutions-section {
+  background: var(--surface) !important;
+}
+
+.melbourne-page .solutions-list {
+  border-top: 1px solid var(--border);
+}
+
+.melbourne-page .solutions-list article {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.5fr) minmax(0, 1.35fr) auto;
+  gap: 30px;
+  align-items: center;
+  min-height: 150px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.melbourne-page .solutions-list article > span,
+.melbourne-page .solutions-list article > a {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .solutions-list h3 {
+  margin-bottom: 9px;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.melbourne-page .solutions-list article > a {
+  color: var(--neutral);
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.melbourne-page .solutions-list article > a:hover {
+  color: var(--tertiary);
+  transform: translateX(4px);
+}
+
+.melbourne-page .engagement-section {
+  background: var(--primary) !important;
+}
+
+.melbourne-page .engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.melbourne-page .engagement-grid article {
+  position: relative;
+  min-height: 470px;
+  padding: clamp(24px, 3vw, 32px);
+  border: 1px solid var(--border);
+  background: var(--surface-card);
+}
+
+.melbourne-page .engagement-grid article.featured {
+  border-color: rgba(255, 48, 79, 0.75);
+  background: linear-gradient(180deg, rgba(255, 48, 79, 0.14), var(--surface-card) 45%);
+  box-shadow: 0 22px 60px rgba(255, 48, 79, 0.1);
+}
+
+.melbourne-page .engagement-grid h3 {
+  min-height: 86px;
+  margin: 28px 0;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+}
+
+.melbourne-page .plan-badge {
+  width: fit-content;
+  margin: -10px 0 20px;
+  padding: 7px 9px;
+  background: var(--tertiary);
+  color: #fff;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .engagement-section > .action-row {
+  margin-top: 30px;
+}
+
+.melbourne-page .faq-section {
+  background: var(--surface) !important;
+}
+
+.melbourne-page .audit-section {
+  align-items: center;
+  background:
+    radial-gradient(70% 100% at 10% 15%, rgba(255, 48, 79, 0.18), transparent 60%),
+    var(--primary) !important;
+}
+
+.melbourne-page .audit-copy {
+  display: grid;
+  gap: 24px;
+}
+
+.melbourne-page .audit-copy h2 {
+  font-size: clamp(2.9rem, 6vw, 5rem);
+}
+
+.melbourne-page .audit-copy .button {
+  width: fit-content;
+}
+
+.melbourne-page .audit-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid rgba(255, 48, 79, 0.42);
+  background: rgba(18, 5, 11, 0.88);
+  box-shadow: 0 28px 80px rgba(255, 48, 79, 0.1);
+}
+
+.melbourne-page .form-heading,
+.melbourne-page .form-field-wide {
+  grid-column: 1 / -1;
+}
+
+.melbourne-page .form-heading {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.melbourne-page .form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.melbourne-page .form-field label {
+  color: #c7ccd4;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.melbourne-page .form-field label span {
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+.melbourne-page .form-field input,
+.melbourne-page .form-field select {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 13px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: var(--primary);
+  color: var(--neutral);
+  font: inherit;
+  color-scheme: dark;
+}
+
+.melbourne-page .form-field input:focus,
+.melbourne-page .form-field select:focus {
+  border-color: var(--tertiary);
+  outline: 2px solid rgba(255, 48, 79, 0.18);
+  outline-offset: 0;
+}
+
+.melbourne-page .audit-form button {
+  margin-top: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.melbourne-page .form-microcopy,
+.melbourne-page .form-status {
+  font-size: 0.76rem;
+}
+
+.melbourne-page .form-status:not(:empty) {
+  padding: 10px 12px;
+  border-left: 2px solid var(--accent);
+  color: var(--neutral);
+}
+
+@keyframes melbourne-signal {
+  0% { opacity: 0.8; transform: scale(0.55); }
+  75%, 100% { opacity: 0; transform: scale(1.45); }
+}
+
+@keyframes melbourne-flow {
+  to { background-position: -200% 0; }
+}
+
+@media (max-width: 1100px) {
+  .melbourne-page .melbourne-hero,
+  .melbourne-page .case-study-section,
+  .melbourne-page .market-section,
+  .melbourne-page .audit-section {
+    grid-template-columns: minmax(0, 1fr) minmax(330px, 0.85fr);
+    gap: 42px;
+  }
+
+  .melbourne-page .system-map {
+    grid-template-columns: minmax(150px, 0.8fr) 38px minmax(210px, 1fr) 38px minmax(150px, 0.8fr);
+    padding: 28px;
+  }
+
+  .melbourne-page .principles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .melbourne-page .principles-grid article:nth-child(3) {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .melbourne-page .principles-grid article:nth-child(4) {
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 900px) {
+  .melbourne-page .melbourne-hero,
+  .melbourne-page .case-study-section,
+  .melbourne-page .market-section,
+  .melbourne-page .audit-section {
+    grid-template-columns: 1fr;
+  }
+
+  .melbourne-page .intelligence-panel {
+    max-width: 680px;
+  }
+
+  .melbourne-page .system-map {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .melbourne-page .system-inputs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .melbourne-page .system-inputs span:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .melbourne-page .system-connector {
+    justify-self: center;
+    width: 1px;
+    height: 42px;
+    background: linear-gradient(180deg, var(--border), var(--tertiary), var(--border));
+    background-size: 100% 200%;
+  }
+
+  .melbourne-page .system-connector span {
+    top: auto;
+    right: -4px;
+    bottom: -1px;
+  }
+
+  .melbourne-page .system-outcome {
+    text-align: center;
+  }
+
+  .melbourne-page .engagement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .melbourne-page .engagement-grid article,
+  .melbourne-page .engagement-grid h3 {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .melbourne-page .header-actions {
+    display: inline-flex;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 700px) {
+  .melbourne-page .melbourne-hero {
+    min-height: 0;
+  }
+
+  .melbourne-page .melbourne-hero h1 {
+    font-size: clamp(3rem, 14vw, 4rem);
+  }
+
+  .melbourne-page .results-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .melbourne-page .results-metrics div {
+    padding: 22px 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .melbourne-page .results-metrics div:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .melbourne-page .problem-states,
+  .melbourne-page .optimise-grid,
+  .melbourne-page .case-metrics,
+  .melbourne-page .process-list {
+    grid-template-columns: 1fr;
+  }
+
+  .melbourne-page .problem-states li,
+  .melbourne-page .problem-states li:first-child {
+    min-height: 0;
+    padding: 26px 0;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+
+  .melbourne-page .problem-states li:first-child {
+    border-top: 0;
+  }
+
+  .melbourne-page .problem-close {
+    padding-block: 70px;
+  }
+
+  .melbourne-page .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .melbourne-page .principles-grid article,
+  .melbourne-page .principles-grid article:first-child,
+  .melbourne-page .principles-grid article:nth-child(3) {
+    min-height: 0;
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+    border-left: 0;
+  }
+
+  .melbourne-page .process-list::before {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 6px;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(180deg, var(--tertiary), var(--border));
+  }
+
+  .melbourne-page .process-list li {
+    min-height: 0;
+    padding: 0 0 42px 38px;
+  }
+
+  .melbourne-page .process-list li::before {
+    top: 2px;
+  }
+
+  .melbourne-page .process-list h3 {
+    margin-top: 12px;
+  }
+
+  .melbourne-page .market-network {
+    min-height: 0;
+    padding: 28px;
+  }
+
+  .melbourne-page .market-core {
+    position: static;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 28px;
+    transform: none;
+  }
+
+  .melbourne-page .market-network ul {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .melbourne-page .market-network li {
+    position: static;
+  }
+
+  .melbourne-page .market-network li:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .melbourne-page .market-line {
+    display: none;
+  }
+
+  .melbourne-page .solutions-list article {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 30px 0;
+  }
+
+  .melbourne-page .solutions-list article > a {
+    width: fit-content;
+  }
+
+  .melbourne-page .audit-copy .button {
+    width: 100%;
+  }
+
+  .melbourne-page .audit-form {
+    grid-template-columns: 1fr;
+  }
+
+  .melbourne-page .form-heading,
+  .melbourne-page .form-field-wide {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .melbourne-page .site-header {
+    gap: 10px;
+  }
+
+  .melbourne-page .header-cta {
+    min-height: 40px;
+    padding: 10px 12px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .melbourne-page .intelligence-panel,
+  .melbourne-page .system-map,
+  .melbourne-page .audit-form {
+    padding: 20px;
+  }
+
+  .melbourne-page .intelligence-city p {
+    font-size: 2.65rem;
+  }
+
+  .melbourne-page .system-inputs,
+  .melbourne-page .market-network ul {
+    grid-template-columns: 1fr;
+  }
+
+  .melbourne-page .system-inputs span:last-child,
+  .melbourne-page .market-network li:last-child {
+    grid-column: 1;
+  }
+
+  .melbourne-page .results-metrics dt {
+    font-size: 2.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .melbourne-page .signal-dot::after,
+  .melbourne-page .system-connector {
+    animation: none;
+  }
+}
+
 /* Australia search command map */
 .australia-page .australia-hero {
   grid-template-columns: minmax(0, 1.04fr) minmax(440px, 0.96fr);
