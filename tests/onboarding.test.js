@@ -171,6 +171,69 @@ test("plans appear only on the Australia hub", () => {
   assert.equal((australia.match(heading) || []).length, 1);
 });
 
+test("Australia hub follows the approved conversion journey with accurate proof", () => {
+  const html = read("locations/australia/index.html");
+  const copy = normalize(html);
+  const sectionMarkers = [
+    'id="verified-results"',
+    'class="section australia-problem"',
+    'class="section system-section"',
+    'id="australia-services-title"',
+    'class="section australia-case-study"',
+    'class="section why-rebels"',
+    'class="section australia-process"',
+    'class="section australia-cities"',
+    'id="plans"',
+    'id="faq"',
+    'class="section final-cta australia-final-cta"',
+  ];
+
+  let previousIndex = -1;
+  for (const marker of sectionMarkers) {
+    const markerIndex = html.indexOf(marker);
+    assert.ok(markerIndex > previousIndex, `${marker} should appear in the approved order`);
+    previousIndex = markerIndex;
+  }
+
+  assert.match(html, /<title>SEO &amp; GEO Agency Australia \| Ranking Rebels<\/title>/);
+  assert.match(html, /name="robots" content="index, follow,/);
+  assert.match(html, /property="og:locale" content="en_AU"/);
+  assert.match(html, /name="twitter:card" content="summary"/);
+  assert.match(html, /"@type": "WebPage"/);
+  assert.match(html, /"@type": "Service"/);
+  assert.match(html, /"areaServed": \{ "@type": "Country", "name": "Australia" \}/);
+  assert.match(html, /"@type": "FAQPage"/);
+  assert.equal((html.match(/<details>/g) || []).length, 6);
+
+  for (const city of ["melbourne", "sydney", "brisbane", "gold-coast"]) {
+    assert.match(html, new RegExp(`href="/locations/australia/${city}/"`));
+  }
+
+  for (const asset of [
+    "assets/resultsGoogleAds/GoogleAdsResults.png",
+    "assets/resultsGoogleAds/Resultados.png",
+    "assets/case-studies/gbp-interactions-growth.jpeg",
+  ]) {
+    assert.equal(exists(asset), true, `${asset} should exist`);
+    assert.match(html, new RegExp(`src="/${asset}"`));
+  }
+
+  for (const expected of [
+    "9.06K",
+    "457K",
+    "2,458",
+    "1,198",
+    "AUD 1,080-1,480/month",
+    "AUD 1,680-1,980/month",
+    "AUD 2,580-3,480/month",
+  ]) {
+    assert.equal(copy.includes(expected), true, `Australia hub should include ${expected}`);
+  }
+
+  assert.doesNotMatch(copy, /Google Ads (results|performance)/i);
+  assert.doesNotMatch(copy, /(Australian|Australia-specific) (client|project|result)/i);
+});
+
 test("home page presents AI process automation in business language", () => {
   const html = read("index.html");
   const section = html.match(/<section id="ai-automation"[\s\S]*?<\/section>/)?.[0];
@@ -311,7 +374,7 @@ test("public pages have unique, bounded SEO metadata and one H1", () => {
 });
 
 test("JSON-LD parses, uses approved public types, and service pages describe their canonical service", () => {
-  const allowedTypes = new Set(["Organization", "WebSite", "FAQPage", "Service"]);
+  const allowedTypes = new Set(["Organization", "WebSite", "WebPage", "FAQPage", "Service"]);
   const serviceRoutes = [
     "/seo-agency/",
     "/local-seo/",
