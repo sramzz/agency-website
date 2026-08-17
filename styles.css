@@ -2733,24 +2733,10 @@ p {
 .map-zoom-frame {
   position: absolute;
   top: 50%;
-  right: -3%;
+  right: 4%;
   width: min(62%, 370px);
   aspect-ratio: 1;
   transform: translateY(-50%);
-}
-
-.map-zoom-frame::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 18%;
-  left: -25%;
-  width: 34%;
-  height: 2px;
-  background: var(--tertiary);
-  opacity: 0.72;
-  transform: rotate(-30deg);
-  transform-origin: right center;
 }
 
 .map-zoom-window {
@@ -3288,10 +3274,6 @@ p {
     width: 58%;
     max-width: 240px;
     transform: translateY(-50%);
-  }
-
-  .map-zoom-frame::before {
-    display: none;
   }
 
   .map-city-links {

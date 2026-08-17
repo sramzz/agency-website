@@ -240,7 +240,7 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   const map = html.match(/<aside class="australia-map-stage"[\s\S]*?<\/aside>/)?.[0];
 
   assert.ok(map, "Australia hero should include the editorial map stage");
-  assert.match(html, /href="\/styles\.css\?v=20260816-map7"/, "Australia page should bust the previous map stylesheet cache");
+  assert.match(html, /href="\/styles\.css\?v=20260817-map8"/, "Australia page should bust the previous map stylesheet cache");
   assert.equal(exists("assets/Maps/australia-svgrepo-com.svg"), true, "supplied Australia SVG should remain available");
   assert.match(map, /M434\.071,449\.363/, "Tasmania geometry should come from the supplied SVG");
   assert.match(map, /M511\.913,270\.556/, "mainland geometry should come from the supplied SVG");
@@ -252,6 +252,7 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   assert.match(map, /class="map-zoom-frame"[\s\S]*?class="map-zoom-svg" viewBox="390 220 280 280"/, "map should include a separate east-coast magnifier");
   assert.match(map, /href="#australia-mainland-shape"/);
   assert.match(map, /href="#australia-tasmania-shape"/);
+  assert.doesNotMatch(css, /\.map-zoom-frame::before/, "magnifier should not include a decorative connector line");
   assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.overview-map \{[\s\S]*?width: 48%/, "mobile should retain a compact full-country overview");
   assert.match(css, /@media \(max-width: 700px\)[\s\S]*?\.map-zoom-frame \{[\s\S]*?width: 58%[\s\S]*?max-width: 240px/, "mobile should keep the magnifier compact beside the overview");
 
