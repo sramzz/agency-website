@@ -2659,14 +2659,21 @@ p {
 
 .map-composition {
   position: relative;
-  min-height: clamp(410px, 36vw, 470px);
+  min-height: clamp(430px, 38vw, 500px);
 }
 
 .australia-map {
   display: block;
-  width: min(70%, 500px);
   height: auto;
   overflow: visible;
+}
+
+.overview-map {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: min(54%, 390px);
+  transform: translateY(-50%);
 }
 
 .australia-map .map-land path {
@@ -2725,10 +2732,11 @@ p {
 
 .map-zoom-frame {
   position: absolute;
-  right: -4%;
-  bottom: 0;
-  width: min(52%, 300px);
+  top: 50%;
+  right: -3%;
+  width: min(62%, 370px);
   aspect-ratio: 1;
+  transform: translateY(-50%);
 }
 
 .map-zoom-frame::before {
@@ -3263,22 +3271,23 @@ p {
   }
 
   .map-composition {
-    display: grid;
-    min-height: 0;
+    min-height: clamp(210px, 56vw, 240px);
   }
 
-  .australia-map {
-    width: 100%;
+  .overview-map {
+    top: 50%;
+    left: 0;
+    width: 48%;
     max-width: none;
-    margin-left: 0;
+    transform: translateY(-50%);
   }
 
   .map-zoom-frame {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    width: min(92%, 350px);
-    margin: 12px auto 0;
+    top: 50%;
+    right: 0;
+    width: 58%;
+    max-width: 240px;
+    transform: translateY(-50%);
   }
 
   .map-zoom-frame::before {
