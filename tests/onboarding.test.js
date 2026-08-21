@@ -172,7 +172,8 @@ test("plans appear only on the Australia hub", () => {
 });
 
 test("Australia plans and paid campaign pricing use the approved scopes", () => {
-  const australia = normalize(read("locations/australia/index.html"));
+  const australiaHtml = read("locations/australia/index.html");
+  const australia = normalize(australiaHtml);
   const ads = normalize(read("google-ads-management/index.html"));
 
   for (const expected of [
@@ -187,12 +188,12 @@ test("Australia plans and paid campaign pricing use the approved scopes", () => 
     "Review and reputation direction",
     "Full website conversion tracking",
     "Automated Growth",
-    "AUD 2,580–3,480/month",
+    "AUD 2,980/month",
     "Twelve-page SEO-ready website plus twelve blog posts",
     "Full process auditing and AI agents MVP",
-    "GEM | SEM | Ads clarification",
-    "Campaign management is charged separately from plan fees and direct advertising spend",
-    "Google, ChatGPT, TikTok, Instagram, Facebook, and YouTube",
+    "+ Ads",
+    "Ads add-on",
+    "Campaign management and direct advertising spend are charged separately",
     "AUD 350",
     "AUD 300 each",
     "AUD 250 each",
@@ -200,6 +201,13 @@ test("Australia plans and paid campaign pricing use the approved scopes", () => 
   ]) {
     assert.match(australia, new RegExp(expected.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
+
+  assert.equal((australiaHtml.match(/class="plan-price-extra"/g) || []).length, 3);
+  assert.equal((australiaHtml.match(/class="plan-ads"/g) || []).length, 3);
+  assert.equal((australiaHtml.match(/class="plan-ads-rates"/g) || []).length, 3);
+  assert.equal((australiaHtml.match(/Campaign management and direct advertising spend are charged separately\./g) || []).length, 3);
+  assert.equal((australiaHtml.match(/Monthly visibility report included\./g) || []).length, 3);
+  assert.doesNotMatch(australiaHtml, /campaign-clarification/);
 
   for (const obsolete of [
     "Starter Presence",
@@ -279,7 +287,7 @@ test("Australia hub follows the approved conversion journey with accurate proof"
     "1,198",
     "AUD 1,080/month",
     "AUD 1,680/month",
-    "AUD 2,580–3,480/month",
+    "AUD 2,980/month",
   ]) {
     assert.equal(copy.includes(expected), true, `Australia hub should include ${expected}`);
   }
