@@ -9,6 +9,7 @@
 - Desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-top.png`
 - Wide desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-wide.png`
 - Mobile hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-mobile-top.png`
+- Mobile investment: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-mobile.png`
 - Focused regions: `qa-services.png`, `qa-system.png`, and `qa-pricing.png` in the same tokenized assets directory.
 
 ## Normalization
@@ -28,7 +29,7 @@ The combined comparison places the complete approved composition beside the full
 - Hero: Oswald scale, line breaks, coral emphasis, monochrome Titanium imagery, and private-proposal treatment match the selected direction. “WHEREVER” is a single no-wrap line at 1425px, 1009px, 753px, and 375px content widths.
 - Two business levers: split panel, service grouping, central plus, thin coral borders, and separate AI opportunity match the reference.
 - Growth system: three connected pillars and shared measurement rail match the approved replacement section.
-- Investment: the proposal now uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, `plan-ads`, featured card, and pill-button treatments. The side-by-side comparison confirms the same dark burgundy surfaces, coral bullets, rounded corners, price hierarchy, ad panels, and highlighted middle plan while retaining the proposal-specific scopes and “Discuss in person.”
+- Investment: the proposal uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, `plan-ads`, and pill-button treatments. The side-by-side comparison confirms three clearly separated burgundy boxes with matching neutral borders, coral bullets, rounded corners, price hierarchy, and ads panels while retaining proposal-specific scopes and “Discuss in person.”
 - Platform coverage: local brand marks replace the initial generic icon treatment. ChatGPT now uses a proposal-local, viewport-cropped copy of the supplied white Blossom mark; all ten platforms remain labelled “To verify.”
 
 ## Required fidelity surfaces
@@ -71,6 +72,12 @@ The combined comparison places the complete approved composition beside the full
    - [P2] User evidence showed the last “R” in “WHEREVER” dropping to a new line above the previous desktop breakpoint.
    - Lowered the fluid display ceiling from 104px to 96px, allocated 20px more minimum width to the copy column, and gave the highlighted word an intrinsic max-content line box with normal word breaking and no hyphenation.
    - Browser checks at 1455px, 1585px, 1905px, and 2545px content widths report one text rect, `white-space: nowrap`, no media overlap, and zero horizontal overflow.
+8. Investment-section source match
+   - [P2] The previous “A starting point for the conversation” heading was weaker than the Australia source.
+   - [P2] The featured card's coral outline and different surface disrupted the evenly separated three-box treatment visible on the live Australia page.
+   - Replaced the heading with “Start with foundations. Grow into dominance.” and added the source's audit-led explanatory line.
+   - Matched all three plan boxes to the same burgundy surface, neutral border, 18px radius, 28px padding, and 16px inter-card gap. The middle plan remains recommended through its label and primary CTA.
+   - Desktop source/implementation comparison and the 375px mobile check show three distinct cards, one-column mobile stacking, and zero horizontal overflow.
 
 ## Findings
 

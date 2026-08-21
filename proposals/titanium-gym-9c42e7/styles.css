@@ -396,7 +396,7 @@ h3 { font-size: 25px; }
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 .price-card:hover { border-color: rgba(255,48,79,.5); box-shadow: 0 20px 48px rgba(0,0,0,.2); transform: translateY(-3px); }
-.price-card.featured { border-color: rgba(255,48,79,.75); background: #230b13; }
+.price-card.featured { border-color: var(--border); background: var(--surface-card); }
 .price-card h3 { margin: 0; font-size: clamp(28px, 2.5vw, 36px); letter-spacing: -.025em; }
 .plan-label { margin: 0; color: var(--accent); font-family: var(--mono); font-size: .68rem; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
 .price { margin: 0; color: var(--neutral); font-family: var(--body); font-size: 1.65rem; font-weight: 900; text-transform: none; }

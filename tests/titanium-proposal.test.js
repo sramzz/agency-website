@@ -73,6 +73,8 @@ test("coverage, audit placeholders and business levers are complete", () => {
 });
 
 test("Australia plan pricing is copied accurately with discussion CTAs", () => {
+  assert.match(html, /Start with foundations\. Grow into dominance\./);
+  assert.match(html, /Final recommendations follow the audit\./);
   ["AUD 1,080", "AUD 1,680", "AUD 2,980", "AUD 350", "AUD 300 each", "AUD 250 each"]
     .forEach((price) => assert.ok(html.includes(price), `${price} should be present`));
   assert.equal((html.match(/Discuss in person/g) || []).length, 3);
@@ -82,6 +84,7 @@ test("Australia plan pricing is copied accurately with discussion CTAs", () => {
   assert.equal((html.match(/class="button button-outline"/g) || []).length, 2);
   ["Everything in Search Foundation", "Everything in Local Authority", "SEM, social ads and creative direction"]
     .forEach((scope) => assert.ok(html.includes(scope), `${scope} should be preserved`));
+  assert.match(styles, /\.price-card\.featured \{ border-color: var\(--border\); background: var\(--surface-card\); \}/);
   assert.doesNotMatch(html, /book (?:a )?call|schedule (?:a )?meeting|calendly/i);
 });
 
