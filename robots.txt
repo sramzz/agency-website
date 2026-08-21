@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /proposals/
 Allow: /
 
 Sitemap: https://rankingrebels.com/sitemap.xml
