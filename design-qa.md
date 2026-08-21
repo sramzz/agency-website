@@ -7,6 +7,7 @@
 - Implementation route: `http://127.0.0.1:4176/proposals/titanium-gym-9c42e7/`
 - Combined comparison: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-comparison.png`
 - Desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-top.png`
+- Wide desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-wide.png`
 - Mobile hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-mobile-top.png`
 - Focused regions: `qa-services.png`, `qa-system.png`, and `qa-pricing.png` in the same tokenized assets directory.
 
@@ -66,6 +67,10 @@ The combined comparison places the complete approved composition beside the full
    - ChatGPT asset reports a 280 × 280 natural viewport and renders sharply at 31 × 31 pixels.
    - Australia and proposal pricing both render three price cards, three ads panels, two outline buttons, one featured primary button, and zero horizontal overflow.
    - Desktop, tablet, and mobile browser checks report no console warnings or errors.
+7. Wide-screen regression fix
+   - [P2] User evidence showed the last “R” in “WHEREVER” dropping to a new line above the previous desktop breakpoint.
+   - Lowered the fluid display ceiling from 104px to 96px, allocated 20px more minimum width to the copy column, and gave the highlighted word an intrinsic max-content line box with normal word breaking and no hyphenation.
+   - Browser checks at 1455px, 1585px, 1905px, and 2545px content widths report one text rect, `white-space: nowrap`, no media overlap, and zero horizontal overflow.
 
 ## Findings
 

@@ -94,5 +94,7 @@ test("proposal is responsive, accessible and motion-safe", () => {
   assert.match(styles, /@media \(max-width: 600px\)/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.hero h1 span \{[^}]*white-space:\s*nowrap/);
+  assert.match(styles, /\.hero h1 span \{[^}]*width:\s*max-content/);
+  assert.match(styles, /font-size:\s*clamp\(64px,\s*6\.4vw,\s*96px\)/);
   assert.doesNotMatch(styles, /overflow-x:\s*hidden/);
 });
