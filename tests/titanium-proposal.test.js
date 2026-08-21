@@ -72,16 +72,15 @@ test("coverage, audit placeholders and business levers are complete", () => {
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
 });
 
-test("Australia plan pricing is copied accurately with discussion CTAs", () => {
+test("Australia plan pricing is copied accurately for an in-person presentation", () => {
   assert.match(html, /Start with foundations\. Grow into dominance\./);
   assert.match(html, /Final recommendations follow the audit\./);
   ["AUD 1,080", "AUD 1,680", "AUD 2,980", "AUD 350", "AUD 300 each", "AUD 250 each"]
     .forEach((price) => assert.ok(html.includes(price), `${price} should be present`));
-  assert.equal((html.match(/Discuss in person/g) || []).length, 3);
+  assert.equal((html.match(/Discuss in person/g) || []).length, 0);
   assert.equal((html.match(/class="price-card(?: featured)?"/g) || []).length, 3);
   assert.equal((html.match(/class="plan-ads"/g) || []).length, 3);
-  assert.match(html, /class="button button-primary"/);
-  assert.equal((html.match(/class="button button-outline"/g) || []).length, 2);
+  assert.doesNotMatch(html, /class="button button-(?:primary|outline)"/);
   ["Everything in Search Foundation", "Everything in Local Authority", "SEM, social ads and creative direction"]
     .forEach((scope) => assert.ok(html.includes(scope), `${scope} should be preserved`));
   assert.match(styles, /\.price-card\.featured \{ border-color: var\(--border\); background: var\(--surface-card\); \}/);

@@ -416,12 +416,6 @@ h3 { font-size: 25px; }
 .plan-ads-rates dd { color: var(--neutral); font-family: var(--mono); font-weight: 700; text-align: right; }
 .plan-ads-report { position: relative; padding-left: 14px; color: var(--neutral); line-height: 1.45; }
 .plan-ads-report::before { position: absolute; top: .46em; left: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--tertiary); content: ""; }
-.investment .button { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; margin-top: 0; padding: 12px 18px; border-radius: 999px; font-size: .84rem; font-weight: 800; line-height: 1.15; text-align: center; text-decoration: none; transition: transform 150ms ease, border-color 150ms ease, background 150ms ease, box-shadow 150ms ease; }
-.investment .button-primary { background: var(--tertiary); color: #fff; box-shadow: 0 8px 28px rgba(255,48,79,.24); }
-.investment .button-primary:hover { background: #e72a46; box-shadow: 0 12px 34px rgba(255,48,79,.34); transform: translateY(-2px); }
-.investment .button-outline { border: 1px solid var(--border); background: var(--surface-card); color: var(--neutral); }
-.investment .button-outline:hover { border-color: var(--neutral); transform: translateY(-2px); }
-
 .discussion { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: center; border-bottom: 0; }
 .discussion .section-heading { margin-bottom: 30px; }
 .discussion h2 { margin-bottom: 20px; }

@@ -29,7 +29,7 @@ The combined comparison places the complete approved composition beside the full
 - Hero: Oswald scale, line breaks, coral emphasis, monochrome Titanium imagery, and private-proposal treatment match the selected direction. “WHEREVER” is a single no-wrap line at 1425px, 1009px, 753px, and 375px content widths.
 - Two business levers: split panel, service grouping, central plus, thin coral borders, and separate AI opportunity match the reference.
 - Growth system: three connected pillars and shared measurement rail match the approved replacement section.
-- Investment: the proposal uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, `plan-ads`, and pill-button treatments. The side-by-side comparison confirms three clearly separated burgundy boxes with matching neutral borders, coral bullets, rounded corners, price hierarchy, and ads panels while retaining proposal-specific scopes and “Discuss in person.”
+- Investment: the proposal uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, and `plan-ads` treatments. The side-by-side comparison confirms three clearly separated burgundy boxes with matching neutral borders, coral bullets, rounded corners, price hierarchy, and ads panels while retaining proposal-specific scopes. Plan CTAs are intentionally omitted for the owner-presented meeting format.
 - Platform coverage: local brand marks replace the initial generic icon treatment. ChatGPT now uses a proposal-local, viewport-cropped copy of the supplied white Blossom mark; all ten platforms remain labelled “To verify.”
 
 ## Required fidelity surfaces
@@ -54,7 +54,7 @@ The combined comparison places the complete approved composition beside the full
    - All ten platform assets/labels render; local image load checks pass.
    - Desktop, tablet, and mobile report no horizontal overflow.
    - The proposal route reports no console errors or warnings.
-   - “Discuss in person” navigates to `#discussion`; the editable timeline field accepts keyboard input.
+   - The editable timeline field accepts keyboard input.
 4. Feedback revision pass
    - [P2] “WHEREVER” broke inside the word at desktop width.
    - [P2] The previous ChatGPT mark was not visible in platform coverage.
@@ -78,6 +78,9 @@ The combined comparison places the complete approved composition beside the full
    - Replaced the heading with “Start with foundations. Grow into dominance.” and added the source's audit-led explanatory line.
    - Matched all three plan boxes to the same burgundy surface, neutral border, 18px radius, 28px padding, and 16px inter-card gap. The middle plan remains recommended through its label and primary CTA.
    - Desktop source/implementation comparison and the 375px mobile check show three distinct cards, one-column mobile stacking, and zero horizontal overflow.
+9. Owner-presented pricing mode
+   - Removed all three “Discuss in person” buttons because the proposal will be presented directly beside the Titanium Gym owner.
+   - Removed the now-unused investment button styling; card height and ads-panel alignment remain consistent.
 
 ## Findings
 
