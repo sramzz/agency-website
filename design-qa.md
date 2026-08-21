@@ -3,6 +3,7 @@
 ## Evidence
 
 - Source visual truth: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/final-visual-target.png`
+- Pricing source truth: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-reference.png` (live local capture of `/locations/australia/#plans`)
 - Implementation route: `http://127.0.0.1:4176/proposals/titanium-gym-9c42e7/`
 - Combined comparison: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-comparison.png`
 - Desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-top.png`
@@ -14,7 +15,7 @@
 - Source: 735 × 2140 pixels, shown at its native density in the combined comparison.
 - Desktop implementation: 1425 × 7624 CSS pixels at device scale 1; the top capture is 1425 × 1100 pixels. The full page is scaled to fit beside the source in the combined comparison.
 - Tablet check: requested 768 × 1024; browser content viewport 753 pixels wide at device scale 1.
-- Mobile check: requested 390 × 844; browser content viewport 375 × 812 pixels at device scale 1.
+- Mobile check: requested 390 × 844; browser content viewport 375 × 844 pixels at device scale 1.
 - State: English proposal, dark theme, default editable values, no authentication.
 
 ## Full-view comparison
@@ -23,11 +24,11 @@ The combined comparison places the complete approved composition beside the full
 
 ## Focused region comparison
 
-- Hero: Oswald scale, line breaks, coral emphasis, monochrome Titanium imagery, and private-proposal treatment match the selected direction.
+- Hero: Oswald scale, line breaks, coral emphasis, monochrome Titanium imagery, and private-proposal treatment match the selected direction. “WHEREVER” is a single no-wrap line at 1425px, 1009px, 753px, and 375px content widths.
 - Two business levers: split panel, service grouping, central plus, thin coral borders, and separate AI opportunity match the reference.
 - Growth system: three connected pillars and shared measurement rail match the approved replacement section.
-- Investment: three Australia-plan cards, exact prices, highlighted middle plan, and in-person CTAs preserve the requested composition.
-- Platform coverage: local brand marks now replace the initial generic icon treatment; all ten platforms remain labelled “To verify.”
+- Investment: the proposal now uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, `plan-ads`, featured card, and pill-button treatments. The side-by-side comparison confirms the same dark burgundy surfaces, coral bullets, rounded corners, price hierarchy, ad panels, and highlighted middle plan while retaining the proposal-specific scopes and “Discuss in person.”
+- Platform coverage: local brand marks replace the initial generic icon treatment. ChatGPT now uses a proposal-local, viewport-cropped copy of the supplied white Blossom mark; all ten platforms remain labelled “To verify.”
 
 ## Required fidelity surfaces
 
@@ -52,6 +53,19 @@ The combined comparison places the complete approved composition beside the full
    - Desktop, tablet, and mobile report no horizontal overflow.
    - The proposal route reports no console errors or warnings.
    - “Discuss in person” navigates to `#discussion`; the editable timeline field accepts keyboard input.
+4. Feedback revision pass
+   - [P2] “WHEREVER” broke inside the word at desktop width.
+   - [P2] The previous ChatGPT mark was not visible in platform coverage.
+   - [P2] The proposal pricing composition did not yet reproduce the Australia homepage card surfaces, add-on panels, featured state, or pill buttons.
+5. Revision fixes
+   - Refined the desktop hero grid and display scale, then applied a no-wrap rule to the highlighted word.
+   - Replaced the ChatGPT asset with a proposal-local cropped copy of `assets/Logos/Blossom_Dark.svg`.
+   - Rebuilt all three investment cards with the Australia pricing markup and scoped visual rules, preserving proposal-specific prices, scopes, and CTA wording.
+6. Revision evidence
+   - Hero text has one client rect at 1425px, 1009px, 753px, and 375px content widths; each viewport reports zero horizontal overflow.
+   - ChatGPT asset reports a 280 × 280 natural viewport and renders sharply at 31 × 31 pixels.
+   - Australia and proposal pricing both render three price cards, three ads panels, two outline buttons, one featured primary button, and zero horizontal overflow.
+   - Desktop, tablet, and mobile browser checks report no console warnings or errors.
 
 ## Findings
 

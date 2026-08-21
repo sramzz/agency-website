@@ -17,6 +17,7 @@ test("Titanium proposal files and client assets stay inside the tokenized route"
     `${route}/script.js`,
     `${route}/assets/titanium-gym-floor.jpg`,
     `${route}/assets/titanium-hero-01.jpg`,
+    `${route}/assets/logo-chatgpt-blossom.svg`,
     `${route}/assets/final-visual-target.png`,
   ].forEach((file) => assert.equal(exists(file), true, `${file} should exist`));
 
@@ -66,6 +67,8 @@ test("coverage, audit placeholders and business levers are complete", () => {
     .forEach((service) => assert.ok(html.toLowerCase().includes(service.toLowerCase()), `${service} should be present`));
   assert.ok((html.match(/To verify/gi) || []).length >= 10);
   assert.match(html, /Audit evidence · to add/);
+  assert.match(html, /assets\/logo-chatgpt-blossom\.svg/);
+  assert.match(read(`${route}/assets/logo-chatgpt-blossom.svg`), /viewBox="140 220 280 280"/);
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
 });
 
@@ -73,6 +76,12 @@ test("Australia plan pricing is copied accurately with discussion CTAs", () => {
   ["AUD 1,080", "AUD 1,680", "AUD 2,980", "AUD 350", "AUD 300 each", "AUD 250 each"]
     .forEach((price) => assert.ok(html.includes(price), `${price} should be present`));
   assert.equal((html.match(/Discuss in person/g) || []).length, 3);
+  assert.equal((html.match(/class="price-card(?: featured)?"/g) || []).length, 3);
+  assert.equal((html.match(/class="plan-ads"/g) || []).length, 3);
+  assert.match(html, /class="button button-primary"/);
+  assert.equal((html.match(/class="button button-outline"/g) || []).length, 2);
+  ["Everything in Search Foundation", "Everything in Local Authority", "SEM, social ads and creative direction"]
+    .forEach((scope) => assert.ok(html.includes(scope), `${scope} should be preserved`));
   assert.doesNotMatch(html, /book (?:a )?call|schedule (?:a )?meeting|calendly/i);
 });
 
@@ -84,5 +93,6 @@ test("proposal is responsive, accessible and motion-safe", () => {
   assert.match(styles, /@media \(max-width: 820px\)/);
   assert.match(styles, /@media \(max-width: 600px\)/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
+  assert.match(styles, /\.hero h1 span \{[^}]*white-space:\s*nowrap/);
   assert.doesNotMatch(styles, /overflow-x:\s*hidden/);
 });
