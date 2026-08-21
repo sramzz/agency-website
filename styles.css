@@ -3175,6 +3175,108 @@ p {
   min-height: 610px;
 }
 
+.campaign-clarification {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 1fr);
+  gap: 30px 48px;
+  overflow: hidden;
+  margin-top: 18px;
+  padding: clamp(28px, 4vw, 48px);
+  border: 1px solid rgba(255, 48, 79, 0.62);
+  background:
+    linear-gradient(135deg, rgba(255, 48, 79, 0.16), transparent 52%),
+    #14080d;
+}
+
+.campaign-clarification::after {
+  content: "PAID / SEPARATE";
+  position: absolute;
+  right: -22px;
+  bottom: 4px;
+  color: rgba(255, 255, 255, 0.035);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-weight: 700;
+  line-height: 0.8;
+  pointer-events: none;
+  transform: rotate(-3deg);
+  white-space: nowrap;
+}
+
+.campaign-clarification-copy,
+.campaign-rates,
+.campaign-report {
+  position: relative;
+  z-index: 1;
+}
+
+.campaign-clarification-copy h3 {
+  max-width: 620px;
+  margin: 8px 0 14px;
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.campaign-clarification-copy > p:last-child {
+  max-width: 660px;
+}
+
+.campaign-rates {
+  display: grid;
+  align-content: start;
+  border-top: 1px solid var(--border);
+}
+
+.campaign-rates > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.campaign-rates span {
+  color: var(--secondary);
+}
+
+.campaign-rates strong {
+  color: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(0.9rem, 1.6vw, 1.1rem);
+  text-align: right;
+}
+
+.campaign-report {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 48, 79, 0.35);
+  color: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.campaign-report span {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--tertiary);
+  color: #070707;
+}
+
 .australia-final-cta > p:not(.eyebrow) {
   max-width: 620px;
 }
@@ -3210,6 +3312,18 @@ p {
 
   .process-track li:nth-child(4) {
     border-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .campaign-clarification {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .campaign-report {
+    grid-column: auto;
+    align-items: flex-start;
   }
 }
 

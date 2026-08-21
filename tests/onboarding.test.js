@@ -171,6 +171,60 @@ test("plans appear only on the Australia hub", () => {
   assert.equal((australia.match(heading) || []).length, 1);
 });
 
+test("Australia plans and paid campaign pricing use the approved scopes", () => {
+  const australia = normalize(read("locations/australia/index.html"));
+  const ads = normalize(read("google-ads-management/index.html"));
+
+  for (const expected of [
+    "Search Foundation",
+    "AUD 1,080/month",
+    "Six-page SEO-ready website",
+    "Google Business Profile update",
+    "Local Authority",
+    "AUD 1,680/month",
+    "SEO-ready website plus six blog posts",
+    "Local consultant marketing strategy plan",
+    "Review and reputation direction",
+    "Full website conversion tracking",
+    "Automated Growth",
+    "AUD 2,580–3,480/month",
+    "Twelve-page SEO-ready website plus twelve blog posts",
+    "Full process auditing and AI agents MVP",
+    "GEM | SEM | Ads clarification",
+    "Campaign management is charged separately from plan fees and direct advertising spend",
+    "Google, ChatGPT, TikTok, Instagram, Facebook, and YouTube",
+    "AUD 350",
+    "AUD 300 each",
+    "AUD 250 each",
+    "Monthly visibility report included",
+  ]) {
+    assert.match(australia, new RegExp(expected.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+
+  for (const obsolete of [
+    "Starter Presence",
+    "Local Growth",
+    "Market Leader",
+    "AUD 1,080-1,480/month",
+    "AUD 1,680-1,980/month",
+  ]) {
+    assert.doesNotMatch(australia, new RegExp(obsolete.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+
+  for (const expected of [
+    "GEM | SEM | Ads clarification",
+    "Google, ChatGPT, TikTok, Instagram, Facebook, and YouTube",
+    "Campaign management is charged separately from organic plan fees and direct advertising spend",
+    "Monthly visibility report included",
+    "Direct advertising spend excluded",
+    "AUD 350",
+    "AUD 300 each",
+    "AUD 250 each",
+  ]) {
+    assert.match(ads, new RegExp(expected.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+});
+
 test("Australia hub follows the approved conversion journey with accurate proof", () => {
   const html = read("locations/australia/index.html");
   const copy = normalize(html);
@@ -223,9 +277,9 @@ test("Australia hub follows the approved conversion journey with accurate proof"
     "457K",
     "2,458",
     "1,198",
-    "AUD 1,080-1,480/month",
-    "AUD 1,680-1,980/month",
-    "AUD 2,580-3,480/month",
+    "AUD 1,080/month",
+    "AUD 1,680/month",
+    "AUD 2,580–3,480/month",
   ]) {
     assert.equal(copy.includes(expected), true, `Australia hub should include ${expected}`);
   }
@@ -467,12 +521,13 @@ test("positioning covers organic discovery and paid campaign platforms", () => {
   for (const platform of ["Google Search", "Bing", "Google Maps", "ChatGPT", "Perplexity", "Claude"]) {
     assert.match(home, new RegExp(platform, "i"));
   }
-  for (const platform of ["Google", "Meta", "ChatGPT"]) {
+  for (const platform of ["Google", "ChatGPT", "TikTok", "Instagram", "Facebook", "YouTube"]) {
     assert.match(paid, new RegExp(platform, "i"));
   }
   assert.match(home, /SEO \+ GEO/i);
   assert.match(home, /SEM \+ GEM Management/i);
-  assert.match(paid, /where advertiser access is available/i);
+  assert.match(paid, /direct advertising spend/i);
+  assert.match(paid, /monthly visibility report/i);
 });
 
 test("robots and sitemap expose the full rankingrebels.com URL set", () => {
