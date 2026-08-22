@@ -12,6 +12,9 @@
 - Mobile investment: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-mobile.png`
 - Desktop identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-desktop.png`
 - Mobile identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-mobile.png`
+- Desktop discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-desktop.png`
+- Mobile discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-mobile.png`
+- In-page evidence viewer: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-lightbox.png`
 - Desktop Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-desktop.png`
 - Mobile Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-mobile.png`
 - Desktop public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-case-studies-desktop.png`
@@ -37,6 +40,7 @@ The combined comparison places the complete approved composition beside the full
 - Growth system: three connected pillars and shared measurement rail match the approved replacement section.
 - Investment: the proposal uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, and `plan-ads` treatments. The side-by-side comparison confirms three clearly separated burgundy boxes with matching neutral borders, coral bullets, rounded corners, price hierarchy, and ads panels while retaining proposal-specific scopes. Plan CTAs are intentionally omitted for the owner-presented meeting format.
 - Platform coverage: local brand marks replace the initial generic icon treatment. ChatGPT now uses a proposal-local, viewport-cropped copy of the supplied white Blossom mark; all ten platforms remain labelled “To verify.”
+- Discovery diagnosis: a full-width, evidence-led Search chapter groups seven supplied captures across Google, Perplexity, ChatGPT, Copilot and Bing. Ads and Strategy remain a connected two-card conclusion beneath it. The same-page evidence viewer preserves screenshot detail without disrupting the presentation flow.
 
 ## Required fidelity surfaces
 
@@ -44,7 +48,7 @@ The combined comparison places the complete approved composition beside the full
 - Spacing and layout rhythm: desktop, tablet, and mobile grids remain aligned with no horizontal overflow. Section spacing is intentionally more generous than the compressed concept to keep real copy legible.
 - Colors and tokens: the page uses the homepage black, off-white, muted grey, coral, and amber tokens. No gradient or new replacement brand palette is used.
 - Image quality and assets: Titanium’s sourced photography remains sharp and appropriately cropped; platform marks are local assets; no inline custom SVG, CSS illustration, or generic stock placeholder replaces visible brand imagery.
-- Copy and content: no invented performance metrics or ranking claims appear. Colombian client metrics are transcribed from the supplied Google Ads, Search Console and Analytics screenshots; remaining audit evidence stays explicitly marked for completion or verification.
+- Copy and content: no invented performance metrics or universal ranking claims appear. Colombian client metrics are transcribed from the supplied Google Ads, Search Console and Analytics screenshots. Discovery and ads findings are explicitly limited to the supplied public snapshots, with account access still required for campaign conclusions.
 - Accessibility and behavior: semantic headings, skip link, alt text, focus styles, reduced-motion support, editable field keyboard behavior, and in-page discussion CTAs were checked. No browser console warnings or errors were present on the proposal route.
 
 ## Comparison history
@@ -96,6 +100,12 @@ The combined comparison places the complete approved composition beside the full
    - Added three named public case-study groups with six full-size evidence links and copied public assets under `/assets/case-studies/`; the existing Business Profile portfolio remains intact.
    - Preserved source-language screenshots, added English source-aware captions, and omitted ad cost from headline claims because the screenshots do not identify a currency.
    - Proposal and public case-study checks at 1425px and 375px report all logos/evidence loaded, working anchors, one-column mobile stacking and zero horizontal overflow.
+12. Discovery evidence reform
+   - Replaced the three placeholder audit cards with a full-width Search visibility chapter, seven grouped search/AI captures, a supplied Meta Ad Library capture, and a strategy finding that acknowledges the stronger Instagram direction since 6 July.
+   - Added an accessible same-page evidence viewer with previous/next controls, Arrow key navigation, explicit Escape handling, backdrop/close controls and focus restoration.
+   - The first visual pass exposed intrinsic image heights overriding the intended thumbnail ratio; explicit CSS height containment corrected the gallery density before final capture.
+   - Browser checks at 1600px, 1440px, 768px and 390px report five evidence groups, correct responsive card stacking and zero horizontal overflow. The viewer opens at `01 / 08`, advances to `02 / 08`, closes with Escape and restores focus to the originating thumbnail.
+   - Desktop, mobile and lightbox captures show all evidence loaded; the proposal route reports no console errors.
 
 ## Findings
 
@@ -104,6 +114,6 @@ No actionable P0, P1, or P2 differences remain.
 ## Follow-up polish
 
 - [P3] Bing Maps intentionally shares the Bing brand mark because no separate current Bing Maps mark was required for comprehension.
-- [P3] Replace the remaining audit placeholders after client evidence and account access are available.
+- [P3] Confirm account-level Google and Meta campaign data when client access becomes available.
 
 final result: passed

@@ -9,6 +9,7 @@ const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const exists = (file) => fs.existsSync(path.join(root, file));
 const html = read(`${route}/index.html`);
 const styles = read(`${route}/styles.css`);
+const script = read(`${route}/script.js`);
 
 test("Titanium proposal files and client assets stay inside the tokenized route", () => {
   [
@@ -22,6 +23,14 @@ test("Titanium proposal files and client assets stay inside the tokenized route"
     `${route}/assets/logo-TerraformadosAntioquia.png`,
     `${route}/assets/logo-TejasTrading.webp`,
     `${route}/assets/final-visual-target.png`,
+    `${route}/assets/GoogleTitaniumGym.jpeg`,
+    `${route}/assets/GoogleTitaniumGymS.jpeg`,
+    `${route}/assets/PerplexityGymAirportWest.jpeg`,
+    `${route}/assets/TablePerplexityGymAirportWest.png`,
+    `${route}/assets/ChatGPTGymAirportWest.png`,
+    `${route}/assets/CopilotGymAirportWest.png`,
+    `${route}/assets/BingGymAirportWest.jpeg`,
+    `${route}/assets/MetaTransparency.png`,
   ].forEach((file) => assert.equal(exists(file), true, `${file} should exist`));
 
   const localReferences = [...html.matchAll(/(?:href|src)="(\/[^"#?]+)(?:[#?][^"]*)?"/g)]
@@ -63,16 +72,51 @@ test("selected narrative and requested sections are present in order", () => {
   });
 });
 
-test("coverage, audit placeholders and business levers are complete", () => {
+test("coverage, discovery evidence and business levers are complete", () => {
   ["Google", "Bing", "Google Maps", "Bing Maps", "Apple Maps", "ChatGPT", "Perplexity", "Copilot", "Instagram", "TikTok"]
     .forEach((platform) => assert.ok(html.includes(platform), `${platform} should be present`));
   ["SEO + GEO", "SEM + GEM", "Social ads", "Marketing strategy", "AI process automation"]
     .forEach((service) => assert.ok(html.toLowerCase().includes(service.toLowerCase()), `${service} should be present`));
   assert.ok((html.match(/To verify/gi) || []).length >= 10);
-  assert.match(html, /Audit evidence · to add/);
+  assert.match(html, /A public discovery snapshot across high-intent search, AI answers and paid media/);
   assert.match(html, /assets\/logo-chatgpt-blossom\.svg/);
   assert.match(read(`${route}/assets/logo-chatgpt-blossom.svg`), /viewBox="140 220 280 280"/);
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
+});
+
+test("section 06 uses supplied evidence and cautious findings", () => {
+  const diagnosis = html.match(/<section class="diagnosis[\s\S]*?<\/section>/);
+  assert.ok(diagnosis, "diagnosis section should exist");
+  assert.equal((diagnosis[0].match(/data-evidence-src=/g) || []).length, 8);
+  [
+    "Search visibility",
+    "Invisible in the basic discovery journey.",
+    "Google",
+    "Perplexity",
+    "ChatGPT",
+    "Copilot",
+    "Bing",
+    "No clearly attributable Titanium Gym ads were identified in the supplied public review.",
+    "Account access is required to confirm spend, campaign status, targeting and conversion tracking.",
+    "Strong offer.",
+    "Under-expressed brand.",
+    "Since 6 July",
+  ].forEach((phrase) => assert.ok(diagnosis[0].includes(phrase), `${phrase} should be present`));
+  assert.doesNotMatch(diagnosis[0], /Search \+ maps|evidence-placeholder|Audit evidence · to add|Working hypotheses/i);
+  assert.doesNotMatch(diagnosis[0], /Titanium (?:is not|isn't) currently (?:advertising|spending)|zero ad spend/i);
+});
+
+test("evidence opens in an accessible same-page gallery", () => {
+  assert.match(html, /<dialog class="evidence-lightbox"[^>]*aria-labelledby="evidence-lightbox-title"/);
+  assert.match(html, /data-evidence-previous/);
+  assert.match(html, /data-evidence-next/);
+  assert.match(html, /data-evidence-close/);
+  assert.match(script, /dialog\.showModal/);
+  assert.match(script, /event\.key === "ArrowLeft"/);
+  assert.match(script, /event\.key === "ArrowRight"/);
+  assert.match(script, /event\.key === "Escape"/);
+  assert.match(script, /dialog\.addEventListener\("close"/);
+  assert.match(styles, /\.evidence-lightbox::backdrop/);
 });
 
 test("Colombian market proof uses named clients and verified headline metrics", () => {
