@@ -15,6 +15,8 @@
 - Desktop discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-desktop.png`
 - Mobile discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-mobile.png`
 - In-page evidence viewer: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-lightbox.png`
+- Desktop Growth System → Investment transition: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-system-investment-desktop.png`
+- Mobile Growth System → Investment transition: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-system-investment-mobile.png`
 - Desktop Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-desktop.png`
 - Mobile Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-mobile.png`
 - Desktop public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-case-studies-desktop.png`
@@ -27,17 +29,17 @@
 - Desktop implementation: 1425 × 7624 CSS pixels at device scale 1; the top capture is 1425 × 1100 pixels. The full page is scaled to fit beside the source in the combined comparison.
 - Tablet check: requested 768 × 1024; browser content viewport 753 pixels wide at device scale 1.
 - Mobile check: requested 390 × 844; browser content viewport 375 × 844 pixels at device scale 1.
-- State: English proposal, dark theme, default editable values, no authentication.
+- State: English proposal, dark theme, default presentation state, no authentication.
 
 ## Full-view comparison
 
-The combined comparison places the complete approved composition beside the full rendered implementation and focused desktop captures. The implementation keeps the same section order, alternating black/off-white chapters, condensed editorial hierarchy, coral/amber accents, narrow borders, and 1200px content grid. It is intentionally longer than the concept because it contains the complete editable scope, exact plan scopes, paid-campaign note, and presentation-ready diagnostic questions.
+The combined comparison places the complete approved composition beside the full rendered implementation and focused desktop captures. The implementation keeps the same section order, alternating black/off-white chapters, condensed editorial hierarchy, coral/amber accents, narrow borders, and 1200px content grid. It is intentionally longer than the concept because it contains the complete evidence gallery, exact plan scopes, paid-campaign note, and presentation-ready diagnostic findings.
 
 ## Focused region comparison
 
 - Hero: Oswald scale, line breaks, coral emphasis, monochrome Titanium imagery, and private-proposal treatment match the selected direction. “WHEREVER” is a single no-wrap line at 1425px, 1009px, 753px, and 375px content widths.
 - Two business levers: split panel, service grouping, central plus, thin coral borders, and separate AI opportunity match the reference.
-- Growth system: three connected pillars and shared measurement rail match the approved replacement section.
+- Growth system: three connected pillars preserve the approved replacement section while the removed measurement rail creates a tighter handoff into investment.
 - Investment: the proposal uses the Australia page's `price-card`, `plan-label`, `plan-price`, `feature-list`, and `plan-ads` treatments. The side-by-side comparison confirms three clearly separated burgundy boxes with matching neutral borders, coral bullets, rounded corners, price hierarchy, and ads panels while retaining proposal-specific scopes. Plan CTAs are intentionally omitted for the owner-presented meeting format.
 - Platform coverage: local brand marks replace the initial generic icon treatment. ChatGPT now uses a proposal-local, viewport-cropped copy of the supplied white Blossom mark; all ten platforms remain labelled “To verify.”
 - Discovery diagnosis: a full-width, evidence-led Search chapter groups seven supplied captures across Google, Perplexity, ChatGPT, Copilot and Bing. Ads and Strategy remain a connected two-card conclusion beneath it. The same-page evidence viewer preserves screenshot detail without disrupting the presentation flow.
@@ -49,7 +51,7 @@ The combined comparison places the complete approved composition beside the full
 - Colors and tokens: the page uses the homepage black, off-white, muted grey, coral, and amber tokens. No gradient or new replacement brand palette is used.
 - Image quality and assets: Titanium’s sourced photography remains sharp and appropriately cropped; platform marks are local assets; no inline custom SVG, CSS illustration, or generic stock placeholder replaces visible brand imagery.
 - Copy and content: no invented performance metrics or universal ranking claims appear. Colombian client metrics are transcribed from the supplied Google Ads, Search Console and Analytics screenshots. Discovery and ads findings are explicitly limited to the supplied public snapshots, with account access still required for campaign conclusions.
-- Accessibility and behavior: semantic headings, skip link, alt text, focus styles, reduced-motion support, editable field keyboard behavior, and in-page discussion CTAs were checked. No browser console warnings or errors were present on the proposal route.
+- Accessibility and behavior: semantic headings, skip link, alt text, focus styles, reduced-motion support, and evidence-viewer keyboard controls were checked. No browser console warnings or errors were present on the proposal route.
 
 ## Comparison history
 
@@ -64,7 +66,6 @@ The combined comparison places the complete approved composition beside the full
    - All ten platform assets/labels render; local image load checks pass.
    - Desktop, tablet, and mobile report no horizontal overflow.
    - The proposal route reports no console errors or warnings.
-   - The editable timeline field accepts keyboard input.
 4. Feedback revision pass
    - [P2] “WHEREVER” broke inside the word at desktop width.
    - [P2] The previous ChatGPT mark was not visible in platform coverage.
@@ -106,6 +107,12 @@ The combined comparison places the complete approved composition beside the full
    - The first visual pass exposed intrinsic image heights overriding the intended thumbnail ratio; explicit CSS height containment corrected the gallery density before final capture.
    - Browser checks at 1600px, 1440px, 768px and 390px report five evidence groups, correct responsive card stacking and zero horizontal overflow. The viewer opens at `01 / 08`, advances to `02 / 08`, closes with Escape and restores focus to the originating thumbnail.
    - Desktop, mobile and lightbox captures show all evidence loaded; the proposal route reports no console errors.
+13. Sections 07–09 simplification
+   - Removed the Measurement & Insights rail and the complete editable scope chapter while preserving all three Growth System pillars and their measurement dependency labels.
+   - Renumbered Investment Options to 08 and In-person Discussion to 09, creating a direct chapter transition with the existing border and section spacing.
+   - Removed the obsolete scope/editing CSS and localStorage behavior; the proposal script now serves only the evidence viewer.
+   - Updated no-JavaScript guidance and regression coverage to reflect the simplified presentation.
+   - Desktop and mobile transition captures show a clean bordered handoff between the two dark chapters. Checks at 1600px, 1440px, 768px and 390px report `07 → 08 → 09`, three price cards, no removed-section remnants and zero horizontal overflow.
 
 ## Findings
 

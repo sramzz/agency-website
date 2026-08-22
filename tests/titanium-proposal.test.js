@@ -60,7 +60,6 @@ test("selected narrative and requested sections are present in order", () => {
     "Titanium's desired online brand Identity",
     "Where discovery breaks down",
     "One Titanium growth system",
-    "Scope, timeline &amp; responsibilities",
     "Investment options",
     "In-person discussion",
   ];
@@ -70,6 +69,17 @@ test("selected narrative and requested sections are present in order", () => {
     assert.ok(next > cursor, `${phrase} should appear in the requested order`);
     cursor = next;
   });
+});
+
+test("growth system flows directly into renumbered investment and discussion sections", () => {
+  assert.match(html, /<section class="growth-system[\s\S]*?<span class="section-number">07<\/span>/);
+  assert.match(html, /<section class="investment[\s\S]*?<span class="section-number">08<\/span>/);
+  assert.match(html, /<section class="discussion[\s\S]*?<span class="section-number">09<\/span>/);
+  assert.equal((html.match(/Depends on measurement/g) || []).length, 3);
+  assert.doesNotMatch(html, /Measurement &amp; insights|Performance insights drive decisions, content and budget/);
+  assert.doesNotMatch(html, /working-scope|scope-grid|Scope, timeline &amp; responsibilities|Editable engagement details|data-edit-key|data-reset-edits|contenteditable/);
+  assert.doesNotMatch(styles, /\.measurement|\.working-scope|\.scope-grid|\.editable|\.text-button/);
+  assert.doesNotMatch(script, /localStorage|data-edit-key|data-reset-edits|proposalId/);
 });
 
 test("coverage, discovery evidence and business levers are complete", () => {
@@ -166,7 +176,7 @@ test("Australia plan pricing is copied accurately for an in-person presentation"
 test("proposal is responsive, accessible and motion-safe", () => {
   assert.match(html, /<html lang="en">/);
   assert.match(html, /class="skip-link"/);
-  assert.match(html, /contenteditable="true"/);
+  assert.doesNotMatch(html, /contenteditable/);
   assert.match(html, /<noscript>/);
   assert.match(styles, /@media \(max-width: 820px\)/);
   assert.match(styles, /@media \(max-width: 600px\)/);

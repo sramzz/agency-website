@@ -116,11 +116,9 @@ main > section { border-bottom: 1px solid var(--border); }
 .identity-grid,
 .audit-layout,
 .system-grid,
-.scope-grid,
 .pricing-grid,
 .discussion,
 .platform-grid,
-.measurement,
 .perception-summary {
   max-width: var(--max);
   margin-inline: auto;
@@ -428,25 +426,6 @@ h3 { font-size: 25px; }
 .system-grid ul { padding-left: 18px; color: var(--secondary); font-size: 12px; }
 .system-grid small { color: var(--tertiary); font-family: var(--mono); font-size: 9px; font-weight: 700; text-transform: uppercase; }
 .system-arrow { align-self: center; color: var(--neutral); text-align: center; }
-.measurement { display: grid; grid-template-columns: 1fr 1fr; margin-top: 20px; border: 1px solid var(--tertiary); }
-.measurement strong, .measurement span { padding: 14px 20px; }
-.measurement strong { color: var(--tertiary); font-family: var(--mono); text-align: center; text-transform: uppercase; }
-.measurement span { border-left: 1px solid var(--tertiary); color: var(--secondary); font-size: 13px; }
-
-.working-scope { padding-block: 66px; }
-.scope-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-.scope-grid article { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 8px 26px; border-right: 1px solid #cac4bd; }
-.scope-grid article:first-child { padding-left: 0; }
-.scope-grid article:last-child { border-right: 0; }
-.scope-grid .material-symbols-outlined { color: var(--tertiary); font-size: 35px; }
-.scope-grid strong { font-family: var(--mono); font-size: 11px; text-transform: uppercase; }
-.scope-grid p { min-height: 50px; margin: 8px 0; font-size: 13px; }
-.scope-grid small { color: #6c6970; font-size: 10px; }
-.editable { outline: 0; transition: background .2s ease, box-shadow .2s ease; }
-.editable:hover { background: rgba(255,48,79,.06); }
-.editable:focus { background: white; box-shadow: 0 0 0 2px var(--tertiary); }
-.text-button { display: block; margin: 28px auto 0; border: 0; background: transparent; color: #6a676c; font-family: var(--mono); font-size: 10px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
-
 .investment { padding-top: 78px; }
 .investment .section-heading h2 { margin: 12px 0 0; font-size: clamp(40px, 5vw, 64px); }
 .pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -503,9 +482,6 @@ h3 { font-size: 25px; }
   .platform:nth-child(-n + 5) { border-bottom: 1px solid var(--border); }
   .hero { grid-template-columns: .9fr 1.1fr; }
   .lever li { grid-template-columns: 48px 120px 1fr; }
-  .scope-grid { grid-template-columns: 1fr 1fr; gap: 28px 0; }
-  .scope-grid article:nth-child(2) { border-right: 0; }
-  .scope-grid article:nth-child(3) { padding-left: 0; }
   .search-finding-grid { grid-template-columns: minmax(0, 1.2fr) minmax(240px, .8fr); }
 }
 
@@ -527,8 +503,6 @@ h3 { font-size: 25px; }
   .system-grid { grid-template-columns: 1fr; gap: 12px; }
   .system-arrow { transform: rotate(90deg); }
   .system-grid p { min-height: 0; }
-  .measurement { grid-template-columns: 1fr; }
-  .measurement span { border-top: 1px solid var(--tertiary); border-left: 0; text-align: center; }
 }
 
 @media (max-width: 600px) {
@@ -572,9 +546,6 @@ h3 { font-size: 25px; }
   .evidence-lightbox-footer > button { width: 42px; justify-content: center; padding: 7px; }
   .evidence-lightbox-footer > button > span:not(.material-symbols-outlined) { display: none; }
   .evidence-lightbox-footer p { font-size: 10px; line-height: 1.35; }
-  .scope-grid { grid-template-columns: 1fr; gap: 0; }
-  .scope-grid article, .scope-grid article:nth-child(3) { padding: 20px 0; border-right: 0; border-bottom: 1px solid #cac4bd; }
-  .scope-grid article:last-child { border-bottom: 0; }
   .price-card { padding: 24px 20px; }
   .site-footer { grid-template-columns: 1fr; gap: 8px; padding-block: 18px; }
   .site-footer p { grid-column: 1; justify-self: start; text-align: left; }
@@ -587,7 +558,7 @@ h3 { font-size: 25px; }
 
 @media print {
   .site-header { position: static; }
-  .text-button, .evidence-lightbox { display: none; }
+  .evidence-lightbox { display: none; }
   .hero { min-height: auto; }
   section { break-inside: avoid; }
 }
