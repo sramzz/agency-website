@@ -45,7 +45,7 @@ test("selected narrative and requested sections are present in order", () => {
     "Channel &amp; platform coverage",
     "Who we are",
     "Our services address two business levers",
-    "Titanium’s communicated online identity",
+    "Titanium's desired online brand Identity",
     "Where discovery breaks down",
     "One Titanium growth system",
     "Scope, timeline &amp; responsibilities",
@@ -72,8 +72,19 @@ test("coverage, audit placeholders and business levers are complete", () => {
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
 });
 
+test("Titanium online identity merges private access and adds recovery", () => {
+  assert.match(html, /<strong>Private, 24\/7<\/strong>/);
+  assert.match(html, /Melbourne’s 24\/7 private, members-only strength gym and recovery destination\./);
+  assert.match(html, /<strong>Recovery Centre<\/strong>/);
+  assert.match(html, /Sunlighten mPulse saunas, compression boots, contrast suites and hyperbaric chambers\./);
+  assert.doesNotMatch(html, /<strong>24\/7 access<\/strong>/i);
+  const identity = html.match(/<div class="perception">([\s\S]*?)<\/div>\s*<\/div>\s*<p class="perception-summary">/);
+  assert.ok(identity, "identity perception block should exist");
+  assert.equal((identity[1].match(/<article>/g) || []).length, 4);
+});
+
 test("Australia plan pricing is copied accurately for an in-person presentation", () => {
-  assert.match(html, /Start with foundations\. Grow into dominance\./);
+  assert.match(html, /Start with foundations\. Grow into a AI optimized gym\./);
   assert.match(html, /Final recommendations follow the audit\./);
   ["AUD 1,080", "AUD 1,680", "AUD 2,980", "AUD 350", "AUD 300 each", "AUD 250 each"]
     .forEach((price) => assert.ok(html.includes(price), `${price} should be present`));

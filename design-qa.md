@@ -10,6 +10,8 @@
 - Wide desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-wide.png`
 - Mobile hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-mobile-top.png`
 - Mobile investment: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-mobile.png`
+- Desktop identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-desktop.png`
+- Mobile identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-mobile.png`
 - Focused regions: `qa-services.png`, `qa-system.png`, and `qa-pricing.png` in the same tokenized assets directory.
 
 ## Normalization
@@ -81,6 +83,10 @@ The combined comparison places the complete approved composition beside the full
 9. Owner-presented pricing mode
    - Removed all three “Discuss in person” buttons because the proposal will be presented directly beside the Titanium Gym owner.
    - Removed the now-unused investment button styling; card height and ads-panel alignment remain consistent.
+10. Titanium identity revision
+   - Merged the private and 24/7 signals into “Private, 24/7” with polished Australian-English positioning.
+   - Replaced the standalone 24/7 Access item with “Recovery Centre,” covering the named active-recovery facilities and using the existing Material `spa` symbol.
+   - Preserved four identity cards, the image/card composition, section summary, and responsive behavior. Browser checks at 1425px and 375px report zero horizontal overflow.
 
 ## Findings
 
