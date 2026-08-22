@@ -151,6 +151,39 @@ test("case-study proof media stays constrained to the shared responsive containe
   assert.match(css, /\.result-image img\s*\{[\s\S]*?max-width:\s*100%[\s\S]*?object-fit:\s*contain/);
 });
 
+test("named Colombian SEO, SEM and Analytics case studies preserve source evidence", () => {
+  const html = read("case-studies/index.html");
+  const assets = [
+    "petrogrease-logo.webp",
+    "petrogrease-sem.jpeg",
+    "petrogrease-seo.jpeg",
+    "terraformados-antioquia-logo.png",
+    "terraformados-antioquia-sem.jpeg",
+    "terraformados-antioquia-seo.jpeg",
+    "tejas-trading-logo.webp",
+    "tejas-trading-analytics.jpeg",
+    "tejas-trading-users.jpeg",
+  ];
+  for (const asset of assets) {
+    assert.equal(exists(`assets/case-studies/${asset}`), true, `${asset} should exist publicly`);
+    assert.match(html, new RegExp(`/assets/case-studies/${asset.replaceAll(".", "\\.")}`), `${asset} should be referenced`);
+  }
+  for (const id of ["petrogrease", "terraformados-antioquia", "tejas-trading"]) {
+    assert.match(html, new RegExp(`id="${id}"`), `${id} anchor should exist`);
+  }
+  for (const metric of [
+    "24.8k clicks · 279k impressions · 8.88% CTR",
+    "4.65k clicks · 293k impressions · position 13",
+    "7.58k clicks · 56.9k impressions · 13.32% CTR",
+    "3.83k clicks · 109k impressions · position 7",
+    "56k active · 55k new users · 49s engagement",
+    "3.2k / 30 days · 884 / 7 days · 133 / 1 day",
+  ]) assert.ok(html.includes(metric), `${metric} should be present`);
+  assert.equal((html.match(/class="result-image" href="\/assets\/case-studies\/(?:petrogrease|terraformados-antioquia|tejas-trading)[^"]+"/g) || []).length, 6);
+  assert.match(html, /SEO, SEM \+ Search Case Studies &amp; Results/);
+  assert.match(html, /documented SEO, SEM, Analytics and local-search performance/);
+});
+
 test("removed sibling-company name is absent from repository content and paths", () => {
   const removedName = ["smark", "eting"].join("");
 

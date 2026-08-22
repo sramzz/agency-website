@@ -685,6 +685,51 @@ p {
   font-size: clamp(1.55rem, 3vw, 2.35rem);
 }
 
+.client-case-group {
+  scroll-margin-top: 96px;
+}
+
+.client-case-heading {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.client-case-heading .case-group-heading {
+  margin-bottom: 0;
+}
+
+.client-case-logo {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.client-case-logo-dark {
+  background: #111116;
+}
+
+.client-case-logo-light {
+  background: #fff;
+}
+
+.client-case-logo img {
+  display: block;
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+
+.client-case-portfolio .result-card figcaption {
+  min-height: 190px;
+}
+
 .timeline {
   display: grid;
   gap: 14px;

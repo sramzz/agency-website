@@ -12,6 +12,10 @@
 - Mobile investment: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-mobile.png`
 - Desktop identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-desktop.png`
 - Mobile identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-mobile.png`
+- Desktop Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-desktop.png`
+- Mobile Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-mobile.png`
+- Desktop public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-case-studies-desktop.png`
+- Mobile public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-case-studies-mobile.png`
 - Focused regions: `qa-services.png`, `qa-system.png`, and `qa-pricing.png` in the same tokenized assets directory.
 
 ## Normalization
@@ -40,7 +44,7 @@ The combined comparison places the complete approved composition beside the full
 - Spacing and layout rhythm: desktop, tablet, and mobile grids remain aligned with no horizontal overflow. Section spacing is intentionally more generous than the compressed concept to keep real copy legible.
 - Colors and tokens: the page uses the homepage black, off-white, muted grey, coral, and amber tokens. No gradient or new replacement brand palette is used.
 - Image quality and assets: Titanium’s sourced photography remains sharp and appropriately cropped; platform marks are local assets; no inline custom SVG, CSS illustration, or generic stock placeholder replaces visible brand imagery.
-- Copy and content: no invented performance metrics or ranking claims appear. Audit evidence and Colombian proof remain explicitly marked for completion or verification.
+- Copy and content: no invented performance metrics or ranking claims appear. Colombian client metrics are transcribed from the supplied Google Ads, Search Console and Analytics screenshots; remaining audit evidence stays explicitly marked for completion or verification.
 - Accessibility and behavior: semantic headings, skip link, alt text, focus styles, reduced-motion support, editable field keyboard behavior, and in-page discussion CTAs were checked. No browser console warnings or errors were present on the proposal route.
 
 ## Comparison history
@@ -87,6 +91,11 @@ The combined comparison places the complete approved composition beside the full
    - Merged the private and 24/7 signals into “Private, 24/7” with polished Australian-English positioning.
    - Replaced the standalone 24/7 Access item with “Recovery Centre,” covering the named active-recovery facilities and using the existing Material `spa` symbol.
    - Preserved four identity cards, the image/card composition, section summary, and responsive behavior. Browser checks at 1425px and 375px report zero horizontal overflow.
+11. Colombian client proof
+   - Replaced the three Section 03 placeholders with compact, linked proof rows for Petrogrease, Terraformados Antioquia and Tejas Trading, using the supplied logos and screenshot-supported headline metrics.
+   - Added three named public case-study groups with six full-size evidence links and copied public assets under `/assets/case-studies/`; the existing Business Profile portfolio remains intact.
+   - Preserved source-language screenshots, added English source-aware captions, and omitted ad cost from headline claims because the screenshots do not identify a currency.
+   - Proposal and public case-study checks at 1425px and 375px report all logos/evidence loaded, working anchors, one-column mobile stacking and zero horizontal overflow.
 
 ## Findings
 
@@ -95,6 +104,6 @@ No actionable P0, P1, or P2 differences remain.
 ## Follow-up polish
 
 - [P3] Bing Maps intentionally shares the Bing brand mark because no separate current Bing Maps mark was required for comprehension.
-- [P3] Replace the proof and audit placeholders after client evidence and account access are available.
+- [P3] Replace the remaining audit placeholders after client evidence and account access are available.
 
 final result: passed

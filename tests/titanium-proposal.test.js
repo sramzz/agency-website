@@ -18,6 +18,9 @@ test("Titanium proposal files and client assets stay inside the tokenized route"
     `${route}/assets/titanium-gym-floor.jpg`,
     `${route}/assets/titanium-hero-01.jpg`,
     `${route}/assets/logo-chatgpt-blossom.svg`,
+    `${route}/assets/logo-petrogrease.webp`,
+    `${route}/assets/logo-TerraformadosAntioquia.png`,
+    `${route}/assets/logo-TejasTrading.webp`,
     `${route}/assets/final-visual-target.png`,
   ].forEach((file) => assert.equal(exists(file), true, `${file} should exist`));
 
@@ -70,6 +73,24 @@ test("coverage, audit placeholders and business levers are complete", () => {
   assert.match(html, /assets\/logo-chatgpt-blossom\.svg/);
   assert.match(read(`${route}/assets/logo-chatgpt-blossom.svg`), /viewBox="140 220 280 280"/);
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
+});
+
+test("Colombian market proof uses named clients and verified headline metrics", () => {
+  const proof = html.match(/<div class="proof-panel"[\s\S]*?<\/div>\s*<\/div>\s*<\/section>/);
+  assert.ok(proof, "Colombian proof panel should exist");
+  assert.equal((proof[0].match(/class="client-proof-row"/g) || []).length, 3);
+  for (const expected of [
+    "Petrogrease · SEO + SEM",
+    "24.8k paid clicks · 4.65k organic clicks",
+    "Terraformados Antioquia · SEO + SEM",
+    "7.58k paid · 3.83k organic clicks · position 7",
+    "Tejas Trading · SEO + Analytics",
+    "56k active users · 55k new users",
+    "/case-studies/#petrogrease",
+    "/case-studies/#terraformados-antioquia",
+    "/case-studies/#tejas-trading",
+  ]) assert.ok(proof[0].includes(expected), `${expected} should be present`);
+  assert.doesNotMatch(proof[0], /proof-slot|Client proof — to add/);
 });
 
 test("Titanium online identity merges private access and adds recovery", () => {
