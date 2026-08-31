@@ -19,6 +19,8 @@ const routes = [
   "/onboarding/",
   "/case-studies/",
   "/contact/",
+  "/journey/",
+  "/about/",
   "/seo-agency/",
   "/local-seo/",
   "/technical-seo/",
@@ -342,7 +344,7 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   const map = html.match(/<aside class="australia-map-stage"[\s\S]*?<\/aside>/)?.[0];
 
   assert.ok(map, "Australia hero should include the editorial map stage");
-  assert.match(html, /href="\/styles\.css\?v=20260817-map8"/, "Australia page should bust the previous map stylesheet cache");
+  assert.match(html, /href="\/styles\.css\?v=20260831-nav1"/, "Australia page should load the current shared stylesheet");
   assert.equal(exists("assets/Maps/australia-svgrepo-com.svg"), true, "supplied Australia SVG should remain available");
   assert.match(map, /M434\.071,449\.363/, "Tasmania geometry should come from the supplied SVG");
   assert.match(map, /M511\.913,270\.556/, "mainland geometry should come from the supplied SVG");
@@ -468,25 +470,27 @@ test("Amsterdam legacy URL redirects without remaining in the sitemap", () => {
   assert.doesNotMatch(sitemap, /\/locations\/europe\/netherlands\//);
 });
 
-test("public navigation consistently presents the four service pillars", () => {
-  const serviceLinks = [
-    ["/seo-agency/", "SEO + GEO"],
-    ["/local-seo/", "Local SEO"],
-    ["/google-ads-management/", "SEM + GEM"],
+test("public navigation uses shared desktop and mobile mounts", () => {
+  const navigation = read("script.js");
+  const expectedLinks = [
+    ["/seo-agency/", "Local SEO + GEO Strategy"],
+    ["/google-ads-management/", "Ads SEM + GEM Management"],
     ["/#ai-automation", "AI Process Automation"],
+    ["/journey/", "Journey"],
+    ["/case-studies/", "Success Cases"],
+    ["/about/", "About us"],
   ];
 
   for (const file of htmlFiles()) {
     const html = read(file);
-    const desktop = html.match(/<nav class="desktop-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || "";
-    const mobile = html.match(/<nav id="mobile-nav" class="mobile-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || "";
+    assert.match(html, /<nav class="desktop-nav"[^>]*><\/nav>/, `${file} should expose an empty desktop mount`);
+    assert.match(html, /<nav id="mobile-nav" class="mobile-nav"[^>]*><\/nav>/, `${file} should expose an empty mobile mount`);
+    assert.match(html, /<a class="header-cta"[^>]*>Hire us!<\/a>/, `${file} should use the global CTA label`);
+  }
 
-    assert.equal((desktop.match(/<a /g) || []).length, 4, `${file} desktop navigation should have four services`);
-    for (const [href, label] of serviceLinks) {
-      const link = new RegExp(`href="${href.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">${label.replace(/\+/g, "\\+")}<\\/a>`);
-      assert.match(desktop, link, `${file} desktop navigation should include ${label}`);
-      assert.match(mobile, link, `${file} mobile navigation should include ${label}`);
-    }
+  for (const [href, label] of expectedLinks) {
+    assert.ok(navigation.includes(`href: "${href}"`), `shared navigation should link to ${href}`);
+    assert.ok(navigation.includes(`label: "${label}"`), `shared navigation should label ${label}`);
   }
 });
 
@@ -554,7 +558,7 @@ test("public pages have unique, bounded SEO metadata and one H1", () => {
 });
 
 test("JSON-LD parses, uses approved public types, and service pages describe their canonical service", () => {
-  const allowedTypes = new Set(["Organization", "WebSite", "WebPage", "FAQPage", "Service"]);
+  const allowedTypes = new Set(["Organization", "WebSite", "WebPage", "AboutPage", "FAQPage", "Service"]);
   const serviceRoutes = [
     "/seo-agency/",
     "/local-seo/",

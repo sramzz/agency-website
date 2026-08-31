@@ -86,6 +86,150 @@ a {
   color: var(--neutral);
 }
 
+.solutions-switcher {
+  position: relative;
+}
+
+.primary-nav-trigger,
+.primary-nav-link {
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.primary-nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.primary-nav-trigger:hover,
+.solutions-switcher.is-open .primary-nav-trigger {
+  color: var(--neutral);
+}
+
+.primary-nav-trigger.is-active,
+.primary-nav-link.is-active,
+.mobile-solutions-trigger.is-active,
+.mobile-primary-link.is-active {
+  color: var(--tertiary);
+}
+
+.nav-chevron {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 150ms ease;
+}
+
+.solutions-switcher.is-open .nav-chevron,
+.mobile-solutions.is-open .nav-chevron {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.solutions-panel {
+  position: absolute;
+  top: calc(100% + 25px);
+  left: 50%;
+  z-index: 30;
+  display: grid;
+  width: min(440px, calc(100vw - 36px));
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: #101116;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.48);
+  transform: translateX(-24%);
+}
+
+.solutions-panel[hidden],
+.mobile-solutions-panel[hidden] {
+  display: none;
+}
+
+.solutions-panel-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 8px 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.solutions-panel-heading span,
+.solution-index {
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.solutions-panel-heading strong {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+.solution-option,
+.mobile-solution-option {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.solution-option {
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 150ms ease, background 150ms ease;
+}
+
+.solution-option:last-child {
+  border-bottom: 0;
+}
+
+.solution-option:hover,
+.solution-option:focus-visible,
+.solution-option.is-active {
+  border-color: rgba(255, 48, 79, 0.42);
+  background: rgba(255, 48, 79, 0.08);
+}
+
+.solution-option.is-active .solution-index,
+.solution-option.is-active .solution-copy strong,
+.mobile-solution-option.is-active .solution-copy strong {
+  color: var(--tertiary);
+}
+
+.solution-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.solution-copy strong {
+  color: var(--neutral);
+  font-size: 0.9rem;
+}
+
+.solution-copy > span {
+  color: var(--secondary);
+  font-family: "Inter", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .header-actions {
   display: inline-flex;
   align-items: center;
@@ -338,6 +482,54 @@ a {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface-card);
+}
+
+.mobile-solutions,
+.mobile-solutions-panel,
+.mobile-language-group {
+  display: grid;
+  gap: 8px;
+}
+
+.mobile-solutions-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-card);
+  color: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mobile-solutions-panel {
+  padding-left: 12px;
+}
+
+.mobile-solution-option {
+  padding: 14px 16px;
+}
+
+.mobile-hire-cta {
+  border-color: transparent !important;
+  background: var(--tertiary) !important;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+}
+
+.mobile-language-group {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mobile-language-option {
+  text-align: center;
 }
 
 .hero,
