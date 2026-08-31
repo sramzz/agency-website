@@ -32,16 +32,19 @@ const routes = [
   "/locations/australia/brisbane/",
   "/locations/australia/gold-coast/",
   "/locations/europe/",
-  "/locations/europe/netherlands/",
+  "/locations/europe/amsterdam/",
   "/locations/europe/london/",
   "/locations/europe/madrid/",
   "/locations/europe/barcelona/",
   "/locations/europe/milan/",
   "/locations/europe/munich/",
   "/locations/europe/zurich/",
+  "/locations/latin-america/medellin/",
   "/es/",
   "/es/onboarding/",
 ];
+
+const redirectRoutes = ["/locations/europe/netherlands/"];
 
 const routeToFile = (route) => {
   if (route === "/") return "index.html";
@@ -75,6 +78,10 @@ const jsonLd = (html) =>
 test("all planned static routes exist as clean index pages", () => {
   for (const route of routes) {
     assert.equal(exists(routeToFile(route)), true, `${route} should exist`);
+  }
+
+  for (const route of redirectRoutes) {
+    assert.equal(exists(routeToFile(route)), true, `${route} redirect should exist`);
   }
 });
 
@@ -414,10 +421,51 @@ test("crawlable navigation and hub links expose core SEO routes", () => {
     assert.match(home, new RegExp(`href="${href}"`), `home should link to ${href}`);
   }
 
-  assert.match(read("locations/index.html"), /href="\/locations\/australia\/"/);
-  assert.match(read("locations/index.html"), /href="\/locations\/europe\/"/);
+  assert.match(read("locations/index.html"), /href="\/locations\/australia\/melbourne\/"/);
+  assert.match(read("locations/index.html"), /href="\/locations\/europe\/amsterdam\/"/);
+  assert.match(read("locations/index.html"), /href="\/locations\/latin-america\/medellin\/"/);
   assert.match(read("locations/australia/index.html"), /href="\/locations\/australia\/melbourne\/"/);
-  assert.match(read("locations/europe/index.html"), /href="\/locations\/europe\/netherlands\/"/);
+  assert.match(read("locations/europe/index.html"), /href="\/locations\/europe\/amsterdam\/"/);
+});
+
+test("global office selector is available on every public page", () => {
+  const sharedScript = read("script.js");
+
+  for (const file of htmlFiles()) {
+    const html = read(file);
+    assert.match(html, /class="header-actions"/, `${file} should expose the desktop selector mount`);
+    assert.match(html, /id="mobile-nav"/, `${file} should expose the mobile selector mount`);
+    assert.match(html, /src="(?:\/|\.\.\/)script\.js"/, `${file} should load the shared selector behavior`);
+  }
+
+  for (const office of ["Medellín", "Amsterdam", "Melbourne"]) assert.ok(sharedScript.includes(office));
+  for (const route of [
+    "/locations/latin-america/medellin/",
+    "/locations/europe/amsterdam/",
+    "/locations/australia/melbourne/",
+  ]) assert.ok(sharedScript.includes(route));
+  for (const contract of ["aria-expanded", "aria-controls", "aria-current", "ArrowDown", "Escape"]) {
+    assert.ok(sharedScript.includes(contract), `selector should implement ${contract}`);
+  }
+
+  for (const file of [
+    "proposals/winpress/index.html",
+    "proposals/winpress/es/index.html",
+    "proposals/whatsapp-booking/index.html",
+    "proposals/whatsapp-booking/es/index.html",
+  ]) {
+    assert.doesNotMatch(read(file), /\/locations\/latin-america\/medellin\//, `${file} should remain private and unchanged`);
+  }
+});
+
+test("Amsterdam legacy URL redirects without remaining in the sitemap", () => {
+  const redirect = read("locations/europe/netherlands/index.html");
+  const sitemap = read("sitemap.xml");
+  assert.match(redirect, /http-equiv="refresh" content="0; url=\/locations\/europe\/amsterdam\/"/);
+  assert.match(redirect, /window\.location\.replace\("\/locations\/europe\/amsterdam\/"\)/);
+  assert.match(redirect, /rel="canonical" href="https:\/\/rankingrebels\.com\/locations\/europe\/amsterdam\/"/);
+  assert.match(redirect, /name="robots" content="noindex, follow"/);
+  assert.doesNotMatch(sitemap, /\/locations\/europe\/netherlands\//);
 });
 
 test("public navigation consistently presents the four service pillars", () => {
