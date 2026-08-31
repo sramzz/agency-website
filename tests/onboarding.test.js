@@ -437,7 +437,11 @@ test("global office selector is available on every public page", () => {
     const html = read(file);
     assert.match(html, /class="header-actions"/, `${file} should expose the desktop selector mount`);
     assert.match(html, /id="mobile-nav"/, `${file} should expose the mobile selector mount`);
-    assert.match(html, /src="(?:\/|\.\.\/)script\.js"/, `${file} should load the shared selector behavior`);
+    assert.match(
+      html,
+      /src="(?:\/|\.\.\/)script\.js\?v=20260831-nav1"/,
+      `${file} should load the current shared selector behavior`,
+    );
   }
 
   for (const office of ["Medellín", "Amsterdam", "Melbourne"]) assert.ok(sharedScript.includes(office));

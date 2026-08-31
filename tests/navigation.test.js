@@ -49,7 +49,11 @@ test("all public pages expose clean mounts and preserve page-specific CTA destin
     assert.match(html, /<button class="menu-toggle"[^>]*aria-label="Open navigation"/, `${relative} should name the mobile menu control`);
     assert.match(html, /<nav class="desktop-nav"[^>]*><\/nav>/, `${relative} desktop mount should remain generated`);
     assert.match(html, /<nav id="mobile-nav" class="mobile-nav"[^>]*><\/nav>/, `${relative} mobile mount should remain generated`);
-    assert.equal((html.match(/src="(?:\/|\.\.\/)script\.js"/g) || []).length, 1, `${relative} should load shared navigation once`);
+    assert.equal(
+      (html.match(/src="(?:\/|\.\.\/)script\.js\?v=20260831-nav1"/g) || []).length,
+      1,
+      `${relative} should load the navigation script with the current cache version`,
+    );
     assert.match(html, /<a class="header-cta"[^>]*href="[^"]+"[^>]*>Hire us!<\/a>/, `${relative} should preserve a working Hire us destination`);
   }
 
