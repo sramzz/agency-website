@@ -344,7 +344,7 @@ test("Australia hero uses the supplied accurate map with accessible city links",
   const map = html.match(/<aside class="australia-map-stage"[\s\S]*?<\/aside>/)?.[0];
 
   assert.ok(map, "Australia hero should include the editorial map stage");
-  assert.match(html, /href="\/styles\.css\?v=20260831-nav1"/, "Australia page should load the current shared stylesheet");
+  assert.match(html, /href="\/styles\.css\?v=20260901-nav2"/, "Australia page should load the current shared stylesheet");
   assert.equal(exists("assets/Maps/australia-svgrepo-com.svg"), true, "supplied Australia SVG should remain available");
   assert.match(map, /M434\.071,449\.363/, "Tasmania geometry should come from the supplied SVG");
   assert.match(map, /M511\.913,270\.556/, "mainland geometry should come from the supplied SVG");
@@ -439,7 +439,7 @@ test("global office selector is available on every public page", () => {
     assert.match(html, /id="mobile-nav"/, `${file} should expose the mobile selector mount`);
     assert.match(
       html,
-      /src="(?:\/|\.\.\/)script\.js\?v=20260831-nav1"/,
+      /src="(?:\/|\.\.\/)script\.js\?v=20260901-nav2"/,
       `${file} should load the current shared selector behavior`,
     );
   }

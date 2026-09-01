@@ -219,19 +219,9 @@ if (mobileNav) {
     mobileLanguages.append(clone);
   });
 
-  const mobileLocations = document.createElement("div");
-  mobileLocations.className = "mobile-location-group";
-  mobileLocations.setAttribute("aria-label", "Office locations");
-  const mobileLabel = document.createElement("p");
-  mobileLabel.className = "mobile-location-label";
-  mobileLabel.textContent = "Office locations";
-  mobileLocations.append(mobileLabel);
-  officeLocations.forEach((office) => mobileLocations.append(createOfficeLink(office, "mobile-location-option")));
-
   mobileNav.replaceChildren(mobileSolutions, ...mobilePrimaryLinks);
   if (mobileHire) mobileNav.append(mobileHire);
   if (mobileLanguages.childElementCount) mobileNav.append(mobileLanguages);
-  mobileNav.append(mobileLocations);
 
   closeMobileSolutions = () => {
     mobileSolutionsPanel.hidden = true;
@@ -251,21 +241,37 @@ if (mobileNav) {
 const menuToggle = document.querySelector(".menu-toggle");
 
 if (menuToggle && mobileNav) {
+  const setMobileMenuState = (isOpen) => {
+    document.body.classList.toggle("nav-open", isOpen);
+    mobileNav.classList.toggle("is-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    if (!isOpen) closeMobileSolutions();
+  };
+
   closeMobileMenu = (returnFocus = false) => {
     const wasOpen = mobileNav.classList.contains("is-open");
-    document.body.classList.remove("nav-open");
-    mobileNav.classList.remove("is-open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    closeMobileSolutions();
+    setMobileMenuState(false);
     if (returnFocus && wasOpen) menuToggle.focus();
   };
+
   menuToggle.addEventListener("click", () => {
     closeSolutionsPanel();
     closeLocationPanel();
-    const isOpen = mobileNav.classList.toggle("is-open");
-    document.body.classList.toggle("nav-open", isOpen);
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    setMobileMenuState(!mobileNav.classList.contains("is-open"));
   });
+
+  const dismissMobileMenuFromOutside = (event) => {
+    if (!mobileNav.classList.contains("is-open") || mobileNav.contains(event.target)) return;
+    if (event.type === "click" && menuToggle.contains(event.target)) return;
+    closeMobileMenu();
+  };
+
+  document.addEventListener("click", dismissMobileMenuFromOutside);
+  for (const eventName of ["wheel", "touchmove"]) {
+    document.addEventListener(eventName, dismissMobileMenuFromOutside, { passive: true });
+  }
+
   mobileNav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeMobileMenu()));
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {

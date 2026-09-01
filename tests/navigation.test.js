@@ -49,11 +49,8 @@ test("all public pages expose clean mounts and preserve page-specific CTA destin
     assert.match(html, /<button class="menu-toggle"[^>]*aria-label="Open navigation"/, `${relative} should name the mobile menu control`);
     assert.match(html, /<nav class="desktop-nav"[^>]*><\/nav>/, `${relative} desktop mount should remain generated`);
     assert.match(html, /<nav id="mobile-nav" class="mobile-nav"[^>]*><\/nav>/, `${relative} mobile mount should remain generated`);
-    assert.equal(
-      (html.match(/src="(?:\/|\.\.\/)script\.js\?v=20260831-nav1"/g) || []).length,
-      1,
-      `${relative} should load the navigation script with the current cache version`,
-    );
+    assert.equal((html.match(/href="(?:\/|\.\.\/)styles\.css\?v=20260901-nav2"/g) || []).length, 1, `${relative} should load the current navigation styles`);
+    assert.equal((html.match(/src="(?:\/|\.\.\/)script\.js\?v=20260901-nav2"/g) || []).length, 1, `${relative} should load the current navigation behavior`);
     assert.match(html, /<a class="header-cta"[^>]*href="[^"]+"[^>]*>Hire us!<\/a>/, `${relative} should preserve a working Hire us destination`);
   }
 
@@ -78,6 +75,20 @@ test("desktop and mobile dropdown contracts are accessible and mutually exclusiv
   assert.match(styles, /\.mobile-solutions-panel\[hidden\]/);
   assert.match(styles, /\.mobile-hire-cta/);
   assert.match(styles, /@media \(max-width: 980px\)/);
+});
+
+test("mobile navigation stays compact and dismisses from outside interactions", () => {
+  const script = read("script.js");
+  const styles = read("styles.css");
+
+  assert.doesNotMatch(script, /mobile-location-group|mobile-location-option|mobileLocations/);
+  assert.match(script, /menuToggle\.setAttribute\("aria-label", isOpen \? "Close navigation" : "Open navigation"\)/);
+  assert.match(script, /document\.addEventListener\("click", dismissMobileMenuFromOutside\)/);
+  assert.match(script, /\["wheel", "touchmove"\][\s\S]*?document\.addEventListener\(eventName, dismissMobileMenuFromOutside/);
+  assert.match(script, /mobileNav\.contains\(event\.target\)/);
+  assert.match(styles, /\.menu-toggle\[aria-expanded="true"\] span:nth-child\(1\)/);
+  assert.match(styles, /\.menu-toggle\[aria-expanded="true"\] span:nth-child\(2\)/);
+  assert.match(styles, /\.menu-toggle\[aria-expanded="true"\] span:nth-child\(3\)/);
 });
 
 test("Journey and About are complete indexable public routes", () => {

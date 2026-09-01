@@ -58,9 +58,9 @@ test("selector configuration links every office and exposes accessible interacti
   assert.match(script, /setAttribute\("aria-expanded", "false"\)/);
   assert.match(script, /event\.key === "ArrowDown"/);
   assert.match(script, /event\.key === "Escape"/);
-  assert.match(script, /mobileNav\.append\(mobileLocations\)/);
+  assert.doesNotMatch(script, /mobileLocations|mobile-location-group|mobile-location-option/);
   assert.match(styles, /\.location-panel\[hidden\]/);
-  assert.match(styles, /\.mobile-location-group/);
+  assert.doesNotMatch(styles, /\.mobile-location-group|\.mobile-location-option/);
   assert.match(styles, /\.location-option\.is-active/);
   assert.match(styles, /@media \(max-width: 980px\)[\s\S]*?\.editorial-site \.header-actions \{[\s\S]*?display: inline-flex/);
   assert.match(styles, /\.editorial-site \.header-actions > \.header-cta,[\s\S]*?\.language-switcher \{[\s\S]*?display: none/);
