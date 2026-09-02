@@ -64,7 +64,7 @@ test("the public route and sitemap inventories are exact", () => {
   const actualPublicIndexFiles = walk(root)
     .filter((file) => file.endsWith(`${path.sep}index.html`))
     .filter((file) => !file.includes(`${path.sep}proposals${path.sep}`))
-    .map((file) => path.relative(root, file))
+    .map((file) => path.relative(root, file).replaceAll(path.sep, "/"))
     .sort();
   assert.deepEqual(actualPublicIndexFiles, [...publicFiles].sort());
 
@@ -207,7 +207,7 @@ test("retired URL equivalents have the exact Cloudflare redirects", () => {
     "/locations/latin-america/medellin/ /locations/latam/ 301",
     "/contact/ / 301",
   ];
-  assert.deepEqual(read("_redirects").trim().split("\n"), expected);
+  assert.deepEqual(read("_redirects").trim().split(/\r?\n/), expected);
 });
 
 test("retired content is absent and the normal 404 is noindex", () => {

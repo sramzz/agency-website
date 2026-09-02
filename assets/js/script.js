@@ -285,3 +285,103 @@ if (menuToggle && mobileNav) {
     }
   });
 }
+
+const serviceSelectorForm = document.querySelector(".service-selector");
+
+if (serviceSelectorForm) {
+  const serviceSelectorSlot = serviceSelectorForm.closest(".service-selector-slot");
+  const serviceSelectorTitle = serviceSelectorForm.querySelector("h2");
+  const serviceCheckboxes = [...serviceSelectorForm.querySelectorAll('input[name="services"]')];
+  const serviceSubmit = serviceSelectorForm.querySelector(".service-selector-submit");
+  const serviceTriggers = [...document.querySelectorAll("[data-service-selector-trigger]")];
+  let lastServiceTrigger = null;
+
+  const serviceDialog = document.createElement("dialog");
+  serviceDialog.className = "service-selector-dialog";
+  serviceDialog.setAttribute("aria-label", "Choose services");
+
+  const serviceDialogShell = document.createElement("div");
+  serviceDialogShell.className = "service-dialog-shell";
+  const serviceDialogClose = document.createElement("button");
+  serviceDialogClose.className = "service-dialog-close";
+  serviceDialogClose.type = "button";
+  serviceDialogClose.textContent = "Close";
+  serviceDialogClose.setAttribute("aria-label", "Close service selector");
+  const serviceDialogContent = document.createElement("div");
+  serviceDialogContent.className = "service-dialog-content";
+  serviceDialogShell.append(serviceDialogClose, serviceDialogContent);
+  serviceDialog.append(serviceDialogShell);
+  document.body.append(serviceDialog);
+
+  const syncServiceSelector = () => {
+    const hasSelection = serviceCheckboxes.some((checkbox) => checkbox.checked);
+    serviceSubmit.disabled = !hasSelection;
+    serviceCheckboxes.forEach((checkbox) => {
+      checkbox.closest(".service-option")?.classList.toggle("is-selected", checkbox.checked);
+    });
+  };
+
+  const restoreInlineSelector = () => {
+    if (serviceSelectorSlot && !serviceSelectorSlot.contains(serviceSelectorForm)) {
+      serviceSelectorSlot.append(serviceSelectorForm);
+    }
+    document.body.classList.remove("service-dialog-open");
+    lastServiceTrigger?.focus();
+    lastServiceTrigger = null;
+  };
+
+  const closeServiceDialog = () => {
+    if (serviceDialog.open) serviceDialog.close();
+  };
+
+  serviceTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      if (typeof serviceDialog.showModal !== "function") return;
+      event.preventDefault();
+      lastServiceTrigger = trigger;
+      serviceDialogContent.append(serviceSelectorForm);
+      document.body.classList.add("service-dialog-open");
+      serviceDialog.showModal();
+      window.requestAnimationFrame(() => serviceSelectorTitle?.focus());
+    });
+  });
+
+  serviceDialogClose.addEventListener("click", closeServiceDialog);
+  serviceDialog.addEventListener("click", (event) => {
+    if (event.target === serviceDialog) closeServiceDialog();
+  });
+  serviceDialog.addEventListener("close", restoreInlineSelector);
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && serviceDialog.open) closeServiceDialog();
+  });
+
+  serviceSelectorForm.addEventListener("change", syncServiceSelector);
+  serviceSelectorForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const selectedServices = serviceCheckboxes.filter((checkbox) => checkbox.checked).map((checkbox) => checkbox.value);
+    if (!selectedServices.length) {
+      syncServiceSelector();
+      serviceCheckboxes[0]?.focus();
+      return;
+    }
+
+    const market = serviceSelectorForm.dataset.market || "Not specified";
+    const whatsapp = serviceSelectorForm.dataset.whatsapp;
+    const message = [
+      "Hi Ranking Rebels, I’d like to explore how you can help my business get found.",
+      "",
+      "I’m interested in:",
+      ...selectedServices.map((service) => `• ${service}`),
+      "",
+      `Market: ${market}`,
+      "",
+      "Could you tell me what the best next step is?",
+    ].join("\n");
+    const whatsappUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
+
+    if (serviceDialog.open) serviceDialog.close();
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  });
+
+  syncServiceSelector();
+}

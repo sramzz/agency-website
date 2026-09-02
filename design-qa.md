@@ -124,3 +124,60 @@ No actionable P0, P1, or P2 differences remain.
 - [P3] Confirm account-level Google and Meta campaign data when client access becomes available.
 
 final result: passed
+
+---
+
+# Service Selector Design QA
+
+## Evidence
+
+- Approved desktop visual: `C:/Users/Kelly Serna/.codex/generated_images/01a0613b-81c6-7101-8dc0-87d251715875/exec-a7fbefee-b455-4f2b-8876-902a030f4bcb.png`
+- Approved mobile visual: `C:/Users/Kelly Serna/.codex/generated_images/01a0613b-81c6-7101-8dc0-87d251715875/exec-25ca3622-870d-41c9-8e10-9c5cb73a8899.png`
+- Desktop comparison: `docs/qa/service-selector-comparison-desktop.png`
+- Mobile comparison: `docs/qa/service-selector-comparison-mobile.png`
+- Final desktop modal: `docs/qa/service-selector-modal-desktop.png`
+- Final mobile inline form: `docs/qa/service-selector-mobile.png`
+- Local route: `http://127.0.0.1:4176/#service-selector`
+
+## Normalization and state
+
+- Desktop implementation: 1440 x 1000 CSS pixels, device scale 1.
+- Mobile implementation: 390 x 844 CSS pixels, device scale 1.
+- Selected-state evidence uses `ChatGPT & GEO` and `AI Automation`; production loads with no selections and a disabled CTA.
+- The same form node is moved between its inline location and the modal, so selection state is preserved without maintaining duplicate controls.
+
+## Responsive and interaction verification
+
+- Desktop renders a balanced 3 x 3 service grid; mobile transforms it into a single vertical list without horizontal overflow.
+- Every commercial CTA on the four in-scope homepages opens the selector dialog. The selector CTA alone opens WhatsApp.
+- Footer WhatsApp text links remain direct and unchanged.
+- The dialog traps background interaction through native `dialog`, closes by button, backdrop, or Escape, and restores focus to the CTA that opened it.
+- The CTA remains disabled with zero selections and becomes enabled with one or more selections.
+- WhatsApp message content was verified with selected services in display order and the correct market label.
+- Routing was verified to `31613390178` for Netherlands and `61439499441` for the root, Australia, and LATAM homepages.
+- Browser checks reported no JavaScript console errors and no horizontal overflow at 390px.
+
+## Comparison history
+
+1. Initial implementation
+   - [P2] The heading inherited an uppercase site style that diverged from the approved form.
+   - [P2] Programmatic heading focus produced an oversized red outline.
+   - [P1] Escape did not close the dialog consistently in the browser integration.
+2. Fixes
+   - Scoped the selector heading to sentence case.
+   - Removed the programmatic heading outline while retaining visible focus on interactive controls.
+   - Added explicit Escape handling, dialog restoration, and opener-focus restoration.
+3. Final verification
+   - Desktop and mobile visuals preserve the approved white card, conservative curved red brush, typography, spacing, and interaction hierarchy.
+   - Button, checkbox, hover, focus, selected, disabled, modal, narrow-screen, and successful WhatsApp-routing states were exercised.
+   - Automated site tests pass: 35 of 35.
+
+## Static audit note
+
+The strict project-wide frontend audit reports 30 pre-existing `affordance.actionless-button` findings, primarily navigation toggles and unrelated proposal pages. The only findings on the four changed homepages point to the existing mobile navigation toggle; the new service-selector submit buttons are correctly recognized as form submissions and introduce no audit finding.
+
+## Findings
+
+No actionable P0, P1, or P2 differences remain for the service-selector scope.
+
+final result: passed
