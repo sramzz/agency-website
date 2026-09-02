@@ -4343,9 +4343,11 @@ p {
   transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
 }
 
-.service-option:hover {
-  border-color: rgba(255, 48, 79, 0.58);
-  transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+  .service-option:hover {
+    border-color: rgba(255, 48, 79, 0.58);
+    transform: translateY(-1px);
+  }
 }
 
 .service-option.is-selected {
@@ -4489,9 +4491,6 @@ body.service-dialog-open {
     order: 2;
   }
 
-  .service-option:hover {
-    transform: none;
-  }
 }
 
 @media (max-width: 560px) {

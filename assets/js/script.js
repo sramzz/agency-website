@@ -294,7 +294,21 @@ if (serviceSelectorForm) {
   const serviceCheckboxes = [...serviceSelectorForm.querySelectorAll('input[name="services"]')];
   const serviceSubmit = serviceSelectorForm.querySelector(".service-selector-submit");
   const serviceTriggers = [...document.querySelectorAll("[data-service-selector-trigger]")];
+  const serviceLead = window.RankingRebelsLead;
+  let approximateLocation = null;
   let lastServiceTrigger = null;
+  let servicePointerType = "";
+
+  serviceSelectorForm.dataset.locationProvider = serviceLead ? "cloudflare" : "fallback";
+
+  serviceLead
+    ?.detectApproximateLocation()
+    .then((location) => {
+      approximateLocation = location;
+    })
+    .catch(() => {
+      approximateLocation = null;
+    });
 
   const serviceDialog = document.createElement("dialog");
   serviceDialog.className = "service-selector-dialog";
@@ -355,7 +369,16 @@ if (serviceSelectorForm) {
     if (event.key === "Escape" && serviceDialog.open) closeServiceDialog();
   });
 
-  serviceSelectorForm.addEventListener("change", syncServiceSelector);
+  serviceSelectorForm.addEventListener("pointerdown", (event) => {
+    servicePointerType = event.target.closest?.(".service-option") ? event.pointerType : "";
+  });
+  serviceSelectorForm.addEventListener("change", (event) => {
+    syncServiceSelector();
+    if (servicePointerType === "touch" && event.target.matches('input[name="services"]')) {
+      window.requestAnimationFrame(() => event.target.blur());
+    }
+    servicePointerType = "";
+  });
   serviceSelectorForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const selectedServices = serviceCheckboxes.filter((checkbox) => checkbox.checked).map((checkbox) => checkbox.value);
@@ -365,19 +388,16 @@ if (serviceSelectorForm) {
       return;
     }
 
-    const market = serviceSelectorForm.dataset.market || "Not specified";
-    const whatsapp = serviceSelectorForm.dataset.whatsapp;
-    const message = [
-      "Hi Ranking Rebels, I’d like to explore how you can help my business get found.",
-      "",
-      "I’m interested in:",
-      ...selectedServices.map((service) => `• ${service}`),
-      "",
-      `Market: ${market}`,
-      "",
-      "Could you tell me what the best next step is?",
-    ].join("\n");
-    const whatsappUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = serviceLead
+      ? serviceLead.buildWhatsAppUrl(selectedServices, approximateLocation)
+      : `https://wa.me/31613390178?text=${encodeURIComponent([
+          "Hi Ranking Rebels, I’d like to improve my business’s online visibility and reach more customers.",
+          "",
+          "I’m interested in:",
+          ...selectedServices.map((service) => `• ${service}`),
+          "",
+          "Could you recommend the best approach for my business?",
+        ].join("\n"))}`;
 
     if (serviceDialog.open) serviceDialog.close();
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");

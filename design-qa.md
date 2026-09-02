@@ -181,3 +181,14 @@ The strict project-wide frontend audit reports 30 pre-existing `affordance.actio
 No actionable P0, P1, or P2 differences remain for the service-selector scope.
 
 final result: passed
+
+## Service selector mobile and WhatsApp revision — 2026-09-03
+
+- [P1] iOS Safari could retain a clipped red interaction state after a selected service was cleared.
+- Restricted hover styling to devices with a fine pointer and removed touch-origin focus after the checkbox change; keyboard focus behavior remains intact.
+- Re-captured the 390 × 844 modal with zero selected services. All row dividers return to the neutral grey treatment and the CTA returns to its disabled state.
+- Replaced the market-based message with the approved fixed opener, selected-service bullets, optional approximate location, and the new closing question.
+- Location detection uses the same-origin Cloudflare trace endpoint, never calls browser geolocation, and keeps submission independent from the request result.
+- Country-only, missing-location, request-error, timeout, one-service, multi-service, encoding, and regional-number paths are covered by automated tests.
+
+final result: passed
