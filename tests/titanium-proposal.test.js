@@ -11,26 +11,26 @@ const html = read(`${route}/index.html`);
 const styles = read(`${route}/styles.css`);
 const script = read(`${route}/script.js`);
 
-test("Titanium proposal files and client assets stay inside the tokenized route", () => {
+test("Titanium proposal files and client assets retain their private route and shared image structure", () => {
   [
     `${route}/index.html`,
     `${route}/styles.css`,
     `${route}/script.js`,
-    `${route}/assets/titanium-gym-floor.jpg`,
-    `${route}/assets/titanium-hero-01.jpg`,
-    `${route}/assets/logo-chatgpt-blossom.svg`,
-    `${route}/assets/logo-petrogrease.webp`,
-    `${route}/assets/logo-TerraformadosAntioquia.png`,
-    `${route}/assets/logo-TejasTrading.webp`,
-    `${route}/assets/final-visual-target.png`,
-    `${route}/assets/GoogleTitaniumGym.jpeg`,
-    `${route}/assets/GoogleTitaniumGymS.jpeg`,
-    `${route}/assets/PerplexityGymAirportWest.jpeg`,
-    `${route}/assets/TablePerplexityGymAirportWest.png`,
-    `${route}/assets/ChatGPTGymAirportWest.png`,
-    `${route}/assets/CopilotGymAirportWest.png`,
-    `${route}/assets/BingGymAirportWest.jpeg`,
-    `${route}/assets/MetaTransparency.png`,
+    `assets/images/proposals/titanium-gym-9c42e7/titanium-gym-floor.jpg`,
+    `assets/images/proposals/titanium-gym-9c42e7/titanium-hero-01.jpg`,
+    `assets/images/proposals/titanium-gym-9c42e7/logo-chatgpt-blossom.svg`,
+    `assets/images/case-studies/petrogrease-logo.webp`,
+    `assets/images/case-studies/terraformados-antioquia-logo.png`,
+    `assets/images/case-studies/tejas-trading-logo.webp`,
+    `docs/qa/proposals/titanium-gym/final-visual-target.png`,
+    `assets/images/proposals/titanium-gym-9c42e7/google-titanium-gym.jpeg`,
+    `assets/images/proposals/titanium-gym-9c42e7/google-titanium-gym-search.jpeg`,
+    `assets/images/proposals/titanium-gym-9c42e7/perplexity-gym-airport-west.jpeg`,
+    `assets/images/proposals/titanium-gym-9c42e7/perplexity-gym-airport-west-comparison.png`,
+    `assets/images/proposals/titanium-gym-9c42e7/chatgpt-gym-airport-west.png`,
+    `assets/images/proposals/titanium-gym-9c42e7/copilot-gym-airport-west.png`,
+    `assets/images/proposals/titanium-gym-9c42e7/bing-gym-airport-west.jpeg`,
+    `assets/images/proposals/titanium-gym-9c42e7/meta-ad-library-titanium-gym.png`,
   ].forEach((file) => assert.equal(exists(file), true, `${file} should exist`));
 
   const localReferences = [...html.matchAll(/(?:href|src)="(\/[^"#?]+)(?:[#?][^"]*)?"/g)]
@@ -56,7 +56,7 @@ test("selected narrative and requested sections are present in order", () => {
     "Get found <span>wherever</span> members search and ask.",
     "Channel &amp; platform coverage",
     "Who we are",
-    "Our services address two business levers",
+    "Our solutions address two business levers",
     "Titanium's desired online brand Identity",
     "Where discovery breaks down",
     "One Titanium growth system",
@@ -89,8 +89,8 @@ test("coverage, discovery evidence and business levers are complete", () => {
     .forEach((service) => assert.ok(html.toLowerCase().includes(service.toLowerCase()), `${service} should be present`));
   assert.ok((html.match(/To verify/gi) || []).length >= 10);
   assert.match(html, /A public discovery snapshot across high-intent search, AI answers and paid media/);
-  assert.match(html, /assets\/logo-chatgpt-blossom\.svg/);
-  assert.match(read(`${route}/assets/logo-chatgpt-blossom.svg`), /viewBox="140 220 280 280"/);
+  assert.match(html, /assets\/images\/proposals\/titanium-gym-9c42e7\/logo-chatgpt-blossom\.svg/);
+  assert.match(read("assets/images/proposals/titanium-gym-9c42e7/logo-chatgpt-blossom.svg"), /viewBox="140 220 280 280"/);
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
 });
 
@@ -159,7 +159,7 @@ test("Titanium online identity merges private access and adds recovery", () => {
 });
 
 test("Australia plan pricing is copied accurately for an in-person presentation", () => {
-  assert.match(html, /Start with foundations\. Grow into a AI optimized gym\./);
+  assert.match(html, /Start with foundations\. Grow into an AI optimized gym\./);
   assert.match(html, /Final recommendations follow the audit\./);
   ["AUD 1,080", "AUD 1,680", "AUD 2,980", "AUD 350", "AUD 300 each", "AUD 250 each"]
     .forEach((price) => assert.ok(html.includes(price), `${price} should be present`));

@@ -56,7 +56,7 @@ git push -u origin feat/short-description
 Run:
 
 ```sh
-node --test tests/onboarding.test.js
+node --test
 ```
 
 For layout, package copy, onboarding copy, route, or navigation changes, also follow:
@@ -74,7 +74,7 @@ docs/screenshot-and-test-workflow.md
 - Canonical URLs use `https://rankingrebels.com/...`.
 - FAQ schema appears only when the page has visible FAQ content.
 - Sitemap and robots updates are included when routes change.
-- English and Spanish pages stay aligned when the change affects both languages.
+- Solution and market pages stay aligned when shared navigation or taxonomy changes.
 - Screenshots are attached for visual or responsive changes.
 
 ## Review Rules
@@ -95,4 +95,3 @@ git config --global user.email "you@example.com"
 ```
 
 If you prefer repository-only config, omit `--global` while inside this project.
-

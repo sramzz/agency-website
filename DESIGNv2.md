@@ -172,7 +172,7 @@ Layout rules:
 - Use generous section spacing.
 - Start each key page with a strong hero and one clear CTA.
 - Prefer two-column hero layouts: copy on the left, search/ranking/lead-flow visual on the right.
-- Use card grids for services, benefits, pricing, and proof.
+- Use card grids for solutions, benefits, pricing, and proof.
 - Use timeline layouts for process and onboarding.
 - Use sticky or persistent navigation only if it does not block content on mobile.
 - Mobile layout must stack cleanly with CTA buttons visible without crowding.
@@ -180,30 +180,20 @@ Layout rules:
 Recommended page structure:
 
 - Home.
-- Services / SEO Positioning.
+- Solutions / positioning.
 - Benefits.
 - Process.
-- Onboarding.
+- Journey.
 - Proof / Case Studies.
 - FAQ.
 - Plans.
-- Contact / WhatsApp CTA.
+- WhatsApp CTA.
 
 Recommended local page pattern:
 
-- `/locations/australia/melbourne/`
-- `/locations/australia/sydney/`
-- `/locations/australia/brisbane/`
-- `/locations/australia/gold-coast/`
-- `/locations/europe/amsterdam/`
-- `/locations/europe/rotterdam/`
-- `/locations/europe/utrecht/`
-- `/locations/europe/london/`
-- `/locations/europe/madrid/`
-- `/locations/europe/barcelona/`
-- `/locations/europe/milano/`
-- `/locations/europe/munich/`
-- `/locations/europe/zurich/`
+- `/locations/australia/`
+- `/locations/netherlands/`
+- `/locations/latam/`
 
 ## Elevation & Depth
 
@@ -284,16 +274,16 @@ Required elements:
 - Local intent label.
 - Lead-flow path, such as Google -> Website/Profile -> WhatsApp -> Sale.
 
-### Service Cards
+### Solution Cards
 
-Service cards should use:
+Solution cards should use:
 
 - Number label.
-- Short service title.
+- Short solution title.
 - Plain-English outcome.
 - No vague agency language.
 
-Example services:
+Example solution capabilities:
 
 - Local research.
 - Technical SEO.

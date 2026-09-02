@@ -2,26 +2,26 @@
 
 ## Evidence
 
-- Source visual truth: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/final-visual-target.png`
-- Pricing source truth: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-reference.png` (live local capture of `/locations/australia/#plans`)
+- Source visual truth: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/final-visual-target.png`
+- Pricing source truth: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-pricing-reference.png` (live local capture of `/locations/australia/#plans`)
 - Implementation route: `http://127.0.0.1:4176/proposals/titanium-gym-9c42e7/`
-- Combined comparison: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-comparison.png`
-- Desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-top.png`
-- Wide desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-desktop-wide.png`
-- Mobile hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-mobile-top.png`
-- Mobile investment: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-pricing-mobile.png`
-- Desktop identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-desktop.png`
-- Mobile identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-identity-mobile.png`
-- Desktop discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-desktop.png`
-- Mobile discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-mobile.png`
-- In-page evidence viewer: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-diagnosis-lightbox.png`
-- Desktop Growth System → Investment transition: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-system-investment-desktop.png`
-- Mobile Growth System → Investment transition: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-system-investment-mobile.png`
-- Desktop Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-desktop.png`
-- Mobile Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-client-proof-mobile.png`
-- Desktop public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-case-studies-desktop.png`
-- Mobile public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/proposals/titanium-gym-9c42e7/assets/qa-case-studies-mobile.png`
-- Focused regions: `qa-services.png`, `qa-system.png`, and `qa-pricing.png` in the same tokenized assets directory.
+- Combined comparison: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-comparison.png`
+- Desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-desktop-top.png`
+- Wide desktop hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-desktop-wide.png`
+- Mobile hero: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-mobile-top.png`
+- Mobile investment: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-pricing-mobile.png`
+- Desktop identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-identity-desktop.png`
+- Mobile identity: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-identity-mobile.png`
+- Desktop discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-diagnosis-desktop.png`
+- Mobile discovery evidence: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-diagnosis-mobile.png`
+- In-page evidence viewer: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-diagnosis-lightbox.png`
+- Desktop Growth System → Investment transition: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-system-investment-desktop.png`
+- Mobile Growth System → Investment transition: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-system-investment-mobile.png`
+- Desktop Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-client-proof-desktop.png`
+- Mobile Colombian proof: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-client-proof-mobile.png`
+- Desktop public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-case-studies-desktop.png`
+- Mobile public case studies: `/Users/sramzzs4d/Projects-sramzz/agency-website/docs/qa/proposals/titanium-gym/qa-case-studies-mobile.png`
+- Focused regions: `qa-solutions.png`, `qa-system.png`, and `qa-pricing.png` in the same tokenized assets directory.
 
 ## Normalization
 
@@ -98,7 +98,7 @@ The combined comparison places the complete approved composition beside the full
    - Preserved four identity cards, the image/card composition, section summary, and responsive behavior. Browser checks at 1425px and 375px report zero horizontal overflow.
 11. Colombian client proof
    - Replaced the three Section 03 placeholders with compact, linked proof rows for Petrogrease, Terraformados Antioquia and Tejas Trading, using the supplied logos and screenshot-supported headline metrics.
-   - Added three named public case-study groups with six full-size evidence links and copied public assets under `/assets/case-studies/`; the existing Business Profile portfolio remains intact.
+   - Added three named public case-study groups with six full-size evidence links and copied public assets under `/assets/images/case-studies/`; the existing Business Profile portfolio remains intact.
    - Preserved source-language screenshots, added English source-aware captions, and omitted ad cost from headline claims because the screenshots do not identify a currency.
    - Proposal and public case-study checks at 1425px and 375px report all logos/evidence loaded, working anchors, one-column mobile stacking and zero horizontal overflow.
 12. Discovery evidence reform

@@ -139,7 +139,7 @@ const createNavigationFixture = () => {
     for (const listener of documentListeners.get(type) || []) listener({ type, target });
   };
 
-  const script = fs.readFileSync(path.resolve(__dirname, "../script.js"), "utf8");
+  const script = fs.readFileSync(path.resolve(__dirname, "../assets/js/script.js"), "utf8");
   vm.runInNewContext(script, { document, window });
 
   return { body, dispatchDocument, menuToggle, mobileNav };

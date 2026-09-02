@@ -5,7 +5,7 @@ const test = require("node:test");
 
 const root = path.resolve(__dirname, "..");
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
-const { calculateReadingProgress } = require(path.join(root, "scroll-progress.js"));
+const { calculateReadingProgress } = require(path.join(root, "assets/js/scroll-progress.js"));
 
 const htmlFiles = (directory = root) =>
   fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -26,19 +26,19 @@ test("progress calculation is proportional and safely clamped", () => {
 
 test("every website page loads the shared progress assets exactly once", () => {
   const pages = htmlFiles();
-  assert.equal(pages.length, 35);
+  assert.equal(pages.length, 17);
 
   for (const absolutePath of pages) {
     const relativePath = path.relative(root, absolutePath);
     const html = fs.readFileSync(absolutePath, "utf8");
-    assert.equal((html.match(/href="\/scroll-progress\.css"/g) || []).length, 1, `${relativePath} should load progress CSS once`);
-    assert.equal((html.match(/src="\/scroll-progress\.js"/g) || []).length, 1, `${relativePath} should load progress JS once`);
+    assert.equal((html.match(/href="\/assets\/css\/scroll-progress\.css"/g) || []).length, 1, `${relativePath} should load progress CSS once`);
+    assert.equal((html.match(/src="\/assets\/js\/scroll-progress\.js"/g) || []).length, 1, `${relativePath} should load progress JS once`);
   }
 });
 
 test("progress assets use the shared red treatment and safe browser behavior", () => {
-  const script = read("scroll-progress.js");
-  const styles = read("scroll-progress.css");
+  const script = read("assets/js/scroll-progress.js");
+  const styles = read("assets/css/scroll-progress.css");
 
   assert.match(script, /requestAnimationFrame/);
   assert.match(script, /ResizeObserver/);

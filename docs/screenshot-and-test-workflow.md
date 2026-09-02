@@ -24,7 +24,7 @@ The HTML files reference assets from the root, so serve the repo directly at `/`
 
 ```sh
 python3 -m http.server 4176 --directory "$PWD"
-curl -I http://127.0.0.1:4176/styles.css
+curl -I http://127.0.0.1:4176/assets/css/styles.css
 ```
 
 The `curl` check should return `200 OK`. If it returns `404`, screenshots will look unstyled and are not valid review evidence.
@@ -54,9 +54,9 @@ Repeat with these URLs and output names:
 
 ```text
 http://127.0.0.1:4176/                         -> /private/tmp/ranking-rebels-index-desktop.png
-http://127.0.0.1:4176/es/                      -> /private/tmp/ranking-rebels-es-desktop.png
-http://127.0.0.1:4176/onboarding/              -> /private/tmp/ranking-rebels-onboarding-desktop.png
-http://127.0.0.1:4176/google-ads-management/   -> /private/tmp/ranking-rebels-google-ads-desktop.png
+http://127.0.0.1:4176/solutions/               -> /private/tmp/ranking-rebels-solutions-desktop.png
+http://127.0.0.1:4176/locations/               -> /private/tmp/ranking-rebels-locations-desktop.png
+http://127.0.0.1:4176/solutions/paid-ads/       -> /private/tmp/ranking-rebels-paid-ads-desktop.png
 ```
 
 ## Accurate Mobile and Section Screenshots

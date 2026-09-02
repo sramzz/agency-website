@@ -24,34 +24,40 @@ python3 -m http.server 4176
 
 ## Tests
 
-Run the static regression tests from the repository root:
+Run the complete static regression suite from the repository root:
 
 ```sh
-node --test tests/onboarding.test.js
+node --test
 ```
 
-The tests validate route files, SEO metadata, schema markup, local links, sitemap entries, and key onboarding copy.
+The tests validate the public route inventory, SEO metadata, schema markup, local links, image paths, navigation, sitemap entries, redirects, and proposal privacy.
 
 ## Project Structure
 
 ```text
 .
 |-- index.html
-|-- styles.css
-|-- script.js
+|-- solutions/
+|-- locations/
+|-- case-studies/
+|-- about/
+|-- journey/
+|-- assets/
+|   |-- css/
+|   |-- js/
+|   `-- images/
 |-- tests/
 |-- docs/
 |-- DirectionFiles/
-|-- es/
-|-- locations/
-|-- onboarding/
 |-- proposals/
-`-- service and content pages/
+|-- robots.txt
+|-- sitemap.xml
+`-- 404.html
 ```
 
 ## Useful Docs
 
 - `CONTRIBUTING.md`: team workflow, branch naming, PR checklist, and review rules.
 - `docs/screenshot-and-test-workflow.md`: visual QA and screenshot workflow.
+- `docs/url-migration-map.md`: redirect and retired-route policy.
 - `DirectionFiles/`: product, development, and deployment notes inherited from the project.
-
