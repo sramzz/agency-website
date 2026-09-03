@@ -8,15 +8,16 @@ const root = path.resolve(__dirname, "..");
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 
 const pages = [
-  { file: "index.html", market: "Not specified", whatsapp: "61439499441", triggers: 4 },
-  { file: "locations/australia/index.html", market: "Australia", whatsapp: "61439499441", triggers: 7 },
-  { file: "locations/netherlands/index.html", market: "Netherlands", whatsapp: "31613390178", triggers: 3 },
-  { file: "locations/latam/index.html", market: "LATAM", whatsapp: "61439499441", triggers: 3 },
+  { file: "index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 4 },
+  { file: "locations/australia/index.html", market: "Australia", whatsapp: "61439499441", directContacts: 7 },
+  { file: "locations/netherlands/index.html", market: "Netherlands", whatsapp: "31613390178", directContacts: 3 },
+  { file: "locations/latam/index.html", market: "LATAM", whatsapp: "61439499441", directContacts: 3 },
 ];
 
 const services = [
   "ChatGPT &amp; GEO",
   "Google SEO",
+  "Google Ads",
   "Instagram Ads",
   "Facebook Ads",
   "TikTok Ads",
@@ -37,28 +38,38 @@ test("the four market pages expose the complete service selector contract", () =
     assert.match(html, new RegExp(`data-whatsapp="${page.whatsapp}"`));
     assert.equal((html.match(/name="services"/g) || []).length, services.length);
     services.forEach((service) => assert.match(html, new RegExp(`value="${service}"`)));
-    assert.equal((html.match(/data-service-selector-trigger/g) || []).length, page.triggers);
+    const form = html.match(/<form class="service-selector"[\s\S]*?<\/form>/)?.[0] || "";
+    const serviceOrder = [...form.matchAll(/value="([^"]+)"/g)].map((match) => match[1]);
+    assert.deepEqual(serviceOrder, services, `${page.file} should preserve the approved service order`);
+    assert.equal((html.match(/data-service-selector-trigger/g) || []).length, 0);
+    assert.equal((html.match(/data-whatsapp-contact/g) || []).length, page.directContacts);
     assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-location-v2"><\/script>/);
 
-    const remainingWhatsAppLinks = [...html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/[^\"]+"[^>]*>([^<]+)<\/a>/g)];
-    assert.equal(remainingWhatsAppLinks.length, 1, `${page.file} should keep only its footer WhatsApp utility link direct`);
-    assert.equal(remainingWhatsAppLinks[0][1], "WhatsApp");
+    const directContacts = [...html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/31613390178"[^>]*data-whatsapp-contact[^>]*target="_blank"[^>]*rel="noreferrer"[^>]*>/g)];
+    assert.equal(directContacts.length, page.directContacts, `${page.file} should expose direct WhatsApp CTAs`);
   }
 });
 
-test("the shared selector behavior opens an accessible dialog and uses the non-blocking lead-message helper", () => {
+test("the shared selector keeps commercial CTAs direct and uses the non-blocking lead-message helper", () => {
   const script = read("assets/js/script.js");
-  assert.match(script, /document\.createElement\("dialog"\)/);
-  assert.match(script, /serviceDialog\.showModal\(\)/);
-  assert.match(script, /serviceDialog\.addEventListener\("close", restoreInlineSelector\)/);
-  assert.match(script, /event\.key === "Escape" && serviceDialog\.open/);
-  assert.match(script, /lastServiceTrigger\?\.focus\(\)/);
+  assert.doesNotMatch(script, /document\.createElement\("dialog"\)/);
+  assert.doesNotMatch(script, /serviceDialog\.showModal\(\)/);
+  assert.doesNotMatch(script, /data-service-selector-trigger/);
+  assert.match(script, /directWhatsappLinks/);
+  assert.match(script, /resolveWhatsAppNumber\(location\)/);
   assert.match(script, /serviceSubmit\.disabled = !hasSelection/);
   assert.match(script, /detectApproximateLocation\(\)/);
   assert.match(script, /buildWhatsAppUrl\(selectedServices, approximateLocation\)/);
   assert.doesNotMatch(script, /navigator\.geolocation/);
   assert.doesNotMatch(script, /Market:/);
   assert.match(script, /window\.open\(whatsappUrl, "_blank", "noopener,noreferrer"\)/);
+});
+
+test("the mobile selector uses separate two-column cards while desktop keeps three columns", () => {
+  const styles = read("assets/css/styles.css");
+  assert.match(styles, /\.service-options\s*\{[\s\S]*?grid-template-columns:\s*repeat\(3, minmax\(0, 1fr\)\)/);
+  assert.match(styles, /@media \(max-width: 800px\)[\s\S]*?\.service-options\s*\{[\s\S]*?grid-template-columns:\s*repeat\(2, minmax\(0, 1fr\)\)/);
+  assert.match(styles, /@media \(max-width: 800px\)[\s\S]*?\.service-option\s*\{[\s\S]*?border:\s*1px solid #e3e4e7[\s\S]*?border-radius:\s*8px/);
 });
 
 test("the mobile hover treatment cannot leave a red line after touch deselection", () => {

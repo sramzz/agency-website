@@ -125,8 +125,6 @@ No actionable P0, P1, or P2 differences remain.
 
 final result: passed
 
----
-
 # Service Selector Design QA
 
 ## Evidence
@@ -190,5 +188,54 @@ final result: passed
 - Replaced the market-based message with the approved fixed opener, selected-service bullets, optional approximate location, and the new closing question.
 - Location detection uses the same-origin Cloudflare trace endpoint, never calls browser geolocation, and keeps submission independent from the request result.
 - Country-only, missing-location, request-error, timeout, one-service, multi-service, encoding, and regional-number paths are covered by automated tests.
+
+final result: passed
+
+## Service selector mobile card-grid revision — 2026-09-03
+
+### Evidence
+
+- Source visual truth: `C:/Users/Kelly Serna/Downloads/WhatsApp Image 2026-09-03 at 11.18.37 AM.jpeg`
+- Browser-rendered implementation: `docs/qa/service-selector-mobile-grid.png`
+- Side-by-side comparison: `docs/qa/service-selector-mobile-grid-comparison.png`
+- Local route: `http://127.0.0.1:4176/?preview=service-grid-qa#service-selector`
+
+### Normalization and state
+
+- Source image: 1069 × 848 pixels.
+- Implementation screenshot: 375 × 844 pixels from a requested 390 × 844 browser viewport at device scale 1; the browser content width is 375 CSS pixels.
+- The comparison normalizes both captures to the same 850-pixel content height and labels the source and implementation separately.
+- State: English homepage, mobile breakpoint, no selected services, disabled selector CTA.
+
+### Full-view comparison
+
+The implementation follows the reference's core mobile structure: two equal columns, separated white cards, a soft-grey grouping surface, left-aligned checkboxes, and consistent row spacing. It preserves the already-approved Ranking Rebels heading, brush asset, brand typography, colors, and CTA instead of copying unrelated styling from the reference.
+
+### Focused region comparison
+
+A separate crop was not required because every service label, checkbox, card edge, gap, and CTA remains legible in the full-height side-by-side comparison.
+
+### Required fidelity surfaces
+
+- Fonts and typography: the existing Ranking Rebels font system and hierarchy remain unchanged; longer service names wrap within their own card without clipping.
+- Spacing and layout rhythm: ten services render as five balanced rows with 10px gaps, independent card borders, and no horizontal overflow.
+- Colors and tokens: white cards, neutral-grey grouping and borders, and the existing red selected/focus state remain consistent with the site.
+- Image quality and assets: the approved transparent red brush remains sharp; no new imagery or substitute assets were introduced.
+- Copy and content: `Google Ads` appears after `Google SEO`; `Other` remains the final option.
+- Accessibility and behavior: native labelled checkboxes remain keyboard-operable, the disabled/enabled CTA state was exercised, touch-deselection cleanup remains in place, and the 375px content viewport reports no overflow.
+
+### Comparison history
+
+1. Reference-directed revision
+   - Replaced the connected one-column mobile list with separate two-column cards.
+   - Added `Google Ads` and kept the approved semantic service order with `Other` last.
+2. Post-change evidence
+   - Browser inspection reports 10 options, two computed grid columns, 10px gaps, independent 1px neutral borders, no dialog element, and no horizontal overflow.
+   - Desktop inspection reports the original three-column grid, 16px gaps, and no horizontal overflow.
+   - Existing commercial CTAs resolve directly to WhatsApp, while the selector retains its own service-message CTA.
+
+### Findings
+
+No actionable P0, P1, or P2 differences remain in the requested scope.
 
 final result: passed

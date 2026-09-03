@@ -289,43 +289,34 @@ if (menuToggle && mobileNav) {
 const serviceSelectorForm = document.querySelector(".service-selector");
 
 if (serviceSelectorForm) {
-  const serviceSelectorSlot = serviceSelectorForm.closest(".service-selector-slot");
-  const serviceSelectorTitle = serviceSelectorForm.querySelector("h2");
   const serviceCheckboxes = [...serviceSelectorForm.querySelectorAll('input[name="services"]')];
   const serviceSubmit = serviceSelectorForm.querySelector(".service-selector-submit");
-  const serviceTriggers = [...document.querySelectorAll("[data-service-selector-trigger]")];
+  const directWhatsappLinks = [...document.querySelectorAll("[data-whatsapp-contact]")];
   const serviceLead = window.RankingRebelsLead;
   let approximateLocation = null;
-  let lastServiceTrigger = null;
   let servicePointerType = "";
 
   serviceSelectorForm.dataset.locationProvider = serviceLead ? "cloudflare" : "fallback";
+
+  const updateDirectWhatsAppLinks = (location) => {
+    const phone = serviceLead ? serviceLead.resolveWhatsAppNumber(location) : "31613390178";
+    directWhatsappLinks.forEach((link) => {
+      link.href = `https://wa.me/${phone}`;
+    });
+  };
+
+  updateDirectWhatsAppLinks(null);
 
   serviceLead
     ?.detectApproximateLocation()
     .then((location) => {
       approximateLocation = location;
+      updateDirectWhatsAppLinks(location);
     })
     .catch(() => {
       approximateLocation = null;
+      updateDirectWhatsAppLinks(null);
     });
-
-  const serviceDialog = document.createElement("dialog");
-  serviceDialog.className = "service-selector-dialog";
-  serviceDialog.setAttribute("aria-label", "Choose services");
-
-  const serviceDialogShell = document.createElement("div");
-  serviceDialogShell.className = "service-dialog-shell";
-  const serviceDialogClose = document.createElement("button");
-  serviceDialogClose.className = "service-dialog-close";
-  serviceDialogClose.type = "button";
-  serviceDialogClose.textContent = "Close";
-  serviceDialogClose.setAttribute("aria-label", "Close service selector");
-  const serviceDialogContent = document.createElement("div");
-  serviceDialogContent.className = "service-dialog-content";
-  serviceDialogShell.append(serviceDialogClose, serviceDialogContent);
-  serviceDialog.append(serviceDialogShell);
-  document.body.append(serviceDialog);
 
   const syncServiceSelector = () => {
     const hasSelection = serviceCheckboxes.some((checkbox) => checkbox.checked);
@@ -334,40 +325,6 @@ if (serviceSelectorForm) {
       checkbox.closest(".service-option")?.classList.toggle("is-selected", checkbox.checked);
     });
   };
-
-  const restoreInlineSelector = () => {
-    if (serviceSelectorSlot && !serviceSelectorSlot.contains(serviceSelectorForm)) {
-      serviceSelectorSlot.append(serviceSelectorForm);
-    }
-    document.body.classList.remove("service-dialog-open");
-    lastServiceTrigger?.focus();
-    lastServiceTrigger = null;
-  };
-
-  const closeServiceDialog = () => {
-    if (serviceDialog.open) serviceDialog.close();
-  };
-
-  serviceTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", (event) => {
-      if (typeof serviceDialog.showModal !== "function") return;
-      event.preventDefault();
-      lastServiceTrigger = trigger;
-      serviceDialogContent.append(serviceSelectorForm);
-      document.body.classList.add("service-dialog-open");
-      serviceDialog.showModal();
-      window.requestAnimationFrame(() => serviceSelectorTitle?.focus());
-    });
-  });
-
-  serviceDialogClose.addEventListener("click", closeServiceDialog);
-  serviceDialog.addEventListener("click", (event) => {
-    if (event.target === serviceDialog) closeServiceDialog();
-  });
-  serviceDialog.addEventListener("close", restoreInlineSelector);
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && serviceDialog.open) closeServiceDialog();
-  });
 
   serviceSelectorForm.addEventListener("pointerdown", (event) => {
     servicePointerType = event.target.closest?.(".service-option") ? event.pointerType : "";
@@ -399,7 +356,6 @@ if (serviceSelectorForm) {
           "Could you recommend the best approach for my business?",
         ].join("\n"))}`;
 
-    if (serviceDialog.open) serviceDialog.close();
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   });
 
