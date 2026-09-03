@@ -135,6 +135,8 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
   assert.equal((journey.match(/data-photo-brief=/g) || []).length, 2);
   assert.match(journey, /Candid strategy session with a client and Ranking Rebels/);
   assert.match(journey, /Client and strategist reviewing a live launch and measurement dashboard together/);
+  assert.ok(journey.includes("We work as an extension of your team. Monthly working sessions keep priorities aligned, and you have direct access to the marketers doing the work—so questions are answered quickly, decisions stay unblocked and both teams move together."));
+  assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
 
   const header = journey.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0];
   assert.equal(

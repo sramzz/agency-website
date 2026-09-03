@@ -4596,17 +4596,6 @@ body.service-dialog-open {
   font-size: clamp(3.4rem, 7.4vw, 5.7rem);
 }
 
-.journey-page .journey-rebel-line {
-  max-width: 620px;
-  padding-left: 18px;
-  border-left: 3px solid var(--tertiary);
-  color: var(--neutral);
-  font-family: "JetBrains Mono", monospace;
-  font-size: clamp(0.78rem, 1.3vw, 0.92rem);
-  font-weight: 700;
-  letter-spacing: 0.035em;
-}
-
 .journey-page .journey-photo-placeholder {
   position: relative;
   display: grid;
