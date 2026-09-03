@@ -119,6 +119,42 @@ test("the solutions picker is indexable, reachable and fully linked", () => {
   assert.match(read("index.html"), /<h2 id="solutions-title"><a href="\/solutions\/">Organic discovery, paid ads and automation built around revenue\.<\/a><\/h2>/);
 });
 
+test("the journey page presents the partnership flywheel in a clear, stable order", () => {
+  const journey = read("journey/index.html");
+  const stageIds = ["discovery", "prioritisation-strategy", "launch", "improvement"];
+  let previousIndex = -1;
+
+  for (const id of stageIds) {
+    const index = journey.indexOf(`id="${id}"`);
+    assert.ok(index > previousIndex, `${id} should appear in journey order`);
+    previousIndex = index;
+  }
+
+  assert.match(journey, /What we learn during Improvement feeds directly into the next Discovery cycle\./);
+  assert.match(journey, /Keep, change or stop—and what returns to Discovery\./);
+  assert.equal((journey.match(/data-photo-brief=/g) || []).length, 2);
+  assert.match(journey, /Candid strategy session with a client and Ranking Rebels/);
+  assert.match(journey, /Client and strategist reviewing a live launch and measurement dashboard together/);
+
+  const header = journey.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0];
+  assert.equal(
+    header,
+    '<header class="site-header">\n      <a class="brand" href="/" aria-label="Ranking Rebels home"><span class="brand-mark">RR</span><span>Ranking Rebels</span></a>\n      <nav class="desktop-nav" aria-label="Primary navigation"></nav>\n      <div class="header-actions"><a class="header-cta" href="https://wa.me/61439499441" target="_blank" rel="noreferrer">Hire us!</a></div>\n      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>\n    </header>',
+  );
+});
+
+test("the journey layout is page-scoped, responsive and motion-safe", () => {
+  const styles = read("assets/css/styles.css");
+
+  assert.match(styles, /\.journey-page \.journey-hero\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-timeline\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-stage-card\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-photo-placeholder\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-loop:focus-visible/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.journey-page \.journey-stage\s*\{[\s\S]*?grid-template-columns:\s*1fr/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.journey-page \.journey-loop\s*\{[\s\S]*?scroll-behavior:\s*auto/);
+});
+
 test("navigation exposes exactly three solutions and three markets", () => {
   const script = read("assets/js/script.js");
   for (const expected of [
