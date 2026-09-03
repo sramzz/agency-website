@@ -290,7 +290,6 @@ const serviceSelectorForm = document.querySelector(".service-selector");
 
 if (serviceSelectorForm) {
   const serviceCheckboxes = [...serviceSelectorForm.querySelectorAll('input[name="services"]')];
-  const serviceSubmit = serviceSelectorForm.querySelector(".service-selector-submit");
   const directWhatsappLinks = [...document.querySelectorAll("[data-whatsapp-contact]")];
   const serviceLead = window.RankingRebelsLead;
   let approximateLocation = null;
@@ -319,8 +318,6 @@ if (serviceSelectorForm) {
     });
 
   const syncServiceSelector = () => {
-    const hasSelection = serviceCheckboxes.some((checkbox) => checkbox.checked);
-    serviceSubmit.disabled = !hasSelection;
     serviceCheckboxes.forEach((checkbox) => {
       checkbox.closest(".service-option")?.classList.toggle("is-selected", checkbox.checked);
     });
@@ -339,22 +336,17 @@ if (serviceSelectorForm) {
   serviceSelectorForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const selectedServices = serviceCheckboxes.filter((checkbox) => checkbox.checked).map((checkbox) => checkbox.value);
-    if (!selectedServices.length) {
-      syncServiceSelector();
-      serviceCheckboxes[0]?.focus();
-      return;
-    }
 
     const whatsappUrl = serviceLead
       ? serviceLead.buildWhatsAppUrl(selectedServices, approximateLocation)
-      : `https://wa.me/31613390178?text=${encodeURIComponent([
-          "Hi Ranking Rebels, I’d like to improve my business’s online visibility and reach more customers.",
-          "",
-          "I’m interested in:",
-          ...selectedServices.map((service) => `• ${service}`),
-          "",
-          "Could you recommend the best approach for my business?",
-        ].join("\n"))}`;
+      : (() => {
+          const messageLines = ["Hi Ranking Rebels, I’d like to improve my business’s online visibility and reach more customers."];
+          if (selectedServices.length) {
+            messageLines.push("", "I’m interested in:", ...selectedServices.map((service) => `• ${service}`));
+          }
+          messageLines.push("", "Could you recommend the best approach for my business?");
+          return `https://wa.me/31613390178?text=${encodeURIComponent(messageLines.join("\n"))}`;
+        })();
 
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   });

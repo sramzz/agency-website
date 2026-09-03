@@ -33,7 +33,8 @@ test("the four market pages expose the complete service selector contract", () =
     assert.equal((html.match(/class="service-selector"/g) || []).length, 1, `${page.file} needs one selector`);
     assert.match(html, /id="service-selector"/);
     assert.match(html, /How can we [\s\S]*?help you get found[\s\S]*?\?/);
-    assert.match(html, /class="[^"]*service-selector-submit[^"]*" type="submit" disabled>Get started<\/button>/);
+    assert.match(html, /class="[^"]*service-selector-submit[^"]*" type="submit">Get started<\/button>/);
+    assert.doesNotMatch(html, /service-selector-submit[^>]*disabled/);
     assert.match(html, new RegExp(`data-market="${page.market}"`));
     assert.match(html, new RegExp(`data-whatsapp="${page.whatsapp}"`));
     assert.equal((html.match(/name="services"/g) || []).length, services.length);
@@ -43,7 +44,8 @@ test("the four market pages expose the complete service selector contract", () =
     assert.deepEqual(serviceOrder, services, `${page.file} should preserve the approved service order`);
     assert.equal((html.match(/data-service-selector-trigger/g) || []).length, 0);
     assert.equal((html.match(/data-whatsapp-contact/g) || []).length, page.directContacts);
-    assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-location-v2"><\/script>/);
+    assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-optional-services"><\/script>/);
+    assert.match(html, /<script src="\/assets\/js\/script\.js\?v=20260903-optional-services"><\/script>/);
 
     const directContacts = [...html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/31613390178"[^>]*data-whatsapp-contact[^>]*target="_blank"[^>]*rel="noreferrer"[^>]*>/g)];
     assert.equal(directContacts.length, page.directContacts, `${page.file} should expose direct WhatsApp CTAs`);
@@ -57,7 +59,7 @@ test("the shared selector keeps commercial CTAs direct and uses the non-blocking
   assert.doesNotMatch(script, /data-service-selector-trigger/);
   assert.match(script, /directWhatsappLinks/);
   assert.match(script, /resolveWhatsAppNumber\(location\)/);
-  assert.match(script, /serviceSubmit\.disabled = !hasSelection/);
+  assert.doesNotMatch(script, /serviceSubmit\.disabled|if \(!selectedServices\.length\)/);
   assert.match(script, /detectApproximateLocation\(\)/);
   assert.match(script, /buildWhatsAppUrl\(selectedServices, approximateLocation\)/);
   assert.doesNotMatch(script, /navigator\.geolocation/);
@@ -94,6 +96,20 @@ test("the WhatsApp message preserves one or multiple selected service names", ()
   });
   assert.match(severalServices, /I’m interested in:\n• Google SEO\n• AI WhatsApp Support\n• AI Automation/);
   assert.match(severalServices, /Location: Netherlands/);
+});
+
+test("the WhatsApp message supports a general enquiry with no selected services", () => {
+  const generalEnquiry = serviceLead.buildWhatsAppMessage([], {
+    city: "Brisbane",
+    country: "Australia",
+    countryCode: "AU",
+  });
+
+  assert.equal(
+    generalEnquiry,
+    "Hi Ranking Rebels, I’d like to improve my business’s online visibility and reach more customers.\n\nLocation: Brisbane, Australia\n\nCould you recommend the best approach for my business?",
+  );
+  assert.doesNotMatch(generalEnquiry, /I’m interested in:|^• /m);
 });
 
 test("location formatting supports city plus country, country only, and a complete omission", () => {

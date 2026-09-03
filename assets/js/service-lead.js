@@ -59,12 +59,12 @@
     const services = Array.isArray(selectedServices)
       ? selectedServices.filter((service) => typeof service === "string" && service.trim()).map((service) => service.trim())
       : [];
-    const lines = [
-      "Hi Ranking Rebels, I’d like to improve my business’s online visibility and reach more customers.",
-      "",
-      "I’m interested in:",
-      ...services.map((service) => `• ${service}`),
-    ];
+    const lines = ["Hi Ranking Rebels, I’d like to improve my business’s online visibility and reach more customers."];
+
+    if (services.length) {
+      lines.push("", "I’m interested in:", ...services.map((service) => `• ${service}`));
+    }
+
     const formattedLocation = formatLocation(location);
 
     if (formattedLocation) {

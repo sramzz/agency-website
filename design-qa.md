@@ -141,7 +141,7 @@ final result: passed
 
 - Desktop implementation: 1440 x 1000 CSS pixels, device scale 1.
 - Mobile implementation: 390 x 844 CSS pixels, device scale 1.
-- Selected-state evidence uses `ChatGPT & GEO` and `AI Automation`; production loads with no selections and a disabled CTA.
+- Selected-state evidence uses `ChatGPT & GEO` and `AI Automation`; production loads with no selections and an enabled CTA.
 - The same form node is moved between its inline location and the modal, so selection state is preserved without maintaining duplicate controls.
 
 ## Responsive and interaction verification
@@ -150,7 +150,7 @@ final result: passed
 - Every commercial CTA on the four in-scope homepages opens the selector dialog. The selector CTA alone opens WhatsApp.
 - Footer WhatsApp text links remain direct and unchanged.
 - The dialog traps background interaction through native `dialog`, closes by button, backdrop, or Escape, and restores focus to the CTA that opened it.
-- The CTA remains disabled with zero selections and becomes enabled with one or more selections.
+- The CTA remains enabled with zero, one, or more selections; the services are optional.
 - WhatsApp message content was verified with selected services in display order and the correct market label.
 - Routing was verified to `31613390178` for Netherlands and `61439499441` for the root, Australia, and LATAM homepages.
 - Browser checks reported no JavaScript console errors and no horizontal overflow at 390px.
@@ -167,7 +167,7 @@ final result: passed
    - Added explicit Escape handling, dialog restoration, and opener-focus restoration.
 3. Final verification
    - Desktop and mobile visuals preserve the approved white card, conservative curved red brush, typography, spacing, and interaction hierarchy.
-   - Button, checkbox, hover, focus, selected, disabled, modal, narrow-screen, and successful WhatsApp-routing states were exercised.
+   - Button, checkbox, hover, focus, selected, unselected, modal, narrow-screen, and successful WhatsApp-routing states were exercised.
    - Automated site tests pass: 35 of 35.
 
 ## Static audit note
@@ -184,7 +184,7 @@ final result: passed
 
 - [P1] iOS Safari could retain a clipped red interaction state after a selected service was cleared.
 - Restricted hover styling to devices with a fine pointer and removed touch-origin focus after the checkbox change; keyboard focus behavior remains intact.
-- Re-captured the 390 × 844 modal with zero selected services. All row dividers return to the neutral grey treatment and the CTA returns to its disabled state.
+- Re-captured the 390 × 844 modal with zero selected services. All row dividers return to the neutral grey treatment; the CTA now remains enabled.
 - Replaced the market-based message with the approved fixed opener, selected-service bullets, optional approximate location, and the new closing question.
 - Location detection uses the same-origin Cloudflare trace endpoint, never calls browser geolocation, and keeps submission independent from the request result.
 - Country-only, missing-location, request-error, timeout, one-service, multi-service, encoding, and regional-number paths are covered by automated tests.
@@ -205,7 +205,7 @@ final result: passed
 - Source image: 1069 × 848 pixels.
 - Implementation screenshot: 375 × 844 pixels from a requested 390 × 844 browser viewport at device scale 1; the browser content width is 375 CSS pixels.
 - The comparison normalizes both captures to the same 850-pixel content height and labels the source and implementation separately.
-- State: English homepage, mobile breakpoint, no selected services, disabled selector CTA.
+- State: English homepage, mobile breakpoint, no selected services, enabled selector CTA.
 
 ### Full-view comparison
 
