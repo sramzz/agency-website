@@ -8,7 +8,7 @@ const root = path.resolve(__dirname, "..");
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 
 const pages = [
-  { file: "index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 4 },
+  { file: "index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 3 },
   { file: "locations/australia/index.html", market: "Australia", whatsapp: "61439499441", directContacts: 7 },
   { file: "locations/netherlands/index.html", market: "Netherlands", whatsapp: "31613390178", directContacts: 3 },
   { file: "locations/latam/index.html", market: "LATAM", whatsapp: "61439499441", directContacts: 3 },

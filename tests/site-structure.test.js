@@ -58,6 +58,27 @@ const localTarget = (url) => {
 const schemas = (html) => [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
   .map((match) => JSON.parse(match[1]));
 
+const cssBlocks = (source, marker) => {
+  const blocks = [];
+  let searchFrom = 0;
+  while (searchFrom < source.length) {
+    const markerIndex = source.indexOf(marker, searchFrom);
+    if (markerIndex === -1) break;
+    const openIndex = source.indexOf("{", markerIndex + marker.length);
+    let depth = 0;
+    for (let index = openIndex; index < source.length; index += 1) {
+      if (source[index] === "{") depth += 1;
+      if (source[index] === "}") depth -= 1;
+      if (depth === 0) {
+        blocks.push(source.slice(openIndex + 1, index));
+        searchFrom = index + 1;
+        break;
+      }
+    }
+  }
+  return blocks;
+};
+
 test("the public route and sitemap inventories are exact", () => {
   for (const file of publicFiles) assert.equal(exists(file), true, `${file} should exist`);
 
@@ -116,7 +137,63 @@ test("the solutions picker is indexable, reachable and fully linked", () => {
   const sharedScript = read("assets/js/script.js");
   assert.match(sharedScript, /Explore all solutions/);
   assert.equal((sharedScript.match(/href: "\/solutions\/"/g) || []).length, 2, "desktop and mobile navigation should link the picker");
-  assert.match(read("index.html"), /<h2 id="solutions-title"><a href="\/solutions\/">Organic discovery, paid ads and automation built around revenue\.<\/a><\/h2>/);
+  assert.match(read("index.html"), /<h2 id="solutions-title">Choose the growth engine your business needs next\.<\/h2>/);
+});
+
+test("the homepage follows the selected search-led growth structure", () => {
+  const home = read("index.html");
+  const homepageDescription = "Ranking Rebels helps service businesses grow through SEO, GEO, paid ads and AI automation across Australia, the Netherlands and Latin America.";
+  assert.match(home, /<title>SEO, GEO &amp; Paid Ads Agency \| Ranking Rebels<\/title>/);
+  assert.equal((home.match(new RegExp(homepageDescription.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length, 4, "metadata and Organization schema should share the approved description");
+  assert.match(home, /<\/section>\s*<section class="section service-selector-section" id="service-selector"/, "the selector should immediately follow the hero");
+  assert.doesNotMatch(home, /discovery-band|id="ai-automation"|social-proof-section|evidence-title/);
+  const sectionIds = [
+    'class="hero home-hero"',
+    'id="service-selector"',
+    'id="customer-results"',
+    'id="solution-routes"',
+    'id="growth-flywheel"',
+    'id="markets-served"',
+    'id="faq"',
+    'class="section final-cta"',
+  ];
+  let previousIndex = -1;
+  for (const marker of sectionIds) {
+    const index = home.indexOf(marker);
+    assert.ok(index > previousIndex, `${marker} should appear in the selected order`);
+    previousIndex = index;
+  }
+
+  assert.equal((home.match(/class="customer-result-card"/g) || []).length, 3);
+  for (const [anchor, logo, metric] of [
+    ["petrogrease", "petrogrease-logo.webp", "24.8k paid clicks · 4.65k organic clicks"],
+    ["terraformados-antioquia", "terraformados-antioquia-logo.png", "7.58k paid · 3.83k organic clicks · position 7"],
+    ["tejas-trading", "tejas-trading-logo.webp", "56k active users · 55k new users"],
+  ]) {
+    assert.match(home, new RegExp(`href="/case-studies/#${anchor}"`));
+    assert.ok(home.includes(`/assets/images/case-studies/${logo}`));
+    assert.ok(home.includes(metric));
+  }
+
+  assert.equal((home.match(/class="solution-picker-card"/g) || []).length, 3);
+  for (const route of ["organic-discovery", "paid-ads", "ai-automation"]) {
+    assert.match(home, new RegExp(`href="/solutions/${route}/"`));
+  }
+
+  assert.equal((home.match(/class="process-flywheel-step"/g) || []).length, 4);
+  for (const anchor of ["discover", "prioritise-the-strategy", "build-and-launch", "measure-and-improve"]) {
+    assert.match(home, new RegExp(`href="/journey/#${anchor}"`));
+    assert.match(read("journey/index.html"), new RegExp(`id="${anchor}"`));
+  }
+
+  assert.equal((home.match(/href="\/locations\/(?:australia|netherlands|latam)\/"/g) || []).length, 3);
+  assert.equal((home.match(/<details>/g) || []).length, 8);
+  const faqSchema = schemas(home).find((schema) => schema["@type"] === "FAQPage");
+  assert.equal(faqSchema.mainEntity.length, 8);
+
+  const styles = read("assets/css/styles.css");
+  const reducedMotionBlocks = cssBlocks(styles, "@media (prefers-reduced-motion: reduce)");
+  assert.ok(reducedMotionBlocks.some((block) => /\.process-flywheel::before\s*\{[^}]*animation:\s*none/.test(block)), "the flywheel should stop under reduced motion");
 });
 
 test("navigation exposes exactly three solutions and three markets", () => {
