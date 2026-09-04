@@ -68,6 +68,16 @@ test("Privacy Policy publishes the controller's exact public address", () => {
     "Privacy Policy should publish the exact public postal or business address");
 });
 
+test("Privacy Policy shows exact privacy contact channels in the responsible section", () => {
+  const html = read(privacyFile);
+  const responsibleSection = html.match(/<section class="section">[\s\S]*?<p class="eyebrow">Who is responsible<\/p>[\s\S]*?<\/section>/i)?.[0];
+  assert.ok(responsibleSection, "Privacy Policy should include a visible Who is responsible section");
+  assert.match(responsibleSection, /<a[^>]+href="mailto:info@rankingrebels\.com"[^>]*>\s*info@rankingrebels\.com\s*<\/a>/i,
+    "Responsible section should show the exact privacy email as a mailto link");
+  assert.match(responsibleSection, /<a[^>]+href="tel:\+61439499441"[^>]*>\s*\+61 439 499 441\s*<\/a>/i,
+    "Responsible section should show the exact privacy phone as a tel link");
+});
+
 test("every public footer links to Privacy Policy", () => {
   for (const file of publicFiles.filter((candidate) => candidate !== privacyFile)) {
     const html = read(file);
