@@ -9,6 +9,7 @@ const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 
 const pages = [
   { file: "index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 3 },
+  { file: "journey/index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 0 },
   { file: "locations/australia/index.html", market: "Australia", whatsapp: "61439499441", directContacts: 7 },
   { file: "locations/netherlands/index.html", market: "Netherlands", whatsapp: "31613390178", directContacts: 3 },
   { file: "locations/latam/index.html", market: "LATAM", whatsapp: "61439499441", directContacts: 3 },
@@ -27,7 +28,7 @@ const services = [
   "Other",
 ];
 
-test("the four market pages expose the complete service selector contract", () => {
+test("every selector page exposes the complete service selector contract", () => {
   for (const page of pages) {
     const html = read(page.file);
     assert.equal((html.match(/class="service-selector"/g) || []).length, 1, `${page.file} needs one selector`);
@@ -50,6 +51,12 @@ test("the four market pages expose the complete service selector contract", () =
     const directContacts = [...html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/31613390178"[^>]*data-whatsapp-contact[^>]*target="_blank"[^>]*rel="noreferrer"[^>]*>/g)];
     assert.equal(directContacts.length, page.directContacts, `${page.file} should expose direct WhatsApp CTAs`);
   }
+});
+
+test("the journey page reuses the homepage selector without changing its choices or markup", () => {
+  const selector = (html) => html.match(/<form class="service-selector"[\s\S]*?<\/form>/)?.[0].replace(/\s+/g, " ").trim();
+
+  assert.equal(selector(read("journey/index.html")), selector(read("index.html")));
 });
 
 test("the shared selector keeps commercial CTAs direct and uses the non-blocking lead-message helper", () => {

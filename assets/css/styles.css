@@ -5018,3 +5018,360 @@ body.service-dialog-open {
     animation: none;
   }
 }
+
+/* Journey page: a shared commercial flywheel, kept isolated from other routes. */
+.journey-page .journey-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(118deg, rgba(255, 48, 79, 0.1), transparent 42%),
+    radial-gradient(circle at 88% 18%, rgba(255, 138, 0, 0.08), transparent 30%),
+    var(--primary);
+}
+
+.journey-page .journey-hero::after {
+  content: "";
+  position: absolute;
+  right: -14vw;
+  bottom: -32vw;
+  width: min(62vw, 760px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 48, 79, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.journey-page .journey-hero .hero-copy,
+.journey-page .journey-photo-placeholder-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.journey-page .journey-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3.4rem, 7.4vw, 5.7rem);
+}
+
+.journey-page .journey-photo-placeholder {
+  position: relative;
+  display: grid;
+  align-content: end;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 48, 79, 0.58);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, transparent 0 49.8%, rgba(255, 48, 79, 0.16) 50%, transparent 50.2%),
+    linear-gradient(35deg, transparent 0 49.8%, rgba(255, 138, 0, 0.12) 50%, transparent 50.2%),
+    #13080d;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+}
+
+.journey-page .journey-photo-placeholder-hero {
+  min-height: 520px;
+}
+
+.journey-page .journey-photo-placeholder-label {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  left: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.journey-page .journey-photo-placeholder-label strong {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 0.8;
+}
+
+.journey-page .journey-photo-placeholder figcaption {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  border-top: 1px solid rgba(255, 48, 79, 0.26);
+  background: rgba(5, 6, 9, 0.88);
+  color: var(--secondary);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.journey-page .journey-process {
+  background:
+    radial-gradient(circle at 8% 18%, rgba(255, 48, 79, 0.09), transparent 25%),
+    var(--surface);
+}
+
+.journey-page .journey-process .section-heading {
+  max-width: 900px;
+}
+
+.journey-page .journey-process .section-heading > p:last-child {
+  max-width: 760px;
+}
+
+.journey-page .journey-timeline {
+  position: relative;
+  display: grid;
+  gap: clamp(28px, 5vw, 54px);
+  max-width: 1040px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.journey-page .journey-timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 46px;
+  width: 1px;
+  background: linear-gradient(var(--tertiary), var(--accent), var(--tertiary));
+}
+
+.journey-page .journey-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 44px);
+  scroll-margin-top: 104px;
+}
+
+.journey-page .journey-stage-marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 10px;
+  padding-top: 26px;
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.journey-page .journey-stage-marker span {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(255, 48, 79, 0.64);
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.65rem;
+}
+
+.journey-page .journey-stage-marker small {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.journey-page .journey-stage-card {
+  padding: clamp(26px, 4vw, 46px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(26, 10, 18, 0.82);
+}
+
+.journey-page .journey-stage:nth-child(even) .journey-stage-card {
+  background: linear-gradient(120deg, rgba(255, 48, 79, 0.07), transparent 54%), var(--surface-card);
+}
+
+.journey-page .journey-stage:last-child .journey-stage-card {
+  border-color: rgba(255, 48, 79, 0.52);
+}
+
+.journey-page .journey-stage-label,
+.journey-page .journey-stage-details dt {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.journey-page .journey-stage-card h3 {
+  max-width: 770px;
+  margin-top: 14px;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+}
+
+.journey-page .journey-stage-card > p:not(.journey-stage-label, .journey-stage-rebel) {
+  max-width: 760px;
+  margin-top: 20px;
+  font-size: clamp(0.96rem, 1.6vw, 1.08rem);
+  line-height: 1.72;
+}
+
+.journey-page .journey-stage-rebel {
+  margin-top: 20px;
+  color: var(--neutral);
+  font-weight: 800;
+}
+
+.journey-page .journey-stage-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 30px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--border);
+}
+
+.journey-page .journey-stage-details div {
+  padding: 20px;
+  background: var(--primary);
+}
+
+.journey-page .journey-stage-details dd {
+  margin: 10px 0 0;
+  color: var(--secondary);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.journey-page .journey-photo-placeholder-process {
+  min-height: 330px;
+  margin-top: 30px;
+}
+
+.journey-page .journey-loop {
+  display: grid;
+  gap: 6px;
+  max-width: 936px;
+  margin: clamp(34px, 5vw, 58px) 0 0 138px;
+  padding: 24px 30px;
+  border: 1px solid rgba(255, 48, 79, 0.66);
+  border-radius: 16px;
+  background: linear-gradient(100deg, rgba(255, 48, 79, 0.14), transparent 72%), var(--primary);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.journey-page .journey-loop span {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.journey-page .journey-loop strong {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  text-transform: uppercase;
+}
+
+.journey-page .journey-loop:hover {
+  border-color: var(--tertiary);
+  transform: translateY(-2px);
+}
+
+.journey-page .journey-loop:focus-visible {
+  outline: 3px solid var(--tertiary);
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .journey-page .journey-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-page .journey-photo-placeholder-hero {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 700px) {
+  .journey-page .journey-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.35rem);
+  }
+
+  .journey-page .journey-timeline {
+    gap: 26px;
+  }
+
+  .journey-page .journey-timeline::before {
+    top: 28px;
+    bottom: 28px;
+    left: 24px;
+  }
+
+  .journey-page .journey-stage {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .journey-page .journey-stage-marker {
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    justify-items: start;
+    gap: 14px;
+    width: max-content;
+    padding: 0 18px 0 0;
+  }
+
+  .journey-page .journey-stage-marker span {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+
+  .journey-page .journey-stage-card {
+    margin-left: 24px;
+  }
+
+  .journey-page .journey-stage-details {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-page .journey-photo-placeholder-process {
+    min-height: 280px;
+  }
+
+  .journey-page .journey-loop {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 430px) {
+  .journey-page .journey-photo-placeholder-hero {
+    min-height: 360px;
+  }
+
+  .journey-page .journey-stage-card {
+    padding: 24px 20px;
+  }
+
+  .journey-page .journey-stage-card h3 {
+    font-size: clamp(1.8rem, 9vw, 2.35rem);
+  }
+
+  .journey-page .journey-stage-details div {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-page .journey-loop {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}

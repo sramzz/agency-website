@@ -181,7 +181,7 @@ test("the homepage follows the selected search-led growth structure", () => {
   }
 
   assert.equal((home.match(/class="process-flywheel-step"/g) || []).length, 4);
-  for (const anchor of ["discover", "prioritise-the-strategy", "build-and-launch", "measure-and-improve"]) {
+  for (const anchor of ["discovery", "prioritisation-strategy", "launch", "improvement"]) {
     assert.match(home, new RegExp(`href="/journey/#${anchor}"`));
     assert.match(read("journey/index.html"), new RegExp(`id="${anchor}"`));
   }
@@ -210,6 +210,44 @@ test("the homepage uses the dark design system without light section bands", () 
   assert.match(styles, /\.editorial-site #home \.process-flywheel-hub\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
   assert.match(styles, /\.editorial-site #home > \.final-cta\s*\{[^}]*background:[^}]*var\(--primary\)/);
   assert.doesNotMatch(styles, /\.editorial-site #home > \.final-cta\s*\{[^}]*var\(--surface\)/);
+});
+
+test("the journey page presents the partnership flywheel in a clear, stable order", () => {
+  const journey = read("journey/index.html");
+  const stageIds = ["discovery", "prioritisation-strategy", "launch", "improvement"];
+  let previousIndex = -1;
+
+  for (const id of stageIds) {
+    const index = journey.indexOf(`id="${id}"`);
+    assert.ok(index > previousIndex, `${id} should appear in journey order`);
+    previousIndex = index;
+  }
+
+  assert.match(journey, /What we learn after launch shapes the next round of Discovery\./);
+  assert.match(journey, /We decide what to keep, change or stop, then choose what goes back into Discovery\./);
+  assert.equal((journey.match(/data-photo-brief=/g) || []).length, 2);
+  assert.match(journey, /A candid strategy session with a client and the Ranking Rebels team/);
+  assert.match(journey, /A client and strategist checking a live launch and its measurement dashboard together/);
+  assert.ok(journey.includes("We join your team instead of sitting on the sidelines. Every month, we work through priorities together. You can also speak directly with the marketers doing the work whenever a question or shared task comes up."));
+  assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
+
+  const header = journey.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0];
+  assert.equal(
+    header,
+    '<header class="site-header">\n      <a class="brand" href="/" aria-label="Ranking Rebels home"><span class="brand-mark">RR</span><span>Ranking Rebels</span></a>\n      <nav class="desktop-nav" aria-label="Primary navigation"></nav>\n      <div class="header-actions"><a class="header-cta" href="https://wa.me/61439499441" target="_blank" rel="noreferrer">Hire us!</a></div>\n      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>\n    </header>',
+  );
+});
+
+test("the journey layout is page-scoped, responsive and motion-safe", () => {
+  const styles = read("assets/css/styles.css");
+
+  assert.match(styles, /\.journey-page \.journey-hero\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-timeline\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-stage-card\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-photo-placeholder\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-loop:focus-visible/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.journey-page \.journey-stage\s*\{[\s\S]*?grid-template-columns:\s*1fr/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.journey-page \.journey-loop\s*\{[\s\S]*?scroll-behavior:\s*auto/);
 });
 
 test("navigation exposes exactly three solutions and three markets", () => {
