@@ -161,8 +161,13 @@ test("the Australia hero map communicates restrained, interactive nationwide cov
   for (const city of ["Canberra", "Gold Coast", "Hobart", "Darwin", "Newcastle", "Geelong", "Cairns", "Townsville", "Toowoomba", "Rockhampton", "Alice Springs", "Launceston", "Bunbury", "Albany", "Geraldton"]) {
     assert.match(australia, new RegExp(`<text class="market-tooltip"[^>]*>${city}<\\/text>`));
   }
-  for (const [city, x, y] of [["Cairns", 410, 130], ["Albany", 125, 325]]) {
-    assert.match(australia, new RegExp(`data-city="${city}"[^>]*>[\\s\\S]*?<circle class="market-hit-area" cx="${x}" cy="${y}"[^>]*>[\\s\\S]*?<circle class="market-dot" cx="${x}" cy="${y}"`), `${city} should stay at its reviewed on-land coordinates`);
+  const reviewedCityCoordinates = {
+    Brisbane: [504, 242], Sydney: [481, 338], Melbourne: [403, 401], Adelaide: [322, 355], Perth: [36, 309],
+    Canberra: [455, 360], "Gold Coast": [505, 252], Hobart: [432, 487], Darwin: [229, 39], Newcastle: [488, 323], Geelong: [395, 406], Cairns: [413, 99],
+    Townsville: [426, 128], Toowoomba: [487, 250], Rockhampton: [472, 184], "Alice Springs": [263, 188], Launceston: [430, 461], Bunbury: [33, 330], Albany: [62, 348], Geraldton: [20, 261],
+  };
+  for (const [city, [x, y]] of Object.entries(reviewedCityCoordinates)) {
+    assert.match(australia, new RegExp(`data-city="${city}"[^>]*>[\\s\\S]*?<circle class="market-hit-area" cx="${x}" cy="${y}"[^>]*>[\\s\\S]*?<circle class="market-dot" cx="${x}" cy="${y}"`), `${city} should stay at its reference-mapped coordinates`);
   }
 
   const markerGeometry = [...australia.matchAll(/<g class="market-marker [^"]+" data-city="([^"]+)"[^>]*><circle class="market-hit-area" cx="([\d.]+)" cy="([\d.]+)" r="([\d.]+)"/g)]
