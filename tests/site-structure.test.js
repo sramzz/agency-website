@@ -161,6 +161,9 @@ test("the Australia hero map communicates restrained, interactive nationwide cov
   for (const city of ["Canberra", "Gold Coast", "Hobart", "Darwin", "Newcastle", "Geelong", "Cairns", "Townsville", "Toowoomba", "Rockhampton", "Alice Springs", "Launceston", "Bunbury", "Albany", "Geraldton"]) {
     assert.match(australia, new RegExp(`<text class="market-tooltip"[^>]*>${city}<\\/text>`));
   }
+  for (const [city, x, y] of [["Cairns", 410, 130], ["Albany", 125, 325]]) {
+    assert.match(australia, new RegExp(`data-city="${city}"[^>]*>[\\s\\S]*?<circle class="market-hit-area" cx="${x}" cy="${y}"[^>]*>[\\s\\S]*?<circle class="market-dot" cx="${x}" cy="${y}"`), `${city} should stay at its reviewed on-land coordinates`);
+  }
 
   const markerGeometry = [...australia.matchAll(/<g class="market-marker [^"]+" data-city="([^"]+)"[^>]*><circle class="market-hit-area" cx="([\d.]+)" cy="([\d.]+)" r="([\d.]+)"/g)]
     .map((match) => ({ city: match[1], x: Number(match[2]), y: Number(match[3]), radius: Number(match[4]) }));
