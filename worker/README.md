@@ -27,11 +27,11 @@ Do not run these steps from an automated subagent. An authorized operator must:
 1. **Completed 2026-09-04:** D1 `ranking-rebels-leads` was created with jurisdiction `eu`, its real database ID was added to `wrangler.jsonc`, and migration `0001_create_leads.sql` was applied remotely.
 2. **Completed 2026-09-04:** Queues `ranking-rebels-lead-email` and `ranking-rebels-lead-email-dlq` were created. The producer, consumer, retry limit, and DLQ are declared in `wrangler.jsonc` and will attach when the Worker is deployed.
 3. Create a Managed Turnstile widget for `rankingrebels.com` and `www.rankingrebels.com`; expose its public sitekey as `window.RankingRebelsLeadCaptureConfig.turnstileSitekey` before `lead-capture.js`, and set the secret only with `wrangler secret put TURNSTILE_SECRET_KEY`.
-4. Configure Email Service for `leads@forms.rankingrebels.com`, verify `rankingrebelsmarketingagency@gmail.com`, and retain the destination restriction declared in Wrangler.
+4. **Completed 2026-09-04:** Email Routing was enabled for the `forms.rankingrebels.com` subdomain and `rankingrebelsmarketingagency@gmail.com` was added and verified. The Worker sender remains `leads@forms.rankingrebels.com`, and Wrangler restricts the Email binding to that verified destination.
 5. Configure a WAF rate-limit rule for exact path `/api/leads`: 5 requests per 10 seconds per IP, block for 10 seconds.
 6. Run the dry-run, deploy the Worker and its routes first, perform the D1/email smoke test, then publish the static frontend through Coolify.
 
-Production remains blocked until the Turnstile keys, D1 ID, Queue resources, verified email destination, and written approval of `/privacy/` are all present.
+Production remains blocked until the production Turnstile keys and written approval of `/privacy/` are present. D1, Queue resources, and the verified email destination are already provisioned.
 
 ## Queue and retention operations
 
