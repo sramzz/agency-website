@@ -139,24 +139,50 @@ test("the solutions picker is indexable, reachable and fully linked", () => {
   assert.equal((sharedScript.match(/href: "\/solutions\/"/g) || []).length, 2, "desktop and mobile navigation should link the picker");
 });
 
-test("the Australia hero map communicates restrained nationwide coverage", () => {
+test("the Australia hero map communicates restrained, interactive nationwide coverage", () => {
   const australia = read("locations/australia/index.html");
   const styles = read("assets/css/styles.css");
 
   assert.match(australia, /<span>Australia-wide coverage<\/span>/);
+  assert.match(australia, /<svg class="australia-map overview-map"[^>]*role="group"[^>]*aria-labelledby="australia-map-title australia-map-desc"/);
   assert.match(australia, /<title id="australia-map-title">Australia-wide service coverage<\/title>/);
   assert.match(australia, /The markers show that Ranking Rebels works across Australia\. They do not represent offices or customer locations\./);
   assert.equal((australia.match(/class="market-marker market-marker-major"/g) || []).length, 5);
   assert.equal((australia.match(/class="market-marker market-marker-secondary"/g) || []).length, 7);
   assert.equal((australia.match(/class="market-marker market-marker-regional"/g) || []).length, 8);
+  assert.equal((australia.match(/class="market-hit-area"/g) || []).length, 20);
+  assert.equal((australia.match(/class="market-tooltip"/g) || []).length, 15);
+  assert.equal((australia.match(/tabindex="0" role="img" aria-label="[^"]+"/g) || []).length, 20);
+  assert.match(australia, /Hover or tap a dot to see the city\./);
+  assert.match(australia, /src="\/assets\/js\/australia-map\.js/);
   for (const city of ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"]) {
     assert.match(australia, new RegExp(`<text class="market-label"[^>]*>${city}<\\/text>`));
   }
+  for (const city of ["Canberra", "Gold Coast", "Hobart", "Darwin", "Newcastle", "Geelong", "Cairns", "Townsville", "Toowoomba", "Rockhampton", "Alice Springs", "Launceston", "Bunbury", "Albany", "Geraldton"]) {
+    assert.match(australia, new RegExp(`<text class="market-tooltip"[^>]*>${city}<\\/text>`));
+  }
+
+  const markerGeometry = [...australia.matchAll(/<g class="market-marker [^"]+" data-city="([^"]+)"[^>]*><circle class="market-hit-area" cx="([\d.]+)" cy="([\d.]+)" r="([\d.]+)"/g)]
+    .map((match) => ({ city: match[1], x: Number(match[2]), y: Number(match[3]), radius: Number(match[4]) }));
+  for (let markerIndex = 0; markerIndex < markerGeometry.length; markerIndex += 1) {
+    for (let overlayIndex = markerIndex + 1; overlayIndex < markerGeometry.length; overlayIndex += 1) {
+      const marker = markerGeometry[markerIndex];
+      const overlay = markerGeometry[overlayIndex];
+      const distance = Math.hypot(marker.x - overlay.x, marker.y - overlay.y);
+      assert.ok(distance > overlay.radius, `${overlay.city}'s hit area should not cover ${marker.city}'s dot`);
+    }
+  }
 
   assert.doesNotMatch(australia, /map-zoom|East coast focus|market-pulse/);
-  assert.doesNotMatch(styles, /\.map-zoom|@keyframes market-pulse|market-marker:hover/);
+  assert.doesNotMatch(styles, /\.map-zoom|@keyframes market-pulse/);
   assert.match(styles, /\.market-marker-regional \.market-dot\s*\{[^}]*opacity:\s*0\.52/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.australia-map \.market-label,[\s\S]*?\.australia-map \.market-leader\s*\{[^}]*display:\s*none/);
+  assert.match(styles, /\.market-marker\.is-active \.market-tooltip/);
+  assert.match(styles, /\.market-marker:focus-visible \.market-tooltip/);
+  assert.match(styles, /@media \(hover: hover\) and \(pointer: fine\)[\s\S]*?\.market-marker:hover \.market-tooltip/);
+  assert.match(styles, /@media \(hover: hover\) and \(pointer: fine\)[\s\S]*?\.market-marker:hover \.market-dot\s*\{[^}]*filter:\s*url\(#market-glow\)/);
+  assert.doesNotMatch(styles, /cursor:\s*help/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.market-marker-major\.is-active \.market-label/);
 });
 
 test("the homepage follows the selected search-led growth structure", () => {

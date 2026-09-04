@@ -3830,6 +3830,15 @@ p {
   color: var(--accent);
 }
 
+.map-hint {
+  margin: 0;
+  padding: 0 3%;
+  color: rgba(248, 250, 252, 0.48);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+}
+
 .map-composition {
   display: grid;
   min-height: clamp(430px, 40vw, 530px);
@@ -3873,6 +3882,15 @@ p {
   fill: var(--accent);
 }
 
+.australia-map .market-marker {
+  outline: none;
+}
+
+.australia-map .market-hit-area {
+  fill: transparent;
+  pointer-events: all;
+}
+
 .australia-map .market-marker-major .market-dot {
   filter: url(#market-glow);
 }
@@ -3892,6 +3910,47 @@ p {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.australia-map .market-tooltip {
+  opacity: 0;
+  fill: var(--neutral);
+  stroke: #050609;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+  pointer-events: none;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.australia-map .market-marker.is-active .market-tooltip,
+.australia-map .market-marker:focus-visible .market-tooltip {
+  opacity: 1;
+}
+
+.australia-map .market-marker.is-active .market-dot,
+.australia-map .market-marker:focus-visible .market-dot {
+  filter: url(#market-glow);
+}
+
+.australia-map .market-marker:focus-visible .market-hit-area {
+  stroke: rgba(248, 250, 252, 0.72);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .australia-map .market-marker:hover .market-tooltip {
+    opacity: 1;
+  }
+
+  .australia-map .market-marker:hover .market-dot {
+    filter: url(#market-glow);
+  }
 }
 
 .map-city-links {
@@ -4481,6 +4540,11 @@ p {
   .australia-map .market-label,
   .australia-map .market-leader {
     display: none;
+  }
+
+  .australia-map .market-marker-major.is-active .market-label,
+  .australia-map .market-marker-major:focus-visible .market-label {
+    display: block;
   }
 
   .map-city-links {
