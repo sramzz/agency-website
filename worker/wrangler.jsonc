@@ -17,15 +17,14 @@
     "LEAD_REQUEUE_AFTER_SECONDS": "86400"
   },
 
-  // The database ID is intentionally non-deployable until provisioning.
-  // Keep real resource IDs and secrets out of source control.
-  // Create the D1 database with --jurisdiction eu; jurisdiction is not a
-  // supported field in a d1_databases binding object.
+  // Provisioned in Cloudflare with the immutable EU jurisdiction.
+  // The database ID is public binding metadata; secrets remain outside Git.
+  // Jurisdiction is selected at creation and is not a binding property.
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "ranking-rebels-leads",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "1369e864-4ff0-474c-bfc0-f94ad4e0d323",
       "migrations_dir": "migrations"
     }
   ],

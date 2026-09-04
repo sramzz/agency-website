@@ -24,7 +24,7 @@ The frontend automatically uses Cloudflare's public test sitekey on `localhost` 
 
 Do not run these steps from an automated subagent. An authorized operator must:
 
-1. Create D1 with `wrangler d1 create ranking-rebels-leads --jurisdiction eu`, replace the zero/placeholder database ID in `wrangler.jsonc`, and run `wrangler d1 migrations apply ranking-rebels-leads --remote`.
+1. **Completed 2026-09-04:** D1 `ranking-rebels-leads` was created with jurisdiction `eu`, its real database ID was added to `wrangler.jsonc`, and migration `0001_create_leads.sql` was applied remotely.
 2. Create `ranking-rebels-lead-email` and `ranking-rebels-lead-email-dlq`. The producer, consumer, retry limit, and DLQ are declared in `wrangler.jsonc`.
 3. Create a Managed Turnstile widget for `rankingrebels.com` and `www.rankingrebels.com`; expose its public sitekey as `window.RankingRebelsLeadCaptureConfig.turnstileSitekey` before `lead-capture.js`, and set the secret only with `wrangler secret put TURNSTILE_SECRET_KEY`.
 4. Configure Email Service for `leads@forms.rankingrebels.com`, verify `rankingrebelsmarketingagency@gmail.com`, and retain the destination restriction declared in Wrangler.
