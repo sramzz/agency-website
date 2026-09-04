@@ -29,11 +29,11 @@ Do not run these steps from an automated subagent. An authorized operator must:
 3. **Completed 2026-09-04:** Managed widget `Ranking Rebels lead capture` was created for `rankingrebels.com` and `www.rankingrebels.com`. Its public sitekey is exposed by `assets/js/lead-capture-config.js` before `lead-capture.js` on all 12 participating pages, and `TURNSTILE_SECRET_KEY` is attached to the production Worker as an encrypted secret. The secret was not copied into Git, local files, or documentation.
 4. **Completed 2026-09-04:** Email Routing was enabled for the `forms.rankingrebels.com` subdomain and `rankingrebelsmarketingagency@gmail.com` was added and verified. The Worker sender remains `leads@forms.rankingrebels.com`, and Wrangler restricts the Email binding to that verified destination.
 5. **Completed 2026-09-04:** Active WAF rate-limit rule `Protect lead capture endpoint` matches only `http.request.uri.path eq "/api/leads"`, counts per IP, and blocks after 5 requests in 10 seconds for 10 seconds.
-6. **Partially completed 2026-09-04:** The dry-run passed and Worker version `8b6905df-c6eb-4ef9-bbd4-346dfc31c7aa` was deployed with both production routes, the daily cron, the Queue producer/consumer, and its encrypted Turnstile secret. The D1/email smoke test and the static frontend publication through Coolify remain pending.
+6. **Partially completed 2026-09-04:** The dry-run passed and Worker version `dd3dcf7b-aea3-4304-a8c2-a87242b99cd8` was deployed with approved notice version `2026-09-04`, both production routes, the daily cron, the Queue producer/consumer, and its encrypted Turnstile secret. The D1/email smoke test and the static frontend publication through Coolify remain pending.
 
 **Negative production verification completed 2026-09-04:** A synthetic request with an invalid Turnstile token returned `422 turnstile_rejected` with `Cache-Control: no-store`. Remote D1 contained zero rows for the test `submissionId` both before and after the request, confirming rejection before storage and Queue delivery. No real personal data was used.
 
-Frontend production publication remains blocked until the D1/email smoke test passes and written approval of `/privacy/` is present. D1, Queue resources, the verified email destination, both production Turnstile keys, the Worker, and the WAF rule are already provisioned.
+Written owner approval of `/privacy/` was recorded on 2026-09-04 and the matching notice version is deployed to the Worker. Frontend production publication remains blocked until the D1/email smoke test passes. D1, Queue resources, the verified email destination, both production Turnstile keys, the Worker, and the WAF rule are already provisioned.
 
 ## Queue and retention operations
 
