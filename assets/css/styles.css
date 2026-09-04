@@ -1707,15 +1707,19 @@ p {
 /* Customer result list */
 .customer-results-layout {
   display: grid;
-  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
   align-items: start;
-  gap: clamp(44px, 7vw, 96px);
+  gap: clamp(44px, 5vw, 72px);
 }
 
 .customer-results-layout .section-heading {
   position: sticky;
   top: 112px;
   margin-bottom: 0;
+}
+
+.customer-results-layout .section-heading h2 {
+  font-size: clamp(2.4rem, 3.5vw, 2.8rem);
 }
 
 .customer-results-layout .button {

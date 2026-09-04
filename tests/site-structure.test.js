@@ -137,7 +137,6 @@ test("the solutions picker is indexable, reachable and fully linked", () => {
   const sharedScript = read("assets/js/script.js");
   assert.match(sharedScript, /Explore all solutions/);
   assert.equal((sharedScript.match(/href: "\/solutions\/"/g) || []).length, 2, "desktop and mobile navigation should link the picker");
-  assert.match(read("index.html"), /<h2 id="solutions-title">Choose the growth engine your business needs next\.<\/h2>/);
 });
 
 test("the Australia hero map communicates restrained nationwide coverage", () => {
@@ -215,6 +214,24 @@ test("the homepage follows the selected search-led growth structure", () => {
   const styles = read("assets/css/styles.css");
   const reducedMotionBlocks = cssBlocks(styles, "@media (prefers-reduced-motion: reduce)");
   assert.ok(reducedMotionBlocks.some((block) => /\.process-flywheel::before\s*\{[^}]*animation:\s*none/.test(block)), "the flywheel should stop under reduced motion");
+});
+
+test("the homepage keeps the approved direct, humanized messaging", () => {
+  const home = read("index.html");
+  assert.match(home, /<h2 id="customer-results-title">Real customers\. Results we built together\.<\/h2>/);
+  assert.match(home, /<h2 id="solutions-title">Choose where you want to grow first\.<\/h2>/);
+  assert.match(home, /<h2 id="growth-flywheel-title">A growth flywheel built around your goals\.<\/h2>/);
+  assert.match(home, /<h2 id="markets-title">Local search, shaped for three markets\.<\/h2>/);
+  assert.match(home, /<h2 id="faq-title">Questions clients ask before we start\.<\/h2>/);
+  assert.equal((home.match(/<span class="process-flywheel-link">See this stage<\/span>/g) || []).length, 4);
+  assert.doesNotMatch(home, /growth engine|operational friction|compounding growth system|commercial demand/i);
+
+  const visibleFaq = [...home.matchAll(/<details><summary>([^<]+)<\/summary><p>([^<]+)<\/p><\/details>/g)]
+    .map((match) => ({ question: match[1], answer: match[2] }));
+  const faqSchema = schemas(home).find((schema) => schema["@type"] === "FAQPage");
+  const structuredFaq = faqSchema.mainEntity
+    .map((item) => ({ question: item.name, answer: item.acceptedAnswer.text }));
+  assert.deepEqual(structuredFaq, visibleFaq, "homepage FAQ schema should exactly match visible questions and answers");
 });
 
 test("the homepage uses the dark design system without light section bands", () => {
