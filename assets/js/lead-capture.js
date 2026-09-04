@@ -11,7 +11,7 @@
   const RECEIPT_KEY = "rr.lead.receipt.v1";
   const SESSION_KEY = "rr.lead.session.v1";
   const RECEIPT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
-  const DEFAULT_NOTICE_VERSION = "2026-09-03";
+  const DEFAULT_NOTICE_VERSION = "2026-09-04";
   const UUID_V4 = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   const ISO_TIMESTAMP = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/;
 

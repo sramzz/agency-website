@@ -54,6 +54,20 @@ test("Privacy Policy has indexable metadata and one canonical H1", () => {
   assert.match(html, /rel="canonical" href="https:\/\/rankingrebels\.com\/privacy\/"/);
 });
 
+test("Privacy Policy is owner-approved and publishes its effective date", () => {
+  const html = read(privacyFile);
+  assert.doesNotMatch(html, /INTERNAL:[^\n]*pending owner approval/i,
+    "the internal pending-approval block must be removed after owner approval");
+  assert.match(html, /Effective:\s*4 September 2026/i,
+    "Privacy Policy should publish its effective date");
+});
+
+test("Worker notice configuration matches the approved Privacy Policy version", () => {
+  const wrangler = read("worker/wrangler.jsonc");
+  assert.match(wrangler, /"LEAD_NOTICE_VERSION"\s*:\s*"2026-09-04"/,
+    "Worker notice version should match the approved policy version");
+});
+
 test("Privacy Policy identifies Santiago Ramirez in Australia as the information controller", () => {
   const html = read(privacyFile);
   assert.match(html, /Santiago Ramirez/i,
