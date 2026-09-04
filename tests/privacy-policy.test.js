@@ -102,6 +102,22 @@ test("Privacy Policy sets a strict 12-month retention limit for D1 and Gmail not
     "Retention must not allow notification emails to be kept for 15 months");
 });
 
+test("Privacy Policy explains international transfers and the limits of D1 EU jurisdiction", () => {
+  const html = read(privacyFile);
+  const transferSection = html.match(/<section class="section">\s*<div class="section-heading"><p class="eyebrow">Where information goes<\/p>[\s\S]*?<\/section>/i)?.[0];
+  assert.ok(transferSection, "Privacy Policy should include a visible international processing section");
+  assert.match(transferSection, /Cloudflare[\s\S]*?(?:Google|Gmail)|(?:Google|Gmail)[\s\S]*?Cloudflare/i,
+    "The transfer explanation should identify Cloudflare and Google/Gmail");
+  assert.match(transferSection, /D1[\s\S]*?(?:EU|European Union)[\s\S]*?(?:run|store|storage|located)/i,
+    "The policy should explain that D1's EU jurisdiction limits where the database runs and stores data");
+  assert.match(transferSection, /(?:does not|doesn't)[\s\S]*?(?:Workers|request|security check|technical metadata|email delivery|other services)/i,
+    "The policy should state that D1 EU jurisdiction does not confine other services or processing");
+  assert.match(transferSection, /(?:outside|other than)[\s\S]*?(?:Australia|your country|country where you live)/i,
+    "The policy should disclose that providers may process information outside Australia or the user's country");
+  assert.match(transferSection, /(?:adequacy|standard contractual clauses|SCCs)/i,
+    "The policy should identify applicable legal safeguards such as adequacy decisions or SCCs");
+});
+
 test("every public footer links to Privacy Policy", () => {
   for (const file of publicFiles.filter((candidate) => candidate !== privacyFile)) {
     const html = read(file);
