@@ -62,6 +62,12 @@ test("Privacy Policy identifies Santiago Ramirez in Australia as the information
     "Privacy Policy should identify Australia as the controller's location");
 });
 
+test("Privacy Policy publishes the controller's exact public address", () => {
+  const html = read(privacyFile);
+  assert.match(html, /23 Birmingham Street, Spotswood 3015, Australia/,
+    "Privacy Policy should publish the exact public postal or business address");
+});
+
 test("every public footer links to Privacy Policy", () => {
   for (const file of publicFiles.filter((candidate) => candidate !== privacyFile)) {
     const html = read(file);
