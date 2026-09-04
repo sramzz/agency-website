@@ -54,6 +54,14 @@ test("Privacy Policy has indexable metadata and one canonical H1", () => {
   assert.match(html, /rel="canonical" href="https:\/\/rankingrebels\.com\/privacy\/"/);
 });
 
+test("Privacy Policy identifies Santiago Ramirez in Australia as the information controller", () => {
+  const html = read(privacyFile);
+  assert.match(html, /Santiago Ramirez/i,
+    "Privacy Policy should identify Santiago Ramirez as the person responsible for handling information");
+  assert.match(html, /Australia/i,
+    "Privacy Policy should identify Australia as the controller's location");
+});
+
 test("every public footer links to Privacy Policy", () => {
   for (const file of publicFiles.filter((candidate) => candidate !== privacyFile)) {
     const html = read(file);
