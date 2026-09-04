@@ -140,6 +140,26 @@ test("the solutions picker is indexable, reachable and fully linked", () => {
   assert.match(read("index.html"), /<h2 id="solutions-title">Choose the growth engine your business needs next\.<\/h2>/);
 });
 
+test("the Australia hero map communicates restrained nationwide coverage", () => {
+  const australia = read("locations/australia/index.html");
+  const styles = read("assets/css/styles.css");
+
+  assert.match(australia, /<span>Australia-wide coverage<\/span>/);
+  assert.match(australia, /<title id="australia-map-title">Australia-wide service coverage<\/title>/);
+  assert.match(australia, /The markers show that Ranking Rebels works across Australia\. They do not represent offices or customer locations\./);
+  assert.equal((australia.match(/class="market-marker market-marker-major"/g) || []).length, 5);
+  assert.equal((australia.match(/class="market-marker market-marker-secondary"/g) || []).length, 7);
+  assert.equal((australia.match(/class="market-marker market-marker-regional"/g) || []).length, 8);
+  for (const city of ["Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide"]) {
+    assert.match(australia, new RegExp(`<text class="market-label"[^>]*>${city}<\\/text>`));
+  }
+
+  assert.doesNotMatch(australia, /map-zoom|East coast focus|market-pulse/);
+  assert.doesNotMatch(styles, /\.map-zoom|@keyframes market-pulse|market-marker:hover/);
+  assert.match(styles, /\.market-marker-regional \.market-dot\s*\{[^}]*opacity:\s*0\.52/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.australia-map \.market-label,[\s\S]*?\.australia-map \.market-leader\s*\{[^}]*display:\s*none/);
+});
+
 test("the homepage follows the selected search-led growth structure", () => {
   const home = read("index.html");
   const homepageDescription = "Ranking Rebels helps service businesses grow through SEO, GEO, paid ads and AI automation across Australia, the Netherlands and Latin America.";

@@ -3827,22 +3827,21 @@ p {
 }
 
 .map-composition {
-  position: relative;
-  min-height: clamp(430px, 38vw, 500px);
+  display: grid;
+  min-height: clamp(430px, 40vw, 530px);
+  place-items: center;
 }
 
 .australia-map {
   display: block;
+  max-width: 100%;
   height: auto;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .overview-map {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: min(54%, 390px);
-  transform: translateY(-50%);
+  width: min(100%, 625px);
+  margin-inline: auto;
 }
 
 .australia-map .map-land path {
@@ -3854,103 +3853,40 @@ p {
 
 .australia-map .market-leader {
   fill: none;
-  stroke: rgba(248, 250, 252, 0.34);
+  stroke: rgba(248, 250, 252, 0.32);
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
-  transition: stroke 160ms ease;
 }
 
-.australia-map .market-pulse {
-  fill: rgba(255, 48, 79, 0.12);
-  stroke: rgba(255, 48, 79, 0.72);
+.australia-map .market-halo {
+  fill: rgba(255, 48, 79, 0.1);
+  stroke: rgba(255, 48, 79, 0.58);
   stroke-width: 1;
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: market-pulse 2.8s ease-out infinite;
+  vector-effect: non-scaling-stroke;
 }
 
 .australia-map .market-dot {
   fill: var(--accent);
+}
+
+.australia-map .market-marker-major .market-dot {
   filter: url(#market-glow);
+}
+
+.australia-map .market-marker-secondary .market-dot {
+  opacity: 0.82;
+}
+
+.australia-map .market-marker-regional .market-dot {
+  opacity: 0.52;
 }
 
 .australia-map .market-label {
   fill: var(--neutral);
   font-family: "JetBrains Mono", monospace;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.australia-map .market-marker:hover .market-leader,
-.australia-map .market-marker:focus .market-leader {
-  stroke: var(--tertiary);
-}
-
-.australia-map .market-marker:hover .market-pulse,
-.australia-map .market-marker:focus .market-pulse {
-  fill: rgba(255, 48, 79, 0.4);
-  stroke: var(--accent);
-}
-
-.overview-map .market-label,
-.overview-map .market-leader {
-  display: none;
-}
-
-.map-zoom-frame {
-  position: absolute;
-  top: 50%;
-  right: 4%;
-  width: min(62%, 370px);
-  aspect-ratio: 1;
-  transform: translateY(-50%);
-}
-
-.map-zoom-window {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border: 2px solid var(--tertiary);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 42% 50%, rgba(255, 48, 79, 0.12), transparent 52%),
-    rgba(5, 6, 9, 0.98);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45), 0 0 38px rgba(255, 48, 79, 0.08);
-}
-
-.map-zoom-svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.map-zoom-svg .zoom-land {
-  fill: #17090e;
-  stroke: rgba(248, 250, 252, 0.25);
-  stroke-width: 1.2;
-  vector-effect: non-scaling-stroke;
-}
-
-.map-zoom-svg .zoom-marker path {
-  fill: none;
-  stroke: rgba(248, 250, 252, 0.42);
-  stroke-width: 1;
-  vector-effect: non-scaling-stroke;
-}
-
-.map-zoom-svg .zoom-marker circle {
-  fill: var(--accent);
-  filter: drop-shadow(0 0 3px rgba(255, 138, 0, 0.85));
-}
-
-.map-zoom-svg .zoom-marker text {
-  fill: var(--neutral);
-  font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -4003,11 +3939,6 @@ p {
 .map-city-links a:hover,
 .map-city-links a:focus-visible {
   background: rgba(255, 48, 79, 0.08);
-}
-
-@keyframes market-pulse {
-  0%, 34% { opacity: 0.92; transform: scale(0.72); }
-  70%, 100% { opacity: 0; transform: scale(1.6); }
 }
 
 .metric-strip {
@@ -4536,23 +4467,16 @@ p {
   }
 
   .map-composition {
-    min-height: clamp(210px, 56vw, 240px);
+    min-height: clamp(280px, 78vw, 370px);
   }
 
   .overview-map {
-    top: 50%;
-    left: 0;
-    width: 48%;
-    max-width: none;
-    transform: translateY(-50%);
+    width: 100%;
   }
 
-  .map-zoom-frame {
-    top: 50%;
-    right: 0;
-    width: 58%;
-    max-width: 240px;
-    transform: translateY(-50%);
+  .australia-map .market-label,
+  .australia-map .market-leader {
+    display: none;
   }
 
   .map-city-links {
@@ -4631,14 +4555,6 @@ p {
 
   .australia-page .australia-hero .button {
     width: 100%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .australia-map .market-pulse {
-    animation: none;
-    opacity: 0.72;
-    transform: none;
   }
 }
 
