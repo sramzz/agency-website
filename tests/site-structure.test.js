@@ -130,12 +130,12 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
     previousIndex = index;
   }
 
-  assert.match(journey, /What we learn during Improvement feeds directly into the next Discovery cycle\./);
-  assert.match(journey, /Keep, change or stop—and what returns to Discovery\./);
+  assert.match(journey, /What we learn after launch shapes the next round of Discovery\./);
+  assert.match(journey, /We decide what to keep, change or stop, then choose what goes back into Discovery\./);
   assert.equal((journey.match(/data-photo-brief=/g) || []).length, 2);
-  assert.match(journey, /Candid strategy session with a client and Ranking Rebels/);
-  assert.match(journey, /Client and strategist reviewing a live launch and measurement dashboard together/);
-  assert.ok(journey.includes("We work as an extension of your team. Monthly working sessions keep priorities aligned, and you have direct access to the marketers doing the work—so questions are answered quickly, decisions stay unblocked and both teams move together."));
+  assert.match(journey, /A candid strategy session with a client and the Ranking Rebels team/);
+  assert.match(journey, /A client and strategist checking a live launch and its measurement dashboard together/);
+  assert.ok(journey.includes("We join your team instead of sitting on the sidelines. Every month, we work through priorities together. You can also speak directly with the marketers doing the work whenever a question or shared task comes up."));
   assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
 
   const header = journey.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0];
