@@ -26,12 +26,12 @@ Do not run these steps from an automated subagent. An authorized operator must:
 
 1. **Completed 2026-09-04:** D1 `ranking-rebels-leads` was created with jurisdiction `eu`, its real database ID was added to `wrangler.jsonc`, and migration `0001_create_leads.sql` was applied remotely.
 2. **Completed 2026-09-04:** Queues `ranking-rebels-lead-email` and `ranking-rebels-lead-email-dlq` were created. The producer, consumer, retry limit, and DLQ are declared in `wrangler.jsonc` and will attach when the Worker is deployed.
-3. **Partially completed 2026-09-04:** Managed widget `Ranking Rebels lead capture` was created for `rankingrebels.com` and `www.rankingrebels.com`. Its public sitekey is exposed by `assets/js/lead-capture-config.js` before `lead-capture.js` on all 12 participating pages. The Worker now exists, so the next operator step is `wrangler secret put TURNSTILE_SECRET_KEY`. Never copy the secret into Git or `.dev.vars`.
+3. **Completed 2026-09-04:** Managed widget `Ranking Rebels lead capture` was created for `rankingrebels.com` and `www.rankingrebels.com`. Its public sitekey is exposed by `assets/js/lead-capture-config.js` before `lead-capture.js` on all 12 participating pages, and `TURNSTILE_SECRET_KEY` is attached to the production Worker as an encrypted secret. The secret was not copied into Git, local files, or documentation.
 4. **Completed 2026-09-04:** Email Routing was enabled for the `forms.rankingrebels.com` subdomain and `rankingrebelsmarketingagency@gmail.com` was added and verified. The Worker sender remains `leads@forms.rankingrebels.com`, and Wrangler restricts the Email binding to that verified destination.
 5. **Completed 2026-09-04:** Active WAF rate-limit rule `Protect lead capture endpoint` matches only `http.request.uri.path eq "/api/leads"`, counts per IP, and blocks after 5 requests in 10 seconds for 10 seconds.
-6. **Partially completed 2026-09-04:** The dry-run passed and Worker version `8b6905df-c6eb-4ef9-bbd4-346dfc31c7aa` was deployed with both production routes, the daily cron, and the Queue producer/consumer. Attaching the Turnstile secret, the D1/email smoke test, and the static frontend publication through Coolify remain pending.
+6. **Partially completed 2026-09-04:** The dry-run passed and Worker version `8b6905df-c6eb-4ef9-bbd4-346dfc31c7aa` was deployed with both production routes, the daily cron, the Queue producer/consumer, and its encrypted Turnstile secret. The D1/email smoke test and the static frontend publication through Coolify remain pending.
 
-Production remains blocked until the Turnstile secret is attached after the first Worker deployment and written approval of `/privacy/` is present. D1, Queue resources, the verified email destination, the production Turnstile sitekey, and the WAF rule are already provisioned.
+Frontend production publication remains blocked until the D1/email smoke test passes and written approval of `/privacy/` is present. D1, Queue resources, the verified email destination, both production Turnstile keys, the Worker, and the WAF rule are already provisioned.
 
 ## Queue and retention operations
 
