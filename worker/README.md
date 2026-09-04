@@ -31,6 +31,8 @@ Do not run these steps from an automated subagent. An authorized operator must:
 5. **Completed 2026-09-04:** Active WAF rate-limit rule `Protect lead capture endpoint` matches only `http.request.uri.path eq "/api/leads"`, counts per IP, and blocks after 5 requests in 10 seconds for 10 seconds.
 6. **Partially completed 2026-09-04:** The dry-run passed and Worker version `8b6905df-c6eb-4ef9-bbd4-346dfc31c7aa` was deployed with both production routes, the daily cron, the Queue producer/consumer, and its encrypted Turnstile secret. The D1/email smoke test and the static frontend publication through Coolify remain pending.
 
+**Negative production verification completed 2026-09-04:** A synthetic request with an invalid Turnstile token returned `422 turnstile_rejected` with `Cache-Control: no-store`. Remote D1 contained zero rows for the test `submissionId` both before and after the request, confirming rejection before storage and Queue delivery. No real personal data was used.
+
 Frontend production publication remains blocked until the D1/email smoke test passes and written approval of `/privacy/` is present. D1, Queue resources, the verified email destination, both production Turnstile keys, the Worker, and the WAF rule are already provisioned.
 
 ## Queue and retention operations
