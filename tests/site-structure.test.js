@@ -21,6 +21,7 @@ const publicRoutes = [
   "/case-studies/",
   "/about/",
   "/journey/",
+  "/privacy/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
@@ -42,7 +43,7 @@ test("public source files are valid UTF-8", () => {
 });
 
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-  if (entry.name === ".git") return [];
+  if ([".git", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
   const absolute = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(absolute) : [absolute];
 });
