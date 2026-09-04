@@ -90,6 +90,18 @@ test("Privacy Policy states the lead purpose and limited legitimate interests", 
     "The policy should explicitly exclude newsletters and general or unrelated marketing");
 });
 
+test("Privacy Policy sets a strict 12-month retention limit for D1 and Gmail notifications", () => {
+  const html = read(privacyFile);
+  const retentionSection = html.match(/<section class="section">\s*<div class="section-heading"><p class="eyebrow">Retention<\/p>[\s\S]*?<\/section>/i)?.[0];
+  assert.ok(retentionSection, "Privacy Policy should include a visible Retention section");
+  assert.match(retentionSection, /D1[\s\S]*(?:365\s+days|12\s+months)[\s\S]*(?:delete|delet(?:e|ed|ion))/i,
+    "Retention should state that D1 lead records are deleted at 365 days/12 months");
+  assert.match(retentionSection, /(?:Gmail|email|notification)[\s\S]*(?:delete|delet(?:e|ed|ion))[\s\S]*(?:12\s+months|365\s+days)/i,
+    "Retention should state that notification emails are deleted no later than 12 months");
+  assert.doesNotMatch(retentionSection, /15\s+months/i,
+    "Retention must not allow notification emails to be kept for 15 months");
+});
+
 test("every public footer links to Privacy Policy", () => {
   for (const file of publicFiles.filter((candidate) => candidate !== privacyFile)) {
     const html = read(file);

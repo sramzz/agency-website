@@ -40,7 +40,7 @@ Frontend production publication remains blocked until the D1/email smoke test pa
 - The Queue carries only `{ "submissionId": "..." }`; contact fields remain in D1.
 - The daily cron deletes expired D1 rows and re-enqueues stale `pending` or `failed` notifications.
 - Inspect Queue metrics and `ranking-rebels-lead-email-dlq` in the Cloudflare dashboard. Do not purge the DLQ until each `submissionId` has been reconciled against D1.
-- On Workers Free, Queue messages expire after 24 hours. Review the DLQ daily during the first month; a weekly review is insufficient on this plan. Keep Gmail access MFA-protected and delete lead notification emails older than 12 months each quarter.
+- On Workers Free, Queue messages expire after 24 hours. Review the DLQ daily during the first month; a weekly review is insufficient on this plan. Keep Gmail access MFA-protected and review it monthly, deleting lead notification emails that reach 11 months so none reaches 12 months. Retain a quarterly audit of retention compliance.
 
 ## Rollback
 
