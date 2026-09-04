@@ -9,7 +9,7 @@ const { calculateReadingProgress } = require(path.join(root, "assets/js/scroll-p
 
 const htmlFiles = (directory = root) =>
   fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-    if (entry.name === ".git") return [];
+    if ([".git", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
     const absolutePath = path.join(directory, entry.name);
     if (entry.isDirectory()) return htmlFiles(absolutePath);
     return entry.name === "index.html" ? [absolutePath] : [];
@@ -26,7 +26,7 @@ test("progress calculation is proportional and safely clamped", () => {
 
 test("every website page loads the shared progress assets exactly once", () => {
   const pages = htmlFiles();
-  assert.equal(pages.length, 17);
+  assert.equal(pages.length, 18);
 
   for (const absolutePath of pages) {
     const relativePath = path.relative(root, absolutePath);

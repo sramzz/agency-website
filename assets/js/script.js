@@ -348,7 +348,20 @@ if (serviceSelectorForm) {
           return `https://wa.me/31613390178?text=${encodeURIComponent(messageLines.join("\n"))}`;
         })();
 
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    const leadCapture = window.RankingRebelsLeadCapture;
+    if (leadCapture && typeof leadCapture.open === "function") {
+      leadCapture.open({
+        whatsappUrl,
+        ctaLabel: "Get started",
+        market: serviceSelectorForm.dataset.market || document.body.dataset.market || "Not specified",
+        services: selectedServices,
+        sourcePath: window.location.pathname,
+        document,
+        window,
+      });
+    } else {
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    }
   });
 
   syncServiceSelector();

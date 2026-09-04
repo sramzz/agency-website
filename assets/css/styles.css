@@ -19,6 +19,29 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--tertiary) transparent;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: var(--tertiary);
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+  background-clip: padding-box;
 }
 
 body {
@@ -4983,6 +5006,10 @@ body.service-dialog-open {
 }
 
 @media (forced-colors: active) {
+  html {
+    scrollbar-color: auto;
+  }
+
   .service-option.is-selected,
   .service-selector-submit,
   .service-dialog-close {
@@ -5357,5 +5384,221 @@ body.service-dialog-open {
   .journey-page .journey-loop {
     scroll-behavior: auto;
     transition: none;
+  }
+}
+
+/* Lead capture dialog: shared hooks for the dynamically rendered form. */
+.rr-lead-capture-dialog {
+  width: min(640px, calc(100vw - 24px));
+  max-width: calc(100vw - 24px);
+  max-height: min(760px, calc(100dvh - 24px));
+  overflow: hidden;
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--neutral);
+  color: var(--primary);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
+}
+
+.rr-lead-capture-dialog::backdrop {
+  background: rgba(5, 6, 9, 0.82);
+  backdrop-filter: blur(5px);
+}
+
+.rr-lead-capture-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
+  max-height: inherit;
+  overflow-y: auto;
+  padding: clamp(24px, 5vw, 44px);
+}
+
+.rr-lead-capture-form h2,
+.rr-lead-capture-form > p,
+.rr-lead-capture-form > [data-turnstile],
+.rr-lead-capture-form > .rr-lead-capture-toast,
+.rr-lead-capture-form > a,
+.rr-lead-capture-form > button {
+  grid-column: 1 / -1;
+}
+
+.rr-lead-capture-form h2 {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.rr-lead-capture-form > p {
+  margin: 0 0 8px;
+  color: #4b5563;
+}
+
+.rr-lead-capture-field {
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.rr-lead-capture-field-group {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  min-width: 0;
+}
+
+.rr-lead-capture-form input:not(.rr-lead-capture-honeypot) {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #c9ced6;
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--primary);
+  font: inherit;
+}
+
+.rr-lead-capture-form input:not(.rr-lead-capture-honeypot):focus-visible,
+.rr-lead-capture-form button:focus-visible,
+.rr-lead-capture-form a:focus-visible,
+.rr-lead-capture-dialog :focus-visible {
+  outline: 3px solid var(--tertiary);
+  outline-offset: 3px;
+}
+
+.rr-lead-capture-error {
+  min-height: 1.2em;
+  color: #b42318;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.rr-lead-capture-toast {
+  min-height: 1.5em;
+  color: #4b5563;
+  font-size: 0.86rem;
+}
+
+.rr-lead-capture-notice {
+  position: fixed;
+  z-index: 70;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  width: min(420px, calc(100vw - 36px));
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--tertiary);
+  border-radius: 10px;
+  background: var(--neutral);
+  color: var(--primary);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+  font-weight: 750;
+}
+
+.rr-lead-capture-form.is-pending {
+  cursor: progress;
+  opacity: 0.78;
+}
+
+.rr-lead-capture-form.has-error {
+  border-color: #b42318;
+}
+
+.rr-lead-capture-form.has-error .rr-lead-capture-toast,
+.rr-lead-capture-form.has-error .rr-lead-capture-error {
+  color: #b42318;
+}
+
+.rr-lead-capture-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.rr-lead-capture-form > button {
+  min-height: 48px;
+  max-width: 100%;
+  padding-inline: 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--tertiary);
+  color: var(--on-tertiary);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.rr-lead-capture-form > [data-dialog-close] {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .rr-lead-capture-form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rr-lead-capture-field-group {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 320px) {
+  .rr-lead-capture-dialog {
+    width: calc(100vw - 12px);
+    max-width: calc(100vw - 12px);
+    max-height: calc(100dvh - 12px);
+    overflow: hidden;
+  }
+
+  .rr-lead-capture-form {
+    grid-template-columns: minmax(0, 1fr);
+    max-height: calc(100dvh - 12px);
+    overflow-y: auto;
+    padding: 20px max(16px, env(safe-area-inset-left)) 20px max(16px, env(safe-area-inset-right));
+  }
+
+  .rr-lead-capture-field-group {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rr-lead-capture-dialog,
+  .rr-lead-capture-dialog *,
+  .rr-lead-capture-notice {
+    scroll-behavior: auto;
+    transition: none;
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .rr-lead-capture-dialog,
+  .rr-lead-capture-dialog * {
+    forced-color-adjust: auto;
+  }
+
+  .rr-lead-capture-dialog {
+    border-color: CanvasText;
+    background: Canvas;
+    color: CanvasText;
+  }
+
+  .rr-lead-capture-form > button {
+    border: 1px solid ButtonText;
+    background: ButtonFace;
+    color: ButtonText;
   }
 }

@@ -21,6 +21,7 @@ const publicRoutes = [
   "/case-studies/",
   "/about/",
   "/journey/",
+  "/privacy/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
@@ -42,7 +43,7 @@ test("public source files are valid UTF-8", () => {
 });
 
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-  if (entry.name === ".git") return [];
+  if ([".git", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
   const absolute = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(absolute) : [absolute];
 });
@@ -305,7 +306,7 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
   const header = journey.match(/<header class="site-header">[\s\S]*?<\/header>/)?.[0];
   assert.equal(
     header,
-    '<header class="site-header">\n      <a class="brand" href="/" aria-label="Ranking Rebels home"><span class="brand-mark">RR</span><span>Ranking Rebels</span></a>\n      <nav class="desktop-nav" aria-label="Primary navigation"></nav>\n      <div class="header-actions"><a class="header-cta" href="https://wa.me/61439499441" target="_blank" rel="noreferrer">Hire us!</a></div>\n      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>\n    </header>',
+    '<header class="site-header">\n      <a class="brand" href="/" aria-label="Ranking Rebels home"><span class="brand-mark">RR</span><span>Ranking Rebels</span></a>\n      <nav class="desktop-nav" aria-label="Primary navigation"></nav>\n      <div class="header-actions"><a class="header-cta" href="https://wa.me/61439499441" data-lead-capture target="_blank" rel="noreferrer">Hire us!</a></div>\n      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>\n    </header>',
   );
 });
 
