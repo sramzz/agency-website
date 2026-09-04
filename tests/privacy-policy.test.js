@@ -78,6 +78,18 @@ test("Privacy Policy shows exact privacy contact channels in the responsible sec
     "Responsible section should show the exact privacy phone as a tel link");
 });
 
+test("Privacy Policy states the lead purpose and limited legitimate interests", () => {
+  const html = read(privacyFile);
+  const purposeSection = html.match(/<section class="section">\s*<div class="section-heading"><p class="eyebrow">Why we use it<\/p>[\s\S]*?<\/section>/i)?.[0];
+  assert.ok(purposeSection, "Privacy Policy should include a visible Why we use it section");
+  assert.match(purposeSection, /steps? you request before (?:a )?contract|before (?:a )?contract[^<]*steps? you request|prepare or provide the requested services/i,
+    "The purpose should include requested steps before contracting or providing services");
+  assert.match(purposeSection, /legitimate interests?[\s\S]*(?:security|abuse)[\s\S]*(?:duplicates?|delivery)/i,
+    "Legitimate interests should be limited to security, abuse, duplicates and delivery");
+  assert.match(purposeSection, /(?:do not|does not|never)\s+(?:subscribe|sign)\s+you\s+to\s+newsletters?[\s\S]*(?:general|unrelated)\s+marketing/i,
+    "The policy should explicitly exclude newsletters and general or unrelated marketing");
+});
+
 test("every public footer links to Privacy Policy", () => {
   for (const file of publicFiles.filter((candidate) => candidate !== privacyFile)) {
     const html = read(file);
