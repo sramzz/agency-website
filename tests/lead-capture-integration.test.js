@@ -36,11 +36,21 @@ test("each participating page declares market and loads lead capture before shar
   for (const page of pages) {
     const html = read(page.file);
     assert.match(html, new RegExp(`<body\\b[^>]*data-market="${page.market}"`), `${page.file} market`);
+    const configIndex = html.indexOf('src="/assets/js/lead-capture-config.js');
     const leadIndex = html.indexOf('src="/assets/js/lead-capture.js');
     const runtimeIndex = html.indexOf('src="/assets/js/script.js');
+    assert.ok(configIndex >= 0, `${page.file} loads production Turnstile configuration`);
+    assert.ok(leadIndex > configIndex, `${page.file} loads configuration before lead capture`);
     assert.ok(leadIndex >= 0, `${page.file} loads lead capture`);
     assert.ok(runtimeIndex > leadIndex, `${page.file} loads lead capture before script.js`);
   }
+});
+
+test("production Turnstile sitekey is public configuration, never a secret", () => {
+  const config = read("assets/js/lead-capture-config.js");
+  assert.match(config, /window\.RankingRebelsLeadCaptureConfig/);
+  assert.match(config, /turnstileSitekey:\s*"0x4AAAAAAEm_PSAZY8nPZIQo"/);
+  assert.doesNotMatch(config, /TURNSTILE_SECRET_KEY|secret/i);
 });
 
 test("generic footer WhatsApp links remain direct and excluded", () => {
@@ -62,7 +72,7 @@ test("404 and private proposals do not load or opt in to lead capture", () => {
     "proposals/winpress/es/index.html",
   ]) {
     const html = read(file);
-    assert.doesNotMatch(html, /lead-capture\.js|data-lead-capture/);
+    assert.doesNotMatch(html, /lead-capture(?:-config)?\.js|data-lead-capture/);
   }
 });
 
