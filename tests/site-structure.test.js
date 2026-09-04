@@ -187,6 +187,7 @@ test("the homepage follows the selected search-led growth structure", () => {
   }
 
   assert.equal((home.match(/href="\/locations\/(?:australia|netherlands|latam)\/"/g) || []).length, 3);
+  assert.equal((home.match(/<a class="feature-card market-card" href="\/locations\/(?:australia|netherlands|latam)\/">/g) || []).length, 3, "each market card should be one complete link target");
   assert.equal((home.match(/<details>/g) || []).length, 8);
   const faqSchema = schemas(home).find((schema) => schema["@type"] === "FAQPage");
   assert.equal(faqSchema.mainEntity.length, 8);
@@ -194,6 +195,21 @@ test("the homepage follows the selected search-led growth structure", () => {
   const styles = read("assets/css/styles.css");
   const reducedMotionBlocks = cssBlocks(styles, "@media (prefers-reduced-motion: reduce)");
   assert.ok(reducedMotionBlocks.some((block) => /\.process-flywheel::before\s*\{[^}]*animation:\s*none/.test(block)), "the flywheel should stop under reduced motion");
+});
+
+test("the homepage uses the dark design system without light section bands", () => {
+  const home = read("index.html");
+  const styles = read("assets/css/styles.css");
+
+  assert.doesNotMatch(home, /section-theme-(?:paper|warm)/, "the homepage should not opt into light section themes");
+  assert.match(styles, /\.editorial-site #home > \.section\s*\{[^}]*background:\s*var\(--primary\)/);
+  assert.match(styles, /\.editorial-site #home \.service-selector\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
+  assert.match(styles, /\.editorial-site #home \.service-option\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
+  assert.match(styles, /\.editorial-site #home \.customer-result-card\s*\{[^}]*background:\s*var\(--surface-card\)[^}]*color:\s*var\(--neutral\)/);
+  assert.match(styles, /\.editorial-site #home \.process-flywheel-step a\s*\{[^}]*background:\s*var\(--surface-card\)[^}]*color:\s*var\(--neutral\)/);
+  assert.match(styles, /\.editorial-site #home \.process-flywheel-hub\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
+  assert.match(styles, /\.editorial-site #home > \.final-cta\s*\{[^}]*background:[^}]*var\(--primary\)/);
+  assert.doesNotMatch(styles, /\.editorial-site #home > \.final-cta\s*\{[^}]*var\(--surface\)/);
 });
 
 test("navigation exposes exactly three solutions and three markets", () => {
