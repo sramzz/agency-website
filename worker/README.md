@@ -28,10 +28,10 @@ Do not run these steps from an automated subagent. An authorized operator must:
 2. **Completed 2026-09-04:** Queues `ranking-rebels-lead-email` and `ranking-rebels-lead-email-dlq` were created. The producer, consumer, retry limit, and DLQ are declared in `wrangler.jsonc` and will attach when the Worker is deployed.
 3. **Partially completed 2026-09-04:** Managed widget `Ranking Rebels lead capture` was created for `rankingrebels.com` and `www.rankingrebels.com`. Its public sitekey is exposed by `assets/js/lead-capture-config.js` before `lead-capture.js` on all 12 participating pages. The production secret must be set with `wrangler secret put TURNSTILE_SECRET_KEY` immediately after the first Worker deployment; Wrangler cannot attach a secret before the Worker exists. Never copy the secret into Git or `.dev.vars`.
 4. **Completed 2026-09-04:** Email Routing was enabled for the `forms.rankingrebels.com` subdomain and `rankingrebelsmarketingagency@gmail.com` was added and verified. The Worker sender remains `leads@forms.rankingrebels.com`, and Wrangler restricts the Email binding to that verified destination.
-5. Configure a WAF rate-limit rule for exact path `/api/leads`: 5 requests per 10 seconds per IP, block for 10 seconds.
+5. **Completed 2026-09-04:** Active WAF rate-limit rule `Protect lead capture endpoint` matches only `http.request.uri.path eq "/api/leads"`, counts per IP, and blocks after 5 requests in 10 seconds for 10 seconds.
 6. Run the dry-run, deploy the Worker and its routes first, perform the D1/email smoke test, then publish the static frontend through Coolify.
 
-Production remains blocked until the production Turnstile keys and written approval of `/privacy/` are present. D1, Queue resources, and the verified email destination are already provisioned.
+Production remains blocked until the Turnstile secret is attached after the first Worker deployment and written approval of `/privacy/` is present. D1, Queue resources, the verified email destination, the production Turnstile sitekey, and the WAF rule are already provisioned.
 
 ## Queue and retention operations
 
