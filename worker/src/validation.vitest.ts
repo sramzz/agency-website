@@ -20,6 +20,7 @@ const validLead = () => ({
   firstName: "Ada",
   lastName: "Lovelace",
   companyName: "Analytical Engines",
+  businessWebsite: "https://analytical.example/",
   email: "ada@example.com",
   phone: "+61412345678",
   sourcePath: "/locations/australia/",
@@ -36,7 +37,7 @@ describe("validateLeadPayload", () => {
     expect(validateLeadPayload(validLead())).toMatchObject({ ok: true });
   });
 
-  it("rejects missing, blank, and incorrectly typed fields without returning PII", () => {
+  it("allows blank optional personal fields and still rejects incorrect types without returning PII", () => {
     const result = validateLeadPayload({
       ...validLead(),
       firstName: "  ",
@@ -48,13 +49,26 @@ describe("validateLeadPayload", () => {
     if (result.ok) return;
     expect(result.errors).toEqual(
       expect.arrayContaining([
-        { field: "firstName", code: "required" },
         { field: "companyName", code: "type" },
         { field: "services", code: "type" }
       ])
     );
     expect(JSON.stringify(result)).not.toContain("42");
     expect(JSON.stringify(result)).not.toContain("Google SEO");
+  });
+
+  it("requires only phone among the personal fields", () => {
+    const optionalFieldsBlank = validateLeadPayload({
+      ...validLead(), firstName: "", lastName: "", companyName: "", businessWebsite: "", email: ""
+    });
+    expect(optionalFieldsBlank).toMatchObject({
+      ok: true,
+      value: { firstName: "", lastName: "", companyName: "", businessWebsite: "", email: "" }
+    });
+
+    const missingPhone = validateLeadPayload({ ...validLead(), phone: "" });
+    expect(missingPhone.ok).toBe(false);
+    if (!missingPhone.ok) expect(missingPhone.errors).toContainEqual({ field: "phone", code: "required" });
   });
 
   it("rejects arrays and null as payloads", () => {
@@ -112,6 +126,25 @@ describe("validateLeadPayload", () => {
     expect(result.ok).toBe(false);
     if (result.ok) return;
     expect(result.errors).toContainEqual({ field: "email", code: "invalid_format" });
+  });
+
+  it("accepts an optional business website and normalizes a bare domain", () => {
+    expect(validateLeadPayload({ ...validLead(), businessWebsite: "  analytical.example  " })).toMatchObject({
+      ok: true,
+      value: { businessWebsite: "https://analytical.example/" }
+    });
+    expect(validateLeadPayload({ ...validLead(), businessWebsite: "" })).toMatchObject({
+      ok: true,
+      value: { businessWebsite: "" }
+    });
+  });
+
+  it("rejects unsafe, credentialed, malformed, overlong, or typed business websites", () => {
+    for (const businessWebsite of ["javascript:alert(1)", "https://user:pass@example.com", "not a website", `https://example.com/${"a".repeat(2048)}`, 42]) {
+      const result = validateLeadPayload({ ...validLead(), businessWebsite });
+      expect(result.ok, String(businessWebsite)).toBe(false);
+      if (!result.ok) expect(result.errors.map(({ field }) => field)).toContain("businessWebsite");
+    }
   });
 
   it("accepts only the configured notice version", () => {

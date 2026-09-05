@@ -7,6 +7,7 @@ type StoredLeadRow = {
   first_name: string;
   last_name: string;
   company_name: string;
+  business_website: string;
   email: string;
   phone: string;
   source_path: string;
@@ -65,6 +66,7 @@ const toStoredLead = (row: StoredLeadRow) => ({
   firstName: row.first_name,
   lastName: row.last_name,
   companyName: row.company_name,
+  businessWebsite: row.business_website,
   email: row.email,
   phone: row.phone,
   sourcePath: row.source_path,

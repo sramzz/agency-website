@@ -58,13 +58,13 @@ test("Privacy Policy is owner-approved and publishes its effective date", () => 
   const html = read(privacyFile);
   assert.doesNotMatch(html, /INTERNAL:[^\n]*pending owner approval/i,
     "the internal pending-approval block must be removed after owner approval");
-  assert.match(html, /Effective:\s*4 September 2026/i,
+  assert.match(html, /Effective:\s*5 September 2026/i,
     "Privacy Policy should publish its effective date");
 });
 
 test("Worker notice configuration matches the approved Privacy Policy version", () => {
   const wrangler = read("worker/wrangler.jsonc");
-  assert.match(wrangler, /"LEAD_NOTICE_VERSION"\s*:\s*"2026-09-04"/,
+  assert.match(wrangler, /"LEAD_NOTICE_VERSION"\s*:\s*"2026-09-05"/,
     "Worker notice version should match the approved policy version");
 });
 
@@ -74,6 +74,10 @@ test("Privacy Policy identifies Santiago Ramirez in Australia as the information
     "Privacy Policy should identify Santiago Ramirez as the person responsible for handling information");
   assert.match(html, /Australia/i,
     "Privacy Policy should identify Australia as the controller's location");
+});
+
+test("Privacy Policy discloses the optional business website field", () => {
+  assert.match(read(privacyFile), /(?:business|company) website/i);
 });
 
 test("Privacy Policy publishes the controller's exact public address", () => {

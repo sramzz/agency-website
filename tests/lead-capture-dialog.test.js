@@ -14,6 +14,9 @@ const {
   open,
   renderTurnstile,
   renderLeadCaptureDialog,
+  renderCountryCallingCodeOptions,
+  combinePhoneNumber,
+  normalizeBusinessWebsite,
   resolveTurnstileSitekey,
   validateLeadFields,
   setLeadFormPending,
@@ -36,20 +39,63 @@ test("the dynamic lead dialog renders the accessible capture contract", () => {
 
   assert.match(template, /<dialog\b[^>]*>/i);
   assert.match(template, /<dialog\b[^>]*aria-describedby=["']lead-dialog-description["'][^>]*>/i);
-  assert.match(template, /<h2[^>]*>[^<]*(?:request|search|audit|details)[^<]*<\/h2>/i);
+  assert.match(template, /<h2[^>]*>Let's talk about better results<\/h2>/i);
   assert.match(template, /<p[^>]*id=["']lead-dialog-description["'][^>]*>[^<]+<\/p>/i);
-  assert.equal((template.match(/class="rr-lead-capture-field-group"/g) || []).length, 5);
+  assert.equal((template.match(/class="rr-lead-capture-field-group/g) || []).length, 6);
 
   for (const field of ["firstName", "lastName", "companyName", "email", "phone"]) {
     assert.match(template, new RegExp(`<label\\b[^>]*for=["'][^"']+["'][^>]*>[^<]*${field.replace(/[A-Z]/g, (letter) => `\\s*${letter}`)}[^<]*<\\/label>`, "i"));
     assert.match(template, new RegExp(`<input\\b[^>]*name=["']${field}["']`, "i"));
   }
 
-  assert.match(template, /<label\b[^>]*for=["']lead-website["'][^>]*>\s*Website\s*<\/label>/i);
+  assert.match(template, /<label\b[^>]*for=["']lead-business-website["'][^>]*>\s*Website/i);
+  assert.match(template, /<input\b[^>]*name=["']businessWebsite["'][^>]*autocomplete=["']url["']/i);
   assert.match(template, /<input\b[^>]*name=["']website["'][^>]*(?:hidden|aria-hidden=["']true["']|style=["'][^"']*(?:display|visibility)\s*:\s*(?:none|hidden))/i);
+  assert.match(template, /<select\b[^>]*name=["']phoneCountry["'][^>]*aria-label=["'][^"']*(?:country|calling code)[^"']*["']/i);
   assert.match(template, /<(?:div|p|output)\b[^>]*aria-live=["'](?:polite|assertive)["'][^>]*>/i);
   assert.match(template, /<a\b[^>]*href=["']\/privacy\/["'][^>]*>[^<]*Privacy[^<]*<\/a>/i);
-  assert.match(template, /<button\b[^>]*(?:type=["']button["'][^>]*)?data-dialog-close[^>]*>[^<]*(?:close|×)[^<]*<\/button>/i);
+  assert.match(template, /<button\b[^>]*class=["'][^"']*rr-lead-capture-close[^"']*["'][^>]*data-dialog-close[^>]*aria-label=["']Close["'][^>]*>\s*<span[^>]*aria-hidden=["']true["'][^>]*>×<\/span>\s*<\/button>/i);
+  assert.doesNotMatch(template, /<button[^>]*data-dialog-close[^>]*>\s*Close\s*<\/button>/i);
+  assert.match(template, /class=["'][^"']*rr-lead-capture-spinner[^"']*["'][^>]*aria-hidden=["']true["']/i);
+  assert.match(template, /If you are ready to grow your business, we are ready to be your partner\./i);
+  assert.match(template, /<button\b[^>]*type=["']submit["'][^>]*>[\s\S]*Book a call[\s\S]*<\/button>/);
+  for (const optionalField of ["firstName", "lastName", "companyName", "businessWebsite", "email"]) {
+    const input = template.match(new RegExp(`<input\\b[^>]*name=["']${optionalField}["'][^>]*>`, "i"))?.[0] || "";
+    assert.doesNotMatch(input, /\brequired\b/i, `${optionalField} should be optional`);
+  }
+  assert.equal((template.match(/\(optional\)<\/label>/gi) || []).length, 5);
+  assert.match(template.match(/<input\b[^>]*name=["']phone["'][^>]*>/i)?.[0] || "", /\brequired\b/i);
+});
+
+test("country selector covers the international calling-code list with flags", () => {
+  const options = renderCountryCallingCodeOptions("AU");
+  assert.ok((options.match(/<option\b/g) || []).length >= 240);
+  assert.match(options, /value="AU"[^>]*selected[^>]*>🇦🇺 Australia \(\+61\)<\/option>/);
+  assert.match(options, /value="NL"[^>]*>🇳🇱 Netherlands \(\+31\)<\/option>/);
+  assert.match(options, /value="CO"[^>]*>🇨🇴 Colombia \(\+57\)<\/option>/);
+});
+
+test("phone helper combines a national number with its country code and preserves pasted international numbers", () => {
+  assert.equal(combinePhoneNumber("AU", "0412 345 678"), "+61412345678");
+  assert.equal(combinePhoneNumber("CO", "300 123 4567"), "+573001234567");
+  assert.equal(combinePhoneNumber("NL", "+31 6 1234 5678"), "+31612345678");
+});
+
+test("optional business website is normalized safely", () => {
+  assert.equal(normalizeBusinessWebsite(""), "");
+  assert.equal(normalizeBusinessWebsite(" rankingrebels.com "), "https://rankingrebels.com/");
+  assert.equal(normalizeBusinessWebsite("https://example.com/about"), "https://example.com/about");
+  for (const invalid of ["javascript:alert(1)", "https://user:pass@example.com", "not a website", `https://example.com/${"a".repeat(2048)}`]) {
+    assert.equal(normalizeBusinessWebsite(invalid), null, invalid);
+  }
+});
+
+test("client validation reports an invalid optional business website", () => {
+  const errors = validateLeadFields({
+    firstName: "Kelly", lastName: "Serna", companyName: "Ranking Rebels",
+    businessWebsite: "javascript:alert(1)", email: "kelly@example.com", phone: "+61400000000",
+  });
+  assert.match(errors.businessWebsite, /valid website/i);
 });
 
 const dialogFixture = () => {
@@ -139,7 +185,7 @@ test("Turnstile uses the fixed localhost key and configured production key", () 
 
 test("init defaults noticeVersion when no global configuration is supplied", () => {
   const target = { addEventListener() {} };
-  assert.equal(init({ target }).noticeVersion, "2026-09-04");
+  assert.equal(init({ target }).noticeVersion, "2026-09-05");
 });
 
 test("default return toast appends to the injected document body", () => {
@@ -214,19 +260,26 @@ test("Turnstile lifecycle accepts only successful tokens and clears expired/erro
   assert.deepEqual(resets, ["widget-1"]);
 });
 
-test("client validation returns field errors for required and malformed values", () => {
+test("client validation requires only phone and allows all other personal fields to be blank", () => {
   const errors = validateLeadFields({
     firstName: "",
     lastName: " ",
     companyName: "",
-    email: "not-an-email",
-    phone: "0412 345 678",
+    email: "",
+    businessWebsite: "",
+    phone: "",
   });
 
-  assert.deepEqual(Object.keys(errors).sort(), ["companyName", "email", "firstName", "lastName", "phone"]);
-  assert.match(errors.firstName, /required/i);
-  assert.match(errors.email, /valid|email/i);
-  assert.match(errors.phone, /international|\+/i);
+  assert.deepEqual(Object.keys(errors), ["phone"]);
+  assert.match(errors.phone, /required/i);
+});
+
+test("optional personal fields are validated when supplied", () => {
+  const errors = validateLeadFields({
+    firstName: "a".repeat(81), lastName: "Valid", companyName: "Business",
+    businessWebsite: "javascript:alert(1)", email: "not-an-email", phone: "+61412345678",
+  });
+  assert.deepEqual(Object.keys(errors).sort(), ["businessWebsite", "email", "firstName"]);
 });
 
 test("client validation accepts human phone separators and enforces shared field limits", () => {
@@ -357,7 +410,7 @@ test("request failures close a reserved tab, preserve fields, and expose only a 
   }
 });
 
-test("submission reserves a blank window synchronously before invoking fetch", async () => {
+test("submission reserves the WhatsApp transition page synchronously before invoking fetch", async () => {
   const events = [];
   const reservedWindow = { close() {} };
   const request = submitLeadCaptureRequest({
@@ -371,7 +424,7 @@ test("submission reserves a blank window synchronously before invoking fetch", a
   await request;
 });
 
-test("temporary tab is blank, opener-free, and carries no lead data", async () => {
+test("temporary tab uses a safe holding page, is opener-free, and carries no lead data", async () => {
   let openArgs;
   const temporaryTab = { opener: { personal: "PII" }, close() {} };
   const request = submitLeadCaptureRequest({
@@ -382,9 +435,9 @@ test("temporary tab is blank, opener-free, and carries no lead data", async () =
   });
   await request;
 
-  assert.deepEqual(openArgs, ["about:blank", "_blank", "noopener,noreferrer"]);
+  assert.deepEqual(openArgs, ["/assets/whatsapp-redirect.html", "_blank"]);
   assert.equal(temporaryTab.opener, null);
-  assert.equal(openArgs.some((value) => /kelly|private|email|whatsapp|\?|#/.test(String(value))), false);
+  assert.equal(openArgs.some((value) => /kelly|private|email|\?|#/.test(String(value))), false);
 });
 
 test("valid success persists safe state, resets controls, waits 600ms, then navigates WhatsApp", async () => {

@@ -10,6 +10,7 @@ export interface LeadPayload {
   firstName: string;
   lastName: string;
   companyName: string;
+  businessWebsite: string;
   email: string;
   phone: string;
   sourcePath: string;
@@ -61,6 +62,21 @@ const FIELD_LIMITS: Record<string, number> = {
   sourcePath: 512
 };
 
+const normalizeBusinessWebsite = (value: unknown): string | null => {
+  if (value === undefined || value === "") return "";
+  if (typeof value !== "string") return null;
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  if (trimmed.length > 2048 || /\s/.test(trimmed)) return null;
+  try {
+    const url = new URL(/^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`);
+    if (!/^https?:$/.test(url.protocol) || !url.hostname || url.username || url.password || url.href.length > 2048) return null;
+    return url.href;
+  } catch (_error) {
+    return null;
+  }
+};
+
 export function validateLeadPayload(input: unknown, options: LeadValidationOptions = {}): LeadValidationResult {
   if (input === null || typeof input !== "object" || Array.isArray(input)) {
     return { ok: false, errors: [{ field: "payload", code: "type" }] };
@@ -71,10 +87,6 @@ export function validateLeadPayload(input: unknown, options: LeadValidationOptio
   errors.push(...validateHoneypot(payload.website));
   const requiredStrings = [
     "submissionId",
-    "firstName",
-    "lastName",
-    "companyName",
-    "email",
     "phone",
     "sourcePath",
     "ctaLabel",
@@ -92,6 +104,22 @@ export function validateLeadPayload(input: unknown, options: LeadValidationOptio
     } else {
       payload[field] = value.trim();
     }
+  }
+
+  for (const field of ["firstName", "lastName", "companyName", "email"]) {
+    const value = payload[field];
+    if (value === undefined) {
+      payload[field] = "";
+    } else if (typeof value !== "string") {
+      errors.push({ field, code: "type" });
+    } else {
+      payload[field] = value.trim();
+    }
+  }
+
+  const normalizedBusinessWebsite = normalizeBusinessWebsite(payload.businessWebsite);
+  if (normalizedBusinessWebsite === null) {
+    errors.push({ field: "businessWebsite", code: typeof payload.businessWebsite === "string" ? "invalid_format" : "type" });
   }
 
   if (typeof payload.submissionId === "string" && payload.submissionId.length > 0 && !isUuidV4(payload.submissionId)) {
@@ -172,6 +200,7 @@ export function validateLeadPayload(input: unknown, options: LeadValidationOptio
     value: {
       ...payload,
       email: (payload.email as string).trim().toLowerCase(),
+      businessWebsite: normalizedBusinessWebsite as string,
       phone: normalizedPhone as string,
       market,
       services: normalizedServices

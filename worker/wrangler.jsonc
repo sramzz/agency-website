@@ -10,7 +10,7 @@
   },
 
   "vars": {
-    "LEAD_NOTICE_VERSION": "2026-09-04",
+    "LEAD_NOTICE_VERSION": "2026-09-05",
     "LEAD_ALLOWED_HOSTNAMES": "rankingrebels.com,www.rankingrebels.com",
     "LEAD_EMAIL_FROM": "leads@forms.rankingrebels.com",
     "LEAD_EMAIL_TO": "rankingrebelsmarketingagency@gmail.com",

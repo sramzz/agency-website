@@ -11,9 +11,46 @@
   const RECEIPT_KEY = "rr.lead.receipt.v1";
   const SESSION_KEY = "rr.lead.session.v1";
   const RECEIPT_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
-  const DEFAULT_NOTICE_VERSION = "2026-09-04";
+  const DEFAULT_NOTICE_VERSION = "2026-09-05";
   const UUID_V4 = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   const ISO_TIMESTAMP = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/;
+  const COUNTRY_CALLING_CODES = "AC:247,AD:376,AE:971,AF:93,AG:1,AI:1,AL:355,AM:374,AO:244,AR:54,AS:1,AT:43,AU:61,AW:297,AX:358,AZ:994,BA:387,BB:1,BD:880,BE:32,BF:226,BG:359,BH:973,BI:257,BJ:229,BL:590,BM:1,BN:673,BO:591,BQ:599,BR:55,BS:1,BT:975,BW:267,BY:375,BZ:501,CA:1,CC:61,CD:243,CF:236,CG:242,CH:41,CI:225,CK:682,CL:56,CM:237,CN:86,CO:57,CR:506,CU:53,CV:238,CW:599,CX:61,CY:357,CZ:420,DE:49,DJ:253,DK:45,DM:1,DO:1,DZ:213,EC:593,EE:372,EG:20,EH:212,ER:291,ES:34,ET:251,FI:358,FJ:679,FK:500,FM:691,FO:298,FR:33,GA:241,GB:44,GD:1,GE:995,GF:594,GG:44,GH:233,GI:350,GL:299,GM:220,GN:224,GP:590,GQ:240,GR:30,GT:502,GU:1,GW:245,GY:592,HK:852,HN:504,HR:385,HT:509,HU:36,ID:62,IE:353,IL:972,IM:44,IN:91,IO:246,IQ:964,IR:98,IS:354,IT:39,JE:44,JM:1,JO:962,JP:81,KE:254,KG:996,KH:855,KI:686,KM:269,KN:1,KP:850,KR:82,KW:965,KY:1,KZ:7,LA:856,LB:961,LC:1,LI:423,LK:94,LR:231,LS:266,LT:370,LU:352,LV:371,LY:218,MA:212,MC:377,MD:373,ME:382,MF:590,MG:261,MH:692,MK:389,ML:223,MM:95,MN:976,MO:853,MP:1,MQ:596,MR:222,MS:1,MT:356,MU:230,MV:960,MW:265,MX:52,MY:60,MZ:258,NA:264,NC:687,NE:227,NF:672,NG:234,NI:505,NL:31,NO:47,NP:977,NR:674,NU:683,NZ:64,OM:968,PA:507,PE:51,PF:689,PG:675,PH:63,PK:92,PL:48,PM:508,PR:1,PS:970,PT:351,PW:680,PY:595,QA:974,RE:262,RO:40,RS:381,RU:7,RW:250,SA:966,SB:677,SC:248,SD:249,SE:46,SG:65,SH:290,SI:386,SJ:47,SK:421,SL:232,SM:378,SN:221,SO:252,SR:597,SS:211,ST:239,SV:503,SX:1,SY:963,SZ:268,TA:290,TC:1,TD:235,TG:228,TH:66,TJ:992,TK:690,TL:670,TM:993,TN:216,TO:676,TR:90,TT:1,TV:688,TW:886,TZ:255,UA:380,UG:256,US:1,UY:598,UZ:998,VA:39,VC:1,VE:58,VG:1,VI:1,VN:84,VU:678,WF:681,WS:685,XK:383,YE:967,YT:262,ZA:27,ZM:260,ZW:263";
+  const callingCodes = Object.fromEntries(COUNTRY_CALLING_CODES.split(",").map((entry) => entry.split(":")));
+  const countryFlag = (iso) => String(iso || "").toUpperCase().replace(/[A-Z]/g, (letter) => String.fromCodePoint(127397 + letter.charCodeAt(0)));
+  const countryName = (iso) => {
+    try {
+      return new Intl.DisplayNames(["en"], { type: "region" }).of(iso) || iso;
+    } catch (_error) {
+      return iso;
+    }
+  };
+  const renderCountryCallingCodeOptions = (selectedIso = "AU") => Object.entries(callingCodes)
+    .map(([iso, callingCode]) => ({ iso, callingCode, name: countryName(iso) }))
+    .sort((left, right) => left.name.localeCompare(right.name, "en"))
+    .map(({ iso, callingCode, name }) => `<option value="${iso}"${iso === selectedIso ? " selected" : ""}>${countryFlag(iso)} ${name} (+${callingCode})</option>`)
+    .join("");
+  const combinePhoneNumber = (countryIso, input) => {
+    const value = typeof input === "string" ? input.trim() : "";
+    if (!value) return "";
+    if (value.startsWith("+")) return `+${value.slice(1).replace(/\D/g, "")}`;
+    const callingCode = callingCodes[String(countryIso || "").toUpperCase()];
+    if (!callingCode) return value;
+    let nationalNumber = value.replace(/\D/g, "");
+    if (nationalNumber.startsWith("0") && !["IT", "SM", "VA"].includes(String(countryIso).toUpperCase())) nationalNumber = nationalNumber.slice(1);
+    return `+${callingCode}${nationalNumber}`;
+  };
+  const normalizeBusinessWebsite = (input) => {
+    const value = typeof input === "string" ? input.trim() : "";
+    if (!value) return "";
+    if (value.length > 2048 || /\s/.test(value)) return null;
+    try {
+      const url = new URL(/^https?:\/\//i.test(value) ? value : `https://${value}`);
+      if (!/^https?:$/.test(url.protocol) || !url.hostname || url.username || url.password || url.href.length > 2048) return null;
+      return url.href;
+    } catch (_error) {
+      return null;
+    }
+  };
 
   const emptySession = () => ({
     capturedSubmissionId: null,
@@ -165,40 +202,48 @@
   const renderLeadCaptureDialog = () => `
     <dialog id="rr-lead-capture-dialog" class="rr-lead-capture-dialog" aria-labelledby="lead-dialog-title" aria-describedby="lead-dialog-description">
       <form method="dialog" novalidate class="rr-lead-capture-form">
-        <h2 id="lead-dialog-title">Request details for your search audit</h2>
-        <p id="lead-dialog-description">Share your details and we’ll help you take the next step.</p>
-        <div class="rr-lead-capture-field-group">
-          <label class="rr-lead-capture-field" for="lead-first-name">First name</label>
-          <input id="lead-first-name" name="firstName" autocomplete="given-name" required>
+        <button type="button" class="rr-lead-capture-close" data-dialog-close aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h2 id="lead-dialog-title">Let's talk about better results</h2>
+        <p id="lead-dialog-description">If you are ready to grow your business, we are ready to be your partner.</p>
+        <div class="rr-lead-capture-field-group rr-lead-capture-field-group--compact-label">
+          <label class="rr-lead-capture-field" for="lead-first-name">First name (optional)</label>
+          <input id="lead-first-name" name="firstName" autocomplete="given-name">
           <span class="rr-lead-capture-error" data-error-for="firstName" id="error-first-name" aria-live="polite"></span>
         </div>
-        <div class="rr-lead-capture-field-group">
-          <label class="rr-lead-capture-field" for="lead-last-name">Last name</label>
-          <input id="lead-last-name" name="lastName" autocomplete="family-name" required>
+        <div class="rr-lead-capture-field-group rr-lead-capture-field-group--compact-label">
+          <label class="rr-lead-capture-field" for="lead-last-name">Last name (optional)</label>
+          <input id="lead-last-name" name="lastName" autocomplete="family-name">
           <span class="rr-lead-capture-error" data-error-for="lastName" id="error-last-name" aria-live="polite"></span>
         </div>
-        <div class="rr-lead-capture-field-group">
-          <label class="rr-lead-capture-field" for="lead-company-name">Company name</label>
-          <input id="lead-company-name" name="companyName" autocomplete="organization" required>
+        <div class="rr-lead-capture-field-group rr-lead-capture-field-group--full rr-lead-capture-field-group--company rr-lead-capture-field-group--compact-label">
+          <label class="rr-lead-capture-field" for="lead-company-name">Company name (optional)</label>
+          <input id="lead-company-name" name="companyName" autocomplete="organization">
           <span class="rr-lead-capture-error" data-error-for="companyName" id="error-company-name" aria-live="polite"></span>
         </div>
-        <div class="rr-lead-capture-field-group">
-          <label class="rr-lead-capture-field" for="lead-email">Email</label>
-          <input id="lead-email" name="email" type="email" autocomplete="email" required>
+        <div class="rr-lead-capture-field-group rr-lead-capture-field-group--full rr-lead-capture-field-group--website rr-lead-capture-field-group--compact-label">
+          <label class="rr-lead-capture-field" for="lead-business-website">Website (optional)</label>
+          <input id="lead-business-website" name="businessWebsite" type="url" inputmode="url" autocomplete="url" placeholder="yourcompany.com">
+          <span class="rr-lead-capture-error" data-error-for="businessWebsite" id="error-business-website" aria-live="polite"></span>
+        </div>
+        <div class="rr-lead-capture-field-group rr-lead-capture-field-group--full rr-lead-capture-field-group--compact-label">
+          <label class="rr-lead-capture-field" for="lead-email">Email (optional)</label>
+          <input id="lead-email" name="email" type="email" autocomplete="email">
           <span class="rr-lead-capture-error" data-error-for="email" id="error-email" aria-live="polite"></span>
         </div>
-        <div class="rr-lead-capture-field-group">
+        <div class="rr-lead-capture-field-group rr-lead-capture-field-group--full">
           <label class="rr-lead-capture-field" for="lead-phone">Phone</label>
-          <input id="lead-phone" name="phone" type="tel" autocomplete="tel" required>
+          <div class="rr-lead-capture-phone-row">
+            <select id="lead-phone-country" name="phoneCountry" aria-label="Country calling code" autocomplete="tel-country-code" required>${renderCountryCallingCodeOptions("AU")}</select>
+            <input id="lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="412 345 678" required>
+          </div>
           <span class="rr-lead-capture-error" data-error-for="phone" id="error-phone" aria-live="polite"></span>
         </div>
-        <label class="rr-lead-capture-field rr-lead-capture-honeypot" for="lead-website">Website</label>
-        <input class="rr-lead-capture-honeypot" id="lead-website" name="website" tabindex="-1" autocomplete="url" aria-hidden="true" hidden>
+        <label class="rr-lead-capture-field rr-lead-capture-honeypot" for="lead-contact-reference" aria-hidden="true" hidden>Leave this field empty</label>
+        <input class="rr-lead-capture-honeypot" id="lead-contact-reference" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
         <div data-turnstile aria-label="Security verification"></div>
         <div id="lead-dialog-status" class="rr-lead-capture-toast" aria-live="polite"></div>
         <a href="/privacy/">Privacy Policy</a>
-        <button type="submit">Save details</button>
-        <button type="button" data-dialog-close>Close</button>
+        <button type="submit"><span class="rr-lead-capture-spinner" aria-hidden="true"></span><span data-submit-label>Book a call</span></button>
       </form>
     </dialog>
   `.trim();
@@ -352,13 +397,14 @@
     const value = (name) => (typeof fields[name] === "string" ? fields[name].trim() : "");
     for (const [name, limit] of [["firstName", 80], ["lastName", 80], ["companyName", 120]]) {
       const field = value(name);
-      if (!field) errors[name] = "This field is required.";
-      else if (field.length > limit) errors[name] = `Must be ${limit} characters or fewer.`;
+      if (field.length > limit) errors[name] = `Must be ${limit} characters or fewer.`;
     }
     const email = value("email");
-    if (!email) errors.email = "This field is required.";
-    else if (email.length > 254) errors.email = "Email must be 254 characters or fewer.";
+    if (email.length > 254) errors.email = "Email must be 254 characters or fewer.";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.email = "Enter a valid email address.";
+    if (!email) delete errors.email;
+    const businessWebsite = normalizeBusinessWebsite(value("businessWebsite"));
+    if (businessWebsite === null) errors.businessWebsite = "Enter a valid website address.";
     const phone = value("phone");
     const phoneDigits = phone.replace(/[\s().-]/g, "");
     if (!phone) errors.phone = "This field is required.";
@@ -386,7 +432,7 @@
   };
 
   const clearLeadFieldErrors = (form) => {
-    for (const name of ["firstName", "lastName", "companyName", "email", "phone"]) {
+    for (const name of ["firstName", "lastName", "companyName", "businessWebsite", "email", "phone"]) {
       const field = form && typeof form.querySelector === "function" ? form.querySelector(`[name="${name}"]`) : null;
       const errorNode = form && typeof form.querySelector === "function" ? form.querySelector(`[data-error-for="${name}"]`) : null;
       if (errorNode) errorNode.textContent = "";
@@ -433,7 +479,7 @@
   };
 
   const submitLeadCaptureRequest = async ({ payload, fetchImpl, reservedWindow, openWindow, statusRegion, turnstile } = {}) => {
-    const reserved = reservedWindow || (typeof openWindow === "function" ? openWindow("about:blank", "_blank", "noopener,noreferrer") : null);
+    const reserved = reservedWindow || (typeof openWindow === "function" ? openWindow("/assets/whatsapp-redirect.html", "_blank") : null);
     try {
       if (reserved && "opener" in reserved) reserved.opener = null;
     } catch (_error) {
@@ -550,13 +596,16 @@
       form.addEventListener("submit", (event) => {
         event.preventDefault();
         const values = {};
-        for (const name of ["firstName", "lastName", "companyName", "email", "phone", "website"]) {
+        for (const name of ["firstName", "lastName", "companyName", "businessWebsite", "email", "phone", "phoneCountry", "website"]) {
           const field = typeof form.querySelector === "function" ? form.querySelector(`[name="${name}"]`) : null;
           values[name] = field ? field.value || "" : "";
         }
         clearLeadFieldErrors(form);
+        values.phone = combinePhoneNumber(values.phoneCountry, values.phone);
+        delete values.phoneCountry;
         const errors = validateLeadFields(values);
         if (Object.keys(errors).length) { applyLeadFieldErrors(form, errors); return; }
+        values.businessWebsite = normalizeBusinessWebsite(values.businessWebsite);
         // The CTA context is intentionally resolved at submit time: one shared
         // dialog can be opened from many CTAs during a page lifetime.
         const submissionContext = activeContext || context;
@@ -624,6 +673,9 @@
     persistLeadCaptureSuccess,
     readLeadCaptureState,
     renderLeadCaptureDialog,
+    renderCountryCallingCodeOptions,
+    combinePhoneNumber,
+    normalizeBusinessWebsite,
     shouldBypassLeadForm,
     getSharedDialog,
     init,

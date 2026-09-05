@@ -3,6 +3,7 @@ export type StoredLead = {
   firstName: string;
   lastName: string;
   companyName: string;
+  businessWebsite: string;
   email: string;
   phone: string;
   sourcePath: string;
@@ -32,12 +33,15 @@ const escapeHtml = (value: string): string => value
   .replaceAll('"', "&quot;")
   .replaceAll("'", "&#39;");
 
+const shown = (value: string): string => value || "Not provided";
+
 const textRows = (lead: StoredLead): Array<[string, string]> => [
   ["Submission ID", lead.submissionId],
-  ["First name", lead.firstName],
-  ["Last name", lead.lastName],
-  ["Company", lead.companyName],
-  ["Email", lead.email],
+  ["First name", shown(lead.firstName)],
+  ["Last name", shown(lead.lastName)],
+  ["Company", shown(lead.companyName)],
+  ["Website", shown(lead.businessWebsite)],
+  ["Email", shown(lead.email)],
   ["Phone", lead.phone],
   ["Source path", lead.sourcePath],
   ["CTA", lead.ctaLabel],
@@ -68,7 +72,7 @@ export const buildLeadEmail = (lead: StoredLead, config: LeadEmailConfig): LeadE
   return {
     from: config.from,
     to: config.to,
-    subject: `New website lead — ${lead.companyName}`,
+    subject: lead.companyName ? `New website lead — ${lead.companyName}` : "New website lead",
     text,
     html,
   };

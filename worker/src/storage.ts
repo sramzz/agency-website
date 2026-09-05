@@ -42,16 +42,17 @@ export async function storeLeadAndEnqueue(
     result = await db
       .prepare(
         `INSERT OR IGNORE INTO leads (
-          submission_id, first_name, last_name, company_name, email, phone,
+          submission_id, first_name, last_name, company_name, business_website, email, phone,
           source_path, cta_label, market, services_json, notice_version,
           created_at, expires_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
       )
       .bind(
         lead.submissionId,
         lead.firstName,
         lead.lastName,
         lead.companyName,
+        lead.businessWebsite,
         lead.email,
         lead.phone,
         lead.sourcePath,

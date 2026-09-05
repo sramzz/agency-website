@@ -75,9 +75,21 @@ describe("leads migration", () => {
     const names = columns.results.map(({ name }) => name);
 
     expect(names).toContain("notified_at");
+    expect(names).toContain("business_website");
     expect(names).not.toEqual(
       expect.arrayContaining(["ip", "ip_address", "user_agent", "turnstile_token", "website"])
     );
+  });
+
+  it("allows every personal field except phone to be empty", async () => {
+    const submissionId = "00000000-0000-4000-8000-000000000099";
+    await expect(env.DB.prepare(`INSERT INTO leads (
+      submission_id, first_name, last_name, company_name, business_website, email, phone,
+      source_path, cta_label, market, services_json, notice_version, created_at, expires_at
+    ) VALUES (?, '', '', '', '', '', ?, '/', 'Book a Call', 'Not specified', '[]', '2026-09-05', ?, ?)`)
+      .bind(submissionId, "+61412345678", "2026-09-05T00:00:00.000Z", "2027-09-05T00:00:00.000Z")
+      .run()).resolves.toBeDefined();
+    await env.DB.prepare("DELETE FROM leads WHERE submission_id = ?").bind(submissionId).run();
   });
 
   it("deletes only leads expired at the supplied time", async () => {

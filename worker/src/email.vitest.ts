@@ -7,6 +7,7 @@ type StoredLead = {
   firstName: string;
   lastName: string;
   companyName: string;
+  businessWebsite: string;
   email: string;
   phone: string;
   sourcePath: string;
@@ -23,6 +24,7 @@ const lead: StoredLead = {
   firstName: "Ada <script>",
   lastName: "O'Connor & Co",
   companyName: 'A "Useful" Company <AU>',
+  businessWebsite: "https://example.com/about?source=website",
   email: "ada@example.com",
   phone: "+61400111222",
   sourcePath: "/locations/australia/",
@@ -63,6 +65,7 @@ describe("buildLeadEmail", () => {
       lead.firstName,
       lead.lastName,
       lead.companyName,
+      lead.businessWebsite,
       lead.email,
       lead.phone,
       lead.sourcePath,

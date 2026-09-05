@@ -29,9 +29,19 @@ test("lead capture styles cover toast, pending, error and honeypot states", () =
     ".rr-lead-capture-form.is-pending",
     ".rr-lead-capture-form.has-error",
     ".rr-lead-capture-honeypot",
+    ".rr-lead-capture-close",
+    ".rr-lead-capture-phone-row",
+    ".rr-lead-capture-spinner",
   ]) {
     assert.match(styles, selector(name), `${name} should have a state/style rule`);
   }
+});
+
+test("mobile lead capture stays compact while retaining a safe scroll fallback", () => {
+  assert.match(styles, /@media\s*\(max-width:\s*600px\)[\s\S]*?\.rr-lead-capture-form[^{]*\{[\s\S]*?grid-template-columns:\s*repeat\(2,/);
+  assert.match(styles, /\.rr-lead-capture-field-group--full[^{]*\{[\s\S]*?grid-column:\s*1\s*\/\s*-1/);
+  assert.match(styles, /@media\s*\(max-height:\s*700px\)[\s\S]*?\.rr-lead-capture-form/);
+  assert.match(styles, /\.rr-lead-capture-form\s*>\s*a[^{]*\{[\s\S]*?font-size:\s*(?:0\.7[0-9]|0\.8)rem/);
 });
 
 test("lead capture dialog is flexible, bounded and internally scrollable", () => {

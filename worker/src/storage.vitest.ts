@@ -14,6 +14,7 @@ const lead = (submissionId: string) => ({
   firstName: "Ada",
   lastName: "Lovelace",
   companyName: "Analytical Engines",
+  businessWebsite: "https://analytical.example/",
   email: "ada@example.com",
   phone: "+61412345678",
   sourcePath: "/locations/australia/",
@@ -44,10 +45,11 @@ describe("storeLeadAndEnqueue", () => {
     expect(queue.send).toHaveBeenCalledTimes(1);
     expect(queue.send).toHaveBeenCalledWith({ submissionId });
     const row = await env.DB.prepare(
-      "SELECT submission_id, services_json, created_at, expires_at, notification_status FROM leads WHERE submission_id = ?"
+      "SELECT submission_id, business_website, services_json, created_at, expires_at, notification_status FROM leads WHERE submission_id = ?"
     ).bind(submissionId).first<Record<string, string>>();
     expect(row).toEqual({
       submission_id: submissionId,
+      business_website: "https://analytical.example/",
       services_json: '["Google SEO"]',
       created_at: createdAt,
       expires_at: "2027-09-03T00:00:00.000Z",
