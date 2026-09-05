@@ -56,7 +56,7 @@ test("desktop lead capture follows the spacious single-column reference composit
 });
 
 test("homepage cache key exposes the current graphical country-picker styles", () => {
-  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260905-country-flags/);
+  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260905-phone-focus/);
 });
 
 test("the phone control keeps the country choice visually compact", () => {
@@ -68,6 +68,11 @@ test("the phone control keeps the country choice visually compact", () => {
   assert.match(styles, /\.rr-lead-capture-country-trigger[^{]*\{[\s\S]*?background:\s*transparent[\s\S]*?cursor:\s*pointer/);
   assert.match(styles, /\.rr-lead-capture-country-value[^{]*\{[\s\S]*?display:\s*none/);
   assert.match(styles, /\.rr-lead-capture-field--sr[^{]*\{[\s\S]*?clip-path:\s*inset\(50%\)/);
+});
+
+test("the phone row owns one focus ring without outlining the number input", () => {
+  assert.match(styles, /\.rr-lead-capture-phone-row:focus-within\s*\{[\s\S]*?outline:\s*3px\s+solid\s+var\(--tertiary\)/);
+  assert.match(styles, /\.rr-lead-capture-form\s+\.rr-lead-capture-country-trigger:focus-visible,\s*\.rr-lead-capture-form\s+\.rr-lead-capture-phone-row\s+input:focus-visible\s*\{[\s\S]*?outline:\s*0/);
 });
 
 test("the authored country popup uses real flags and an easy-to-scan three-column list", () => {

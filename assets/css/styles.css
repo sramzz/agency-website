@@ -5573,9 +5573,10 @@ body.service-dialog-open {
   outline-offset: 3px;
 }
 
-.rr-lead-capture-country-trigger:focus-visible,
-.rr-lead-capture-phone-row input:focus-visible {
+.rr-lead-capture-form .rr-lead-capture-country-trigger:focus-visible,
+.rr-lead-capture-form .rr-lead-capture-phone-row input:focus-visible {
   outline: 0;
+  outline-offset: 0;
 }
 
 .rr-lead-capture-country-menu {

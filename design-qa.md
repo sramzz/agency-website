@@ -354,3 +354,35 @@ The supplied images are already focused component crops. Flags, country names, c
 No actionable P0, P1, or P2 differences remain in the requested scope.
 
 final result: passed
+
+## Phone focus-ring correction — 2026-09-05
+
+### Evidence
+
+- Source visual truth: `docs/qa/phone-focus-before.png` (693 × 73 pixels) and the clearer production report `docs/qa/phone-focus-live-before.jpeg` (1310 × 254 pixels).
+- Browser-rendered implementation: local in-app browser at `http://127.0.0.1:4176/?preview=lead-capture-desktop`.
+- Viewport/state: desktop dialog open, phone input focused, Australia `+61` selected.
+- The latest production source crop and corrected browser view were emitted together in one comparison input. The corrected view uses the full viewport so the complete composite field and its surrounding layout remain visible.
+
+### Findings and fix
+
+- [P2 resolved] The generic input focus outline had greater CSS specificity than the phone-row suppression rule, producing a second vertical outline through the calling code.
+- Increased the suppression selector specificity so the row's `:focus-within` outline is the only focus indicator.
+- No font, spacing, token, flag asset, copy, phone behavior, or WhatsApp-flow changes were made.
+
+### Required fidelity surfaces
+
+- Typography and copy: unchanged.
+- Spacing and layout: calling code and placeholder remain separated without an overlaid outline.
+- Colors and tokens: the control retains the Ranking Rebels red focus token.
+- Assets: the selected country's real flag remains unchanged.
+- Accessibility: one clear focus ring remains around the complete composite control; keyboard focus is not removed.
+
+### Verification
+
+- Real browser: the focused phone input shows one clean outer ring and no inner red line.
+- Browser console: no warnings or errors.
+- TDD: the regression test failed before the CSS correction and passed afterward.
+- Comparison history: the source showed the overlapping inner outline; the corrected view removes it.
+
+final result: passed
