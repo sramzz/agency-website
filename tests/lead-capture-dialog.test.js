@@ -15,6 +15,10 @@ const {
   renderTurnstile,
   renderLeadCaptureDialog,
   renderCountryCallingCodeOptions,
+  renderCountryPickerOptions,
+  getPhoneCountryDisplay,
+  selectPhoneCountry,
+  syncPhoneCountryDisplay,
   combinePhoneNumber,
   normalizeBusinessWebsite,
   resolveTurnstileSitekey,
@@ -48,10 +52,10 @@ test("the dynamic lead dialog renders the accessible capture contract", () => {
     assert.match(template, new RegExp(`<input\\b[^>]*name=["']${field}["']`, "i"));
   }
 
-  assert.match(template, /<label\b[^>]*for=["']lead-business-website["'][^>]*>\s*Website/i);
+  assert.match(template, /<label\b[^>]*for=["']lead-business-website["'][^>]*>\s*Website URL\?\s*<\/label>/i);
   assert.match(template, /<input\b[^>]*name=["']businessWebsite["'][^>]*autocomplete=["']url["']/i);
   assert.match(template, /<input\b[^>]*name=["']website["'][^>]*(?:hidden|aria-hidden=["']true["']|style=["'][^"']*(?:display|visibility)\s*:\s*(?:none|hidden))/i);
-  assert.match(template, /<select\b[^>]*name=["']phoneCountry["'][^>]*aria-label=["'][^"']*(?:country|calling code)[^"']*["']/i);
+  assert.match(template, /<input\b[^>]*name=["']phoneCountry["'][^>]*type=["']hidden["'][^>]*value=["']AU["']/i);
   assert.match(template, /<(?:div|p|output)\b[^>]*aria-live=["'](?:polite|assertive)["'][^>]*>/i);
   assert.match(template, /<a\b[^>]*href=["']\/privacy\/["'][^>]*>[^<]*Privacy[^<]*<\/a>/i);
   assert.match(template, /<button\b[^>]*class=["'][^"']*rr-lead-capture-close[^"']*["'][^>]*data-dialog-close[^>]*aria-label=["']Close["'][^>]*>\s*<span[^>]*aria-hidden=["']true["'][^>]*>×<\/span>\s*<\/button>/i);
@@ -63,16 +67,93 @@ test("the dynamic lead dialog renders the accessible capture contract", () => {
     const input = template.match(new RegExp(`<input\\b[^>]*name=["']${optionalField}["'][^>]*>`, "i"))?.[0] || "";
     assert.doesNotMatch(input, /\brequired\b/i, `${optionalField} should be optional`);
   }
-  assert.equal((template.match(/\(optional\)<\/label>/gi) || []).length, 5);
+  assert.doesNotMatch(template, /\boptional\b/i);
+  for (const placeholder of ["First Name", "Last Name", "Company Name", "Email", "Website URL?", "Phone number"]) {
+    assert.match(template, new RegExp(`placeholder=["']${placeholder.replace("?", "\\?")}["']`, "i"));
+  }
+  assert.match(template, /class=["'][^"']*flag:AU[^"']*["'][^>]*data-country-flag[^>]*><\/span>/);
+  assert.match(template, /data-country-dial-code[^>]*>\+61<\/span>/);
   assert.match(template.match(/<input\b[^>]*name=["']phone["'][^>]*>/i)?.[0] || "", /\brequired\b/i);
 });
 
-test("country selector covers the international calling-code list with flags", () => {
+test("hidden country select covers the international calling-code list without emoji fallbacks", () => {
   const options = renderCountryCallingCodeOptions("AU");
   assert.ok((options.match(/<option\b/g) || []).length >= 240);
-  assert.match(options, /value="AU"[^>]*selected[^>]*>🇦🇺 Australia \(\+61\)<\/option>/);
-  assert.match(options, /value="NL"[^>]*>🇳🇱 Netherlands \(\+31\)<\/option>/);
-  assert.match(options, /value="CO"[^>]*>🇨🇴 Colombia \(\+57\)<\/option>/);
+  assert.match(options, /value="AU"[^>]*selected[^>]*>Australia \(\+61\)<\/option>/);
+  assert.match(options, /value="NL"[^>]*>Netherlands \(\+31\)<\/option>/);
+  assert.match(options, /value="CO"[^>]*>Colombia \(\+57\)<\/option>/);
+  assert.doesNotMatch(options, /🇦🇺|🇳🇱|🇨🇴/);
+});
+
+test("authored country popup renders graphical flags, country names, and dial codes", () => {
+  const options = renderCountryPickerOptions("AU");
+  assert.ok((options.match(/data-country-option=/g) || []).length >= 240);
+  assert.match(options, /data-country-option="AU"[^>]*aria-current="true"[\s\S]*?class="rr-lead-capture-country-option-flag flag:AU"[\s\S]*?>Australia<[\s\S]*?>\+61</);
+  assert.match(options, /data-country-option="NL"(?![^>]*aria-current)[^>]*>[\s\S]*?class="rr-lead-capture-country-option-flag flag:NL"[\s\S]*?>Netherlands<[\s\S]*?>\+31</);
+  assert.match(options, /data-country-option="CO"(?![^>]*aria-current)[^>]*>[\s\S]*?class="rr-lead-capture-country-option-flag flag:CO"[\s\S]*?>Colombia<[\s\S]*?>\+57</);
+  assert.doesNotMatch(options, /\b(?:AU|NL|CO)\s+(?:Australia|Netherlands|Colombia)\b/);
+});
+
+test("the closed phone control shows only the selected flag and calling code", () => {
+  const template = renderLeadCaptureDialog();
+  const phoneRow = template.match(/<div class="rr-lead-capture-phone-row">[\s\S]*?<\/div>/)?.[0] || "";
+
+  assert.match(phoneRow, /class="rr-lead-capture-country-picker"/);
+  assert.match(phoneRow, /<button\b[^>]*data-country-trigger[^>]*aria-expanded="false"[^>]*aria-controls="lead-phone-country-menu"/);
+  assert.match(phoneRow, /class="rr-lead-capture-country-flag flag:AU"[^>]*data-country-flag[^>]*><\/span>/);
+  assert.match(phoneRow, /<input\b[^>]*name="phoneCountry"[^>]*type="hidden"[^>]*value="AU"[^>]*>/);
+  assert.match(phoneRow, /data-country-dial-code[^>]*>\+61<\/span>/);
+  const visibleText = phoneRow.replace(/<[^>]+>/g, "");
+  assert.doesNotMatch(visibleText, /Australia/i);
+});
+
+test("dialog includes a graphical country popup outside the compact phone row", () => {
+  const template = renderLeadCaptureDialog();
+  assert.match(template, /<div\b[^>]*id="lead-phone-country-menu"[^>]*popover="auto"[^>]*data-country-menu[^>]*role="dialog"/);
+  assert.match(template, /<ul\b[^>]*class="rr-lead-capture-country-options"[^>]*>[\s\S]*data-country-option="AU"/);
+});
+
+test("country display keeps the compact flag and dial code in sync", () => {
+  assert.deepEqual(getPhoneCountryDisplay("CO"), { iso: "CO", flagClass: "flag:CO", dialCode: "+57" });
+  assert.deepEqual(getPhoneCountryDisplay("NL"), { iso: "NL", flagClass: "flag:NL", dialCode: "+31" });
+
+  const flag = { className: "" };
+  const dialCode = { textContent: "" };
+  const root = { querySelector: (selector) => selector.includes("flag") ? flag : dialCode };
+  assert.deepEqual(syncPhoneCountryDisplay({ value: "AU" }, root), { iso: "AU", flagClass: "flag:AU", dialCode: "+61" });
+  assert.equal(flag.className, "rr-lead-capture-country-flag flag:AU");
+  assert.equal(dialCode.textContent, "+61");
+});
+
+test("selecting a graphical country option synchronizes native value, display, and selected state", () => {
+  const flag = { className: "" };
+  const dialCode = { textContent: "" };
+  const triggerAttributes = {};
+  const trigger = { setAttribute(name, value) { triggerAttributes[name] = value; } };
+  const options = ["AU", "CO"].map((iso) => ({
+    dataset: { countryOption: iso },
+    attributes: {},
+    setAttribute(name, value) { this.attributes[name] = value; },
+  }));
+  const root = {
+    querySelector(selector) {
+      if (selector === "[data-country-flag]") return flag;
+      if (selector === "[data-country-dial-code]") return dialCode;
+      if (selector === "[data-country-trigger]") return trigger;
+      return null;
+    },
+    querySelectorAll(selector) { return selector === "[data-country-option]" ? options : []; },
+  };
+  const dispatched = [];
+  const select = { value: "AU", dispatchEvent(event) { dispatched.push(event.type); } };
+
+  assert.deepEqual(selectPhoneCountry(select, root, "CO"), { iso: "CO", flagClass: "flag:CO", dialCode: "+57" });
+  assert.equal(select.value, "CO");
+  assert.equal(flag.className, "rr-lead-capture-country-flag flag:CO");
+  assert.equal(dialCode.textContent, "+57");
+  assert.equal(triggerAttributes["aria-label"], "Choose country calling code. Colombia +57 selected.");
+  assert.deepEqual(options.map((option) => option.attributes["aria-current"]), ["false", "true"]);
+  assert.deepEqual(dispatched, ["change"]);
 });
 
 test("phone helper combines a national number with its country code and preserves pasted international numbers", () => {

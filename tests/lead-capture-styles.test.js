@@ -5,6 +5,8 @@ const test = require("node:test");
 
 const root = path.resolve(__dirname, "..");
 const styles = fs.readFileSync(path.join(root, "assets/css/styles.css"), "utf8");
+const countryFlags = fs.readFileSync(path.join(root, "assets/vendor/country-flags.css"), "utf8");
+const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
 
 // These selectors are the styling contract for the dialog rendered by lead-capture.js.
 // The current template does not yet expose all of these hooks; keeping the contract
@@ -38,10 +40,43 @@ test("lead capture styles cover toast, pending, error and honeypot states", () =
 });
 
 test("mobile lead capture stays compact while retaining a safe scroll fallback", () => {
-  assert.match(styles, /@media\s*\(max-width:\s*600px\)[\s\S]*?\.rr-lead-capture-form[^{]*\{[\s\S]*?grid-template-columns:\s*repeat\(2,/);
+  assert.match(styles, /\.rr-lead-capture-form[^{]*\{[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)/);
   assert.match(styles, /\.rr-lead-capture-field-group--full[^{]*\{[\s\S]*?grid-column:\s*1\s*\/\s*-1/);
   assert.match(styles, /@media\s*\(max-height:\s*700px\)[\s\S]*?\.rr-lead-capture-form/);
   assert.match(styles, /\.rr-lead-capture-form\s*>\s*a[^{]*\{[\s\S]*?font-size:\s*(?:0\.7[0-9]|0\.8)rem/);
+});
+
+test("desktop lead capture follows the spacious single-column reference composition", () => {
+  assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-dialog\s*\{[\s\S]*?width:\s*min\(760px,\s*calc\(100vw\s*-\s*48px\)\)/);
+  assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-form\s*\{[\s\S]*?grid-template-columns:\s*minmax\(0,\s*1fr\)[\s\S]*?gap:\s*14px[\s\S]*?padding:\s*42px\s*46px/);
+  assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-form\s+h2\s*\{[\s\S]*?font-size:\s*2\.4rem[\s\S]*?white-space:\s*nowrap/);
+  assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-form\s+input:not\(\.rr-lead-capture-honeypot\)[\s\S]*?min-height:\s*58px/);
+  assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-phone-row\s*\{[\s\S]*?min-height:\s*58px/);
+  assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-form\s*>\s*button\[type="submit"\]\s*\{[\s\S]*?min-height:\s*56px/);
+});
+
+test("homepage cache key exposes the current graphical country-picker styles", () => {
+  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260905-country-flags/);
+});
+
+test("the phone control keeps the country choice visually compact", () => {
+  assert.match(styles, /^@import\s+url\(["']\.\.\/vendor\/country-flags\.css["']\);/);
+  assert.match(countryFlags, /\.flag\\:AU\s*\{/);
+  assert.match(countryFlags, /background-image:\s*url\(["']data:image\/svg\+xml/);
+  assert.match(styles, /\.rr-lead-capture-phone-row[^{]*\{[\s\S]*?grid-template-columns:\s*4[4-9]px\s+auto\s+minmax\(0,\s*1fr\)/);
+  assert.match(styles, /\.rr-lead-capture-country-picker[^{]*\{[\s\S]*?position:\s*relative/);
+  assert.match(styles, /\.rr-lead-capture-country-trigger[^{]*\{[\s\S]*?background:\s*transparent[\s\S]*?cursor:\s*pointer/);
+  assert.match(styles, /\.rr-lead-capture-country-value[^{]*\{[\s\S]*?display:\s*none/);
+  assert.match(styles, /\.rr-lead-capture-field--sr[^{]*\{[\s\S]*?clip-path:\s*inset\(50%\)/);
+});
+
+test("the authored country popup uses real flags and an easy-to-scan three-column list", () => {
+  assert.match(styles, /\.rr-lead-capture-country-menu[^{]*\{[\s\S]*?position:\s*fixed[\s\S]*?max-height:[\s\S]*?overflow:\s*hidden/);
+  assert.match(styles, /\.rr-lead-capture-country-options[^{]*\{[\s\S]*?overflow-y:\s*auto/);
+  assert.match(styles, /\.rr-lead-capture-country-option[^{]*\{[\s\S]*?grid-template-columns:\s*auto\s+minmax\(0,\s*1fr\)\s+auto/);
+  assert.match(styles, /\.rr-lead-capture-country-option-flag[^{]*\{[\s\S]*?--CountryFlagIcon-height:/);
+  assert.match(styles, /\.rr-lead-capture-country-option:hover[\s\S]*\.rr-lead-capture-country-option:focus-visible/);
+  assert.match(styles, /\.rr-lead-capture-country-option\[aria-current="true"\]/);
 });
 
 test("lead capture dialog is flexible, bounded and internally scrollable", () => {

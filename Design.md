@@ -73,3 +73,9 @@ The palette is built around high-contrast neutrals and a single accent that driv
 - **Do** let Neutral carry the composition — negative space is a feature.
 - **Don't** introduce gradients. This system is flat on purpose.
 - **Don't** mix Tertiary with alternate accents; the single-accent rule is load-bearing.
+
+## Lead capture interaction decisions
+
+- The country calling-code control uses one shared, product-owned graphical picker because native Windows menus render flag emoji as two-letter codes. A hidden form value remains canonical for submission, while the visible popup uses native buttons, real vendored flag assets, country names, and dial codes.
+- The closed phone control stays intentionally compact: it shows only the selected country's real flag asset and dial code. The trigger's accessible label contains the full country name and dial code.
+- The lead form follows a single-column, compact mobile composition. Only the phone number is required; optionality is communicated through validation behavior rather than repeated visible “optional” labels.

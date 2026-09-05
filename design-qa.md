@@ -125,6 +125,47 @@ No actionable P0, P1, or P2 differences remain.
 
 final result: passed
 
+## Lead capture desktop reference revision — 2026-09-05
+
+### Evidence and normalization
+
+- Source visual truth: `C:\Users\Kelly Serna\Downloads\WhatsApp Image 2026-09-05 at 9.10.45 AM.jpeg` (1278 × 2048 pixels).
+- Implementation: local homepage lead dialog rendered in an 820 × 900 comparison frame at device scale 1.
+- Full-view comparison: source and browser-rendered implementation were placed side by side in the same Codex in-app browser capture during this task. The browser API emitted the capture in the task but did not expose a filesystem path.
+- State: desktop, dialog open, Australia selected, Turnstile localhost test widget visible, first field focused.
+
+### Required fidelity surfaces
+
+- Fonts and typography: Ranking Rebels' Oswald display and Inter body system remain intact; the desktop heading now stays on one line like the reference.
+- Spacing and layout rhythm: the desktop dialog uses a 760px single-column frame, 58px fields, 14px vertical rhythm, generous side padding, and one full-width CTA.
+- Colors and tokens: the reference structure is combined with the existing neutral field surface, black backdrop, Ranking Rebels red focus ring, and brand CTA.
+- Image quality and assets: the closed phone control uses the project-owned country-flag CSS assets; no emoji or placeholder replaces the visible selected flag.
+- Copy and content: `Website URL?`, the agreed heading/support copy, and `Book a call` remain exact. Company Name, Turnstile, and Privacy Policy are preserved as product requirements.
+
+### Phone selector behavior
+
+- Closed state: real selected flag plus dial code only.
+- Open native menu: flag glyph, full country name, and dial code for every supported country.
+- Selection synchronization: Australia shows `+61`; Colombia updates to `+57` and its matching flag asset.
+
+### Flow verification
+
+- Frontend lead-capture tests: 70 passed, including holding-page reservation, pending state, successful save, 600ms confirmation, popup-blocked fallback, and final WhatsApp navigation.
+- Worker tests: 68 passed across 10 test files; Worker TypeScript typecheck passed.
+- Browser console: no warnings or errors in the verified dialog state.
+
+### Comparison history
+
+1. The first desktop pass still loaded the old cached stylesheet and kept the previous narrow dialog.
+2. Added an explicit homepage stylesheet revision key so the browser receives the new desktop contract.
+3. The post-fix comparison shows the intended wide single-column composition, one-line heading, clean phone row, and full-width CTA with no clipped content in the normalized frame.
+
+### Findings
+
+No actionable P0, P1, or P2 differences remain in the requested desktop scope.
+
+final result: passed
+
 # Service Selector Design QA
 
 ## Evidence
@@ -233,6 +274,80 @@ A separate crop was not required because every service label, checkbox, card edg
    - Browser inspection reports 10 options, two computed grid columns, 10px gaps, independent 1px neutral borders, no dialog element, and no horizontal overflow.
    - Desktop inspection reports the original three-column grid, 16px gaps, and no horizontal overflow.
    - Existing commercial CTAs resolve directly to WhatsApp, while the selector retains its own service-message CTA.
+
+### Findings
+
+No actionable P0, P1, or P2 differences remain in the requested scope.
+
+final result: passed
+
+## Lead capture compact phone revision — 2026-09-05
+
+### Evidence
+
+- Source visual truth: `C:\Users\Kelly Serna\Downloads\WhatsApp Image 2026-09-05 at 9.10.45 AM.jpeg`
+- Implementation state: local homepage lead dialog at a 390 × 625 mobile viewport.
+- Comparison evidence: side-by-side source and implementation capture emitted through the Codex in-app browser during this task; the browser API does not expose a filesystem path for that capture.
+
+### Verification
+
+- The composition follows the reference direction: centered heading and support copy, one field per row, compact phone row, and one full-width CTA.
+- Visible field copy contains no “optional” labels and uses the exact `Website URL?` wording.
+- The closed phone picker shows only the real country flag and dial code. The native opened picker retains country names for usability and accessibility.
+- Australia renders as the Australian flag with `+61`; changing to Colombia updates the flag asset and dial code to `+57`.
+- At 390 × 625 the complete action remains reachable inside the bounded dialog, with an internal-scroll fallback for shorter screens.
+- Escape closes the dialog and returns focus according to the tested interaction contract.
+- Browser console verification returned no warnings or errors.
+
+### Intentional differences from the reference
+
+- Ranking Rebels typography, black surface, red focus treatment, and pink-red CTA are preserved instead of copying the reference brand.
+- Company name, Privacy Policy, Turnstile, and the close icon remain because they are part of the existing functional and compliance contract.
+- The localhost Turnstile test widget includes a test-only banner that is not representative of the production widget.
+
+final result: passed
+
+## Graphical country picker revision — 2026-09-05
+
+### Evidence
+
+- Source visual truth: `C:/Users/KELLYS~1/AppData/Local/Temp/codex-clipboard-b1cd6f8f-0c02-48bb-9930-ed064fe08927.png`
+- Browser-rendered implementation: `docs/qa/lead-country-picker-desktop.jpg`
+- Local route: `http://127.0.0.1:4176/?preview=lead-capture-desktop`
+
+### Normalization and state
+
+- Source image: 710 × 534 pixels.
+- Implementation screenshot: 730 × 637 pixels from the Codex in-app browser at device scale 1.
+- Both images were opened together in one comparison input. The crop is intentionally focused on the open country control rather than normalized to the full-page height, because the source and implementation use different browser crops.
+- State: lead dialog open, country popup open, graphical Colombia flag selected, `+57` visible in both the popup and compact phone control.
+
+### Full-view comparison
+
+The implementation preserves the reference's compact closed control and an overlaid, internally scrolling country popup. It deliberately improves the source's Windows letter-code fallback by rendering real SVG flag assets beside every country, followed by a right-aligned calling code.
+
+### Focused region comparison
+
+The supplied images are already focused component crops. Flags, country names, calling codes, selected treatment, popup boundary, scrollbar, and closed phone value are all legible at native density, so a second crop was not required.
+
+### Required fidelity surfaces
+
+- Fonts and typography: country names use the existing Ranking Rebels body face at a compact readable size; selected text is bold without changing row height.
+- Spacing and layout rhythm: each option uses a stable flag/name/code grid, 44px target height, and a bounded 360px scrolling panel.
+- Colors and tokens: the neutral popup surface and restrained red hover/focus/selected cues remain consistent with the lead form.
+- Image quality and assets: every visible flag is a vendored SVG background asset; no emoji, letter initials, handmade SVG, or CSS-drawn flag is used.
+- Copy and content: the open popup exposes country name and international calling code; the closed control remains only flag plus code as requested.
+- Accessibility and behavior: the trigger has a complete selected-country label, native option buttons support Tab and arrow navigation, Escape closes and restores focus, and a hidden form value remains canonical for submission.
+
+### Comparison history
+
+1. First post-implementation comparison
+   - No actionable P0, P1, or P2 mismatch was found.
+   - The visible difference from the source—real flags replacing two-letter fallbacks—is the requested correction.
+2. Interaction evidence
+   - Selecting Colombia changed the compact control from Australia `+61` to Colombia `+57` and closed the popup.
+   - Arrow Down opened the popup on the selected option; Escape closed it and returned focus to the trigger.
+   - Browser console verification returned no warnings or errors.
 
 ### Findings
 

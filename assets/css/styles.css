@@ -1,3 +1,5 @@
+@import url("../vendor/country-flags.css");
+
 :root {
   --primary: #050609;
   --secondary: #94a3b8;
@@ -5389,7 +5391,7 @@ body.service-dialog-open {
 
 /* Lead capture dialog: shared hooks for the dynamically rendered form. */
 .rr-lead-capture-dialog {
-  width: min(580px, calc(100vw - 24px));
+  width: min(520px, calc(100vw - 24px));
   max-width: calc(100vw - 24px);
   max-height: min(760px, calc(100dvh - 24px));
   overflow: hidden;
@@ -5410,8 +5412,8 @@ body.service-dialog-open {
 .rr-lead-capture-form {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 7px 12px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
   max-height: inherit;
   overflow-y: auto;
   padding: clamp(20px, 4vw, 34px);
@@ -5436,7 +5438,7 @@ body.service-dialog-open {
   padding-right: 38px;
   font-size: clamp(1.55rem, 4vw, 2.15rem);
   line-height: 1.08;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .rr-lead-capture-form > p {
@@ -5444,6 +5446,7 @@ body.service-dialog-open {
   color: #4b5563;
   font-size: 0.9rem;
   line-height: 1.4;
+  text-align: center;
 }
 
 .rr-lead-capture-field {
@@ -5459,20 +5462,33 @@ body.service-dialog-open {
   min-width: 0;
 }
 
+.rr-lead-capture-field--sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .rr-lead-capture-field-group--full {
   grid-column: 1 / -1;
 }
 
 .rr-lead-capture-form input:not(.rr-lead-capture-honeypot),
-.rr-lead-capture-form select {
+.rr-lead-capture-form select:not(.rr-lead-capture-country-select) {
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  min-height: 40px;
-  padding: 8px 10px;
+  min-height: 46px;
+  padding: 10px 13px;
   border: 1px solid #c9ced6;
   border-radius: 8px;
-  background: #ffffff;
+  background: #f4f6f8;
   color: var(--primary);
   font: inherit;
 }
@@ -5486,15 +5502,166 @@ body.service-dialog-open {
   outline-offset: 3px;
 }
 
-.rr-lead-capture-phone-row {
-  display: grid;
-  grid-template-columns: minmax(150px, 0.9fr) minmax(0, 1.2fr);
-  gap: 8px;
+.rr-lead-capture-form input::placeholder {
+  color: #68717d;
+  opacity: 1;
 }
 
-.rr-lead-capture-phone-row select {
-  min-width: 0;
+.rr-lead-capture-phone-row {
+  display: grid;
+  grid-template-columns: 48px auto minmax(0, 1fr);
+  align-items: center;
+  min-height: 46px;
+  overflow: hidden;
+  border: 1px solid #c9ced6;
+  border-radius: 8px;
+  background: #f4f6f8;
+}
+
+.rr-lead-capture-country-picker {
+  position: relative;
+  display: grid;
+  align-self: stretch;
+  place-items: center;
+  min-width: 48px;
+}
+
+.rr-lead-capture-country-trigger {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.rr-lead-capture-country-trigger:hover {
+  background: rgba(255, 48, 79, 0.08);
+}
+
+.rr-lead-capture-country-value {
+  display: none;
+}
+
+.rr-lead-capture-country-flag {
+  --CountryFlagIcon-height: 1.15rem;
+  flex: none;
+  border-radius: 2px;
+  background-position: center;
+  line-height: 1;
+}
+
+.rr-lead-capture-dial-code {
+  color: var(--primary);
+  font-weight: 750;
+  pointer-events: none;
+}
+
+.rr-lead-capture-phone-row input:not(.rr-lead-capture-honeypot) {
+  min-height: 44px;
+  padding-left: 8px;
+  border: 0;
+  background: transparent;
+}
+
+.rr-lead-capture-phone-row:focus-within {
+  outline: 3px solid var(--tertiary);
+  outline-offset: 3px;
+}
+
+.rr-lead-capture-country-trigger:focus-visible,
+.rr-lead-capture-phone-row input:focus-visible {
+  outline: 0;
+}
+
+.rr-lead-capture-country-menu {
+  position: fixed;
+  z-index: 120;
+  top: var(--rr-country-menu-top, 12px);
+  left: var(--rr-country-menu-left, 12px);
+  display: none;
+  width: var(--rr-country-menu-width, min(380px, calc(100vw - 24px)));
+  max-width: calc(100vw - 24px);
+  max-height: var(--rr-country-menu-max-height, min(360px, calc(100dvh - 24px)));
+  margin: 0;
+  padding: 6px;
+  overflow: hidden;
+  border: 1px solid #c9ced6;
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--primary);
+  box-shadow: 0 20px 52px rgba(5, 6, 9, 0.2);
+}
+
+.rr-lead-capture-country-menu:popover-open,
+.rr-lead-capture-country-menu[data-fallback-open="true"] {
+  display: grid;
+}
+
+.rr-lead-capture-country-options {
+  display: grid;
+  gap: 2px;
+  max-height: calc(var(--rr-country-menu-max-height, 360px) - 12px);
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  list-style: none;
+  scrollbar-gutter: stable;
+}
+
+.rr-lead-capture-country-option {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary);
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.rr-lead-capture-country-option:hover,
+.rr-lead-capture-country-option:focus-visible {
+  border-color: rgba(255, 48, 79, 0.42);
+  outline: 0;
+  background: rgba(255, 48, 79, 0.08);
+}
+
+.rr-lead-capture-country-option[aria-current="true"] {
+  border-color: rgba(255, 48, 79, 0.58);
+  background: rgba(255, 48, 79, 0.12);
+  font-weight: 800;
+}
+
+.rr-lead-capture-country-option-flag {
+  --CountryFlagIcon-height: 1rem;
+  flex: none;
+  border-radius: 2px;
+  background-position: center;
+}
+
+.rr-lead-capture-country-option-name {
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rr-lead-capture-country-option-code {
+  color: #68717d;
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
 }
 
 .rr-lead-capture-error {
@@ -5560,9 +5727,10 @@ body.service-dialog-open {
   gap: 9px;
   min-height: 46px;
   max-width: 100%;
+  width: 100%;
   padding-inline: 18px;
   border: 0;
-  border-radius: 999px;
+  border-radius: 10px;
   background: var(--tertiary);
   color: var(--on-tertiary);
   font: inherit;
@@ -5620,10 +5788,73 @@ body.service-dialog-open {
   text-underline-offset: 2px;
 }
 
+@media (min-width: 601px) {
+  .rr-lead-capture-dialog {
+    width: min(760px, calc(100vw - 48px));
+    max-width: calc(100vw - 48px);
+    max-height: min(900px, calc(100dvh - 48px));
+    border-radius: 20px;
+  }
+
+  .rr-lead-capture-form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    padding: 42px 46px;
+  }
+
+  .rr-lead-capture-form h2 {
+    padding-right: 0;
+    font-size: 2.4rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .rr-lead-capture-form > p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  .rr-lead-capture-form input:not(.rr-lead-capture-honeypot),
+  .rr-lead-capture-phone-row {
+    min-height: 58px;
+  }
+
+  .rr-lead-capture-form input:not(.rr-lead-capture-honeypot) {
+    padding: 15px 18px;
+    font-size: 0.96rem;
+  }
+
+  .rr-lead-capture-phone-row {
+    grid-template-columns: 56px auto minmax(0, 1fr);
+  }
+
+  .rr-lead-capture-country-picker {
+    min-width: 56px;
+  }
+
+  .rr-lead-capture-country-flag {
+    --CountryFlagIcon-height: 1.25rem;
+  }
+
+  .rr-lead-capture-phone-row input:not(.rr-lead-capture-honeypot) {
+    min-height: 56px;
+    padding-left: 9px;
+  }
+
+  .rr-lead-capture-form > button[type="submit"] {
+    min-height: 56px;
+    font-size: 1rem;
+  }
+
+  .rr-lead-capture-form > a {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 600px) {
   .rr-lead-capture-form {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px 8px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
     padding: 18px 16px;
   }
 
@@ -5676,35 +5907,6 @@ body.service-dialog-open {
     line-height: 1.25;
   }
 
-  .rr-lead-capture-field-group--company,
-  .rr-lead-capture-field-group--website {
-    grid-column: auto;
-  }
-
-  .rr-lead-capture-field-group--compact-label {
-    position: relative;
-    gap: 0;
-  }
-
-  .rr-lead-capture-field-group--compact-label > .rr-lead-capture-field {
-    position: absolute;
-    z-index: 1;
-    top: 3px;
-    left: 9px;
-    max-width: calc(100% - 18px);
-    overflow: hidden;
-    font-size: 0.6rem;
-    line-height: 1;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    pointer-events: none;
-  }
-
-  .rr-lead-capture-field-group--compact-label > input {
-    min-height: 40px;
-    padding: 14px 9px 3px;
-  }
-
   .rr-lead-capture-close {
     top: 5px;
     right: 5px;
@@ -5725,6 +5927,15 @@ body.service-dialog-open {
   .rr-lead-capture-form > button[type="submit"] {
     min-height: 42px;
   }
+
+  .rr-lead-capture-form input:not(.rr-lead-capture-honeypot),
+  .rr-lead-capture-phone-row {
+    min-height: 38px;
+  }
+
+  .rr-lead-capture-phone-row input:not(.rr-lead-capture-honeypot) {
+    min-height: 36px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -5736,7 +5947,7 @@ body.service-dialog-open {
   }
 
   .rr-lead-capture-form {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     max-height: calc(100dvh - 12px);
     overflow-y: auto;
     padding: 16px max(12px, env(safe-area-inset-left)) 16px max(12px, env(safe-area-inset-right));
@@ -5748,7 +5959,7 @@ body.service-dialog-open {
   }
 
   .rr-lead-capture-phone-row {
-    grid-template-columns: minmax(122px, 0.9fr) minmax(0, 1.1fr);
+    grid-template-columns: 48px auto minmax(0, 1fr);
   }
 }
 
