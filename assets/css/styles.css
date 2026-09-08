@@ -2154,10 +2154,57 @@ p {
 }
 
 .solution-picker-content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.editorial-site #home .solution-picker-card::before {
+  z-index: 1;
+}
+
+.editorial-site #home .solution-picker-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(5, 6, 9, 0.28), rgba(5, 6, 9, 0.68) 58%, rgba(5, 6, 9, 0.9));
+  pointer-events: none;
+}
+
+.editorial-site #home .solution-picker-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+  filter: grayscale(0.9) brightness(0.5) saturate(0.45);
+  transform: scale(1.035);
+  transition: opacity 240ms ease, filter 240ms ease, transform 320ms ease;
+}
+
+.editorial-site #home .solution-picker-card:nth-child(1) .solution-picker-image {
+  object-position: 68% center;
+}
+
+.editorial-site #home .solution-picker-card:nth-child(2) .solution-picker-image {
+  object-position: 62% center;
+}
+
+.editorial-site #home .solution-picker-card:nth-child(3) .solution-picker-image {
+  object-position: 67% center;
+}
+
+.editorial-site #home .solution-picker-card:hover .solution-picker-image,
+.editorial-site #home .solution-picker-card:focus-visible .solution-picker-image {
+  opacity: 0.72;
+  filter: grayscale(0.08) brightness(0.78) saturate(1.08);
+  transform: scale(1);
 }
 
 .solution-picker-number,
@@ -5023,7 +5070,8 @@ body.service-dialog-open {
   .service-option,
   .customer-result-card,
   .customer-result-action,
-  .process-flywheel-step a {
+  .process-flywheel-step a,
+  .editorial-site #home .solution-picker-image {
     transition: none;
   }
 
@@ -5083,6 +5131,14 @@ body.service-dialog-open {
 
 .journey-page .journey-photo-placeholder-hero {
   min-height: 520px;
+}
+
+.journey-page .journey-photo-placeholder > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .journey-page .journey-photo-placeholder-label {
@@ -5261,8 +5317,13 @@ body.service-dialog-open {
 }
 
 .journey-page .journey-photo-placeholder-process {
-  min-height: 330px;
   margin-top: 30px;
+}
+
+.journey-page .journey-photo-placeholder-process > img {
+  position: relative;
+  aspect-ratio: 1961 / 802;
+  height: auto;
 }
 
 .journey-page .journey-loop {
@@ -5353,10 +5414,6 @@ body.service-dialog-open {
 
   .journey-page .journey-stage-details {
     grid-template-columns: 1fr;
-  }
-
-  .journey-page .journey-photo-placeholder-process {
-    min-height: 280px;
   }
 
   .journey-page .journey-loop {

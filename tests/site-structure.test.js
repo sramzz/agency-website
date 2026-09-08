@@ -230,8 +230,13 @@ test("the homepage follows the selected search-led growth structure", () => {
   }
 
   assert.equal((home.match(/class="solution-picker-card"/g) || []).length, 3);
-  for (const route of ["organic-discovery", "paid-ads", "ai-automation"]) {
+  for (const [route, image] of [
+    ["organic-discovery", "organic-discovery-search.png"],
+    ["paid-ads", "paid-ads-platforms.png"],
+    ["ai-automation", "ai-automation-workflow.png"],
+  ]) {
     assert.match(home, new RegExp(`href="/solutions/${route}/"`));
+    assert.ok(home.includes(`/assets/images/home/${image}`));
   }
 
   assert.equal((home.match(/class="process-flywheel-step"/g) || []).length, 4);
@@ -297,9 +302,9 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
 
   assert.match(journey, /What we learn after launch shapes the next round of Discovery\./);
   assert.match(journey, /We decide what to keep, change or stop, then choose what goes back into Discovery\./);
-  assert.equal((journey.match(/data-photo-brief=/g) || []).length, 2);
-  assert.match(journey, /A candid strategy session with a client and the Ranking Rebels team/);
-  assert.match(journey, /A client and strategist checking a live launch and its measurement dashboard together/);
+  assert.equal((journey.match(/<figure class="journey-photo-placeholder/g) || []).length, 2);
+  assert.match(journey, /src="\/assets\/images\/journey\/client-welcome\.png"[^>]*alt="A Ranking Rebels strategist welcoming a client with a handshake in a bright workspace"/);
+  assert.match(journey, /src="\/assets\/images\/journey\/launch-review\.png"[^>]*alt="A Ranking Rebels strategist and a client reviewing work together on a laptop"/);
   assert.ok(journey.includes("We join your team instead of sitting on the sidelines. Every month, we work through priorities together. You can also speak directly with the marketers doing the work whenever a question or shared task comes up."));
   assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
 

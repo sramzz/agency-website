@@ -55,8 +55,8 @@ test("desktop lead capture follows the spacious single-column reference composit
   assert.match(styles, /@media\s*\(min-width:\s*601px\)[\s\S]*?\.rr-lead-capture-form\s*>\s*button\[type="submit"\]\s*\{[\s\S]*?min-height:\s*56px/);
 });
 
-test("homepage cache key exposes the current graphical country-picker styles", () => {
-  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260905-phone-focus/);
+test("homepage cache key exposes the current shared styles", () => {
+  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260908-home-solution-photos/);
 });
 
 test("the phone control keeps the country choice visually compact", () => {
