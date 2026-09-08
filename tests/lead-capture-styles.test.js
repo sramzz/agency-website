@@ -56,7 +56,7 @@ test("desktop lead capture follows the spacious single-column reference composit
 });
 
 test("homepage cache key exposes the current shared styles", () => {
-  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260908-home-solution-photos/);
+  assert.match(homepage, /\/assets\/css\/styles\.css\?v=20260908-home-solution-photos-v3/);
 });
 
 test("the phone control keeps the country choice visually compact", () => {
