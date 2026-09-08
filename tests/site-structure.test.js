@@ -305,6 +305,7 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
   assert.equal((journey.match(/<figure class="journey-photo-placeholder/g) || []).length, 2);
   assert.match(journey, /src="\/assets\/images\/journey\/client-welcome\.png"[^>]*alt="A Ranking Rebels strategist welcoming a client with a handshake in a bright workspace"/);
   assert.match(journey, /src="\/assets\/images\/journey\/launch-review\.png"[^>]*alt="A Ranking Rebels strategist and a client reviewing work together on a laptop"/);
+  assert.doesNotMatch(journey, /<figcaption>/);
   assert.ok(journey.includes("We join your team instead of sitting on the sidelines. Every month, we work through priorities together. You can also speak directly with the marketers doing the work whenever a question or shared task comes up."));
   assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
 
