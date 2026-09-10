@@ -303,8 +303,8 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
   assert.match(journey, /What we learn after launch shapes the next round of Discovery\./);
   assert.match(journey, /We decide what to keep, change or stop, then choose what goes back into Discovery\./);
   assert.equal((journey.match(/<figure class="journey-photo-placeholder/g) || []).length, 2);
-  assert.match(journey, /src="\/assets\/images\/journey\/client-welcome-handshake-session\.png"[^>]*alt="A Ranking Rebels strategist welcoming a client with a handshake in a bright workspace"/);
-  assert.match(journey, /src="\/assets\/images\/journey\/launch-review-client-session\.png"[^>]*alt="A Ranking Rebels strategist and a client reviewing work together on a laptop"/);
+  assert.match(journey, /src="\/assets\/images\/journey\/client-partnership-handshake\.png"[^>]*alt="A Ranking Rebels strategist shaking hands with a client during a partnership meeting"/);
+  assert.match(journey, /src="\/assets\/images\/journey\/strategy-presentation-session\.png"[^>]*alt="A Ranking Rebels strategist presenting marketing growth results to a client team"/);
   assert.doesNotMatch(journey, /<figcaption>/);
   assert.ok(journey.includes("We join your team instead of sitting on the sidelines. Every month, we work through priorities together. You can also speak directly with the marketers doing the work whenever a question or shared task comes up."));
   assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
@@ -323,6 +323,7 @@ test("the journey layout is page-scoped, responsive and motion-safe", () => {
   assert.match(styles, /\.journey-page \.journey-timeline\s*\{/);
   assert.match(styles, /\.journey-page \.journey-stage-card\s*\{/);
   assert.match(styles, /\.journey-page \.journey-photo-placeholder\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-photo-placeholder-process > img\s*\{[\s\S]*?aspect-ratio:\s*1672 \/ 941/);
   assert.match(styles, /\.journey-page \.journey-loop:focus-visible/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.journey-page \.journey-stage\s*\{[\s\S]*?grid-template-columns:\s*1fr/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.journey-page \.journey-loop\s*\{[\s\S]*?scroll-behavior:\s*auto/);
