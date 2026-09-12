@@ -386,3 +386,34 @@ final result: passed
 - Comparison history: the source showed the overlapping inner outline; the corrected view removes it.
 
 final result: passed
+
+## Case Studies — Next Chapter card (2026-09-13)
+
+Implemented from the user-provided final-banner reference. The existing copy, Start the conversation button, contact flow and sharp section boundary remain intact.
+
+### Fidelity and comparison
+
+- Typography: existing Oswald, Inter and JetBrains Mono; requested card copy retained.
+- Spacing: refined the initial square card to approximately 448 × 406 px in the existing 1200 px content layout. Reference card is approximately 552 × 491 px; comparison normalized both to the same width.
+- Colors: near-black surface, dark red border, orange label and existing secondary text tokens. Static border with subtle particles replaces the reference's bright border segment as requested.
+- Assets: original supplied red logo used unchanged; storefront is the standard Lucide Store icon, with its license included.
+- Responsive layout: card follows the original CTA on mobile. No horizontal overflow found at 320 and 390 px. Eight particles on desktop and four on mobile, kept away from copy.
+
+### Verification
+
+- All 143 automated tests passed, including four new card tests.
+- Card click and Space open the existing form; Escape restores focus to the card. Original CTA still works.
+- Browser console had no errors. Visual comparison found no remaining actionable overlap or clipping.
+- Reduced-motion rules reviewed in source: particles hidden and card movement disabled. OS preference emulation was not performed.
+- No external form submission, push or publication performed.
+
+### Original brand asset — preserve for reuse
+
+Canonical repository asset: assets/images/case-studies/ranking-rebels-symbol-original.png.
+Source supplied by user: Ranking-Rebels-logo.png, 1254 × 1254 RGBA.
+Preserved byte-for-byte; SHA-256: 04F205FD00365222204B381D0DC8237DFE635AE8EA7650626637202E6B702D2D.
+Use this original for future Ranking Rebels work; do not recreate the symbol. Additional unchanged backup: outputs/Ranking-Rebels-logo-original.png in the local task workspace.
+
+Review captures in the task workspace outputs: next-card-desktop.png and next-card-comparison.png. Local review: http://127.0.0.1:4188/case-studies/#next-case-study.
+
+final result: passed; verification limits recorded above.
