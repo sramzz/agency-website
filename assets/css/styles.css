@@ -2080,7 +2080,7 @@ p {
 }
 
 .editorial-site #home .market-card-action::after {
-  content: "↗";
+  content: none;
   color: var(--tertiary);
   font-size: 1rem;
   transition: transform 180ms ease;
@@ -2249,7 +2249,7 @@ p {
 }
 
 .solution-picker-action::after {
-  content: "↗";
+  content: none;
   color: var(--tertiary);
   font-size: 1rem;
   transition: transform 180ms ease;
@@ -6126,7 +6126,7 @@ body.service-dialog-open {
   letter-spacing: -0.025em;
 }
 .next-case-subtitle { margin-top: 10px; color: var(--secondary); font-size: 1rem; line-height: 1.5; }
-.next-case-arrow { margin-left: 4px; color: var(--neutral); }
+
 .next-case-signature {
   display: flex;
   align-items: center;
