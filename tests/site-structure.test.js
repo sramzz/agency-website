@@ -367,9 +367,10 @@ test("public links and assets resolve without retired routes", () => {
 test("production images are organized, SEO-named and have appropriate alt contracts", () => {
   const imageExtensions = /\.(?:avif|gif|jpe?g|png|svg|webp)$/i;
   const imageFiles = walk(root).filter((file) => imageExtensions.test(file));
+  const rootIcons = new Set(["apple-touch-icon.png", ...[16, 32, 48, 96, 192, 512].map((size) => `favicon-${size}x${size}.png`)]);
   for (const absolute of imageFiles) {
     const relative = path.relative(root, absolute);
-    assert.ok(relative.startsWith(`assets${path.sep}images${path.sep}`) || relative.startsWith(`docs${path.sep}qa${path.sep}`), `${relative} should be under assets/images or docs/qa`);
+    assert.ok(rootIcons.has(relative) || relative.startsWith(`assets${path.sep}images${path.sep}`) || relative.startsWith(`docs${path.sep}qa${path.sep}`), `${relative} should be under assets/images or docs/qa`);
     if (!relative.startsWith(`assets${path.sep}images${path.sep}`)) continue;
     assert.match(path.basename(relative), /^[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z0-9]+$/, `${relative} needs a descriptive lowercase hyphenated filename`);
   }
