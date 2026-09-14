@@ -6106,6 +6106,7 @@ body.service-dialog-open {
 
 .next-case-card > :not(.next-case-particles) { position: relative; z-index: 2; }
 .next-case-card .next-case-label {
+  justify-self: start;
   color: var(--highlight);
   font-family: "JetBrains Mono", monospace;
   font-size: clamp(0.85rem, 1.2vw, 1rem);
@@ -6147,14 +6148,22 @@ body.service-dialog-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: clamp(18px, 3vw, 28px);
   padding-top: 20px;
   border-top: 1px solid #343037;
 }
-.next-case-wordmark { font-family: "Oswald", sans-serif; font-size: 1.3rem; font-weight: 700; line-height: 1.05; text-align: left; }
-.next-case-wordmark span { display: block; }
 .next-case-times { color: var(--secondary); font-size: 1.5rem; }
-.next-case-you { font-family: "Oswald", sans-serif; font-size: 2.25rem; font-weight: 700; line-height: 1; }
+.next-case-you {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 64px;
+  flex: 0 0 92px;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
 
 .next-case-particles {
   position: absolute;
@@ -6204,10 +6213,9 @@ body.service-dialog-open {
 }
 
 
-.next-case-symbol { display: block; width: 56px; height: 56px; flex: 0 0 56px; object-fit: contain; }
+.next-case-symbol { display: block; width: 64px; height: 64px; flex: 0 0 64px; object-fit: contain; }
 @media (max-width: 560px) {
-  .next-case-signature { gap: 12px; }
-  .next-case-symbol { width: 52px; height: 52px; flex-basis: 52px; }
-  .next-case-wordmark { font-size: 1.15rem; }
-  .next-case-you { font-size: 2rem; }
+  .next-case-signature { gap: 16px; }
+  .next-case-symbol { width: 56px; height: 56px; flex-basis: 56px; }
+  .next-case-you { width: 82px; height: 56px; flex-basis: 82px; font-size: 2.65rem; }
 }

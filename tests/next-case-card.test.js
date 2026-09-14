@@ -101,6 +101,8 @@ test('card is one named button, with no nested controls or duplicate lead captur
   assert.equal(/<a\b|data-lead-capture/.test(card), false);
   assert.ok(card.includes('class="next-case-particles" aria-hidden="true"></span>'));
   assert.ok(card.includes('data-next-case-protected'));
+  assert.ok(card.includes('class="next-case-you" data-next-case-protected>YOU</span>'));
+  assert.equal(card.includes('next-case-wordmark'), false);
   assert.equal(html.includes('next-case-pause'), false);
   assert.ok(html.includes('<a class="button button-primary" href="https://wa.me/61439499441" data-lead-capture target="_blank" rel="noreferrer">Start the conversation</a>'));
 });

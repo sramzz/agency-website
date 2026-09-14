@@ -112,6 +112,10 @@
 
       let target = { x: rect.width * 0.5, y: rect.height * 0.57 };
       let waypoints = [];
+      if (!corner && !bottom && group === 3 && (side === 1 || side === 3)) {
+        waypoints = [{ x: start.x, y: rect.height * 0.70 }];
+        target = { x: rect.width * 0.5, y: rect.height * 0.62 };
+      }
       if (bottom) {
         const travelRight = start.x < rect.width * 0.5;
         target = { x: start.x + (travelRight ? 42 : -42), y: start.y - 10 };
@@ -122,17 +126,30 @@
         const cornerPair = Math.floor(cornerPosition / 4);
         const right = cornerIndex % 2 === 1;
         const lower = cornerIndex >= 2;
-        start = { x: right ? rect.width - 9 : 9, y: lower ? rect.height - 9 : 9 };
+        const cornerInset = 9 + cornerPair * 5;
+        start = {
+          x: right ? rect.width - cornerInset : lower ? cornerInset : 9,
+          y: lower ? rect.height - cornerInset : cornerInset,
+        };
         if (lower) {
-          const corridorX = right ? rect.width - 11 : 11;
-          waypoints = [{ x: corridorX, y: rect.height - 92 }];
-          target = { x: corridorX + (right ? -48 : 48), y: rect.height - 122 };
-        } else {
+          const destination = card.querySelector(right ? '.next-case-you' : '.next-case-symbol').getBoundingClientRect();
           target = {
-            x: start.x + (right ? -84 : 84) + (right ? -12 : 12) * cornerPair,
-            y: start.y + 72 + 10 * cornerPair,
+            x: destination.left - rect.left + destination.width / 2 + (cornerPair ? 7 : -7),
+            y: destination.top - rect.top + destination.height / 2 + (cornerPair ? 5 : -5),
           };
-          if (cornerIndex === 0) waypoints = [{ x: rect.width * 0.42, y: 11 }];
+        } else {
+          if (cornerIndex === 0) {
+            waypoints = [{ x: 11, y: rect.height * 0.22 }];
+            target = {
+              x: rect.width * (0.32 + 0.04 * cornerPair),
+              y: rect.height * (0.34 + 0.03 * cornerPair),
+            };
+          } else {
+            target = {
+              x: start.x - 84 - 12 * cornerPair,
+              y: start.y + 72 + 10 * cornerPair,
+            };
+          }
         }
       }
 
@@ -176,7 +193,7 @@
       const phase = (elapsed / particle.duration + particle.offset) % 1;
       const pulse = Math.sin(Math.PI * phase);
       const diameter = 1 + (particle.bottom ? 1 : particle.corner ? 1.2 : 2) * pulse;
-      const progress = particle.bottom || particle.corner ? phase : phase * (2 - phase);
+      const progress = phase;
       const opacity = (particle.bottom ? 0.24 : particle.corner ? 0.38 : settings.maxOpacity) * Math.pow(pulse, 1.4);
       const distance = progress * particle.length;
       const segment = particle.segments.find(item => distance <= item.offset + item.distance) || particle.segments.at(-1);
