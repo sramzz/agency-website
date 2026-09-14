@@ -1,3 +1,38 @@
+# Ranking Rebels Mobile Wordmark Follow-up QA
+
+## Evidence
+
+- Source visual truth path: live desktop header at `http://127.0.0.1:4176/`, grounded by `C:\Users\Kelly Serna\OneDrive\Documentos\Juan David\Ranking Rebels\Ranking Rebels Logo\ranking-rebels-header-option-4-reference.png`.
+- Implementation screenshot path: desktop and mobile in-app browser captures embedded together in the Codex task; the browser surface does not expose filesystem paths.
+- Viewports: desktop 1440 × 180; mobile 390 × 844, 375 × 820, and 320 × 760 CSS pixels at device scale 1.
+- State: English homepage, dark theme, header at top; mobile navigation tested open and closed.
+
+## Comparison
+
+The desktop target and 375px mobile implementation were captured in the same comparison output as focused 58px header crops. Mobile preserves the official red R and the same Oswald 700 uppercase wordmark while reducing only the wordmark from 20px to 18px and the mark from 34px to 28px. The 10px mobile gap maintains the desktop lockup rhythm without crowding the 44px Locations and menu controls.
+
+No additional focused crop was required because the comparison consists entirely of native-scale header crops with the logo, wordmark, spacing, and controls clearly legible.
+
+## Required fidelity surfaces
+
+- Fonts and typography: Oswald, weight 700, uppercase, and the existing negative tracking are retained; mobile computes to 18px with -0.36px letter spacing and does not wrap.
+- Spacing and layout rhythm: the header remains 58px tall; the 28px mark and 18px wordmark are optically centered. Header grid gaps remain 8px at narrow-phone widths.
+- Colors and visual tokens: no colors, borders, backgrounds, CTA styles, or navigation states changed.
+- Image quality and asset fidelity: the same official transparent PNG remains rendered with `contain`, without distortion or replacement.
+- Copy and content: `RANKING REBELS` is now visible in mobile exactly as in desktop, with no final dot.
+- Accessibility and behavior: brand, Locations, and menu controls retain 44px minimum hit areas. The mobile panel opens at y=58, closes with Escape, and does not overlap the lockup.
+- Responsive behavior: 390, 375, and 320px render with no clipping, wrapping, or horizontal overflow. Desktop remains unchanged at 20px/34px.
+
+## Findings and comparison history
+
+- No actionable P0, P1, or P2 mismatch remains.
+- Initial post-change comparison passed; no visual correction loop was required.
+- Full static suite passes: 144/144. `git diff --check` passes. Browser console had no recorded errors before this follow-up, and the CSS-only change introduced no script path.
+
+final result: passed
+
+---
+
 # Ranking Rebels Header Branding Design QA
 
 ## Evidence

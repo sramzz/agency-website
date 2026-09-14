@@ -6111,9 +6111,12 @@ body.service-dialog-open {
 
 @media (max-width: 700px) {
   .editorial-site .site-header .brand {
-    gap: 0;
+    gap: 10px;
     min-width: 44px;
     min-height: 44px;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    overflow-wrap: normal;
   }
 
   .editorial-site .site-header .brand-mark {
@@ -6122,9 +6125,6 @@ body.service-dialog-open {
     flex-basis: 28px;
   }
 
-  .editorial-site .site-header .brand > span:not(.brand-mark) {
-    display: none;
-  }
 }
 
 .next-case-card {
