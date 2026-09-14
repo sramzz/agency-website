@@ -6083,7 +6083,6 @@ body.service-dialog-open {
 .next-case-card-shell {
   display: grid;
   justify-items: center;
-  gap: 12px;
   width: 100%;
   min-width: 0;
 }
@@ -6177,22 +6176,6 @@ body.service-dialog-open {
   will-change: transform, opacity;
 }
 
-.next-case-pause {
-  min-height: 40px;
-  padding: 8px 14px;
-  border: 1px solid rgba(143, 165, 181, 0.28);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--secondary);
-  font: 500 0.75rem/1.2 "JetBrains Mono", monospace;
-  cursor: pointer;
-  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease;
-}
-.next-case-pause:hover { color: var(--primary); border-color: var(--secondary); }
-.next-case-pause:active { background: rgba(143, 165, 181, 0.08); }
-.next-case-pause:disabled { cursor: default; opacity: 0.65; }
-.next-case-pause:focus-visible { outline: 3px solid var(--highlight); outline-offset: 3px; }
-
 .next-case-card.is-lit .next-case-icon {
   border-color: #b7223e;
   box-shadow: 0 0 0 1px rgba(255, 48, 79, 0.33), 0 0 24px rgba(255, 48, 79, 0.33);
@@ -6217,7 +6200,7 @@ body.service-dialog-open {
 @media (prefers-reduced-motion: reduce) {
   .next-case-particles { display: none; }
   .next-case-card, .next-case-card:hover, .next-case-card:focus-visible, .next-case-card:active { transform: none; transition: none; }
-  .next-case-icon, .next-case-icon img, .next-case-pause { transition: none; }
+  .next-case-icon, .next-case-icon img { transition: none; }
 }
 
 

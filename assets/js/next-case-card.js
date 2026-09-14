@@ -5,8 +5,7 @@
   const contact = document.querySelector('.next-case-copy [data-lead-capture]');
   const layer = card?.querySelector('.next-case-particles');
   const shell = card?.closest('.next-case-card-shell');
-  const pause = shell?.querySelector('.next-case-pause');
-  if (!card || !contact || !layer || !shell || !pause) return;
+  if (!card || !contact || !layer || !shell) return;
 
   const lead = window.RankingRebelsLead;
   if (lead) {
@@ -26,12 +25,11 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const mobile = matchMedia('(max-width: 560px)');
   const highContrast = matchMedia('(forced-colors: active)');
-  const settings = { desktopCount: 16, mobileCount: 8, safeMargin: 18, maxOpacity: 0.35 };
+  const settings = { desktopCount: 16, mobileCount: 8, safeMargin: 18, maxOpacity: 0.46 };
   let particles = [];
   let elapsed = 0;
   let previous = null;
   let frame = null;
-  let userPaused = false;
   let inView = true;
   let ready = false;
   let pressTimer;
@@ -179,7 +177,7 @@
       const pulse = Math.sin(Math.PI * phase);
       const diameter = 1 + (particle.bottom ? 1 : particle.corner ? 1.2 : 2) * pulse;
       const progress = particle.bottom || particle.corner ? phase : phase * (2 - phase);
-      const opacity = (particle.bottom ? 0.18 : particle.corner ? 0.30 : settings.maxOpacity) * Math.pow(pulse, 1.4);
+      const opacity = (particle.bottom ? 0.24 : particle.corner ? 0.38 : settings.maxOpacity) * Math.pow(pulse, 1.4);
       const distance = progress * particle.length;
       const segment = particle.segments.find(item => distance <= item.offset + item.distance) || particle.segments.at(-1);
       const local = segment ? Math.min(1, (distance - segment.offset) / segment.distance) : 0;
@@ -200,10 +198,7 @@
   function sync() {
     const disabled = reduced.matches || highContrast.matches;
     layer.hidden = disabled;
-    pause.disabled = disabled;
-    pause.textContent = disabled ? 'Animation disabled' : userPaused ? 'Resume animation' : 'Pause animation';
-    pause.setAttribute('aria-pressed', String(userPaused));
-    const running = ready && !userPaused && !disabled && !document.hidden && inView;
+    const running = ready && !disabled && !document.hidden && inView;
     if (running && frame === null) {
       previous = null;
       frame = requestAnimationFrame(tick);
@@ -215,10 +210,6 @@
     }
   }
 
-  pause.addEventListener('click', () => {
-    userPaused = !userPaused;
-    sync();
-  });
   document.addEventListener('visibilitychange', sync);
   reduced.addEventListener('change', sync);
   highContrast.addEventListener('change', sync);

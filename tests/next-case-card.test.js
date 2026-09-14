@@ -19,14 +19,7 @@ function setup({ opens = true, missing = false } = {}) {
   };
   const emit = (target, type, event = {}) => (target.get(type) || []).forEach(handler => handler(event));
   const layer = { hidden: false, replaceChildren() {}, append() {} };
-  const pauseListeners = new Map();
-  const pause = {
-    disabled: false,
-    textContent: 'Pause animation',
-    addEventListener: (type, handler) => listen(pauseListeners, type, handler),
-    setAttribute(name, value) { this[name] = value; },
-  };
-  const shell = { querySelector: selector => selector === '.next-case-pause' ? pause : null };
+  const shell = {};
   const card = {
     addEventListener: (type, handler) => listen(listeners, type, handler),
     querySelector: selector => selector === '.next-case-particles' ? layer : null,
@@ -65,13 +58,11 @@ function setup({ opens = true, missing = false } = {}) {
   return {
     activate: () => emit(listeners, 'click'),
     emitCard: (type, event) => emit(listeners, type, event),
-    clickPause: () => emit(pauseListeners, 'click'),
     close: () => close?.(),
     calls: () => calls,
     focus: () => focus,
     hasClose: () => !!close,
     isLit: () => classes.has('is-lit'),
-    pause,
   };
 }
 
@@ -100,12 +91,6 @@ test('card lights the approved red halo for pointer and keyboard interaction', (
   view.emitCard('blur');
   assert.equal(view.isLit(), false);
 });
-test('animation pause control exposes its state and label', () => {
-  const view = setup();
-  view.clickPause();
-  assert.equal(view.pause['aria-pressed'], 'true');
-  assert.equal(view.pause.textContent, 'Resume animation');
-});
 test('card script safely ignores pages without the component', () => assert.doesNotThrow(() => setup({ missing: true })));
 test('card is one named button, with no nested controls or duplicate lead capture hook', () => {
   const html = fs.readFileSync(path.join(root, 'case-studies/index.html'), 'utf8');
@@ -116,6 +101,6 @@ test('card is one named button, with no nested controls or duplicate lead captur
   assert.equal(/<a\b|data-lead-capture/.test(card), false);
   assert.ok(card.includes('class="next-case-particles" aria-hidden="true"></span>'));
   assert.ok(card.includes('data-next-case-protected'));
-  assert.ok(html.includes('<button class="next-case-pause" type="button" aria-pressed="false">Pause animation</button>'));
+  assert.equal(html.includes('next-case-pause'), false);
   assert.ok(html.includes('<a class="button button-primary" href="https://wa.me/61439499441" data-lead-capture target="_blank" rel="noreferrer">Start the conversation</a>'));
 });
