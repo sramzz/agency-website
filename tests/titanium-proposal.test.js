@@ -18,7 +18,9 @@ test("Titanium proposal files and client assets retain their private route and s
     `${route}/script.js`,
     `assets/images/proposals/titanium-gym-9c42e7/titanium-gym-floor.jpg`,
     `assets/images/proposals/titanium-gym-9c42e7/titanium-hero-01.jpg`,
-    `assets/images/proposals/titanium-gym-9c42e7/logo-chatgpt-blossom.svg`,
+    `assets/images/platforms/logo-chatgpt.svg`,
+    `assets/images/platforms/logo-google.svg`,
+    `assets/images/platforms/logo-google-maps.svg`,
     `assets/images/case-studies/petrogrease-logo.webp`,
     `assets/images/case-studies/terraformados-antioquia-logo.png`,
     `assets/images/case-studies/tejas-trading-logo.webp`,
@@ -89,8 +91,8 @@ test("coverage, discovery evidence and business levers are complete", () => {
     .forEach((service) => assert.ok(html.toLowerCase().includes(service.toLowerCase()), `${service} should be present`));
   assert.ok((html.match(/To verify/gi) || []).length >= 10);
   assert.match(html, /A public discovery snapshot across high-intent search, AI answers and paid media/);
-  assert.match(html, /assets\/images\/proposals\/titanium-gym-9c42e7\/logo-chatgpt-blossom\.svg/);
-  assert.match(read("assets/images/proposals/titanium-gym-9c42e7/logo-chatgpt-blossom.svg"), /viewBox="140 220 280 280"/);
+  assert.match(html, /assets\/images\/platforms\/logo-chatgpt\.svg/);
+  assert.match(read("assets/images/platforms/logo-chatgpt.svg"), /viewBox="140 220 280 280"/);
   assert.doesNotMatch(html, /guaranteed|first-page guarantee|#1 ranking/i);
 });
 
