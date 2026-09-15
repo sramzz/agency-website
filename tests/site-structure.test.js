@@ -247,7 +247,6 @@ test("the Australia page targets digital marketing intent without weakening the 
 
   assert.match(read("index.html"), /<h3>Digital marketing in Australia<\/h3>/);
   assert.match(read("locations/index.html"), />Explore digital marketing in Australia<\/a>/);
-  assert.match(read("about/index.html"), />Digital marketing services in Australia<\/span>/);
 });
 
 test("the Australia page links to the Journey without repeating its process", () => {
