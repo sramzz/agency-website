@@ -265,6 +265,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       canonical: "https://rankingrebels.com/locations/netherlands/",
       market: "Netherlands",
       service: "Digital marketing services in the Netherlands",
+      mapAsset: "/assets/images/locations/netherlands/netherlands-svgrepo-com.svg",
       markers: ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Groningen", "Maastricht"],
     },
     {
@@ -274,6 +275,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       canonical: "https://rankingrebels.com/locations/latam/",
       market: "Latin America",
       service: "Digital marketing services in Latin America",
+      mapAsset: "/assets/images/locations/latam/earth-america-svgrepo-com.svg",
       markers: ["Mexico City", "Bogotá", "Medellín", "Lima", "Santiago", "Buenos Aires", "São Paulo"],
     },
   ];
@@ -289,6 +291,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
     assert.doesNotMatch(html, /service businesses|<section id="plans"|process-track|class="timeline"/i);
     for (const id of ["platform-coverage", "service-selector", "verified-results", "solution-routes", "faq"]) assert.match(html, new RegExp(`id="${id}"`));
     for (const marker of page.markers) assert.match(html, new RegExp(`aria-label="${marker}"`));
+    assert.match(html, new RegExp(`href="${page.mapAsset.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
     assert.match(html, /They do not represent offices or customer locations\./);
     assert.match(html, /href="\/journey\/">See how we work<\/a>/);
 
