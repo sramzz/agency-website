@@ -136,7 +136,8 @@ if (desktopNav) {
   });
 }
 
-if (headerCta) headerCta.textContent = "Hire us!";
+const contactLabel = currentPath === "/locations/australia/" ? "Request a search audit" : "Hire us!";
+if (headerCta) headerCta.textContent = contactLabel;
 
 if (headerActions) {
   const switcher = document.createElement("div");
@@ -213,7 +214,7 @@ if (mobileNav) {
   const mobileHire = headerCta?.cloneNode(true);
   if (mobileHire) {
     mobileHire.className = "mobile-hire-cta";
-    mobileHire.textContent = "Hire us!";
+    mobileHire.textContent = contactLabel;
   }
 
   const mobileLanguages = document.createElement("div");
