@@ -267,7 +267,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       service: "Digital marketing services in the Netherlands",
       mapAsset: "/assets/images/locations/netherlands/netherlands-svgrepo-com.svg",
       markers: ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Groningen", "Maastricht"],
-      markerPositions: { Amsterdam: [212, 180], Rotterdam: [189, 254], "The Hague": [176, 226], Utrecht: [236, 267], Eindhoven: [286, 349], Groningen: [391, 60], Maastricht: [357, 494] },
+      markerPositions: { Amsterdam: [209, 217], Rotterdam: [183, 307], "The Hague": [143, 271], Utrecht: [236, 267], Eindhoven: [286, 349], Groningen: [391, 60], Maastricht: [357, 494] },
     },
     {
       file: "locations/latam/index.html",
