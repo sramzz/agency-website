@@ -53,6 +53,12 @@ git push -u origin feat/short-description
 
 ## Before Opening a PR
 
+### Service selector tickboxes
+
+The service selector in `index.html` is the base for every page that uses this form. Its heading, ten tickboxes (including their order and labels), button, and HTML structure should match in `journey/index.html` and the Australia, Netherlands, and LATAM location pages. The shared appearance lives in `assets/css/styles.css`; the shared interaction lives in `assets/js/script.js`.
+
+When adding the selector to another page or changing its choices, copy the homepage section into the page's intended position and replicate the change across all existing selector pages. Only set `data-market` and `data-whatsapp` for the destination page. Keep the complete form in the HTML so it remains visible without JavaScript. No generator or build step is needed.
+
 Run:
 
 ```sh

@@ -45,6 +45,7 @@ test("every selector page exposes the complete service selector contract", () =>
     assert.deepEqual(serviceOrder, services, `${page.file} should preserve the approved service order`);
     assert.equal((html.match(/data-service-selector-trigger/g) || []).length, 0);
     assert.equal((html.match(/data-whatsapp-contact/g) || []).length, page.directContacts);
+    assert.match(html, /\/assets\/css\/styles\.css\?v=20260915-shared-selector/);
     assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-optional-services"><\/script>/);
     assert.match(html, /<script src="\/assets\/js\/script\.js\?v=20260903-optional-services"><\/script>/);
 
@@ -53,10 +54,16 @@ test("every selector page exposes the complete service selector contract", () =>
   }
 });
 
-test("the journey page reuses the homepage selector without changing its choices or markup", () => {
-  const selector = (html) => html.match(/<form class="service-selector"[\s\S]*?<\/form>/)?.[0].replace(/\s+/g, " ").trim();
+test("every selector reuses the homepage markup except market and WhatsApp routing", () => {
+  const selector = (html) => html.match(/<form class="service-selector"[\s\S]*?<\/form>/)?.[0]
+    .replace(/data-market="[^"]+"/, 'data-market="MARKET"')
+    .replace(/data-whatsapp="[^"]+"/, 'data-whatsapp="NUMBER"')
+    .replace(/\s+/g, " ").trim();
+  const homepageSelector = selector(read("index.html"));
 
-  assert.equal(selector(read("journey/index.html")), selector(read("index.html")));
+  for (const page of pages.slice(1)) {
+    assert.equal(selector(read(page.file)), homepageSelector, `${page.file} should match the homepage selector`);
+  }
 });
 
 test("the shared selector keeps commercial CTAs direct and uses the non-blocking lead-message helper", () => {

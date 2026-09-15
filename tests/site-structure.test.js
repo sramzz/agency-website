@@ -280,8 +280,8 @@ test("the homepage uses the dark design system without light section bands", () 
 
   assert.doesNotMatch(home, /section-theme-(?:paper|warm)/, "the homepage should not opt into light section themes");
   assert.match(styles, /\.editorial-site #home > \.section\s*\{[^}]*background:\s*var\(--primary\)/);
-  assert.match(styles, /\.editorial-site #home \.service-selector\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
-  assert.match(styles, /\.editorial-site #home \.service-option\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
+  assert.match(styles, /\.editorial-site \.service-selector-section \.service-selector\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
+  assert.match(styles, /\.editorial-site \.service-selector-section \.service-option\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
   assert.match(styles, /\.editorial-site #home \.customer-result-card\s*\{[^}]*background:\s*var\(--surface-card\)[^}]*color:\s*var\(--neutral\)/);
   assert.match(styles, /\.editorial-site #home \.process-flywheel-step a\s*\{[^}]*background:\s*var\(--surface-card\)[^}]*color:\s*var\(--neutral\)/);
   assert.match(styles, /\.editorial-site #home \.process-flywheel-hub\s*\{[^}]*background:\s*#f2f0ec[^}]*color:\s*var\(--primary\)/i);
