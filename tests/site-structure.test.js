@@ -267,6 +267,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       service: "Digital marketing services in the Netherlands",
       mapAsset: "/assets/images/locations/netherlands/netherlands-svgrepo-com.svg",
       markers: ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Groningen", "Maastricht"],
+      markerPositions: { Amsterdam: [209, 217], Rotterdam: [183, 307], "The Hague": [143, 271], Utrecht: [236, 267], Eindhoven: [286, 349], Groningen: [391, 60], Maastricht: [315, 494] },
     },
     {
       file: "locations/latam/index.html",
@@ -277,6 +278,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       service: "Digital marketing services in Latin America",
       mapAsset: "/assets/images/locations/latam/earth-america-svgrepo-com.svg",
       markers: ["Mexico City", "Bogotá", "Medellín", "Lima", "Santiago", "Buenos Aires", "São Paulo"],
+      markerPositions: { "Mexico City": [150, 224], Bogotá: [266, 304], Medellín: [260, 291], Lima: [254, 357], Santiago: [274, 454], "Buenos Aires": [319, 452], "São Paulo": [347, 403] },
     },
   ];
 
@@ -291,6 +293,9 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
     assert.doesNotMatch(html, /service businesses|<section id="plans"|process-track|class="timeline"/i);
     for (const id of ["platform-coverage", "service-selector", "verified-results", "solution-routes", "faq"]) assert.match(html, new RegExp(`id="${id}"`));
     for (const marker of page.markers) assert.match(html, new RegExp(`aria-label="${marker}"`));
+    for (const [marker, [x, y]] of Object.entries(page.markerPositions)) {
+      assert.match(html, new RegExp(`aria-label="${marker}"[^>]*><circle class="market-hit-area" cx="${x}" cy="${y}"`));
+    }
     assert.match(html, new RegExp(`href="${page.mapAsset.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
     assert.match(html, /They do not represent offices or customer locations\./);
     assert.match(html, /href="\/journey\/">See how we work<\/a>/);
@@ -317,12 +322,24 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
 test("market landing pages share the ribbon fallback and scoped responsive styles", () => {
   const styles = read("assets/css/styles.css");
   const ribbon = read("assets/js/platform-ribbon.js");
+  const mapArtwork = [
+    read("assets/images/locations/netherlands/netherlands-svgrepo-com.svg"),
+    read("assets/images/locations/latam/earth-america-svgrepo-com.svg"),
+  ];
   assert.match(ribbon, /document\.querySelector\('\.platform-ribbon'\)/);
   assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.platform-ribbon/);
   assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.solution-picker-image/);
   assert.match(styles, /\.market-landing-page \.market-hero/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.coverage-map \.market-tooltip/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?animation: none/);
+  assert.doesNotMatch(styles, /\.coverage-land-artwork\s*\{[^}]*filter:/);
+  for (const artwork of mapArtwork) {
+    assert.match(artwork, /<linearGradient id="map-land-fill"/);
+    assert.match(artwork, /stop-color="#210c13"/);
+    assert.match(artwork, /stop-color="#0d0508"/);
+    assert.match(artwork, /stroke="#f8fafc"|stroke:#f8fafc/);
+    assert.match(artwork, /stroke-opacity="0\.26"|stroke-opacity:0\.26/);
+  }
 });
 
 test("the homepage follows the selected search-led growth structure", () => {
