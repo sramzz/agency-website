@@ -250,6 +250,15 @@ test("the Australia page targets digital marketing intent without weakening the 
   assert.match(read("about/index.html"), />Digital marketing services in Australia<\/span>/);
 });
 
+test("the Australia page sends process detail to the Journey page", () => {
+  const australia = read("locations/australia/index.html");
+
+  assert.doesNotMatch(australia, /class="section australia-process"|class="process-track"/);
+  assert.match(australia, /<section class="section australia-journey-bridge"[^>]*aria-labelledby="journey-bridge-title"/);
+  assert.match(australia, /<h2 id="journey-bridge-title">See how we work with your team\.<\/h2>/);
+  assert.match(australia, /<a class="button button-secondary" href="\/journey\/">See how we work<\/a>/);
+});
+
 test("the homepage follows the selected search-led growth structure", () => {
   const home = read("index.html");
   const homepageDescription = "Ranking Rebels helps service businesses grow through SEO, GEO, paid ads and AI automation across Australia, the Netherlands and Latin America.";

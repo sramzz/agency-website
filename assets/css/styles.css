@@ -7446,6 +7446,45 @@ body.service-dialog-open {
   }
 }
 
+.australia-page .australia-journey-bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: clamp(28px, 6vw, 88px);
+  border-block: 1px solid var(--border);
+  background:
+    linear-gradient(110deg, rgba(255, 48, 79, 0.1), transparent 48%),
+    var(--primary);
+}
+
+.australia-page .australia-journey-bridge-copy {
+  max-width: 760px;
+}
+
+.australia-page .australia-journey-bridge-copy h2 {
+  margin-top: 16px;
+}
+
+.australia-page .australia-journey-bridge-copy > p:last-child {
+  max-width: 640px;
+  margin-top: 20px;
+}
+
+.australia-page .australia-journey-bridge .button {
+  justify-self: end;
+}
+
+@media (max-width: 700px) {
+  .australia-page .australia-journey-bridge {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .australia-page .australia-journey-bridge .button {
+    justify-self: stretch;
+  }
+}
+
 /* A single platform row, static until its motion controls are ready. */
 .australia-page .platform-ribbon {
   min-width: 0;
