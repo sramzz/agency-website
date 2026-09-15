@@ -1,3 +1,99 @@
+# Ranking Rebels Mobile Wordmark Follow-up QA
+
+## Evidence
+
+- Source visual truth path: live desktop header at `http://127.0.0.1:4176/`, grounded by `C:\Users\Kelly Serna\OneDrive\Documentos\Juan David\Ranking Rebels\Ranking Rebels Logo\ranking-rebels-header-option-4-reference.png`.
+- Implementation screenshot path: desktop and mobile in-app browser captures embedded together in the Codex task; the browser surface does not expose filesystem paths.
+- Viewports: desktop 1440 × 180; mobile 390 × 844, 375 × 820, and 320 × 760 CSS pixels at device scale 1.
+- State: English homepage, dark theme, header at top; mobile navigation tested open and closed.
+
+## Comparison
+
+The desktop target and 375px mobile implementation were captured in the same comparison output as focused 58px header crops. Mobile preserves the official red R and the same Oswald 700 uppercase wordmark while reducing only the wordmark from 20px to 18px and the mark from 34px to 28px. The 10px mobile gap maintains the desktop lockup rhythm without crowding the 44px Locations and menu controls.
+
+No additional focused crop was required because the comparison consists entirely of native-scale header crops with the logo, wordmark, spacing, and controls clearly legible.
+
+## Required fidelity surfaces
+
+- Fonts and typography: Oswald, weight 700, uppercase, and the existing negative tracking are retained; mobile computes to 18px with -0.36px letter spacing and does not wrap.
+- Spacing and layout rhythm: the header remains 58px tall; the 28px mark and 18px wordmark are optically centered. Header grid gaps remain 8px at narrow-phone widths.
+- Colors and visual tokens: no colors, borders, backgrounds, CTA styles, or navigation states changed.
+- Image quality and asset fidelity: the same official transparent PNG remains rendered with `contain`, without distortion or replacement.
+- Copy and content: `RANKING REBELS` is now visible in mobile exactly as in desktop, with no final dot.
+- Accessibility and behavior: brand, Locations, and menu controls retain 44px minimum hit areas. The mobile panel opens at y=58, closes with Escape, and does not overlap the lockup.
+- Responsive behavior: 390, 375, and 320px render with no clipping, wrapping, or horizontal overflow. Desktop remains unchanged at 20px/34px.
+
+## Findings and comparison history
+
+- No actionable P0, P1, or P2 mismatch remains.
+- Initial post-change comparison passed; no visual correction loop was required.
+- Full static suite passes: 144/144. `git diff --check` passes. Browser console had no recorded errors before this follow-up, and the CSS-only change introduced no script path.
+
+final result: passed
+
+---
+
+# Ranking Rebels Header Branding Design QA
+
+## Evidence
+
+- Source visual truth path: `C:\Users\Kelly Serna\OneDrive\Documentos\Juan David\Ranking Rebels\Ranking Rebels Logo\ranking-rebels-header-option-4-reference.png`
+- Implementation route: `http://127.0.0.1:4176/`
+- Implementation screenshot path: in-app browser capture embedded in the Codex task; the browser surface does not expose a filesystem path.
+- Combined comparison evidence: `http://127.0.0.1:4176/__comparison` placed the source and live implementation in one 1460 × 250 browser view.
+- Viewports checked: 1440 × 900, 1024 × 820, 768 × 820, 390 × 844, and 375 × 820 CSS pixels.
+- State: English homepage, dark theme, header at the top; desktop dropdowns and mobile menu also checked open and closed.
+
+## Normalization
+
+- Source: 1440 × 96 pixels at native density.
+- Desktop implementation comparison frame: 1440 × 96 CSS pixels at device scale 1; the rendered header occupies 58 pixels of that frame.
+- Responsive captures used CSS viewport widths of 1440, 1024, 768, 390, and 375 at device scale 1.
+- Browser scrollbar consumes 10 CSS pixels on desktop/tablet captures; measured document width never exceeded the available content viewport.
+
+## Full-view comparison
+
+The source header and implementation header were shown together at the same 1440 × 96 frame size. The implementation matches the requested left-side composition: the official transparent red R precedes the existing Oswald wordmark, the lockup is compact, and there is no final dot. The source's absolute 96-pixel height and its navigation/button styling were intentionally not copied because the brief defines the source as a composition guide and explicitly keeps the existing navigation and controls unchanged. The implementation instead reduces the existing 72-pixel header to 58 pixels, a 19.4% reduction that rounds the requested 20% target.
+
+## Focused region comparison
+
+No separate crop was required because the complete source is already a focused 1440 × 96 header crop, and the combined comparison renders the logo, wordmark, spacing, controls, and lower boundary legibly at native width.
+
+## Required fidelity surfaces
+
+- Fonts and typography: the header wordmark remains Oswald, 20px, weight 700, uppercase, with -0.4px computed letter spacing. It retains the existing white color and baseline. The generated period is removed only from the header.
+- Spacing and layout rhythm: desktop/tablet use a 34px mark and 12px gap; mobile uses a 28px mark with no residual wordmark width. The header is 58px at every checked width. At 1024px, both adjacent header gaps remain 22px; no elements overlap.
+- Colors and visual tokens: existing background, text, border, CTA, active-state, and navigation colors are unchanged.
+- Image quality and asset fidelity: the implementation uses the project-owned 1254 × 1254, 32-bit ARGB PNG at `assets/images/case-studies/ranking-rebels-symbol-original.png`, rendered with `background-size: contain`, no border, rotation, distortion, filter, or generated replacement.
+- Copy and content: desktop/tablet render `RANKING REBELS` with no final dot; mobile hides that text with `display: none`. Navigation and CTA copy are unchanged.
+- Accessibility and behavior: the brand link exposes `Ranking Rebels — Home`; mobile brand, location, and menu controls retain at least 44 × 44px hit areas. Sticky positioning remains at top 0 after scrolling. Solutions, Locations, and the mobile menu open and close correctly; the mobile panel begins at y=58. No console warnings or errors were recorded.
+- Responsive behavior: 1440, 1024, 768, 390, and 375px checks report no horizontal overflow. The wordmark is visible at 1440/1024/768 and absent with zero layout size at 390/375.
+
+## Findings
+
+- No actionable P0, P1, or P2 mismatch remains within the stated scope.
+- Accepted difference: the implementation does not reproduce the source image's absolute header height, navigation spacing, or button styling because the user's brief explicitly excludes those changes and requires the new height to derive from the existing 72px header.
+
+## Comparison history
+
+1. Initial comparison: no actionable P0/P1/P2 differences in the requested brand block or calculated header height.
+2. Post-comparison verification: all five responsive widths, sticky state, desktop dropdowns, mobile menu, accessibility name, image source, and console remained correct; no visual fix was required.
+
+## Implementation checklist
+
+- [x] Official transparent R used without geometry changes.
+- [x] Existing Oswald wordmark retained and final dot removed from the header only.
+- [x] Header reduced from 72px to 58px.
+- [x] Tablet retains R plus wordmark; mobile shows the R only.
+- [x] Navigation, CTAs, dropdowns, sticky behavior, and lower header boundary preserved.
+- [x] Full static test suite passes: 144/144.
+
+final result: passed
+
+---
+
+## Previous QA report
+
 # Titanium Proposal Design QA
 
 ## Evidence
@@ -386,3 +482,34 @@ final result: passed
 - Comparison history: the source showed the overlapping inner outline; the corrected view removes it.
 
 final result: passed
+
+## Case Studies — Next Chapter card (2026-09-13)
+
+Implemented from the user-provided final-banner reference. The existing copy, Start the conversation button, contact flow and sharp section boundary remain intact.
+
+### Fidelity and comparison
+
+- Typography: existing Oswald, Inter and JetBrains Mono; requested card copy retained.
+- Spacing: refined the initial square card to approximately 448 × 406 px in the existing 1200 px content layout. Reference card is approximately 552 × 491 px; comparison normalized both to the same width.
+- Colors: near-black surface, dark red border, orange label and existing secondary text tokens. Static border with subtle particles replaces the reference's bright border segment as requested.
+- Assets: original supplied red logo used unchanged; storefront is the standard Lucide Store icon, with its license included.
+- Responsive layout: card follows the original CTA on mobile. No horizontal overflow found at 320 and 390 px. Eight particles on desktop and four on mobile, kept away from copy.
+
+### Verification
+
+- All 143 automated tests passed, including four new card tests.
+- Card click and Space open the existing form; Escape restores focus to the card. Original CTA still works.
+- Browser console had no errors. Visual comparison found no remaining actionable overlap or clipping.
+- Reduced-motion rules reviewed in source: particles hidden and card movement disabled. OS preference emulation was not performed.
+- No external form submission, push or publication performed.
+
+### Original brand asset — preserve for reuse
+
+Canonical repository asset: assets/images/case-studies/ranking-rebels-symbol-original.png.
+Source supplied by user: Ranking-Rebels-logo.png, 1254 × 1254 RGBA.
+Preserved byte-for-byte; SHA-256: 04F205FD00365222204B381D0DC8237DFE635AE8EA7650626637202E6B702D2D.
+Use this original for future Ranking Rebels work; do not recreate the symbol. Additional unchanged backup: outputs/Ranking-Rebels-logo-original.png in the local task workspace.
+
+Review captures in the task workspace outputs: next-card-desktop.png and next-card-comparison.png. Local review: http://127.0.0.1:4188/case-studies/#next-case-study.
+
+final result: passed; verification limits recorded above.

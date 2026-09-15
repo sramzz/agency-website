@@ -24,6 +24,8 @@ const headerCta = headerActions?.querySelector(".header-cta");
 const desktopNav = document.querySelector(".desktop-nav");
 const mobileNav = document.querySelector("#mobile-nav");
 
+siteHeader?.querySelector(".brand")?.setAttribute("aria-label", "Ranking Rebels — Home");
+
 const isCurrentLink = (href) => {
   if (href.startsWith("/#")) return currentPath === "/" && window.location.hash === href.slice(1);
   return currentPath === href;

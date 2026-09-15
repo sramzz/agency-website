@@ -303,8 +303,8 @@ test("the journey page presents the partnership flywheel in a clear, stable orde
   assert.match(journey, /What we learn after launch shapes the next round of Discovery\./);
   assert.match(journey, /We decide what to keep, change or stop, then choose what goes back into Discovery\./);
   assert.equal((journey.match(/<figure class="journey-photo-placeholder/g) || []).length, 2);
-  assert.match(journey, /src="\/assets\/images\/journey\/client-welcome\.png"[^>]*alt="A Ranking Rebels strategist welcoming a client with a handshake in a bright workspace"/);
-  assert.match(journey, /src="\/assets\/images\/journey\/launch-review\.png"[^>]*alt="A Ranking Rebels strategist and a client reviewing work together on a laptop"/);
+  assert.match(journey, /src="\/assets\/images\/journey\/client-partnership-handshake\.png"[^>]*alt="A Ranking Rebels strategist shaking hands with a client during a partnership meeting"/);
+  assert.match(journey, /src="\/assets\/images\/journey\/strategy-presentation-session\.png"[^>]*alt="A Ranking Rebels strategist presenting marketing growth results to a client team"/);
   assert.doesNotMatch(journey, /<figcaption>/);
   assert.ok(journey.includes("We join your team instead of sitting on the sidelines. Every month, we work through priorities together. You can also speak directly with the marketers doing the work whenever a question or shared task comes up."));
   assert.doesNotMatch(journey, /task factory|If it doesn’t serve your goals|journey-rebel-line/);
@@ -323,6 +323,7 @@ test("the journey layout is page-scoped, responsive and motion-safe", () => {
   assert.match(styles, /\.journey-page \.journey-timeline\s*\{/);
   assert.match(styles, /\.journey-page \.journey-stage-card\s*\{/);
   assert.match(styles, /\.journey-page \.journey-photo-placeholder\s*\{/);
+  assert.match(styles, /\.journey-page \.journey-photo-placeholder-process > img\s*\{[\s\S]*?aspect-ratio:\s*1672 \/ 941/);
   assert.match(styles, /\.journey-page \.journey-loop:focus-visible/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.journey-page \.journey-stage\s*\{[\s\S]*?grid-template-columns:\s*1fr/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.journey-page \.journey-loop\s*\{[\s\S]*?scroll-behavior:\s*auto/);
@@ -366,9 +367,10 @@ test("public links and assets resolve without retired routes", () => {
 test("production images are organized, SEO-named and have appropriate alt contracts", () => {
   const imageExtensions = /\.(?:avif|gif|jpe?g|png|svg|webp)$/i;
   const imageFiles = walk(root).filter((file) => imageExtensions.test(file));
+  const rootIcons = new Set(["apple-touch-icon.png", ...[16, 32, 48, 96, 192, 512].map((size) => `favicon-${size}x${size}.png`)]);
   for (const absolute of imageFiles) {
     const relative = path.relative(root, absolute);
-    assert.ok(relative.startsWith(`assets${path.sep}images${path.sep}`) || relative.startsWith(`docs${path.sep}qa${path.sep}`), `${relative} should be under assets/images or docs/qa`);
+    assert.ok(rootIcons.has(relative) || relative.startsWith(`assets${path.sep}images${path.sep}`) || relative.startsWith(`docs${path.sep}qa${path.sep}`), `${relative} should be under assets/images or docs/qa`);
     if (!relative.startsWith(`assets${path.sep}images${path.sep}`)) continue;
     assert.match(path.basename(relative), /^[a-z0-9]+(?:-[a-z0-9]+)*\.[a-z0-9]+$/, `${relative} needs a descriptive lowercase hyphenated filename`);
   }

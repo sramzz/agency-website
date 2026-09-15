@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
+  <title id="title">Paid advertising campaign</title>
+  <path d="M8 23.5 32 13v22L8 24.5z" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M13 26v9.5c0 2.2 1.8 4 4 4h3V29" fill="none" stroke="#ff304f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M37 17l4-3M38.5 24H44M37 31l4 3" fill="none" stroke="#ff8a00" stroke-width="3" stroke-linecap="round"/>
+</svg>
