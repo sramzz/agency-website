@@ -250,13 +250,11 @@ test("the Australia page targets digital marketing intent without weakening the 
   assert.match(read("about/index.html"), />Digital marketing services in Australia<\/span>/);
 });
 
-test("the Australia page sends process detail to the Journey page", () => {
+test("the Australia page links to the Journey without repeating its process", () => {
   const australia = read("locations/australia/index.html");
 
-  assert.doesNotMatch(australia, /class="section australia-process"|class="process-track"/);
-  assert.match(australia, /<section class="section australia-journey-bridge"[^>]*aria-labelledby="journey-bridge-title"/);
-  assert.match(australia, /<h2 id="journey-bridge-title">See how we work with your team\.<\/h2>/);
-  assert.match(australia, /<a class="button button-secondary" href="\/journey\/">See how we work<\/a>/);
+  assert.doesNotMatch(australia, /australia-process|process-track|australia-journey-bridge|journey-bridge-title/);
+  assert.match(australia, /<section class="section final-cta australia-final-cta" aria-labelledby="final-cta-title">[\s\S]*?<a class="button button-secondary" href="\/journey\/">See how we work<\/a>[\s\S]*?<\/section>/);
 });
 
 test("the homepage follows the selected search-led growth structure", () => {
