@@ -267,6 +267,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       service: "Digital marketing services in the Netherlands",
       mapAsset: "/assets/images/locations/netherlands/netherlands-svgrepo-com.svg",
       markers: ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Groningen", "Maastricht"],
+      markerPositions: { Amsterdam: [212, 216], Rotterdam: [167, 297], "The Hague": [148, 271], Utrecht: [236, 267], Eindhoven: [273, 386], Groningen: [391, 60], Maastricht: [297, 494] },
     },
     {
       file: "locations/latam/index.html",
@@ -277,6 +278,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       service: "Digital marketing services in Latin America",
       mapAsset: "/assets/images/locations/latam/earth-america-svgrepo-com.svg",
       markers: ["Mexico City", "Bogotá", "Medellín", "Lima", "Santiago", "Buenos Aires", "São Paulo"],
+      markerPositions: { "Mexico City": [150, 224], Bogotá: [266, 304], Medellín: [260, 291], Lima: [254, 357], Santiago: [274, 454], "Buenos Aires": [319, 452], "São Paulo": [347, 403] },
     },
   ];
 
@@ -291,6 +293,9 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
     assert.doesNotMatch(html, /service businesses|<section id="plans"|process-track|class="timeline"/i);
     for (const id of ["platform-coverage", "service-selector", "verified-results", "solution-routes", "faq"]) assert.match(html, new RegExp(`id="${id}"`));
     for (const marker of page.markers) assert.match(html, new RegExp(`aria-label="${marker}"`));
+    for (const [marker, [x, y]] of Object.entries(page.markerPositions)) {
+      assert.match(html, new RegExp(`aria-label="${marker}"[^>]*><circle class="market-hit-area" cx="${x}" cy="${y}"`));
+    }
     assert.match(html, new RegExp(`href="${page.mapAsset.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
     assert.match(html, /They do not represent offices or customer locations\./);
     assert.match(html, /href="\/journey\/">See how we work<\/a>/);
