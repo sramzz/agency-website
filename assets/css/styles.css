@@ -7370,3 +7370,172 @@ body.service-dialog-open {
     opacity: 0.38;
   }
 }
+
+/* Australia landing page: reuse the homepage service artwork. */
+.editorial-site .australia-page .solution-picker-card::before {
+  z-index: 1;
+}
+
+.editorial-site .australia-page .solution-picker-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(5, 6, 9, 0.28), rgba(5, 6, 9, 0.68) 58%, rgba(5, 6, 9, 0.9));
+  pointer-events: none;
+}
+
+.editorial-site .australia-page .solution-picker-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.22;
+  filter: grayscale(0.9) brightness(0.5) saturate(0.45);
+  transform: scale(1.035);
+  transition: opacity 240ms ease, filter 240ms ease, transform 320ms ease;
+}
+
+.editorial-site .australia-page .solution-picker-card:nth-child(1) .solution-picker-image {
+  object-position: 72% center;
+}
+
+.editorial-site .australia-page .solution-picker-card:nth-child(2) .solution-picker-image {
+  object-position: 78% center;
+}
+
+.editorial-site .australia-page .solution-picker-card:nth-child(3) .solution-picker-image {
+  object-position: 71% center;
+}
+
+.editorial-site .australia-page .solution-picker-card:hover .solution-picker-image,
+.editorial-site .australia-page .solution-picker-card:focus-visible .solution-picker-image {
+  opacity: 0.72;
+  filter: grayscale(0.08) brightness(0.78) saturate(1.08);
+  transform: scale(1);
+}
+
+.australia-page .australia-hero h1 {
+  font-size: clamp(3.2rem, 5.4vw, 4.6rem);
+  text-wrap: balance;
+}
+
+.australia-page .hero-microcopy {
+  max-width: 48ch;
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.australia-page .button {
+  min-height: 48px;
+}
+
+@media (max-width: 700px) {
+  .australia-page .australia-hero h1 {
+    font-size: clamp(2.8rem, 12vw, 4.25rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .editorial-site .australia-page .solution-picker-image {
+    transition: none;
+  }
+}
+
+/* A single platform row, static until its motion controls are ready. */
+.australia-page .platform-ribbon {
+  min-width: 0;
+  padding: 18px 0 22px;
+  border-block: 1px solid var(--border);
+  background: #08080b;
+}
+.australia-page .platform-ribbon-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-inline: clamp(20px, 8.33vw, 120px);
+  margin-bottom: 12px;
+}
+.australia-page .platform-ribbon-heading p {
+  margin: 0;
+  color: var(--secondary);
+  font: 500 0.68rem/1.5 "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.australia-page .platform-ribbon-toggle {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--neutral);
+  font: 500 0.75rem/1.3 Inter, sans-serif;
+  cursor: pointer;
+}
+.australia-page .platform-ribbon-toggle[hidden] { display: none; }
+.australia-page .platform-ribbon-viewport {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.australia-page .platform-ribbon-viewport:focus-visible,
+.australia-page .platform-ribbon-toggle:focus-visible {
+  outline: 2px solid var(--tertiary);
+  outline-offset: -2px;
+}
+.australia-page .platform-ribbon-track {
+  display: flex;
+  width: max-content;
+}
+.australia-page .platform-ribbon-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 48px;
+  padding: 8px 24px;
+  margin: 0;
+  list-style: none;
+}
+.australia-page .platform-ribbon-group li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  color: var(--neutral);
+  font: 500 0.95rem/1.4 Inter, sans-serif;
+}
+.australia-page .platform-ribbon-group img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex: none;
+}
+.australia-page .platform-ribbon-invert { filter: invert(1); }
+.australia-page .platform-ribbon-group[aria-hidden] { display: none; }
+.australia-page .platform-ribbon.is-moving .platform-ribbon-group[aria-hidden] { display: flex; }
+.australia-page .platform-ribbon.is-moving .platform-ribbon-track {
+  animation: platform-ribbon-scroll 40s linear infinite;
+}
+.australia-page .platform-ribbon.is-moving .platform-ribbon-viewport { overflow-x: hidden; }
+.australia-page .platform-ribbon.is-paused .platform-ribbon-track,
+.australia-page .platform-ribbon:has(.platform-ribbon-viewport:focus-visible) .platform-ribbon-track { animation-play-state: paused; }
+@keyframes platform-ribbon-scroll {
+  to { transform: translateX(-50%); }
+}
+@media (hover: hover) and (pointer: fine) {
+  .australia-page .platform-ribbon:hover .platform-ribbon-track { animation-play-state: paused; }
+}
+@media (max-width: 700px) {
+  .australia-page .platform-ribbon-heading { padding-inline: 20px; }
+  .australia-page .platform-ribbon-group { gap: 32px; padding-inline: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .australia-page .platform-ribbon.is-moving .platform-ribbon-track { animation: none; }
+  .australia-page .platform-ribbon.is-moving .platform-ribbon-viewport { overflow-x: auto; }
+  .australia-page .platform-ribbon.is-moving .platform-ribbon-group[aria-hidden] { display: none; }
+}

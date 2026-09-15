@@ -10,7 +10,7 @@ const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const pages = [
   { file: "index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 3 },
   { file: "journey/index.html", market: "Not specified", whatsapp: "61439499441", directContacts: 0 },
-  { file: "locations/australia/index.html", market: "Australia", whatsapp: "61439499441", directContacts: 7 },
+  { file: "locations/australia/index.html", market: "Australia", whatsapp: "61439499441", directContacts: 6 },
   { file: "locations/netherlands/index.html", market: "Netherlands", whatsapp: "31613390178", directContacts: 3 },
   { file: "locations/latam/index.html", market: "LATAM", whatsapp: "61439499441", directContacts: 3 },
 ];
@@ -46,7 +46,10 @@ test("every selector page exposes the complete service selector contract", () =>
     assert.equal((html.match(/data-service-selector-trigger/g) || []).length, 0);
     assert.equal((html.match(/data-whatsapp-contact/g) || []).length, page.directContacts);
     assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-optional-services"><\/script>/);
-    assert.match(html, /<script src="\/assets\/js\/script\.js\?v=20260903-optional-services"><\/script>/);
+    const sharedScriptVersion = page.file === "locations/australia/index.html"
+      ? "20260911-australia"
+      : "20260903-optional-services";
+    assert.match(html, new RegExp(`<script src="/assets/js/script\\.js\\?v=${sharedScriptVersion}"></script>`));
 
     const directContacts = [...html.matchAll(/<a\b[^>]*href="https:\/\/wa\.me\/31613390178"[^>]*data-whatsapp-contact[^>]*target="_blank"[^>]*rel="noreferrer"[^>]*>/g)];
     assert.equal(directContacts.length, page.directContacts, `${page.file} should expose direct WhatsApp CTAs`);

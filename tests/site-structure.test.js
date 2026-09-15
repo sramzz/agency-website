@@ -194,6 +194,62 @@ test("the Australia hero map communicates restrained, interactive nationwide cov
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.market-marker-major\.is-active \.market-label/);
 });
 
+test("the Australia platform ribbon is seamless, accessible and motion-safe", () => {
+  const australia = read("locations/australia/index.html");
+  const styles = read("assets/css/styles.css");
+  const script = read("assets/js/platform-ribbon.js");
+  const ribbon = australia.match(/<aside class="platform-ribbon"[\s\S]*?<\/aside>/)?.[0] || "";
+
+  assert.match(australia, /<\/section>\s*<aside class="platform-ribbon"[\s\S]*?<\/aside>\s*<section class="section service-selector-section"/);
+  assert.match(ribbon, /id="platform-ribbon-title">Channel &amp; platform coverage/);
+  assert.match(ribbon, /<button class="platform-ribbon-toggle"[^>]*hidden>Pause animation<\/button>/);
+  assert.equal((ribbon.match(/<li>/g) || []).length, 10);
+  for (const platform of ["Google", "Bing", "Google Maps", "Bing Maps", "Apple Maps", "ChatGPT", "Perplexity", "Copilot", "Instagram", "TikTok"]) {
+    assert.match(ribbon, new RegExp(`<span>${platform.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}<\\/span>`));
+  }
+
+  assert.match(script, /cloneNode\(true\)/);
+  assert.match(script, /setAttribute\('aria-hidden', 'true'\)/);
+  assert.match(script, /setAttribute\('inert', ''\)/);
+  assert.match(script, /matchMedia\('\(prefers-reduced-motion: reduce\)'\)/);
+  assert.match(script, /paused \? 'Resume animation' : 'Pause animation'/);
+  assert.match(styles, /animation:\s*platform-ribbon-scroll 40s linear infinite/);
+  assert.match(styles, /@keyframes platform-ribbon-scroll\s*\{[\s\S]*?translateX\(-50%\)/);
+  assert.match(styles, /@media \(hover: hover\) and \(pointer: fine\)[\s\S]*?animation-play-state:\s*paused/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.platform-ribbon\.is-moving \.platform-ribbon-track\s*\{\s*animation:\s*none/);
+  assert.match(styles, /\.platform-ribbon-viewport\s*\{\s*overflow-x:\s*auto/);
+});
+
+test("the Australia page targets digital marketing intent without weakening the booking promise", () => {
+  const australia = read("locations/australia/index.html");
+  const australiaSchemas = schemas(australia);
+
+  assert.match(australia, /<title>Digital Marketing Agency Australia \| Ranking Rebels<\/title>/);
+  assert.match(australia, /<meta name="description" content="SEO, paid ads and practical automation for businesses across Australia\. Bring in more calls, quote requests and bookings\. Request a search audit\."/);
+  assert.match(australia, /<h1 id="australia-title">Get found when customers are ready to book\.<\/h1>/);
+  assert.match(australia, /Ranking Rebels helps businesses show up when customers are ready to act\./);
+  assert.match(australia, /Google, Bing, Maps and ChatGPT/);
+  assert.doesNotMatch(australia, /service businesses/i);
+
+  const serviceSchema = australiaSchemas.find((schema) => schema["@type"] === "Service");
+  assert.equal(serviceSchema.name, "Digital marketing services in Australia");
+  assert.deepEqual(serviceSchema.serviceType, [
+    "Digital marketing",
+    "Search Engine Optimization",
+    "Generative Engine Optimization",
+    "Local SEO",
+    "Paid advertising management",
+    "Marketing automation",
+  ]);
+
+  const breadcrumbSchema = australiaSchemas.find((schema) => schema["@type"] === "BreadcrumbList");
+  assert.deepEqual(breadcrumbSchema.itemListElement.map((item) => item.name), ["Home", "Locations", "Australia"]);
+
+  assert.match(read("index.html"), /<h3>Digital marketing in Australia<\/h3>/);
+  assert.match(read("locations/index.html"), />Explore digital marketing in Australia<\/a>/);
+  assert.match(read("about/index.html"), />Digital marketing services in Australia<\/span>/);
+});
+
 test("the homepage follows the selected search-led growth structure", () => {
   const home = read("index.html");
   const homepageDescription = "Ranking Rebels helps service businesses grow through SEO, GEO, paid ads and AI automation across Australia, the Netherlands and Latin America.";
@@ -395,7 +451,11 @@ test("production images are organized, SEO-named and have appropriate alt contra
   const hashes = new Map();
   for (const absolute of imageFiles.filter((file) => file.includes(`${path.sep}assets${path.sep}images${path.sep}`))) {
     const hash = crypto.createHash("sha256").update(fs.readFileSync(absolute)).digest("hex");
-    assert.equal(hashes.has(hash), false, `${path.relative(root, absolute)} duplicates ${hashes.get(hash)}`);
+    const relative = path.relative(root, absolute);
+    // Public ribbon assets intentionally retain their private proposal originals.
+    const proposalLogo = relative.startsWith("assets/images/proposals/titanium-gym-9c42e7/logo-");
+    const sharedCopy = hashes.get(hash) === `assets/images/platforms/${path.basename(relative)}`;
+    assert.ok(!hashes.has(hash) || (proposalLogo && sharedCopy), `${relative} duplicates ${hashes.get(hash)}`);
     hashes.set(hash, path.relative(root, absolute));
   }
 });
