@@ -5,6 +5,7 @@ const test = require("node:test");
 
 const root = path.resolve(__dirname, "..");
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
+const serviceLead = require("../assets/js/service-lead.js");
 
 const pages = [
   { file: "index.html", market: "Not specified", ctas: 3 },
@@ -53,13 +54,21 @@ test("production Turnstile sitekey is public configuration, never a secret", () 
   assert.doesNotMatch(config, /TURNSTILE_SECRET_KEY|secret/i);
 });
 
-test("generic footer WhatsApp links remain direct and excluded", () => {
+test("public footers use an accessible WhatsApp icon with the general enquiry prefilled", () => {
   for (const page of pages) {
     const footer = read(page.file).match(/<footer\b[\s\S]*?<\/footer>/)?.[0] || "";
-    const whatsapp = footer.match(/<a\b[^>]*href="https:\/\/wa\.me\/[^"]*"[^>]*>WhatsApp<\/a>/)?.[0] || "";
-    assert.ok(whatsapp, `${page.file} keeps a footer WhatsApp link`);
-    assert.doesNotMatch(whatsapp, /data-lead-capture/);
+    const whatsapp = footer.match(/<a\b[^>]*class="footer-whatsapp"[^>]*href="([^"]+)"[^>]*>[\s\S]*?<\/a>/);
+    assert.ok(whatsapp, `${page.file} keeps an icon-only footer WhatsApp link`);
+    const url = new URL(whatsapp[1]);
+    assert.equal(url.hostname, "wa.me");
+    assert.equal(url.pathname, page.market === "Netherlands" ? "/31613390178" : "/61439499441");
+    assert.equal(url.searchParams.get("text"), serviceLead.buildWhatsAppMessage([]));
+    assert.match(whatsapp[0], /aria-label="Write to Ranking Rebels on WhatsApp/);
+    assert.match(whatsapp[0], /logo-whatsapp\.svg/);
+    assert.doesNotMatch(whatsapp[0], /data-lead-capture/);
+    assert.doesNotMatch(footer, /\+61 439 499 441|\+31 613 390 178|href="tel:/);
   }
+  assert.match(read("assets/images/platforms/logo-whatsapp.svg"), /<svg[^>]*viewBox="0 0 720 720"/);
 });
 
 test("404 and private proposals do not load or opt in to lead capture", () => {
