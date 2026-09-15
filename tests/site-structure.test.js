@@ -256,6 +256,71 @@ test("the Australia page links to the Journey without repeating its process", ()
   assert.match(australia, /<section class="section final-cta australia-final-cta" aria-labelledby="final-cta-title">[\s\S]*?<a class="button button-secondary" href="\/journey\/">See how we work<\/a>[\s\S]*?<\/section>/);
 });
 
+test("the Netherlands and LATAM pages use the search-led market landing structure", () => {
+  const pages = [
+    {
+      file: "locations/netherlands/index.html",
+      title: "Digital Marketing Agency Netherlands | Ranking Rebels",
+      description: "SEO, paid ads and practical automation for businesses across the Netherlands. Bring in more calls, enquiries and bookings. Request a search audit.",
+      canonical: "https://rankingrebels.com/locations/netherlands/",
+      market: "Netherlands",
+      service: "Digital marketing services in the Netherlands",
+      markers: ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Groningen", "Maastricht"],
+    },
+    {
+      file: "locations/latam/index.html",
+      title: "Digital Marketing Agency Latin America | Ranking Rebels",
+      description: "SEO, paid ads and practical automation for businesses across Latin America. Bring in more calls, enquiries and sales. Request a search audit.",
+      canonical: "https://rankingrebels.com/locations/latam/",
+      market: "Latin America",
+      service: "Digital marketing services in Latin America",
+      markers: ["Mexico City", "Bogotá", "Medellín", "Lima", "Santiago", "Buenos Aires", "São Paulo"],
+    },
+  ];
+
+  for (const page of pages) {
+    const html = read(page.file);
+    const parsedSchemas = schemas(html);
+    assert.match(html, new RegExp(`<title>${page.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}<\\/title>`));
+    assert.match(html, new RegExp(`<meta name="description" content="${page.description.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
+    assert.match(html, new RegExp(`<link rel="canonical" href="${page.canonical.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
+    assert.equal((html.match(/<h1\b/g) || []).length, 1);
+    assert.match(html, /<h1[^>]*>Get found when customers are ready to book\.<\/h1>/);
+    assert.doesNotMatch(html, /service businesses|<section id="plans"|process-track|class="timeline"/i);
+    for (const id of ["platform-coverage", "service-selector", "verified-results", "solution-routes", "faq"]) assert.match(html, new RegExp(`id="${id}"`));
+    for (const marker of page.markers) assert.match(html, new RegExp(`aria-label="${marker}"`));
+    assert.match(html, /They do not represent offices or customer locations\./);
+    assert.match(html, /href="\/journey\/">See how we work<\/a>/);
+
+    const service = parsedSchemas.find((schema) => schema["@type"] === "Service");
+    const breadcrumb = parsedSchemas.find((schema) => schema["@type"] === "BreadcrumbList");
+    const faq = parsedSchemas.find((schema) => schema["@type"] === "FAQPage");
+    assert.equal(service.name, page.service);
+    assert.equal(breadcrumb.itemListElement.at(-1).name, page.market);
+    assert.equal(faq.mainEntity.length, 6);
+    for (const item of faq.mainEntity) {
+      assert.ok(html.includes(`<summary>${item.name}</summary><p>${item.acceptedAnswer.text}</p>`), `${page.file} visible FAQ matches schema`);
+    }
+  }
+
+  const netherlands = read("locations/netherlands/index.html");
+  assert.equal((netherlands.match(/Latin America case study/g) || []).length, 3);
+  assert.match(read("index.html"), /<h3>Digital marketing in the Netherlands<\/h3>/);
+  assert.match(read("index.html"), /<h3>Digital marketing in Latin America<\/h3>/);
+  assert.match(read("locations/index.html"), />Explore digital marketing in the Netherlands<\/a>/);
+  assert.match(read("locations/index.html"), />Explore digital marketing in Latin America<\/a>/);
+});
+
+test("market landing pages share the ribbon fallback and scoped responsive styles", () => {
+  const styles = read("assets/css/styles.css");
+  const ribbon = read("assets/js/platform-ribbon.js");
+  assert.match(ribbon, /document\.querySelector\('\.platform-ribbon'\)/);
+  assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.platform-ribbon/);
+  assert.match(styles, /\.market-landing-page \.market-hero/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.coverage-map \.market-tooltip/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?animation: none/);
+});
+
 test("the homepage follows the selected search-led growth structure", () => {
   const home = read("index.html");
   const homepageDescription = "Ranking Rebels helps service businesses grow through SEO, GEO, paid ads and AI automation across Australia, the Netherlands and Latin America.";

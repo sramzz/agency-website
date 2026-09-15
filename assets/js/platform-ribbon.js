@@ -1,5 +1,5 @@
 (() => {
-  const ribbon = document.querySelector('.australia-page .platform-ribbon');
+  const ribbon = document.querySelector('.platform-ribbon');
   if (!ribbon) return;
   const track = ribbon.querySelector('.platform-ribbon-track');
   const group = ribbon.querySelector('.platform-ribbon-group');
