@@ -7273,12 +7273,12 @@ body.service-dialog-open {
   }
 }
 
-/* Australia landing page: reuse the homepage service artwork. */
-.editorial-site .australia-page .solution-picker-card::before {
+/* Location landing pages: reuse the homepage service artwork. */
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card::before {
   z-index: 1;
 }
 
-.editorial-site .australia-page .solution-picker-card::after {
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -7287,7 +7287,7 @@ body.service-dialog-open {
   pointer-events: none;
 }
 
-.editorial-site .australia-page .solution-picker-image {
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-image {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -7300,20 +7300,20 @@ body.service-dialog-open {
   transition: opacity 240ms ease, filter 240ms ease, transform 320ms ease;
 }
 
-.editorial-site .australia-page .solution-picker-card:nth-child(1) .solution-picker-image {
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card:nth-child(1) .solution-picker-image {
   object-position: 72% center;
 }
 
-.editorial-site .australia-page .solution-picker-card:nth-child(2) .solution-picker-image {
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card:nth-child(2) .solution-picker-image {
   object-position: 78% center;
 }
 
-.editorial-site .australia-page .solution-picker-card:nth-child(3) .solution-picker-image {
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card:nth-child(3) .solution-picker-image {
   object-position: 71% center;
 }
 
-.editorial-site .australia-page .solution-picker-card:hover .solution-picker-image,
-.editorial-site .australia-page .solution-picker-card:focus-visible .solution-picker-image {
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card:hover .solution-picker-image,
+.editorial-site :is(.australia-page, .market-landing-page) .solution-picker-card:focus-visible .solution-picker-image {
   opacity: 0.72;
   filter: grayscale(0.08) brightness(0.78) saturate(1.08);
   transform: scale(1);
@@ -7343,7 +7343,7 @@ body.service-dialog-open {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .editorial-site .australia-page .solution-picker-image {
+  .editorial-site :is(.australia-page, .market-landing-page) .solution-picker-image {
     transition: none;
   }
 }

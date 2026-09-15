@@ -316,6 +316,7 @@ test("market landing pages share the ribbon fallback and scoped responsive style
   const ribbon = read("assets/js/platform-ribbon.js");
   assert.match(ribbon, /document\.querySelector\('\.platform-ribbon'\)/);
   assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.platform-ribbon/);
+  assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.solution-picker-image/);
   assert.match(styles, /\.market-landing-page \.market-hero/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.coverage-map \.market-tooltip/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?animation: none/);
