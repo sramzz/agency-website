@@ -7459,10 +7459,6 @@ body.service-dialog-open {
 .coverage-map-stage::before { content: ""; position: absolute; z-index: -1; inset: 10% 6% 20% 16%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 48, 79, 0.16), rgba(255, 48, 79, 0.025) 48%, transparent 72%); filter: blur(24px); }
 .coverage-map { display: block; max-width: 100%; height: auto; overflow: hidden; }
 .coverage-map .coverage-land { stroke: rgba(248, 250, 252, 0.26); stroke-width: 1.35; vector-effect: non-scaling-stroke; }
-.coverage-map .coverage-land-artwork {
-  opacity: 0.78;
-  filter: brightness(0) saturate(100%) invert(15%) sepia(22%) saturate(1740%) hue-rotate(292deg) brightness(91%) contrast(94%) drop-shadow(0 0 12px rgba(255, 48, 79, 0.18));
-}
 .coverage-map .market-marker { outline: none; }
 .coverage-map .market-hit-area { fill: transparent; pointer-events: all; }
 .coverage-map .market-halo { fill: rgba(255, 48, 79, 0.1); stroke: rgba(255, 48, 79, 0.58); stroke-width: 1; }

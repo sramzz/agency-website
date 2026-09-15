@@ -317,12 +317,24 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
 test("market landing pages share the ribbon fallback and scoped responsive styles", () => {
   const styles = read("assets/css/styles.css");
   const ribbon = read("assets/js/platform-ribbon.js");
+  const mapArtwork = [
+    read("assets/images/locations/netherlands/netherlands-svgrepo-com.svg"),
+    read("assets/images/locations/latam/earth-america-svgrepo-com.svg"),
+  ];
   assert.match(ribbon, /document\.querySelector\('\.platform-ribbon'\)/);
   assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.platform-ribbon/);
   assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.solution-picker-image/);
   assert.match(styles, /\.market-landing-page \.market-hero/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.coverage-map \.market-tooltip/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?animation: none/);
+  assert.doesNotMatch(styles, /\.coverage-land-artwork\s*\{[^}]*filter:/);
+  for (const artwork of mapArtwork) {
+    assert.match(artwork, /<linearGradient id="map-land-fill"/);
+    assert.match(artwork, /stop-color="#210c13"/);
+    assert.match(artwork, /stop-color="#0d0508"/);
+    assert.match(artwork, /stroke="#f8fafc"|stroke:#f8fafc/);
+    assert.match(artwork, /stroke-opacity="0\.26"|stroke-opacity:0\.26/);
+  }
 });
 
 test("the homepage follows the selected search-led growth structure", () => {
