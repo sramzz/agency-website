@@ -7382,10 +7382,6 @@ body.service-dialog-open {
   background: #08080b;
 }
 :is(.australia-page, .market-landing-page) .platform-ribbon-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
   padding-inline: clamp(20px, 8.33vw, 120px);
   margin-bottom: 12px;
 }
@@ -7396,23 +7392,11 @@ body.service-dialog-open {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-:is(.australia-page, .market-landing-page) .platform-ribbon-toggle {
-  min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--neutral);
-  font: 500 0.75rem/1.3 Inter, sans-serif;
-  cursor: pointer;
-}
-:is(.australia-page, .market-landing-page) .platform-ribbon-toggle[hidden] { display: none; }
 :is(.australia-page, .market-landing-page) .platform-ribbon-viewport {
   overflow-x: auto;
   scrollbar-width: thin;
 }
-:is(.australia-page, .market-landing-page) .platform-ribbon-viewport:focus-visible,
-:is(.australia-page, .market-landing-page) .platform-ribbon-toggle:focus-visible {
+:is(.australia-page, .market-landing-page) .platform-ribbon-viewport:focus-visible {
   outline: 2px solid var(--tertiary);
   outline-offset: -2px;
 }
@@ -7450,7 +7434,6 @@ body.service-dialog-open {
   animation: platform-ribbon-scroll 40s linear infinite;
 }
 :is(.australia-page, .market-landing-page) .platform-ribbon.is-moving .platform-ribbon-viewport { overflow-x: hidden; }
-:is(.australia-page, .market-landing-page) .platform-ribbon.is-paused .platform-ribbon-track,
 :is(.australia-page, .market-landing-page) .platform-ribbon:has(.platform-ribbon-viewport:focus-visible) .platform-ribbon-track { animation-play-state: paused; }
 @keyframes platform-ribbon-scroll {
   to { transform: translateX(-50%); }
