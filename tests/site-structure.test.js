@@ -201,7 +201,8 @@ test("the Australia platform ribbon is seamless, accessible and motion-safe", ()
   const ribbon = australia.match(/<aside class="platform-ribbon"[\s\S]*?<\/aside>/)?.[0] || "";
 
   assert.match(australia, /<\/section>\s*<aside class="platform-ribbon"[\s\S]*?<\/aside>\s*<section class="section service-selector-section"/);
-  assert.match(ribbon, /id="platform-ribbon-title">Channel &amp; platform coverage/);
+  assert.match(ribbon, /aria-label="Channel and platform coverage"/);
+  assert.doesNotMatch(ribbon, /platform-ribbon-heading|platform-ribbon-title|Channel &amp; platform coverage/);
   assert.doesNotMatch(ribbon, /platform-ribbon-toggle|Pause animation|Resume animation/);
   assert.equal((ribbon.match(/<li>/g) || []).length, 10);
   for (const platform of ["Google", "Bing", "Google Maps", "Bing Maps", "Apple Maps", "ChatGPT", "Perplexity", "Copilot", "Instagram", "TikTok"]) {
