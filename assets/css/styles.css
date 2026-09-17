@@ -6432,6 +6432,9 @@ body.service-dialog-open {
   top: 11.25%;
   width: 21.4%;
   height: 17.6%;
+  border-radius: 46% 46% 42% 42% / 24% 24% 34% 34%;
+  -webkit-mask-image: radial-gradient(ellipse 62% 82% at 50% 50%, #000 0 60%, rgba(0, 0, 0, 0.96) 69%, rgba(0, 0, 0, 0.58) 79%, transparent 94%);
+  mask-image: radial-gradient(ellipse 62% 82% at 50% 50%, #000 0 60%, rgba(0, 0, 0, 0.96) 69%, rgba(0, 0, 0, 0.58) 79%, transparent 94%);
 }
 
 .about-hero-lighthouse .hero-lighthouse .lighthouse-optic img {
