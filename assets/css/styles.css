@@ -8242,3 +8242,896 @@ body.service-dialog-open {
 @media (max-width: 430px) {
   .market-landing-page .market-hero .button { width: 100%; }
 }
+
+/* AI automation solution page */
+.ai-automation-page {
+  --automation-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --automation-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.ai-automation-page main > .section,
+.ai-automation-page main > .hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.ai-automation-page .automation-hero {
+  grid-template-columns: minmax(0, 0.94fr) minmax(430px, 1.06fr);
+  gap: clamp(34px, 5vw, 72px);
+  min-height: min(720px, calc(100vh - 72px));
+  padding-top: clamp(52px, 6vw, 78px);
+  padding-bottom: clamp(48px, 6vw, 72px);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 79% 18%, rgba(255, 48, 79, 0.13), transparent 29%),
+    linear-gradient(118deg, #12050b 0%, #050609 70%);
+}
+
+.ai-automation-page .automation-hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(90deg, transparent, #000 58%, transparent);
+}
+
+.ai-automation-page .automation-hero .hero-copy {
+  max-width: 680px;
+}
+
+.ai-automation-page .automation-hero h1 {
+  max-width: 780px;
+  font-size: clamp(3.1rem, 5.6vw, 4.8rem);
+  line-height: 0.92;
+  text-wrap: balance;
+}
+
+.ai-automation-page .automation-hero .hero-lede {
+  max-width: 650px;
+}
+
+.ai-automation-page .button {
+  min-height: 48px;
+  transition: transform 160ms var(--automation-ease-out), background-color 180ms ease, border-color 180ms ease;
+}
+
+.ai-automation-page .button:active {
+  transform: scale(0.97);
+}
+
+.ai-automation-page .automation-cta-cue {
+  max-width: 54ch;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.69rem;
+  line-height: 1.55;
+  letter-spacing: 0.05em;
+}
+
+.ai-automation-page .automation-workflow {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(20px, 2.5vw, 30px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 26px;
+  background:
+    linear-gradient(135deg, rgba(255, 48, 79, 0.08), transparent 44%),
+    rgba(12, 8, 13, 0.92);
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.38);
+}
+
+.ai-automation-page .automation-workflow::after {
+  content: "";
+  position: absolute;
+  right: -110px;
+  bottom: -120px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255, 48, 79, 0.22);
+  border-radius: 50%;
+  box-shadow: 0 0 90px rgba(255, 48, 79, 0.08) inset;
+  pointer-events: none;
+}
+
+.ai-automation-page .automation-workflow-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .workflow-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--neutral);
+}
+
+.ai-automation-page .workflow-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  box-shadow: 0 0 16px rgba(255, 48, 79, 0.85);
+}
+
+.ai-automation-page .automation-workflow-path {
+  display: grid;
+  grid-template-areas:
+    "trigger to-rules rules"
+    "to-ai to-ai to-ai"
+    "assist assist assist"
+    "to-human to-human to-human"
+    "approval to-action action";
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr);
+  grid-template-rows: auto 34px auto 34px auto;
+  gap: 10px;
+  align-items: stretch;
+  padding: 22px 0 18px;
+}
+
+.ai-automation-page .workflow-node {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: start;
+  gap: 5px;
+  min-height: 114px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.ai-automation-page .workflow-node span,
+.ai-automation-page .workflow-node small {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.ai-automation-page .workflow-node span {
+  color: var(--accent);
+  font-size: 0.57rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .workflow-node strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.04rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .workflow-node small {
+  color: var(--secondary);
+  font-size: 0.59rem;
+  line-height: 1.45;
+}
+
+.ai-automation-page .workflow-node-trigger {
+  grid-area: trigger;
+  border-color: rgba(255, 138, 0, 0.32);
+}
+
+.ai-automation-page .workflow-node-rules {
+  grid-area: rules;
+}
+
+.ai-automation-page .workflow-node-ai {
+  grid-area: assist;
+  justify-self: center;
+  width: min(100%, 280px);
+  border-color: rgba(255, 138, 0, 0.42);
+  background: rgba(255, 138, 0, 0.06);
+}
+
+.ai-automation-page .workflow-node-human {
+  grid-area: approval;
+  border-color: rgba(255, 48, 79, 0.72);
+  background: rgba(255, 48, 79, 0.09);
+}
+
+.ai-automation-page .workflow-node-human span {
+  color: var(--tertiary);
+}
+
+.ai-automation-page .workflow-node-action {
+  grid-area: action;
+  border-color: rgba(248, 250, 252, 0.24);
+}
+
+.ai-automation-page .workflow-connector {
+  position: relative;
+  overflow: hidden;
+  min-height: 114px;
+}
+
+.ai-automation-page .workflow-connector-to-rules {
+  grid-area: to-rules;
+}
+
+.ai-automation-page .workflow-connector-to-ai {
+  grid-area: to-ai;
+}
+
+.ai-automation-page .workflow-connector-to-human {
+  grid-area: to-human;
+}
+
+.ai-automation-page .workflow-connector-to-action {
+  grid-area: to-action;
+}
+
+.ai-automation-page .workflow-connector::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ai-automation-page .workflow-connector::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 0;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid var(--tertiary);
+  border-right: 1px solid var(--tertiary);
+  transform: rotate(45deg);
+}
+
+.ai-automation-page .workflow-connector span {
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  box-shadow: 0 0 16px rgba(255, 48, 79, 0.75);
+  animation: automation-handoff 2.8s var(--automation-ease-in-out) infinite;
+}
+
+.ai-automation-page .workflow-connector-human span {
+  animation-delay: 700ms;
+}
+
+.ai-automation-page .workflow-connector-to-ai,
+.ai-automation-page .workflow-connector-to-human {
+  min-height: 34px;
+}
+
+.ai-automation-page .workflow-connector-to-ai::before,
+.ai-automation-page .workflow-connector-to-human::before {
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: auto;
+}
+
+.ai-automation-page .workflow-connector-to-ai::after,
+.ai-automation-page .workflow-connector-to-human::after {
+  top: auto;
+  right: auto;
+  bottom: 2px;
+  left: calc(50% - 3px);
+  transform: rotate(135deg);
+}
+
+.ai-automation-page .workflow-connector-to-ai span,
+.ai-automation-page .workflow-connector-to-human span {
+  top: 0;
+  left: calc(50% - 3px);
+  animation-name: automation-handoff-mobile;
+}
+
+@keyframes automation-handoff {
+  0%, 12% { opacity: 0; transform: translateX(0); }
+  28%, 74% { opacity: 1; }
+  88%, 100% { opacity: 0; transform: translateX(21px); }
+}
+
+.ai-automation-page .automation-workflow figcaption,
+.ai-automation-page .automation-handoff-map figcaption {
+  position: relative;
+  z-index: 1;
+  color: var(--secondary);
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+.ai-automation-page .automation-value .section-heading {
+  max-width: 880px;
+}
+
+.ai-automation-page .automation-value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ai-automation-page .automation-value-card {
+  position: relative;
+  min-height: 390px;
+  padding: clamp(26px, 4vw, 44px);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface-card);
+}
+
+.ai-automation-page .automation-value-card::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(255, 48, 79, 0.07);
+  filter: blur(6px);
+}
+
+.ai-automation-page .automation-value-growth {
+  background:
+    radial-gradient(circle at 90% 84%, rgba(255, 48, 79, 0.13), transparent 38%),
+    var(--surface-card);
+}
+
+.ai-automation-page .automation-value-label {
+  display: inline-flex;
+  margin-bottom: 30px;
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .automation-value-card h3 {
+  max-width: 14ch;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.ai-automation-page .automation-value-card > p {
+  max-width: 52ch;
+  margin-top: 16px;
+}
+
+.ai-automation-page .automation-value-card ul {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ai-automation-page .automation-value-card li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--neutral);
+  font-size: 0.88rem;
+}
+
+.ai-automation-page .automation-value-card li::before {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 9px;
+  height: 1px;
+  background: var(--tertiary);
+}
+
+.ai-automation-page .automation-problem {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 1.14fr);
+  gap: clamp(44px, 7vw, 100px);
+  align-items: center;
+}
+
+.ai-automation-page .automation-problem-copy,
+.ai-automation-page .automation-control-copy {
+  display: grid;
+  justify-items: start;
+  gap: 20px;
+}
+
+.ai-automation-page .automation-problem-copy p:not(.eyebrow),
+.ai-automation-page .automation-control-copy p:not(.eyebrow) {
+  max-width: 62ch;
+}
+
+.ai-automation-page .automation-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  color: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  transition: color 180ms ease, transform 180ms var(--automation-ease-out);
+}
+
+.ai-automation-page .automation-text-link::after {
+  content: "↗";
+  margin-left: 10px;
+  color: var(--tertiary);
+}
+
+.ai-automation-page .automation-handoff-map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: clamp(18px, 3vw, 28px);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: #0a080c;
+}
+
+.ai-automation-page .handoff-state {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.ai-automation-page .handoff-state > span {
+  margin-bottom: 9px;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .handoff-state div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 52px;
+  padding: 11px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.ai-automation-page .handoff-state b {
+  color: var(--neutral);
+  font-size: 0.78rem;
+}
+
+.ai-automation-page .handoff-state i {
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.58rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .handoff-state-before div {
+  border-style: dashed;
+}
+
+.ai-automation-page .handoff-state-before i {
+  color: #cf7f8e;
+}
+
+.ai-automation-page .handoff-state-after {
+  border-color: rgba(255, 48, 79, 0.38);
+}
+
+.ai-automation-page .handoff-state-after i {
+  color: var(--accent);
+}
+
+.ai-automation-page .automation-handoff-map figcaption {
+  grid-column: 1 / -1;
+  padding-top: 8px;
+}
+
+.ai-automation-page .automation-method .timeline {
+  max-width: none;
+  counter-reset: automation-step;
+}
+
+.ai-automation-page .automation-method .timeline li {
+  grid-template-columns: 64px minmax(0, 1fr);
+  max-width: 920px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ai-automation-page .automation-method .timeline li:nth-child(even) {
+  margin-left: clamp(0px, 8vw, 110px);
+}
+
+.ai-automation-page .automation-method .timeline li::before {
+  display: none;
+}
+
+.ai-automation-page .automation-method .step-number {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 48, 79, 0.45);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--tertiary);
+  font-size: 0.68rem;
+}
+
+.ai-automation-page .automation-method .timeline p {
+  max-width: 68ch;
+  margin-top: 7px;
+}
+
+.ai-automation-page .automation-examples-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.ai-automation-page .automation-example-card {
+  min-height: 250px;
+  padding: clamp(24px, 3vw, 34px);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.015);
+  transition: background-color 180ms ease, transform 180ms var(--automation-ease-out);
+}
+
+.ai-automation-page .automation-example-card p {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  line-height: 1.68;
+}
+
+.ai-automation-page .automation-control-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(440px, 1.2fr);
+  gap: clamp(44px, 7vw, 100px);
+  align-items: center;
+}
+
+.ai-automation-page .automation-control-rail {
+  position: relative;
+  display: grid;
+  gap: 12px;
+}
+
+.ai-automation-page .automation-control-rail::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  bottom: 34px;
+  left: 29.5px;
+  width: 1px;
+  background: linear-gradient(var(--accent), var(--tertiary));
+}
+
+.ai-automation-page .automation-control-rail > div {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(100px, 0.35fr) minmax(0, 1fr);
+  gap: 5px 22px;
+  min-height: 104px;
+  padding: 22px 22px 22px 70px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.ai-automation-page .automation-control-rail > div::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  border: 4px solid var(--primary);
+  border-radius: 50%;
+  background: var(--tertiary);
+  box-shadow: 0 0 0 1px rgba(255, 48, 79, 0.55);
+}
+
+.ai-automation-page .automation-control-rail span {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .automation-control-rail strong {
+  color: var(--neutral);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.55rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.ai-automation-page .automation-control-rail small {
+  color: var(--secondary);
+  font-size: 0.78rem;
+}
+
+.ai-automation-page .automation-faq .faq-list {
+  margin-inline: 0;
+}
+
+.ai-automation-page .automation-faq .faq-list details {
+  padding: 0;
+  overflow: clip;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.ai-automation-page .automation-faq .faq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 64px;
+  padding: 18px 22px;
+  list-style: none;
+}
+
+.ai-automation-page .automation-faq .faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.ai-automation-page .automation-faq .faq-list summary::after {
+  content: "+";
+  flex: none;
+  color: var(--tertiary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: transform 180ms var(--automation-ease-out);
+}
+
+.ai-automation-page .automation-faq .faq-list details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.ai-automation-page .automation-faq .faq-list p {
+  max-width: 72ch;
+  margin: 0;
+  padding: 0 56px 22px 22px;
+}
+
+.ai-automation-page .automation-contact.next-case-banner {
+  align-content: normal;
+  justify-items: stretch;
+  min-height: 0;
+  text-align: left;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ai-automation-page .automation-text-link:hover {
+    color: var(--tertiary);
+    transform: translateX(3px);
+  }
+
+  .ai-automation-page .automation-example-card:hover {
+    background: rgba(255, 48, 79, 0.055);
+    transform: translateY(-3px);
+  }
+
+  .ai-automation-page .automation-faq .faq-list details:hover {
+    border-color: rgba(255, 48, 79, 0.48);
+  }
+}
+
+@media (max-width: 980px) {
+  .ai-automation-page .automation-hero,
+  .ai-automation-page .automation-problem,
+  .ai-automation-page .automation-control-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ai-automation-page .automation-hero {
+    min-height: auto;
+  }
+
+  .ai-automation-page .automation-workflow {
+    width: min(100%, 680px);
+  }
+
+  .ai-automation-page .automation-problem {
+    align-items: start;
+  }
+
+  .ai-automation-page .automation-handoff-map {
+    width: min(100%, 720px);
+  }
+
+  .ai-automation-page .automation-examples-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .ai-automation-page .automation-hero h1 {
+    font-size: clamp(2.75rem, 12vw, 4rem);
+  }
+
+  .ai-automation-page .automation-value-grid,
+  .ai-automation-page .automation-handoff-map,
+  .ai-automation-page .automation-examples-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ai-automation-page .automation-workflow-path {
+    grid-template-areas:
+      ". trigger"
+      "to-rules ."
+      ". rules"
+      "to-ai ."
+      ". assist"
+      "to-human ."
+      ". approval"
+      "to-action ."
+      ". action";
+    grid-template-columns: 28px minmax(0, 1fr);
+    grid-template-rows: auto 28px auto 28px auto 28px auto 28px auto;
+    gap: 8px 10px;
+  }
+
+  .ai-automation-page .workflow-node {
+    min-height: 98px;
+  }
+
+  .ai-automation-page .workflow-node-ai {
+    width: 100%;
+  }
+
+  .ai-automation-page .workflow-connector {
+    min-height: 28px;
+  }
+
+  .ai-automation-page .workflow-connector::before {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: auto;
+  }
+
+  .ai-automation-page .workflow-connector::after {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: calc(50% - 3px);
+    transform: rotate(135deg);
+  }
+
+  .ai-automation-page .workflow-connector span {
+    top: 0;
+    left: calc(50% - 3px);
+    animation-name: automation-handoff-mobile;
+  }
+
+  .ai-automation-page .automation-handoff-map figcaption {
+    grid-column: 1;
+  }
+
+  .ai-automation-page .automation-method .timeline li,
+  .ai-automation-page .automation-method .timeline li:nth-child(even) {
+    grid-template-columns: 52px minmax(0, 1fr);
+    margin-left: 0;
+  }
+
+  .ai-automation-page .automation-example-card {
+    min-height: auto;
+  }
+
+  .ai-automation-page .automation-control-rail > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ai-automation-page .automation-control-rail span {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+@keyframes automation-handoff-mobile {
+  0%, 12% { opacity: 0; transform: translateY(0); }
+  28%, 74% { opacity: 1; }
+  88%, 100% { opacity: 0; transform: translateY(21px); }
+}
+
+@media (max-width: 430px) {
+  .ai-automation-page .automation-hero .button,
+  .ai-automation-page .automation-contact .button {
+    width: 100%;
+  }
+
+  .ai-automation-page .automation-workflow {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .ai-automation-page .automation-workflow-topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ai-automation-page .automation-value-card {
+    min-height: 0;
+  }
+
+  .ai-automation-page .handoff-state {
+    padding: 14px;
+  }
+
+  .ai-automation-page .automation-control-rail > div {
+    padding-right: 16px;
+    padding-left: 58px;
+  }
+
+  .ai-automation-page .automation-control-rail::before {
+    left: 24.5px;
+  }
+
+  .ai-automation-page .automation-control-rail > div::before {
+    left: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-automation-page .button,
+  .ai-automation-page .automation-text-link,
+  .ai-automation-page .automation-example-card,
+  .ai-automation-page .automation-faq .faq-list details,
+  .ai-automation-page .automation-faq .faq-list summary::after {
+    transition-duration: 0.01ms;
+  }
+
+  .ai-automation-page .workflow-connector span {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
