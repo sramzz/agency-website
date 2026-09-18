@@ -28,6 +28,7 @@ const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}in
 const publicFiles = publicRoutes.map(routeFile);
 const proposalFiles = [
   "proposals/titanium-gym-9c42e7/index.html",
+  "proposals/titanium-gym-9c42e7/wellness-recommendation/index.html",
   "proposals/whatsapp-booking/index.html",
   "proposals/whatsapp-booking/es/index.html",
   "proposals/winpress/index.html",

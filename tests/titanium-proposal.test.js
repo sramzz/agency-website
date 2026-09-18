@@ -5,6 +5,7 @@ const test = require("node:test");
 
 const root = path.resolve(__dirname, "..");
 const route = "proposals/titanium-gym-9c42e7";
+const wellnessRoute = `${route}/wellness-recommendation`;
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
 const exists = (file) => fs.existsSync(path.join(root, file));
 const html = read(`${route}/index.html`);
@@ -187,4 +188,70 @@ test("proposal is responsive, accessible and motion-safe", () => {
   assert.match(styles, /\.hero h1 span \{[^}]*width:\s*max-content/);
   assert.match(styles, /font-size:\s*clamp\(64px,\s*6\.4vw,\s*96px\)/);
   assert.doesNotMatch(styles, /overflow-x:\s*hidden/);
+});
+
+test("wellness recommendation is a private standalone child page", () => {
+  assert.equal(exists(`${wellnessRoute}/index.html`), true);
+  assert.equal(exists(`${wellnessRoute}/styles.css`), true);
+
+  const wellnessHtml = read(`${wellnessRoute}/index.html`);
+  assert.match(wellnessHtml, /<html lang="en">/);
+  assert.match(wellnessHtml, /name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex"/);
+  assert.match(wellnessHtml, /name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex"/);
+  assert.match(wellnessHtml, /name="bingbot" content="noindex,nofollow,noarchive,nosnippet,noimageindex"/);
+  assert.match(wellnessHtml, /name="referrer" content="no-referrer"/);
+  assert.match(wellnessHtml, /rel="canonical" href="https:\/\/rankingrebels\.com\/proposals\/titanium-gym-9c42e7\/wellness-recommendation\/"/);
+  assert.doesNotMatch(wellnessHtml, /googletagmanager|google-analytics|gtag\s*\(|dataLayer|plausible|segment\.com/i);
+  assert.doesNotMatch(read("sitemap.xml"), /wellness-recommendation|\/proposals\//);
+});
+
+test("wellness recommendation preserves the approved decision and technical guidance", () => {
+  const wellnessHtml = read(`${wellnessRoute}/index.html`);
+  const expected = [
+    "titanium-gym.com/wellness/",
+    "titanium-wellness.com",
+    "titanium-gym.com/wellness/infrared-sauna/",
+    "titanium-gym.com/wellness/ice-bath/",
+    "titanium-gym.com/wellness/red-light-therapy/",
+    "titanium-gym.com/wellness/compression-recovery/",
+    "titanium-gym.com/wellness/pricing/",
+    "titanium-gym.com/wellness/book/",
+    "Recovery &amp; Wellness Airport West | Titanium Gym",
+    "Premium Recovery and Wellness in Airport West",
+    "301 redirect",
+    "same Airport West location",
+    "overlapping audience",
+    "one business and one location",
+    "reviews and brand trust",
+    "internal links",
+    "little additional benefit",
+  ];
+  expected.forEach((phrase) => assert.ok(wellnessHtml.includes(phrase), `${phrase} should be present`));
+
+  assert.match(wellnessHtml, /<table class="decision-table"/);
+  assert.equal((wellnessHtml.match(/<th scope="row"/g) || []).length, 3);
+  assert.equal((wellnessHtml.match(/<section\b/g) || []).length, 3);
+  const recommendedRow = wellnessHtml.indexOf('<tr class="recommended-row">');
+  const newDomainRow = wellnessHtml.indexOf('<th scope="row"><span>New domain</span>');
+  const subdomainRow = wellnessHtml.indexOf('<th scope="row"><span>Subdomain</span>');
+  assert.ok(recommendedRow < newDomainRow && recommendedRow < subdomainRow, "recommended option should be the first table row");
+  ["New domain", "Subdomain", "Subdirectory"].forEach((option) => {
+    assert.ok(wellnessHtml.includes(option), `${option} should be compared`);
+  });
+  ["Demand capture", "Customer journey", "Brand architecture", "Operating model"]
+    .forEach((criterion) => assert.ok(wellnessHtml.includes(criterion), `${criterion} should be assessed`));
+  assert.match(wellnessHtml, /aria-labelledby="comparison-title"/);
+  assert.match(wellnessHtml, /href="\.\.\/"/);
+  assert.match(wellnessHtml, /class="skip-link"/);
+  assert.doesNotMatch(wellnessHtml, /one content system|separate browsing journey|weakens the direct Titanium connection/i);
+});
+
+test("wellness recommendation is responsive, print-ready and motion-safe", () => {
+  const wellnessStyles = read(`${wellnessRoute}/styles.css`);
+  assert.match(wellnessStyles, /:focus-visible/);
+  assert.match(wellnessStyles, /@media \(max-width: 900px\)/);
+  assert.match(wellnessStyles, /@media \(max-width: 620px\)/);
+  assert.match(wellnessStyles, /@media \(prefers-reduced-motion: reduce\)/);
+  assert.match(wellnessStyles, /@media print/);
+  assert.doesNotMatch(wellnessStyles, /overflow-x:\s*hidden/);
 });
