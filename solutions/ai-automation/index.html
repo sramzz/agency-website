@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260918-ai-automation" />
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260918-ai-automation-layout" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -130,13 +130,13 @@
           <div class="automation-workflow-topline"><span>Workflow 01</span><span class="workflow-status">Human-controlled</span></div>
           <div class="automation-workflow-path" aria-hidden="true">
             <div class="workflow-node workflow-node-trigger"><span>01 · Trigger</span><strong>New enquiry</strong><small>Form, inbox or WhatsApp</small></div>
-            <div class="workflow-connector"><span></span></div>
-            <div class="workflow-node"><span>02 · Rules</span><strong>Check the facts</strong><small>Source, service and required details</small></div>
-            <div class="workflow-connector"><span></span></div>
+            <div class="workflow-connector workflow-connector-to-rules"><span></span></div>
+            <div class="workflow-node workflow-node-rules"><span>02 · Rules</span><strong>Check the facts</strong><small>Source, service and required details</small></div>
+            <div class="workflow-connector workflow-connector-to-ai"><span></span></div>
             <div class="workflow-node workflow-node-ai"><span>03 · AI assist</span><strong>Read the context</strong><small>Classify and prepare a useful draft</small></div>
-            <div class="workflow-connector workflow-connector-human"><span></span></div>
+            <div class="workflow-connector workflow-connector-to-human workflow-connector-human"><span></span></div>
             <div class="workflow-node workflow-node-human"><span>04 · Approval</span><strong>Person checks</strong><small>Exceptions and important decisions</small></div>
-            <div class="workflow-connector"><span></span></div>
+            <div class="workflow-connector workflow-connector-to-action"><span></span></div>
             <div class="workflow-node workflow-node-action"><span>05 · Action</span><strong>Next step moves</strong><small>Reply, booking or structured handover</small></div>
           </div>
           <figcaption id="workflow-caption">A sample enquiry workflow. Predictable steps move automatically, while judgement stays with your team.</figcaption>

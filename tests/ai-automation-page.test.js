@@ -114,3 +114,23 @@ test("AI automation visual behavior is page-scoped and motion-safe", () => {
   assert.match(styles, /\.ai-automation-page \.button:active\s*\{[^}]*transform:\s*scale\(0\.97\)/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.ai-automation-page/);
 });
+
+test("workflow nodes and animated connectors have explicit non-overlapping tracks", () => {
+  const html = readPage();
+  const styles = fs.readFileSync(path.join(root, "assets", "css", "styles.css"), "utf8");
+
+  for (const className of [
+    "workflow-node-rules",
+    "workflow-connector-to-rules",
+    "workflow-connector-to-ai",
+    "workflow-connector-to-human",
+    "workflow-connector-to-action",
+  ]) {
+    assert.match(html, new RegExp(`class="[^"]*${className}`));
+  }
+
+  assert.match(styles, /grid-template-areas:\s*"trigger to-rules rules"/);
+  assert.match(styles, /\.ai-automation-page \.workflow-node-ai\s*\{[^}]*grid-area:\s*assist/);
+  assert.match(styles, /\.ai-automation-page \.workflow-connector\s*\{[^}]*overflow:\s*hidden/);
+  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?grid-template-areas:\s*"\. trigger"/);
+});

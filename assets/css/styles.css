@@ -8373,8 +8373,16 @@ body.service-dialog-open {
 
 .ai-automation-page .automation-workflow-path {
   display: grid;
+  grid-template-areas:
+    "trigger to-rules rules"
+    "to-ai to-ai to-ai"
+    "assist assist assist"
+    "to-human to-human to-human"
+    "approval to-action action";
   grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr);
+  grid-template-rows: auto 34px auto 34px auto;
   gap: 10px;
+  align-items: stretch;
   padding: 22px 0 18px;
 }
 
@@ -8419,15 +8427,24 @@ body.service-dialog-open {
 }
 
 .ai-automation-page .workflow-node-trigger {
+  grid-area: trigger;
   border-color: rgba(255, 138, 0, 0.32);
 }
 
+.ai-automation-page .workflow-node-rules {
+  grid-area: rules;
+}
+
 .ai-automation-page .workflow-node-ai {
+  grid-area: assist;
+  justify-self: center;
+  width: min(100%, 280px);
   border-color: rgba(255, 138, 0, 0.42);
   background: rgba(255, 138, 0, 0.06);
 }
 
 .ai-automation-page .workflow-node-human {
+  grid-area: approval;
   border-color: rgba(255, 48, 79, 0.72);
   background: rgba(255, 48, 79, 0.09);
 }
@@ -8437,13 +8454,30 @@ body.service-dialog-open {
 }
 
 .ai-automation-page .workflow-node-action {
-  grid-column: 3;
+  grid-area: action;
   border-color: rgba(248, 250, 252, 0.24);
 }
 
 .ai-automation-page .workflow-connector {
   position: relative;
+  overflow: hidden;
   min-height: 114px;
+}
+
+.ai-automation-page .workflow-connector-to-rules {
+  grid-area: to-rules;
+}
+
+.ai-automation-page .workflow-connector-to-ai {
+  grid-area: to-ai;
+}
+
+.ai-automation-page .workflow-connector-to-human {
+  grid-area: to-human;
+}
+
+.ai-automation-page .workflow-connector-to-action {
+  grid-area: to-action;
 }
 
 .ai-automation-page .workflow-connector::before {
@@ -8482,6 +8516,37 @@ body.service-dialog-open {
 
 .ai-automation-page .workflow-connector-human span {
   animation-delay: 700ms;
+}
+
+.ai-automation-page .workflow-connector-to-ai,
+.ai-automation-page .workflow-connector-to-human {
+  min-height: 34px;
+}
+
+.ai-automation-page .workflow-connector-to-ai::before,
+.ai-automation-page .workflow-connector-to-human::before {
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: auto;
+}
+
+.ai-automation-page .workflow-connector-to-ai::after,
+.ai-automation-page .workflow-connector-to-human::after {
+  top: auto;
+  right: auto;
+  bottom: 2px;
+  left: calc(50% - 3px);
+  transform: rotate(135deg);
+}
+
+.ai-automation-page .workflow-connector-to-ai span,
+.ai-automation-page .workflow-connector-to-human span {
+  top: 0;
+  left: calc(50% - 3px);
+  animation-name: automation-handoff-mobile;
 }
 
 @keyframes automation-handoff {
@@ -8949,18 +9014,30 @@ body.service-dialog-open {
   }
 
   .ai-automation-page .automation-workflow-path {
+    grid-template-areas:
+      ". trigger"
+      "to-rules ."
+      ". rules"
+      "to-ai ."
+      ". assist"
+      "to-human ."
+      ". approval"
+      "to-action ."
+      ". action";
     grid-template-columns: 28px minmax(0, 1fr);
+    grid-template-rows: auto 28px auto 28px auto 28px auto 28px auto;
     gap: 8px 10px;
   }
 
-  .ai-automation-page .workflow-node,
-  .ai-automation-page .workflow-node-action {
-    grid-column: 2;
+  .ai-automation-page .workflow-node {
     min-height: 98px;
   }
 
+  .ai-automation-page .workflow-node-ai {
+    width: 100%;
+  }
+
   .ai-automation-page .workflow-connector {
-    grid-column: 1;
     min-height: 28px;
   }
 
