@@ -43,7 +43,7 @@ test("public source files are valid UTF-8", () => {
 });
 
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-  if ([".git", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
+  if ([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
   const absolute = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(absolute) : [absolute];
 });
@@ -201,8 +201,9 @@ test("the Australia platform ribbon is seamless, accessible and motion-safe", ()
   const ribbon = australia.match(/<aside class="platform-ribbon"[\s\S]*?<\/aside>/)?.[0] || "";
 
   assert.match(australia, /<\/section>\s*<aside class="platform-ribbon"[\s\S]*?<\/aside>\s*<section class="section service-selector-section"/);
-  assert.match(ribbon, /id="platform-ribbon-title">Channel &amp; platform coverage/);
-  assert.match(ribbon, /<button class="platform-ribbon-toggle"[^>]*hidden>Pause animation<\/button>/);
+  assert.match(ribbon, /aria-label="Channel and platform coverage"/);
+  assert.doesNotMatch(ribbon, /platform-ribbon-heading|platform-ribbon-title|Channel &amp; platform coverage/);
+  assert.doesNotMatch(ribbon, /platform-ribbon-toggle|Pause animation|Resume animation/);
   assert.equal((ribbon.match(/<li>/g) || []).length, 10);
   for (const platform of ["Google", "Bing", "Google Maps", "Bing Maps", "Apple Maps", "ChatGPT", "Perplexity", "Copilot", "Instagram", "TikTok"]) {
     assert.match(ribbon, new RegExp(`<span>${platform.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}<\\/span>`));
@@ -212,7 +213,7 @@ test("the Australia platform ribbon is seamless, accessible and motion-safe", ()
   assert.match(script, /setAttribute\('aria-hidden', 'true'\)/);
   assert.match(script, /setAttribute\('inert', ''\)/);
   assert.match(script, /matchMedia\('\(prefers-reduced-motion: reduce\)'\)/);
-  assert.match(script, /paused \? 'Resume animation' : 'Pause animation'/);
+  assert.doesNotMatch(script, /platform-ribbon-toggle|Pause animation|Resume animation|is-paused/);
   assert.match(styles, /animation:\s*platform-ribbon-scroll 40s linear infinite/);
   assert.match(styles, /@keyframes platform-ribbon-scroll\s*\{[\s\S]*?translateX\(-50%\)/);
   assert.match(styles, /@media \(hover: hover\) and \(pointer: fine\)[\s\S]*?animation-play-state:\s*paused/);

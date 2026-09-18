@@ -9,7 +9,7 @@ const { calculateReadingProgress } = require(path.join(root, "assets/js/scroll-p
 
 const htmlFiles = (directory = root) =>
   fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-    if ([".git", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
+    if ([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
     const absolutePath = path.join(directory, entry.name);
     if (entry.isDirectory()) return htmlFiles(absolutePath);
     return entry.name === "index.html" ? [absolutePath] : [];

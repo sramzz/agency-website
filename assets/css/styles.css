@@ -8128,42 +8128,15 @@ body.service-dialog-open {
 /* A single platform row, static until its motion controls are ready. */
 :is(.australia-page, .market-landing-page) .platform-ribbon {
   min-width: 0;
-  padding: 18px 0 22px;
+  padding: 10px 0 12px;
   border-block: 1px solid var(--border);
   background: #08080b;
 }
-:is(.australia-page, .market-landing-page) .platform-ribbon-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  padding-inline: clamp(20px, 8.33vw, 120px);
-  margin-bottom: 12px;
-}
-:is(.australia-page, .market-landing-page) .platform-ribbon-heading p {
-  margin: 0;
-  color: var(--secondary);
-  font: 500 0.68rem/1.5 "JetBrains Mono", monospace;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-:is(.australia-page, .market-landing-page) .platform-ribbon-toggle {
-  min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--neutral);
-  font: 500 0.75rem/1.3 Inter, sans-serif;
-  cursor: pointer;
-}
-:is(.australia-page, .market-landing-page) .platform-ribbon-toggle[hidden] { display: none; }
 :is(.australia-page, .market-landing-page) .platform-ribbon-viewport {
   overflow-x: auto;
   scrollbar-width: thin;
 }
-:is(.australia-page, .market-landing-page) .platform-ribbon-viewport:focus-visible,
-:is(.australia-page, .market-landing-page) .platform-ribbon-toggle:focus-visible {
+:is(.australia-page, .market-landing-page) .platform-ribbon-viewport:focus-visible {
   outline: 2px solid var(--tertiary);
   outline-offset: -2px;
 }
@@ -8201,7 +8174,6 @@ body.service-dialog-open {
   animation: platform-ribbon-scroll 40s linear infinite;
 }
 :is(.australia-page, .market-landing-page) .platform-ribbon.is-moving .platform-ribbon-viewport { overflow-x: hidden; }
-:is(.australia-page, .market-landing-page) .platform-ribbon.is-paused .platform-ribbon-track,
 :is(.australia-page, .market-landing-page) .platform-ribbon:has(.platform-ribbon-viewport:focus-visible) .platform-ribbon-track { animation-play-state: paused; }
 @keyframes platform-ribbon-scroll {
   to { transform: translateX(-50%); }
@@ -8210,7 +8182,6 @@ body.service-dialog-open {
   :is(.australia-page, .market-landing-page) .platform-ribbon:hover .platform-ribbon-track { animation-play-state: paused; }
 }
 @media (max-width: 700px) {
-  :is(.australia-page, .market-landing-page) .platform-ribbon-heading { padding-inline: 20px; }
   :is(.australia-page, .market-landing-page) .platform-ribbon-group { gap: 32px; padding-inline: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
