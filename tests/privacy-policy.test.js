@@ -27,7 +27,7 @@ const publicRoutes = [
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
 const publicFiles = publicRoutes.map(routeFile);
-const ignoredDirectories = new Set([".git", "node_modules", ".wrangler", "coverage", "dist", "build"]);
+const ignoredDirectories = new Set([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"]);
 
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
   if (ignoredDirectories.has(entry.name) || entry.name === "proposals") return [];

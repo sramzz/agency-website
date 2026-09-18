@@ -43,7 +43,7 @@ test("public source files are valid UTF-8", () => {
 });
 
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-  if ([".git", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
+  if ([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
   const absolute = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(absolute) : [absolute];
 });
