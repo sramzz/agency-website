@@ -8661,8 +8661,7 @@ body.service-dialog-open {
 }
 
 .ai-automation-page .automation-problem-copy,
-.ai-automation-page .automation-control-copy,
-.ai-automation-page .automation-contact {
+.ai-automation-page .automation-control-copy {
   display: grid;
   justify-items: start;
   gap: 20px;
@@ -8842,7 +8841,7 @@ body.service-dialog-open {
   position: absolute;
   top: 34px;
   bottom: 34px;
-  left: 25px;
+  left: 29.5px;
   width: 1px;
   background: linear-gradient(var(--accent), var(--tertiary));
 }
@@ -8940,22 +8939,11 @@ body.service-dialog-open {
   padding: 0 56px 22px 22px;
 }
 
-.ai-automation-page .automation-contact {
-  justify-items: center;
-  min-height: 460px;
-  align-content: center;
-  text-align: center;
-  background:
-    radial-gradient(circle at 50% 110%, rgba(255, 48, 79, 0.2), transparent 44%),
-    var(--primary) !important;
-}
-
-.ai-automation-page .automation-contact h2 {
-  max-width: 850px;
-}
-
-.ai-automation-page .automation-contact > p:not(.eyebrow, .automation-cta-cue) {
-  max-width: 660px;
+.ai-automation-page .automation-contact.next-case-banner {
+  align-content: normal;
+  justify-items: stretch;
+  min-height: 0;
+  text-align: left;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -9124,7 +9112,7 @@ body.service-dialog-open {
   }
 
   .ai-automation-page .automation-control-rail::before {
-    left: 20px;
+    left: 24.5px;
   }
 
   .ai-automation-page .automation-control-rail > div::before {

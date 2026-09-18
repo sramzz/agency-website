@@ -134,3 +134,14 @@ test("workflow nodes and animated connectors have explicit non-overlapping track
   assert.match(styles, /\.ai-automation-page \.workflow-connector\s*\{[^}]*overflow:\s*hidden/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?grid-template-areas:\s*"\. trigger"/);
 });
+
+test("human handoff rail is centered and final CTA reuses the case-study component", () => {
+  const html = readPage();
+  const styles = fs.readFileSync(path.join(root, "assets", "css", "styles.css"), "utf8");
+
+  assert.doesNotMatch(html, /Bring us the task that keeps stealing time or losing momentum/);
+  assert.match(html, /id="automation-contact" class="section banner next-case-banner automation-contact"/);
+  assert.match(html, /data-next-case-card/);
+  assert.match(html, /src="\/assets\/js\/next-case-card\.js/);
+  assert.match(styles, /\.ai-automation-page \.automation-control-rail::before\s*\{[^}]*left:\s*29(?:\.5)?px/);
+});
