@@ -39,9 +39,11 @@ test("organic discovery uses the shared animated platform ribbon", () => {
   assert.match(html, /src="\/assets\/js\/platform-ribbon\.js/);
   assert.equal((html.match(/class="platform-ribbon-group"/g) || []).length, 1);
 
-  for (const platform of ["Google", "Bing", "Google Maps", "Bing Maps", "Apple Maps", "ChatGPT", "Perplexity", "Copilot"]) {
+  for (const platform of ["Google", "Bing", "Google Maps", "Apple Maps", "ChatGPT", "Perplexity", "Copilot"]) {
     assert.match(html, new RegExp(`<span>${platform}<\\/span>`));
   }
+
+  assert.doesNotMatch(html, /<span>Bing Maps<\/span>/);
 
   assert.match(styles, /:is\([^)]*\.organic-discovery-page[^)]*\) \.platform-ribbon\.is-moving \.platform-ribbon-track/);
   assert.match(styles, /\.platform-ribbon:hover \.platform-ribbon-track \{ animation-play-state: paused; \}/);
