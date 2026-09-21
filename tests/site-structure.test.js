@@ -329,7 +329,7 @@ test("market landing pages share the ribbon fallback and scoped responsive style
     read("assets/images/locations/latam/earth-america-svgrepo-com.svg"),
   ];
   assert.match(ribbon, /document\.querySelector\('\.platform-ribbon'\)/);
-  assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.platform-ribbon/);
+  assert.match(styles, /:is\(\.australia-page, \.market-landing-page(?:, \.organic-discovery-page)?\) \.platform-ribbon/);
   assert.match(styles, /:is\(\.australia-page, \.market-landing-page\) \.solution-picker-image/);
   assert.match(styles, /\.market-landing-page \.market-hero/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.coverage-map \.market-tooltip/);
