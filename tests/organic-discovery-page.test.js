@@ -32,6 +32,9 @@ test("organic discovery page follows the intent-to-outcome narrative", () => {
   }
 
   assert.equal((html.match(/data-media-slot=/g) || []).length, 2);
+  assert.doesNotMatch(html, /future filmed sequence or product animation/i);
+  assert.match(html, /class="od-discovery-map"[^>]+aria-label="Customer journey from intent to outcome"/);
+  assert.match(styles, /\.organic-discovery-page \.od-discovery-map\s*\{[\s\S]*?min-height: 340px;/);
 });
 
 test("organic discovery uses the shared animated platform ribbon", () => {
@@ -60,20 +63,18 @@ test("organic discovery contact actions use consistent decorative icons", () => 
   }
 });
 
-test("organic discovery final CTA keeps the red brand palette", () => {
-  assert.match(styles, /\.editorial-site\.organic-discovery-page main > \.od-final-cta\s*\{[\s\S]*?background-color: var\(--tertiary\);/);
-  assert.match(styles, /\.organic-discovery-page \.od-final-cta h2,[\s\S]*?color: #050609;/);
-  assert.match(html, /class="next-case-card od-discovery-card"[^>]+aria-label="Audit my search visibility"/);
-  assert.match(html, /<span class="next-case-label"[^>]*>NEXT DISCOVERY<\/span>/);
-  assert.doesNotMatch(html, /<span class="next-case-label"[^>]*data-next-case-protected/);
-  assert.match(html, /<span class="od-card-action"[^>]*>Audit my search visibility/);
-  assert.doesNotMatch(html, /od-card-action-badge/);
-  assert.doesNotMatch(html, /class="od-card-action"[^<]*[\s\S]{0,120}↗/);
+test("organic discovery final CTA uses the shared card on the dark-red brand field", () => {
+  assert.match(styles, /\.editorial-site\.organic-discovery-page main > \.od-final-cta\s*\{[\s\S]*?background-color: var\(--surface\);/);
+  assert.match(styles, /\.editorial-site\.organic-discovery-page main > \.od-final-cta\s*\{[\s\S]*?border-color: var\(--border\);/);
+  assert.match(styles, /\.organic-discovery-page \.od-final-cta h2,[\s\S]*?color: var\(--neutral\);/);
+  assert.match(styles, /\.organic-discovery-page \.od-final-cta \.eyebrow\s*\{[\s\S]*?color: var\(--highlight\);/);
+  assert.match(html, /class="next-case-card"[^>]+aria-label="Start a conversation about your business"/);
+  assert.match(html, /<span class="next-case-label" data-next-case-protected>NEXT CHAPTER<\/span>/);
+  assert.match(html, /src="\/assets\/images\/case-studies\/store-lucide\.svg"/);
+  assert.match(html, /<span class="next-case-subtitle" data-next-case-protected>The next case starts here\.<\/span>/);
+  assert.doesNotMatch(html, /od-discovery-card|od-card-action|od-card-note|search-visibility\.svg/);
   assert.match(html, /src="\/assets\/js\/next-case-card\.js/);
   assert.doesNotMatch(html, /class="od-final-action"/);
-  assert.match(styles, /\.organic-discovery-page \.od-discovery-card\s*\{[\s\S]*?background: #050609;/);
-  assert.match(styles, /\.organic-discovery-page \.od-card-action\s*\{[\s\S]*?color: #f8fafc;/);
-  assert.match(styles, /\.organic-discovery-page \.od-card-action\s*\{[\s\S]*?justify-content: center;[\s\S]*?text-align: center;/);
 });
 
 test("organic discovery proof section keeps its high-contrast editorial palette", () => {
