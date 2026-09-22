@@ -9136,6 +9136,370 @@ body.service-dialog-open {
   }
 }
 
+/* Paid Ads landing page */
+.paid-ads-page {
+  --pa-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.paid-ads-page main > section[id] { scroll-margin-top: 76px; }
+
+.paid-ads-page .pa-hero {
+  grid-template-columns: minmax(0, 0.94fr) minmax(500px, 1.06fr);
+  gap: clamp(48px, 7vw, 108px);
+  min-height: min(880px, calc(100vh - 72px));
+  padding-block: clamp(78px, 7vw, 110px);
+  background:
+    radial-gradient(circle at 82% 24%, rgba(255, 48, 79, 0.14), transparent 34%),
+    linear-gradient(118deg, var(--surface) 0%, var(--primary) 70%);
+}
+
+.paid-ads-page .pa-hero .hero-copy { max-width: 720px; }
+.paid-ads-page .pa-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3.9rem, 5.6vw, 5.9rem);
+  line-height: 0.88;
+  text-wrap: balance;
+}
+
+.paid-ads-page .pa-hero .hero-lede { max-width: 680px; }
+.paid-ads-page .pa-hero .button { min-height: 52px; }
+
+.paid-ads-page .pa-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  color: var(--neutral);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 180ms ease, transform 180ms var(--pa-ease);
+}
+
+.paid-ads-page .pa-text-link span { color: var(--tertiary); font-size: 1rem; }
+.paid-ads-page .pa-cta-note {
+  margin-top: 18px;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.paid-ads-page .pa-control-board {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(24px, 4vw, 42px);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    radial-gradient(circle at 78% 20%, rgba(255, 48, 79, 0.13), transparent 34%),
+    var(--surface);
+  background-size: 42px 42px, 42px 42px, auto, auto;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+}
+
+.paid-ads-page .pa-control-board::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(110deg, transparent 35%, rgba(255, 48, 79, 0.07) 50%, transparent 65%);
+  transform: translateX(-100%);
+  animation: pa-board-scan 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.paid-ads-page .pa-board-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: var(--secondary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.paid-ads-page .pa-live-status { display: inline-flex; align-items: center; gap: 8px; color: #4ade80; }
+.paid-ads-page .pa-live-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 12px currentColor;
+  animation: pa-live-pulse 1.8s ease-in-out infinite;
+}
+
+.paid-ads-page .pa-platform-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.paid-ads-page .pa-platform-grid > span {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 18px 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(5, 6, 9, 0.72);
+  color: var(--neutral);
+  font-size: 0.76rem;
+  font-weight: 700;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms var(--pa-ease);
+}
+
+.paid-ads-page .pa-platform-grid img { width: 28px; height: 28px; object-fit: contain; }
+.paid-ads-page .pa-platform-grid .pa-invert-logo { filter: invert(1); }
+
+.paid-ads-page .pa-control-core {
+  display: grid;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid rgba(255, 48, 79, 0.36);
+  border-radius: 18px;
+  background: rgba(26, 10, 18, 0.88);
+  text-align: center;
+}
+
+.paid-ads-page .pa-control-core span {
+  color: var(--tertiary);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.paid-ads-page .pa-control-core strong {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.22rem, 2.1vw, 1.9rem);
+  line-height: 1;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.paid-ads-page .pa-control-core p { color: var(--secondary); font-size: 0.88rem; }
+.paid-ads-page .pa-board-meter { height: 3px; overflow: hidden; border-radius: 999px; background: var(--border); }
+.paid-ads-page .pa-board-meter span { display: block; width: 36%; height: 100%; background: var(--tertiary); animation: pa-meter 4.2s var(--pa-ease) infinite; }
+
+.editorial-site.paid-ads-page main > .pa-results {
+  background-color: #f2f1ec;
+  color: #0a0b0e;
+}
+
+.paid-ads-page .pa-results-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+  gap: clamp(40px, 8vw, 120px);
+  align-items: end;
+  margin-bottom: clamp(44px, 7vw, 84px);
+}
+
+.paid-ads-page .pa-results-heading h2 {
+  max-width: 760px;
+  margin-top: 16px;
+  font-size: clamp(3.4rem, 7vw, 7.4rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.paid-ads-page .pa-results-heading > p { max-width: 50ch; color: #4d5562; }
+
+.paid-ads-page .pa-results-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.paid-ads-page .pa-result-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  min-height: 450px;
+  padding: clamp(28px, 4vw, 48px);
+  overflow: hidden;
+  border: 1px solid #cfd1d3;
+  border-radius: 24px;
+  background: #fff;
+  color: #0a0b0e;
+  transition: transform 220ms var(--pa-ease), box-shadow 220ms ease;
+}
+.paid-ads-page .pa-result-card::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 48, 79, 0.1);
+}
+.paid-ads-page .pa-result-client { grid-column: 1 / -1; align-self: start; color: #5c6470; font-family: "JetBrains Mono", monospace; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.paid-ads-page .pa-result-card > strong { align-self: end; font-family: "Oswald", sans-serif; font-size: clamp(5rem, 10vw, 9rem); line-height: 0.78; letter-spacing: -0.045em; }
+.paid-ads-page .pa-result-primary { align-self: end; padding-bottom: 8px; color: var(--tertiary); font-family: "JetBrains Mono", monospace; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.paid-ads-page .pa-result-card dl { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin-top: 30px; border-top: 1px solid #d8d9dc; border-bottom: 1px solid #d8d9dc; }
+.paid-ads-page .pa-result-card dl div { padding: 18px 0; }
+.paid-ads-page .pa-result-card dl div + div { padding-left: 20px; border-left: 1px solid #d8d9dc; }
+.paid-ads-page .pa-result-card dt { font-family: "Oswald", sans-serif; font-size: 1.7rem; font-weight: 700; }
+.paid-ads-page .pa-result-card dd { margin: 2px 0 0; color: #5c6470; font-size: 0.76rem; text-transform: uppercase; }
+.paid-ads-page .pa-result-link { grid-column: 1 / -1; margin-top: 24px; font-family: "JetBrains Mono", monospace; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
+.paid-ads-page .pa-result-link span { color: var(--tertiary); }
+.paid-ads-page .pa-proof-note { max-width: 100ch; margin: 28px 0 0; color: #656b74; font-family: "JetBrains Mono", monospace; font-size: 0.61rem; line-height: 1.65; text-transform: uppercase; }
+
+.paid-ads-page .pa-process {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(48px, 9vw, 136px);
+  background: var(--primary);
+}
+.paid-ads-page .pa-process .section-heading { position: sticky; top: 110px; align-self: start; }
+.paid-ads-page .pa-process .section-heading h2,
+.paid-ads-page .pa-capabilities h2,
+.paid-ads-page .pa-pricing h2,
+.paid-ads-page .pa-faq h2,
+.paid-ads-page .pa-final-cta h2 { font-family: "Oswald", sans-serif; text-transform: uppercase; }
+.paid-ads-page .pa-process .section-heading h2 { max-width: 560px; font-size: clamp(3.8rem, 7vw, 7rem); line-height: 0.9; }
+
+.paid-ads-page .pa-process-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--border); }
+.paid-ads-page .pa-process-list li { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 20px; padding: 30px 0; border-bottom: 1px solid var(--border); }
+.paid-ads-page .pa-process-list li > span { color: var(--tertiary); font-family: "JetBrains Mono", monospace; font-size: 0.7rem; font-weight: 700; }
+.paid-ads-page .pa-process-list h3 { margin-bottom: 10px; font-family: "Oswald", sans-serif; font-size: clamp(1.8rem, 3.2vw, 3rem); line-height: 1; text-transform: uppercase; }
+.paid-ads-page .pa-process-list p { max-width: 58ch; color: var(--secondary); }
+
+.editorial-site.paid-ads-page main > .pa-capabilities { background: var(--surface); }
+.paid-ads-page .pa-capabilities-intro { display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 18px clamp(40px, 8vw, 120px); margin-bottom: clamp(46px, 7vw, 84px); }
+.paid-ads-page .pa-capabilities-intro .eyebrow { grid-column: 1 / -1; }
+.paid-ads-page .pa-capabilities h2 { max-width: 660px; font-size: clamp(3.5rem, 6.5vw, 6.6rem); line-height: 0.91; }
+.paid-ads-page .pa-capabilities-intro > p:last-child { max-width: 58ch; padding-top: 8px; color: var(--secondary); }
+.paid-ads-page .pa-capability-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+.paid-ads-page .pa-capability-grid article { min-height: 270px; padding: clamp(24px, 3.5vw, 42px); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); background: rgba(5, 6, 9, 0.24); }
+.paid-ads-page .pa-capability-grid article > span { color: var(--tertiary); font-family: "JetBrains Mono", monospace; font-size: 0.66rem; font-weight: 700; }
+.paid-ads-page .pa-capability-grid h3 { max-width: 14ch; margin: 42px 0 14px; font-family: "Oswald", sans-serif; font-size: clamp(1.55rem, 2.5vw, 2.35rem); line-height: 1.06; text-transform: uppercase; }
+.paid-ads-page .pa-capability-grid p { color: var(--secondary); font-size: 0.9rem; }
+
+.editorial-site.paid-ads-page main > .pa-pricing { background: var(--primary); }
+.paid-ads-page .pa-pricing .section-heading { margin-bottom: clamp(42px, 6vw, 72px); }
+.paid-ads-page .pa-pricing h2 { max-width: 880px; font-size: clamp(3.6rem, 7vw, 7rem); line-height: 0.9; }
+.paid-ads-page .pa-pricing-grid .price-card { display: flex; flex-direction: column; min-height: 590px; }
+.paid-ads-page .pa-pricing-grid .feature-list { flex: 1; }
+
+.editorial-site.paid-ads-page main > .pa-faq { background: var(--primary); }
+.paid-ads-page .pa-faq { display: grid; grid-template-columns: minmax(300px, 0.75fr) minmax(0, 1.25fr); gap: clamp(48px, 9vw, 136px); }
+.paid-ads-page .pa-faq h2 { max-width: 570px; font-size: clamp(3.8rem, 7vw, 7rem); line-height: 0.9; }
+.paid-ads-page .pa-faq .faq-list { border-top: 1px solid var(--border); }
+.paid-ads-page .pa-faq .faq-list details { border-bottom: 1px solid var(--border); }
+.paid-ads-page .pa-faq .faq-list summary { min-height: 76px; padding: 22px 44px 22px 0; }
+.paid-ads-page .pa-faq .faq-list p { max-width: 72ch; padding: 0 42px 24px 0; }
+
+.editorial-site.paid-ads-page main > .pa-final-cta {
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.65fr);
+  gap: clamp(48px, 9vw, 130px);
+  background: var(--surface);
+  border-color: var(--border);
+}
+.paid-ads-page .pa-final-cta h2 { max-width: 820px; margin-top: 18px; font-size: clamp(3.2rem, 6.3vw, 6.4rem); line-height: 0.91; }
+.paid-ads-page .pa-final-cta .eyebrow { color: var(--highlight); }
+
+.paid-ads-page .pa-mobile-cta { display: none; }
+
+@media (hover: hover) and (pointer: fine) {
+  .paid-ads-page .pa-text-link:hover { color: var(--tertiary); transform: translateX(3px); }
+  .paid-ads-page .pa-platform-grid > span:hover { border-color: rgba(255, 48, 79, 0.5); background: rgba(26, 10, 18, 0.9); transform: translateY(-2px); }
+  .paid-ads-page .pa-result-card:hover { transform: translateY(-5px); box-shadow: 0 22px 50px rgba(5, 6, 9, 0.12); }
+}
+
+@media (max-width: 1050px) {
+  .paid-ads-page .pa-hero { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+  .paid-ads-page .pa-control-board { width: min(100%, 760px); justify-self: center; }
+  .paid-ads-page .pa-process,
+  .paid-ads-page .pa-faq { grid-template-columns: minmax(0, 1fr); }
+  .paid-ads-page .pa-process .section-heading { position: static; }
+  .paid-ads-page .pa-capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .editorial-site.paid-ads-page main > .pa-final-cta { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .paid-ads-page .pa-hero h1 { font-size: clamp(3.1rem, 15vw, 4.7rem); }
+  .paid-ads-page .pa-control-board { gap: 14px; padding: 18px; border-radius: 20px; }
+  .paid-ads-page .pa-board-topline { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .paid-ads-page .pa-platform-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .paid-ads-page .pa-platform-grid > span { grid-template-columns: 28px minmax(0, 1fr); align-items: center; justify-items: start; padding: 13px; }
+  .paid-ads-page .pa-control-core { padding: 20px 14px; }
+  .paid-ads-page .pa-results-heading,
+  .paid-ads-page .pa-results-grid,
+  .paid-ads-page .pa-capabilities-intro { grid-template-columns: minmax(0, 1fr); }
+  .paid-ads-page .pa-results-heading h2 { font-size: clamp(3rem, 15vw, 4.7rem); }
+  .paid-ads-page .pa-result-card { min-height: 390px; padding: 26px 22px; }
+  .paid-ads-page .pa-result-card > strong { font-size: clamp(4.6rem, 25vw, 7.5rem); }
+  .paid-ads-page .pa-process .section-heading h2,
+  .paid-ads-page .pa-capabilities h2,
+  .paid-ads-page .pa-pricing h2,
+  .paid-ads-page .pa-faq h2,
+  .paid-ads-page .pa-final-cta h2 { font-size: clamp(3rem, 14vw, 4.6rem); }
+  .paid-ads-page .pa-capability-grid { grid-template-columns: minmax(0, 1fr); }
+  .paid-ads-page .pa-capability-grid article { min-height: 230px; }
+  .paid-ads-page .pa-pricing-grid .price-card { min-height: 0; }
+  .paid-ads-page .pa-mobile-cta.is-visible {
+    position: fixed;
+    right: 14px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    left: 14px;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    background: var(--tertiary);
+    color: var(--primary);
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.5);
+    font-weight: 850;
+    animation: pa-mobile-cta-in 260ms var(--pa-ease) both;
+  }
+}
+
+@keyframes pa-board-scan {
+  0%, 20% { transform: translateX(-100%); opacity: 0; }
+  35%, 62% { opacity: 1; }
+  78%, 100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes pa-live-pulse {
+  0%, 100% { opacity: 0.45; transform: scale(0.82); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pa-meter {
+  0% { transform: translateX(-120%); }
+  70%, 100% { transform: translateX(330%); }
+}
+
+@keyframes pa-mobile-cta-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paid-ads-page .pa-control-board::after,
+  .paid-ads-page .pa-live-status::before,
+  .paid-ads-page .pa-board-meter span,
+  .paid-ads-page .pa-mobile-cta.is-visible { animation: none; }
+  .paid-ads-page .pa-text-link,
+  .paid-ads-page .pa-platform-grid > span,
+  .paid-ads-page .pa-result-card { transition-duration: 0.01ms; }
+}
+
 /* Organic Discovery — intent-to-customer editorial system */
 .organic-discovery-page {
   --od-panel: #0d1016;
