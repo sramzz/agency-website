@@ -65,6 +65,7 @@ test("organic discovery final CTA keeps the red brand palette", () => {
   assert.match(styles, /\.organic-discovery-page \.od-final-cta h2,[\s\S]*?color: #050609;/);
   assert.match(html, /class="next-case-card od-discovery-card"[^>]+aria-label="Audit my search visibility"/);
   assert.match(html, /<span class="next-case-label"[^>]*>NEXT DISCOVERY<\/span>/);
+  assert.doesNotMatch(html, /<span class="next-case-label"[^>]*data-next-case-protected/);
   assert.match(html, /<span class="od-card-action"[^>]*>Audit my search visibility/);
   assert.doesNotMatch(html, /od-card-action-badge/);
   assert.doesNotMatch(html, /class="od-card-action"[^<]*[\s\S]{0,120}↗/);

@@ -106,3 +106,28 @@ test('card is one named button, with no nested controls or duplicate lead captur
   assert.equal(html.includes('next-case-pause'), false);
   assert.ok(html.includes('<a class="button button-primary" href="https://wa.me/61439499441" data-lead-capture target="_blank" rel="noreferrer">Start the conversation</a>'));
 });
+
+test('particles keep their original timing, fade early and hide unusable paths', () => {
+  assert.match(script, /: bottom\s*\? 3200/);
+  assert.match(script, /: corner\s*\? 4200/);
+  assert.match(script, /: 6000/);
+  assert.match(script, /element\.hidden = length < 24/);
+  assert.match(script, /const fadeBeforeContent = phase < 0\.68/);
+  assert.match(script, /target = \{ x: start\.x \+ inward, y: rect\.height \* 0\.62 \}/);
+});
+
+test('organic discovery adds a small stream behind the discovery label', () => {
+  assert.match(script, /card\.matches\('\.od-discovery-card'\) \? 2 : 0/);
+  assert.match(script, /element\.dataset\.origin = labelStream \? 'label'/);
+  assert.match(script, /x: 9 \+ slot \* 5,[\s\S]*?y: 9 \+ slot \* 5/);
+  assert.match(script, /x: start\.x \+ 84 \+ 12 \* slot,[\s\S]*?y: start\.y \+ 72 \+ 10 \* slot/);
+  assert.match(script, /corner: corner \|\| labelStream/);
+  assert.match(script, /duration: labelStream\s*\? 4200/);
+  assert.match(script, /labelStream \? 0\.37 : 0/);
+});
+
+test('both original upper corners use direct mirrored diagonals', () => {
+  assert.doesNotMatch(script, /waypoints = \[\{ x: 11, y: rect\.height \* 0\.22 \}\]/);
+  assert.match(script, /cornerIndex === 0[\s\S]*?x: start\.x \+ 84 \+ 12 \* cornerPair,[\s\S]*?y: start\.y \+ 72 \+ 10 \* cornerPair/);
+  assert.match(script, /x: start\.x - 84 - 12 \* cornerPair,[\s\S]*?y: start\.y \+ 72 \+ 10 \* cornerPair/);
+});

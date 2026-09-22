@@ -87,40 +87,57 @@
     const edgeCount = mobile.matches ? settings.mobileCount : settings.desktopCount;
     const cornerCount = 8;
     const extraBottomCount = 2;
-    const count = edgeCount + cornerCount + extraBottomCount;
+    const labelStreamCount = card.matches('.od-discovery-card') ? 2 : 0;
+    const labelStreamStart = edgeCount + cornerCount + extraBottomCount;
+    const count = labelStreamStart + labelStreamCount;
 
     layer.replaceChildren();
     particles = Array.from({ length: count }, (_, index) => {
       const corner = index >= edgeCount && index < edgeCount + cornerCount;
-      const extraBottom = index >= edgeCount + cornerCount;
+      const extraBottom = index >= edgeCount + cornerCount && index < labelStreamStart;
+      const labelStream = index >= labelStreamStart;
       const side = index % 4;
       const group = Math.floor(index / 4);
       const fraction = [0.22, 0.40, 0.65, 0.84][group];
-      const bottom = extraBottom || (!corner && side === 2);
+      const bottom = extraBottom || (!labelStream && !corner && side === 2);
       const inset = bottom ? 4 : 8 + ((index * 7) % 5);
       const topFraction = mobile.matches ? [0.70, 0.86][group] : [0.50, 0.63, 0.76, 0.88][group];
       let start;
 
-      if (side === 0) start = { x: rect.width * topFraction, y: inset };
-      if (side === 1) start = { x: rect.width - inset, y: rect.height * fraction };
-      if (side === 2) start = { x: rect.width * [0.14, 0.86, 0.32, 0.68][group], y: rect.height - inset };
-      if (side === 3) start = { x: inset, y: rect.height * fraction };
+      if (!labelStream && side === 0) start = { x: rect.width * topFraction, y: inset };
+      if (!labelStream && side === 1) start = { x: rect.width - inset, y: rect.height * fraction };
+      if (!labelStream && side === 2) start = { x: rect.width * [0.14, 0.86, 0.32, 0.68][group], y: rect.height - inset };
+      if (!labelStream && side === 3) start = { x: inset, y: rect.height * fraction };
       if (extraBottom) {
         const slot = index - edgeCount - cornerCount;
         start = { x: rect.width * [0.27, 0.73][slot], y: rect.height - inset };
       }
+      if (labelStream) {
+        const slot = index - labelStreamStart;
+        start = {
+          x: 9 + slot * 5,
+          y: 9 + slot * 5,
+        };
+      }
 
       let target = { x: rect.width * 0.5, y: rect.height * 0.57 };
       let waypoints = [];
-      if (!corner && !bottom && group === 3 && (side === 1 || side === 3)) {
+      if (labelStream) {
+        const slot = index - labelStreamStart;
+        target = {
+          x: start.x + 84 + 12 * slot,
+          y: start.y + 72 + 10 * slot,
+        };
+      }
+      if (!labelStream && !corner && !bottom && group === 3 && (side === 1 || side === 3)) {
         waypoints = [{ x: start.x, y: rect.height * 0.70 }];
         target = { x: rect.width * 0.5, y: rect.height * 0.62 };
       }
       if (bottom) {
-        const travelRight = start.x < rect.width * 0.5;
-        target = { x: start.x + (travelRight ? 42 : -42), y: start.y - 10 };
+        const inward = start.x < rect.width * 0.5 ? 18 : -18;
+        target = { x: start.x + inward, y: rect.height * 0.62 };
       }
-      if (corner) {
+      if (!labelStream && corner) {
         const cornerPosition = index - edgeCount;
         const cornerIndex = cornerPosition % 4;
         const cornerPair = Math.floor(cornerPosition / 4);
@@ -139,10 +156,9 @@
           };
         } else {
           if (cornerIndex === 0) {
-            waypoints = [{ x: 11, y: rect.height * 0.22 }];
             target = {
-              x: rect.width * (0.32 + 0.04 * cornerPair),
-              y: rect.height * (0.34 + 0.03 * cornerPair),
+              x: start.x + 84 + 12 * cornerPair,
+              y: start.y + 72 + 10 * cornerPair,
             };
           } else {
             target = {
@@ -168,21 +184,25 @@
       }
 
       const element = document.createElement('i');
-      element.dataset.origin = corner ? 'corner' : bottom ? 'bottom' : 'edge';
+      element.dataset.origin = labelStream ? 'label' : corner ? 'corner' : bottom ? 'bottom' : 'edge';
+      element.hidden = length < 24;
       layer.append(element);
       return {
         element,
         start,
         bottom,
-        corner,
+        corner: corner || labelStream,
+        labelStream,
         segments,
         length,
-        duration: bottom
+        duration: labelStream
+          ? 4200 + ((index * 733) % 1401)
+          : bottom
           ? 3200 + ((index * 937) % 1001)
           : corner
             ? 4200 + ((index * 733) % 1401)
             : 6000 + ((index * 937) % 4001),
-        offset: (index * 0.61803398875) % 1,
+        offset: (index * 0.61803398875 + (labelStream ? 0.37 : 0)) % 1,
       };
     });
     render();
@@ -194,7 +214,10 @@
       const pulse = Math.sin(Math.PI * phase);
       const diameter = 1 + (particle.bottom ? 1 : particle.corner ? 1.2 : 2) * pulse;
       const progress = phase;
-      const opacity = (particle.bottom ? 0.24 : particle.corner ? 0.38 : settings.maxOpacity) * Math.pow(pulse, 1.4);
+      const fadeBeforeContent = phase < 0.68 ? 1 : Math.max(0, (0.9 - phase) / 0.22);
+      const opacity = particle.length < 24
+        ? 0
+        : (particle.bottom ? 0.24 : particle.corner ? 0.38 : settings.maxOpacity) * Math.pow(pulse, 1.4) * fadeBeforeContent;
       const distance = progress * particle.length;
       const segment = particle.segments.find(item => distance <= item.offset + item.distance) || particle.segments.at(-1);
       const local = segment ? Math.min(1, (distance - segment.offset) / segment.distance) : 0;
