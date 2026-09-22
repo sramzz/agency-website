@@ -63,7 +63,16 @@ test("organic discovery contact actions use consistent decorative icons", () => 
 test("organic discovery final CTA keeps the red brand palette", () => {
   assert.match(styles, /\.editorial-site\.organic-discovery-page main > \.od-final-cta\s*\{[\s\S]*?background-color: var\(--tertiary\);/);
   assert.match(styles, /\.organic-discovery-page \.od-final-cta h2,[\s\S]*?color: #050609;/);
-  assert.match(styles, /\.organic-discovery-page \.od-final-action \.button-primary\s*\{[\s\S]*?background: #050609;[\s\S]*?color: #fff;/);
+  assert.match(html, /class="next-case-card od-discovery-card"[^>]+aria-label="Audit my search visibility"/);
+  assert.match(html, /<span class="next-case-label"[^>]*>NEXT DISCOVERY<\/span>/);
+  assert.match(html, /<span class="od-card-action"[^>]*>Audit my search visibility/);
+  assert.doesNotMatch(html, /od-card-action-badge/);
+  assert.doesNotMatch(html, /class="od-card-action"[^<]*[\s\S]{0,120}↗/);
+  assert.match(html, /src="\/assets\/js\/next-case-card\.js/);
+  assert.doesNotMatch(html, /class="od-final-action"/);
+  assert.match(styles, /\.organic-discovery-page \.od-discovery-card\s*\{[\s\S]*?background: #050609;/);
+  assert.match(styles, /\.organic-discovery-page \.od-card-action\s*\{[\s\S]*?color: #f8fafc;/);
+  assert.match(styles, /\.organic-discovery-page \.od-card-action\s*\{[\s\S]*?justify-content: center;[\s\S]*?text-align: center;/);
 });
 
 test("organic discovery proof section keeps its high-contrast editorial palette", () => {

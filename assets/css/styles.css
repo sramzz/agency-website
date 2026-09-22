@@ -9913,9 +9913,9 @@ body.service-dialog-open {
 
 .editorial-site.organic-discovery-page main > .od-final-cta {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.55fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.65fr);
   gap: clamp(48px, 9vw, 130px);
-  align-items: end;
+  align-items: center;
   background: var(--tertiary);
   background-color: var(--tertiary);
   border-color: rgba(5, 6, 9, 0.25);
@@ -9938,19 +9938,79 @@ body.service-dialog-open {
   text-transform: uppercase;
 }
 
-.organic-discovery-page .od-final-action {
-  display: grid;
-  gap: 14px;
+.organic-discovery-page .od-discovery-card-shell {
+  width: min(100%, 430px);
+  justify-self: end;
 }
 
-.organic-discovery-page .od-final-action .button-primary {
-  border: 1px solid #050609;
+.organic-discovery-page .od-discovery-card {
+  max-width: 430px;
+  padding: clamp(24px, 2.8vw, 30px);
+  border-color: rgba(5, 6, 9, 0.72);
   background: #050609;
-  color: #fff;
+  box-shadow: 0 22px 54px rgba(5, 6, 9, 0.18);
 }
 
-.organic-discovery-page .od-final-action p {
-  font-size: 0.78rem;
+.organic-discovery-page .od-discovery-card .next-case-center {
+  padding: 18px 0 16px;
+}
+
+.organic-discovery-page .od-discovery-card .next-case-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 14px;
+}
+
+.organic-discovery-page .od-discovery-card .next-case-title {
+  font-size: clamp(2.1rem, 3.6vw, 3rem);
+}
+
+.organic-discovery-page .od-discovery-card .next-case-subtitle {
+  color: #b8c3d2;
+}
+
+.organic-discovery-page .od-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 14px 18px;
+  border-top: 1px solid #343037;
+  border-bottom: 1px solid #343037;
+  color: #f8fafc;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.organic-discovery-page .od-discovery-card .next-case-signature {
+  padding-top: 14px;
+  border-top: 0;
+}
+
+.organic-discovery-page .od-discovery-card .next-case-symbol {
+  width: 52px;
+  height: 52px;
+  flex-basis: 52px;
+}
+
+.organic-discovery-page .od-discovery-card .next-case-you {
+  width: 76px;
+  height: 52px;
+  flex-basis: 76px;
+  font-size: 2.5rem;
+}
+
+.organic-discovery-page .od-card-note {
+  max-width: 42ch;
+  margin-top: 12px;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .organic-discovery-page .od-mobile-cta {
@@ -9958,6 +10018,11 @@ body.service-dialog-open {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .organic-discovery-page .od-discovery-card:hover {
+    border-color: #050609;
+    box-shadow: 0 28px 64px rgba(5, 6, 9, 0.28);
+  }
+
   .organic-discovery-page .od-text-link:hover {
     color: var(--tertiary);
     transform: translateX(3px);
@@ -10036,6 +10101,15 @@ body.service-dialog-open {
 
   .organic-discovery-page .od-method-section > .od-text-link {
     grid-column: 1;
+  }
+
+  .editorial-site.organic-discovery-page main > .od-final-cta {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .organic-discovery-page .od-discovery-card-shell {
+    width: min(100%, 480px);
+    justify-self: center;
   }
 }
 
@@ -10172,10 +10246,6 @@ body.service-dialog-open {
 
   .organic-discovery-page .od-faq-section {
     gap: 34px;
-  }
-
-  .organic-discovery-page .od-final-action .button {
-    width: 100%;
   }
 
   .organic-discovery-page .od-mobile-cta.is-visible {
