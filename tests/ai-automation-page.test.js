@@ -31,7 +31,6 @@ test("AI automation page keeps the method and follows the approved narrative ord
   const html = readPage();
   const sectionIds = [
     "automation-value",
-    "automation-problem",
     "automation-method",
     "automation-examples",
     "automation-control",
@@ -56,7 +55,8 @@ test("AI automation page keeps the method and follows the approved narrative ord
     assert.ok(html.includes(methodStep), `${methodStep} should remain in the method`);
   }
 
-  assert.equal((html.match(/data-media-slot=/g) || []).length, 2);
+  assert.equal((html.match(/data-media-slot=/g) || []).length, 1);
+  assert.doesNotMatch(html, /Adding AI to a leaky process only moves the leak/);
   assert.match(html, /href="\/journey\/"/);
   assert.match(html, /href="\/solutions\/"/);
 });
