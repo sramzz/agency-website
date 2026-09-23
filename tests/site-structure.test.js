@@ -122,14 +122,14 @@ test("the solutions picker is indexable, reachable and fully linked", () => {
   const picker = read("solutions/index.html");
   assert.match(picker, /<p class="eyebrow">Growth solutions<\/p>/);
   assert.match(picker, /<h1>Get found\. Create demand\. Remove the work that slows growth\.<\/h1>/);
-  assert.equal((picker.match(/class="solutions-ledger-row"/g) || []).length, 3);
+  assert.equal((picker.match(/class="solution-picker-card"/g) || []).length, 3);
 
   for (const [route, name] of [
     ["/solutions/organic-discovery/", "Organic Discovery"],
     ["/solutions/paid-ads/", "Paid Ads"],
     ["/solutions/ai-automation/", "AI Automation"],
   ]) {
-    assert.match(picker, new RegExp(`<a[^>]+href="${route.replaceAll("/", "\\/")}"[^>]*>Explore ${name}`));
+    assert.match(picker, new RegExp(`<a class="solution-picker-card" href="${route.replaceAll("/", "\\/")}">[\\s\\S]*?<h3>${name}<\\/h3>`));
   }
 
   const pickerSchema = schemas(picker).find((schema) => schema.mainEntity?.["@type"] === "ItemList");

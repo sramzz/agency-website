@@ -18,7 +18,7 @@ test("solutions page exposes its SEO and conversion contract", () => {
 });
 
 test("solutions page presents three routes in narrative order", () => {
-  const markers = ['id="solutions"', 'class="section solutions-system"', 'class="section solutions-evidence"', 'class="section final-cta solutions-final-cta"'];
+  const markers = ['id="solutions"', 'class="section solutions-system"', 'class="section final-cta solutions-final-cta"'];
   let previousIndex = -1;
   for (const marker of markers) {
     const index = html.indexOf(marker);
@@ -31,33 +31,39 @@ test("solutions page presents three routes in narrative order", () => {
     ["02", "Paid Ads", "/solutions/paid-ads/"],
     ["03", "AI Automation", "/solutions/ai-automation/"],
   ]) {
-    assert.match(html, new RegExp(`${number}[\\s\\S]*?<h3>${name}<\\/h3>[\\s\\S]*?href="${route.replaceAll("/", "\\/")}"`));
+    assert.match(html, new RegExp(`href="${route.replaceAll("/", "\\/")}"[\\s\\S]*?${number}[\\s\\S]*?<h3>${name}<\\/h3>`));
   }
 });
 
-test("solutions page keeps evidence qualified and traceable", () => {
-  for (const metric of ["+113.2%", "24.8k", "56k"]) assert.ok(html.includes(metric));
-  assert.match(html, /Google Business Profile · March–July 2026 compared with the same period in 2025\./);
-  assert.match(html, /Google Ads · February 2025–August 2026\./);
-  assert.match(html, /Figures come from separate client accounts/);
-  assert.match(html, /href="\/case-studies\/">See selected client results<\/a>/);
+test("solutions page stays concise and omits the proof section", () => {
+  assert.doesNotMatch(html, /solutions-evidence|Proof from the work|\+113\.2%|24\.8k|56k/);
+  assert.equal((html.match(/class="section /g) || []).length, 3);
 });
 
 test("solutions layout includes responsive and reduced-motion treatment", () => {
-  assert.match(styles, /\.solutions-ledger-row\s*\{[\s\S]*?grid-template-columns:/);
+  assert.match(styles, /\.solutions-picker\s*\{[\s\S]*?grid-template-columns:\s*repeat\(3,/);
   assert.match(styles, /\.solutions-system-flow\s*\{[\s\S]*?grid-template-columns:\s*repeat\(3,/);
-  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.solutions-system-flow,[\s\S]*?\.solutions-proof-grid\s*\{[\s\S]*?grid-template-columns:\s*1fr;/);
-  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.solutions-ledger-detail a span/);
+  assert.match(styles, /@media \(max-width: 900px\)[\s\S]*?\.solutions-picker\s*\{[\s\S]*?grid-template-columns:\s*1fr;/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.solutions-index \.solutions-routes \.solution-picker-image/);
 });
 
 test("solutions visual lift stays lightweight and page-scoped", () => {
   assert.match(html, /class="solutions-hero-signal"/);
-  assert.equal((html.match(/class="solutions-ledger-media"/g) || []).length, 3);
+  assert.match(html, /class="solutions-signal-flow"/);
+  assert.equal((html.match(/class="solutions-signal-core"/g) || []).length, 0);
+  assert.equal((html.match(/class="solutions-signal-step"/g) || []).length, 3);
+  assert.doesNotMatch(html, /class="solutions-signal-brand-mark"/);
+  assert.match(styles, /\.solutions-signal-flow::before\s*\{[\s\S]*?linear-gradient\(var\(--accent\), var\(--tertiary\)\)/);
+  assert.match(styles, /@keyframes solutions-signal-travel\s*\{/);
+  assert.match(styles, /\.solutions-signal-flow li:nth-of-type\(3\)\s*\{[\s\S]*?animation-delay:\s*580ms/);
+  assert.match(styles, /\.solutions-signal-flow::after\s*\{[\s\S]*?animation:\s*solutions-signal-travel/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.solutions-signal-flow::after\s*\{[\s\S]*?animation:\s*none/);
+  assert.equal((html.match(/class="solution-picker-card"/g) || []).length, 3);
+  assert.equal((html.match(/class="solution-picker-image"/g) || []).length, 3);
   assert.equal((html.match(/class="solutions-system-visual"/g) || []).length, 3);
-  assert.equal((html.match(/class="solution-route-link"/g) || []).length, 3);
   assert.match(styles, /\.solutions-index \.solutions-hero\s*\{[\s\S]*?display:\s*grid;/);
-  assert.match(styles, /@media \(hover: hover\) and \(pointer: fine\)[\s\S]*?\.solutions-index \.solution-route-link:hover/);
-  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.solutions-index \.solution-route-link::after/);
+  assert.match(styles, /\.editorial-site\.solutions-index main > \.solutions-system\s*\{[\s\S]*?background:\s*#f2f0ec;/);
+  assert.match(styles, /@media \(hover: hover\) and \(pointer: fine\)[\s\S]*?\.solutions-index \.solutions-routes \.solution-picker-card:hover/);
 
   for (const asset of [
     "assets/images/home/organic-discovery-search.webp",
