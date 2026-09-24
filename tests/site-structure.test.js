@@ -21,6 +21,7 @@ const publicRoutes = [
   "/case-studies/",
   "/about/",
   "/journey/",
+  "/contact/",
   "/privacy/",
 ];
 
@@ -93,7 +94,7 @@ test("the public route and sitemap inventories are exact", () => {
 
   const sitemapUrls = [...read("sitemap.xml").matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   assert.deepEqual(sitemapUrls, publicRoutes.map((route) => `https://rankingrebels.com${route}`));
-  assert.doesNotMatch(read("sitemap.xml"), /proposals|assets|404|contact|onboarding|\/es\//);
+  assert.doesNotMatch(read("sitemap.xml"), /proposals|assets|404|onboarding|\/es\//);
 });
 
 test("every public route has complete indexable metadata and shared navigation", () => {
@@ -497,11 +498,12 @@ test("navigation exposes exactly three solutions and three markets", () => {
   }
   assert.match(script, /Explore all solutions/);
   assert.match(script, /Choose a market/);
+  assert.match(script, /label: "Contact", href: "\/contact\/"/);
   assert.doesNotMatch(script, /officeLocations|data-office|Medellín|Amsterdam|Melbourne/);
 });
 
 test("public links and assets resolve without retired routes", () => {
-  const retired = /\/(?:services|contact|onboarding|es|seo-agency|local-seo|technical-seo|seo-content|google-business-profile|google-ads-management|locations\/europe|locations\/latin-america|locations\/australia\/(?:melbourne|sydney|brisbane|gold-coast))(?:\/|["#?])/;
+  const retired = /\/(?:services|onboarding|es|seo-agency|local-seo|technical-seo|seo-content|google-business-profile|google-ads-management|locations\/europe|locations\/latin-america|locations\/australia\/(?:melbourne|sydney|brisbane|gold-coast))(?:\/|["#?])/;
 
   for (const file of [...publicFiles, "404.html"]) {
     const html = read(file);
@@ -570,13 +572,12 @@ test("retired URL equivalents have the exact Cloudflare redirects", () => {
     "/locations/europe/amsterdam/ /locations/netherlands/ 301",
     "/locations/europe/netherlands/ /locations/netherlands/ 301",
     "/locations/latin-america/medellin/ /locations/latam/ 301",
-    "/contact/ / 301",
   ];
   assert.deepEqual(read("_redirects").trim().split(/\r?\n/), expected);
 });
 
 test("retired content is absent and the normal 404 is noindex", () => {
-  for (const removed of ["contact", "onboarding", "es", "local-seo", "technical-seo", "seo-content", "google-business-profile", "locations/europe", "locations/latin-america"]) {
+  for (const removed of ["onboarding", "es", "local-seo", "technical-seo", "seo-content", "google-business-profile", "locations/europe", "locations/latin-america"]) {
     assert.equal(exists(removed), false, `${removed} should be removed`);
   }
   const notFound = read("404.html");

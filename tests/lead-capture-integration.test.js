@@ -20,6 +20,7 @@ const pages = [
   { file: "case-studies/index.html", market: "Not specified", ctas: 3 },
   { file: "about/index.html", market: "Not specified", ctas: 3 },
   { file: "journey/index.html", market: "Not specified", ctas: 2 },
+  { file: "contact/index.html", market: "Not specified", ctas: 0 },
 ];
 
 test("exactly 39 public commercial links opt in to shared lead capture", () => {

@@ -692,6 +692,95 @@
     return { check, start };
   };
 
+  const bindLeadCaptureForm = ({ form, context, resolveContext, dialog = null } = {}) => {
+    if (!form || form._leadCaptureBound || typeof form.addEventListener !== "function") return form;
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const values = {};
+      for (const name of ["firstName", "lastName", "companyName", "businessWebsite", "email", "phone", "phoneCountry", "website"]) {
+        const field = typeof form.querySelector === "function" ? form.querySelector(`[name="${name}"]`) : null;
+        values[name] = field ? field.value || "" : "";
+      }
+      clearLeadFieldErrors(form);
+      values.phone = combinePhoneNumber(values.phoneCountry, values.phone);
+      delete values.phoneCountry;
+      const errors = validateLeadFields(values);
+      if (Object.keys(errors).length) { applyLeadFieldErrors(form, errors); return; }
+      values.businessWebsite = normalizeBusinessWebsite(values.businessWebsite);
+      const submissionContext = typeof resolveContext === "function" ? resolveContext() : context;
+      const token = submissionContext.turnstileLifecycle && submissionContext.turnstileLifecycle.consumeToken();
+      if (!token) {
+        const status = getLeadStatusRegion(form);
+        if (status) status.textContent = "Please complete verification and try again.";
+        return;
+      }
+      submitLeadCapture({
+        form,
+        save: () => submitLeadCaptureRequest({
+          payload: {
+            ...values,
+            submissionId: submissionContext.submissionId,
+            services: Array.isArray(submissionContext.services) ? submissionContext.services : [],
+            noticeVersion: submissionContext.noticeVersion,
+            turnstileToken: token,
+            sourcePath: submissionContext.sourcePath,
+            ctaLabel: submissionContext.ctaLabel,
+            market: submissionContext.market,
+          },
+          fetchImpl: submissionContext.fetchImpl,
+          openWindow: submissionContext.openWindow,
+          statusRegion: getLeadStatusRegion(form),
+          turnstile: submissionContext.turnstile,
+        }),
+      }).then((result) => {
+        if (result.ok) {
+          return completeLeadCaptureSuccess({
+            ...submissionContext,
+            response: result,
+            reservedWindow: result.reservedWindow,
+            currentWindow: submissionContext.window,
+            submissionId: submissionContext.submissionId,
+            localStorage: submissionContext.localStorage,
+            sessionStorage: submissionContext.sessionStorage,
+            form,
+            dialog,
+            statusRegion: getLeadStatusRegion(form),
+            whatsappUrl: submissionContext.whatsappUrl,
+          });
+        }
+        if (form.classList && typeof form.classList.add === "function") form.classList.add("has-error");
+        return result;
+      });
+    });
+    form._leadCaptureBound = true;
+    return form;
+  };
+
+  const mountLeadTurnstile = (context, root, form) => {
+    if (!context.document || !context.window) return Promise.resolve(null);
+    return loadTurnstileScript({ document: context.document, window: context.window })
+      .then(() => {
+        const container = typeof root.querySelector === "function" ? root.querySelector("[data-turnstile]") : null;
+        if (!container) return null;
+        const lifecycle = context.turnstileLifecycle || createTurnstileLifecycle({ turnstile: context.window.turnstile, statusRegion: getLeadStatusRegion(root) });
+        const widgetId = renderTurnstile({ window: context.window, container, hostname: context.hostname || context.window.location?.hostname, action: "lead_capture", callbacks: {
+          ...(context.turnstileCallbacks || {}), callback: lifecycle.onSuccess, "expired-callback": lifecycle.onExpired, "error-callback": lifecycle.onError,
+        } });
+        context.turnstileLifecycle = lifecycle;
+        context.turnstileWidgetId = widgetId;
+        if (typeof lifecycle.setWidgetId === "function") lifecycle.setWidgetId(widgetId);
+        else lifecycle.widgetId = widgetId;
+        context.turnstile = context.turnstile || context.window.turnstile;
+        return widgetId;
+      })
+      .catch(() => {
+        const status = getLeadStatusRegion(root);
+        if (status) status.textContent = "Security verification could not load. Please refresh and try again.";
+        if (form && form.classList && typeof form.classList.add === "function") form.classList.add("has-error");
+        return null;
+      });
+  };
+
   let activeDialog = null;
   let activeTrigger = null;
   let activeContext = null;
@@ -740,32 +829,7 @@
       syncPhoneCountryDisplay(phoneCountry, form);
       bindPhoneCountryPicker(phoneCountry, form, windowRef);
     }
-    if (form && !form._leadCaptureBound && typeof form.addEventListener === "function") {
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const values = {};
-        for (const name of ["firstName", "lastName", "companyName", "businessWebsite", "email", "phone", "phoneCountry", "website"]) {
-          const field = typeof form.querySelector === "function" ? form.querySelector(`[name="${name}"]`) : null;
-          values[name] = field ? field.value || "" : "";
-        }
-        clearLeadFieldErrors(form);
-        values.phone = combinePhoneNumber(values.phoneCountry, values.phone);
-        delete values.phoneCountry;
-        const errors = validateLeadFields(values);
-        if (Object.keys(errors).length) { applyLeadFieldErrors(form, errors); return; }
-        values.businessWebsite = normalizeBusinessWebsite(values.businessWebsite);
-        // The CTA context is intentionally resolved at submit time: one shared
-        // dialog can be opened from many CTAs during a page lifetime.
-        const submissionContext = activeContext || context;
-        const token = submissionContext.turnstileLifecycle && submissionContext.turnstileLifecycle.consumeToken();
-        if (!token) { const status = getLeadStatusRegion(form); if (status) status.textContent = "Please complete verification and try again."; return; }
-        submitLeadCapture({ form, save: () => submitLeadCaptureRequest({ payload: { ...values, submissionId: submissionContext.submissionId, services: Array.isArray(submissionContext.services) ? submissionContext.services : [], noticeVersion: submissionContext.noticeVersion, turnstileToken: token, sourcePath: submissionContext.sourcePath, ctaLabel: submissionContext.ctaLabel, market: submissionContext.market }, fetchImpl: submissionContext.fetchImpl, openWindow: submissionContext.openWindow, statusRegion: getLeadStatusRegion(form), turnstile: submissionContext.turnstile }) }).then((result) => {
-          if (result.ok) return completeLeadCaptureSuccess({ ...submissionContext, response: result, reservedWindow: result.reservedWindow, currentWindow: submissionContext.window, submissionId: submissionContext.submissionId, localStorage: submissionContext.localStorage, sessionStorage: submissionContext.sessionStorage, form, dialog, statusRegion: getLeadStatusRegion(form), whatsappUrl: submissionContext.whatsappUrl });
-          if (form.classList && typeof form.classList.add === "function") form.classList.add("has-error");
-        });
-      });
-      form._leadCaptureBound = true;
-    }
+    bindLeadCaptureForm({ form, context, resolveContext: () => activeContext || context, dialog });
     const closeButton = typeof dialog.querySelector === "function" ? dialog.querySelector("[data-dialog-close]") : null;
     if (closeButton && typeof closeButton.addEventListener === "function" && !closeButton._leadCaptureBound) { closeButton.addEventListener("click", () => close({ dialog })); closeButton._leadCaptureBound = true; }
     if (!dialog._leadCaptureCancelBound && typeof dialog.addEventListener === "function") {
@@ -778,32 +842,36 @@
     if (typeof dialog.showModal === "function") dialog.showModal();
     const firstField = typeof dialog.querySelector === "function" ? dialog.querySelector("input:not([name=website])") : null;
     if (firstField && typeof firstField.focus === "function") firstField.focus();
-    if (context.document && context.window) {
-      loadTurnstileScript({ document: context.document, window: context.window })
-        .then(() => {
-          const container = typeof dialog.querySelector === "function" ? dialog.querySelector("[data-turnstile]") : null;
-          if (container) {
-            const lifecycle = context.turnstileLifecycle || createTurnstileLifecycle({ turnstile: context.window.turnstile, statusRegion: getLeadStatusRegion(dialog) });
-            const widgetId = renderTurnstile({ window: context.window, container, hostname: context.hostname || context.window.location?.hostname, action: "lead_capture", callbacks: {
-              ...(context.turnstileCallbacks || {}),
-              callback: lifecycle.onSuccess,
-              "expired-callback": lifecycle.onExpired,
-              "error-callback": lifecycle.onError,
-            } });
-            if (!context.turnstileLifecycle) context.turnstileLifecycle = lifecycle;
-            context.turnstileWidgetId = widgetId;
-            if (lifecycle && typeof lifecycle.setWidgetId === "function") lifecycle.setWidgetId(widgetId);
-            else if (lifecycle) lifecycle.widgetId = widgetId;
-            context.turnstile = context.turnstile || context.window.turnstile;
-          }
-        })
-        .catch(() => {
-          const status = getLeadStatusRegion(dialog);
-          if (status) status.textContent = "Security verification could not load. Please refresh and try again.";
-          if (form && form.classList && typeof form.classList.add === "function") form.classList.add("has-error");
-        });
-    }
+    mountLeadTurnstile(context, dialog, form);
     return dialog;
+  };
+
+  const initInline = (form, context = {}) => {
+    if (!form || typeof form.querySelector !== "function") return null;
+    if (typeof context.noticeVersion !== "string" || !context.noticeVersion.trim()) {
+      context.noticeVersion = leadCaptureConfig.noticeVersion || DEFAULT_NOTICE_VERSION;
+    }
+    const windowRef = context.window || (typeof window !== "undefined" ? window : null);
+    const windowStorage = (name) => {
+      try { return windowRef ? windowRef[name] : null; } catch (_error) { return null; }
+    };
+    context.window = windowRef;
+    context.document = context.document || (typeof document !== "undefined" ? document : null);
+    context.localStorage = context.localStorage || windowStorage("localStorage");
+    context.sessionStorage = context.sessionStorage || windowStorage("sessionStorage");
+    context.controller = context.controller || createLeadCaptureController();
+    context.submissionId = context.submissionId || context.controller.beginCapture().submissionId;
+
+    const optionList = form.querySelector(".rr-lead-capture-country-options");
+    if (optionList && !optionList.childElementCount) optionList.innerHTML = renderCountryPickerOptions("AU");
+    const phoneCountry = form.querySelector('[name="phoneCountry"]');
+    if (phoneCountry) {
+      syncPhoneCountryDisplay(phoneCountry, form);
+      bindPhoneCountryPicker(phoneCountry, form, windowRef);
+    }
+    bindLeadCaptureForm({ form, context });
+    mountLeadTurnstile(context, form, form);
+    return { form, context };
   };
 
   return {
@@ -831,6 +899,7 @@
     shouldBypassLeadForm,
     getSharedDialog,
     init,
+    initInline,
     loadTurnstileScript,
     renderTurnstile,
     resolveTurnstileSitekey,

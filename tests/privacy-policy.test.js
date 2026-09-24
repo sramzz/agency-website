@@ -21,6 +21,7 @@ const publicRoutes = [
   "/locations/latam/",
   "/case-studies/",
   "/about/",
+  "/contact/",
   "/journey/",
   privacyRoute,
 ];

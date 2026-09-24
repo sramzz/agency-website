@@ -9,6 +9,7 @@ const {
   createLeadReturnWatcher,
   createTurnstileLifecycle,
   init,
+  initInline,
   applyLeadFieldErrors,
   loadTurnstileScript,
   open,
@@ -37,6 +38,59 @@ const memoryStorage = () => {
   };
 };
 const validSubmissionId = "123e4567-e89b-42d3-a456-426614174000";
+const createInlineFormFixture = (overrides = {}) => {
+  const values = {
+    firstName: "",
+    lastName: "",
+    companyName: "",
+    businessWebsite: "",
+    email: "",
+    phone: "",
+    phoneCountry: "AU",
+    website: "",
+    ...overrides,
+  };
+  const listeners = {};
+  const classes = new Set();
+  const attributes = {};
+  const fields = Object.fromEntries(Object.entries(values).map(([name, value]) => [name, {
+    value,
+    attributes: {},
+    setAttribute(key, nextValue) { this.attributes[key] = nextValue; },
+    removeAttribute(key) { delete this.attributes[key]; },
+    focus() { this.focused = true; },
+    dispatchEvent() {},
+  }]));
+  const errors = Object.fromEntries(Object.keys(values).map((name) => [name, { id: `inline-${name}-error`, textContent: "" }]));
+  const status = { textContent: "" };
+  const submit = { disabled: false };
+  const form = {
+    classList: {
+      add: (name) => classes.add(name),
+      remove: (name) => classes.delete(name),
+      toggle: (name, force) => force ? classes.add(name) : classes.delete(name),
+    },
+    querySelector(selector) {
+      if (selector === 'button[type="submit"]') return submit;
+      if (selector === "#lead-dialog-status, .rr-lead-capture-toast" || selector === "[aria-live]") return status;
+      if (selector === ".rr-lead-capture-country-options" || selector === "[data-country-trigger]") return null;
+      const fieldName = selector.match(/name="([^"]+)"/)?.[1];
+      if (fieldName) return fields[fieldName] || null;
+      const errorName = selector.match(/data-error-for="([^"]+)"/)?.[1];
+      return errorName ? errors[errorName] : null;
+    },
+    addEventListener(type, listener) { listeners[type] = listener; },
+    setAttribute(key, value) { attributes[key] = value; },
+    removeAttribute(key) { delete attributes[key]; },
+    reset() { this.resetCalled = true; },
+  };
+  return { form, fields, errors, listeners, classes, attributes, status, submit };
+};
+
+const flushInlineSubmission = async () => {
+  await new Promise((resolve) => setImmediate(resolve));
+  await new Promise((resolve) => setImmediate(resolve));
+};
 
 test("the dynamic lead dialog renders the accessible capture contract", () => {
   const template = renderLeadCaptureDialog();
@@ -269,6 +323,122 @@ test("init defaults noticeVersion when no global configuration is supplied", () 
   assert.equal(init({ target }).noticeVersion, "2026-09-05");
 });
 
+test("inline initializer binds the shared form pipeline without a dialog", () => {
+  const listeners = {};
+  const form = {
+    querySelector() { return null; },
+    addEventListener(type, listener) { listeners[type] = listener; },
+  };
+  const context = { window: null, document: null, controller: { beginCapture: () => ({ submissionId: validSubmissionId }) } };
+
+  const result = initInline(form, context);
+
+  assert.strictEqual(result.form, form);
+  assert.strictEqual(result.context, context);
+  assert.equal(context.submissionId, validSubmissionId);
+  assert.equal(context.noticeVersion, "2026-09-05");
+  assert.equal(typeof listeners.submit, "function");
+  assert.equal(form._leadCaptureBound, true);
+});
+
+test("inline initializer validates, focuses the first error, and blocks submission without Turnstile", async () => {
+  const fixture = createInlineFormFixture();
+  let fetchCalls = 0;
+  initInline(fixture.form, {
+    window: null,
+    document: null,
+    controller: { beginCapture: () => ({ submissionId: validSubmissionId }) },
+    turnstileLifecycle: { consumeToken: () => null },
+    fetchImpl: async () => { fetchCalls += 1; return { ok: true }; },
+  });
+
+  fixture.listeners.submit({ preventDefault() {} });
+  assert.equal(fixture.fields.phone.focused, true);
+  assert.match(fixture.errors.phone.textContent, /required/i);
+  assert.equal(fetchCalls, 0);
+
+  fixture.fields.phone.value = "0412 345 678";
+  fixture.listeners.submit({ preventDefault() {} });
+  await flushInlineSubmission();
+  assert.match(fixture.status.textContent, /complete verification/i);
+  assert.equal(fetchCalls, 0);
+});
+
+test("inline initializer preserves retry state on a network failure and prevents duplicate requests", async () => {
+  const fixture = createInlineFormFixture({ phone: "0412 345 678" });
+  let fetchCalls = 0;
+  let resolveFetch;
+  let tokenReads = 0;
+  const fetchResult = new Promise((resolve) => { resolveFetch = resolve; });
+  initInline(fixture.form, {
+    window: null,
+    document: null,
+    controller: { beginCapture: () => ({ submissionId: validSubmissionId }) },
+    turnstileLifecycle: { consumeToken: () => `token-${++tokenReads}` },
+    fetchImpl: () => { fetchCalls += 1; return fetchResult; },
+    openWindow: () => ({ close() {} }),
+  });
+
+  fixture.listeners.submit({ preventDefault() {} });
+  fixture.listeners.submit({ preventDefault() {} });
+  assert.equal(fetchCalls, 1);
+  assert.equal(fixture.submit.disabled, true);
+  resolveFetch({ ok: false, status: 500 });
+  await flushInlineSubmission();
+
+  assert.equal(fixture.submit.disabled, false);
+  assert.equal(fixture.fields.phone.value, "0412 345 678");
+  assert.equal(fixture.classes.has("has-error"), true);
+  assert.match(fixture.status.textContent, /try again/i);
+});
+
+test("inline initializer posts the fixed context and opens the routed WhatsApp URL after success", async () => {
+  const fixture = createInlineFormFixture({
+    firstName: "Kelly",
+    email: "kelly@example.com",
+    phone: "0412 345 678",
+  });
+  const requests = [];
+  const reservedWindow = { location: { href: "/assets/whatsapp-redirect.html" }, opener: {}, close() {} };
+  const whatsappUrl = "https://wa.me/61439499441?text=hello";
+  let controllerResets = 0;
+  initInline(fixture.form, {
+    window: null,
+    document: null,
+    controller: {
+      beginCapture: () => ({ submissionId: validSubmissionId }),
+      resetCapture: () => { controllerResets += 1; },
+    },
+    turnstileLifecycle: { consumeToken: () => "turnstile-token" },
+    turnstile: { reset() {} },
+    fetchImpl: async (url, options) => { requests.push({ url, options }); return { ok: true }; },
+    openWindow: () => reservedWindow,
+    localStorage: memoryStorage(),
+    sessionStorage: memoryStorage(),
+    wait: async () => {},
+    ctaLabel: "Book a call",
+    market: "Not specified",
+    services: [],
+    sourcePath: "/contact/",
+    whatsappUrl,
+  });
+
+  fixture.listeners.submit({ preventDefault() {} });
+  await flushInlineSubmission();
+
+  assert.equal(requests.length, 1);
+  assert.equal(requests[0].url, "/api/leads");
+  const payload = JSON.parse(requests[0].options.body);
+  assert.equal(payload.market, "Not specified");
+  assert.equal(payload.sourcePath, "/contact/");
+  assert.equal(payload.ctaLabel, "Book a call");
+  assert.deepEqual(payload.services, []);
+  assert.equal(payload.phone, "+61412345678");
+  assert.equal(fixture.form.resetCalled, true);
+  assert.equal(controllerResets, 1);
+  assert.equal(reservedWindow.opener, null);
+  assert.equal(reservedWindow.location.href, whatsappUrl);
+});
 test("default return toast appends to the injected document body", () => {
   const appended = [];
   const documentObject = {

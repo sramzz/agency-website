@@ -46,13 +46,13 @@ test("every selector page exposes the complete service selector contract", () =>
     assert.equal((html.match(/data-service-selector-trigger/g) || []).length, 0);
     assert.equal((html.match(/data-whatsapp-contact/g) || []).length, page.directContacts);
     const styleVersion = ["locations/netherlands/index.html", "locations/latam/index.html"].includes(page.file)
-      ? "20260915-market-pages"
-      : "20260915-shared-selector";
+      ? "20260924-header-surface"
+      : "20260924-header-surface";
     assert.match(html, new RegExp(`/assets/css/styles\\.css\\?v=${styleVersion}`));
     assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-optional-services"><\/script>/);
     const sharedScriptVersion = page.file === "locations/australia/index.html"
-      ? "20260911-australia"
-      : "20260903-optional-services";
+      ? "20260924-header-surface"
+      : "20260924-header-surface";
     assert.match(html, new RegExp(`<script src="/assets/js/script\\.js\\?v=${sharedScriptVersion}"></script>`));
 
     const directContacts = [...html.matchAll(new RegExp(`<a\\b[^>]*href="https://wa\\.me/${page.directWhatsapp}"[^>]*data-whatsapp-contact[^>]*target="_blank"[^>]*rel="noreferrer"[^>]*>`, "g"))];

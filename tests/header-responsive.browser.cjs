@@ -31,13 +31,36 @@ async function run() {
     // Keep layout checks independent of external font and analytics services.
     await page.route('**/*', route => route.request().url().startsWith(base) ? route.continue() : route.abort());
     let checks = 0;
-    for (const route of ['/case-studies/', '/', '/locations/netherlands/', '/solutions/paid-ads/']) {
+    for (const route of ['/case-studies/', '/', '/locations/netherlands/', '/solutions/paid-ads/', '/contact/']) {
       await page.goto(base + route, { waitUntil: 'load' });
+      await page.evaluate(() => window.scrollTo(0, 0));
+      await page.waitForTimeout(200);
+      const topState = await page.locator('.site-header').evaluate(header => ({
+        classApplied: header.classList.contains('is-scrolled'),
+        itemOpacity: [...header.children].map(item => getComputedStyle(item).opacity),
+        surfaceOpacity: getComputedStyle(header, '::before').opacity,
+      }));
+      assert.equal(topState.classApplied, false, `${route}: header surface class should be absent at the top`);
+      assert.equal(topState.surfaceOpacity, '0', `${route}: header surface should be transparent at the top`);
+      assert.ok(topState.itemOpacity.every(opacity => opacity === '1'), `${route}: header items should remain visible at the top`);
+
+      await page.evaluate(() => window.scrollTo(0, 48));
+      await page.waitForTimeout(500);
+      const scrolledState = await page.locator('.site-header').evaluate(header => ({
+        classApplied: header.classList.contains('is-scrolled'),
+        itemOpacity: [...header.children].map(item => getComputedStyle(item).opacity),
+        surfaceOpacity: getComputedStyle(header, '::before').opacity,
+      }));
+      assert.equal(scrolledState.classApplied, true, `${route}: header surface class should appear after scrolling`);
+      assert.equal(scrolledState.surfaceOpacity, '1', `${route}: header surface should be visible after scrolling`);
+      assert.ok(scrolledState.itemOpacity.every(opacity => opacity === '1'), `${route}: header items should stay visible after scrolling`);
+
+      await page.evaluate(() => window.scrollTo(0, 0));
       for (const width of [320, 360, 390, 430, 768, 1440]) {
         await page.setViewportSize({ width, height: 844 });
         const bounds = await page.locator('.site-header').evaluate(header => [...header.querySelectorAll('a.brand, .location-trigger, .menu-toggle')].filter(e => e.getBoundingClientRect().width > 0).map(e => ({ name: e.className, left: e.getBoundingClientRect().left, right: e.getBoundingClientRect().right })));
         for (const box of bounds) assert.ok(box.left >= 0 && box.right <= width, `${route} at ${width}px: ${box.name} outside viewport: ${JSON.stringify(box)}`);
-        assert.equal(await page.getByRole('button', { name: /Locations|Netherlands|Australia|LATAM/ }).count(), 1, 'Location control retains its accessible name');
+        assert.equal(await page.locator('.site-header').getByRole('button', { name: /Locations|Netherlands|Australia|LATAM/ }).count(), 1, 'Location control retains its accessible name');
         if (width <= 980) {
           await page.locator('.location-trigger').click();
           const panel = await page.locator('.location-panel').boundingBox();
