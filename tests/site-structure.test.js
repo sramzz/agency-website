@@ -228,8 +228,8 @@ test("the Australia page targets digital marketing intent without weakening the 
   const australiaSchemas = schemas(australia);
 
   assert.match(australia, /<title>Digital Marketing Agency Australia \| Ranking Rebels<\/title>/);
-  assert.match(australia, /<meta name="description" content="SEO, paid ads and practical automation for businesses across Australia\. Bring in more calls, quote requests and bookings\. Request a search audit\."/);
-  assert.match(australia, /<h1 id="australia-title">Get found when customers are ready to book\.<\/h1>/);
+  assert.match(australia, /<meta name="description" content="Grow your Australian business with SEO, Google Maps, AI search visibility, paid ads and practical automation focused on calls, quotes and bookings\."/);
+  assert.match(australia, /<h1 id="australia-title">Turn Australian searches into calls, quotes and bookings\.<\/h1>/);
   assert.match(australia, /Ranking Rebels helps businesses show up when customers are ready to act\./);
   assert.match(australia, /Google, Bing, Maps and ChatGPT/);
   assert.doesNotMatch(australia, /service businesses/i);
@@ -264,7 +264,8 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
     {
       file: "locations/netherlands/index.html",
       title: "Digital Marketing Agency Netherlands | Ranking Rebels",
-      description: "SEO, paid ads and practical automation for businesses across the Netherlands. Bring in more calls, enquiries and bookings. Request a search audit.",
+      description: "Reach Dutch and international customers through SEO, local search, AI visibility, paid ads and automation built for the Netherlands market.",
+      h1: "Turn Dutch and English search demand into qualified enquiries.",
       canonical: "https://rankingrebels.com/locations/netherlands/",
       market: "Netherlands",
       service: "Digital marketing services in the Netherlands",
@@ -276,6 +277,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
       file: "locations/latam/index.html",
       title: "Digital Marketing Agency Latin America | Ranking Rebels",
       description: "SEO, paid ads and practical automation for businesses across Latin America. Bring in more calls, enquiries and sales. Request a search audit.",
+      h1: "Get found when customers are ready to book.",
       canonical: "https://rankingrebels.com/locations/latam/",
       market: "Latin America",
       service: "Digital marketing services in Latin America",
@@ -292,7 +294,7 @@ test("the Netherlands and LATAM pages use the search-led market landing structur
     assert.match(html, new RegExp(`<meta name="description" content="${page.description.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
     assert.match(html, new RegExp(`<link rel="canonical" href="${page.canonical.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
     assert.equal((html.match(/<h1\b/g) || []).length, 1);
-    assert.match(html, /<h1[^>]*>Get found when customers are ready to book\.<\/h1>/);
+    assert.match(html, new RegExp(`<h1[^>]*>${page.h1.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}<\\/h1>`));
     assert.doesNotMatch(html, /service businesses|<section id="plans"|process-track|class="timeline"/i);
     for (const id of ["platform-coverage", "service-selector", "verified-results", "solution-routes", "faq"]) assert.match(html, new RegExp(`id="${id}"`));
     for (const marker of page.markers) assert.match(html, new RegExp(`aria-label="${marker}"`));
@@ -347,9 +349,9 @@ test("market landing pages share the ribbon fallback and scoped responsive style
 
 test("the homepage follows the selected search-led growth structure", () => {
   const home = read("index.html");
-  const homepageDescription = "Ranking Rebels helps service businesses grow through SEO, GEO, paid ads and AI automation across Australia, the Netherlands and Latin America.";
-  assert.match(home, /<title>SEO, GEO &amp; Paid Ads Agency \| Ranking Rebels<\/title>/);
-  assert.equal((home.match(new RegExp(homepageDescription.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length, 4, "metadata and Organization schema should share the approved description");
+  assert.match(home, /<title>International SEO &amp; GEO Agency \| Ranking Rebels<\/title>/);
+  assert.match(home, /<meta name="description" content="Grow through SEO, AI search visibility, paid ads and practical automation\. Ranking Rebels serves businesses across Australia, Europe and Latin America\."/);
+  assert.match(home, /<h1>Get found <span>wherever<\/span> your customers search and ask\.<\/h1>/);
   assert.match(home, /<\/section>\s*<section class="section service-selector-section" id="service-selector"/, "the selector should immediately follow the hero");
   assert.doesNotMatch(home, /discovery-band|id="ai-automation"|social-proof-section|evidence-title/);
   const sectionIds = [
