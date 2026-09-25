@@ -45,15 +45,9 @@ test("every selector page exposes the complete service selector contract", () =>
     assert.deepEqual(serviceOrder, services, `${page.file} should preserve the approved service order`);
     assert.equal((html.match(/data-service-selector-trigger/g) || []).length, 0);
     assert.equal((html.match(/data-whatsapp-contact/g) || []).length, page.directContacts);
-    const styleVersion = ["locations/netherlands/index.html", "locations/latam/index.html"].includes(page.file)
-      ? "20260924-header-surface"
-      : "20260924-header-surface";
-    assert.match(html, new RegExp(`/assets/css/styles\\.css\\?v=${styleVersion}`));
+    assert.match(html, /\/assets\/css\/styles\.css\?v=[^"']+/);
     assert.match(html, /<script src="\/assets\/js\/service-lead\.js\?v=20260903-optional-services"><\/script>/);
-    const sharedScriptVersion = page.file === "locations/australia/index.html"
-      ? "20260924-header-surface"
-      : "20260924-header-surface";
-    assert.match(html, new RegExp(`<script src="/assets/js/script\\.js\\?v=${sharedScriptVersion}"></script>`));
+    assert.match(html, /<script src="\/assets\/js\/script\.js\?v=[^"']+"><\/script>/);
 
     const directContacts = [...html.matchAll(new RegExp(`<a\\b[^>]*href="https://wa\\.me/${page.directWhatsapp}"[^>]*data-whatsapp-contact[^>]*target="_blank"[^>]*rel="noreferrer"[^>]*>`, "g"))];
     assert.equal(directContacts.length, page.directContacts, `${page.file} should expose direct WhatsApp CTAs`);

@@ -1285,6 +1285,7 @@ p {
 /* Editorial-dark public site
    Scoped so private proposal pages keep their existing presentation. */
 .editorial-site {
+  --site-header-height: 58px;
   overflow-x: hidden;
   background: var(--primary);
   color: var(--neutral);
@@ -1298,8 +1299,13 @@ p {
 }
 
 .editorial-site .site-header {
-  min-height: 58px;
+  min-height: var(--site-header-height);
   padding: 6px max(24px, calc((100vw - var(--max-width)) / 2));
+  margin-bottom: calc(-1 * var(--site-header-height));
+}
+
+.editorial-site main {
+  padding-top: var(--site-header-height);
 }
 
 .editorial-site .site-header::before {
@@ -10841,8 +10847,8 @@ body.service-dialog-open {
   --solutions-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.editorial-site.solutions-index .site-header {
-  margin-bottom: -58px;
+.editorial-site.solutions-index main {
+  padding-top: 0;
 }
 
 .solutions-index .site-header:not(.is-scrolled) ~ .reading-progress {
@@ -10857,7 +10863,7 @@ body.service-dialog-open {
   display: grid;
   grid-template-columns: minmax(0, 1.18fr) minmax(340px, 0.82fr);
   gap: clamp(38px, 6vw, 92px);
-  padding-top: calc(clamp(64px, 7vw, 92px) + 58px);
+  padding-top: calc(clamp(64px, 7vw, 92px) + var(--site-header-height));
   overflow: hidden;
 }
 
