@@ -17,6 +17,11 @@ test("solutions page exposes its SEO and conversion contract", () => {
   assert.match(html, />Talk to Ranking Rebels<\/a>/);
 });
 
+test("solutions page forces browsers to load the current header assets", () => {
+  assert.match(html, /\/assets\/css\/styles\.css\?v=20260925-solutions-header-gentle-v2/);
+  assert.match(html, /\/assets\/js\/script\.js\?v=20260925-header-surface-v2/);
+});
+
 test("solutions page presents three routes in narrative order", () => {
   const markers = ['id="solutions"', 'class="section solutions-system"', 'class="section final-cta solutions-final-cta"'];
   let previousIndex = -1;
