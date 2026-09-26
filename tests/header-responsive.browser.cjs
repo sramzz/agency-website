@@ -31,7 +31,12 @@ async function run() {
     // Keep layout checks independent of external font and analytics services.
     await page.route('**/*', route => route.request().url().startsWith(base) ? route.continue() : route.abort());
     let checks = 0;
-    for (const route of ['/case-studies/', '/', '/locations/netherlands/', '/solutions/paid-ads/', '/contact/']) {
+    const publicRoutes = [
+      '/', '/about/', '/case-studies/', '/contact/', '/journey/', '/locations/',
+      '/locations/australia/', '/locations/latam/', '/locations/netherlands/', '/privacy/',
+      '/solutions/', '/solutions/ai-automation/', '/solutions/organic-discovery/', '/solutions/paid-ads/',
+    ];
+    for (const route of publicRoutes) {
       await page.goto(base + route, { waitUntil: 'load' });
       await page.evaluate(() => window.scrollTo(0, 0));
       await page.waitForTimeout(200);
@@ -42,6 +47,8 @@ async function run() {
         progressOpacity: getComputedStyle(document.querySelector('.reading-progress')).opacity,
         firstSectionTop: document.querySelector('main')?.firstElementChild?.getBoundingClientRect().top,
         firstHeadingTop: document.querySelector('main')?.firstElementChild?.querySelector('h1, h2')?.getBoundingClientRect().top,
+        firstSectionBackgroundImage: getComputedStyle(document.querySelector('main')?.firstElementChild).backgroundImage,
+        firstSectionBackgroundOrigin: getComputedStyle(document.querySelector('main')?.firstElementChild).backgroundOrigin,
         headerBottom: header.getBoundingClientRect().bottom,
       }));
       assert.equal(topState.classApplied, false, `${route}: header surface class should be absent at the top`);
@@ -49,6 +56,12 @@ async function run() {
       assert.equal(topState.progressOpacity, '0', `${route}: progress line should disappear with the header surface at the top`);
       assert.ok(Math.abs(topState.firstSectionTop) < 0.5, `${route}: first section should extend behind the transparent header`);
       assert.ok(topState.firstHeadingTop >= topState.headerBottom, `${route}: first heading should remain clear of the overlaid header`);
+      if (topState.firstSectionBackgroundImage !== 'none') {
+        assert.ok(
+          topState.firstSectionBackgroundOrigin.split(',').every(origin => origin.trim() === 'border-box'),
+          `${route}: hero backgrounds must paint through the transparent header offset; got ${topState.firstSectionBackgroundOrigin}`,
+        );
+      }
       assert.ok(topState.itemOpacity.every(opacity => opacity === '1'), `${route}: header items should remain visible at the top`);
 
       await page.evaluate(() => window.scrollTo(0, 48));

@@ -1311,6 +1311,7 @@ p {
 .editorial-site main > :first-child {
   border-top: var(--site-header-height) solid transparent;
   background-clip: border-box;
+  background-origin: border-box;
 }
 
 .editorial-site .site-header::before {
