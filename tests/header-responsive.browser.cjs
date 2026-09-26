@@ -39,9 +39,16 @@ async function run() {
         classApplied: header.classList.contains('is-scrolled'),
         itemOpacity: [...header.children].map(item => getComputedStyle(item).opacity),
         surfaceOpacity: getComputedStyle(header, '::before').opacity,
+        progressOpacity: getComputedStyle(document.querySelector('.reading-progress')).opacity,
+        firstSectionTop: document.querySelector('main')?.firstElementChild?.getBoundingClientRect().top,
+        firstHeadingTop: document.querySelector('main')?.firstElementChild?.querySelector('h1, h2')?.getBoundingClientRect().top,
+        headerBottom: header.getBoundingClientRect().bottom,
       }));
       assert.equal(topState.classApplied, false, `${route}: header surface class should be absent at the top`);
       assert.equal(topState.surfaceOpacity, '0', `${route}: header surface should be transparent at the top`);
+      assert.equal(topState.progressOpacity, '0', `${route}: progress line should disappear with the header surface at the top`);
+      assert.ok(Math.abs(topState.firstSectionTop) < 0.5, `${route}: first section should extend behind the transparent header`);
+      assert.ok(topState.firstHeadingTop >= topState.headerBottom, `${route}: first heading should remain clear of the overlaid header`);
       assert.ok(topState.itemOpacity.every(opacity => opacity === '1'), `${route}: header items should remain visible at the top`);
 
       await page.evaluate(() => window.scrollTo(0, 48));
@@ -50,9 +57,11 @@ async function run() {
         classApplied: header.classList.contains('is-scrolled'),
         itemOpacity: [...header.children].map(item => getComputedStyle(item).opacity),
         surfaceOpacity: getComputedStyle(header, '::before').opacity,
+        progressOpacity: getComputedStyle(document.querySelector('.reading-progress')).opacity,
       }));
       assert.equal(scrolledState.classApplied, true, `${route}: header surface class should appear after scrolling`);
       assert.equal(scrolledState.surfaceOpacity, '1', `${route}: header surface should be visible after scrolling`);
+      assert.equal(scrolledState.progressOpacity, '1', `${route}: progress line should return with the header surface after scrolling`);
       assert.ok(scrolledState.itemOpacity.every(opacity => opacity === '1'), `${route}: header items should stay visible after scrolling`);
 
       await page.evaluate(() => window.scrollTo(0, 0));

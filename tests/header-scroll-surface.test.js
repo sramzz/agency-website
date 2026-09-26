@@ -27,8 +27,8 @@ const publicHeaderPages = [
 test("every public header page loads the same current shared assets", () => {
   for (const file of publicHeaderPages) {
     const html = fs.readFileSync(path.join(root, file), "utf8");
-    assert.match(html, /\/assets\/css\/styles\.css\?v=20260925-header-surface-global/, `${file} should load the current shared styles`);
-    assert.match(html, /\/assets\/js\/script\.js\?v=20260925-header-surface-global/, `${file} should load the current shared script`);
+    assert.match(html, /\/assets\/css\/styles\.css\?v=20260926-header-surface-global/, `${file} should load the current shared styles`);
+    assert.match(html, /\/assets\/js\/script\.js\?v=20260926-header-surface-global/, `${file} should load the current shared script`);
   }
 });
 
@@ -38,10 +38,9 @@ test("the header surface fades independently from its contents", () => {
   assert.match(styles, /\.site-header\.is-scrolled::before\s*\{\s*opacity:\s*1;/);
   assert.doesNotMatch(styles, /\.site-header\.is-scrolled\s*\{[\s\S]*?opacity:/);
   assert.match(styles, /\.editorial-site \.site-header\s*\{[\s\S]*?min-height:\s*var\(--site-header-height\)[\s\S]*?margin-bottom:\s*calc\(-1 \* var\(--site-header-height\)\)/);
-  assert.match(styles, /\.editorial-site main\s*\{[\s\S]*?padding-top:\s*var\(--site-header-height\)/);
-  assert.match(styles, /\.editorial-site\.solutions-index main\s*\{[\s\S]*?padding-top:\s*0/);
-  assert.match(styles, /\.solutions-index \.site-header:not\(\.is-scrolled\) ~ \.reading-progress\s*\{[\s\S]*?opacity:\s*0/);
-  assert.match(styles, /\.solutions-index \.solutions-hero\s*\{[\s\S]*?padding-top:\s*calc\(clamp\(64px, 7vw, 92px\) \+ var\(--site-header-height\)\)/);
+  assert.match(styles, /\.editorial-site main > :first-child\s*\{[\s\S]*?border-top:\s*var\(--site-header-height\) solid transparent;[\s\S]*?background-clip:\s*border-box/);
+  assert.match(styles, /\.editorial-site \.site-header:not\(\.is-scrolled\) ~ \.reading-progress\s*\{[\s\S]*?opacity:\s*0/);
+  assert.match(styles, /\.editorial-site \.reading-progress\s*\{[\s\S]*?transition:\s*opacity 420ms linear/);
 });
 
 test("the shared header enables its surface only after leaving the top", () => {
