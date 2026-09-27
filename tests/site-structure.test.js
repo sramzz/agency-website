@@ -22,6 +22,8 @@ const publicRoutes = [
   "/about/",
   "/journey/",
   "/privacy/",
+  "/cookies/",
+  "/legal/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;

@@ -5891,10 +5891,14 @@ body.service-dialog-open {
   to { transform: rotate(360deg); }
 }
 
-.rr-lead-capture-form > a {
+.rr-lead-capture-form > .rr-lead-capture-privacy {
   justify-self: start;
+  margin: 0;
   font-size: 0.75rem;
-  line-height: 1.2;
+  line-height: 1.4;
+}
+
+.rr-lead-capture-privacy a {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -5957,7 +5961,7 @@ body.service-dialog-open {
     font-size: 1rem;
   }
 
-  .rr-lead-capture-form > a {
+  .rr-lead-capture-form > .rr-lead-capture-privacy {
     font-size: 0.7rem;
   }
 }
@@ -6031,7 +6035,7 @@ body.service-dialog-open {
     overflow: hidden;
   }
 
-  .rr-lead-capture-form > a {
+  .rr-lead-capture-form > .rr-lead-capture-privacy {
     font-size: 0.7rem;
   }
 
