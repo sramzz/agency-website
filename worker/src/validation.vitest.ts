@@ -157,6 +157,14 @@ describe("validateLeadPayload", () => {
     if (!result.ok) expect(result.errors).toContainEqual({ field: "noticeVersion", code: "not_allowed" });
   });
 
+  it("accepts the previous notice during a rolling site deployment", () => {
+    const config = { noticeVersion: "2026-09-28", previousNoticeVersion: "2026-09-05" };
+    expect(validateLeadPayload({ ...validLead(), noticeVersion: "2026-09-05" }, config).ok).toBe(true);
+    expect(validateLeadPayload({ ...validLead(), noticeVersion: "2026-09-28" }, config).ok).toBe(true);
+    const result = validateLeadPayload({ ...validLead(), noticeVersion: "2025-01-01" }, config);
+    expect(result.ok).toBe(false);
+  });
+
   it("accepts an empty honeypot and rejects content or whitespace", () => {
     expect(validateHoneypot("")).toEqual([]);
     expect(validateLeadPayload({ ...validLead(), website: "" }).ok).toBe(true);

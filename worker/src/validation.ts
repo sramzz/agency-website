@@ -47,6 +47,7 @@ export type LeadValidationResult =
 
 export interface LeadValidationOptions {
   noticeVersion?: string;
+  previousNoticeVersion?: string;
 }
 
 export function validateHoneypot(value: unknown): LeadValidationError[] {
@@ -130,7 +131,8 @@ export function validateLeadPayload(input: unknown, options: LeadValidationOptio
     options.noticeVersion !== undefined &&
     typeof payload.noticeVersion === "string" &&
     payload.noticeVersion.trim().length > 0 &&
-    payload.noticeVersion !== options.noticeVersion.trim()
+    payload.noticeVersion !== options.noticeVersion.trim() &&
+    payload.noticeVersion !== options.previousNoticeVersion?.trim()
   ) {
     errors.push({ field: "noticeVersion", code: "not_allowed" });
   }

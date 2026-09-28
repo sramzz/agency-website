@@ -109,7 +109,6 @@
         const slot = index - edgeCount - cornerCount;
         start = { x: rect.width * [0.27, 0.73][slot], y: rect.height - inset };
       }
-
       let target = { x: rect.width * 0.5, y: rect.height * 0.57 };
       let waypoints = [];
       if (!corner && !bottom && group === 3 && (side === 1 || side === 3)) {
@@ -117,8 +116,8 @@
         target = { x: rect.width * 0.5, y: rect.height * 0.62 };
       }
       if (bottom) {
-        const travelRight = start.x < rect.width * 0.5;
-        target = { x: start.x + (travelRight ? 42 : -42), y: start.y - 10 };
+        const inward = start.x < rect.width * 0.5 ? 18 : -18;
+        target = { x: start.x + inward, y: rect.height * 0.62 };
       }
       if (corner) {
         const cornerPosition = index - edgeCount;
@@ -139,10 +138,9 @@
           };
         } else {
           if (cornerIndex === 0) {
-            waypoints = [{ x: 11, y: rect.height * 0.22 }];
             target = {
-              x: rect.width * (0.32 + 0.04 * cornerPair),
-              y: rect.height * (0.34 + 0.03 * cornerPair),
+              x: start.x + 84 + 12 * cornerPair,
+              y: start.y + 72 + 10 * cornerPair,
             };
           } else {
             target = {
@@ -169,6 +167,7 @@
 
       const element = document.createElement('i');
       element.dataset.origin = corner ? 'corner' : bottom ? 'bottom' : 'edge';
+      element.hidden = length < 24;
       layer.append(element);
       return {
         element,
@@ -194,7 +193,10 @@
       const pulse = Math.sin(Math.PI * phase);
       const diameter = 1 + (particle.bottom ? 1 : particle.corner ? 1.2 : 2) * pulse;
       const progress = phase;
-      const opacity = (particle.bottom ? 0.24 : particle.corner ? 0.38 : settings.maxOpacity) * Math.pow(pulse, 1.4);
+      const fadeBeforeContent = phase < 0.68 ? 1 : Math.max(0, (0.9 - phase) / 0.22);
+      const opacity = particle.length < 24
+        ? 0
+        : (particle.bottom ? 0.24 : particle.corner ? 0.38 : settings.maxOpacity) * Math.pow(pulse, 1.4) * fadeBeforeContent;
       const distance = progress * particle.length;
       const segment = particle.segments.find(item => distance <= item.offset + item.distance) || particle.segments.at(-1);
       const local = segment ? Math.min(1, (distance - segment.offset) / segment.distance) : 0;

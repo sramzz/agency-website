@@ -1,3 +1,52 @@
+# Contact page — NP Digital reference QA (2026-09-24)
+
+## Evidence
+
+- Source visual truth path: `C:\Users\Kelly Serna\.codex\visualizations\2026\09\24\01a0d26a-9449-7fc1-9ef5-558696a708d0\npdigital-contact-reference.png`
+- Implementation screenshot path: `C:\Users\Kelly Serna\.codex\visualizations\2026\09\24\01a0d26a-9449-7fc1-9ef5-558696a708d0\contact-match-final-1366.png`
+- Combined comparison path: `C:\Users\Kelly Serna\.codex\visualizations\2026\09\24\01a0d26a-9449-7fc1-9ef5-558696a708d0\contact-comparison-final.png`
+- Route: `http://127.0.0.1:4176/contact/`
+- Viewport and normalization: both source and implementation are 1366 × 679 pixels, captured at 1366 × 679 CSS pixels and device scale 1.
+- State: desktop, dark theme, form idle, Australia +61 selected.
+
+## Full-view comparison
+
+The source and implementation were stacked at native size in one comparison image. The implementation matches the source hierarchy and density: compact header, centered eyebrow, one-line display heading, two-line support copy, 740px form, two equal 362px columns with a 16px gutter, three 50px field rows, and legal copy immediately below. Measured implementation positions are title x=320/y=198 and form x=313/y=408; the source is visually aligned to the same landmarks.
+
+## Focused region comparison
+
+No separate crop was required because the full-size stacked comparison preserves both 1366px canvases at native resolution and all hero typography, fields, phone control, and legal copy remain legible.
+
+## Required fidelity surfaces
+
+- Fonts and typography: Ranking Rebels retains Inter and JetBrains Mono, with the source's weight, scale, centered wrapping, and compact label treatment reproduced.
+- Spacing and layout rhythm: the form is 740px wide; first/last and company/email use equal columns; the phone occupies the complete third row; field and row gaps are 16px; there is no card surface.
+- Colors and visual tokens: the near-black field, light input, white type, and high-energy underline structure match the source while using Ranking Rebels red instead of NP Digital orange.
+- Image quality and assets: no source logo or brand artwork was copied. The official Ranking Rebels header asset remains sharp; restrained angular background planes follow the existing site treatment.
+- Copy and content: all Contact-specific questions remain except Website URL, removed at the user's direction. The form CTA and submission context are both `Submit`.
+- Responsive and accessibility: 320/390/768/1440 browser checks pass with no horizontal overflow; labels remain programmatic, phone selection is keyboard-operable, validation focuses the first error, maps remain responsive, and reduced motion is respected.
+
+## Comparison history
+
+1. Initial pass: title was too narrow, the form started 7px too high, Website and Phone created two extra full-width rows, and Turnstile separated the fields from the legal copy.
+2. Fixes: widened and raised the title, restored form y=408, changed to 16px form gaps, grouped Website/Phone into a compact third row, and moved the legal copy directly beneath the inputs.
+3. User revision: removed Website URL only on Contact, expanded Phone to the complete third row, and changed the visible and submitted CTA label to `Submit`.
+4. Post-fix evidence: title measures 725.5 × 77.8px at x=320/y=198; the form measures 740px at x=313/y=408; Phone is 740 × 50px; no Website URL control remains.
+
+## Findings
+
+No actionable P0, P1, or P2 mismatch remains. Intentional differences are the Ranking Rebels header, red accent, current form questions, compliance copy, Turnstile, and shared lead workflow.
+
+## Verification
+
+- Contact unit tests: 6/6 passed.
+- Contact browser QA: passed at 320/390/768/1440, including validation, country picker, focus, maps, and reduced motion.
+- Full static suite: 190/191 passed. The sole failure is the pre-existing duplicate Apple SVG in the private Titanium proposal and is unrelated to Contact.
+
+final result: passed
+
+---
+
 # Ranking Rebels Mobile Wordmark Follow-up QA
 
 ## Evidence

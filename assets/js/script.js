@@ -8,6 +8,7 @@ const primaryLinks = [
   { label: "Journey", href: "/journey/" },
   { label: "Success Cases", href: "/case-studies/" },
   { label: "About us", href: "/about/" },
+  { label: "Contact", href: "/contact/" },
 ];
 
 const marketLocations = [
@@ -23,6 +24,19 @@ const headerActions = siteHeader?.querySelector(".header-actions");
 const headerCta = headerActions?.querySelector(".header-cta");
 const desktopNav = document.querySelector(".desktop-nav");
 const mobileNav = document.querySelector("#mobile-nav");
+
+if (siteHeader) {
+  let isHeaderSurfaceVisible = null;
+  const syncHeaderSurface = () => {
+    const shouldShowSurface = window.scrollY > 0;
+    if (shouldShowSurface === isHeaderSurfaceVisible) return;
+    siteHeader.classList.toggle("is-scrolled", shouldShowSurface);
+    isHeaderSurfaceVisible = shouldShowSurface;
+  };
+
+  syncHeaderSurface();
+  window.addEventListener("scroll", syncHeaderSurface, { passive: true });
+}
 
 siteHeader?.querySelector(".brand")?.setAttribute("aria-label", "Ranking Rebels — Home");
 
@@ -136,7 +150,7 @@ if (desktopNav) {
   });
 }
 
-const contactLabel = currentPath === "/locations/australia/" ? "Request a search audit" : "Hire us!";
+const contactLabel = currentPath === "/locations/australia/" ? "Request a search audit" : currentPath === "/contact/" ? "Book a call" : "Hire us!";
 if (headerCta) headerCta.textContent = contactLabel;
 
 if (headerActions) {

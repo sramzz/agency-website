@@ -14,6 +14,7 @@ const json = (body: unknown, status: number): Response => new Response(JSON.stri
 type ConfigurableStringBinding =
   | "LEAD_ALLOWED_HOSTNAMES"
   | "LEAD_NOTICE_VERSION"
+  | "LEAD_PREVIOUS_NOTICE_VERSION"
   | "LEAD_EMAIL_FROM"
   | "LEAD_EMAIL_TO"
   | "LEAD_REQUEUE_AFTER_SECONDS";
@@ -45,7 +46,10 @@ const worker = {
     }
     const payload = body.value as Record<string, unknown>;
     if (validateHoneypot(payload.website).length > 0) return json({ ok: false, error: "honeypot_rejected" }, 422);
-    const validation = validateLeadPayload(payload, { noticeVersion: env.LEAD_NOTICE_VERSION });
+    const validation = validateLeadPayload(payload, {
+      noticeVersion: env.LEAD_NOTICE_VERSION,
+      previousNoticeVersion: env.LEAD_PREVIOUS_NOTICE_VERSION
+    });
     if (!validation.ok) return json({ ok: false, error: "validation_failed" }, 400);
     try {
       if (await hasLeadSubmission(env.DB, validation.value.submissionId)) {

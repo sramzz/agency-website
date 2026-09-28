@@ -9,7 +9,7 @@ const publicRoutes = [
   "/", "/solutions/", "/solutions/organic-discovery/", "/solutions/paid-ads/",
   "/solutions/ai-automation/", "/locations/", "/locations/australia/",
   "/locations/netherlands/", "/locations/latam/", "/case-studies/",
-  "/about/", "/journey/", "/privacy/", "/cookies/", "/legal/",
+  "/about/", "/journey/", "/contact/", "/privacy/", "/cookies/", "/legal/",
 ];
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
 const ignoredDirectories = new Set([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"]);
