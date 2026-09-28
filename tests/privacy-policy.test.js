@@ -44,9 +44,11 @@ test("policy identifies the LLC and describes enquiry data and practical retenti
   const html = read("privacy/index.html");
   assert.match(html, /Ranking Rebels LLC[\s\S]*Wyoming/);
   assert.match(html, /30 N Gould St Ste R, Sheridan, WY 82801/);
+  assert.match(html, /representative in the European Union is Santiago Ramirez Castaño/);
   assert.match(html, /info@rankingrebels\.com/);
   assert.match(html, /optional business website/);
   assert.match(html, /phone, email or WhatsApp/);
+  assert.match(html, /People responding to an enquiry may work from the Netherlands, Australia or Colombia/);
   assert.match(html, /Cloudflare D1[\s\S]*365 days/);
   assert.match(html, /Gmail notifications[\s\S]*delete or de-identify/);
   assert.doesNotMatch(html, /Gmail notification emails are deleted no later than 12 months/i);
@@ -66,8 +68,8 @@ test("cookie page distinguishes analytics, form storage and conditional security
 
 test("form notice and Worker agree on the new policy version", () => {
   const script = read("assets/js/lead-capture.js");
-  assert.match(script, /DEFAULT_NOTICE_VERSION = "2026-09-27"/);
+  assert.match(script, /DEFAULT_NOTICE_VERSION = "2026-09-28"/);
   assert.match(script, /Ranking Rebels LLC uses your details to respond/);
   assert.match(script, /href="\/cookies\/"/);
-  assert.match(read("worker/wrangler.jsonc"), /"LEAD_NOTICE_VERSION"\s*:\s*"2026-09-27"/);
+  assert.match(read("worker/wrangler.jsonc"), /"LEAD_NOTICE_VERSION"\s*:\s*"2026-09-28"/);
 });

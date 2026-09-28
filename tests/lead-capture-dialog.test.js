@@ -266,7 +266,7 @@ test("Turnstile uses the fixed localhost key and configured production key", () 
 
 test("init defaults noticeVersion when no global configuration is supplied", () => {
   const target = { addEventListener() {} };
-  assert.equal(init({ target }).noticeVersion, "2026-09-27");
+  assert.equal(init({ target }).noticeVersion, "2026-09-28");
 });
 
 test("default return toast appends to the injected document body", () => {
