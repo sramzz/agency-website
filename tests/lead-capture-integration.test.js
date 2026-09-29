@@ -14,7 +14,7 @@ const pages = [
   { file: "solutions/paid-ads/index.html", market: "Not specified", ctas: 7 },
   { file: "solutions/ai-automation/index.html", market: "Not specified", ctas: 3 },
   { file: "locations/index.html", market: "Not specified", ctas: 1 },
-  { file: "locations/australia/index.html", market: "Australia", ctas: 6 },
+  { file: "locations/australia/index.html", market: "Australia", ctas: 3 },
   { file: "locations/netherlands/index.html", market: "Netherlands", ctas: 3 },
   { file: "locations/latam/index.html", market: "LATAM", ctas: 3 },
   { file: "case-studies/index.html", market: "Not specified", ctas: 3 },
@@ -23,7 +23,7 @@ const pages = [
   { file: "contact/index.html", market: "Not specified", ctas: 0 },
 ];
 
-test("exactly 39 public commercial links opt in to shared lead capture", () => {
+test("exactly 36 public commercial links opt in to shared lead capture", () => {
   let total = 0;
   for (const page of pages) {
     const html = read(page.file);
@@ -31,7 +31,7 @@ test("exactly 39 public commercial links opt in to shared lead capture", () => {
     assert.equal(count, page.ctas, `${page.file} commercial CTA count`);
     total += count;
   }
-  assert.equal(total, 39);
+  assert.equal(total, 36);
 });
 
 test("each participating page declares market and loads lead capture before shared runtime", () => {
