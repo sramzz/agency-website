@@ -70,6 +70,8 @@ See `worker/README.md` for local variables, provisioning, rollout, DLQ inspectio
 ## Useful Docs
 
 - `CONTRIBUTING.md`: team workflow, branch naming, PR checklist, and review rules.
+- `CONTEXT.md`: shared project-specific vocabulary and delivery boundaries.
+- `docs/adr/`: accepted and superseded architecture decision records.
 - `docs/screenshot-and-test-workflow.md`: visual QA and screenshot workflow.
 - `docs/url-migration-map.md`: redirect and retired-route policy.
 - `worker/README.md`: lead Worker verification, authorized provisioning, operations, and rollback.

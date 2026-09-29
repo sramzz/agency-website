@@ -116,12 +116,12 @@ test("organic discovery hero animates the full intent-to-enquiry story", () => {
   assert.doesNotMatch(html, /reserved motion frame/i);
   assert.match(html, /From a high-intent search to a measurable customer action\./);
 
-  for (const stage of ["od-query-stage", "od-evidence-stage", "od-answer-stage", "od-action-stage", "od-outcome-stage"]) {
+  for (const stage of ["od-query-stage", "od-result-shell-stage", "od-answer-stage", "od-action-stage", "od-outcome-stage"]) {
     assert.match(styles, new RegExp(`@keyframes ${stage}`));
   }
 
   assert.match(styles, /\.od-hero-signal\.is-story-active \.od-query-card/);
-  assert.match(styles, /--od-story-duration: 14s/);
+  assert.match(styles, /--od-story-duration: 18s/);
   assert.match(styles, /\.od-query-text\s*\{[\s\S]*?display: flex;[\s\S]*?align-items: center;/);
   assert.match(styles, /\.od-signal-topline\s*\{[\s\S]*?opacity: 0;/);
   assert.match(styles, /@keyframes od-status-stage/);
@@ -130,6 +130,16 @@ test("organic discovery hero animates the full intent-to-enquiry story", () => {
   assert.match(styles, /\.od-route-line span\s*\{[\s\S]*?opacity: 0;[\s\S]*?translateY\(-100%\)/);
   assert.match(styles, /@keyframes od-connector-stage/);
   assert.match(styles, /@keyframes od-connector-travel/);
+  assert.match(styles, /@keyframes od-query-border-guide/);
+  assert.match(styles, /@keyframes od-result-border-guide/);
+  assert.match(styles, /@keyframes od-query-entry-flow/);
+  assert.match(styles, /@keyframes od-result-entry-flow/);
+  assert.match(styles, /clip-path: inset\(0 50% 100% 50% round 999px\)/);
+  assert.match(styles, /clip-path: inset\(0 50% 100% 50% round 18px\)/);
+  assert.match(styles, /@keyframes od-evidence-one-stage/);
+  assert.match(styles, /@keyframes od-evidence-two-stage/);
+  assert.match(styles, /@keyframes od-evidence-three-stage/);
+  assert.match(html, /class="od-result-content"/);
   assert.match(script, /storyObserver\.observe\(heroStory\)/);
   assert.match(script, /const typingDelay = 950/);
   assert.match(script, /const characterDelay = 80/);
