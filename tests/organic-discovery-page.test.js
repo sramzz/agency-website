@@ -6,6 +6,7 @@ const path = require("node:path");
 const root = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(root, "solutions", "organic-discovery", "index.html"), "utf8");
 const styles = fs.readFileSync(path.join(root, "assets", "css", "styles.css"), "utf8");
+const script = fs.readFileSync(path.join(root, "assets", "js", "organic-discovery.js"), "utf8");
 
 test("organic discovery page exposes the SEO and conversion contract", () => {
   assert.match(html, /<body class="editorial-site organic-discovery-page"/);
@@ -100,4 +101,40 @@ test("organic discovery visuals are page-scoped, responsive and motion-safe", ()
   assert.match(styles, /\.organic-discovery-page \.od-engine-grid\s*\{/);
   assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?\.organic-discovery-page \.od-discovery-map/);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.organic-discovery-page/);
+});
+
+test("organic discovery hero animates the full intent-to-enquiry story", () => {
+  for (const signal of ["Treatment match", "Melbourne location", "Trusted reviews", "Qualified enquiry"]) {
+    assert.ok(html.includes(signal), `${signal} should appear in the hero story`);
+  }
+
+  assert.match(html, /Best cosmetic clinic in Melbourne/);
+  assert.match(html, /data-od-query="Best cosmetic clinic in Melbourne"/);
+  assert.match(html, /class="od-query-text"[^>]*><span class="od-query-value"/);
+  assert.match(html, /aria-label="Search query: Best cosmetic clinic in Melbourne"/);
+  assert.match(html, /yourclinic\.com\.au/);
+  assert.doesNotMatch(html, /reserved motion frame/i);
+  assert.match(html, /From a high-intent search to a measurable customer action\./);
+
+  for (const stage of ["od-query-stage", "od-evidence-stage", "od-answer-stage", "od-action-stage", "od-outcome-stage"]) {
+    assert.match(styles, new RegExp(`@keyframes ${stage}`));
+  }
+
+  assert.match(styles, /\.od-hero-signal\.is-story-active \.od-query-card/);
+  assert.match(styles, /--od-story-duration: 14s/);
+  assert.match(styles, /\.od-query-text\s*\{[\s\S]*?display: flex;[\s\S]*?align-items: center;/);
+  assert.match(styles, /\.od-signal-topline\s*\{[\s\S]*?opacity: 0;/);
+  assert.match(styles, /@keyframes od-status-stage/);
+  assert.match(styles, /\.od-hero-signal\.is-story-active \.od-route-line span[\s\S]*?od-connector-travel var\(--od-story-duration\)/);
+  assert.match(styles, /\.od-route-line\s*\{[\s\S]*?opacity: 0;/);
+  assert.match(styles, /\.od-route-line span\s*\{[\s\S]*?opacity: 0;[\s\S]*?translateY\(-100%\)/);
+  assert.match(styles, /@keyframes od-connector-stage/);
+  assert.match(styles, /@keyframes od-connector-travel/);
+  assert.match(script, /storyObserver\.observe\(heroStory\)/);
+  assert.match(script, /const typingDelay = 950/);
+  assert.match(script, /const characterDelay = 80/);
+  assert.match(script, /queryText\.textContent = fullQuery\.slice\(0, characterIndex\)/);
+  assert.match(script, /queryCard\?\.addEventListener\("animationiteration"/);
+  assert.doesNotMatch(script, /setInterval/);
+  assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.od-qualified-outcome/);
 });

@@ -101,23 +101,29 @@
 
         <figure class="od-hero-signal" data-media-slot="hero-search-animation" aria-labelledby="hero-signal-caption">
           <div class="od-signal-topline"><span>Live discovery route</span><span class="od-live-status">Intent detected</span></div>
-          <div class="od-query-card">
+          <div class="od-query-card" aria-label="Search query: Best cosmetic clinic in Melbourne">
             <img src="/assets/images/platforms/logo-google.svg" alt="" aria-hidden="true" width="26" height="26" />
-            <span>best specialist for my problem near me</span>
+            <span class="od-query-text" aria-hidden="true"><span class="od-query-value" data-od-query="Best cosmetic clinic in Melbourne">Best cosmetic clinic in Melbourne</span></span>
             <i aria-hidden="true"></i>
           </div>
           <div class="od-route-line" aria-hidden="true"><span></span></div>
+          <div class="od-evidence-row" aria-label="Signals that make the result relevant">
+            <span>Treatment match</span>
+            <span>Melbourne location</span>
+            <span>Trusted reviews</span>
+          </div>
           <div class="od-result-preview">
-            <span class="od-result-domain">yourbusiness.com</span>
-            <strong>Your business becomes a credible answer.</strong>
-            <p>Clear service. Relevant location. Useful proof. Easy next step.</p>
+            <span class="od-result-domain">yourclinic.com.au</span>
+            <strong>Your clinic becomes the trusted local choice.</strong>
+            <p>Relevant treatments. Melbourne location. Credible proof. Easy booking.</p>
           </div>
           <div class="od-conversion-row" aria-label="Potential customer actions">
             <span><img class="od-action-icon od-action-icon-whatsapp" src="/assets/images/platforms/logo-whatsapp.svg" alt="" aria-hidden="true" width="20" height="20" /> Message</span>
             <span><svg class="od-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92Z" /></svg> Call</span>
             <span><svg class="od-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" /><path d="m9 16 2 2 4-5" /></svg> Book</span>
           </div>
-          <figcaption id="hero-signal-caption">A reserved motion frame for the journey from a real customer query to a qualified enquiry.</figcaption>
+          <div class="od-qualified-outcome" aria-label="Outcome: qualified enquiry"><span aria-hidden="true">✓</span> Qualified enquiry</div>
+          <figcaption id="hero-signal-caption">From a high-intent search to a measurable customer action.</figcaption>
         </figure>
       </section>
 
