@@ -115,24 +115,17 @@ test("AI automation visual behavior is page-scoped and motion-safe", () => {
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.ai-automation-page/);
 });
 
-test("workflow nodes and animated connectors have explicit non-overlapping tracks", () => {
+test("AI automation hero explains a customer conversation with human approval", () => {
   const html = readPage();
-  const styles = fs.readFileSync(path.join(root, "assets", "css", "styles.css"), "utf8");
-
-  for (const className of [
-    "workflow-node-rules",
-    "workflow-connector-to-rules",
-    "workflow-connector-to-ai",
-    "workflow-connector-to-human",
-    "workflow-connector-to-action",
-  ]) {
-    assert.match(html, new RegExp(`class="[^"]*${className}`));
-  }
-
-  assert.match(styles, /grid-template-areas:\s*"trigger to-rules rules"/);
-  assert.match(styles, /\.ai-automation-page \.workflow-node-ai\s*\{[^}]*grid-area:\s*assist/);
-  assert.match(styles, /\.ai-automation-page \.workflow-connector\s*\{[^}]*overflow:\s*hidden/);
-  assert.match(styles, /@media \(max-width: 700px\)[\s\S]*?grid-template-areas:\s*"\. trigger"/);
+  assert.match(html, /data-automation-conversation data-phase="sent"/);
+  assert.match(html, /Hi, can I book a service for Friday\?/);
+  assert.match(html, /What time on Friday suits you\?/);
+  assert.match(html, /Prepared|Reply prepared/);
+  assert.match(html, /Approved by your team/);
+  assert.match(html, /data-conversation-toggle/);
+  assert.match(html, /data-conversation-replay/);
+  assert.match(html, /src="\/assets\/js\/automation-conversation\.js/);
+  assert.doesNotMatch(html, /workflow-connector|workflow-node/);
 });
 
 test("human handoff rail is centered and final CTA reuses the case-study component", () => {

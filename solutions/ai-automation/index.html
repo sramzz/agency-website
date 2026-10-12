@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260927-header-hero-continuity" />
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20261012-hero-viewport" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -126,21 +126,26 @@
           <p class="automation-cta-cue">Bring us one repetitive task or missed handoff. We’ll start there.</p>
         </div>
 
-        <!-- Replace this figure with a real workflow video or client case study when a verified asset is available. -->
-        <figure class="automation-workflow" data-media-slot="workflow-demo" aria-labelledby="workflow-caption">
-          <div class="automation-workflow-topline"><span>Workflow 01</span><span class="workflow-status">Human-controlled</span></div>
-          <div class="automation-workflow-path" aria-hidden="true">
-            <div class="workflow-node workflow-node-trigger"><span>01 · Trigger</span><strong>New enquiry</strong><small>Form, inbox or WhatsApp</small></div>
-            <div class="workflow-connector workflow-connector-to-rules"><span></span></div>
-            <div class="workflow-node workflow-node-rules"><span>02 · Rules</span><strong>Check the facts</strong><small>Source, service and required details</small></div>
-            <div class="workflow-connector workflow-connector-to-ai"><span></span></div>
-            <div class="workflow-node workflow-node-ai"><span>03 · AI assist</span><strong>Read the context</strong><small>Classify and prepare a useful draft</small></div>
-            <div class="workflow-connector workflow-connector-to-human workflow-connector-human"><span></span></div>
-            <div class="workflow-node workflow-node-human"><span>04 · Approval</span><strong>Person checks</strong><small>Exceptions and important decisions</small></div>
-            <div class="workflow-connector workflow-connector-to-action"><span></span></div>
-            <div class="workflow-node workflow-node-action"><span>05 · Action</span><strong>Next step moves</strong><small>Reply, booking or structured handover</small></div>
+        <figure class="automation-workflow" data-media-slot="workflow-demo" data-automation-conversation data-phase="sent" aria-labelledby="workflow-caption">
+          <div class="automation-workflow-topline"><span>Enquiry workflow · Example</span><span class="workflow-status">Your team stays in control</span></div>
+          <div class="automation-conversation-layout">
+            <div class="automation-conversation-thread">
+              <div class="automation-conversation-heading"><span>Customer conversation</span><span class="automation-conversation-avatar" aria-hidden="true">CL</span></div>
+              <div class="automation-conversation-message automation-conversation-incoming"><small>Customer</small><p>Hi, can I book a service for Friday?</p></div>
+              <div class="automation-conversation-message automation-conversation-reply"><small data-conversation-sender>Your team · sent</small><p>Hi! What time on Friday suits you? We’ll check availability and confirm.</p></div>
+              <div class="automation-conversation-approval"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4 10-10" /></svg><div><strong data-conversation-approval>Approved by your team.</strong><span data-conversation-result>The customer has a reply.</span></div></div>
+            </div>
+            <div class="automation-conversation-context">
+              <h3>What happens</h3>
+              <ol>
+                <li data-conversation-step="0"><span class="automation-conversation-number" aria-hidden="true">01</span><strong>Enquiry received</strong><p>The customer asks about Friday.</p></li>
+                <li data-conversation-step="1"><span class="automation-conversation-number" aria-hidden="true">02</span><strong>Reply prepared</strong><p>A useful draft is ready to check.</p></li>
+                <li data-conversation-step="2"><span class="automation-conversation-number" aria-hidden="true">03</span><strong data-conversation-final-step>Approved and sent</strong><p>A person has the final say.</p></li>
+              </ol>
+            </div>
           </div>
-          <figcaption id="workflow-caption">A sample enquiry workflow. Predictable steps move automatically, while judgement stays with your team.</figcaption>
+          <div class="automation-conversation-footer"><p data-conversation-summary>Approved by your team. Sent to the customer.</p><div class="automation-conversation-controls" hidden><button type="button" data-conversation-toggle>Play again</button><button type="button" data-conversation-replay>Replay</button></div></div>
+          <figcaption id="workflow-caption">An illustrative enquiry workflow: a reply is prepared automatically, checked by your team, then sent to the customer.</figcaption>
         </figure>
       </section>
 
@@ -224,6 +229,7 @@
     <script src="/assets/js/lead-capture-config.js?v=20260904-turnstile"></script>
     <script src="/assets/js/lead-capture.js?v=20260928-privacy-notice"></script>
     <script src="/assets/js/script.js?v=20260926-header-surface-global"></script>
+    <script src="/assets/js/automation-conversation.js?v=20261012-chat-context" defer></script>
     <script src="/assets/js/next-case-card.js?v=20260914-particles-v11" defer></script>
   </body>
 </html>
