@@ -11,7 +11,8 @@ function setup(reduced = false) {
     return elements.get(selector);
   };
   const root = { dataset: {}, querySelector: find };
-  const media = { matches: reduced, addEventListener() {} };
+  const mediaEvents = {};
+  const media = { matches: reduced, addEventListener(type, handler) { mediaEvents[type] = handler; } };
   let intersection;
   const document = { hidden: false, querySelector: () => root, addEventListener(type, handler) { events[type] = handler; } };
   class IntersectionObserver { constructor(callback) { intersection = callback; } observe() {} }
@@ -25,7 +26,7 @@ function setup(reduced = false) {
     }
     time = end;
   };
-  return { root, find, document, events, advance, view: visible => intersection([{ isIntersecting: visible }]) };
+  return { root, find, document, events, advance, motion: reduced => { media.matches = reduced; mediaEvents.change(); }, view: visible => intersection([{ isIntersecting: visible }]) };
 }
 test('conversation plays in order while visible and repeats after the final reading pause', () => {
   const f = setup();
@@ -36,26 +37,24 @@ test('conversation plays in order while visible and repeats after the final read
   f.advance(2200); assert.equal(f.root.dataset.phase, 'sent');
   f.advance(3599); assert.equal(f.root.dataset.phase, 'sent');
   f.advance(1); assert.equal(f.root.dataset.phase, 'received');
-  assert.equal(f.find('[data-conversation-toggle]').attributes['aria-label'], 'Pause enquiry example');
   f.advance(3200); assert.equal(f.root.dataset.phase, 'draft');
   f.advance(3800 + 2200); assert.equal(f.root.dataset.phase, 'sent');
   f.advance(3600); assert.equal(f.root.dataset.phase, 'received');
 });
-test('pause and offscreen suspension preserve the remaining reading time', () => {
+test('offscreen suspension preserves the remaining reading time', () => {
   const f = setup(); f.view(true); f.advance(1000);
-  f.find('[data-conversation-toggle]').handlers.click(); f.advance(9000);
+  f.view(false); f.advance(9000);
   assert.equal(f.root.dataset.phase, 'received');
-  f.find('[data-conversation-toggle]').handlers.click(); f.advance(2199);
+  f.view(true); f.advance(2199);
   assert.equal(f.root.dataset.phase, 'received');
   f.advance(1); assert.equal(f.root.dataset.phase, 'draft');
   f.advance(800); f.view(false); f.advance(9000); assert.equal(f.root.dataset.phase, 'draft');
   f.view(true); f.advance(3000); assert.equal(f.root.dataset.phase, 'review');
 });
-test('reduced motion starts with the complete example and replay is an explicit choice', () => {
+test('reduced motion shows the complete example and changing the preference resumes autoplay', () => {
   const f = setup(true); f.view(true); f.advance(20000);
   assert.equal(f.root.dataset.phase, 'sent');
-  assert.equal(f.find('[data-conversation-toggle]').attributes['aria-label'], 'Play enquiry example again');
-  f.find('[data-conversation-toggle]').handlers.click();
+  f.motion(false);
   assert.equal(f.root.dataset.phase, 'received');
   f.advance(3200); assert.equal(f.root.dataset.phase, 'draft');
 });
@@ -70,14 +69,4 @@ test('background tabs suspend playback and the next loop keeps its full reading 
   f.advance(3199); assert.equal(f.root.dataset.phase, 'received');
   f.advance(1); assert.equal(f.root.dataset.phase, 'draft');
   f.advance(3800); assert.equal(f.root.dataset.phase, 'review');
-});
-
-test('pausing the sent phase preserves the final reading pause before looping', () => {
-  const f = setup(); f.view(true); f.advance(3200 + 3800 + 2200 + 1000);
-  f.find('[data-conversation-toggle]').handlers.click();
-  f.advance(30000); assert.equal(f.root.dataset.phase, 'sent');
-  f.find('[data-conversation-toggle]').handlers.click();
-  assert.equal(f.root.dataset.phase, 'sent');
-  f.advance(2599); assert.equal(f.root.dataset.phase, 'sent');
-  f.advance(1); assert.equal(f.root.dataset.phase, 'received');
 });

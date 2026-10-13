@@ -122,7 +122,7 @@ test("AI automation hero explains a customer conversation with human approval", 
   assert.match(html, /What time on Friday suits you\?/);
   assert.match(html, /Prepared|Reply prepared/);
   assert.match(html, /Approved by your team/);
-  assert.match(html, /data-conversation-toggle/);
+  assert.doesNotMatch(html, /data-conversation-toggle|automation-conversation-controls|conversation-play-icon|conversation-pause-icon/);
   assert.doesNotMatch(html, /automation-conversation-footer|data-conversation-summary|data-conversation-replay|An illustrative enquiry workflow/);
   assert.match(html, /src="\/assets\/js\/automation-conversation\.js/);
   assert.doesNotMatch(html, /workflow-connector|workflow-node/);

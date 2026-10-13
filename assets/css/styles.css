@@ -8851,46 +8851,6 @@ body.service-dialog-open {
   font-size: 0.63rem;
   line-height: 1.7;
 }
-.ai-automation-page .automation-conversation-controls {
-  display: flex;
-  gap: 8px;
-}
-.ai-automation-page .automation-conversation-controls[hidden] { display: none; }
-.ai-automation-page .automation-conversation-controls button {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 6px;
-  background: transparent;
-  color: var(--neutral);
-  font-family: inherit;
-  font-size: 0.64rem;
-  cursor: pointer;
-}
-.ai-automation-page .automation-conversation-controls svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.ai-automation-page [data-playback="play"] .conversation-pause-icon,
-.ai-automation-page [data-playback="pause"] .conversation-play-icon {
-  display: none;
-}
-.ai-automation-page .automation-conversation-controls button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-.ai-automation-page .automation-conversation-controls button:active { background: rgba(255, 138, 0, 0.12); }
-@media (hover: hover) and (pointer: fine) {
-  .ai-automation-page .automation-conversation-controls button:hover { border-color: var(--accent); }
-}
 /* Reserve message geometry throughout the story. Without JS the complete example is visible. */
 .ai-automation-page [data-phase="received"] .automation-conversation-reply,
 .ai-automation-page [data-phase="received"] .automation-conversation-approval,
@@ -8908,7 +8868,6 @@ body.service-dialog-open {
   .ai-automation-page .automation-conversation-context ol { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
   .ai-automation-page .automation-conversation-context strong { font-size: 0.61rem; }
   .ai-automation-page .automation-conversation-context p { display: none; }
-  .ai-automation-page .automation-conversation-controls button { min-height: 44px; }
 }
 
 
