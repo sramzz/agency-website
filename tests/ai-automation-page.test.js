@@ -123,7 +123,7 @@ test("AI automation hero explains a customer conversation with human approval", 
   assert.match(html, /Prepared|Reply prepared/);
   assert.match(html, /Approved by your team/);
   assert.match(html, /data-conversation-toggle/);
-  assert.match(html, /data-conversation-replay/);
+  assert.doesNotMatch(html, /automation-conversation-footer|data-conversation-summary|data-conversation-replay|An illustrative enquiry workflow/);
   assert.match(html, /src="\/assets\/js\/automation-conversation\.js/);
   assert.doesNotMatch(html, /workflow-connector|workflow-node/);
 });
@@ -136,5 +136,6 @@ test("human handoff rail is centered and final CTA reuses the case-study compone
   assert.match(html, /id="automation-contact" class="section banner next-case-banner automation-contact"/);
   assert.match(html, /data-next-case-card/);
   assert.match(html, /src="\/assets\/js\/next-case-card\.js/);
-  assert.match(styles, /\.ai-automation-page \.automation-control-rail::before\s*\{[^}]*left:\s*29(?:\.5)?px/);
+  assert.match(styles, /\.ai-automation-page \.automation-control-rail > div:not\(:last-child\)::after\s*\{[^}]*left:\s*29(?:\.5)?px/);
+  assert.doesNotMatch(styles, /\.automation-control-rail::before\s*\{/);
 });

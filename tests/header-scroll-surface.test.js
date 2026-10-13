@@ -27,7 +27,7 @@ const publicHeaderPages = [
 test("every public header page loads the same current shared assets", () => {
   for (const file of publicHeaderPages) {
     const html = fs.readFileSync(path.join(root, file), "utf8");
-    assert.match(html, /\/assets\/css\/styles\.css\?v=20261012-hero-viewport/, `${file} should load the current shared styles`);
+    assert.match(html, /\/assets\/css\/styles\.css\?v=20261013-conversation-clean/, `${file} should load the current shared styles`);
     assert.match(html, /\/assets\/js\/script\.js\?v=20260926-header-surface-global/, `${file} should load the current shared script`);
   }
 });

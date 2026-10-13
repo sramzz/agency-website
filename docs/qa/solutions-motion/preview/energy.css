@@ -1,0 +1,11 @@
+/* Only the original animation card. Its layout and copy stay intact. */
+.solutions-hero-signal[data-energy] .solutions-signal-flow::after{content:none;animation:none}
+.solutions-hero-signal[data-energy] .solutions-signal-flow::before{animation:none;transform:scaleY(1);opacity:.35}
+.solutions-hero-signal[data-energy] .solutions-signal-flow li{animation:none;opacity:1;transform:none}
+.solutions-hero-signal[data-energy] .energy-rim,.solutions-hero-signal[data-energy] .energy-halo,.solutions-hero-signal[data-energy] .energy-number{position:absolute;pointer-events:none;opacity:0}
+.solutions-hero-signal[data-energy] .energy-rim{inset:-2px;border-radius:50%;background:conic-gradient(from 0deg,transparent 0deg 235deg,#ff304f 285deg,#ff8a00 330deg,#ffe5ad 357deg,transparent 360deg);mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1.7px));filter:drop-shadow(0 0 4px #ff8a00)}
+.solutions-hero-signal[data-energy] .energy-halo{inset:-1px;border:1.5px solid #ff8a00;border-radius:50%;box-shadow:0 0 12px #ff8a0065,inset 0 0 8px #ff304f30}
+.solutions-hero-signal[data-energy] .energy-number{inset:0;display:grid;place-items:center;color:#fff1c7;text-shadow:0 0 7px #ff8a00,0 0 13px #ff304f;font:inherit}
+.solutions-hero-signal[data-energy] .energy-links{position:absolute;inset:0;pointer-events:none;z-index:0}
+.solutions-hero-signal[data-energy] .energy-link{position:absolute;width:2px;background:linear-gradient(#ff8a00,#ff304f);box-shadow:0 0 8px #ff304f60;transform-origin:top center;opacity:0}
+@media(prefers-reduced-motion:reduce){.solutions-hero-signal[data-energy] .energy-halo{opacity:.5}.solutions-hero-signal[data-energy] .energy-number{opacity:1}.solutions-hero-signal[data-energy] .energy-link{opacity:.5}}

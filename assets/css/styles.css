@@ -8743,7 +8743,7 @@ body.service-dialog-open {
   grid-template-columns: minmax(0, 1fr) 138px;
   gap: 20px;
   min-height: 380px;
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 .ai-automation-page .automation-conversation-thread {
   display: flex;
@@ -8760,16 +8760,6 @@ body.service-dialog-open {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--secondary);
   font-size: 0.66rem;
-}
-.ai-automation-page .automation-conversation-avatar {
-  display: grid;
-  place-items: center;
-  width: 28px;
-  height: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.05);
-  font-size: 0.58rem;
 }
 .ai-automation-page .automation-conversation-message {
   padding: 16px;
@@ -8861,28 +8851,17 @@ body.service-dialog-open {
   font-size: 0.63rem;
   line-height: 1.7;
 }
-.ai-automation-page .automation-conversation-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 18px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-.ai-automation-page .automation-conversation-footer p {
-  margin: 0;
-  font-size: 0.7rem;
-  line-height: 1.6;
-}
 .ai-automation-page .automation-conversation-controls {
   display: flex;
   gap: 8px;
 }
 .ai-automation-page .automation-conversation-controls[hidden] { display: none; }
 .ai-automation-page .automation-conversation-controls button {
-  min-height: 36px;
-  padding: 7px 12px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 6px;
   background: transparent;
@@ -8890,6 +8869,19 @@ body.service-dialog-open {
   font-family: inherit;
   font-size: 0.64rem;
   cursor: pointer;
+}
+.ai-automation-page .automation-conversation-controls svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ai-automation-page [data-playback="play"] .conversation-pause-icon,
+.ai-automation-page [data-playback="pause"] .conversation-play-icon {
+  display: none;
 }
 .ai-automation-page .automation-conversation-controls button:focus-visible {
   outline: 2px solid var(--accent);
@@ -8919,13 +8911,6 @@ body.service-dialog-open {
   .ai-automation-page .automation-conversation-controls button { min-height: 44px; }
 }
 
-.ai-automation-page .automation-workflow figcaption {
-  position: relative;
-  z-index: 1;
-  color: var(--secondary);
-  font-size: 0.73rem;
-  line-height: 1.55;
-}
 
 .ai-automation-page .automation-value .section-heading {
   max-width: 880px;
@@ -9115,14 +9100,16 @@ body.service-dialog-open {
   gap: 12px;
 }
 
-.ai-automation-page .automation-control-rail::before {
+.ai-automation-page .automation-control-rail > div:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 34px;
-  bottom: 34px;
+  top: 40.5px;
   left: 29.5px;
   width: 1px;
+  /* Span this card and the 12px gap to the next marker, including borders. */
+  height: calc(100% + 14px);
   background: linear-gradient(var(--accent), var(--tertiary));
+  pointer-events: none;
 }
 
 .ai-automation-page .automation-control-rail > div {
@@ -9140,6 +9127,7 @@ body.service-dialog-open {
 .ai-automation-page .automation-control-rail > div::before {
   content: "";
   position: absolute;
+  z-index: 1;
   top: 31px;
   left: 20px;
   width: 11px;
@@ -9315,7 +9303,7 @@ body.service-dialog-open {
     padding-left: 58px;
   }
 
-  .ai-automation-page .automation-control-rail::before {
+  .ai-automation-page .automation-control-rail > div:not(:last-child)::after {
     left: 24.5px;
   }
 
@@ -12279,7 +12267,8 @@ body.editorial-site main > .hero {
   }
   .ai-automation-page .automation-conversation-layout {
     min-height: 320px;
-    padding-block: 18px;
+    padding-top: 18px;
+    padding-bottom: 0;
     gap: 16px;
   }
   .ai-automation-page .automation-conversation-thread {
@@ -12351,7 +12340,8 @@ body.editorial-site main > .hero {
   }
   .ai-automation-page .automation-conversation-layout {
     min-height: 0;
-    padding-block: 14px;
+    padding-top: 14px;
+    padding-bottom: 0;
   }
   .ai-automation-page .automation-conversation-thread {
     gap: 12px;
@@ -12371,10 +12361,7 @@ body.editorial-site main > .hero {
   .ai-automation-page .automation-conversation-number {
     margin-bottom: 6px;
   }
-  .ai-automation-page .automation-conversation-footer {
-    padding-block: 12px;
-  }
-  .organic-discovery-page .od-hero-signal {
+    .organic-discovery-page .od-hero-signal {
     padding: 18px;
   }
   .organic-discovery-page .od-signal-topline {

@@ -7,7 +7,7 @@ function setup(reduced = false) {
   let time = 0, id = 0;
   const timers = new Map(), elements = new Map(), events = {};
   const find = selector => {
-    if (!elements.has(selector)) elements.set(selector, { textContent: '', hidden: true, handlers: {}, setAttribute() {}, addEventListener(type, handler) { this.handlers[type] = handler; } });
+    if (!elements.has(selector)) elements.set(selector, { textContent: '', hidden: true, handlers: {}, attributes: {}, setAttribute(name, value) { this.attributes[name] = value; }, addEventListener(type, handler) { this.handlers[type] = handler; } });
     return elements.get(selector);
   };
   const root = { dataset: {}, querySelector: find };
@@ -34,7 +34,7 @@ test('conversation plays in order only while visible and stops after sending', (
   f.advance(3800); assert.equal(f.root.dataset.phase, 'review');
   assert.equal(f.find('[data-conversation-sender]').textContent, 'Prepared reply · not sent');
   f.advance(2200); assert.equal(f.root.dataset.phase, 'sent');
-  f.advance(3600); assert.equal(f.find('[data-conversation-toggle]').textContent, 'Play again');
+  f.advance(3600); assert.equal(f.find('[data-conversation-toggle]').attributes['aria-label'], 'Play enquiry example again');
 });
 test('pause and offscreen suspension preserve the remaining reading time', () => {
   const f = setup(); f.view(true); f.advance(1000);
@@ -49,8 +49,8 @@ test('pause and offscreen suspension preserve the remaining reading time', () =>
 test('reduced motion starts with the complete example and replay is an explicit choice', () => {
   const f = setup(true); f.view(true); f.advance(20000);
   assert.equal(f.root.dataset.phase, 'sent');
-  assert.equal(f.find('[data-conversation-toggle]').textContent, 'Play again');
-  f.find('[data-conversation-replay]').handlers.click();
+  assert.equal(f.find('[data-conversation-toggle]').attributes['aria-label'], 'Play enquiry example again');
+  f.find('[data-conversation-toggle]').handlers.click();
   assert.equal(f.root.dataset.phase, 'received');
   f.advance(3200); assert.equal(f.root.dataset.phase, 'draft');
 });
@@ -60,7 +60,10 @@ test('background tabs suspend playback and replay cancels the old schedule', () 
   assert.equal(f.root.dataset.phase, 'received');
   f.document.hidden = false; f.events.visibilitychange(); f.advance(2200);
   assert.equal(f.root.dataset.phase, 'draft');
-  f.find('[data-conversation-replay]').handlers.click(); f.advance(3200);
-  assert.equal(f.root.dataset.phase, 'draft');
+  f.advance(3800 + 2200 + 3600);
+  f.find('[data-conversation-toggle]').handlers.click();
+  assert.equal(f.root.dataset.phase, 'received');
+  f.advance(3199); assert.equal(f.root.dataset.phase, 'received');
+  f.advance(1); assert.equal(f.root.dataset.phase, 'draft');
   f.advance(3800); assert.equal(f.root.dataset.phase, 'review');
 });
