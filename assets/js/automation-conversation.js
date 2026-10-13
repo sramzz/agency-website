@@ -33,7 +33,7 @@
     toggle.setAttribute("data-playback", playing ? "pause" : "play");
     toggle.setAttribute("aria-label", playing ? "Pause enquiry example" : phase === 3 ? "Play enquiry example again" : "Resume enquiry example");
 
-    const target = phase === 1 ? find(".automation-conversation-reply") : phase >= 2 ? find(".automation-conversation-approval") : null;
+    const target = phase === 0 ? find(".automation-conversation-incoming") : phase === 1 ? find(".automation-conversation-reply") : find(".automation-conversation-approval");
     if (animate && target?.animate) {
       target.getAnimations().forEach((animation) => animation.cancel());
       target.animate(media.matches
@@ -48,12 +48,7 @@
     startedAt = performance.now();
     timer = setTimeout(() => {
       timer = null;
-      if (phase === 3) {
-        playing = false;
-        render();
-        return;
-      }
-      phase += 1;
+      phase = (phase + 1) % phases.length;
       remaining = durations[phase];
       render(true);
       schedule();
@@ -71,7 +66,7 @@
   }
 
   toggle.addEventListener("click", () => {
-    if (!playing && phase === 3) {
+    if (!playing && phase === 3 && media.matches) {
       restart();
       return;
     }
