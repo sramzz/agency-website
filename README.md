@@ -24,6 +24,13 @@ python3 -m http.server 4176
 
 ## Tests
 
+The blog is available at `/blog/`, with the first article at
+`/blog/is-seo-still-relevant-ai-search/`. Its reviewed Markdown and local preview
+live in `docs/editorial/blog-seo-ai-australia/`. After editing that manuscript,
+regenerate the public pages with `node tools/publish-blog.cjs` and run the tests.
+The public blog uses the existing brand and self-hosted fonts, and does not
+invent a human author or reviewer.
+
 Run the complete static regression suite from the repository root:
 
 ```sh

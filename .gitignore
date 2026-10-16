@@ -7,6 +7,7 @@ node_modules/
 *.log
 coverage/
 .cache/
+.cloudflare/
 dist/
 build/
 .dev.vars

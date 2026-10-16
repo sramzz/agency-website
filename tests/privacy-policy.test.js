@@ -9,10 +9,10 @@ const publicRoutes = [
   "/", "/solutions/", "/solutions/organic-discovery/", "/solutions/paid-ads/",
   "/solutions/ai-automation/", "/locations/", "/locations/australia/",
   "/locations/netherlands/", "/locations/latam/", "/case-studies/",
-  "/about/", "/journey/", "/contact/", "/privacy/", "/cookies/", "/legal/",
+  "/about/", "/journey/", "/contact/", "/privacy/", "/cookies/", "/legal/", "/blog/", "/blog/is-seo-still-relevant-ai-search/",
 ];
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
-const ignoredDirectories = new Set([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"]);
+const ignoredDirectories = new Set([".git", ".kilo", ".cache", "docs", "node_modules", ".wrangler", "coverage", "dist", "build"]);
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
   if (ignoredDirectories.has(entry.name) || entry.name === "proposals") return [];
   const absolute = path.join(directory, entry.name);

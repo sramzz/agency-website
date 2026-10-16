@@ -7,6 +7,7 @@ const solutionLinks = [
 const primaryLinks = [
   { label: "Journey", href: "/journey/" },
   { label: "Success Cases", href: "/case-studies/" },
+  { label: "Blog", href: "/blog/" },
   { label: "About us", href: "/about/" },
   { label: "Contact", href: "/contact/" },
 ];

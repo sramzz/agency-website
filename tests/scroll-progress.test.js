@@ -9,7 +9,7 @@ const { calculateReadingProgress } = require(path.join(root, "assets/js/scroll-p
 
 const htmlFiles = (directory = root) =>
   fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-    if ([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
+    if ([".git", ".kilo", ".cache", "docs", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
     const absolutePath = path.join(directory, entry.name);
     if (entry.isDirectory()) return htmlFiles(absolutePath);
     return entry.name === "index.html" ? [absolutePath] : [];
@@ -26,12 +26,14 @@ test("progress calculation is proportional and safely clamped", () => {
 
 test("every website page loads the shared progress assets exactly once", () => {
   const pages = htmlFiles();
-  assert.equal(pages.length, 22);
+  assert.equal(pages.length, 24);
 
   for (const absolutePath of pages) {
     const relativePath = path.relative(root, absolutePath);
     const html = fs.readFileSync(absolutePath, "utf8");
-    assert.equal((html.match(/href="\/assets\/css\/scroll-progress\.css"/g) || []).length, 1, `${relativePath} should load progress CSS once`);
+    const progressStylesheets = [...html.matchAll(/href="\/assets\/css\/(scroll-progress|blog)\.css(?:\?[^\"]*)?"/g)];
+    assert.equal(progressStylesheets.length, 1, `${relativePath} should load progress CSS once`);
+    assert.match(read(`assets/css/${progressStylesheets[0][1]}.css`), /\.reading-progress/, `${relativePath} stylesheet includes reading progress`);
     assert.equal((html.match(/src="\/assets\/js\/scroll-progress\.js"/g) || []).length, 1, `${relativePath} should load progress JS once`);
   }
 });

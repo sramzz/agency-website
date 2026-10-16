@@ -9,6 +9,8 @@ const script = fs.readFileSync(path.join(root, "assets", "js", "script.js"), "ut
 const publicHeaderPages = [
   "404.html",
   "index.html",
+  "blog/index.html",
+  "blog/is-seo-still-relevant-ai-search/index.html",
   "about/index.html",
   "case-studies/index.html",
   "contact/index.html",

@@ -25,6 +25,8 @@ const publicRoutes = [
   "/privacy/",
   "/cookies/",
   "/legal/",
+  "/blog/",
+  "/blog/is-seo-still-relevant-ai-search/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
@@ -47,7 +49,7 @@ test("public source files are valid UTF-8", () => {
 });
 
 const walk = (directory) => fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
-  if ([".git", ".kilo", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
+  if ([".git", ".kilo", ".cache", "docs", "node_modules", ".wrangler", "coverage", "dist", "build"].includes(entry.name)) return [];
   const absolute = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(absolute) : [absolute];
 });
@@ -551,12 +553,12 @@ test("production images are organized, SEO-named and have appropriate alt contra
   const hashes = new Map();
   for (const absolute of imageFiles.filter((file) => file.includes(`${path.sep}assets${path.sep}images${path.sep}`))) {
     const hash = crypto.createHash("sha256").update(fs.readFileSync(absolute)).digest("hex");
-    const relative = path.relative(root, absolute);
+    const relative = path.relative(root, absolute).split(path.sep).join("/");
     // Public ribbon assets intentionally retain their private proposal originals.
     const proposalLogo = relative.startsWith("assets/images/proposals/titanium-gym-9c42e7/logo-");
     const sharedCopy = hashes.get(hash) === `assets/images/platforms/${path.basename(relative)}`;
     assert.ok(!hashes.has(hash) || (proposalLogo && sharedCopy), `${relative} duplicates ${hashes.get(hash)}`);
-    hashes.set(hash, path.relative(root, absolute));
+    hashes.set(hash, relative);
   }
 });
 
