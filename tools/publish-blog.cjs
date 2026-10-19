@@ -14,7 +14,7 @@ html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', ''
   .replace(/  <link rel="preconnect"[^\n]+\n/g, '')
   .replace(/  <link href="https:\/\/fonts.googleapis.com[^\n]+\n/g, '')
   .replace('  <link rel="stylesheet" href="/assets/css/scroll-progress.css" />\n', '')
-  .replace('href="preview.css"', 'href="/assets/css/blog.css?v=20261019-melbourne"')
+  .replace('href="preview.css"', 'href="/assets/css/blog.css?v=20261019-local-seo"')
   .replace('src="preview.js"', 'src="/assets/js/blog.js?v=20261019-melbourne"')
   .replace('<span aria-current="page">Journal</span>', '<a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">SEO &amp; AI search</span>')
   .replace(/<span class="blog-version"><i aria-hidden="true"><\/i>Local preview · V\d+<\/span>/, `<span class="blog-version">${date}</span>`)
@@ -84,4 +84,5 @@ const css = fontFaces + '\n' + progressCSS + '\n' + fs.readFileSync(path.join(ed
 `;
 fs.writeFileSync(path.join(root, 'assets/css/blog.css'), css);
 fs.copyFileSync(path.join(editorial, 'preview.js'), path.join(root, 'assets/js/blog.js'));
-console.log('Generated public blog hub, complete article and assets.');
+require('./publish-local-seo-blog.cjs')({ root, html, title, date, readingMinutes });
+console.log('Generated public blog hub, complete articles and shared assets.');

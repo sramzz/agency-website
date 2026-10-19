@@ -26,7 +26,7 @@ test("progress calculation is proportional and safely clamped", () => {
 
 test("every website page loads the shared progress assets exactly once", () => {
   const pages = htmlFiles();
-  assert.equal(pages.length, 24);
+  assert.equal(pages.length, 25);
 
   for (const absolutePath of pages) {
     const relativePath = path.relative(root, absolutePath);

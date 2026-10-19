@@ -27,6 +27,7 @@ const publicRoutes = [
   "/legal/",
   "/blog/",
   "/blog/is-seo-still-relevant-ai-search/",
+  "/blog/local-seo-google-maps-visibility/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;

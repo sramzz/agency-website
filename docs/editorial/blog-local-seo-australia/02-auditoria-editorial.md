@@ -1,0 +1,37 @@
+# Auditoría priorizada del manuscrito real
+
+Esta auditoría describe la revisión editorial previa a producción. La publicación posterior se registra en `08-publicacion.md` y `09-verificacion-publicacion.json`.
+
+Revisión: 19 de octubre de 2026. Zona horaria de la entrega: Australia/Sydney. Base: `RR website/output/blogs/02-local-seo/02-articulo-local-seo-australia.md`, leído íntegramente antes de editar. Resultado: `03-articulo-local-seo-australia.md` de esta carpeta. La copia original queda conservada en `originales/`.
+
+No se identificó un error crítico demostrado en las afirmaciones técnicas conservadas. «Importante editorial» describe un problema de utilidad o de adecuación a la voz acordada, no una infracción de Google. La falta de datos privados se registra como límite, no como defecto inventado.
+
+| Prioridad | Extracto o ubicación del original | Naturaleza y evidencia | Efecto para el lector | Corrección y estado |
+|---|---|---|---|---|
+| Importante editorial | «Improving local visibility starts with representing an eligible business accurately…» | Entrada abstracta. La voz acordada en la V3 del primer blog responde primero a una situación comprensible para el dueño. Es un criterio editorial, no un error factual. | Retrasa la identificación del problema y su siguiente paso. | Apertura con perfil difícil de encontrar, búsquedas relevantes y llamadas no atendidas. Se conserva la condición de elegibilidad. Aplicada. |
+| Importante editorial | «A practical example: a Brisbane service-area business», situado después de la sección sobre la web | Estructura: el ejemplo concreto llega después de la mayor parte de las recomendaciones. La V3 aprobada del primer blog lo introduce pronto y lo utiliza para explicar decisiones. | El lector debe interpretar muchas reglas antes de ver para qué sirven. | Ejemplo al inicio y referencias pertinentes en dirección, contacto, web, medición y priorización. Se mantiene hipotético y sin métricas. Aplicada. |
+| Importante editorial | Tabla «First, identify which problem you have»: termina con acciones que producen pocas consultas adecuadas | Cobertura dispersa. El encargo pide incluir consultas que no progresan. El original ya las trata en «Should I invest…» y en la tabla de medición, pero no en el diagnóstico inicial. | Quien sí recibe consultas no encuentra allí su situación. | Fila explícita sobre reservas o presupuestos aceptados y revisión de respuesta, disponibilidad y seguimiento. Es una recomendación comercial propia. Aplicada. |
+| Menor editorial | «Google identifies relevance, distance and popularity… with its third explanatory section titled “Prominence”» | Explicación centrada en la nomenclatura de la fuente. Se comprobó la [página de Google](https://support.google.com/business/answer/7091?hl=en). | Suena a nota para un revisor y añade una pausa innecesaria. | Se simplifica la frase conservando la terminología y la tabla explicativa. Aplicada. |
+| Menor editorial | «The purpose is to make a defensible decision from evidence» y varios recordatorios sobre lo que el ejemplo no pronostica | Repetición de límites ya explícitos. La condición hipotética sí debe conservarse. | Acumula precauciones donde conviene mostrar la decisión. | Se agrupan los límites del ejemplo y se explica qué observación lleva a qué tarea. Aplicada. |
+| Menor, trazabilidad | «a critical review is not automatically a removable policy violation» | Afirmación correcta en el original. Su fuente específica estaba en el soporte, no junto al texto. [Ayuda de retirada de reseñas](https://support.google.com/business/answer/4596773?hl=en), apartado de reseñas que pueden denunciarse. | Obliga a buscar la evidencia fuera del artículo. | Se añade el enlace directo próximo. No se afirma haber descubierto un error de política. Aplicada. |
+| Menor, precisión de producto | «Google now documents a Business Profile–Analytics connection, but available reporting and aggregation have limits» | Correcta pero vaga. La [documentación de Analytics](https://support.google.com/analytics/answer/16930347?hl=en) permite concretar límites sin añadir un tutorial. | El lector no sabe qué debe revisar antes de utilizar ese informe. | Se explican agregación e historial de seis meses, sin afirmar disponibilidad en una cuenta. Aplicada. |
+| Menor editorial | «Useful local SEO connects a real business with relevant customers and an enquiry process the team can support» | El cierre vuelve a resumir una idea ya desarrollada. Es una decisión de concisión, no un error factual. | Retrasa el siguiente paso que propone el CTA. | Cierre centrado en decidir qué abordar y en el servicio, zona y problema que traer a la conversación. Aplicada. |
+| Menor editorial | Meta: «Learn how local SEO helps Australian service businesses…» | La descripción es válida, pero puede concretar antes la tarea del lector. Preferencia editorial ligada a la entrada, sin supuesto beneficio de ranking. | Presenta el tema de forma general. | Meta de 142 caracteres centrada en encontrar el negocio, reseñas y consultas. Title y slug conservados. Aplicada. |
+| Dato no disponible | No hay volumen, dificultad, cuentas privadas ni resultados de clientes verificables | Límite expreso del dossier. La documentación de producto no aporta esos datos. | Impide calcular demanda, ROI o causalidad individual. | No se añaden cifras ni promesas. Registrado en `05-registro-fuentes.md`. |
+| Diferencia de versiones | Notas auxiliares señalan elegibilidad implícita, FAQs repetidas y medición de «suitable people» | La auditoría recibida los declara corregidos y el manuscrito actual contiene las versiones corregidas. | Contarlos otra vez inflaría artificialmente los hallazgos. | No se atribuyen al texto actual. Conservado el estado de corrección previo. |
+
+## Comprobaciones de contenido conservado
+
+Las diez fuentes esenciales del prompt se reabrieron. Se mantuvieron los requisitos generales de contacto presencial, las diferencias entre negocios con local, de área de servicio e híbridos, y las condiciones de dirección y representación. Las áreas, categorías y verificación conservan sus límites de producto.
+
+Las reseñas mantienen petición neutral y control del cliente sobre su contenido. Las acciones del perfil siguen separadas de conversaciones, consultas y clientes. Se distingue actividad orgánica de Ads en el alcance de Performance. Los gráficos geográficos continúan definidos como muestras.
+
+No se añadieron cifras de consumidores, porcentajes del algoritmo, plazos de ranking ni casos de clientes. El artículo no incorpora los números propios del dossier ni las encuestas y experimentos de especialistas, por lo que no certifica su revalidación en esta entrega.
+
+## Revisión humanizer
+
+Se revisaron abstracciones en la apertura, repeticiones, contrastes repetidos, términos de auditoría trasladados al lector y cierres que repetían el contenido. Se conservaron los límites que evitan una interpretación incorrecta. El título del encargo mantiene sus mayúsculas originales como excepción deliberada. La revisión interna se realizó sobre borrador, comprobación y versión final.
+
+## Verificación de la entrega
+
+Se comprobaron los conteos reales de metadatos, jerarquía de títulos, enlaces del artículo frente al registro, cierre completo, identificación del caso como hipotético y conservación de los archivos fuente. El resultado se guarda en `06-verificacion-editorial.json`. No son pruebas de una página publicada ni de cuentas empresariales.

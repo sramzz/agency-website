@@ -1,0 +1,106 @@
+{
+  "reviewedOn": "2026-10-19",
+  "timezone": "Australia/Sydney",
+  "scope": "Editorial Markdown only. No publication, website or profile changes.",
+  "originals": [
+    {
+      "file": "01-dossier-investigacion.md",
+      "source": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\RR website\\output\\blogs\\02-local-seo\\01-dossier-investigacion.md",
+      "sha256": "fc516894fe6ef13d8bd7424c08be23cdbe9d8780e15231cbaaf8ca1e453ff62a",
+      "copyIdentical": true
+    },
+    {
+      "file": "02-articulo-local-seo-australia.md",
+      "source": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\RR website\\output\\blogs\\02-local-seo\\02-articulo-local-seo-australia.md",
+      "sha256": "338126e3801f209ff68f0820d75850611208ccbcc3b7b11929636ca1588cbc38",
+      "copyIdentical": true
+    },
+    {
+      "file": "03-auditoria-editorial.md",
+      "source": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\RR website\\output\\blogs\\02-local-seo\\03-auditoria-editorial.md",
+      "sha256": "2c65b3e94130c574c1707d6ee4505fdb23bf210568bc7694f37fb6b758c0537e",
+      "copyIdentical": true
+    },
+    {
+      "file": "04-paquete-seo.md",
+      "source": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\RR website\\output\\blogs\\02-local-seo\\04-paquete-seo.md",
+      "sha256": "072127d7afc0139ad7aaadc3f33aaa306bec79eb3ae15494d604d7faedbc74c0",
+      "copyIdentical": true
+    },
+    {
+      "file": "05-prompt-final-codex.md",
+      "source": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\RR website\\output\\blogs\\02-local-seo\\05-prompt-final-codex.md",
+      "sha256": "ae222a917cda61441e29ef5b08b47c76a36e3dc3c1942bc2fe13135150e91af6",
+      "copyIdentical": true
+    }
+  ],
+  "fileChecks": [
+    {
+      "file": "01-diagnostico-ejecutivo.md",
+      "nonEmpty": true,
+      "noReplacementCharacters": true,
+      "noTrailingWhitespace": true,
+      "finalNewline": true
+    },
+    {
+      "file": "02-auditoria-editorial.md",
+      "nonEmpty": true,
+      "noReplacementCharacters": true,
+      "noTrailingWhitespace": true,
+      "finalNewline": true
+    },
+    {
+      "file": "03-articulo-local-seo-australia.md",
+      "nonEmpty": true,
+      "noReplacementCharacters": true,
+      "noTrailingWhitespace": true,
+      "finalNewline": true
+    },
+    {
+      "file": "04-paquete-seo.md",
+      "nonEmpty": true,
+      "noReplacementCharacters": true,
+      "noTrailingWhitespace": true,
+      "finalNewline": true
+    },
+    {
+      "file": "05-registro-fuentes.md",
+      "nonEmpty": true,
+      "noReplacementCharacters": true,
+      "noTrailingWhitespace": true,
+      "finalNewline": true
+    }
+  ],
+  "article": {
+    "originalWhitespaceWords": 2516,
+    "finalWhitespaceWords": 2608,
+    "finalReadableApproximateWords": 2528,
+    "h1Count": 1,
+    "h2Count": 11,
+    "tableCount": 3,
+    "uniqueExternalLinks": 16,
+    "allArticleLinksInRegistry": true,
+    "allOriginalArticleLinksPreserved": true,
+    "hypotheticalCaseMarked": true,
+    "caseIntroducedBeforeDiagnosis": true,
+    "rejectedBudgetSubtitleAbsent": true,
+    "noInternalCitationArtifacts": true,
+    "completeEnding": true,
+    "punctuationToReview": []
+  },
+  "metadata": {
+    "title": "Local SEO: Improve Google Maps Visibility | Ranking Rebels",
+    "titleCharacters": 58,
+    "description": "Help customers find your business on Google Maps. Learn what to check first, how to ask for reviews and how to measure useful local enquiries.",
+    "descriptionCharacters": 142,
+    "excerptWords": 38
+  },
+  "primarySourcesOpened": 15,
+  "comparablePagesOpened": 4,
+  "internalDestinationsRead": 2,
+  "sourceVerificationLimits": [
+    "Relevant page content read using web tool; no private accounts inspected.",
+    "First blog URL returned a tool error and was not inserted.",
+    "Ranking Rebels destination content showed a crawl date three weeks earlier; no independent HTTP check."
+  ]
+}

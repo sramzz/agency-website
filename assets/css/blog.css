@@ -181,3 +181,13 @@
 .blog-preview .blog-cover-top nav { flex-wrap: wrap; }
 @media (max-width: 1300px) { .blog-list { margin-inline: var(--page-gutter); } }
 @media (max-width: 760px) { .blog-list { padding-block: 10px 60px; } .blog-story-label { flex-direction: column; gap: 6px; } .blog-cover-top { align-items: flex-start; } .blog-version { white-space: nowrap; } }
+
+/* Both articles share the approved editorial shell. */
+.blog-article ul { margin: 0 0 25px; padding-left: 24px; list-style: disc; }
+.blog-article li { padding-left: 5px; margin-block: 9px; }
+.blog-article strong { color: var(--neutral); font-weight: 600; }
+.blog-story { display: grid; grid-template-columns: minmax(200px, 300px) minmax(0, 1fr); gap: 36px; align-items: start; }
+.blog-story-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--blog-rule); border-radius: 8px; }
+.blog-story h2 { margin-top: 20px; font-size: clamp(28px, 3.2vw, 42px); }
+.blog-story:focus-visible { outline: 2px solid var(--tertiary); outline-offset: 8px; }
+@media (max-width: 760px) { .blog-story { grid-template-columns: minmax(0, 1fr); gap: 24px; } .blog-story-image { max-width: 540px; } }

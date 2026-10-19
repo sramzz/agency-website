@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-19",
+  "sourceTests": 199,
+  "productionTests": 198,
+  "productionBuild": "passed",
+  "editorialDocumentsExcluded": true,
+  "filesIdenticalAcrossRepositoriesAndBuild": true,
+  "publicationGeneratorIdempotent": true,
+  "files": [
+    {
+      "file": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "f4a3fcc463cea5413d3f79adb2393d5c17e7591d7aa2afe199b236d0919af738",
+      "bytes": 31779
+    },
+    {
+      "file": "assets/images/blog/local-seo-discovery-illustration-1280.webp",
+      "sha256": "f702c864f923bf947317d08f8db0b7b8f29ae45a52e5c930e5e380a3bf298a2b",
+      "bytes": 255354
+    },
+    {
+      "file": "assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b",
+      "bytes": 96420
+    },
+    {
+      "file": "assets/images/blog/local-seo-enquiry-journey.svg",
+      "sha256": "6c8fb764dece230e51048d5d91a6210b27f93cbcbd2494fe0563cc20e8e544a2",
+      "bytes": 3655
+    },
+    {
+      "file": "assets/images/blog/local-seo-enquiry-journey-mobile.svg",
+      "sha256": "2b08475470decf3b145d5a00798dde0cf506b31469dc38640c4bcfaf7667791b",
+      "bytes": 3162
+    }
+  ],
+  "browserVisualInspection": "not performed: previously recorded browser policy block",
+  "illustrationAndDiagramVisualInspection": "performed"
+}
