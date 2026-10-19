@@ -1,0 +1,114 @@
+{
+  "checkedOn": "2026-10-19",
+  "timezone": "Australia/Sydney",
+  "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+  "sourceRepository": {
+    "name": "sramzz/agency-website",
+    "publicationCommit": "7451b86157fe2a340cd2b2ec88f3edae29cc5d8d",
+    "branch": "main",
+    "pushed": true
+  },
+  "cloudflare": {
+    "project": "ranking-rebels-public-site",
+    "deploymentId": "dc6ab642-91ea-4da4-9cfe-127f614a7b2e",
+    "status": "success",
+    "branch": "main",
+    "revision": "04b9cf38cfb25aeb6be31b3b62648b6c8f09b38c"
+  },
+  "publicDeploymentMetadata": {
+    "revision": "04b9cf38cfb25aeb6be31b3b62648b6c8f09b38c",
+    "branch": "main"
+  },
+  "endpointChecks": [
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "contentType": "application/json",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-discovery-illustration-1280.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-enquiry-journey.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "robotsHeader": null
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-enquiry-journey-mobile.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "robotsHeader": null
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-discovery-illustration-1280.webp",
+      "sha256": "f702c864f923bf947317d08f8db0b7b8f29ae45a52e5c930e5e380a3bf298a2b",
+      "matchesWorkspace": true,
+      "bytes": 255354
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b",
+      "matchesWorkspace": true,
+      "bytes": 96420
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-enquiry-journey.svg",
+      "sha256": "6c8fb764dece230e51048d5d91a6210b27f93cbcbd2494fe0563cc20e8e544a2",
+      "matchesWorkspace": true,
+      "bytes": 3655
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-enquiry-journey-mobile.svg",
+      "sha256": "2b08475470decf3b145d5a00798dde0cf506b31469dc38640c4bcfaf7667791b",
+      "matchesWorkspace": true,
+      "bytes": 3162
+    }
+  ],
+  "articleIndexable": true,
+  "listedInBlogHub": true,
+  "listedInSitemap": true,
+  "firstArticleStillAvailable": true,
+  "sourceTests": 199,
+  "productionTests": 198,
+  "productionBuild": "passed",
+  "browserVisualInspection": "not performed because of the previously recorded browser policy block",
+  "assetVisualInspection": "illustration and explanatory diagram inspected",
+  "privateAccountsModified": false
+}

@@ -27,3 +27,11 @@ Se verificaron contenido completo, fuentes, metadatos, semántica de listas, nav
 La inspección del navegador integrado de localhost seguía bloqueada por la política registrada anteriormente en esta conversación. No se intenta sortearla con otra superficie de automatización ni se afirma una revisión visual completa en navegador. Se inspeccionaron la ilustración generada y las versiones renderizadas del gráfico; las pruebas comprueban la estructura y los archivos.
 
 El resultado efectivo de publicación, las revisiones Git, el estado de Cloudflare y las respuestas HTTP se registran en `09-verificacion-publicacion.json` después del despliegue. Esta nota de preparación no sustituye esa confirmación.
+
+## Confirmación de publicación
+
+Publicación confirmada el 19 de octubre de 2026. La revisión `04b9cf38cfb25aeb6be31b3b62648b6c8f09b38c` de producción se desplegó correctamente en Cloudflare con identificador `dc6ab642-91ea-4da4-9cfe-127f614a7b2e`. La comprobación directa de `/_deployment.json` en el dominio devolvió esa misma revisión.
+
+El artículo, el hub, el sitemap, el primer blog y las cuatro imágenes nuevas respondieron con HTTP 200. Los bytes de las imágenes públicas coinciden con los archivos del workspace. El artículo tiene canonical y no contiene instrucciones noindex en el HTML o en su cabecera de respuesta. Esto confirma disponibilidad e indexabilidad declarada, no que Google ya lo haya indexado.
+
+La fuente se publicó en `sramzz/agency-website` mediante el commit `7451b86157fe2a340cd2b2ec88f3edae29cc5d8d`. Esta confirmación posterior se conserva en ese repositorio de trabajo, sin provocar otro despliegue solo para registrar el resultado del anterior.
