@@ -59,9 +59,9 @@ Se abrieron los cuatro comparables siguientes y se leyeron sus secciones pertine
 
 No se hizo una SERP geolocalizada controlada ni investigación cuantitativa de keywords. No se trasladan cifras, promesas o recomendaciones de competidores al artículo sin respaldo propio.
 
-Se abrieron [Organic Discovery](https://rankingrebels.com/solutions/organic-discovery/) y [Australia](https://rankingrebels.com/locations/australia/). El contenido devuelto permite comprobar su pertinencia; la herramienta mostraba rastreo de tres semanas antes. No se efectuó una prueba HTTP independiente o una inspección técnica de esas páginas. Solo Organic Discovery está enlazado en el artículo final.
+Se abrieron [Organic Discovery](https://rankingrebels.com/solutions/organic-discovery/) y [Australia](https://rankingrebels.com/locations/australia/). El contenido devuelto permite comprobar su pertinencia; la herramienta mostraba rastreo de tres semanas antes. No se efectuó una prueba HTTP independiente o una inspección técnica de esas páginas. En la entrega inicial solo Organic Discovery estaba enlazado en el artículo.
 
-La apertura del [primer blog](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) devolvió un error de la herramienta. Queda sin revalidación externa en esta entrega y no se insertó como enlace del nuevo artículo. El error no confirma que la página no exista.
+La apertura inicial del [primer blog](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) devolvió un error de la herramienta, que no confirmaba que la página no existiese. La comprobación HTTP directa del 19 de octubre de 2026 confirmó respuesta 200 sin redirección y canonical correcto. Tras leer ambos artículos, se incorpora un enlace contextual desde «Give the website a useful local role». El primer blog también enlaza a esta guía; el registro está en `../enlazado-interno.md`. Esta comprobación de destinos no representa una nueva revalidación de todas las fuentes del primer artículo.
 
 ## Material recibido que no se revalidó ni se utilizó como prueba del artículo
 

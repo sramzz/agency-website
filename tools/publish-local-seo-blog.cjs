@@ -103,7 +103,8 @@ module.exports = ({ root, html: shell, title: firstTitle, date: firstDate, readi
   let html = shell.slice(0, mainStart) + main + shell.slice(mainEnd);
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${escape(metaTitle)}</title>`)
     .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escape(description)}" />`)
-    .replaceAll(firstCanonical, canonical)
+    .replace(`<link rel="canonical" href="${firstCanonical}" />`, `<link rel="canonical" href="${canonical}" />`)
+    .replace(`<meta property="og:url" content="${firstCanonical}" />`, `<meta property="og:url" content="${canonical}" />`)
     .replace(/<meta property="og:title"[^>]*>/, `<meta property="og:title" content="${escape(title)}" />`)
     .replace(/<meta property="og:description"[^>]*>/, `<meta property="og:description" content="${escape(description)}" />`)
     .replace(/<meta name="twitter:card"[^>]*>/, '<meta name="twitter:card" content="summary_large_image" />')

@@ -38,7 +38,7 @@ Son hipótesis editoriales. No se dispone de demanda, dificultad o previsión de
 
 Las fuentes externas permanecen junto a las afirmaciones. Se conservaron los 12 destinos únicos del artículo recibido, sin cambiar sus URLs. No se enlazan artículos futuros.
 
-Falta elegir una página existente desde la que tenga sentido enlazar al blog cuando su ruta sea real. No se ha añadido un enlace hacia una URL inexistente.
+Actualización del 19 de octubre de 2026: ambos blogs están publicados y sus URLs canónicas respondieron directamente con HTTP 200. Este artículo enlaza a [SEO local y Maps](https://rankingrebels.com/blog/local-seo-google-maps-visibility/) desde «Help the right people find the right service», con el anchor «improving your visibility on Google Maps». La guía de Maps enlaza de vuelta desde su sección sobre la web. El registro conjunto está en `../enlazado-interno.md`.
 
 ## Dirección visual de Ranking Rebels
 

@@ -112,6 +112,8 @@ A critical review is not automatically a policy violation. Google explains that 
 
 A profile may be where someone discovers the business. The website can help them establish whether it fits their needs. The destination page should explain the relevant service, actual coverage, process, evidence and way to contact the team.
 
+The website can also help people who arrive through other search tools. Our article on [SEO in the age of ChatGPT and AI search](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) looks at how service pages support that decision.
+
 For the Brisbane plumber, that means explaining the types of jobs accepted, how to request help and what the team needs to assess a request. Clear coverage information also helps someone recognise when they need a different provider.
 
 For a business with several genuine locations or different service needs, separate pages may be useful when each contributes meaningful information. Changing a suburb name across dozens of otherwise interchangeable pages is a different proposition. Google's spam policies address doorway pages and scaled content created to manipulate results without helping people. [Google's spam policies](https://developers.google.com/search/docs/essentials/spam-policies).

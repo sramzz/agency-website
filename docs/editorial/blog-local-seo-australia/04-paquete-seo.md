@@ -42,9 +42,9 @@ La intención es informativa y diagnóstica. La página de servicio Organic Disc
 |---|---|---|
 | [Organic Discovery](https://rankingrebels.com/solutions/organic-discovery/) | Incluido una vez en el CTA: `Ranking Rebels' organic discovery approach` | Página abierta y contenido pertinente leído. La herramienta muestra rastreo de tres semanas antes; no se hizo comprobación HTTP independiente. |
 | [Australia](https://rankingrebels.com/locations/australia/) | Candidato contextual, no insertado para cumplir una cuota. Anchor posible: `support for Australian service businesses` | Página abierta y contenido pertinente leído, con el mismo límite de rastreo. Su cobertura nacional no acredita sedes físicas. |
-| [Primer blog sobre SEO y búsqueda con IA](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) | Posible lectura relacionada. No se ha insertado en el artículo | La herramienta web devolvió un error al abrir esta URL. No equivale a un 404 confirmado. Pendiente de una comprobación directa antes de incorporarlo. |
+| [Primer blog sobre SEO y búsqueda con IA](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) | Incluido en «Give the website a useful local role», con el anchor `SEO in the age of ChatGPT and AI search` | Comprobación HTTP directa el 19 de octubre de 2026: respuesta 200, sin redirección y con canonical correcto. Sustituye el estado pendiente de la entrega inicial. |
 
-No se enlazan artículos futuros con URLs inventadas. Se propone elegir un enlace entrante contextual desde el hub o una página existente cuando se autorice la implementación; no está añadido ahora.
+No se enlazan artículos futuros con URLs inventadas. El hub permite descubrir este artículo y el primer blog incorpora un enlace contextual hacia él. La revisión de ambos sentidos está documentada en `../enlazado-interno.md`.
 
 ## Dirección visual para la siguiente fase
 

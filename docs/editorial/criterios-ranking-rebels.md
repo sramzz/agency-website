@@ -10,6 +10,16 @@ Escribir primero para propietarios y responsables de negocios australianos de se
 
 Responder pronto al problema del título. Explicar qué puede hacer el lector y por qué le ayuda. Conservar las partes útiles del manuscrito y justificar los cambios en la auditoría. Reabrir las fuentes primarias relevantes en la fecha de ejecución, distinguir hechos de recomendaciones y registrar incertidumbres. No inventar experiencia, cifras locales, clientes ni resultados. Las métricas de interacción no se convierten en consultas o clientes por cambiarles la etiqueta.
 
+## Enlazado entre artículos
+
+En cada nuevo blog de Ranking Rebels, revisar todos los artículos existentes y valorar enlaces en ambas direcciones: del nuevo a los anteriores y de los anteriores al nuevo. Aplicar esta instrucción también a actualizaciones de artículos ya publicados. El usuario la solicitó expresamente el 19 de octubre de 2026.
+
+Mantener el inventario y el registro de revisiones en `enlazado-interno.md`. Comprobar el inventario frente al hub y las rutas existentes para que un blog añadido después no quede fuera de la revisión. Leer los artículos antes de decidir dónde enlazar y usar menciones que ayuden a ampliar o entender el tema. Revisar todo el conjunto no exige enlazar cada pareja si no existe una relación útil.
+
+Usar anchors descriptivos, naturales y coherentes con el destino, sin cuotas de enlaces, repetición forzada de keywords o bloques idénticos añadidos a cada artículo. Priorizar enlaces dentro de un párrafo pertinente. Verificar las URLs canónicas y la presencia de los enlaces en el HTML publicado.
+
+Actualizar los manuscritos fuente y regenerar las páginas para que los enlaces se conserven al volver a publicar. Cuando el usuario autorice la publicación de un nuevo artículo, incluir en esa misma operación las mejoras de enlazado pertinentes en los artículos existentes. Esa revisión forma parte del encargo editorial habitual y no necesita una segunda confirmación. Los trabajos limitados a borrador mantienen también el enlazado como propuesta hasta que se autorice publicar.
+
 ## Ejemplos
 
 Introducir pronto un ejemplo australiano concreto y recuperarlo donde aclare una decisión. Identificar como hipotético cualquier escenario creado. La ciudad se elige según el encargo de cada blog. Melbourne fue una instrucción expresa para el primer artículo, no una obligación de trasladar todos los ejemplos futuros a esa ciudad. Conservar un ejemplo existente que funcione salvo instrucción o razón editorial para cambiarlo.

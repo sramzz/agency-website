@@ -30,6 +30,8 @@ Explain the services you provide and the areas you cover. Someone looking for af
 
 Prioritise services you can deliver well. Then review whether enquiries match those services and locations. A large visit count tells you little about that fit on its own.
 
+If customers look for your service by suburb, our guide to [improving your visibility on Google Maps](https://rankingrebels.com/blog/local-seo-google-maps-visibility/) explains what to check in your Business Profile and how to assess the enquiries it generates.
+
 ### Help customers understand the offer
 
 Service scope, exclusions, availability and the quote process help someone assess a supplier. If prospects keep asking the same question, use it to improve the page.
