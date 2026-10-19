@@ -1,0 +1,135 @@
+{
+  "checkedOn": "2026-10-20",
+  "timezone": "Australia/Sydney",
+  "mode": "production-http",
+  "revision": "dff7e10d886ba513d033c454362a34f6b1dd35da",
+  "browserPageReview": false,
+  "checks": [
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "f9e452db107a8641b0962a807f5e2196e5ee5f73e96a7c780b3f637c00b69b44"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28383,
+      "sha256": "c130756f6a61c0f53f4740a5ebc94d5a87ad8d78a879feae1d49fb562268899e"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 31925,
+      "sha256": "975a1a842b9e67135ac2c557b68c17b90a6171844e374131a8e4b671d215d445"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27032,
+      "sha256": "786fac9ac87e95fc679fada6632d7e73f3cadd80fdd833ba72873acd0d3d5ad8"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "bytes": 6645,
+      "sha256": "a64f11602b5fe4edec1d31dc803f01c91010a20eaba8cbed803a2634103cbaa5"
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "bytes": 1549,
+      "sha256": "657502a0ccb5c80128e458b77db84a9d893fd5fabb9ee39b1a921467b488f3ad"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/what-is-seo-landscaping-illustration-1280.webp",
+      "status": 200,
+      "bytes": 299364,
+      "sha256": "fa7dc491eb25b0f6932143dfde4854a9cbbbd2d02a6e51baab0a4d3259abc9c3"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "status": 200,
+      "bytes": 114344,
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/what-is-seo-search-needs.svg",
+      "status": 200,
+      "bytes": 2898,
+      "sha256": "f0b82ad7d8a1be5bcc72e7e5293ef38a7ec33fec0db7b99a8a5cc4eff6d6024a"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/what-is-seo-search-needs-mobile.svg",
+      "status": 200,
+      "bytes": 2965,
+      "sha256": "fd899e38a63907bbaaae1d5ea41b6c84573451a457f335e306f33723ba14d769"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15271,
+      "sha256": "411c7fb75eaa1167c0dd54070ed54ef7f7ee2423035e93ac6ff571085c28f892"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    }
+  ],
+  "links": [
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "search engine optimisation (SEO)",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "work involved in SEO",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    }
+  ],
+  "deployment": {
+    "revision": "dff7e10d886ba513d033c454362a34f6b1dd35da",
+    "branch": "main"
+  },
+  "bothDirectionsVerified": true,
+  "agentsNotPublished": true,
+  "allServedArticlesMatchReviewedContent": true,
+  "cloudflare": {
+    "deploymentId": "b4f01af2-c574-4180-91c9-f4243b14bd86",
+    "status": "success",
+    "environment": "production"
+  },
+  "rootTests": 202,
+  "productionTests": 201,
+  "buildPassed": true,
+  "sourceCommit": "30286ad897e4877bb0117d18a0f5e832494976f7"
+}

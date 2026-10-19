@@ -17,3 +17,13 @@ La carga pública se define por el manifiesto explícito de Cloudflare. No incor
 Los recursos se inspeccionaron visualmente. Se verificó estructura responsive y geometría en código, sin una nueva revisión de página completa en navegador. No se eludió la denegación previa de automatización de navegador.
 
 La confirmación de Cloudflare, la revisión exacta y las páginas servidas se registrarán en 11-verificacion-publicacion.json. La presente sección describe las pruebas previas, no una afirmación de que ya estaba desplegado.
+
+## Publicación confirmada
+
+Publicado el 20 de octubre de 2026: https://rankingrebels.com/blog/what-is-seo/.
+
+Cloudflare confirmó éxito del despliegue b4f01af2-c574-4180-91c9-f4243b14bd86, revisión dff7e10d886ba513d033c454362a34f6b1dd35da. La revisión servida en /_deployment.json coincide y corresponde a main. Los doce recursos comprobados devolvieron la respuesta esperada: tres artículos, hub, sitemap, cuatro imágenes, CSS, metadatos de despliegue y 404 de la ruta de agentes.
+
+Los tres cuerpos servidos coinciden con los revisados y sus seis enlaces contextuales están dentro de article. También se publicó el ejemplo abreviado del segundo blog. El inventario actual contiene tres artículos. El de agentes conserva texto, imágenes y vista local para el jueves 22 de octubre, con recordatorio único a las 9:00 de Sídney y sin publicación automática.
+
+La prueba completa está en 11-verificacion-publicacion.json. Esta confirmación posterior se conserva en el repositorio de trabajo sin provocar un nuevo despliegue documental.

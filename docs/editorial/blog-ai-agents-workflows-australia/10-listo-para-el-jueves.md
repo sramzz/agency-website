@@ -26,3 +26,5 @@ Comprobar primero el estado servido para no duplicar una publicación que haya h
 Aplicar las dos menciones entrantes propuestas en 07 a los manuscritos activos de SEO/IA y Maps, regenerar sus páginas y conservar sus fechas originales. Revisar de nuevo el inventario real, que entonces incluye What Is SEO. Ejecutar los controles y el build, y verificar revisión exacta y enlaces servidos tras el despliegue autorizado. Los perfiles empresariales quedan fuera.
 
 Si el encargo de ese momento es solo el recordatorio, mostrar el enlace local y el estado del paquete. El recordatorio no ejecuta la publicación por sí solo.
+
+What Is SEO quedó publicado el 20 de octubre en https://rankingrebels.com/blog/what-is-seo/. El despliegue confirmado no contiene este artículo de agentes y su ruta candidata devuelve 404. El inventario vigente de publicados contiene SEO/IA, Maps y What Is SEO.

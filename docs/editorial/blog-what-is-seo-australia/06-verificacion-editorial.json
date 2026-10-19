@@ -126,5 +126,6 @@
   },
   "browserPageReview": false,
   "visualAssetsReviewed": true,
-  "publicationVerified": false
+  "publicationVerified": true,
+  "productionRevision": "dff7e10d886ba513d033c454362a34f6b1dd35da"
 }

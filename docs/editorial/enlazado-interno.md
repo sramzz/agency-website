@@ -8,10 +8,11 @@ Instrucción permanente del usuario, 19 de octubre de 2026: al crear cada artíc
 |---|---|---|---|
 | Is SEO Still Relevant in the Age of ChatGPT and AI Search? | [SEO y búsqueda con IA](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) | `blog-seo-ai-australia/04-blog-seo-ai-australia.md` | Explica el papel de SEO y la web cuando también se consultan respuestas con IA. |
 | Local SEO: How to Improve Your Business's Visibility on Google Maps | [SEO local y Maps](https://rankingrebels.com/blog/local-seo-google-maps-visibility/) | `blog-local-seo-australia/03-articulo-local-seo-australia.md` | Ayuda a diagnosticar perfil, visibilidad local y recorrido de la consulta. |
+| What Is SEO? How Search Engine Optimisation Works for Your Business | [What is SEO?](https://rankingrebels.com/blog/what-is-seo/) | `blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md` | Define SEO, explica el trabajo y la medición mediante un ejemplo de paisajismo en Perth. |
 
 Este inventario debe contrastarse con `/blog/` y los artículos presentes en `blog/`. No presupone que futuros artículos se añadirán solos a la tabla.
 
-## Revisión del conjunto actual
+## Revisión inicial del conjunto, 19 de octubre
 
 Se leyeron íntegramente los dos manuscritos activos. Ambos permiten una conexión pertinente; se añade una mención contextual en cada dirección.
 
@@ -65,4 +66,12 @@ El usuario cambió el orden el 20 de octubre: crear y publicar primero **What Is
 
 Se contrastaron las rutas y el hub con los dos artículos publicados y se revisaron sus manuscritos completos. La guía nueva enlaza Maps desde Local visibility y SEO/IA desde Does AI search change the fundamentals?. Maps enlaza de vuelta desde la definición inicial de search engine optimisation (SEO), y SEO/IA desde work involved in SEO. Se conservan las dos menciones anteriores. Detalle en `blog-what-is-seo-australia/07-enlazado.md`.
 
-Se revisó también la relación con agentes en ambas direcciones y se omitieron los enlaces por pertinencia, como se registra en ambos paquetes. No se introducen menciones públicas al borrador. Esta publicación incluye el ejemplo abreviado de fontanería solicitado por el usuario. La confirmación del nuevo inventario y de los seis enlaces servidos se añadirá tras verificar Cloudflare.
+Se revisó también la relación con agentes en ambas direcciones y se omitieron los enlaces por pertinencia, como se registra en ambos paquetes. No se introducen menciones públicas al borrador. Esta publicación incluye el ejemplo abreviado de fontanería solicitado por el usuario.
+
+## Publicación confirmada, 20 de octubre
+
+Cloudflare completó el despliegue `b4f01af2-c574-4180-91c9-f4243b14bd86` de la revisión `dff7e10d886ba513d033c454362a34f6b1dd35da`, rama main. La lectura de `/_deployment.json` devolvió esa revisión exacta. Los tres artículos y el hub devolvieron HTTP 200 sin redirección, con canonicals correctos. Se contrastó el cuerpo completo servido de cada artículo con su versión revisada.
+
+Se verificaron los seis enlaces contextuales dentro del cuerpo: las cuatro direcciones nuevas con What Is SEO y las dos previas entre Maps y SEO/IA. Las cuatro variantes de imagen del nuevo blog y el CSS compartido se sirvieron correctamente; los archivos coinciden con los revisados, normalizando solo finales de línea del CSS. El hub y el sitemap contienen exactamente los tres blogs publicados. La ruta candidata de agentes devolvió 404.
+
+Pasaron 202 pruebas de trabajo, 201 de producción y el build. La prueba está en `blog-what-is-seo-australia/11-verificacion-publicacion.json`. Los recursos se inspeccionaron visualmente y no se realizó una nueva revisión de página completa en navegador. No se afirma que Google haya rastreado los enlaces ni que exista una mejora medida de SEO. Esta constancia se guarda después del despliegue en el repositorio de trabajo, sin generar otro despliegue solo para documentarlo.
