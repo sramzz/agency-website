@@ -38,3 +38,11 @@ No se cambian los hechos, casos, imágenes o intención principal de los artícu
 Se abrió la [guía de enlaces de Google Search Central](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) el 19 de octubre de 2026. Sus apartados sobre anchors y referencias internas respaldan enlaces rastreables, descriptivos y situados en contexto. No fija un número ideal. La página mostraba actualización del 10 de diciembre de 2025. Esto orienta la implementación, sin prometer un resultado de ranking.
 
 La prueba de publicación de esta revisión se conserva en `verificacion-enlazado-2026-10-19.json` una vez confirmado el despliegue.
+
+## Publicación confirmada
+
+Los dos enlaces se publicaron el 19 de octubre de 2026. Cloudflare confirmó despliegue correcto de la revisión `23632917b203ed7d5fbb11d6c1221d91af773a4f`, identificador `52bbbad7-d410-423a-a9c9-73f29b39db30`. La lectura directa de las dos páginas devolvió HTTP 200 sin redirecciones, canonical correcto y la mención al otro artículo dentro del cuerpo del texto. `/_deployment.json` devolvió esa misma revisión.
+
+Pasaron las siete pruebas específicas de los blogs y las 198 de producción, además de la compilación. Se corrigió el generador para que cambiar el canonical del segundo artículo no reescriba también el destino de un enlace al primero. Los metadatos, las fuentes y los casos conservan su alcance. No se realizó una nueva auditoría visual en navegador ni se afirmó una mejora de ranking.
+
+Esta confirmación posterior se guarda en el repositorio de trabajo, sin provocar otro despliegue solo para registrar la publicación ya completada.

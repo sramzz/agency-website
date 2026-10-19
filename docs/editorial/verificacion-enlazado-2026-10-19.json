@@ -1,0 +1,32 @@
+{
+  "checkedOn": "2026-10-19",
+  "timezone": "Australia/Sydney",
+  "revision": "23632917b203ed7d5fbb11d6c1221d91af773a4f",
+  "deployment": {
+    "revision": "23632917b203ed7d5fbb11d6c1221d91af773a4f",
+    "branch": "main"
+  },
+  "articlesReviewed": 2,
+  "contextualLinksAdded": 2,
+  "bothDirectionsVerified": true,
+  "checks": [
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "sourceStatus": 200,
+      "destinationCanonicalVerified": true,
+      "anchor": "improving your visibility on Google Maps",
+      "section": "What SEO can still do for your business",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "sourceStatus": 200,
+      "destinationCanonicalVerified": true,
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "section": "Give the website a useful local role",
+      "inArticleBody": true
+    }
+  ]
+}
