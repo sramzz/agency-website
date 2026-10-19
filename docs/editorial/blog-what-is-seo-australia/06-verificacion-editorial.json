@@ -1,0 +1,130 @@
+{
+  "checkedOn": "2026-10-20",
+  "timezone": "Australia/Sydney",
+  "stage": "publication-preflight",
+  "originalFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 3554,
+      "sha256": "aaf8d8fd39d77da3772b1c07d78e9d738d9c3c18babcb24dac08e19ed62fa5f7",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "La auditoría asistida por IA no equivale a firma humana independiente. Si se retrasa la publicación o se añaden funciones/precios/cifras, revalidar las fuentes correspondientes."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 21596,
+      "sha256": "566391d707ce3d55c7bca1c6e27d8cf968fb61ca4bef3f4a84342f2205fee50d",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "- Paquete final con artículo, auditoría, SEO y prompts de ejecución/recepción independientes."
+    },
+    {
+      "name": "02-articulo-what-is-seo-australia.md",
+      "bytes": 16685,
+      "sha256": "7f36de2f67c193b7a56672e729db972594338a87736f3a2ff4b400a77c0c2de0",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "To explore that starting point, see Ranking Rebels' [organic discovery approach](https://rankingrebels.com/solutions/organic-discovery/) or [get in touch](https://rankingrebels.com/contact/) with the services you want to grow, your website and the questions you are trying to answer. A useful SEO discussion begins with the business need and the evidence available."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 9131,
+      "sha256": "73ba38e0b63c8d39a57c0c7289ec30a82229333ca5312c4d681c9d0c88670fd6",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "La versión optimizada con los cambios justificados está en el archivo 02. No hay que publicar esta auditoría ni el dossier dentro del artículo."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 8462,
+      "sha256": "531f8d342d76c2e5921cf4cc00cf040f83b797ab5490d79cef664780482844ac",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "Una vez haya evidencia suficiente, corregir lagunas reales y revisar la relación con las otras piezas. No añadir texto por alcanzar una longitud ni cambiar fechas para aparentar frescura."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 9510,
+      "sha256": "04f2c1b2b6454764240ed4a164c5a42edbb944696e36e78144c1cac7962fada5",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "El encargo autoriza preparación editorial. **No publiques ni modifiques el sitio, código o cuentas.** No generes datos estructurados publicables con campos inventados. No atribuyas revisión humana a esta auditoría asistida por IA y no prometas posiciones, clientes o retorno por cumplir recomendaciones."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 2811,
+      "sha256": "d22f0dce0489db7fd9bd84f15f0522a3a0d8632bf831c14ad0a584431f805476",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "No respondas solo “sí, tengo todo”: demuestra qué leíste y qué no puedes comprobar."
+    },
+    {
+      "name": "soporte-beneficios-medicion.md",
+      "bytes": 18769,
+      "sha256": "e94fbf3329bebc28377e50d648551fdbac09b5d2dcc96e6afd0fdb6bcb14715e",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "Título recuperado: **Conversions vs. key events in Google Analytics**. Abierta el19deoctubrede2026. Las líneas28–29y47–64 distinguen eventos clave para acciones importantes y conversiones relacionadas con medición/optimización publicitaria; las líneas90–95confirman que un evento puede marcarse clave y que las conversiones Ads no se presentan como idénticas a los informes estándar. La frase del manuscrito enlazada a esta URL está respaldada. No trasladar al artículo el ejemplo de scroll como si desplazarse demostrase lectura o interés comercial, ni asumir que convertir una señal en evento clave valida su calidad."
+    },
+    {
+      "name": "soporte-estrategia.md",
+      "bytes": 18999,
+      "sha256": "0f3e65ef870ba2c106c441dc7b6687d98658c09ba3e1667b7a58735e847eb3e5",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "La revisión no sustituye las comprobaciones técnicas de las fuentes ni una revisión humana de la marca. Las hipótesis de keyword y la muestra comercial no acreditan demanda australiana, ausencia de competencia, posiciones actuales o rendimiento futuro."
+    },
+    {
+      "name": "soporte-fundamentos.md",
+      "bytes": 16797,
+      "sha256": "45a0503677615ffb1c131aa7d84648dc9a87850e64577dff3b37e73af871fbf3",
+      "copyExact": true,
+      "readComplete": true,
+      "ending": "Una revisión humana sigue siendo útil para confirmar voz de marca y alcance comercial del CTA. Esa comprobación no equivale a un error técnico ni a un bloqueo para preparar el contenido."
+    }
+  ],
+  "articleSha256": "61ffd762223b16451eaa8d3f69902ac735d7810584c0d71dcfb7d318874d191f",
+  "sourceWords": 2364,
+  "finalWords": 2200,
+  "earlyExampleWords": 83,
+  "counts": {
+    "h1": 1,
+    "h2": 10,
+    "h3": 4,
+    "tables": 3,
+    "orderedLists": 2,
+    "listItems": 8,
+    "figures": 2
+  },
+  "checkedContentBlocks": 115,
+  "allOriginalUrlsPreserved": true,
+  "articleUrls": [
+    "https://developers.google.com/search/docs/fundamentals/how-search-works",
+    "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+    "https://developers.google.com/search/docs/appearance/core-web-vitals",
+    "https://developers.google.com/search/docs/appearance/title-link",
+    "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "https://developers.google.com/search/docs/essentials/spam-policies#link-spam",
+    "https://support.google.com/business/answer/7091",
+    "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+    "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://support.google.com/webmasters/answer/7576553",
+    "https://support.google.com/analytics/answer/13965727",
+    "https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+    "https://rankingrebels.com/solutions/organic-discovery/",
+    "https://rankingrebels.com/contact/"
+  ],
+  "metadata": {
+    "title": "What Is SEO? How It Works | Ranking Rebels",
+    "titleCharacters": 42,
+    "description": "What is SEO, and what does it do for a business? Understand organic search, the work involved and how to measure progress, with a Perth landscaping example.",
+    "descriptionCharacters": 156
+  },
+  "browserPageReview": false,
+  "visualAssetsReviewed": true,
+  "publicationVerified": false
+}

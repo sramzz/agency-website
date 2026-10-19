@@ -191,3 +191,11 @@
 .blog-story h2 { margin-top: 20px; font-size: clamp(28px, 3.2vw, 42px); }
 .blog-story:focus-visible { outline: 2px solid var(--tertiary); outline-offset: 8px; }
 @media (max-width: 760px) { .blog-story { grid-template-columns: minmax(0, 1fr); gap: 24px; } .blog-story-image { max-width: 540px; } }
+
+/* Ordered editorial steps and keyboard access, shared across the blog. */
+.blog-article ol { margin: 0 0 25px; padding-left: 24px; list-style: decimal; }
+.blog-article ol li { padding-left: 5px; margin-block: 12px; }
+.blog-preview a:focus-visible, .blog-preview summary:focus-visible, .blog-preview .article-table:focus-visible { outline: 2px solid var(--tertiary); outline-offset: 5px; }
+.blog-preview .blog-mobile-toc a { min-height: 44px; }
+.blog-preview .blog-editorial-figure picture { display: block; }
+@media (forced-colors: active) { .blog-preview a:focus-visible, .blog-preview summary:focus-visible, .blog-preview .article-table:focus-visible { outline-color: Highlight; } }

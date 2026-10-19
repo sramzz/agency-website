@@ -112,7 +112,7 @@ module.exports = ({ root, html: shell, title: firstTitle, date: firstDate, readi
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description,
       url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-      datePublished: '2026-10-19', dateModified: '2026-10-19', image: `https://rankingrebels.com${hero}`,
+      datePublished: '2026-10-19', dateModified: '2026-10-20', image: `https://rankingrebels.com${hero}`,
       publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
     })}</script>`);
   fs.mkdirSync(path.join(root, route), { recursive: true });

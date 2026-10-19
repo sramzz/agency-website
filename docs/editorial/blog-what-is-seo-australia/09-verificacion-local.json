@@ -1,0 +1,116 @@
+{
+  "checkedOn": "2026-10-20",
+  "timezone": "Australia/Sydney",
+  "mode": "local-http",
+  "revision": null,
+  "browserPageReview": false,
+  "checks": [
+    {
+      "url": "http://127.0.0.1:4177/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28169,
+      "sha256": "666bdcbe83a9d4a4ee373cc2eb4435f8243ef978bab438e4f136d8bca76e3d2b"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 31711,
+      "sha256": "fc580d038842932d527d7b7eea6a0d13335a1a5037be6deea22b188534975fbb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 26818,
+      "sha256": "515ae06e99ba9113cc4c13d1d4cc43dba83c4e5911717688d7b5a894cf687e9f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "bytes": 6431,
+      "sha256": "ada34dd827782d946cbed190c296606b585e776813b78358b94f7a83614c0424"
+    },
+    {
+      "url": "http://127.0.0.1:4177/sitemap.xml",
+      "status": 200,
+      "bytes": 1549,
+      "sha256": "657502a0ccb5c80128e458b77db84a9d893fd5fabb9ee39b1a921467b488f3ad"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/what-is-seo-landscaping-illustration-1280.webp",
+      "status": 200,
+      "bytes": 299364,
+      "sha256": "fa7dc491eb25b0f6932143dfde4854a9cbbbd2d02a6e51baab0a4d3259abc9c3"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "status": 200,
+      "bytes": 114344,
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/what-is-seo-search-needs.svg",
+      "status": 200,
+      "bytes": 2898,
+      "sha256": "f0b82ad7d8a1be5bcc72e7e5293ef38a7ec33fec0db7b99a8a5cc4eff6d6024a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/what-is-seo-search-needs-mobile.svg",
+      "status": 200,
+      "bytes": 2965,
+      "sha256": "fd899e38a63907bbaaae1d5ea41b6c84573451a457f335e306f33723ba14d769"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15299,
+      "sha256": "00f455d9bed991955672d92121d302148d2809bfb7f727649c01c3477d70cdc0"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-agents-workflows-australia/preview.html",
+      "status": 200,
+      "bytes": 27363,
+      "sha256": "65f164e210ecd6741190432165a3b171ea375958ec135886f8eb2997cdac7e15"
+    }
+  ],
+  "links": [
+    {
+      "source": "http://127.0.0.1:4177/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    },
+    {
+      "source": "http://127.0.0.1:4177/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "http://127.0.0.1:4177/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "search engine optimisation (SEO)",
+      "inArticleBody": true
+    },
+    {
+      "source": "http://127.0.0.1:4177/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "http://127.0.0.1:4177/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "work involved in SEO",
+      "inArticleBody": true
+    },
+    {
+      "source": "http://127.0.0.1:4177/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    }
+  ],
+  "bothDirectionsVerified": true,
+  "agentsNotPublished": true,
+  "allServedArticlesMatchReviewedContent": true
+}

@@ -14,7 +14,7 @@ html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', ''
   .replace(/  <link rel="preconnect"[^\n]+\n/g, '')
   .replace(/  <link href="https:\/\/fonts.googleapis.com[^\n]+\n/g, '')
   .replace('  <link rel="stylesheet" href="/assets/css/scroll-progress.css" />\n', '')
-  .replace('href="preview.css"', 'href="/assets/css/blog.css?v=20261019-local-seo"')
+  .replace('href="preview.css"', 'href="/assets/css/blog.css?v=20261020-seo-fundamentals"')
   .replace('src="preview.js"', 'src="/assets/js/blog.js?v=20261019-melbourne"')
   .replace('<span aria-current="page">Journal</span>', '<a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">SEO &amp; AI search</span>')
   .replace(/<span class="blog-version"><i aria-hidden="true"><\/i>Local preview · V\d+<\/span>/, `<span class="blog-version">${date}</span>`)
@@ -32,7 +32,7 @@ html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', ''
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title,
     description, url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-    datePublished: '2026-10-16', dateModified: '2026-10-19',
+    datePublished: '2026-10-16', dateModified: '2026-10-20',
     publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
   })}</script>
   <script src="/assets/js/google-analytics.js?v=20260920" defer></script>
@@ -85,4 +85,5 @@ const css = fontFaces + '\n' + progressCSS + '\n' + fs.readFileSync(path.join(ed
 fs.writeFileSync(path.join(root, 'assets/css/blog.css'), css);
 fs.copyFileSync(path.join(editorial, 'preview.js'), path.join(root, 'assets/js/blog.js'));
 require('./publish-local-seo-blog.cjs')({ root, html, title, date, readingMinutes });
+require('./publish-what-is-seo-blog.cjs')({ root, html });
 console.log('Generated public blog hub, complete articles and shared assets.');

@@ -1,0 +1,59 @@
+{
+  "createdOn": "2026-10-20",
+  "sourceTool": "built-in image_gen",
+  "generatedSourcePath": "C:\\Users\\Kelly Serna\\.codex\\generated_images\\01a143f9-843e-7f92-bfeb-5f814421a1f5\\exec-76ee54bd-9eaa-48ae-846b-1b84ab779e46.png",
+  "original": "docs\\editorial\\blog-ai-agents-workflows-australia\\image-sources\\ai-agents-workflow-illustration-v1.png",
+  "paletteOwner": "assets/css/styles.css",
+  "outputs": [
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-illustration-768.webp",
+      "bytes": 94574,
+      "format": "webp",
+      "mediaType": "image/webp",
+      "width": 768,
+      "height": 432,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "isProgressive": false,
+      "isPalette": false,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 768,
+        "height": 432
+      }
+    },
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-illustration-1280.webp",
+      "bytes": 241586,
+      "format": "webp",
+      "mediaType": "image/webp",
+      "width": 1280,
+      "height": 720,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "isProgressive": false,
+      "isPalette": false,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-comparison.svg",
+      "bytes": 5752,
+      "width": 1000,
+      "height": 820
+    },
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-comparison-mobile.svg",
+      "bytes": 5939,
+      "width": 540,
+      "height": 1250
+    }
+  ]
+}

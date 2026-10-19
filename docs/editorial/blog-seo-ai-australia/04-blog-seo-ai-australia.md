@@ -16,7 +16,7 @@ An AI answer could help them prepare a shortlist or think through the questions 
 
 That is useful work for the company's website. A service page can explain its actual coverage and scope, show an example of the work and describe how to request a quote.
 
-SEO helps search engines understand those pages and helps people find them and decide whether to visit. The work still has a purpose when search results include an AI answer. [Google's SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
+The [work involved in SEO](https://rankingrebels.com/blog/what-is-seo/) helps search engines understand those pages and helps people find them and decide whether to visit. The work still has a purpose when search results include an AI answer. [Google's SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
 
 Think about your own service pages in the same way. Would someone who has never spoken to you understand whether you can help them?
 

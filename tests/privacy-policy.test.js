@@ -11,6 +11,7 @@ const publicRoutes = [
   "/locations/netherlands/", "/locations/latam/", "/case-studies/",
   "/about/", "/journey/", "/contact/", "/privacy/", "/cookies/", "/legal/", "/blog/", "/blog/is-seo-still-relevant-ai-search/",
   "/blog/local-seo-google-maps-visibility/",
+  "/blog/what-is-seo/",
 ];
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
 const ignoredDirectories = new Set([".git", ".kilo", ".cache", "docs", "node_modules", ".wrangler", "coverage", "dist", "build"]);

@@ -46,3 +46,23 @@ Los dos enlaces se publicaron el 19 de octubre de 2026. Cloudflare confirmó des
 Pasaron las siete pruebas específicas de los blogs y las 198 de producción, además de la compilación. Se corrigió el generador para que cambiar el canonical del segundo artículo no reescriba también el destino de un enlace al primero. Los metadatos, las fuentes y los casos conservan su alcance. No se realizó una nueva auditoría visual en navegador ni se afirmó una mejora de ranking.
 
 Esta confirmación posterior se guarda en el repositorio de trabajo, sin provocar otro despliegue solo para registrar la publicación ya completada.
+
+## Tercer blog en preparación
+
+Revisión editorial iniciada el 19 y cerrada el 20 de octubre de 2026: **AI Agents vs Workflow Automation: What Can They Do for Your Business?** El artículo sigue como borrador y no se añade al inventario de publicados.
+
+Se leyeron completos los dos artículos anteriores y se contrastó el inventario con el hub público y las rutas locales. Se evaluaron las cuatro direcciones con el nuevo: el borrador enlaza Maps desde cualificación de consultas y SEO con IA desde producción de contenido. Los dos artículos previos admiten una mención al nuevo cuando hablan del tratamiento de las consultas.
+
+Los cuatro lugares, anchors y los párrafos inversos están en [la revisión propuesta del tercer blog](blog-ai-agents-workflows-australia/07-enlazado-propuesto.md). Los destinos existentes devolvieron 200 y canonical correcto. La ruta del tercer blog es candidata: las menciones desde los anteriores no se aplicaron y deberán implementarse con su publicación autorizada. La revisión del HTML y de ambas direcciones en producción sigue pendiente de esa etapa.
+
+En la continuación visual del 20 de octubre se generó la vista local V1 del tercer blog y se comprobaron sus dos enlaces salientes dentro del HTML. El detalle está en `blog-ai-agents-workflows-australia/09-verificacion-preview.json`. Esto no cambia el estado de las menciones entrantes ni añade un artículo al inventario público.
+
+El 20 de octubre también se preparó en local una versión más breve del ejemplo de fontanería del segundo blog, registrada en `blog-local-seo-australia/11-ejemplo-breve-2026-10-20.md`. Se mantiene el inventario de dos artículos publicados y sus enlaces contextuales en ambas direcciones. No se añadieron enlaces al tercero ni se desplegó esta corrección editorial.
+
+## Publicación priorizada de What Is SEO
+
+El usuario cambió el orden el 20 de octubre: crear y publicar primero **What Is SEO? How Search Engine Optimisation Works for Your Business**, con el artículo de agentes reservado para el jueves 22. Su recordatorio único quedó creado para las 9:00 de Sídney. El estado y los materiales del tercero están en `blog-ai-agents-workflows-australia/10-listo-para-el-jueves.md`.
+
+Se contrastaron las rutas y el hub con los dos artículos publicados y se revisaron sus manuscritos completos. La guía nueva enlaza Maps desde Local visibility y SEO/IA desde Does AI search change the fundamentals?. Maps enlaza de vuelta desde la definición inicial de search engine optimisation (SEO), y SEO/IA desde work involved in SEO. Se conservan las dos menciones anteriores. Detalle en `blog-what-is-seo-australia/07-enlazado.md`.
+
+Se revisó también la relación con agentes en ambas direcciones y se omitieron los enlaces por pertinencia, como se registra en ambos paquetes. No se introducen menciones públicas al borrador. Esta publicación incluye el ejemplo abreviado de fontanería solicitado por el usuario. La confirmación del nuevo inventario y de los seis enlaces servidos se añadirá tras verificar Cloudflare.

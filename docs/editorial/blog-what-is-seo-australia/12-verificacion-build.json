@@ -1,0 +1,19 @@
+{
+  "checkedOn": "2026-10-20",
+  "rootTests": 202,
+  "productionTests": 201,
+  "allTestsPassed": true,
+  "buildCompleted": true,
+  "buildPreflightRevision": "23632917b203ed7d5fbb11d6c1221d91af773a4f",
+  "publicFiles": 169,
+  "publicBlogPages": [
+    "blog/what-is-seo/index.html",
+    "blog/local-seo-google-maps-visibility/index.html",
+    "blog/is-seo-still-relevant-ai-search/index.html",
+    "blog/index.html"
+  ],
+  "articleBytesMatchReviewedPages": true,
+  "noEditorialFilesInBuild": true,
+  "agentsNotInBuild": true,
+  "fullBrowserPageReview": false
+}

@@ -1,0 +1,207 @@
+{
+  "checkedOn": "2026-10-20",
+  "timezone": "Australia/Sydney",
+  "stage": "local-visual-preview-v1",
+  "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-agents-workflows-australia/preview.html?v=1",
+  "completeManuscriptPreserved": true,
+  "manuscriptBlocksChecked": 109,
+  "articleHeadings": {
+    "h2": 9,
+    "h3": 8
+  },
+  "tables": 2,
+  "listItems": 10,
+  "figures": 2,
+  "allSourceLinksPreserved": true,
+  "allLocalResourcesExist": true,
+  "imageGeometryReserved": true,
+  "responsiveGraphic": {
+    "desktop": [
+      1000,
+      820
+    ],
+    "mobile": [
+      540,
+      1250
+    ]
+  },
+  "noindex": true,
+  "publicationMetadataOmitted": true,
+  "analyticsOmitted": true,
+  "rendererIdempotent": true,
+  "publicFilesUnchanged": true,
+  "existingBlogTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "visualInspection": {
+    "generatedHero": true,
+    "desktopGraphicPng": true,
+    "mobileGraphicPng": true,
+    "fullPageBrowser": false
+  },
+  "browserLimitation": "Browser automation was previously denied by security policy. No retry or alternate browser-control route was attempted. Local HTTP and static checks do not replace a full browser inspection.",
+  "designOwner": "Explicit user-approved Ranking Rebels blog criteria, assets/css/styles.css and assets/css/blog.css. Root DESIGN.md contains an older teal/serif theme and was not applied to this content preview.",
+  "assets": [
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-illustration-768.webp",
+      "bytes": 94574,
+      "format": "webp",
+      "mediaType": "image/webp",
+      "width": 768,
+      "height": 432,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "isProgressive": false,
+      "isPalette": false,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 768,
+        "height": 432
+      },
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658"
+    },
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-illustration-1280.webp",
+      "bytes": 241586,
+      "format": "webp",
+      "mediaType": "image/webp",
+      "width": 1280,
+      "height": 720,
+      "space": "srgb",
+      "channels": 3,
+      "depth": "uchar",
+      "isProgressive": false,
+      "isPalette": false,
+      "hasProfile": false,
+      "hasAlpha": false,
+      "autoOrient": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "23b9aab868b6023ec5dd8e52407faa3a56cf2018d4f9117974b672ea2f206974"
+    },
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-comparison.svg",
+      "bytes": 5752,
+      "width": 1000,
+      "height": 820,
+      "sha256": "cffaf54643afccdc98c6eee79a99976842617cbf23bd544c7b50d402cdd8b595"
+    },
+    {
+      "file": "docs\\editorial\\blog-ai-agents-workflows-australia\\media\\ai-agents-workflow-comparison-mobile.svg",
+      "bytes": 5939,
+      "width": 540,
+      "height": 1250,
+      "sha256": "d7ef510a48abda63e097bbb0b510094152c5b109a46697688a2a9fa99edfa810"
+    }
+  ],
+  "previewSha256": "65f164e210ecd6741190432165a3b171ea375958ec135886f8eb2997cdac7e15",
+  "localHttp": {
+    "checkedOn": "2026-10-20",
+    "allStatus200": true,
+    "allServedBytesMatch": true,
+    "resources": [
+      {
+        "path": "/docs/editorial/blog-ai-agents-workflows-australia/preview.html",
+        "status": 200,
+        "contentType": "text/html",
+        "bytes": 27363,
+        "sha256": "65f164e210ecd6741190432165a3b171ea375958ec135886f8eb2997cdac7e15"
+      },
+      {
+        "path": "/docs/editorial/blog-ai-agents-workflows-australia/preview.css",
+        "status": 200,
+        "contentType": "text/css",
+        "bytes": 855,
+        "sha256": "2edf365bb5d113c3d89fafc98b79014f27bda7596b3117c22fba834bf577a9bb"
+      },
+      {
+        "path": "/docs/editorial/blog-ai-agents-workflows-australia/media/ai-agents-workflow-illustration-1280.webp",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "bytes": 241586,
+        "sha256": "23b9aab868b6023ec5dd8e52407faa3a56cf2018d4f9117974b672ea2f206974"
+      },
+      {
+        "path": "/docs/editorial/blog-ai-agents-workflows-australia/media/ai-agents-workflow-illustration-768.webp",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "bytes": 94574,
+        "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658"
+      },
+      {
+        "path": "/docs/editorial/blog-ai-agents-workflows-australia/media/ai-agents-workflow-comparison.svg",
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "bytes": 5752,
+        "sha256": "cffaf54643afccdc98c6eee79a99976842617cbf23bd544c7b50d402cdd8b595"
+      },
+      {
+        "path": "/docs/editorial/blog-ai-agents-workflows-australia/media/ai-agents-workflow-comparison-mobile.svg",
+        "status": 200,
+        "contentType": "image/svg+xml",
+        "bytes": 5939,
+        "sha256": "d7ef510a48abda63e097bbb0b510094152c5b109a46697688a2a9fa99edfa810"
+      },
+      {
+        "path": "/assets/css/styles.css",
+        "status": 200,
+        "contentType": "text/css",
+        "bytes": 302227,
+        "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+      },
+      {
+        "path": "/assets/css/blog.css",
+        "status": 200,
+        "contentType": "text/css",
+        "bytes": 14612,
+        "sha256": "d96c32e4e8d3add32232791a3f61513e85276e7e6913dac0492db56f85f6c30c"
+      },
+      {
+        "path": "/assets/js/blog.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "bytes": 1331,
+        "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+      },
+      {
+        "path": "/assets/js/scroll-progress.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "bytes": 2641,
+        "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86"
+      },
+      {
+        "path": "/assets/js/script.js",
+        "status": 200,
+        "contentType": "text/javascript",
+        "bytes": 16310,
+        "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a"
+      },
+      {
+        "path": "/assets/fonts/inter-core-400-700.woff2",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "bytes": 20524,
+        "sha256": "bbe467f8e1328d83dd3010a4f57788b49cabcb522458f4d9db3680bd85ffb9d7"
+      },
+      {
+        "path": "/assets/fonts/oswald-core-500-700.woff2",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "bytes": 12744,
+        "sha256": "67502762147d49abd67474ff5dc2319668dd2aca05a53293d645216391893fcb"
+      },
+      {
+        "path": "/assets/fonts/jetbrains-mono-core-400-700.woff2",
+        "status": 200,
+        "contentType": "application/octet-stream",
+        "bytes": 23548,
+        "sha256": "71be98b2801d01c7556b7fb291e76069f0005359a178fb76a4edcd2f01ff48db"
+      }
+    ]
+  }
+}

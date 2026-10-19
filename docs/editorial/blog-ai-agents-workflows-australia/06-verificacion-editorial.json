@@ -1,0 +1,150 @@
+{
+  "checkedOn": "2026-10-19",
+  "timezone": "Australia/Sydney",
+  "stage": "editorial-draft",
+  "originalFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 3558,
+      "lines": 41,
+      "sha256": "7c4bb0fa84a30b76cd8adfffee6e565b1db113a2d593da4e94d6a99d64567843",
+      "copyExact": true,
+      "ending": "Revisión humana responsable, autoría real, ruta final, activos si se usan y comprobaciones de la página al implementarla. No se construyó un agente, no se conectaron cuentas y no se modificó ni publicó el sitio. La revisión asistida por IA no equivale a una firma humana independiente."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 29184,
+      "lines": 299,
+      "sha256": "a5d277f687473727a3ec1455e836dfe24a27ef1dff1c226478f39c745db6a103",
+      "copyExact": true,
+      "ending": "- [ ] Auditoría del manuscrito real, con cambios justificados y no confirmados explícitos."
+    },
+    {
+      "name": "02-articulo-ai-agents-workflows-australia.md",
+      "bytes": 15910,
+      "lines": 172,
+      "sha256": "b165415e04815a7e46d650652f8f7078ecefbb0042a85c24a4e7b5181827d629",
+      "copyExact": true,
+      "ending": "Ranking Rebels' [AI automation approach](https://rankingrebels.com/solutions/ai-automation/) brings rules, AI assistance and human handoffs into the same conversation. To explore a suitable approach, start with a concrete process: what triggers it, what a useful result looks like and which decisions your team wants to retain."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 9818,
+      "lines": 70,
+      "sha256": "6440c47914959a478fbd6e72562e91a730368f5a0700b50d38b5ce4f07cd8c07",
+      "copyExact": true,
+      "ending": "La versión optimizada que incorpora los cambios justificados está en `02-articulo-ai-agents-workflows-australia.md`. El diagnóstico y el artículo se conservan separados para que las instrucciones internas no terminen en la publicación."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 7444,
+      "lines": 86,
+      "sha256": "bf5fe94cb7c25d109b96668fb0c941d5dec605474187d2806efd62e8c527d6d8",
+      "copyExact": true,
+      "ending": "Al disponer de página y datos, evaluar consultas que generan impresiones, clics y lectura útil; comprobar si las personas llegan a la página de automatización y si las consultas comerciales son pertinentes. No atribuir una venta al blog solo porque hubo una visita previa. Utilizar lo aprendido para corregir lagunas concretas, sin cambiar fechas ni añadir palabras solo para aparentar frescura."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 8591,
+      "lines": 80,
+      "sha256": "17c2698a4ea5e87e28e076a61e5eb8b1e67f72378a03ee9cf6da77a8acc01d94",
+      "copyExact": true,
+      "ending": "El encargo autoriza preparar y revisar contenido. No publiques, modifiques el sitio, cambies código o conectes cuentas. No generes markup publicable con campos inventados. Al finalizar, resume qué revisaste, qué cambiaste y qué sigue pendiente, sin prometer posiciones, ventas o cumplimiento por el hecho de seguir una guía."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 2998,
+      "lines": 32,
+      "sha256": "aa60869d8c6e25b4a647f5c2cd4a4de6e04549a1a271df9770e600b3ed41e0c4",
+      "copyExact": true,
+      "ending": "No respondas simplemente “sí, tengo todo”. Demuéstralo con contenido leído y límites claros. Las notas `soporte-*.md` son complementarias; si están disponibles, enuméralas aparte, sin confundirlas con los cinco archivos principales."
+    },
+    {
+      "name": "soporte-arquitectura.md",
+      "bytes": 13050,
+      "lines": 121,
+      "sha256": "2b3054a056b8031eebc920cf0b3fcab1f9e2585c05afeba004243e7ae72b7076",
+      "copyExact": true,
+      "ending": "No es necesario agregar memoria, vector databases, modelos particulares, muchos agentes ni código API para corregir el artículo. Serían ampliaciones de alcance, no correcciones exigidas por estas fuentes."
+    },
+    {
+      "name": "soporte-estrategia.md",
+      "bytes": 18132,
+      "lines": 171,
+      "sha256": "0ed3235a1e519443a1d84ebc3e4a11e4c6835ba186016c3249d084ecaf32d8ed",
+      "copyExact": true,
+      "ending": "Revalidar cada documento de proveedores y reguladores cerca de la publicación; confirmar metadatos y URLs en el paquete SEO; añadir autoría y revisión humana reales si existen. Ninguna mención de autoría, caso real, métricas propias o experiencia debe inventarse para mejorar credibilidad."
+    },
+    {
+      "name": "soporte-evidencia-medicion.md",
+      "bytes": 15913,
+      "lines": 145,
+      "sha256": "7dca2fc2ce888f1ccb010224e35e808e37661e7c90a67fe32d1495237ea2bfbb",
+      "copyExact": true,
+      "ending": "Fin de la nota de soporte."
+    }
+  ],
+  "title": "AI Agents vs Workflow Automation | Ranking Rebels",
+  "titleCharacters": 49,
+  "metaDescription": "Compare AI agents and workflow automation through a Brisbane service business. See what each can do, what stays with your team and how to judge the results.",
+  "metaCharacters": 156,
+  "excerpt": "An enquiry arrives, details are missing and someone has to follow it up. See when rules, an AI workflow or an agent can help, and what your team should check before handing over more decisions.",
+  "excerptWords": 35,
+  "readableWords": 2450,
+  "h1": 1,
+  "h2": 9,
+  "h3": 8,
+  "tables": 2,
+  "sourceUrls": [
+    "https://www.anthropic.com/engineering/building-effective-agents",
+    "https://developers.openai.com/api/docs/guides/function-calling",
+    "https://learn.microsoft.com/en-us/power-automate/get-started-approvals",
+    "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals",
+    "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+    "https://www.acma.gov.au/avoid-sending-spam",
+    "https://rankingrebels.com/solutions/ai-automation/"
+  ],
+  "articleUrls": [
+    "https://www.anthropic.com/engineering/building-effective-agents",
+    "https://developers.openai.com/api/docs/guides/function-calling",
+    "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+    "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+    "https://learn.microsoft.com/en-us/power-automate/get-started-approvals",
+    "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals",
+    "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+    "https://www.acma.gov.au/avoid-sending-spam",
+    "https://rankingrebels.com/solutions/ai-automation/"
+  ],
+  "lostSourceUrls": [],
+  "forbiddenPunctuation": [],
+  "hypotheticalInFirst150Words": true,
+  "unwantedMarkers": false,
+  "wordCountMethod": "Markdown link labels retained, destinations and table separator rows removed, heading/list markers and table pipes removed; whitespace-delimited words. Includes headings, table headings and list text.",
+  "finalCheckedOn": "2026-10-20",
+  "articleSha256": "cf8638aa9cda1fba46e1922eaa1d107333cebfc51a65e003187d61f1b0e5e0fc",
+  "internalLinks": {
+    "publishedArticlesReviewed": 2,
+    "existingDestinationsCheckedOn": "2026-10-19",
+    "httpStatus": 200,
+    "redirects": false,
+    "canonicalsMatch": true,
+    "newArticleOutgoingBlogLinks": 2,
+    "incomingLinkProposals": 2,
+    "proposalsContainCandidateRoute": true,
+    "implementedOnSite": false
+  },
+  "checks": {
+    "requiredDeliverablesPresent": true,
+    "originalCopiesIdentical": true,
+    "sourceUrlPreservation": true,
+    "metadataMatchesSeoPackage": true,
+    "allArticleUrlsInRegistry": true,
+    "proposalInsertionPointsExist": true,
+    "livePageOrImagesCreated": false
+  },
+  "subsequentVisualStage": "Local visual preview prepared 2026-10-20; see 08-vista-local-e-imagenes.md and 09-verificacion-preview.json. Original editorial-stage checks above describe the earlier snapshot."
+}

@@ -1,0 +1,17 @@
+/* This draft inherits the approved public blog shell and runtime brand tokens. */
+.blog-agents-preview .blog-article ol { margin: 0 0 25px; padding-left: 24px; }
+.blog-agents-preview .blog-article ol li { padding-left: 5px; margin-block: 12px; }
+.blog-agents-preview a, .blog-agents-preview summary { cursor: pointer; }
+.blog-agents-preview a:focus-visible,
+.blog-agents-preview summary:focus-visible,
+.blog-agents-preview .article-table:focus-visible {
+  outline: 2px solid var(--tertiary);
+  outline-offset: 5px;
+}
+.blog-agents-preview .blog-mobile-toc a { min-height: 44px; }
+.blog-agents-preview .blog-editorial-figure picture { display: block; }
+@media (forced-colors: active) {
+  .blog-agents-preview a:focus-visible,
+  .blog-agents-preview summary:focus-visible,
+  .blog-agents-preview .article-table:focus-visible { outline-color: Highlight; }
+}

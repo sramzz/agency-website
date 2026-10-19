@@ -17,7 +17,7 @@ test('published article has indexable metadata and no preview-only claims', () =
   assert.equal(schema.url, `https://rankingrebels.com${route}`);
   assert.equal(schema.inLanguage, 'en-AU');
   assert.equal(schema.datePublished, '2026-10-16');
-  assert.equal(schema.dateModified, '2026-10-19');
+  assert.equal(schema.dateModified, '2026-10-20');
   assert.equal(schema.publisher.name, 'Ranking Rebels');
   assert.equal(schema.author, undefined, 'do not invent a human author');
 });

@@ -2,19 +2,17 @@
 
 If customers struggle to find your business on Google Maps, start by checking where the problem is. The profile may be missing, appearing for too few relevant searches or receiving clicks that lead to unanswered calls. Each situation needs a different response.
 
-Local search engine optimisation (SEO) helps people find and assess a business through searches tied to a location. For an eligible business, the work includes providing accurate information, explaining its services and making it easier for suitable customers to get in touch. Your location and the businesses competing nearby also affect visibility. Google explains these limits in its [local-ranking guidance](https://support.google.com/business/answer/7091?hl=en).
+Local [search engine optimisation (SEO)](https://rankingrebels.com/blog/what-is-seo/) helps people find and assess a business through searches tied to a location. For an eligible business, the work includes providing accurate information, explaining its services and making it easier for suitable customers to get in touch. Your location and the businesses competing nearby also affect visibility. Google explains these limits in its [local-ranking guidance](https://support.google.com/business/answer/7091?hl=en).
 
 Your Google Business Profile is the business listing you manage on Search and Maps. The website, customer reviews and other references to your business also have a role. For a service business, the work should help someone establish whether you can do the job and cover their area.
 
 ## A Brisbane example: finding a plumber
 
-Imagine a plumbing company that visits customers in a defined part of Brisbane and does not receive them at its home base. This example is hypothetical, not a Ranking Rebels client result.
+Say you run a plumbing business in Brisbane and visit customers in Chermside. This example is hypothetical, not a Ranking Rebels client result.
 
-Someone searching for “plumber Chermside” needs to check whether the company provides the service and can attend their address. The business needs a profile that reflects its operation, a useful service page and a phone number the team can answer.
+Someone searching for “plumber Chermside” needs to know whether you can do the job and cover their area. Make your services, coverage and contact details easy to check.
 
-The next step depends on what the team finds. If the business appears by name but rarely for that service search near its base, it checks categories, service fit and relevant information. If it is visible and phone clicks increase but calls go unanswered, responding to those enquiries becomes the priority.
-
-Weaker visibility farther away calls for a review of distance and competition. Declaring more service areas does not guarantee a place in those results.
+If you’re hard to find, start by checking your profile information. If suitable calls are coming in but going unanswered, focus on responding to those enquiries.
 
 ## What local SEO can help your business achieve
 
@@ -52,7 +50,7 @@ For many service businesses, the important distinction is how they serve custome
 
 The profile should reflect that operation. A business that does not receive customers at its address should hide that address from customers on its profile. A virtual office or mailing address does not create an eligible branch. Coworking locations have specific conditions, including signage, receiving customers and staffing by the business during its stated hours. [Google's representation guidelines](https://support.google.com/business/answer/3038177?hl=en).
 
-The Brisbane plumber would therefore keep its non-customer-facing home address hidden. Serving another suburb would not, by itself, justify a profile for another location. Multiple-location businesses, practitioners and departments have additional rules to check against their circumstances.
+If you run your plumbing business from home without receiving customers there, keep that address hidden on your profile. Serving another suburb does not, by itself, justify a profile for another location. Multiple-location businesses, practitioners and departments have additional rules to check against their circumstances.
 
 Check for an existing profile and appropriate ownership before creating another. Keep business access and management responsibilities clear. Google's available verification methods depend on the business, so the options and timing can differ. [Google's verification guidance](https://support.google.com/business/answer/7107242?hl=en).
 
