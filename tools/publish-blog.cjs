@@ -6,17 +6,18 @@ require(path.join(editorial, 'render-preview.cjs'));
 const route = '/blog/is-seo-still-relevant-ai-search/';
 const canonical = `https://rankingrebels.com${route}`;
 const date = '<time datetime="2026-10-16">16 October 2026</time>';
-const description = 'Is SEO still worth the budget? See what AI search changes, how Google and ChatGPT differ, and what Australian service businesses should measure.';
+const description = 'See how SEO helps customers find your business as Google and ChatGPT change search, with a Melbourne example and practical steps for your website.';
+const readingMinutes = Math.ceil(fs.readFileSync(path.join(editorial, '04-blog-seo-ai-australia.md'), 'utf8').replace(/\]\([^)]+\)/g, ']').split(/\s+/).length / 220);
 const title = 'Is SEO Still Relevant in the Age of ChatGPT and AI Search?';
 let html = fs.readFileSync(path.join(editorial, 'preview.html'), 'utf8');
 html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', '')
   .replace(/  <link rel="preconnect"[^\n]+\n/g, '')
   .replace(/  <link href="https:\/\/fonts.googleapis.com[^\n]+\n/g, '')
   .replace('  <link rel="stylesheet" href="/assets/css/scroll-progress.css" />\n', '')
-  .replace('href="preview.css"', 'href="/assets/css/blog.css?v=20261016"')
-  .replace('src="preview.js"', 'src="/assets/js/blog.js?v=20261016"')
+  .replace('href="preview.css"', 'href="/assets/css/blog.css?v=20261019-melbourne"')
+  .replace('src="preview.js"', 'src="/assets/js/blog.js?v=20261019-melbourne"')
   .replace('<span aria-current="page">Journal</span>', '<a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">SEO &amp; AI search</span>')
-  .replace('<span class="blog-version"><i aria-hidden="true"></i>Local preview · V1</span>', `<span class="blog-version">${date}</span>`)
+  .replace(/<span class="blog-version"><i aria-hidden="true"><\/i>Local preview · V\d+<\/span>/, `<span class="blog-version">${date}</span>`)
   .replace('Editorial preview · Not published', 'Ranking Rebels · Australia')
   .replace('THE RANKING REBELS JOURNAL', 'THE RANKING REBELS BLOG')
   .replace('<span>Editorial preview</span>', '')
@@ -31,7 +32,7 @@ html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', ''
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title,
     description, url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-    datePublished: '2026-10-16', dateModified: '2026-10-16',
+    datePublished: '2026-10-16', dateModified: '2026-10-19',
     publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
   })}</script>
   <script src="/assets/js/google-analytics.js?v=20260920" defer></script>
@@ -49,7 +50,7 @@ const hubBody = `    <section class="blog-cover blog-hub" aria-labelledby="blog-
       <div class="blog-cover-bottom"><p>Practical reading on SEO and AI search for businesses that want to connect discovery with useful enquiries.</p></div>
       <div class="blog-cover-rule"><span>THE LATEST</span><span>SEO &amp; AI SEARCH</span></div>
     </section>
-    <section class="blog-list" aria-label="Latest articles"><a class="blog-story" href="${route}"><div class="blog-story-label"><span>01 / SEO &amp; AI search</span><span>${date} · 11 min read</span></div><h2>${title}</h2><p>What changes with AI search, how Google and ChatGPT differ, and how to decide whether your next step should be a repair, better content or a small test.</p><span class="blog-story-read">Read the article <span aria-hidden="true">↗</span></span></a></section>
+    <section class="blog-list" aria-label="Latest articles"><a class="blog-story" href="${route}"><div class="blog-story-label"><span>01 / SEO &amp; AI search</span><span>${date} · ${readingMinutes} min read</span></div><h2>${title}</h2><p>How SEO still helps people find your business, what AI search changes, and what to improve next. Follow a Melbourne office-cleaning example.</p><span class="blog-story-read">Read the article <span aria-hidden="true">↗</span></span></a></section>
 `;
 let hub = html.slice(0, articleStart) + hubBody + html.slice(articleEnd);
 hub = hub.replace(/<title>[^<]+<\/title>/, '<title>SEO &amp; AI Search Blog | Ranking Rebels</title>')

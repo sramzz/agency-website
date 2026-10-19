@@ -1,6 +1,6 @@
 # Paquete SEO y dirección de diseño
 
-Revisión editorial: 16 de octubre de 2026, Australia/Brisbane. Artículo: [04-blog-seo-ai-australia.md](04-blog-seo-ai-australia.md). Idioma del contenido público: inglés australiano.
+Revisión editorial: 16 de octubre de 2026, Australia/Melbourne. Artículo: [04-blog-seo-ai-australia.md](04-blog-seo-ai-australia.md). Idioma del contenido público: inglés australiano.
 
 ## Metadatos finales propuestos
 
@@ -8,7 +8,7 @@ Revisión editorial: 16 de octubre de 2026, Australia/Brisbane. Artículo: [04-b
 |---|---|---|
 | H1 | Is SEO Still Relevant in the Age of ChatGPT and AI Search? | Se conserva el título del encargo |
 | Title tag | Is SEO Still Relevant in the Age of AI? \| Ranking Rebels | 56 caracteres |
-| Meta description | Is SEO still worth the budget? See what AI search changes, how Google and ChatGPT differ, and what Australian service businesses should measure. | 144 caracteres |
+| Meta description | See how SEO helps customers find your business as Google and ChatGPT change search, with a Melbourne example and practical steps for your website. | 146 caracteres |
 | Slug | is-seo-still-relevant-ai-search | Propuesto, sin ruta de blog confirmada |
 | Idioma | en-AU | Para la implementación futura |
 
@@ -16,7 +16,7 @@ Conteos comprobados incluyendo espacios y puntuación. La barra vertical del tit
 
 Extracto:
 
-SEO can still help customers find and assess your business. See what changes with AI search, how Google and ChatGPT differ, and how to decide whether your next step should be a repair, better content or a small test. Includes a Brisbane service-business example and a practical measurement framework.
+SEO can still help customers find and assess your business. See what changes with AI search, how Google and ChatGPT differ, and how to decide whether your next step should be a repair, better content or a small test. Includes a Melbourne service-business example and a practical measurement framework.
 
 Categoría editorial propuesta: SEO & AI search.
 
@@ -68,7 +68,7 @@ El cuerpo usa una columna de lectura tranquila, con H2/H3 claros y separación s
 
 En móvil, conservar los encabezados y relaciones de las tablas. Elegir una presentación adaptable o desplazamiento horizontal localizado, con indicación visible si se necesita. Comprobar que las celdas no se recorten. Los enlaces de fuentes deben reconocerse como enlaces sin depender solo del color.
 
-El ejemplo de Brisbane puede llevar una superficie discreta con la etiqueta «Hypothetical example». No simular una captura de ChatGPT que muestre una recomendación de Ranking Rebels o del negocio imaginario.
+El ejemplo de Melbourne puede llevar una superficie discreta con la etiqueta «Hypothetical example». No simular una captura de ChatGPT que muestre una recomendación de Ranking Rebels o del negocio imaginario.
 
 El CTA final dirige a Organic Discovery con el texto del artículo. El rojo da énfasis a esa acción. La pieza permite terminar la lectura antes de iniciar el recorrido comercial.
 

@@ -16,17 +16,25 @@ test('published article has indexable metadata and no preview-only claims', () =
   assert.equal(schema['@type'], 'BlogPosting');
   assert.equal(schema.url, `https://rankingrebels.com${route}`);
   assert.equal(schema.inLanguage, 'en-AU');
+  assert.equal(schema.datePublished, '2026-10-16');
+  assert.equal(schema.dateModified, '2026-10-19');
   assert.equal(schema.publisher.name, 'Ranking Rebels');
   assert.equal(schema.author, undefined, 'do not invent a human author');
 });
 
 test('article keeps its complete evidence and accessible section navigation', () => {
   const html = read(`${route.slice(1)}index.html`);
-  assert.equal((html.match(/<section class="article-section/g) || []).length, 10);
+  assert.equal((html.match(/<section class="article-section/g) || []).length, 9);
   assert.equal((html.match(/<table>/g) || []).length, 3);
   for (const detail of ['900 US adults', '68,879', '8%', '15%', '1%', 'hypothetical example, not a client result']) assert.ok(html.includes(detail), detail);
   for (const [, id] of html.matchAll(/href="#([^"]+)"/g)) assert.ok(html.includes(`id="${id}"`), `missing anchor ${id}`);
   for (const name of ['privacy', 'cookies', 'legal']) assert.ok(html.includes(`href="/${name}/"`));
+  assert.match(html, /A Melbourne example: choosing an office cleaner/);
+  assert.doesNotMatch(html, /Brisbane/);
+  for (const asset of ['seo-ai-discovery-illustration-1280.webp', 'seo-ai-discovery-illustration-768.webp', 'seo-ai-melbourne-journey.svg', 'seo-ai-melbourne-journey-mobile.svg']) {
+    assert.ok(html.includes(`/assets/images/blog/${asset}`), `missing article image ${asset}`);
+    assert.ok(fs.existsSync(path.join(root, 'assets/images/blog', asset)), `missing image file ${asset}`);
+  }
   const script = read('assets/js/blog.js');
   assert.match(script, /heading\.focus/);
   assert.match(script, /prefers-reduced-motion/);

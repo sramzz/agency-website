@@ -73,6 +73,11 @@
 .blog-mobile-toc { display: none; }
 .blog-article { color: var(--blog-copy); font-size: 17px; line-height: 1.85; outline-offset: 10px; }
 .blog-article p { margin: 0 0 23px; }
+.blog-editorial-figure { margin: 34px 0 42px; }
+.blog-editorial-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--blog-rule); border-radius: 10px; }
+.blog-editorial-figure figcaption { margin-top: 12px; color: var(--secondary); font-size: 12px; line-height: 1.65; }
+.blog-journey { margin: 26px 0; }
+.blog-journey img { border: 0; }
 .blog-article > p:first-child { color: var(--neutral); font-size: 23px; font-weight: 400; line-height: 1.65; letter-spacing: -.02em; }
 .blog-article a { color: var(--neutral); text-decoration: underline; text-decoration-color: rgba(255,48,79,.65); text-underline-offset: 4px; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
 .blog-article a:hover { color: var(--tertiary); }
@@ -145,6 +150,7 @@
   .table-hint > span { color: var(--tertiary); }
   .article-example { padding: 25px 20px 4px; }
   .article-example h2 { font-size: 28px; }
+  .article-example .blog-journey { margin-inline: -20px; }
   .blog-next-step { grid-template-columns: 1fr; gap: 25px; padding-block: 40px 55px; }
   .blog-next-step h2 { font-size: 45px; }
   .blog-next-step .button { min-height: 48px; }

@@ -9,7 +9,11 @@ const slug = value => value.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().re
 const lines = source.trim().split(/\r?\n/);
 const title = lines.shift().replace(/^# /, '');
 const sections = [];
-const shortLabels = ['What customers need', 'SEO, GEO & AEO', 'Where SEO can help', 'What the research says', 'Google & ChatGPT Search', 'Invest, repair or test?', 'The Brisbane example', 'Where to start', 'What to measure', 'Before you buy'];
+const shortLabels = ['The Melbourne example', 'What SEO can do', 'When AI answers first', 'Google & ChatGPT', 'SEO, GEO & AEO', 'Where to start', 'Make one useful change', 'Follow the enquiry', 'Questions for an agency'];
+const imageFolder = path.resolve(__dirname, '../../../assets/images/blog');
+const hasIllustration = fs.existsSync(path.join(imageFolder, 'seo-ai-discovery-illustration-1280.webp'));
+const illustration = '<figure class="blog-editorial-figure"><img src="/assets/images/blog/seo-ai-discovery-illustration-1280.webp" srcset="/assets/images/blog/seo-ai-discovery-illustration-768.webp 768w, /assets/images/blog/seo-ai-discovery-illustration-1280.webp 1280w" sizes="(max-width: 760px) 92vw, 780px" width="1280" height="720" alt="Editorial illustration of a person considering search results and an AI answer before approaching a business." decoding="async" /><figcaption>Search and AI answers can be part of how someone discovers a business. Conceptual illustration.</figcaption></figure>';
+const journey = '<figure class="blog-editorial-figure blog-journey"><picture><source media="(max-width: 600px)" width="540" height="750" srcset="/assets/images/blog/seo-ai-melbourne-journey-mobile.svg" /><img src="/assets/images/blog/seo-ai-melbourne-journey.svg" width="1000" height="450" loading="lazy" decoding="async" alt="In a hypothetical Melbourne example, a Google or AI search may lead someone to check a cleaning business and request a quote if suitable." /></picture><figcaption>A possible route from a search to a quote request, using the Melbourne example.</figcaption></figure>';
 let html = '';
 let sectionOpen = false;
 let paragraph = [];
@@ -22,11 +26,15 @@ for (let i = 0; i < lines.length; i++) {
   if (!line.trim()) { flush(); continue; }
   if (line.startsWith('## ')) {
     flush();
-    if (sectionOpen) html += '</section>\n';
+    if (sections.length === 0 && hasIllustration) html += illustration;
+    if (sectionOpen) {
+      if (sections.at(-1).heading.includes('Melbourne')) html += journey;
+      html += '</section>\n';
+    }
     const heading = line.slice(3);
     const id = slug(heading);
     sections.push({ heading, id });
-    html += `<section class="article-section${heading.startsWith('A Brisbane') ? ' article-example' : ''}${heading.startsWith('When should') ? ' article-decision' : ''}" aria-labelledby="${id}"><h2 id="${id}">${escape(heading)}</h2>\n`;
+    html += `<section class="article-section${heading.includes('Melbourne') ? ' article-example' : ''}${heading.startsWith('What should you fix') ? ' article-decision' : ''}" aria-labelledby="${id}"><h2 id="${id}">${escape(heading)}</h2>\n`;
     sectionOpen = true;
   } else if (line.startsWith('### ')) {
     flush(); html += `<h3>${escape(line.slice(4))}</h3>\n`;
@@ -52,7 +60,7 @@ const page = `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Is SEO Still Relevant in the Age of AI? | Ranking Rebels</title>
-  <meta name="description" content="Is SEO still worth the budget? See what AI search changes, how Google and ChatGPT differ, and what Australian service businesses should measure." />
+  <meta name="description" content="See how SEO helps customers find your business as Google and ChatGPT change search, with a Melbourne example and practical steps for your website." />
   <meta name="theme-color" content="#050609" />
   <link rel="icon" href="/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,10 +83,10 @@ const page = `<!doctype html>
   <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation"></nav>
   <main id="top">
     <section class="blog-cover" aria-labelledby="blog-title">
-      <div class="blog-cover-top"><nav aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Journal</span></nav><span class="blog-version"><i aria-hidden="true"></i>Local preview · V1</span></div>
+      <div class="blog-cover-top"><nav aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Journal</span></nav><span class="blog-version"><i aria-hidden="true"></i>Local preview · V3</span></div>
       <div class="blog-kicker"><span>Search, explained.</span><span>SEO &amp; AI search</span></div>
       <h1 id="blog-title" aria-label="${escape(title)}">Is SEO still relevant<br class="desktop-break" /> in the age of ChatGPT<br class="desktop-break" /> <span>and AI search?</span></h1>
-      <div class="blog-cover-bottom"><p>A practical guide for Australian service businesses deciding where SEO belongs in the budget.</p><div class="blog-reading-meta"><span>Australia</span><span>${readTime} min read</span><a href="#article">Read the article <span aria-hidden="true">↓</span></a></div></div>
+      <div class="blog-cover-bottom"><p>What ChatGPT and AI search change about getting found online, and where SEO still helps.</p><div class="blog-reading-meta"><span>Australia</span><span>${readTime} min read</span><a href="#article">Read the article <span aria-hidden="true">↓</span></a></div></div>
       <div class="blog-cover-rule" aria-hidden="true"><span>01 / THE RANKING REBELS JOURNAL</span><span>CLARITY BEFORE CLICKS.</span></div>
     </section>
     <div class="blog-layout">
