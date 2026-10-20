@@ -28,6 +28,8 @@ Introducir pronto un ejemplo australiano concreto y recuperarlo donde aclare una
 
 Al preparar una vista visual, seguir el diseño actual de Ranking Rebels: negro, blanco roto, rojo y gris, con las tipografías y jerarquías existentes. El primer blog combinó una ilustración editorial propia y un gráfico explicativo. Es una referencia para elegir recursos con función, no una cuota de imágenes. Evitar capturas ficticias de cuentas, reseñas o resultados. No reutilizar automáticamente una imagen cuyo tema no encaje.
 
+El 20 de octubre de 2026 el usuario acordó ensayar otra dirección al crear el próximo blog. Comparar en local el mismo artículo con el diseño actual y con una versión de cabecera oscura, cuerpo de lectura en blanco roto, texto oscuro y tablas y gráficos claros. Explorar ilustraciones más luminosas, con menos sombras y textura, mediante collage editorial claro o escenas diurnas con colores naturales y acentos rojos. Conservar las tipografías y la identidad de Ranking Rebels. Mostrar la comparación antes de elegir la versión para publicar o adoptarla como plantilla de la serie. Esta decisión autoriza una prueba para el próximo blog y mantiene los artículos ya publicados en su diseño aprobado.
+
 ## Proceso y publicación
 
 Preparar diagnóstico, auditoría priorizada, artículo completo, paquete SEO y registro de fuentes. Mantener la investigación y los entregables editoriales separados de las páginas públicas. Una vista previa local se prepara como borrador de revisión, con el diseño de la marca, cuando corresponda a la etapa de trabajo. No presentar un archivo Markdown como si ya tuviera diseño, imágenes o comprobaciones de navegador.
