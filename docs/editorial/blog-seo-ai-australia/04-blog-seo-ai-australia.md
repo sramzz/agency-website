@@ -58,6 +58,8 @@ Once someone thinks you might be suitable, give them an appropriate way to enqui
 
 The team could then record whether the request fits its service and whether it leads to a site visit or accepted quote. If suitable enquiries arrive but few progress, examine response times, capacity and the offer alongside acquisition.
 
+If collecting and passing on those details is the slow part, our comparison of [AI agents and workflow automation](https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/) explains when rules, an AI step or an agent might help.
+
 ## What happens when an AI answer comes first?
 
 Some people may get enough information from an AI answer without visiting a website. Businesses have a reason to watch how that affects their own pages.

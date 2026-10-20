@@ -40,3 +40,9 @@ En esa publicación habrá que actualizar los manuscritos activos y regenerar su
 Los destinos existentes se comprobaron el 19 de octubre. En la continuación visual del 20 se verificaron las dos menciones salientes dentro del HTML de la vista local. Las menciones desde los artículos anteriores y la comprobación de ambas direcciones en producción siguen pendientes de la publicación autorizada.
 
 El 20 de octubre se revisó también What Is SEO en ambas direcciones. No amplía la comparación de agentes en su pasaje actual de contenido, que ya enlaza SEO/IA. La guía introductoria tampoco necesita derivar al lector a agentes y el borrador aún no es un destino publicado. Se omiten estas dos menciones por pertinencia. La reserva para el jueves 22 y el recordatorio de las 9:00 de Sídney están en 10-listo-para-el-jueves.md.
+
+## Aplicación autorizada el 21 de octubre
+
+El usuario adelantó la publicación al miércoles 21. Se leyeron los tres artículos activos y se contrastaron con el hub y las rutas. Se aplicaron exactamente los dos párrafos entrantes anteriores desde SEO/IA y Maps a sus manuscritos y páginas. Se conservaron los dos enlaces salientes del nuevo y las seis conexiones previas entre los artículos de búsqueda. Se mantiene la omisión razonada de What Is SEO en ambas direcciones, revisada ahora que esa guía está publicada.
+
+La ruta definitiva es /blog/ai-agents-vs-workflow-automation/. La comprobación de las diez direcciones útiles en páginas servidas se registra en 13-verificacion-produccion.json cuando termine Cloudflare. Las secciones anteriores conservan el estado de la preparación del 19 y 20.

@@ -69,3 +69,9 @@ La ilustración no identifica una ciudad mediante monumentos. El gráfico nombra
 Confirmar responsable real y revisión humana, autorización de publicación, ruta y aprobación de los activos locales. Implementar después metadatos y BlogPosting con fechas efectivas y organización o autor real. No generar perfiles, credenciales o fechas supuestas. Una organización responsable puede ser la opción si refleja la autoría efectiva, como en los blogs existentes.
 
 La vista local ya permite revisar contenido y recursos, con comprobaciones estáticas de HTML y enlaces. Antes de publicar faltan la revisión completa en navegador y los controles de canonical, indexabilidad, sitemap y enlaces entre páginas públicas. La vista lleva noindex y no representa una publicación.
+
+## Publicación autorizada y adelantada al 21 de octubre
+
+El usuario autorizó publicar hoy. Se conserva el texto, los metadatos y los activos preparados. La ruta pasa a ser definitiva: https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/. BlogPosting usa fechas efectivas 2026-10-21 y publisher Ranking Rebels, sin autor personal inventado. La página pública elimina las señales de borrador y conserva una vista local separada con noindex.
+
+Se integraron hub, sitemap y menciones en ambas direcciones con SEO/IA y Maps; What Is SEO fue revisado con omisión razonada de enlaces adicionales. El detalle y los controles previos están en 11 y 12; la respuesta servida y el despliegue exacto se registran en 13 después de publicar. La revisión visual de página completa en navegador sigue sin ejecutarse, y se declara por separado de la inspección de imágenes y los controles estáticos.

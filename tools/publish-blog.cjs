@@ -32,7 +32,7 @@ html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', ''
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title,
     description, url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-    datePublished: '2026-10-16', dateModified: '2026-10-20',
+    datePublished: '2026-10-16', dateModified: '2026-10-21',
     publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
   })}</script>
   <script src="/assets/js/google-analytics.js?v=20260920" defer></script>
@@ -86,4 +86,5 @@ fs.writeFileSync(path.join(root, 'assets/css/blog.css'), css);
 fs.copyFileSync(path.join(editorial, 'preview.js'), path.join(root, 'assets/js/blog.js'));
 require('./publish-local-seo-blog.cjs')({ root, html, title, date, readingMinutes });
 require('./publish-what-is-seo-blog.cjs')({ root, html });
+require('./publish-ai-agents-blog.cjs')({ root });
 console.log('Generated public blog hub, complete articles and shared assets.');

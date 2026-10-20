@@ -29,6 +29,7 @@ const publicRoutes = [
   "/blog/is-seo-still-relevant-ai-search/",
   "/blog/local-seo-google-maps-visibility/",
   "/blog/what-is-seo/",
+  "/blog/ai-agents-vs-workflow-automation/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;

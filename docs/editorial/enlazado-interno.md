@@ -75,3 +75,9 @@ Cloudflare completó el despliegue `b4f01af2-c574-4180-91c9-f4243b14bd86` de la 
 Se verificaron los seis enlaces contextuales dentro del cuerpo: las cuatro direcciones nuevas con What Is SEO y las dos previas entre Maps y SEO/IA. Las cuatro variantes de imagen del nuevo blog y el CSS compartido se sirvieron correctamente; los archivos coinciden con los revisados, normalizando solo finales de línea del CSS. El hub y el sitemap contienen exactamente los tres blogs publicados. La ruta candidata de agentes devolvió 404.
 
 Pasaron 202 pruebas de trabajo, 201 de producción y el build. La prueba está en `blog-what-is-seo-australia/11-verificacion-publicacion.json`. Los recursos se inspeccionaron visualmente y no se realizó una nueva revisión de página completa en navegador. No se afirma que Google haya rastreado los enlaces ni que exista una mejora medida de SEO. Esta constancia se guarda después del despliegue en el repositorio de trabajo, sin generar otro despliegue solo para documentarlo.
+
+## Publicación de agentes adelantada al 21 de octubre
+
+El usuario autorizó publicar el artículo de agentes el miércoles 21, adelantándolo desde el jueves 22. Se revisaron completos los tres manuscritos activos y se contrastaron con las rutas y el hub. Se aplicaron los dos párrafos propuestos desde SEO/IA y Maps, manteniendo los dos enlaces de vuelta del nuevo y las seis menciones previas entre las guías de búsqueda. What Is SEO se consideró en ambas direcciones y se conserva su omisión por pertinencia, documentada en `blog-ai-agents-workflows-australia/07-enlazado-propuesto.md`.
+
+Los manuscritos y las páginas generadas cambian juntos. La URL definitiva del artículo nuevo es /blog/ai-agents-vs-workflow-automation/. El inventario de publicados y la confirmación de los diez enlaces útiles se completarán después de verificar el despliegue exacto. La prueba local y la preparación de publicación quedan separadas de esa confirmación.

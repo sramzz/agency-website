@@ -48,14 +48,11 @@ test('SEO foundations has truthful publication metadata and deployable responsiv
   assert.match(read('assets/images/blog/what-is-seo-search-needs.svg'),/<title id="title">/);
 });
 
-test('all three published articles have contextual links in both directions and agents remain a draft', () => {
+test('the three search guides preserve their contextual links in both directions', () => {
   const routes = [route,'/blog/local-seo-google-maps-visibility/','/blog/is-seo-still-relevant-ai-search/'];
   for(const from of routes) {
     const body = article(read(`${from.slice(1)}index.html`));
     for(const to of routes.filter(r=>r!==from)) assert.ok(body.includes(`href="https://rankingrebels.com${to}"`),`${from} → ${to}`);
-    assert.doesNotMatch(body,/href="https:\/\/rankingrebels.com\/blog\/ai-agents-vs-workflow-automation\//);
   }
-  assert.ok(!fs.existsSync(path.join(root,'blog/ai-agents-vs-workflow-automation/index.html')));
-  assert.doesNotMatch(read('sitemap.xml'),/ai-agents-vs-workflow-automation/);
-  assert.doesNotMatch(read('blog/index.html'),/ai-agents-vs-workflow-automation/);
+  assert.doesNotMatch(article(html()), /href="https:\/\/rankingrebels.com\/blog\/ai-agents-vs-workflow-automation\//, 'omit unrelated links from the foundations guide');
 });

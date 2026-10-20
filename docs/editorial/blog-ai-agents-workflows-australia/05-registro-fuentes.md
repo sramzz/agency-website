@@ -51,3 +51,11 @@ Las notas incluyen cuatro competidores, otras páginas de OpenAI y Anthropic, un
 | Publicación nueva o mejora SEO medida | No implementada en producción ni medida. Hay una vista local con imágenes propias, documentadas en `08-vista-local-e-imagenes.md`; no son evidencia de resultados o de un cliente |
 
 La consulta a estas fuentes no valida un producto, una instalación o la aplicabilidad jurídica de una situación concreta. Si la publicación se retrasa o se añaden funciones, precios o requisitos, habrá que revisar las afirmaciones afectadas.
+
+## Revalidación antes de publicar, 21 de octubre de 2026
+
+Se abrieron de nuevo las ocho fuentes externas citadas en el artículo y se leyeron los pasajes pertinentes. Anthropic conserva la distinción de rutas previstas frente a decisiones dinámicas, el coste de complejidad y la diferencia entre transcript y outcome en sus evaluaciones. Ambas URLs originales redirigen ahora a la sección /research/ y se conservan como destinos recibidos. La documentación de function calling mantiene la ejecución del código por la aplicación. Guardrails and human review mantiene las comprobaciones a nivel de herramienta, el ciclo de aprobación y los límites de controles de entrada/salida. Microsoft describe que Start and wait for an approval espera la respuesta antes de continuar.
+
+El PDF NIST sigue disponible: se leyó el pasaje de prompt injection directa e indirecta de §2.9, página impresa 11, que el extractor actual sitúa en P14. OAIC conserva su orientación sobre idoneidad, supervisión y acceso a información personal; se mantiene la cautela del texto sobre la aplicabilidad del Privacy Act. ACMA mantiene consentimiento, responsabilidad al delegar, identificación y baja. La lectura de la página no se presenta como evaluación jurídica de una implantación.
+
+No se añadieron benchmarks, porcentajes de ahorro, garantías de resultados, compatibilidades de planes ni nuevas obligaciones jurídicas. El manuscrito preparado permanece íntegro. Las comprobaciones del hub y las rutas del 19 son históricas: el 21 se contrastó el conjunto real de tres artículos antes de añadir el cuarto. La autorización para publicarlo hoy está en 11-publicacion-2026-10-21.md. Las respuestas y enlaces de producción se registran después del despliegue.

@@ -21,7 +21,7 @@ test('local SEO publication has honest dates, indexable metadata and an editoria
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   assert.equal(schema['@type'], 'BlogPosting');
   assert.equal(schema.datePublished, '2026-10-19');
-  assert.equal(schema.dateModified, '2026-10-20');
+  assert.equal(schema.dateModified, '2026-10-21');
   assert.equal(schema.inLanguage, 'en-AU');
   assert.equal(schema.url, `https://rankingrebels.com${route}`);
   assert.equal(schema.author, undefined, 'do not invent a human author');
@@ -64,9 +64,9 @@ test('article has two purposeful visuals with responsive assets and reserved geo
 test('published articles remain discoverable and public build includes the local SEO assets', () => {
   const hub = read('blog/index.html');
   const stories = [...hub.matchAll(/<a class="blog-story" href="([^"]+)"/g)].map(match => match[1]);
-  assert.deepEqual(stories, ['/blog/what-is-seo/', route, '/blog/is-seo-still-relevant-ai-search/']);
+  assert.deepEqual(stories, ['/blog/ai-agents-vs-workflow-automation/', '/blog/what-is-seo/', route, '/blog/is-seo-still-relevant-ai-search/']);
   const schema = JSON.parse(hub.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
-  assert.equal(schema.hasPart.length, 3);
+  assert.equal(schema.hasPart.length, 4);
   assert.ok(read('sitemap.xml').includes(`<loc>https://rankingrebels.com${route}</loc>`));
   const manifest = path.join(root, 'scripts/public-files.json');
   if (fs.existsSync(manifest)) {

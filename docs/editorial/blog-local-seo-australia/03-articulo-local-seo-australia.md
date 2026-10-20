@@ -159,6 +159,8 @@ The Brisbane team might need to correct how it describes a service. It might ins
 
 Investigate the missed opportunities first. If suitable calls are not answered or quotes are not followed up, improving that handover may make better use of existing demand. Compare the next visibility task with the operational problem and the team's capacity. This is a business decision, not a platform rule.
 
+For repeated work around incoming requests, our comparison of [AI agents and workflow automation](https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/) explains which steps can follow rules and when choosing the next step may need more flexibility.
+
 ### Do I need a specialist tool or a new website to start?
 
 Start with the decision you need to make. The existing profile, useful pages and a simple record of enquiry outcomes may reveal the first problem. More detailed tools or development should address a demonstrated information or operational gap rather than become a prerequisite for every small business.

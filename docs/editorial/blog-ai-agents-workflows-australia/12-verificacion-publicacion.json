@@ -1,0 +1,32 @@
+{
+  "checkedOn": "2026-10-21",
+  "timezone": "Australia/Sydney",
+  "status": "publication-preflight-passed",
+  "userAuthorisedEarlierPublication": true,
+  "sourceWords": 2518,
+  "articleSha256": "cf8638aa9cda1fba46e1922eaa1d107333cebfc51a65e003187d61f1b0e5e0fc",
+  "priorReviewedArticleSha256": "cf8638aa9cda1fba46e1922eaa1d107333cebfc51a65e003187d61f1b0e5e0fc",
+  "sameArticleBytesAsPreparedDraft": true,
+  "rootTests": 205,
+  "productionTests": 204,
+  "allTestsPassed": true,
+  "targetedBlogTests": 13,
+  "buildPassed": true,
+  "buildPreflightRevision": "dff7e10d886ba513d033c454362a34f6b1dd35da",
+  "deployedFiles": 174,
+  "publicPagesMatchReviewedVersions": true,
+  "sourceImagesPreserved": true,
+  "noEditorialFilesInBuild": true,
+  "imagesVisuallyReviewed": true,
+  "fullBrowserPageReview": false,
+  "counts": {
+    "h1": 1,
+    "articleSections": 9,
+    "tables": 2,
+    "visuals": 2
+  },
+  "sourcesRevalidated": 8,
+  "contextualLinksExpected": 10,
+  "reminderId": "publicar-blog-de-agentes-de-ia",
+  "reminderRetirement": "pending confirmed publication"
+}
