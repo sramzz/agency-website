@@ -1,6 +1,6 @@
 # Paquete SEO del tercer blog
 
-Preparación del 19 y 20 de octubre de 2026 · Inglés australiano · Sin página nueva publicada.
+Preparación del 19 y 20 de octubre de 2026 · Inglés australiano · Publicado el 21 de octubre de 2026.
 
 ## Intención y alcance
 
@@ -64,7 +64,7 @@ El 20 de octubre de 2026 se crearon dos recursos siguiendo el lenguaje visual de
 
 La ilustración no identifica una ciudad mediante monumentos. El gráfico nombra Brisbane y mantiene el caso como hipotético. Ambos tienen dimensiones reservadas y variantes adaptadas a la vista estrecha. No se reutilizaron las imágenes de búsqueda o Maps, cuyos temas son diferentes.
 
-## Datos que cerrar antes de publicar
+## Comprobaciones registradas antes de publicar
 
 Confirmar responsable real y revisión humana, autorización de publicación, ruta y aprobación de los activos locales. Implementar después metadatos y BlogPosting con fechas efectivas y organización o autor real. No generar perfiles, credenciales o fechas supuestas. Una organización responsable puede ser la opción si refleja la autoría efectiva, como en los blogs existentes.
 
@@ -75,3 +75,5 @@ La vista local ya permite revisar contenido y recursos, con comprobaciones está
 El usuario autorizó publicar hoy. Se conserva el texto, los metadatos y los activos preparados. La ruta pasa a ser definitiva: https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/. BlogPosting usa fechas efectivas 2026-10-21 y publisher Ranking Rebels, sin autor personal inventado. La página pública elimina las señales de borrador y conserva una vista local separada con noindex.
 
 Se integraron hub, sitemap y menciones en ambas direcciones con SEO/IA y Maps; What Is SEO fue revisado con omisión razonada de enlaces adicionales. El detalle y los controles previos están en 11 y 12; la respuesta servida y el despliegue exacto se registran en 13 después de publicar. La revisión visual de página completa en navegador sigue sin ejecutarse, y se declara por separado de la inspección de imágenes y los controles estáticos.
+
+Publicación confirmada el 21: la ruta responde 200, canonical correcto, cuatro imágenes accesibles y enlaces contextuales verificados. Se comprobaron los cuatro cuerpos completos y las diez direcciones útiles. Cloudflare sirvió la revisión 1c25a15f41235be9802b94b2a81c5912ae45fa79, despliegue e53fa839-239b-4fc9-b4c1-c484b8d23a68. Se retiró el recordatorio del jueves. Véase 13-verificacion-produccion.json.

@@ -28,5 +28,11 @@
   "sourcesRevalidated": 8,
   "contextualLinksExpected": 10,
   "reminderId": "publicar-blog-de-agentes-de-ia",
-  "reminderRetirement": "pending confirmed publication"
+  "reminderRetirement": "pending confirmed publication",
+  "subsequentPublication": {
+    "verified": true,
+    "revision": "1c25a15f41235be9802b94b2a81c5912ae45fa79",
+    "proof": "13-verificacion-produccion.json",
+    "reminderDeleted": true
+  }
 }

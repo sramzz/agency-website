@@ -1,4 +1,6 @@
-# Reservado para el jueves 22 de octubre de 2026
+# Programación inicial para el jueves 22, cerrada por publicación anticipada
+
+Estado actual: el usuario adelantó la publicación al 21 de octubre de 2026. El artículo quedó publicado y verificado ese día en https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/. El recordatorio del jueves se eliminó después de comprobar el despliegue. El texto siguiente conserva la planificación del 20; los registros actuales son 11 a 13.
 
 Decisión explícita del usuario, 20 de octubre: publicar primero What Is SEO y dejar este tercer blog, AI Agents vs Workflow Automation, listo para publicar el jueves 22. Hora del recordatorio: 9:00 a. m., Australia/Sydney.
 

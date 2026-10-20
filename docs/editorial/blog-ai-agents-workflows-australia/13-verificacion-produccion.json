@@ -1,0 +1,164 @@
+{
+  "checkedOn": "2026-10-21",
+  "timezone": "Australia/Sydney",
+  "mode": "production-http",
+  "revision": "1c25a15f41235be9802b94b2a81c5912ae45fa79",
+  "checks": [
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "8f472e7c8c7ed7cc201b73afd830147e521c291aa997df90915da48cee932c4d"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 29571,
+      "sha256": "03939884f63d00c8600008b6f9f17ce775c784b6a6d3b687f5e372727020cf1b"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28383,
+      "sha256": "c130756f6a61c0f53f4740a5ebc94d5a87ad8d78a879feae1d49fb562268899e"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32204,
+      "sha256": "b43c4b774c287609f50eeb94dd6dd38baab6b2c181183fe5c749f31781cc5eeb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27287,
+      "sha256": "aa7132e41c0375883af029f15aecede916e6c7b55cd18d83a3d46673b7dcdc77"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "bytes": 7676,
+      "sha256": "b87ae742fe31151d5862e91500d387d127897c27cf3cc40d57d6e14ba455b253"
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "bytes": 1667,
+      "sha256": "7af11cd21af6f47cbbe644cc8564b30ac6da70b311efb4053c081f21fbbece41"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/ai-agents-workflow-illustration-1280.webp",
+      "status": 200,
+      "bytes": 241586,
+      "sha256": "23b9aab868b6023ec5dd8e52407faa3a56cf2018d4f9117974b672ea2f206974"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "status": 200,
+      "bytes": 94574,
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/ai-agents-workflow-comparison.svg",
+      "status": 200,
+      "bytes": 5752,
+      "sha256": "cffaf54643afccdc98c6eee79a99976842617cbf23bd544c7b50d402cdd8b595"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/ai-agents-workflow-comparison-mobile.svg",
+      "status": 200,
+      "bytes": 5939,
+      "sha256": "d7ef510a48abda63e097bbb0b510094152c5b109a46697688a2a9fa99edfa810"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15271,
+      "sha256": "411c7fb75eaa1167c0dd54070ed54ef7f7ee2423035e93ac6ff571085c28f892"
+    }
+  ],
+  "links": [
+    {
+      "source": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving visibility on Google Maps",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "search engine optimisation (SEO)",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "work involved in SEO",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    }
+  ],
+  "browserPageReview": false,
+  "deployment": {
+    "revision": "1c25a15f41235be9802b94b2a81c5912ae45fa79",
+    "branch": "main"
+  },
+  "allServedArticlesMatchReviewedContent": true,
+  "contextualLinksVerified": 10,
+  "bothDirectionsReviewedForAllExistingArticles": true,
+  "cloudflare": {
+    "id": "e53fa839-239b-4fc9-b4c1-c484b8d23a68",
+    "environment": "production",
+    "status": "success"
+  },
+  "rootTests": 205,
+  "productionTests": 204,
+  "buildPassed": true,
+  "sourceCommit": "bfafbc4b188c6f0ed0dbe2390e30c5da09481c6d",
+  "reminder": {
+    "id": "publicar-blog-de-agentes-de-ia",
+    "status": "deleted",
+    "confirmedByTool": true
+  }
+}

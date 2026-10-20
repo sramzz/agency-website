@@ -9,6 +9,7 @@ Instrucción permanente del usuario, 19 de octubre de 2026: al crear cada artíc
 | Is SEO Still Relevant in the Age of ChatGPT and AI Search? | [SEO y búsqueda con IA](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) | `blog-seo-ai-australia/04-blog-seo-ai-australia.md` | Explica el papel de SEO y la web cuando también se consultan respuestas con IA. |
 | Local SEO: How to Improve Your Business's Visibility on Google Maps | [SEO local y Maps](https://rankingrebels.com/blog/local-seo-google-maps-visibility/) | `blog-local-seo-australia/03-articulo-local-seo-australia.md` | Ayuda a diagnosticar perfil, visibilidad local y recorrido de la consulta. |
 | What Is SEO? How Search Engine Optimisation Works for Your Business | [What is SEO?](https://rankingrebels.com/blog/what-is-seo/) | `blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md` | Define SEO, explica el trabajo y la medición mediante un ejemplo de paisajismo en Perth. |
+| AI Agents vs Workflow Automation: What Can They Do for Your Business? | [Agentes y automatización](https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/) | `blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md` | Compara reglas, flujos con IA y agentes mediante una consulta hipotética de limpieza en Brisbane. |
 
 Este inventario debe contrastarse con `/blog/` y los artículos presentes en `blog/`. No presupone que futuros artículos se añadirán solos a la tabla.
 
@@ -48,7 +49,7 @@ Pasaron las siete pruebas específicas de los blogs y las 198 de producción, ad
 
 Esta confirmación posterior se guarda en el repositorio de trabajo, sin provocar otro despliegue solo para registrar la publicación ya completada.
 
-## Tercer blog en preparación
+## Preparación del tercer blog, 19 y 20 de octubre
 
 Revisión editorial iniciada el 19 y cerrada el 20 de octubre de 2026: **AI Agents vs Workflow Automation: What Can They Do for Your Business?** El artículo sigue como borrador y no se añade al inventario de publicados.
 
@@ -80,4 +81,12 @@ Pasaron 202 pruebas de trabajo, 201 de producción y el build. La prueba está e
 
 El usuario autorizó publicar el artículo de agentes el miércoles 21, adelantándolo desde el jueves 22. Se revisaron completos los tres manuscritos activos y se contrastaron con las rutas y el hub. Se aplicaron los dos párrafos propuestos desde SEO/IA y Maps, manteniendo los dos enlaces de vuelta del nuevo y las seis menciones previas entre las guías de búsqueda. What Is SEO se consideró en ambas direcciones y se conserva su omisión por pertinencia, documentada en `blog-ai-agents-workflows-australia/07-enlazado-propuesto.md`.
 
-Los manuscritos y las páginas generadas cambian juntos. La URL definitiva del artículo nuevo es /blog/ai-agents-vs-workflow-automation/. El inventario de publicados y la confirmación de los diez enlaces útiles se completarán después de verificar el despliegue exacto. La prueba local y la preparación de publicación quedan separadas de esa confirmación.
+Los manuscritos y las páginas generadas cambian juntos. La URL definitiva del artículo nuevo es /blog/ai-agents-vs-workflow-automation/. La prueba local y la preparación de publicación quedan separadas de la confirmación posterior.
+
+## Publicación confirmada, 21 de octubre
+
+Cloudflare completó el despliegue `e53fa839-239b-4fc9-b4c1-c484b8d23a68`, revisión `1c25a15f41235be9802b94b2a81c5912ae45fa79`, rama main. `/_deployment.json` devolvió esa revisión exacta. Los cuatro artículos, hub, sitemap, cuatro variantes de imagen y CSS compartido devolvieron HTTP 200 sin redirecciones inesperadas. Los cuatro cuerpos servidos coinciden con los revisados.
+
+Se comprobaron diez enlaces contextuales dentro de article: los seis previos entre las guías de búsqueda y las cuatro direcciones útiles con el blog de agentes. Se revisaron también las dos direcciones con What Is SEO y se conservan sus motivos de omisión. El hub y el sitemap incluyen los cuatro blogs. La prueba está en `blog-ai-agents-workflows-australia/13-verificacion-produccion.json`. Pasaron 205 pruebas de trabajo, 204 de producción y el build. No se afirma rastreo, indexación o mejora de ranking por el despliegue.
+
+Tras verificar la publicación se eliminó el recordatorio único del jueves 22 a las 9:00 de Sídney, id `publicar-blog-de-agentes-de-ia`; la herramienta confirmó deleteStatus deleted. El ensayo de diseño claro sigue reservado para el próximo blog que se cree. Esta constancia se guarda en el repositorio de trabajo sin generar otro despliegue documental.

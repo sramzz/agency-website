@@ -23,3 +23,11 @@ Fecha de publicación y modificación del nuevo: 2026-10-21. SEO/IA conserva pub
 Se incorpora la página al hub y al sitemap. El hub amplía su descripción a búsqueda y automatización. El manifiesto de producción añade solo la ruta pública y las cuatro variantes de imagen. Los originales, auditorías, PNG de trabajo y vistas editoriales quedan fuera de la carga pública.
 
 Las pruebas y la comprobación de la carga se guardarán en 12-verificacion-publicacion.json. La confirmación del despliegue exacto y de los enlaces servidos se guardará en 13-verificacion-produccion.json. Este documento registra primero la preparación autorizada, no una afirmación anticipada de que ya está publicado.
+
+## Confirmación posterior
+
+Publicado el 21 de octubre de 2026 en https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/. Cloudflare confirmó éxito del despliegue e53fa839-239b-4fc9-b4c1-c484b8d23a68, revisión 1c25a15f41235be9802b94b2a81c5912ae45fa79. La revisión servida coincide con esa rama main.
+
+Doce recursos públicos comprobados, diez enlaces contextuales y los cuatro cuerpos completos coincidentes con las versiones revisadas. Imágenes accesibles e idénticas a las preparadas. Pasaron las 205 pruebas del proyecto, las 204 de producción y la compilación. Se mantienen los límites de revisión visual de la fase anterior.
+
+La herramienta de automatizaciones confirmó que eliminó publicar-blog-de-agentes-de-ia. El recordatorio del jueves 22 a las 9:00 queda retirado porque el trabajo se completó antes. La planificación inicial se conserva como historial en 10. Esta confirmación se guarda después del despliegue sin crear otro solo por documentación.
