@@ -1,0 +1,57 @@
+{
+  "preparedOn": "2026-10-21",
+  "earliestPublication": "2026-10-26T13:00:00+11:00",
+  "timezone": "Australia/Sydney",
+  "automaticPublicationAuthorised": true,
+  "authorisation": "Publicar automáticamente la versión aprobada",
+  "selectedTheme": null,
+  "versionApproved": false,
+  "approvalPending": "Respuesta del usuario a la comparación local de lectura clara y oscura.",
+  "automationId": "publicar-blog-de-visitas-y-consultas",
+  "files": [
+    {
+      "name": "03-articulo-visits-few-enquiries-australia.md",
+      "sha256": "6813b3ea1c3ff8829a1c62403ea2fd4fb9f05de178e5118fd685b461ed121f87"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "sha256": "56a7f3b9ea8bbaa54a1b1fbfa6f72d740089cf89d491ed1cba0ed02127a9a83b"
+    },
+    {
+      "name": "preview.css",
+      "sha256": "600b095c0302ec5ae5f72fb9595273df6095da2f316e8c676671509e0ca1e8eb"
+    },
+    {
+      "name": "preview.html",
+      "sha256": "f8ec6590cc1739737725034c2984a1a0107090638a134ae95f8fc5fae8365c68"
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "e98fca5a7a5bdff30bb1302185f290f12dd61b3e0c868ec2b32ff09fdd26ddc2"
+    },
+    {
+      "name": "render-preview.cjs",
+      "sha256": "43aae87a55b3f3ff128c1f33723a6045cb461c536bd1d16b5e002a81757634aa"
+    },
+    {
+      "name": "media/enquiry-checks-mobile.svg",
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1"
+    },
+    {
+      "name": "media/enquiry-checks.svg",
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e"
+    },
+    {
+      "name": "media/website-enquiries-illustration-1280.webp",
+      "sha256": "d59cb8b3056f9fc51a38bd2e1e13d197d85151296fcaf9841686514e4ce280f2"
+    },
+    {
+      "name": "media/website-enquiries-illustration-768.webp",
+      "sha256": "7f0453ed0a14a39c7eb9d4e17056035243d05d8e0768596295ec597233d399d7"
+    },
+    {
+      "name": "media/website-enquiries-original.png",
+      "sha256": "0821bf9ebf2ea0afbe706878ca5d7285f0c94b6c71994978bfa3fdad0561dc6e"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Auditoría y cambios justificados
+
+| Prioridad / tipo | Evidencia en el material recibido | Acción | Motivo |
+|---|---|---|---|
+| P1 · precisión | La primera tabla distingue cinco estados, pero la última decía “does not reach the receiving system” sin señalar el caso de un registro guardado cuya notificación falta. | Ampliar sólo esa fila: revisar almacenamiento, entrega y notificación por separado. | Permite localizar el fallo sin afirmar que se perdió la consulta completa. |
+| P1 · estado de enlaces | El soporte no confirmó las URLs de blogs 1–4 en su sesión. Actualmente hay cuatro publicaciones verificables. | Revisar los cuatro textos completos y las ocho direcciones. Añadir dos enlaces salientes al borrador y guardar cuatro propuestas entrantes. | Cumple la instrucción persistente del usuario sin crear enlaces públicos hacia un borrador. |
+| P2 · voz | La introducción decía “This guide sets out a practical review…” y terminaba explicando que no era un caso de cliente. | Abrir con el problema y dos comprobaciones concretas. | Responde antes y habla al dueño del negocio. |
+| P2 · ejemplo | El ejemplo hipotético de Perth aparecía tras seis secciones y ocupaba cinco párrafos. | Mover una versión breve a la primera sección y recuperarla al elegir la mejora. | Sigue el primer blog y la petición de ejemplos breves, conservando ciudad y supuesto. |
+| P2 · lectura | Varias frases repetían que las observaciones no prueban resultados o que no se deben inventar promesas. | Simplificar repeticiones y formular acciones positivas. Mantener las limitaciones donde cambian una decisión. | Reduce el tono de revisión experta sin debilitar los hechos. |
+| P2 · prueba visual solicitada | El usuario percibe oscuros el cuerpo y las ilustraciones actuales. | Comparar cabecera oscura con lectura clara frente a lectura oscura, usando una nueva escena diurna. | Permite elegir sobre el mismo contenido sin adoptar una plantilla sin revisión. |
+| P3 · explicación | La separación entre tracking, recepción y seguimiento está en prosa y tabla. | Añadir gráfico ligero que representa esas tres verificaciones, sin cifras ni flechas de conversión garantizada. | Facilita recordar la distinción central. |
+| Conservar | El paquete ya corrigió la referencia de métricas y el significado de form_submit; cita instrucciones para el problema de placeholder. | Mantener las URLs correctas y el alcance. | No presentar correcciones antiguas como hallazgos nuevos ni reescribir por preferencia. |
+| Conservar | No recomienda un número universal de campos, un único CTA, software o rediseño por defecto. | Mantener el criterio proporcional a la tarea. | Un diagnóstico debe justificar la solución. |
+| Conservar | La medición define unidad y cohortes, distingue conteos y limita antes/después y A/B. | Mantener los párrafos técnicos útiles con lenguaje accesible. | Evita una lectura comercial incorrecta de los números. |
+
+No se añadieron FAQ redundantes, estadísticas de rendimiento, resultados de clientes, keywords medidas ni afirmaciones de superioridad. Las partes restantes del manuscrito se conservan por su utilidad. El artículo se revisó con humanizer preservando hechos, URLs y matices materiales.

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-21",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "semanticBlocksMatched": 96,
+  "headings": 8,
+  "subheadings": 3,
+  "tables": 2,
+  "originalURLsRetained": 13,
+  "newBlogLinks": 2,
+  "figuresPerTheme": 2,
+  "allOriginalCopiesMatch": true,
+  "publicTrackedFilesUnchanged": 258,
+  "publicCandidateRouteAbsent": true,
+  "contrastRatios": {
+    "light prose": 13.37,
+    "light link": 6.09,
+    "light secondary": 5.96,
+    "dark prose": 12.46,
+    "dark secondary": 7.9
+  },
+  "assetsVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "limitation": "No se realizó revisión visual de página completa en navegador. Comprobación de contenido, HTML, recursos y paletas, más inspección visual de imágenes."
+}

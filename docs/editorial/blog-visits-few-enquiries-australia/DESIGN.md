@@ -1,0 +1,13 @@
+# Blog enquiries: local design study
+
+Scope: an isolated content-site preview, not a new application design system. Authority: the user's approved editorial criteria and the current public blog runtime. The older project-root design direction does not override the published Ranking Rebels typography or this explicit local experiment.
+
+Keep the existing Oswald headings, Inter prose and JetBrains Mono labels from `/assets/css/blog.css`, with a near-black cover, off-white headline and red accent. Reuse the existing header, footer, reading navigation, typography, breakpoints and progress script. No new animated entrance is needed for a long article.
+
+`preview.css` owns local reading tokens. Light: background #f7f6f2, prose #252a30, headings #12161c, secondary copy #53606c, links #b51c38, rules #d5d7d9 and table/example surface #eeeee8. Dark maps to the published palette: #050609, #c7cbd3, #f8fafc, #94a3b8, #f8fafc, #323740 and #10141b. The darker reading-link red supports small text contrast on the light background. Existing bright brand red remains in the dark cover. These are experimental scoped tokens, not changes to the public theme.
+
+Both previews use one Markdown manuscript, one renderer, the same bright illustration and the same diagram. The local comparison links navigate to explicit HTML variants, avoiding a saved theme, flashing preference or hidden copy difference. The selected page has aria-current. Mobile navigation uses the established native details element; tables retain semantic headers and keyboard-scrollable regions. Images declare dimensions and responsive variants. No forms, account interaction, customer data or commercial promises are introduced.
+
+The hero is a new generated editorial illustration of a hypothetical owner in a sunlit studio. The SVG diagram is authored in the repository because it is a deterministic explanation, with legible desktop/mobile layouts and text alternatives. It has no measured funnel counts or automatic success arrows.
+
+Review the full-page appearance in the user's local preview before choosing the public version. Asset inspection, content and geometry checks are recorded separately from browser QA. No claim of full-page visual or WCAG conformance is made from static checks alone.
