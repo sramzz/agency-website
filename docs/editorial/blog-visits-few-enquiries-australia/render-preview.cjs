@@ -19,7 +19,7 @@ const title = source.match(/^# (.+)/)[1];
 const titleTag = field('Title');
 const description = field('Meta description');
 const labels = ['The Perth example', 'Define a useful enquiry', 'Tracking and delivery', 'Who is visiting?', 'Help visitors decide', 'Mobile and keyboard', 'After an enquiry arrives', 'Choose and evaluate a fix'];
-const names = ['website-enquiries-illustration-1280.webp', 'website-enquiries-illustration-768.webp', 'enquiry-checks.svg', 'enquiry-checks-mobile.svg'];
+const names = ['website-enquiries-illustration-v2-1280.webp', 'website-enquiries-illustration-v2-768.webp', 'enquiry-checks.svg', 'enquiry-checks-mobile.svg'];
 for (const name of names) if (!fs.existsSync(path.join(__dirname, 'media', name))) throw new Error(`Missing preview asset: ${name}`);
 const illustration = `<figure class="blog-editorial-figure"><img src="media/${names[0]}" srcset="media/${names[1]} 768w, media/${names[0]} 1280w" sizes="(max-width: 760px) 92vw, 780px" width="1280" height="720" alt="An illustrated landscaping business owner reviews a project brief beside a laptop and garden plan in a bright studio." decoding="async" /><figcaption>Illustration: checking the journey from website interest to a useful project enquiry.</figcaption></figure>`;
 const comparison = `<figure class="blog-editorial-figure blog-journey" id="enquiry-comparison"><picture><source media="(max-width: 600px)" srcset="media/${names[3]}" width="540" height="910" /><img src="media/${names[2]}" width="1000" height="410" loading="lazy" decoding="async" alt="Three separate checks: Analytics records an interaction, the business can retrieve the received enquiry, and a responsible team member has a next step. One check does not establish the next." /></picture><figcaption>Check each stage separately. A recorded interaction alone does not confirm receipt or follow-up.</figcaption></figure>`;
@@ -75,7 +75,7 @@ if (sections.length !== 8) throw new Error('The reviewed draft has eight section
 const toc = sections.map((section, i) => `<li><a href="#${section.id}"><span>${String(i + 1).padStart(2, '0')}</span>${escape(labels[i])}</a></li>`).join('\n');
 const readTime = Math.ceil(source.replace(/\]\([^)]+\)/g, ']').split(/\s+/).length / 220);
 const main = `    <section class="blog-cover" aria-labelledby="blog-title">
-      <div class="blog-cover-top"><nav aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">Website enquiries</span></nav><span class="blog-version"><i aria-hidden="true"></i>Local draft · V1</span></div>
+      <div class="blog-cover-top"><nav aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">Website enquiries</span></nav><span class="blog-version"><i aria-hidden="true"></i>Local draft · V2</span></div>
       <div class="blog-kicker"><span>Make the next step count.</span><span>Website enquiries</span></div>
       <h1 id="blog-title" aria-label="${escape(title)}">Website visits but<br class="desktop-break" /> <span>few enquiries?</span><br />What to check first</h1>
       <div class="blog-cover-bottom"><p>Find the missing step between someone visiting your website and your team receiving a useful enquiry.</p><div class="blog-reading-meta"><span>Australia</span><span>${readTime} min read</span><a href="#article">Read the article <span aria-hidden="true">↓</span></a></div></div>

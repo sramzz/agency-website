@@ -8,6 +8,8 @@ El usuario pidió preparar el siguiente blog y respondió expresamente: **“Pub
 
 ## Aprobación pendiente
 
+Actualización del 23 de octubre: el usuario pidió continuar la revisión de imagen tras señalar que V1 era demasiado colorida y el cambio resultaba brusco. Las dos vistas locales usan ahora la ilustración V2, más sobria, identificada en `06` y `11-version-preparada.json`. La respuesta no aprueba el fondo de lectura ni la nueva ilustración. Confirmar ambos aspectos de la versión concreta antes de ejecutar la publicación automática. La fecha del lunes 26 a las 13:00 de Sídney se mantiene.
+
 Se mostraron las dos vistas locales y se preguntó cuál dejar aprobada. No interpretar una opción preseleccionada o el silencio como respuesta. Se recomienda cabecera oscura y lectura clara; la otra variante conserva lectura oscura. Ambas comparten manuscrito, ilustración diurna y gráfico.
 
 Registrar aquí la selección del usuario y SHA-256 de la versión concreta cuando responda. Si pide ajustes, aplicarlos y confirmar la versión resultante. No solicitar otra vez autorización de publicación de una versión ya aprobada, pues la publicación automática ya está autorizada. Si llega el lunes sin elección, conservar el borrador y avisar de esa decisión pendiente.

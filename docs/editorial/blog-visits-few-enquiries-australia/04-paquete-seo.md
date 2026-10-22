@@ -23,7 +23,7 @@ No autor personal ni revisión profesional inventados. La fecha de publicación 
 
 ## Imágenes y diseño
 
-- Principal: `media/website-enquiries-illustration-1280.webp`, 1280 × 720, variante 768 × 432. Ilustración propia generada con IA, sin cliente real ni captura de cuenta. Alt: “An illustrated landscaping business owner reviews a project brief beside a laptop and garden plan in a bright studio.”
+- Principal: `media/website-enquiries-illustration-v2-1280.webp`, 1280 × 720, variante 768 × 432. Ilustración propia generada con IA y revisada en V2 hacia grises, papel claro y rojo contenido, sin cliente real ni captura de cuenta. La variante anterior se conserva como histórico. Alt: “An illustrated landscaping business owner reviews a project brief beside a laptop and garden plan in a bright studio.”
 - Gráfico editorial propio en SVG: `media/enquiry-checks.svg`, 1000 × 410, variante móvil 540 × 910. Distingue interacción registrada, consulta recuperable y seguimiento asignado. Sin tasas, resultados medidos o promesa de progresión automática.
 - Comparación local del mismo cuerpo: `preview.html` con lectura clara y `preview-dark.html` con lectura oscura. La selección está pendiente. No adoptar la variante clara como plantilla pública sin mostrarla y recoger la elección del usuario.
 

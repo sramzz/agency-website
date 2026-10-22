@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-23",
+  "visualVersion": "V2",
+  "localFiles": [
+    {
+      "name": "preview.html",
+      "status": 200
+    },
+    {
+      "name": "preview-dark.html",
+      "status": 200
+    },
+    {
+      "name": "media/website-enquiries-illustration-v2-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "status": 200,
+      "sha256": "077a40fedebf960f07aaa8ccced411c4901916d6e7597c1839455a71e7ebc954"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v2-768.webp",
+      "width": 768,
+      "height": 432,
+      "status": 200,
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
+    }
+  ],
+  "sameArticleAndLinks": true,
+  "originalImagePreserved": true,
+  "publicFilesUnchanged": true,
+  "approved": false,
+  "fullPageBrowserQA": false
+}

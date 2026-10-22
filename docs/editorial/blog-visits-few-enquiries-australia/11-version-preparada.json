@@ -6,7 +6,7 @@
   "authorisation": "Publicar automáticamente la versión aprobada",
   "selectedTheme": null,
   "versionApproved": false,
-  "approvalPending": "Respuesta del usuario a la comparación local de lectura clara y oscura.",
+  "approvalPending": "Revisión de la ilustración V2 con menos color y elección del fondo de lectura. El usuario no ha aprobado todavía una versión concreta.",
   "automationId": "publicar-blog-de-visitas-y-consultas",
   "files": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "name": "04-paquete-seo.md",
-      "sha256": "56a7f3b9ea8bbaa54a1b1fbfa6f72d740089cf89d491ed1cba0ed02127a9a83b"
+      "sha256": "471a0ecf17dc73a14e81a7765728e3a83ebbf8226d7f110f84f77c9dfa2f0540"
     },
     {
       "name": "preview.css",
@@ -23,15 +23,15 @@
     },
     {
       "name": "preview.html",
-      "sha256": "f8ec6590cc1739737725034c2984a1a0107090638a134ae95f8fc5fae8365c68"
+      "sha256": "364a0029d23513da96bd289d94501787b70347e345e845b8ea17b58f20f2b0be"
     },
     {
       "name": "preview-dark.html",
-      "sha256": "e98fca5a7a5bdff30bb1302185f290f12dd61b3e0c868ec2b32ff09fdd26ddc2"
+      "sha256": "cdc9b1533bbb42b49f651a2a00694e323c2e66dca6b034b88bab5bbe525e1ecf"
     },
     {
       "name": "render-preview.cjs",
-      "sha256": "43aae87a55b3f3ff128c1f33723a6045cb461c536bd1d16b5e002a81757634aa"
+      "sha256": "e360da5a1a9ca17308aca8e5cee97653def042626013a3a12cf72dca8d0a2282"
     },
     {
       "name": "media/enquiry-checks-mobile.svg",
@@ -52,6 +52,21 @@
     {
       "name": "media/website-enquiries-original.png",
       "sha256": "0821bf9ebf2ea0afbe706878ca5d7285f0c94b6c71994978bfa3fdad0561dc6e"
+    },
+    {
+      "name": "media/website-enquiries-original-v2.png",
+      "sha256": "485f5f29785bb9a5d5d150c9fce98358b2fc02b58a3ac7f19dd15c02aec90fba"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v2-1280.webp",
+      "sha256": "077a40fedebf960f07aaa8ccced411c4901916d6e7597c1839455a71e7ebc954"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v2-768.webp",
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
     }
-  ]
+  ],
+  "updatedOn": "2026-10-23",
+  "visualVersion": "V2",
+  "hero": "media/website-enquiries-illustration-v2-1280.webp"
 }
