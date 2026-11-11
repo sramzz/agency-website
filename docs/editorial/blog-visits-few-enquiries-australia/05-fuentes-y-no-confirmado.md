@@ -34,3 +34,7 @@ El análisis competitivo de tres guías procede del soporte original. No se pres
 - Rastreo, indexación y beneficio SEO de los nuevos enlaces: no observados ni garantizados.
 
 La secuencia de comprobaciones y las tablas son síntesis editorial propia. Presentan decisiones razonables para investigar, no una metodología oficial o un incremento comercial demostrado.
+
+## Comprobación de publicación, 26 de octubre
+
+Se reabrieron por su contenido enhanced measurement, la definición de session key event rate, las reglas de reseñas de ACCC y las notificaciones de formularios de W3C. Los pasajes materiales siguen respaldando las distinciones del manuscrito aprobado; no se cambió el artículo ni sus URLs. Las otras referencias conservan su revisión del 21, sin presentar una lectura nueva de todas ellas. No se accedió a cuentas ni se enviaron formularios. El diseño claro y la ilustración V2 quedaron aprobados por el usuario el 26; su aprobación está registrada en 13.

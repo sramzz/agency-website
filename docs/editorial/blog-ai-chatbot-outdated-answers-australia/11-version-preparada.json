@@ -1,0 +1,360 @@
+{
+  "date": "2026-11-11",
+  "blog": 19,
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/ai-chatbot-outdated-answers/",
+  "changes": [
+    {
+      "before": "An AI chatbot can give outdated answers because it is using old source material, a knowledge connection has not picked up a change, retrieval selects the wrong version, or earlier conversation content influences the reply. Sometimes the information is current but the model interprets it incorrectly. The symptom alone does not identify the cause.",
+      "after": "An AI chatbot can give outdated answers because it is still using old business information. A connection may not have picked up a change, search may select the wrong document, or an earlier conversation may influence the reply. Sometimes the information supplied is current and the model interprets it incorrectly. The symptom alone does not tell you which part failed.",
+      "reason": "Responder en lenguaje de dueño de negocio antes de introducir retrieval, sin cambiar las causas."
+    },
+    {
+      "before": "For a service business, this matters when customers ask about inclusions, service areas, opening hours or the next available appointment. A useful chatbot needs a maintained route to the right information and a clear response when that information cannot be established.",
+      "after": "Suppose you run an Australian service business and change your standard plan to weekday visits, with Saturdays requiring separate confirmation. Your website says so, but the chatbot still tells customers Saturday visits are included. We will follow this fictional example below.\n\nThe same problem can affect service areas, opening hours and appointment questions. Your chatbot needs a maintained route to the right information and a clear response when it cannot establish the answer.",
+      "reason": "Adelantar el mismo caso recibido; conservar alcance, sin ciudad, política real o resultados añadidos."
+    },
+    {
+      "before": "A chatbot is the conversation interface. Underneath, the system might use scripted answers, a language model, document search, connected business tools or a combination.",
+      "after": "A chatbot is the conversation interface. Underneath, the system might use scripted answers, a language model, document search, connected business tools or a combination. Our guide to [agents, workflows and chat interfaces](https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/) explains how those choices differ.",
+      "reason": "Enlace contextual al3 público para la duda de arquitectura, sin repetir su explicación."
+    },
+    {
+      "before": "## A fictional example: the website changed, but an old PDF stayed searchable",
+      "after": "## A fictional example: why the old Saturday answer survived",
+      "reason": "Abreviar navegación y conectar con el ejemplo temprano."
+    },
+    {
+      "before": "Consider a hypothetical Australian service business. This is a teaching scenario, not a Ranking Rebels client or a chatbot test we have run.",
+      "after": "Return to the hypothetical Australian service business from the introduction. This is a teaching scenario, not a Ranking Rebels client or a chatbot test we have run.",
+      "reason": "Recuperar el mismo negocio, sin iniciar un segundo caso."
+    },
+    {
+      "before": "The old service guide, **K1-v1**, says Saturday visits are included in the standard plan. The business replaces that policy with **K2-v2**: standard visits are on weekdays, and Saturday visits require separate confirmation. The website now reflects K2-v2, but a legacy PDF remains eligible for search.",
+      "after": "Your old service guide, **K1-v1**, includes Saturday visits in the standard plan. You approve **K2-v2** instead: standard visits are on weekdays, and Saturdays require separate confirmation. Your website now reflects K2-v2, but the old PDF is still eligible for search.",
+      "reason": "Hablar al dueño manteniendo exactamente autoridad, versiones y condiciones del caso."
+    },
+    {
+      "before": "The repair needs to address source eligibility and the route that selects evidence. Merely editing the website again would miss the established cause. The team should also verify that K2-v2 is accessible and retrieved with its conditions intact.",
+      "after": "Editing the website again would leave that old PDF in the search route. Ask your provider to check why K1-v1 was eligible and selected, then verify that K2-v2 can be found with its conditions intact.",
+      "reason": "Concretar la acción y acortar abstracciones sin confundir presencia con recuperación."
+    },
+    {
+      "before": "An appropriate answer would explain that the standard plan covers weekday visits and that Saturday arrangements need separate confirmation. It would not invent a Saturday price or promise a slot. Other cases can have different causes, so this example is not a diagnosis of every outdated answer.",
+      "after": "The answer should say that the standard plan covers weekday visits and Saturdays need separate confirmation. It should not invent a price or promise a slot. Other outdated answers need their own evidence.",
+      "reason": "Cerrar el caso con respuesta esperada breve, sin fingir una reparación ejecutada."
+    },
+    {
+      "before": "Use separate evaluation cases after development, and record repeated attempts as attempts within a case, rather than inflating the number of distinct questions. Agree acceptance criteria according to the consequences of errors. No universal accuracy percentage makes unsupported prices, disclosures or commitments acceptable.",
+      "after": "Use separate evaluation cases after development, and record repeated attempts as attempts within a case, rather than inflating the number of distinct questions. Agree acceptance criteria according to the consequences of errors. No universal accuracy percentage makes unsupported prices, disclosures or commitments acceptable.\n\nFor a wider evaluation, our guide to [building a measured AI workflow pilot](https://rankingrebels.com/blog/how-to-build-ai-workflow/) covers scope, review and a decision about the next step.",
+      "reason": "Enlace al9 público para desarrollar la evaluación sin alargar este diagnóstico."
+    }
+  ],
+  "sourceUrls": [
+    "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-sync.html",
+    "https://learn.microsoft.com/en-us/azure/search/search-how-to-create-indexers",
+    "https://learn.microsoft.com/en-us/azure/search/search-how-to-index-azure-blob-changed-deleted",
+    "https://platform.claude.com/docs/en/build-with-claude/citations",
+    "https://learn.microsoft.com/en-us/azure/well-architected/ai/application-design",
+    "https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/rag-vs-fine-tuning.html",
+    "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/rag-evaluators",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business",
+    "https://rankingrebels.com/solutions/ai-automation/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2023,
+      "sha256": "796f8a66270332925637cc6b1997f7108ce82bf6583c46117eecb01dfeb89e35",
+      "readComplete": true,
+      "function": "Guía de recepción y alcance",
+      "details": [
+        "K1-v1 antiguo frente a K2-v2 aprobado; ocho ejercicios no ejecutados.",
+        "Cierra el orden histórico en19; no prueba publicación."
+      ],
+      "finalText": "local no es una descarga pública confirmada. El siguiente tema requiere elección manual: no hay blog 20 aprobado. Mantener la cadencia bajo control del usuario."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 12675,
+      "sha256": "5710b6e40b42409df0a6926e86589e0f702e1e9725800d39360b86ceb79dba74",
+      "readComplete": true,
+      "function": "Investigación y matriz de afirmaciones",
+      "details": [
+        "Quince fuentes principales; distingue cita válida y vigencia.",
+        "Competidor Owlish abierto históricamente; Vardot falló, sin datos de demanda."
+      ],
+      "finalText": "irmaciones materiales. Revisar detalles de proveedor al integrar o cuando una modificación afecte una afirmación; no se creó monitor o investigación programada."
+    },
+    {
+      "name": "02-articulo-ai-chatbot-outdated-answers-australia.md",
+      "bytes": 15542,
+      "sha256": "1dd1b820fd6c57d658993aa3428b472eaffc1fc8980c4a1f586fee5ee134451b",
+      "readComplete": true,
+      "function": "Manuscrito base australiano",
+      "details": [
+        "Seis causas: fuente, conexión, retrieval, interpretación, contexto/caché y lookup.",
+        "Caso del sábado y cierre con propiedad de información y privacidad OAIC."
+      ],
+      "finalText": "n/). Start with a specific question and its source of truth, then decide what the system can answer, what needs a live check and when a person should take over."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 6272,
+      "sha256": "9f5205626827c62a53c00ab1d81fed5170c6666cdc4267cc7d85da47934510cd",
+      "readComplete": true,
+      "function": "Auditoría recibida",
+      "details": [
+        "Ocho dimensiones SEO; no inventa un defecto crítico para reescribir.",
+        "Autor, canonical, HTML y recursos públicos pendientes en origen."
+      ],
+      "finalText": "irmaciones como hechos. La revisión posterior sólo añadió atribuciones y una distinción de evaluación respaldada; no cambió el caso ni sus resultados esperados."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 3992,
+      "sha256": "a3cb24c1e49cf0764d65dd0dc58d4652abef753df528913e9078ebe3afa99c45",
+      "readComplete": true,
+      "function": "Metadatos e intención",
+      "details": [
+        "Title de49 caracteres y meta de155.",
+        "Slug candidato ai-chatbot-outdated-answers, relaciones3/9/16 condicionadas."
+      ],
+      "finalText": ".\n- Comprobar recursos públicos, enlaces, accesibilidad y diseño en la página implementada dentro del alcance autorizado. Estas comprobaciones están pendientes."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 6218,
+      "sha256": "c1cade4cdd8b99a21d35dec4041e9f0cef99098816edb27d6704aeb81373c180",
+      "readComplete": true,
+      "function": "Encargo recibido, subordinado al alcance actual",
+      "details": [
+        "Conservar K1/K2, observaciones vacías y distinción lookup/reserva.",
+        "Exige fuentes actuales y recurso útil, no publicar por el prompt solo."
+      ],
+      "finalText": ", no blogs 20–29 autorizados. El usuario decide el siguiente tema y cuándo investigar para gestionar sus tokens. La cadencia de cuatro días no programa trabajo."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1020,
+      "sha256": "5c3863a1fbf768a39a4362bd08c6b4a43a5928742392a030a0083c49baeabfa7",
+      "readComplete": true,
+      "function": "Comprobación opcional",
+      "details": [
+        "Recepción no equivale a ejecución del artículo.",
+        "Continuar trabajo activo antes de saltar al siguiente."
+      ],
+      "finalText": "úa» y éste es el trabajo activo pendiente, lee y completa05 dentro del alcance autorizado; no saltes al siguiente tema. No inventes archivos o hechos faltantes."
+    },
+    {
+      "name": "07-chatbot-answer-evidence-card.md",
+      "bytes": 6235,
+      "sha256": "7e553f63616bb7ac2526390032a4c8a9b6b4ad44bac346561c338801700c4011",
+      "readComplete": true,
+      "function": "Ficha didáctica",
+      "details": [
+        "Cinco secciones y cuatro tablas; campos de evidencia vacíos.",
+        "Ejercicios A–H, incluido permiso revocado y cita sin apoyo, sin resultados."
+      ],
+      "finalText": "solved and ineligible cases with reasons. Appropriate handoff and automated resolution are different outcomes. Time released is not automatically a cash saving."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 1769,
+      "sha256": "676e7e57d40e76f468a699b7a38966aa49861ed25ad2b6718e96c88e5e12348c",
+      "readComplete": true,
+      "function": "Pendientes de evidencia humana e implementación",
+      "details": [
+        "No hay chatbot real reparado o evaluado.",
+        "Autoría humana y configuración real no confirmadas, sin necesidad de fabricarlas."
+      ],
+      "finalText": " Preparar el artículo no autoriza acceder a datos o contactar a clientes para completar esta hoja. Registrar sólo aportes y verificaciones realmente realizados."
+    },
+    {
+      "name": "soporte-alcance-y-fuentes.md",
+      "bytes": 2206,
+      "sha256": "1f31f6baa5dfc998e8330f05e345b91544d14c36afd5a672b5feccabfb3b9efd",
+      "readComplete": true,
+      "function": "Frontera temática y límites de investigación",
+      "details": [
+        "Diferencia19 de arquitectura3, piloto9 y conexiones16.",
+        "La ruta corta AI Automation falló; CTA usa solutions/ai-automation/."
+      ],
+      "finalText": "do real y se retomó el guardado por la misma vía autorizada. Esto no se registra como revisión de seguridad fallida del contenido ni como prueba de publicación."
+    },
+    {
+      "name": "soporte-fuentes-y-recuperacion.md",
+      "bytes": 18006,
+      "sha256": "b50fce44f250843ce6f4e141fddefea53de93b0dfa1d1d9ee93b75ff0829aa5e",
+      "readComplete": true,
+      "function": "Investigación técnica adicional",
+      "details": [
+        "Distingue prompt caching de respuestas/fragmentos guardados.",
+        "Permisos sincronizados y groundedness no equivalen a actualidad; auditoría final de02/07."
+      ],
+      "finalText": "arados debe ejecutarse y registrar observaciones; el sitio final requiere su propia verificación. Estos límites ya están declarados y no son errores de la guía."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-ai-chatbot-outdated-answers-australia.md",
+      "bytes": 15964,
+      "sha256": "aff83b64090eb221c7482973388f5659d47643c8fa350a756c18946a6513de28"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2151,
+      "sha256": "1a5a90c6ebd7e51393d90b27a40f66ffecb1a9250ebbb135d58095301c9c5487"
+    },
+    {
+      "name": "07-chatbot-answer-evidence-card.md",
+      "bytes": 6235,
+      "sha256": "7e553f63616bb7ac2526390032a4c8a9b6b4ad44bac346561c338801700c4011"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 26100,
+      "sha256": "9358413d0e8eee7fa22a45689ba7a1f1b76afda5f17d4e99e1c0d34c62e574a1"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 26099,
+      "sha256": "b8289470e604a9b7a875720678096c6307ecca3bde9d3cdc209e8292f36c8ead"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8794,
+      "sha256": "b5cc716fa809f1a245aa76d6627ce2085f72d23edc206c566d055b680e272285"
+    },
+    {
+      "name": "worksheet-preview.html",
+      "bytes": 9625,
+      "sha256": "1057bf0d693ffb17ace5fb48386f471d07da824cf8dd052078901fb0a1107978"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 11089,
+      "sha256": "4a47f547476c814c9c9f8ce3387eb045458fc4426d8e2eb44262ebf9e31eaacc"
+    },
+    {
+      "name": "render-worksheet.cjs",
+      "bytes": 3292,
+      "sha256": "65049b4567eb18631e7a2f9b392f57a484a5245ab9a6ba88a3ed8e8e320ff771"
+    },
+    {
+      "name": "media/chatbot-evidence-illustration-1280.webp",
+      "bytes": 255488,
+      "sha256": "13954fabcecb923ef457a5825b72bbcfe7a3f7809a21c8f50cfb843db3fe9391"
+    },
+    {
+      "name": "media/chatbot-evidence-illustration-768.webp",
+      "bytes": 80168,
+      "sha256": "b240b8b9133d03954304d09779b62f22c0deeab34ad6deb71e33f4598928643d"
+    },
+    {
+      "name": "media/saturday-answer-evidence.svg",
+      "bytes": 4204,
+      "sha256": "8b371d590740b36cdb4d01c47ac8b23a0d3e7b2db3181daf41109b69e9faf290"
+    },
+    {
+      "name": "media/saturday-answer-evidence-mobile.svg",
+      "bytes": 4318,
+      "sha256": "e69ce86a3f381bdc0c79e0bd57ae255489b0c76f966faa011e96f44a7ffb6f00"
+    },
+    {
+      "name": "recursos/chatbot-answer-evidence-card.md",
+      "bytes": 6235,
+      "sha256": "7e553f63616bb7ac2526390032a4c8a9b6b4ad44bac346561c338801700c4011"
+    },
+    {
+      "name": "media/chatbot-evidence-illustration-original.png",
+      "bytes": 3640365,
+      "sha256": "be495cb76790d499167cfb9053d71e393de3196e503875ba95bdf3169718b5b8"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 1907,
+      "sha256": "16da1a21f18d5c666564e19f6e27c37dbe1bbe2ddf45cac218f18e494f5782fe"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1321,
+      "sha256": "54c8a77fb502684757b328b729c0b7c9cedbc636a03e666cb5e8bf1634ff7c3a"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 6450,
+      "sha256": "33922acd8ccd9a8b84d7f02dbcb8cd76124fe20895508e7ab0ff8fd073cdf6e0"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1479,
+      "sha256": "559515fb1700921b890e7e11fb5f77524079cc5c97f0868e90c28630e7593f4f"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 1972,
+      "sha256": "bf643bba92a4c00dc163db0955242aa92f8ac2eeb6ad53a06e3c67496b68e852"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 6261,
+      "sha256": "2232131f6ef38da51c5f28dad775c6ec0c72741ef5eb08f578e8febe919511f5"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1175,
+      "sha256": "1b5e0bd9a678710bf02ef9058aa4b49175231e300587fac48417371175e9710b"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 16417,
+      "sha256": "1ee265a8152708b3883692cc45a5aa24df94517e4193646bd3226ff90cdc8f80"
+    },
+    {
+      "name": "07a-revision-enlaces.json",
+      "bytes": 26226,
+      "sha256": "5d1a6209cabbcc5c4022142e65ee50483d0e4479aaa76b0c3d85ae6eaa917057"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1379,
+      "sha256": "c0cd6947b85bc7d8c2144c93095d0e3e1c84abb5bac93c7a2c03b4ae151e4e14"
+    },
+    {
+      "name": "08a-revision-claridad.md",
+      "bytes": 1830,
+      "sha256": "dc898bc5a9bd689e0d700c2a6e625df604a9279ee5f151736374bcf252641a0d"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1396,
+      "sha256": "33b90c4ffe6eb1510265e5344ba61b5718d247c4a798a46c0d16d419a5b0fa90"
+    },
+    {
+      "name": "12-cierre-preparacion.md",
+      "bytes": 2905,
+      "sha256": "5e367a3006f57c05bda5f6129652d450f1b8cc1bba70de1112828bb660217fb8"
+    }
+  ],
+  "wordCount": 2246,
+  "fullPageBrowserQA": false,
+  "preparedCount": 8,
+  "publishedCount": 11,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/chatbot-evidence-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-0878968f-fa06-4570-874a-f71891c1127f.png",
+    "visualInspection": true
+  },
+  "nextToReviewOrPublish": 12,
+  "nextNewPackage": 20
+}

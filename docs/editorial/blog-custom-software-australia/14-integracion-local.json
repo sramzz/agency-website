@@ -1,0 +1,322 @@
+{
+  "date": "2026-11-02",
+  "blog": 8,
+  "baselineDir": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\agency-website\\.cache\\blog8-release-baseline",
+  "baseline": [
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "42258473cee23d51712ee7237057eeebe9df27d79039ebf1841ba0ebda9a9298"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "7f8a61698ff0b8f4654cd4692775cc602f1980b96bcf885a1b0c357967990605"
+    },
+    {
+      "name": "blog/is-seo-still-relevant-ai-search/index.html",
+      "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+    },
+    {
+      "name": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+    },
+    {
+      "name": "blog/website-not-showing-up-on-google/index.html",
+      "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+    },
+    {
+      "name": "blog/website-visits-few-enquiries/index.html",
+      "sha256": "51b3cf9bede1c55a899098254fd791eb63179390630aabeabdf1a684ca2fd3aa"
+    },
+    {
+      "name": "blog/what-is-seo/index.html",
+      "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+    },
+    {
+      "name": "blog/which-business-processes-to-automate-first/index.html",
+      "sha256": "986ea1bb5b0a042fcda3e7c05cab73750f2d8da5e7fa8d953dbd19e78865503a"
+    },
+    {
+      "name": "assets/css/blog.css",
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "name": "assets/js/blog.js",
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "9f854bbfbc581d5d068483d77ea0da73a39998134ee4aec8a779d2d3d9f071c6"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "sha256": "9643420fcc197d908103e1661acfea168a834255272d8bf0bb498d5b4c40d831"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/04-paquete-seo.md",
+      "sha256": "4c45b894982daac873d813f793e6ef61f04905803342453eab97d2aac64c7d4e"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/preview.html",
+      "sha256": "327bcef6340f537287b70c254d3e7c07f53e55b563ce6e572c7502e9d8199b5e"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/preview-dark.html",
+      "sha256": "114eb609df33f282813634b5e5cbfc163d1e28ad6e4e0d1f4a811ee4e9d5a693"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/preview.css",
+      "sha256": "f994467e15467e0c5fe33a6232780e92aaeffa2f3f17de266fde02b31a241f35"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/render-preview.cjs",
+      "sha256": "0d0c79dc407f557a5ab289ce25e0c59964e9d1fe226d367ce08f920fe34ed1b1"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/media/custom-software-illustration-v2-1280.webp",
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/media/custom-software-illustration-v2-768.webp",
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    }
+  ],
+  "previousPublicRevision": "5ebc58b519d32daef7146a5340de205d44af3fe1",
+  "publicationPending": false,
+  "reviewedFiles": [
+    {
+      "name": "03-articulo-custom-software-australia.md",
+      "bytes": 17019,
+      "sha256": "9643420fcc197d908103e1661acfea168a834255272d8bf0bb498d5b4c40d831"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 4067,
+      "sha256": "4c45b894982daac873d813f793e6ef61f04905803342453eab97d2aac64c7d4e"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 26949,
+      "sha256": "327bcef6340f537287b70c254d3e7c07f53e55b563ce6e572c7502e9d8199b5e"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 26953,
+      "sha256": "114eb609df33f282813634b5e5cbfc163d1e28ad6e4e0d1f4a811ee4e9d5a693"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 5582,
+      "sha256": "f994467e15467e0c5fe33a6232780e92aaeffa2f3f17de266fde02b31a241f35"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9197,
+      "sha256": "0d0c79dc407f557a5ab289ce25e0c59964e9d1fe226d367ce08f920fe34ed1b1"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-1280.webp",
+      "bytes": 240466,
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-768.webp",
+      "bytes": 100746,
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    }
+  ],
+  "linkChanges": [
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "before": "It is also reasonable to change a process to fit a good existing product. Preserving every historical habit is not necessarily valuable. Distinguish the rule that protects an important outcome from a workaround people adopted because an old system was inconvenient.",
+      "after": "It is also reasonable to change a process to fit a good existing product. Preserving every historical habit is not necessarily valuable. Distinguish the rule that protects an important outcome from a workaround people adopted because an old system was inconvenient.\n\nIf several automation projects are competing for the same budget, first compare [which business processes to automate first](https://rankingrebels.com/blog/which-business-processes-to-automate-first/).",
+      "reason": "Standing user instruction to implement useful internal links in both directions at publication."
+    },
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "before": "A CRM, or customer relationship management system, is one possible destination for the work. Your inbox, calendar or document store may be others. Their availability still needs to be checked against the actual integration, subscription plan and access settings.",
+      "after": "A CRM, or customer relationship management system, is one possible destination for the work. Your inbox, calendar or document store may be others. Their availability still needs to be checked against the actual integration, subscription plan and access settings.\n\nIf a required capability is missing, compare [configuring, extending or building software](https://rankingrebels.com/blog/custom-software-benefits/) before commissioning another system. A small component may fill the gap while the tools you already use keep doing their jobs.",
+      "reason": "Standing user instruction to implement useful internal links in both directions at publication."
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "before": "Check the capabilities of systems you already use before commissioning another layer. Detailed software selection comes after you understand the job, its constraints and the value available.",
+      "after": "Check the capabilities of systems you already use before commissioning another layer. Once the job and its value are clear, compare the [benefits and trade-offs of custom software](https://rankingrebels.com/blog/custom-software-benefits/) with configuring or extending existing tools.",
+      "reason": "Standing user instruction to implement useful internal links in both directions at publication."
+    }
+  ],
+  "publicationFiles": [
+    {
+      "name": "03-articulo-custom-software-australia.md",
+      "sha256": "de6c4b171e9740851b01932fae051e97bfe5c1f999763e09226c1a3b1c7d63c4"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "sha256": "4c45b894982daac873d813f793e6ef61f04905803342453eab97d2aac64c7d4e"
+    },
+    {
+      "name": "preview.html",
+      "sha256": "698b74867449d17e183ed7ca6837066aa3f6316aa50797b6a23f1fa0cac0bed7"
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "fe70342e561279309d142ca3906a8991830f4139cb1617ffb4d66bb41942b262"
+    },
+    {
+      "name": "preview.css",
+      "sha256": "f994467e15467e0c5fe33a6232780e92aaeffa2f3f17de266fde02b31a241f35"
+    },
+    {
+      "name": "render-preview.cjs",
+      "sha256": "0d0c79dc407f557a5ab289ce25e0c59964e9d1fe226d367ce08f920fe34ed1b1"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-1280.webp",
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-768.webp",
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    }
+  ],
+  "unrelatedPreviousPagesUnchanged": true,
+  "fullPageBrowserQA": false,
+  "releaseFiles": [
+    {
+      "name": "assets/images/blog/custom-software-illustration-v2-1280.webp",
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "assets/images/blog/custom-software-illustration-v2-768.webp",
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    },
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "64c8741171f4ef8a6056eff4e7aa152a81c3a51ae1b409661bbbda614a64b356"
+    },
+    {
+      "name": "blog/custom-software-benefits/index.html",
+      "sha256": "5b7fecbe95dd343c1d37edffe238f1bd89812dda7dd8d961ca2fcc5165d72282"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "5de83ed6c72a5f85ea1976d9148978511e95299a19cc53e2631bb4b161f85488"
+    },
+    {
+      "name": "blog/which-business-processes-to-automate-first/index.html",
+      "sha256": "d742e548da2583decf5e23e6da72d3343b4855acb7cb82ddbe7d7225cf630a78"
+    },
+    {
+      "name": "scripts/public-files.json",
+      "sha256": "8c81d1bfcc771b8fb0d559eba9b53e65de4f7a53c8b0e2b46b55a5780bf00bee"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "9c53f7716c50be0ed5b766f874d6ec2cc2757bfb2e64021e9dc9c131e5ef349d"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "6803ee8db8aa2e2e35d5d26a430edc79887484077be912006876f55a571a0630"
+    },
+    {
+      "name": "tests/automation-prioritisation-blog.test.js",
+      "sha256": "de3d8cdd1dc5c4cdae5e497288ce9e117cf0ae55ac872308006ff074bd3a0939"
+    },
+    {
+      "name": "tests/custom-software-blog.test.js",
+      "sha256": "bf717028da426d27f002d53d847bc1f8a8b3f4948be6d2f48e89f7f7446ef13e"
+    },
+    {
+      "name": "tests/enquiries-publication.test.js",
+      "sha256": "73e21380ed13e9feb580339b38553f8d3b30ff112fd3a0a508554b9f69c5ed69"
+    },
+    {
+      "name": "tests/google-visibility-blog.test.js",
+      "sha256": "cfd96f2b63048c70199f00a1a9a5336e4a5665d0260791a7673a057c832e93c6"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "0f11c8cbe2ae82c61c3c98f6a18acc41e17bc846e9a020b1fd20c46019c0e95a"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "8476c868f7d5d479f55813ec9f4883159e72d684ea4eb2e11872eda96d97e0cc"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "b0d2153c7400d1cdb116fc99e5eba44248ca3ad49b4b5af88de01a21a072ebba"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "483dd6caff465567c9fd5fc635d2f49ae25506175ad367f3dcfc49ddbfa420e3"
+    }
+  ],
+  "exportedInternalMaterial": false,
+  "regeneration": {
+    "performed": true,
+    "allGeneratedOutputsByteIdentical": true,
+    "outputCount": 12,
+    "files": [
+      {
+        "name": "blog/ai-agents-vs-workflow-automation/index.html",
+        "sha256": "64c8741171f4ef8a6056eff4e7aa152a81c3a51ae1b409661bbbda614a64b356"
+      },
+      {
+        "name": "blog/custom-software-benefits/index.html",
+        "sha256": "5b7fecbe95dd343c1d37edffe238f1bd89812dda7dd8d961ca2fcc5165d72282"
+      },
+      {
+        "name": "blog/is-seo-still-relevant-ai-search/index.html",
+        "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+      },
+      {
+        "name": "blog/local-seo-google-maps-visibility/index.html",
+        "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+      },
+      {
+        "name": "blog/website-not-showing-up-on-google/index.html",
+        "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+      },
+      {
+        "name": "blog/website-visits-few-enquiries/index.html",
+        "sha256": "51b3cf9bede1c55a899098254fd791eb63179390630aabeabdf1a684ca2fd3aa"
+      },
+      {
+        "name": "blog/what-is-seo/index.html",
+        "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+      },
+      {
+        "name": "blog/which-business-processes-to-automate-first/index.html",
+        "sha256": "d742e548da2583decf5e23e6da72d3343b4855acb7cb82ddbe7d7225cf630a78"
+      },
+      {
+        "name": "blog/index.html",
+        "sha256": "5de83ed6c72a5f85ea1976d9148978511e95299a19cc53e2631bb4b161f85488"
+      },
+      {
+        "name": "sitemap.xml",
+        "sha256": "9c53f7716c50be0ed5b766f874d6ec2cc2757bfb2e64021e9dc9c131e5ef349d"
+      },
+      {
+        "name": "assets/css/blog.css",
+        "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+      },
+      {
+        "name": "assets/js/blog.js",
+        "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+      }
+    ]
+  },
+  "originalReviewedArticlePreservedExceptRecordedLink": true,
+  "previousHubCardsPreserved": true,
+  "published": true,
+  "productionRevision": "2a16ff6016460a0316889c1a9ea875f077cd98f0",
+  "publicTestsPassed": 213,
+  "privateTestsPassed": 214,
+  "buildPassed": true,
+  "reviews": {
+    "spec": "No actionable findings",
+    "standards": "No actionable findings",
+    "base": "5ebc58b519d32daef7146a5340de205d44af3fe1",
+    "head": "2a16ff6016460a0316889c1a9ea875f077cd98f0"
+  }
+}

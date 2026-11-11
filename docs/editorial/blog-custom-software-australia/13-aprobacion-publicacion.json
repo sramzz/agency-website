@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-02",
+  "timezone": "Australia/Sydney",
+  "blog": 8,
+  "userQuote": "publicalo",
+  "reviewContext": "The preceding assistant message named blog8, linked its exact current light preview and reminded the user of final review. The user replied publicalo while that specific preview was open. This is approval of that presented version after the review reminder, not the initial generic publication request.",
+  "finalVersionApproved": true,
+  "publicationAuthorised": true,
+  "readingTheme": "light",
+  "illustrationVersion": "V2",
+  "reviewedFiles": [
+    {
+      "name": "03-articulo-custom-software-australia.md",
+      "bytes": 17019,
+      "sha256": "9643420fcc197d908103e1661acfea168a834255272d8bf0bb498d5b4c40d831"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 4067,
+      "sha256": "4c45b894982daac873d813f793e6ef61f04905803342453eab97d2aac64c7d4e"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 26949,
+      "sha256": "327bcef6340f537287b70c254d3e7c07f53e55b563ce6e572c7502e9d8199b5e"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 26953,
+      "sha256": "114eb609df33f282813634b5e5cbfc163d1e28ad6e4e0d1f4a811ee4e9d5a693"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 5582,
+      "sha256": "f994467e15467e0c5fe33a6232780e92aaeffa2f3f17de266fde02b31a241f35"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9197,
+      "sha256": "0d0c79dc407f557a5ab289ce25e0c59964e9d1fe226d367ce08f920fe34ed1b1"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-1280.webp",
+      "bytes": 240466,
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-768.webp",
+      "bytes": 100746,
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    }
+  ],
+  "authorisedLinkUpdates": [
+    "8→7",
+    "3→8",
+    "7→8"
+  ],
+  "existingLinkPreserved": "8→3",
+  "publicRoute": "/blog/custom-software-benefits/",
+  "scope": "Publish blog8 with useful reciprocal links only; keep9–12 private. No schedules, accounts, forms or profiles.",
+  "fullPageBrowserQA": false
+}

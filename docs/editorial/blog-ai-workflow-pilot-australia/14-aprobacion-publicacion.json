@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-04",
+  "blog": 9,
+  "userQuote": "Revisado y aprobado; publícalo",
+  "reviewReminder": "Explicit final review of the exact article and kit, light reading, current illustration and incoming links from 3/5/7/8",
+  "questionItemId": "call_55670b42dbdd49bfa922af5415109153:0",
+  "finalVersionApproved": true,
+  "readingTheme": "light",
+  "illustrationVersion": "V1",
+  "publicKitApproved": true,
+  "publicRoute": "/blog/how-to-build-ai-workflow/",
+  "publicKitRoute": "/blog/how-to-build-ai-workflow/pilot-kit/",
+  "publicationDate": "2026-11-04",
+  "timezone": "Australia/Sydney",
+  "approvedFiles": [
+    {
+      "name": "03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16980,
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 3127,
+      "sha256": "d76bc3d7c7120778cf1ec8c4ffca346c2ae814652e4d0cbf0c7683d5a8b4182b"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27667,
+      "sha256": "6198437548311e29705cc3cd063466b90a57141c06ec29e91df6215c42892206"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27666,
+      "sha256": "396390250543e8ab1ff7d1884269159ae1b7f2c2c4fb28c8322682a10a629a66"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 6107,
+      "sha256": "219774c8167383f690e0b27e1f8d0604b61c0c77f89e6dc33e06f9ae5eaf2add"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9490,
+      "sha256": "623cb4be44400367dd0be3493c06251bb62845a109c0858ca5fc2cba4a4bd95d"
+    },
+    {
+      "name": "kit-preview.html",
+      "bytes": 25897,
+      "sha256": "294faaddf1a0431429a9b04f9a011ffd7366189ee0cbf8e053f7c4a3df928bdf"
+    },
+    {
+      "name": "render-kit.cjs",
+      "bytes": 7634,
+      "sha256": "83b7e6eba6750aded09dda7a61052e41434d2d7b16422b050f8ed649a6d79f7b"
+    },
+    {
+      "name": "recursos/07-pilot-kit.md",
+      "bytes": 12564,
+      "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+    },
+    {
+      "name": "recursos/08-synthetic-development-cases.csv",
+      "bytes": 3592,
+      "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+    },
+    {
+      "name": "recursos/09-development-results-template.csv",
+      "bytes": 390,
+      "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-1280.webp",
+      "bytes": 172356,
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-768.webp",
+      "bytes": 68604,
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    }
+  ]
+}

@@ -13,6 +13,16 @@ const publicRoutes = [
   "/blog/local-seo-google-maps-visibility/",
   "/blog/what-is-seo/",
   "/blog/ai-agents-vs-workflow-automation/",
+  "/blog/website-visits-few-enquiries/",
+  "/blog/website-not-showing-up-on-google/",
+  "/blog/which-business-processes-to-automate-first/",
+  "/blog/custom-software-benefits/",
+  "/blog/how-to-build-ai-workflow/",
+  "/blog/google-ads-for-service-businesses/",
+  "/blog/measure-digital-marketing-results/",
+  "/blog/measure-digital-marketing-results/scorecard/",
+  "/blog/google-ads-for-service-businesses/worksheet/",
+  "/blog/how-to-build-ai-workflow/pilot-kit/",
 ];
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
 const ignoredDirectories = new Set([".git", ".kilo", ".cache", "docs", "node_modules", ".wrangler", "coverage", "dist", "build"]);

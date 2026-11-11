@@ -1,0 +1,7 @@
+# Revalidación para publicación del blog 9
+
+4 de noviembre de 2026, Australia/Sydney. Se reabrieron las ocho fuentes primarias del artículo y se leyeron los pasajes materiales. National AI Centre: tarea pequeña y criterios antes de probar. Anthropic agents: flujos frente a agentes y simplicidad, con aviso histórico de herramientas; evals: resultado en el entorno y combinación de métodos. OAIC AI: idoneidad, supervisión y acceso de proveedores; small business: alcance y excepciones. ASD/ACSC: inyección indirecta, acceso mínimo, control externo y sensibilidad de logs. Microsoft Retry: idempotencia y efecto existente aunque se pierda respuesta; AI Test: pruebas del sistema, dependencias y regresión. Se reabrió también Google ML sobre separación y desgaste de conjuntos de evaluación, como apoyo conceptual, sin simular entrenamiento de pesos.
+
+Las primeras respuestas largas se recuperaron o delimitaron a los pasajes materiales antes de registrar lectura. No se afirma lectura completa de todos los enlaces o páginas. El marco NIST y otros anexos históricos no se presentan como reabiertos hoy. Los enlaces originales siguen resolviendo, incluidos los redirects oficiales de Anthropic. No se añaden afirmaciones técnicas nuevas.
+
+Sin modelo, conector, piloto o cuenta ejecutados. Kit sintético: doce escenarios, once IDs de consulta y doce filas not_run; observaciones vacías. El contenido conserva sus límites y no inventa resultados, revisión humana, ahorro o precisión.

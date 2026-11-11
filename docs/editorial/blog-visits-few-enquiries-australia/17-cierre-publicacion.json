@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Australia/Sydney",
+  "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+  "revision": "5b8f620b70bbf5182aefdd549b0ff5c1809dfcdb",
+  "deploymentId": "e0941333-7991-4bd9-86a8-6da0aa182c56",
+  "productionTests": 206,
+  "localTargetedTests": 3,
+  "buildPassed": true,
+  "servedChecks": 13,
+  "contextualLinks": 16,
+  "approvedManuscriptUnchanged": true,
+  "automationDeleted": true,
+  "publicReleaseFiles": 20,
+  "newEditorialFilesPushed": 0,
+  "publicationSource": "Workspace manuscripts; public repository receives approved deployable files only.",
+  "productionCheckoutBranch": "codex/publish-enquiries-public-files",
+  "localUnpushedSnapshots": [
+    "main@125a9ce",
+    "codex/publish-approved-enquiries@8bdedb2"
+  ],
+  "snapshotWarning": "Do not push these local snapshot branches. They retain material excluded from the approved public release.",
+  "browserFullPageQA": false
+}

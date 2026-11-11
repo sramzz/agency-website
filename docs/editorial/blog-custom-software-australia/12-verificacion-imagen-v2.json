@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-27",
+  "blog": 8,
+  "scope": "Actualización local de ilustración V2",
+  "directionAuthorised": true,
+  "resultApproval": "Pendiente de revisión del usuario",
+  "readingThemeApproval": "Pendiente",
+  "published": false,
+  "assets": [
+    {
+      "name": "media/custom-software-illustration-v2-1280.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 240466,
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-768.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 100746,
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    }
+  ],
+  "oldAssetsPreserved": true,
+  "pages": [
+    {
+      "name": "preview.html",
+      "sha256": "327bcef6340f537287b70c254d3e7c07f53e55b563ce6e572c7502e9d8199b5e",
+      "articleTextUnchanged": true,
+      "articleLinksUnchanged": true,
+      "previousVersion": "preview-v1.html",
+      "previousHTMLPreservedExactly": true
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "114eb609df33f282813634b5e5cbfc163d1e28ad6e4e0d1f4a811ee4e9d5a693",
+      "articleTextUnchanged": true,
+      "articleLinksUnchanged": true,
+      "previousVersion": "preview-v1-dark.html",
+      "previousHTMLPreservedExactly": true
+    }
+  ],
+  "protectedFilesUnchanged": 314,
+  "blog6Unchanged": true,
+  "publicFilesUnchanged": true,
+  "manuscriptUnchanged": true,
+  "linkProposalsUnchanged": true,
+  "imagesVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "localHTTP": {
+    "date": "2026-10-27",
+    "checks": [
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview-dark.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview-v1.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview-v1-dark.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/media/custom-software-illustration-v2-1280.webp",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/media/custom-software-illustration-v2-768.webp",
+        "status": 200,
+        "exactBytes": true
+      }
+    ],
+    "allPass": true
+  }
+}

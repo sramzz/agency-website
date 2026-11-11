@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-10-27T09:27:08.739Z",
+  "revision": "ea7a12c508e0ef1af945a4e842da9db7eed51d34",
+  "branch": "main",
+  "filesChanged": [
+    "assets/css/blog.css",
+    "blog/index.html"
+  ],
+  "checks": [
+    {
+      "route": "/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "5aede3eb0015ce66040ef3f98fffc3cd596223b17438ba528a9cd4ef381e3a27",
+      "contentType": "application/json"
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "bytes": 8421,
+      "sha256": "6de223e4f7a64c330c0323996c09177deb0271f4ab06acfa959d13fcd1c7e46f",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/assets/css/blog.css?v=20261027-underlined-links",
+      "status": 200,
+      "bytes": 15580,
+      "sha256": "ac8c6e0cdebd030fddff10fc5c7f7990dc5f0d68251eaa7997c151c0a297d315",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 30594,
+      "sha256": "d60e4844fb49bde8ae0475aa1c20cc3b656516b8ba4160f1e92440de17d58d08",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28667,
+      "sha256": "5e8672899510cf88e8ee11304b51cab9d8bf92165c9736d4669b128cc51247fa",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 29883,
+      "sha256": "2f655d2d36223c839972d0b2975e364c45b751c5879e326919e79215c9a79c19",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32492,
+      "sha256": "f37550fa7e8f0aa37a0a702c8de3c4125a9005eef24d122209d0c94e33603cb2",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27559,
+      "sha256": "7de66d6b331e69fff7e35e04759a93ac54e3ba52a80b666110faaea03c855c31",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/assets/images/blog/seo-ai-discovery-illustration-768.webp",
+      "status": 200,
+      "bytes": 45924,
+      "sha256": "dabef7122ac3656c442ff264bfeb384b600c7cce3854ae584f0bf8ff4fbaed22",
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "status": 200,
+      "bytes": 96420,
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b",
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "status": 200,
+      "bytes": 94574,
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658",
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "status": 200,
+      "bytes": 114344,
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885",
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/assets/images/blog/website-enquiries-illustration-v2-768.webp",
+      "status": 200,
+      "bytes": 118266,
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70",
+      "contentType": "image/webp"
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "bytes": 1781,
+      "sha256": "c45811d3dbff71655a4833de490b83a8e16be0e28c7ee236ce389aeb0427092f",
+      "contentType": "application/xml"
+    },
+    {
+      "route": "/blog/how-to-build-ai-workflow/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/custom-software-benefits/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/which-business-processes-to-automate-first/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "route": "/blog/website-not-showing-up-on-google/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "comparisonNormalization": [
+    "CRLF to LF",
+    "Remove Cloudflare-injected Pages Analytics beacon"
+  ],
+  "productionTests": {
+    "passed": 207,
+    "failed": 0
+  },
+  "buildPassed": true,
+  "articleDestinations": [
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "unchanged": true,
+      "canonical": true
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "unchanged": true,
+      "canonical": true
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "unchanged": true,
+      "canonical": true
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "unchanged": true,
+      "canonical": true
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "unchanged": true,
+      "canonical": true
+    }
+  ],
+  "imagesVerified": 5,
+  "blogsPublished": 5,
+  "unpublishedDraftsExcluded": [
+    "website-not-showing-up-on-google",
+    "which-business-processes-to-automate-first",
+    "custom-software-benefits",
+    "how-to-build-ai-workflow"
+  ],
+  "visualChange": {
+    "arrowsRemoved": 5,
+    "permanentUnderline": true,
+    "hoverAndKeyboardFocus": true,
+    "reducedMotion": true
+  },
+  "publicationConfirmed": true,
+  "blog6Published": false
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "blog": 5,
+  "userApproval": "perfecto, apruebo esta, apliquemos el cambio",
+  "approvedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-23469d87-aa39-4a9a-b139-5c269e193e09.png",
+  "approvedSourceSha256": "16b37e0ce32605328599dc2053d069dfa2cc8fa550c805fdf87cfa225f2322ea",
+  "localOriginal": "media/website-enquiries-original-v3.png",
+  "generatedWith": "built-in imagegen",
+  "promptSummary": "LOCAL COLOUR EDIT ONLY. Base: prior neutral-palette proposal. Give only the outdoor garden visible through the window restrained eucalyptus and forest greens, retaining black ink, neutral paper whites and sparse crimson flowers. Preserve the entire interior, person, anatomy, pose, desk, laptop, plans, crop, linework and all object positions. Keep natural daylight and avoid saturated greens, sepia, gradients, extra objects or text. The full executed prompt is preserved in this conversation.",
+  "previousProposal": "exec-877ecd82-0257-42da-8c68-3374cfece3f6.png",
+  "assets": [
+    {
+      "path": "assets/images/blog/website-enquiries-illustration-v3-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 266018,
+      "sha256": "9954d76dbd24ef881e1c8efbb9eb83503672b08e327a75f4215532e35dae5170"
+    },
+    {
+      "path": "assets/images/blog/website-enquiries-illustration-v3-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 117832,
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456"
+    }
+  ],
+  "published": true,
+  "fullPageBrowserQA": false,
+  "nextBlog7Approved": false,
+  "publicationDatePreserved": "2026-10-26",
+  "updatedDate": "2026-10-29",
+  "inputImage": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-877ecd82-0257-42da-8c68-3374cfece3f6.png",
+  "prompt": "Use case: precise-object-edit, LOCAL COLOUR EDIT ONLY. Asset type: second conversation-only colour proposal for the same Ranking Rebels editorial illustration. Image 1 is the EDIT TARGET and the approved base palette. Primary request: give ONLY the garden visible through the large window a little natural life, while keeping the strong black-ink, neutral off-white and controlled crimson identity. Apply subtle but visibly perceptible, low-saturation eucalyptus and muted forest-green ink washes to selected existing outdoor leaves, shrubs, grasses and tree canopies. Keep a generous proportion of the garden in off-white, grey and charcoal so the green feels selective and intentional. Retain its existing small red flowers as sparse crimson highlights, with no additional flower colours. Preserve the bright natural daylight, botanical forms, detailed black crosshatching, paper texture and high-contrast editorial drawing. Keep the garden recognisably alive and naturally varied rather than a flat green overlay. VERY IMPORTANT LOCALISATION: change only the colours of the OUTDOOR GARDEN SEEN THROUGH THE WINDOW. Keep the entire interior exactly as the input: same man, face, identity, hair, hands and pose, near-black shirt, indoor potted plants in monochrome, shelving, wall pictures, laptop and simplified screen, notebook, red pencils, mug, desk and landscaping plans. Keep the neutral off-white paper, interior blacks and existing red accents unchanged. Preserve every object's position, size and linework, the exact wide composition and crop. Do not add plants, objects, text, gradients, a new light source or a new scene. Avoid lush saturated greens, neon, teal, lime, yellow cast, sepia, blue colour grading, photorealism or a fully coloured image. Output one complete edited illustration, no captions, no panels or comparison layout.",
+  "verifiedRevision": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+  "publicURL": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+  "verificationRecord": "20-verificacion-produccion-imagen-v3.json"
+}

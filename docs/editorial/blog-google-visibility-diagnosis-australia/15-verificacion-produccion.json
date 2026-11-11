@@ -1,0 +1,489 @@
+{
+  "checkedAt": "2026-10-27T23:55:05.954Z",
+  "localDate": "2026-10-28",
+  "timezone": "Australia/Melbourne",
+  "revision": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+  "branch": "main",
+  "target": "Cloudflare Pages ranking-rebels-public-site",
+  "checks": [
+    {
+      "route": "/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "a6e842a9fa4c2fa425bf75ca0239c8e2be78196cdd5c180344f7615e199f695a",
+      "contentType": "application/json",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "bytes": 9336,
+      "sha256": "bb34181e14d691140474d9bffed66bb3dbc9630d07aeeb8ebecd27379f176732",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "bytes": 33555,
+      "sha256": "6a71388b5b6d3cca89fb95f9e975cd9e6911c29f899b6d8f821b137c07ab0a4c",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27834,
+      "sha256": "d190169b2868830607dc452ddb9b54997b0f549410adab555ae1284189b30901",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 29883,
+      "sha256": "2f655d2d36223c839972d0b2975e364c45b751c5879e326919e79215c9a79c19",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32785,
+      "sha256": "35f3a54302bab2eee8b597a8cd8c6eb7d375dc5710e60509cec8c3152709d589",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 30805,
+      "sha256": "8e5d0243a632d085f706276f1df612fb137ef60312fbad8a3263e4cc676c094a",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28962,
+      "sha256": "9e16b8715a8b738b3ee229c939780b2f753e5228ce331c1d6ba02890b3c726fc",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/js/google-analytics.js?v=20260920",
+      "status": 200,
+      "bytes": 949,
+      "sha256": "3405bb111fb8f6092932c6ef73ed299bed8a9decb09586accc0fe91af79f75e7",
+      "contentType": "application/javascript",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/js/blog.js?v=20261019-melbourne",
+      "status": 200,
+      "bytes": 1331,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb",
+      "contentType": "application/javascript",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/css/blog.css?v=20261027-underlined-links",
+      "status": 200,
+      "bytes": 15580,
+      "sha256": "ac8c6e0cdebd030fddff10fc5c7f7990dc5f0d68251eaa7997c151c0a297d315",
+      "contentType": "text/css; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2538,
+      "sha256": "a39b2d99a39ce3b0dbf0ba8aad5f6c23a74dbb08a936540fe20f7536037e9251",
+      "contentType": "application/javascript",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/favicon.ico",
+      "status": 200,
+      "bytes": 15086,
+      "sha256": "e1c4d61f035348562f19c525206706a8a65da573dd44120ef9f933ed377ba27a",
+      "contentType": "image/vnd.microsoft.icon",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/css/styles.css?v=20261013-autoplay-only",
+      "status": 200,
+      "bytes": 242477,
+      "sha256": "1705cf973b5ee54849a2d2de3811eae342713dbb20c54b2d3448b65e8870ea6e",
+      "contentType": "text/css; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/visibility-diagnosis.svg",
+      "status": 200,
+      "bytes": 2931,
+      "sha256": "f3ef878a46e748e2bb3ffc05710607525b02221e236f4f67ab4dd3cf41025abe",
+      "contentType": "image/svg+xml",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/js/script.js?v=20260926-header-surface-global",
+      "status": 200,
+      "bytes": 16310,
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a",
+      "contentType": "application/javascript",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/seo-ai-discovery-illustration-768.webp",
+      "status": 200,
+      "bytes": 45924,
+      "sha256": "dabef7122ac3656c442ff264bfeb384b600c7cce3854ae584f0bf8ff4fbaed22",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/fonts/jetbrains-mono-core-400-700.woff2",
+      "status": 200,
+      "bytes": 23548,
+      "sha256": "71be98b2801d01c7556b7fb291e76069f0005359a178fb76a4edcd2f01ff48db",
+      "contentType": "font/woff2",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/fonts/oswald-core-500-700.woff2",
+      "status": 200,
+      "bytes": 12744,
+      "sha256": "67502762147d49abd67474ff5dc2319668dd2aca05a53293d645216391893fcb",
+      "contentType": "font/woff2",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/fonts/inter-core-400-700.woff2",
+      "status": 200,
+      "bytes": 20524,
+      "sha256": "bbe467f8e1328d83dd3010a4f57788b49cabcb522458f4d9db3680bd85ffb9d7",
+      "contentType": "font/woff2",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/visibility-diagnosis-mobile.svg",
+      "status": 200,
+      "bytes": 2931,
+      "sha256": "e13d4fd9b7f739ed436207efede783798bc2f2a3ababebb1fc8ef7995168bcac",
+      "contentType": "image/svg+xml",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/website-enquiries-illustration-v2-768.webp",
+      "status": 200,
+      "bytes": 118266,
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/google-visibility-illustration-768.webp",
+      "status": 200,
+      "bytes": 77562,
+      "sha256": "97e3e2ea6de84970e37d95dcd65acb8465140d37b96b4524d325b89fec1c0cac",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "status": 200,
+      "bytes": 96420,
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "status": 200,
+      "bytes": 94574,
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "status": 200,
+      "bytes": 114344,
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/assets/images/blog/google-visibility-illustration-1280.webp",
+      "status": 200,
+      "bytes": 193052,
+      "sha256": "684083d21db56d421e350fac4561e27d527af264d2916b78e9c121551520a356",
+      "contentType": "image/webp",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "bytes": 1899,
+      "sha256": "0567bea1873f142ed3ab7c940d2e65b83f8c1532a16ce899f7fd4149565da0a0",
+      "contentType": "application/xml",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/which-business-processes-to-automate-first/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/custom-software-benefits/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    },
+    {
+      "route": "/blog/how-to-build-ai-workflow/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "contentType": "text/html; charset=utf-8",
+      "xRobots": null,
+      "server": "cloudflare",
+      "redirected": false
+    }
+  ],
+  "normalization": [
+    "CRLF to LF",
+    "Cloudflare Pages Analytics injected beacon removed for source comparisons"
+  ],
+  "productionTests": {
+    "passed": 209,
+    "failed": 0
+  },
+  "buildPassed": true,
+  "articleBodiesAndCanonicals": [
+    {
+      "route": "/blog/website-not-showing-up-on-google/",
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-28",
+      "sourceMatches": true
+    },
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-28",
+      "sourceMatches": true
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "datePublished": "2026-10-21",
+      "dateModified": "2026-10-26",
+      "sourceMatches": true
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-28",
+      "sourceMatches": true
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-28",
+      "sourceMatches": true
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "datePublished": "2026-10-16",
+      "dateModified": "2026-10-28",
+      "sourceMatches": true
+    }
+  ],
+  "contextualLinks": [
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "work involved in SEO"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "website visibility diagnosis"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "checking the website enquiry journey"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "search engine optimisation (SEO)"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "diagnosing website visibility in Google"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "diagnosing website visits without enquiries"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "step-by-step diagnosis of a missing Google result"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "what to check when visits are not becoming enquiries"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "website visits but few enquiries"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving visibility on Google Maps"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "what SEO involves"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "a visibility diagnosis"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "local visibility on Google Maps"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "visit-to-enquiry journey"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "how SEO works for your business"
+    }
+  ],
+  "resourcesVerified": 19,
+  "draftsExcluded": 3,
+  "publicArticles": 6,
+  "publicationConfirmed": true,
+  "browserFullPageReview": false
+}

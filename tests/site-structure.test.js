@@ -30,10 +30,18 @@ const publicRoutes = [
   "/blog/local-seo-google-maps-visibility/",
   "/blog/what-is-seo/",
   "/blog/ai-agents-vs-workflow-automation/",
+  "/blog/website-visits-few-enquiries/",
+  "/blog/website-not-showing-up-on-google/",
+  "/blog/which-business-processes-to-automate-first/",
+  "/blog/custom-software-benefits/",
+  "/blog/how-to-build-ai-workflow/",
+  "/blog/google-ads-for-service-businesses/",
+  "/blog/measure-digital-marketing-results/",
 ];
 
 const routeFile = (route) => route === "/" ? "index.html" : `${route.slice(1)}index.html`;
-const publicFiles = publicRoutes.map(routeFile);
+const supportingFiles = ["blog/how-to-build-ai-workflow/pilot-kit/index.html", "blog/google-ads-for-service-businesses/worksheet/index.html", "blog/measure-digital-marketing-results/scorecard/index.html"];
+const publicFiles = [...publicRoutes.map(routeFile), ...supportingFiles];
 const proposalFiles = [
   "proposals/titanium-gym-9c42e7/index.html",
   "proposals/titanium-gym-9c42e7/wellness-recommendation/index.html",

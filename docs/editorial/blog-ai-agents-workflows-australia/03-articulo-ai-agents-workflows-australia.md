@@ -54,6 +54,8 @@ Ask what the proposed system can do in your business:
 
 A CRM, or customer relationship management system, is one possible destination for the work. Your inbox, calendar or document store may be others. Their availability still needs to be checked against the actual integration, subscription plan and access settings.
 
+If a required capability is missing, compare [configuring, extending or building software](https://rankingrebels.com/blog/custom-software-benefits/) before commissioning another system. A small component may fill the gap while the tools you already use keep doing their jobs.
+
 Several agents, permanent memory and a separate knowledge database are optional design choices. Ask what each component contributes to the task before paying for the added complexity.
 
 ## The benefits businesses can reasonably aim for
@@ -89,6 +91,8 @@ For the Brisbane team, the estimator should be able to see what was checked, whi
 ### 1. Incoming lead qualification
 
 A structured form can often be handled with rules: validate fields, check a service area, find duplicates and assign someone to respond. AI can help interpret an unstructured enquiry or prepare a short brief.
+
+If few requests are reaching the team in the first place, check the contact route before automating how you handle them. Our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) explains how to separate audience, page and delivery problems.
 
 An agent may be useful if it must decide which authorised account history or service information to retrieve. The business still defines what makes an enquiry suitable. Treat uncertainty as something to resolve before rejecting a request, promising a price or saying that a service is available.
 
@@ -152,6 +156,8 @@ Check the actual result as well as the record of steps. [Anthropic's guide to ag
 
 Include incomplete, conflicting and unavailable information in the evaluation. Revisit it when models, tools or business policies change. A few successful demonstrations give you less evidence than repeated checks across the kinds of cases your team handles.
 
+For a process you are ready to test, our guide to [building and measuring an AI workflow pilot](https://rankingrebels.com/blog/how-to-build-ai-workflow/) takes an enquiry handover through scope, review, exceptions and a decision about the next step.
+
 There is no universal percentage saving for this process. Enquiry volumes, current handling effort, exception rates, integrations and review needs determine whether the economics work.
 
 ## What should Australian businesses check?
@@ -163,6 +169,8 @@ For outbound commercial electronic messages, consult [ACMA's spam guidance](http
 These checks depend on the proposed use. They do not establish that a particular system meets every applicable requirement.
 
 ## Questions to ask before buying an “AI agent”
+
+If you have several tasks in mind, first compare [which business processes to automate first](https://rankingrebels.com/blog/which-business-processes-to-automate-first/). That guide helps you weigh the work, remaining effort and unknowns before choosing a task to demonstrate.
 
 Ask a prospective provider to demonstrate one representative task and answer:
 

@@ -1,0 +1,271 @@
+{
+  "blog": 15,
+  "date": "2026-11-03",
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/update-or-delete-old-blog-posts/",
+  "changes": [
+    {
+      "before": "For a business website, the question is what someone needs from the page today—and what would happen if it disappeared. That means checking the content, the available evidence and the treatment of its web address before making changes.",
+      "after": "Suppose your service business still offers the same work, but its quote guide sends customers through an old submission process. The page needs updated instructions. Its age does not tell you whether to delete it.\n\nThat is one of the fictional cases we will use below. Before changing a page, check what readers need from it, the evidence available and what should happen to its web address.",
+      "reason": "Adelantar el caso B recibido y hablar al propietario; no añadir ciudad, cliente o resultado inventados."
+    },
+    {
+      "before": "## Start with a content decision, then decide what happens to the URL",
+      "after": "## Decide on the content and the URL separately",
+      "reason": "H2 más breve; conserva las dos decisiones y sus condiciones."
+    },
+    {
+      "before": "A page with impressions but few clicks raises different questions from a page Google has not indexed. Investigate visibility and technical access before concluding that a rewrite—or deletion—is the answer.",
+      "after": "A page with impressions but few clicks raises different questions from a page Google has not indexed. Check visibility and technical access before deciding to rewrite or delete it. Our [step-by-step diagnosis of a website not showing up on Google](https://rankingrebels.com/blog/website-not-showing-up-on-google/) explains how to investigate that distinction.",
+      "reason": "Quitar el inciso denso y ofrecer la ampliación técnica al blog 6 público, sin repetir su diagnóstico."
+    },
+    {
+      "before": "Update when the reader's need remains, but the answer is incomplete, inaccurate or difficult to use.",
+      "after": "Update when the reader's need remains, but the answer is incomplete, inaccurate or difficult to use. For the quote guide from the introduction, that means replacing the old submission steps and checking that the new route works.",
+      "reason": "Recuperar el caso temprano y conectar la decisión con una comprobación concreta; mismos hechos del caso B."
+    },
+    {
+      "before": "## What should you check after the changes?",
+      "after": "## Check the change, then review the result",
+      "reason": "Separar implementación y observación desde la navegación, manteniendo el contenido."
+    }
+  ],
+  "sourceUrls": [
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://support.google.com/webmasters/answer/17011259?hl=en",
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "https://developers.google.com/search/docs/appearance/publication-dates",
+    "https://developers.google.com/search/docs/appearance/structured-data/article",
+    "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+    "https://developers.google.com/search/docs/appearance/core-updates",
+    "https://developers.google.com/search/docs/crawling-indexing/troubleshoot-crawling-errors#soft-404-errors",
+    "https://developers.google.com/crawling/docs/troubleshooting/http-status-codes",
+    "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+    "https://support.google.com/webmasters/answer/9689846",
+    "https://rankingrebels.com/solutions/organic-discovery/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2874,
+      "sha256": "4631801b46dfbffa45af5cf3b3b17fe0594b3aa0c0f94bcec54d889ad8fc368a",
+      "readComplete": true,
+      "finalText": "ión creada. El índice compartido describe preparación. El chat ejecutor debe usar su propio progreso real para saber dónde continuar y confirmar por separado cualquier publicación."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 12568,
+      "sha256": "46f39c75a5c9fe317ff073c0d97290980186f697c345f655a9525e607f6c26b0",
+      "readComplete": true,
+      "finalText": "s, integración y publicación. No faltan estos datos para preparar una guía informativa; sí limitan afirmaciones y comprobaciones posteriores. No inventarlos para cerrar el trabajo."
+    },
+    {
+      "name": "02-articulo-update-or-delete-old-blog-posts-australia.md",
+      "bytes": 15573,
+      "sha256": "8737595157af0882458318ba7086ec32f0c8a320446539526ab3105f055c0167",
+      "readComplete": true,
+      "finalText": "ry service](https://rankingrebels.com/solutions/organic-discovery/). Start with the pages and questions that matter to your customers, then make changes you can explain and verify."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 7418,
+      "sha256": "40549e724de358668187abba3ece8da934abd037db072bbd621f784e18e5c952",
+      "readComplete": true,
+      "finalText": "e hechos/recomendaciones y el acceso fallido a SEO Soar están en 01 y notas de soporte. Preparación editorial completa; integración, experiencia humana y publicación sin confirmar."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 5993,
+      "sha256": "64e6231742eba642478dd97b024935f367bb5857be8cf3b7e2b13c1b9b7b1e03",
+      "readComplete": true,
+      "finalText": " en 08 los resultados reales del chat ejecutor. Acordar seguimiento en función del contexto; no atribuir el desempeño a frecuencia de publicación, extensión o marcado por sí solos."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 7080,
+      "sha256": "a292ddf52d0c42ef5c76fd17f14029c739e95cb2efcbcd81609805dd8190d5d9",
+      "readComplete": true,
+      "finalText": "te al completar 15; no investigues, ejecutes o publiques esos temas sin la siguiente instrucción manual del usuario. La cadencia de cuatro días no autoriza programación automática."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1588,
+      "sha256": "a288405cb9d251a6c3cc2b1e690b3e1449e5dd01cf7a786c416d1d1f6fa663c0",
+      "readComplete": true,
+      "finalText": "rlo leído. Si el siguiente mensaje es «continúa», realiza el trabajo activo según ese prompt y las autorizaciones existentes; no saltes al 16 por haber terminado esta comprobación."
+    },
+    {
+      "name": "07-content-review-decision-log.md",
+      "bytes": 6512,
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84",
+      "readComplete": true,
+      "finalText": "No actual results have been entered because these examples have not been implemented. Keep that distinction if adapting the worksheet for a presentation, article or internal brief."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 3599,
+      "sha256": "7967baa6aa6b1b6b1885ffbbdeb022afca7bd016826bf7deee9dd050bf679cd3",
+      "readComplete": true,
+      "finalText": "llan) y 17 (testimonios) se preparan uno a uno cuando el usuario lo solicite manualmente. No crear recordatorios ni asignar fechas públicas por la cadencia prevista de cuatro días."
+    },
+    {
+      "name": "soporte-calidad-editorial.md",
+      "bytes": 9121,
+      "sha256": "ea51a548e569558c57bc020fdaba2068643530a2f652b60bad5bf7f3a893d6e0",
+      "readComplete": true,
+      "finalText": "a. Evitar promesas de rankings, plazos universales o ahorros de rastreo no demostrados. Esta nota queda disponible para contrastar el manuscrito y auditar cada atribución a Google."
+    },
+    {
+      "name": "soporte-evidencia-estrategia.md",
+      "bytes": 9182,
+      "sha256": "5a8e5f40c2ba6556ae9a00a6a94cf07eb7b25bf8d95c2afa66fdc92005cd8eaa",
+      "readComplete": true,
+      "finalText": "rial para revisar prioridades. No ofrecer auditoría gratuita, descarga pública, recuperación o servicio específico sin confirmar. No se envió el formulario ni se accedió a cuentas."
+    },
+    {
+      "name": "soporte-url-y-retirada.md",
+      "bytes": 9563,
+      "sha256": "36f385bf0c33ffeb94324bdcb300dc39b74bbc09fffbe836cf554cfa9b95da3e",
+      "readComplete": true,
+      "finalText": "al para todos los blogs. El alcance técnico de estas fuentes es Google Search; no acredita comportamiento idéntico de otros buscadores ni resultados de una implementación concreta."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "bytes": 15983,
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2216,
+      "sha256": "c191b488605ba8ff2550da3d1df5019a8a0201ea180eee6681d8dbcabca60cd4"
+    },
+    {
+      "name": "07-content-review-decision-log.md",
+      "bytes": 6512,
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27159,
+      "sha256": "71e14a8ed04dd0b8da267f2bddc546e0f91fbb53dc303242eefc4e1405c0630a"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27158,
+      "sha256": "33b4758f6fe50b0cdeb10b97b4bfbe7f599e38d98f9c60f6fd4e10bc55a866ab"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8519,
+      "sha256": "2dfaa084e5c9b2fca15f4e400d124e45a68c09e3d676d195f4ae1999e9b0af4f"
+    },
+    {
+      "name": "worksheet-preview.html",
+      "bytes": 10517,
+      "sha256": "f1856b40106d0ca726d26ccc576f4b16496f9dd07dece1d50a5dcbe7db59ef82"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10935,
+      "sha256": "acc3f7bf32165810b2cd2783299ba853dada92a82b24bd5f17f0beca764bd00d"
+    },
+    {
+      "name": "media/content-review-illustration-1280.webp",
+      "bytes": 336910,
+      "sha256": "5b7e499c503077766ffb3bc1b4ff8637d86b4a91e1b9dd0d526fb173387e21f6"
+    },
+    {
+      "name": "media/content-review-illustration-768.webp",
+      "bytes": 121504,
+      "sha256": "94b91696806347d59ec3d765bfb2b830cbd65e4cf333a3fa380ec282a94881f4"
+    },
+    {
+      "name": "media/content-and-url.svg",
+      "bytes": 4526,
+      "sha256": "d79443f976c8be24c2accaff12f2164ea68d042fa8648ae75ef0c12cf799d03e"
+    },
+    {
+      "name": "media/content-and-url-mobile.svg",
+      "bytes": 5310,
+      "sha256": "9e0b6e529686663826b8e0960b62437622d5dc6e5652fc63e97aeb1b3241351e"
+    },
+    {
+      "name": "recursos/content-review-decision-log.md",
+      "bytes": 6512,
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84"
+    },
+    {
+      "name": "media/content-review-illustration-original.png",
+      "bytes": 4057784,
+      "sha256": "cb120c7a01b30f6ee4c094687a2bf30885fe8760a636f376f7f964f367dc831c"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 1830,
+      "sha256": "d1075938064b51fce9389bb0cd6678532ba235a7a4c348a8e1d94ee031710ed8"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1133,
+      "sha256": "34b230df54c8e08a1724a0395aece1fcb584365e1da9d908217bea9af62cdd62"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 1921,
+      "sha256": "1e4230d850d1166edfb89d328730b3d92df9df64d45c5cc631aa74914afbb2ca"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1530,
+      "sha256": "66c20a134577617860436a8defb393dbac9f37607596b08d03e3fdebf3076732"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2197,
+      "sha256": "9de529e138e016338545010ec15285e70910fc4dda2094f9ba25934bd5cdf20e"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 5719,
+      "sha256": "997338efa23da3e80680273fc82b4c49ec04e8a5a8d8d676fa53a25aeec827ff"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1333,
+      "sha256": "a141547d97c4679fcb7a697a8287d67fe1655eec980a3c24907fc4139a4daaba"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 6009,
+      "sha256": "4a0ef29e53a3950e58ddc9d2605970b8441d9d0d3e4f8a526a02c6cedb201a20"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1088,
+      "sha256": "a4377e38664374918ca2a8b7a375329a502ab535c810600736e406f6d7dcf0a4"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1526,
+      "sha256": "94ab7af6c21bb2cba4277224b5f2b1609837ccf632cccdf3ad91406bbed8e5a6"
+    }
+  ],
+  "fullPageBrowserQA": false,
+  "wordCount": 2337,
+  "preparedCount": 7,
+  "publishedCount": 8,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/content-review-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-2b37c5aa-c89e-43f6-9c69-e638704d6c8e.png",
+    "visualInspection": true
+  }
+}

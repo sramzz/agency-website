@@ -1,0 +1,185 @@
+{
+  "checkedOn": "2026-10-26",
+  "timezone": "Australia/Sydney",
+  "mode": "local-http",
+  "revision": null,
+  "checks": [
+    {
+      "url": "http://127.0.0.1:4177/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 30380,
+      "sha256": "0fc4e6cf42ecf2ad614f3ced1578a9da4b4d9b2b83aaf7e82b9e7dcdd962faa9"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 29669,
+      "sha256": "834879d32829c950d6411c0e16ce70344e12e9d7d6545e626c953db7585297c6"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "577926946e6f9e0119c378992345be1c7c229b30534393cd8ef1fe141b161ede"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32278,
+      "sha256": "ec85df16e703f6461fa0e05c81d631a073cbaaed4ca2b22869fb231ecc44a56f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27345,
+      "sha256": "9f67e4789fb0b3110010fd9597f23401c542b28d14da3f4f1338f18f1697fd6c"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "bytes": 8387,
+      "sha256": "a5fefe01af9cf58b069404c333940ec0d852025e54187682f2b1e1f0d31927a3"
+    },
+    {
+      "url": "http://127.0.0.1:4177/sitemap.xml",
+      "status": 200,
+      "bytes": 1781,
+      "sha256": "c45811d3dbff71655a4833de490b83a8e16be0e28c7ee236ce389aeb0427092f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/website-enquiries-illustration-v2-1280.webp",
+      "status": 200,
+      "bytes": 284184,
+      "sha256": "077a40fedebf960f07aaa8ccced411c4901916d6e7597c1839455a71e7ebc954"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/website-enquiries-illustration-v2-768.webp",
+      "status": 200,
+      "bytes": 118266,
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/enquiry-checks.svg",
+      "status": 200,
+      "bytes": 2401,
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/enquiry-checks-mobile.svg",
+      "status": 200,
+      "bytes": 2398,
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15299,
+      "sha256": "00f455d9bed991955672d92121d302148d2809bfb7f727649c01c3477d70cdc0"
+    }
+  ],
+  "links": [
+    {
+      "source": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "destination": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "what SEO involves",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "destination": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "anchor": "website visits but few enquiries",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving visibility on Google Maps",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "anchor": "what to check when visits are not becoming enquiries",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/what-is-seo/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "anchor": "diagnosing website visits without enquiries",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "search engine optimisation (SEO)",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "destination": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "anchor": "checking the website enquiry journey",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/what-is-seo/",
+      "anchor": "work involved in SEO",
+      "inArticleBody": true
+    },
+    {
+      "source": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "destination": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps",
+      "inArticleBody": true
+    }
+  ],
+  "selectedTheme": "light",
+  "illustration": "V2",
+  "browserPageReview": false,
+  "formsSubmitted": false,
+  "allServedArticlesMatchReviewedContent": true,
+  "contextualLinksVerified": 16,
+  "bothDirectionsReviewedForAllExistingArticles": true
+}

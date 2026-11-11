@@ -1,0 +1,1100 @@
+{
+  "date": "2026-10-23",
+  "sourceDir": "C:/Users/Kelly Serna/OneDrive/Documentos/Juan David/RR website/output/blogs/06-google-visibility-diagnosis",
+  "originals": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 3345,
+      "sha256": "523fa55b4449e0736e5f9fa43d9432ac5bb2c2c218a67ad90963a06cb16b1589",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 17973,
+      "sha256": "cdacbcac9be1e86470c63f236caace345224045bbabe8c7a1f4b28402d2bb4e1",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "02-articulo-google-visibility-diagnosis-australia.md",
+      "bytes": 16606,
+      "sha256": "b9b2ec228f5433a0a99944053fb5319ec6e77635ff27e02afc9ef6d5801d780d",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 8323,
+      "sha256": "22f46620764876337e372a93c687ae1f0908655b92f3018d6a27de734b8800d7",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 7328,
+      "sha256": "70b60cf39ce47280d23742bd753ee0d1212e66a4ddab216e7437669c1c859a6d",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 9004,
+      "sha256": "e4957f0911933a37298275e66293dd42d132a0902fe3666e7d7e9e6a26395761",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 2249,
+      "sha256": "76a77f0f8509e6835478cc4ec62cf3a6ee6ecf473c055adf3fa09b641dc88a41",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "soporte-estrategia.md",
+      "bytes": 15521,
+      "sha256": "485f4f1b732dc5fa475a05284f194a55a95f45c865f04bc81e5521eb441d5a39",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "soporte-rastreo-indexacion.md",
+      "bytes": 17837,
+      "sha256": "4ecd806c8633cf3bfe7681a5fbb4fb3d32eb1ec14e7f218f7423449af289dcc0",
+      "status": "Leído completo, incluido el final"
+    },
+    {
+      "name": "soporte-search-console.md",
+      "bytes": 14325,
+      "sha256": "29fc3511cb36c46d7e2fea5a7fafc46e7f1d34ae9ff04705aef27b73074a2241",
+      "status": "Leído completo, incluido el final"
+    }
+  ],
+  "publicBaseline": [
+    {
+      "name": ".gitignore",
+      "sha256": "2f0e6ae6d4b7977f49f2b5dea3ba0e0893f471b1e6e6ca384a6fb689699ba9b0"
+    },
+    {
+      "name": "404.html",
+      "sha256": "f55d94c1b5a1cf102fc5d0fecf942922c13e3a60f46e596c2663525c78eb1364"
+    },
+    {
+      "name": "AGENTS.md",
+      "sha256": "61ae2db4bd76aedce2e163b79d876aee0fa533494b31e4143700772f322c8c57"
+    },
+    {
+      "name": "CONTEXT.md",
+      "sha256": "ecdef7bf1b546ea045e20590c5e873dffe8fedf1c0e680e9777c07891782b12d"
+    },
+    {
+      "name": "CONTRIBUTING.md",
+      "sha256": "1d1719a922d6fc81b21f8c478b873583584db136cc60f5c9da216941c37cc5f7"
+    },
+    {
+      "name": "DESIGNv2.md",
+      "sha256": "7a0a4f5d43507de95e4dfb34a81e50a366f014b985561e1374e062b532b8ecad"
+    },
+    {
+      "name": "Design.md",
+      "sha256": "a5eb99292d48cf84af9c480d2c1db3ec9cf183b09e6b1382e7ab1f182555606a"
+    },
+    {
+      "name": "DirectionFiles/2026-05-28 - Dev.md",
+      "sha256": "73cf957f18813765f79d7803e7eacdc0ba6e06f5cdaea0132f9f714d65ca15e4"
+    },
+    {
+      "name": "DirectionFiles/2026-05-28 - DevOpsInstructions.md",
+      "sha256": "f0a622334a23c213cff806d5ef5947019cdd9d0e54855e2b4971e6d8a1c0fef9"
+    },
+    {
+      "name": "DirectionFiles/2026-06-28 - ContentPlan.md",
+      "sha256": "b6293c613d6097737315605efb4c30abf6c9ebcabc389c13095b78283fec5f11"
+    },
+    {
+      "name": "DirectionFiles/2026-09-03 - CloudflareLeadCaptureTDDPlan.md",
+      "sha256": "a64bb46e7c415a009098125f597415a297513d6383a75a2f2ac7143fd60b1636"
+    },
+    {
+      "name": "OnboardingSlide.md",
+      "sha256": "33c0d9324dffcf7583f052f5484c20efc3410382b025c8da125691ceaa893359"
+    },
+    {
+      "name": "PHILOSOPHY.md",
+      "sha256": "42bf5f7de665bd6e3150468828534c5ebefffd6c02d9c3d206245aacb7e1948f"
+    },
+    {
+      "name": "README.md",
+      "sha256": "d3f9b0dd1c054069eb2e6ebc9f0326be9eb0d5c73f6485d300d3c30219c5c3ff"
+    },
+    {
+      "name": "_redirects",
+      "sha256": "d9af1f29e95cc86856ab51c310e5c5845dbeff63222f2a302a367cfd5daf245f"
+    },
+    {
+      "name": "about/index.html",
+      "sha256": "40038bc1e24a3223fdc8108514e6a07938148baa5ad299863ba58b3370138ecf"
+    },
+    {
+      "name": "apple-touch-icon.png",
+      "sha256": "30c8002acb62e33cd30cc34cc47d0873e289504174cf4e131a67863a44ab5fa0"
+    },
+    {
+      "name": "assets/css/blog.css",
+      "sha256": "00f455d9bed991955672d92121d302148d2809bfb7f727649c01c3477d70cdc0"
+    },
+    {
+      "name": "assets/css/scroll-progress.css",
+      "sha256": "766b455f9055205d56705c02b264945112aa547a90461fcf579f17de91379393"
+    },
+    {
+      "name": "assets/css/solutions-hero-flow.css",
+      "sha256": "41201885279357ab700ca2a03578e60284cba96ba98f34960d18ffbcf75f167f"
+    },
+    {
+      "name": "assets/css/styles.css",
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+    },
+    {
+      "name": "assets/fonts/inter-OFL.txt",
+      "sha256": "f14f2b95a38f4f20cad4d27f7710593f37534c046641be0348da7c28365f4e39"
+    },
+    {
+      "name": "assets/fonts/inter-core-400-700.woff2",
+      "sha256": "bbe467f8e1328d83dd3010a4f57788b49cabcb522458f4d9db3680bd85ffb9d7"
+    },
+    {
+      "name": "assets/fonts/jetbrains-mono-OFL.txt",
+      "sha256": "ef2870fd9ccb5f68d6b89aba72c3b30a27ab66f317b41d8c2c048693236bee01"
+    },
+    {
+      "name": "assets/fonts/jetbrains-mono-core-400-700.woff2",
+      "sha256": "71be98b2801d01c7556b7fb291e76069f0005359a178fb76a4edcd2f01ff48db"
+    },
+    {
+      "name": "assets/fonts/oswald-OFL.txt",
+      "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
+    },
+    {
+      "name": "assets/fonts/oswald-core-500-700.woff2",
+      "sha256": "67502762147d49abd67474ff5dc2319668dd2aca05a53293d645216391893fcb"
+    },
+    {
+      "name": "assets/images/about/atlantic-lighthouse.png",
+      "sha256": "23cf9dccec757824dcef485e6b14b8b2c047eb0cda78778fca44679b834afe79"
+    },
+    {
+      "name": "assets/images/about/fresnel-lens.png",
+      "sha256": "789ea5d7c1fcca988c75bec152f46a8ffcc39f69e3b800a1946ee3513d235958"
+    },
+    {
+      "name": "assets/images/about/paid-ads-campaign.svg",
+      "sha256": "2584a774ace0a3b4a48665fda733d865607da7e628b24a40dbd4368a2bcdf4b2"
+    },
+    {
+      "name": "assets/images/about/ranking-rebels-ceo-hero.png",
+      "sha256": "167e333b2a971e3ec5281604c93292eb1c00a9867172db480a39d7d0ea1e250c"
+    },
+    {
+      "name": "assets/images/about/ranking-rebels-leadership-experiment.png",
+      "sha256": "3c2cb1866f77b52d995052aab82e78d944f87d99971955f1002e112c76e3f73c"
+    },
+    {
+      "name": "assets/images/about/world-presence-map.svg",
+      "sha256": "f3e68667138e2815b5d8234c408a8556c5b0527929023ae32ce0f178e6bf86f9"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-comparison-mobile.svg",
+      "sha256": "d7ef510a48abda63e097bbb0b510094152c5b109a46697688a2a9fa99edfa810"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-comparison.svg",
+      "sha256": "cffaf54643afccdc98c6eee79a99976842617cbf23bd544c7b50d402cdd8b595"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-illustration-1280.webp",
+      "sha256": "23b9aab868b6023ec5dd8e52407faa3a56cf2018d4f9117974b672ea2f206974"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658"
+    },
+    {
+      "name": "assets/images/blog/local-seo-discovery-illustration-1280.webp",
+      "sha256": "f702c864f923bf947317d08f8db0b7b8f29ae45a52e5c930e5e380a3bf298a2b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-enquiry-journey-mobile.svg",
+      "sha256": "2b08475470decf3b145d5a00798dde0cf506b31469dc38640c4bcfaf7667791b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-enquiry-journey.svg",
+      "sha256": "6c8fb764dece230e51048d5d91a6210b27f93cbcbd2494fe0563cc20e8e544a2"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-brisbane-journey-mobile.svg",
+      "sha256": "30ca391778c8ecb99e0f927bc83b813ced0d51da90be5fc96c2c9062321a9cde"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-brisbane-journey.svg",
+      "sha256": "24846aedc48610f0479457e49962d75121f060fd776cf94d25aec649d26cfb84"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-discovery-illustration-1280.webp",
+      "sha256": "e17437da8d2cadd30b6625910e33c9755e111903a552477b6ef8ff8acb2e15c7"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-discovery-illustration-768.webp",
+      "sha256": "dabef7122ac3656c442ff264bfeb384b600c7cce3854ae584f0bf8ff4fbaed22"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-melbourne-journey-mobile.svg",
+      "sha256": "bbfbc544b1167b1d8a5866a6159e5c6bb9d47e41b7f2f90171d74536ae42f809"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-melbourne-journey.svg",
+      "sha256": "56d30f2b027cda14117de0f69338d8b89a383d7ef8091073c3724b6564ce8f52"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-landscaping-illustration-1280.webp",
+      "sha256": "fa7dc491eb25b0f6932143dfde4854a9cbbbd2d02a6e51baab0a4d3259abc9c3"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-search-needs-mobile.svg",
+      "sha256": "fd899e38a63907bbaaae1d5ea41b6c84573451a457f335e306f33723ba14d769"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-search-needs.svg",
+      "sha256": "f0b82ad7d8a1be5bcc72e7e5293ef38a7ec33fec0db7b99a8a5cc4eff6d6024a"
+    },
+    {
+      "name": "assets/images/branding/ranking-rebels-blossom-dark.svg",
+      "sha256": "30a48ca6ff2b1797297f4e8810b132a85d6643d0ac7cfcd5d361f201ac9e9fd6"
+    },
+    {
+      "name": "assets/images/branding/solutions-not-boosted.png",
+      "sha256": "6e8b6a88f4043c9006e63d929e8fbd5946c3e0262481c79a66cfb04e23502783"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-calls-61.jpeg",
+      "sha256": "46899a2bf7f8c67dffdc422a9bdc3e7f8040509baf8028cf58d2add790eb2ba8"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-calls-growth.jpeg",
+      "sha256": "e73666e60901e61181cd8f46fb95a013c21a53e37a22bb3494e376082a6e6d0f"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-directions-256.jpeg",
+      "sha256": "1069b90766422f8a879a1e672247175f79366aa972bf06e3778c09011bf961ec"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-directions-growth.jpeg",
+      "sha256": "55c3a962704bfd9839abde98f086ce6f7fa9a355a58298b2a0dd4a19d0021ef5"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-interactions-323.jpeg",
+      "sha256": "e7de43c93324496fa26ef746147e1ba04cd96075eccf4710b8999c6e083c5b83"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-interactions-growth.jpeg",
+      "sha256": "57daba03af4401c6b5f9430e71929aff033252fc274fb0ca3313427998a1b6fb"
+    },
+    {
+      "name": "assets/images/case-studies/gbp-website-clicks-growth.jpeg",
+      "sha256": "6efdd3d643ab82393f8b150ae3a8e57f498b1018246009e2022800ae0a176524"
+    },
+    {
+      "name": "assets/images/case-studies/petrogrease-logo.webp",
+      "sha256": "16d6a865f03cd41899945244541b73801ffa89ec1dbea0bdb42ba704edc144eb"
+    },
+    {
+      "name": "assets/images/case-studies/petrogrease-sem.jpeg",
+      "sha256": "d54ad46372f910e8a06d901dd4a8b96ddd0990bafcf6edd3871f458fa9447dc1"
+    },
+    {
+      "name": "assets/images/case-studies/petrogrease-seo.jpeg",
+      "sha256": "36328ec5449949b4a402677ed22fc1145362fa762cfa818a55bdc2269283626e"
+    },
+    {
+      "name": "assets/images/case-studies/ranking-rebels-symbol-original.png",
+      "sha256": "04f205fd00365222204b381d0dc8237dfe635ae8ea7650626637202e6b702d2d"
+    },
+    {
+      "name": "assets/images/case-studies/store-lucide-LICENSE.txt",
+      "sha256": "6fc5b7332939dd5c61af3a5f97450f7bc05d4a396dd0bc21ac341716b3b05096"
+    },
+    {
+      "name": "assets/images/case-studies/store-lucide.svg",
+      "sha256": "baa4780bf0de582d4901143fce1379428d813a51d6f31aa23ef4877280ac0d31"
+    },
+    {
+      "name": "assets/images/case-studies/tejas-trading-analytics.jpeg",
+      "sha256": "78202754ff7757bd7164957582a45a0915a3a7a4d17de14e94031982a61f5284"
+    },
+    {
+      "name": "assets/images/case-studies/tejas-trading-logo.webp",
+      "sha256": "f799bae822fba1403a347824d11659b50bb5a1ad0bbc254439429f103a511fc0"
+    },
+    {
+      "name": "assets/images/case-studies/tejas-trading-users.jpeg",
+      "sha256": "511f8714e6aec0d15ba54f24d65eab9a86175d346373edc5f4863353e14a142d"
+    },
+    {
+      "name": "assets/images/case-studies/terraformados-antioquia-logo.png",
+      "sha256": "8e73c89eddfa11f50540bfab044c01d34cdb443a44ed57cc1e59c1c7729b73f2"
+    },
+    {
+      "name": "assets/images/case-studies/terraformados-antioquia-sem.jpeg",
+      "sha256": "efc2cb1225af9ec0af061a9546a86f430c38a5da1ff95b1a9b46874ad40b64fc"
+    },
+    {
+      "name": "assets/images/case-studies/terraformados-antioquia-seo.jpeg",
+      "sha256": "4b74bd906546eb633de7c7e011084c3bcc85a0d3668ce29bedd81d41b0a151bd"
+    },
+    {
+      "name": "assets/images/home/ai-automation-workflow.png",
+      "sha256": "484a432558909f312e5c6f8bc32c239595dfa98dff5613a45563ab11b8f6dd90"
+    },
+    {
+      "name": "assets/images/home/ai-automation-workflow.webp",
+      "sha256": "67f977f74e3ac26294be06070fc6d474b976abcee70244612d52caec42f04acc"
+    },
+    {
+      "name": "assets/images/home/organic-discovery-search.png",
+      "sha256": "8f8ff378a24c7fedc57a125313fc35a1cb6bbdbf3593b1718b3369e531715066"
+    },
+    {
+      "name": "assets/images/home/organic-discovery-search.webp",
+      "sha256": "5137bb5831620aca7c6556a75cfbde008f05306d506def8d83da62554778735e"
+    },
+    {
+      "name": "assets/images/home/paid-ads-platforms.png",
+      "sha256": "8a86be32244327137dba3cee192904fe48c04fbc911b41c2c53019c6d0048bbb"
+    },
+    {
+      "name": "assets/images/home/paid-ads-platforms.webp",
+      "sha256": "6c88a03a660f9f9acfb8e8610d0a64ad3b71d1e87d0042bce07cbdc66bf16d05"
+    },
+    {
+      "name": "assets/images/home/ranking-rebels-platform-orbit.png",
+      "sha256": "b828991f3d2a8288110d2649e9feb1dc24030f5d981f9ffd8989c1a9d6444727"
+    },
+    {
+      "name": "assets/images/home/service-selector-brush.png",
+      "sha256": "c4d19da98f61eda4405424e3842fb93f602419fd87876fa245ccfa58170766b1"
+    },
+    {
+      "name": "assets/images/journey/client-partnership-handshake.png",
+      "sha256": "6dde96271f95f6c0a06d5915f9fcd5f0203347fea151da92d26de67ce8cc8b66"
+    },
+    {
+      "name": "assets/images/journey/client-welcome-handshake-session.png",
+      "sha256": "5527529a6690568492e7a4aedc3dbd4b0ca478494c4717a03e4657d2ceb0d9ff"
+    },
+    {
+      "name": "assets/images/journey/client-welcome.png",
+      "sha256": "5ccf73a13c4d40645ccf68fcf5a256e107c06344f8dc2d0d7a4ce9ca3a4c52b2"
+    },
+    {
+      "name": "assets/images/journey/launch-review-client-session.png",
+      "sha256": "e53a2fe5c849d0cf2de449b6748d2a591f4cd4049c55fa98a79042fac7cdad82"
+    },
+    {
+      "name": "assets/images/journey/launch-review.png",
+      "sha256": "0edcaedd7f69c711b382566ebd402bbc07216db9a0cd327abe89eb2a60c1adc8"
+    },
+    {
+      "name": "assets/images/journey/strategy-presentation-session.png",
+      "sha256": "40c8b36d5900cdcb3fc4ce05f5454eb0dc6167088c1ec1e2c84a57e216115665"
+    },
+    {
+      "name": "assets/images/locations/australia/australia-market-map.svg",
+      "sha256": "1eb6b9e76dbb822cbc0ab1d99b0ad866de918acf3b7e58b2a468a400c115de59"
+    },
+    {
+      "name": "assets/images/locations/latam/earth-america-svgrepo-com.svg",
+      "sha256": "a27cb1c0e7b51ce8cffe02d97410f57aad236e2dce94c2d718062f0efa75acb5"
+    },
+    {
+      "name": "assets/images/locations/netherlands/netherlands-svgrepo-com.svg",
+      "sha256": "7b43824b4b66f8d7e565a5c02b58f45792b2c32a9485e6ec0d132bcfd9e3fced"
+    },
+    {
+      "name": "assets/images/organic-discovery/search-visibility.svg",
+      "sha256": "70cd941913e33e4e03860ecdb18a8c8b5832863ac24eb87e77a9f8c379a48e31"
+    },
+    {
+      "name": "assets/images/platforms/logo-apple.svg",
+      "sha256": "cbc36e6e70deb9764f033108a090de80df021a665b6209e4cf44f8bad06fd8db"
+    },
+    {
+      "name": "assets/images/platforms/logo-bing.svg",
+      "sha256": "84f9106631a7a597565d9c9c7799d60ef7edd5ba717d0a7e8a42bc36c9adec81"
+    },
+    {
+      "name": "assets/images/platforms/logo-chatgpt.svg",
+      "sha256": "66b6fc567f928a4d00818b9e6838c344a00dd4f1c4db03a03331bdcaaca926e4"
+    },
+    {
+      "name": "assets/images/platforms/logo-copilot.svg",
+      "sha256": "65d1ec3dfe6749669b3114fa817ac5b5040ba1617706e9658842e85b81c99166"
+    },
+    {
+      "name": "assets/images/platforms/logo-facebook.svg",
+      "sha256": "ff69f7e74dcfd7bb8ef7549786cca010a7f1dfdbfa19c71d28b06c1eb807ebb8"
+    },
+    {
+      "name": "assets/images/platforms/logo-google-maps.svg",
+      "sha256": "28746379318587ce74ff9837d7507e7e49bd95b13ec0245b6a93896c2682274a"
+    },
+    {
+      "name": "assets/images/platforms/logo-google.svg",
+      "sha256": "147b64b183daad84440103815845150903f6175357419b0ccf2e5a6b622e62fa"
+    },
+    {
+      "name": "assets/images/platforms/logo-instagram.svg",
+      "sha256": "1060526807a40fb7c1fcd06fa720865d295a9dc58f409660c716ec16bf06421e"
+    },
+    {
+      "name": "assets/images/platforms/logo-linkedin.svg",
+      "sha256": "2655cb36a5d73489599f0df575d9d64e379234f1607f04c632cc3ebb3626fc6f"
+    },
+    {
+      "name": "assets/images/platforms/logo-perplexity.svg",
+      "sha256": "407ad1254700503eb124ef5650cc267d83c79dc6dea9e9332fbdc92bb2bdf262"
+    },
+    {
+      "name": "assets/images/platforms/logo-pinterest.svg",
+      "sha256": "e62a39067cdabbd20455b4fda2b6419a6ebc3c099feb654c74eefeda5b3b85ab"
+    },
+    {
+      "name": "assets/images/platforms/logo-tiktok.svg",
+      "sha256": "474e542d15b871647fb7b1f7eeeebf899de7de7577c43dc9005c4ac82e2fa4a9"
+    },
+    {
+      "name": "assets/images/platforms/logo-whatsapp.svg",
+      "sha256": "46d8d8acf2cf2bee7618db0924c6b53329cd70c919e763e7c77f0c12d03b53be"
+    },
+    {
+      "name": "assets/images/platforms/logo-youtube.svg",
+      "sha256": "74813b01feecff5e0e7b556d26b5c75768525877ccaf376424b0022e3f430b78"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/bing-gym-airport-west.jpeg",
+      "sha256": "a0f0aa59656b2177875e502943f71f4d36bbbb5481cff49b75078aa5dcdf0f69"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/chatgpt-gym-airport-west.png",
+      "sha256": "8e71f78c9f93e8604748817d43ab63e87679eda3fefb745f7b036ae875dd336b"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/copilot-gym-airport-west.png",
+      "sha256": "eec8e5e6ba94104457b30b77d2e563637f824cde9c8e879c2787d3448b283744"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/gemini-niche-gym-airport-west.jpeg",
+      "sha256": "2f473178e49e9f04e0b63acdbbab0277034e858dd29225ef58d48d60faa1b7c1"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/google-titanium-gym-search.jpeg",
+      "sha256": "d9e33ee353c2a85ab028403a994a542b62e8ef487b22afa12f8473bbe573c7cd"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/google-titanium-gym.jpeg",
+      "sha256": "829c3e2876cde5e77e8a6c633ba0e1036d03e618cc591c43d584c7172fe93061"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-apple.svg",
+      "sha256": "cbc36e6e70deb9764f033108a090de80df021a665b6209e4cf44f8bad06fd8db"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-bing.svg",
+      "sha256": "84f9106631a7a597565d9c9c7799d60ef7edd5ba717d0a7e8a42bc36c9adec81"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-copilot.svg",
+      "sha256": "65d1ec3dfe6749669b3114fa817ac5b5040ba1617706e9658842e85b81c99166"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-instagram.svg",
+      "sha256": "1060526807a40fb7c1fcd06fa720865d295a9dc58f409660c716ec16bf06421e"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-openai.svg",
+      "sha256": "8e55feee1a12e93250d0f5886dffc99cce840410614ce4196006599a12425977"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-perplexity.svg",
+      "sha256": "407ad1254700503eb124ef5650cc267d83c79dc6dea9e9332fbdc92bb2bdf262"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/logo-tiktok.svg",
+      "sha256": "474e542d15b871647fb7b1f7eeeebf899de7de7577c43dc9005c4ac82e2fa4a9"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/meta-ad-library-titanium-gym.png",
+      "sha256": "6a1d2f034c806c734810ccf46d7959d3cf18bffbe571eba28425c2cd2e1d8865"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/perplexity-gym-airport-west-comparison.png",
+      "sha256": "3f251b6066ad3a4227d27c385eedf153e209304c2b1c157d70bfb643854c5035"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/perplexity-gym-airport-west.jpeg",
+      "sha256": "83ea77a03e54dadb78343f852256406754115ae87e832fb2664b3f60636286ab"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/titanium-gym-floor.jpg",
+      "sha256": "0775766fa2807ab448842d4700e52b7f786e827d2591d714618a796cda9893b4"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/titanium-hero-01.jpg",
+      "sha256": "2bed92f040ca3ef272a089240a25392b4485fc5d3127805c4798d35d3d8405a6"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/titanium-hero-02.png",
+      "sha256": "8fb2cc88e601b2bae1d48bd69cc3c165b191069c74451d288f0da67d4e1b3ef2"
+    },
+    {
+      "name": "assets/images/proposals/titanium-gym-9c42e7/titanium-hero-03.jpg",
+      "sha256": "9b0bb13b21cf80d4662d94bd806f4268715b3401e6ccf051c207e3d9420f7dd5"
+    },
+    {
+      "name": "assets/images/proposals/winpress/winpress-logo.svg",
+      "sha256": "1fc40638f6eafa7bd5219b1f07f664bdc615e21f7850fad24f09f55ac0404b4a"
+    },
+    {
+      "name": "assets/images/results/campaign-results-english.png",
+      "sha256": "b7ffdf83380416816dd8ef6c94524edbde90053359a4358abd0ef76c3a900b99"
+    },
+    {
+      "name": "assets/images/results/campaign-results-red.png",
+      "sha256": "9da4f8a58ee872732c34af99026c4c2441ed3faaf7160e6b33f542128fa66241"
+    },
+    {
+      "name": "assets/images/results/google-ads-results-english.png",
+      "sha256": "f52ce37e59f5631ba5ae23e6f3cac09bd2628c5ede5d7e93ca296c40980c7ea0"
+    },
+    {
+      "name": "assets/images/results/google-analytics-results.png",
+      "sha256": "f1071871fc2fe49b5b050df0d820b790c155f96e5e94ef0730fe82ca02661c24"
+    },
+    {
+      "name": "assets/images/results/google-search-console-results.png",
+      "sha256": "99a7a85999d058310b0f35910387450e282981a0c01e1f120e90a45818173d5b"
+    },
+    {
+      "name": "assets/images/solutions/automation-workflow.svg",
+      "sha256": "fc2100d734e62dd3657f47a6bee7ae4a537850e055e84d253725edc0849c91a7"
+    },
+    {
+      "name": "assets/js/australia-map.js",
+      "sha256": "44018b9f786518bac9849519ac1f994706421f7fef732f3e6f3a54e8e6300dd0"
+    },
+    {
+      "name": "assets/js/automation-conversation.js",
+      "sha256": "6f2c7e833e931ee4e3b5b8f769998a20023318a2fd9b519905eb87b502aecb8f"
+    },
+    {
+      "name": "assets/js/blog.js",
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "name": "assets/js/contact-page.js",
+      "sha256": "ad225eb1cc70ac02bed12e8fb5e087c384b8fc9e455b943dc4d3427a214207f5"
+    },
+    {
+      "name": "assets/js/google-analytics.js",
+      "sha256": "52dce91c369e82d1764853c67742041f4ce3d29451c953611493d7d69177e5e0"
+    },
+    {
+      "name": "assets/js/lead-capture-config.js",
+      "sha256": "68227fd5542c77f6a28413176f4900c9cb461558eb2929c874bbd6acf0e4a54f"
+    },
+    {
+      "name": "assets/js/lead-capture.js",
+      "sha256": "9de1603eb6c63898f9e9eff5ef5ca0e2ee11774e239d332a15e2724845cdf927"
+    },
+    {
+      "name": "assets/js/market-map.js",
+      "sha256": "fe3c1d43bed17525f5df2f229a9a657910fba4b4c6598ef0cf3f1773ceacaeae"
+    },
+    {
+      "name": "assets/js/next-case-card.js",
+      "sha256": "16b5067be0da0d40bc8a4df27981112810e0360c808c4768ae9f80ec0d95be20"
+    },
+    {
+      "name": "assets/js/organic-discovery.js",
+      "sha256": "f63d9e0be562289ec8438cfb8b5d4e72902e3d36d7e81a7438a9c5f53a657825"
+    },
+    {
+      "name": "assets/js/paid-ads.js",
+      "sha256": "2cc33ffe52fbae55f07a45fb9c097a18a961ebc4d7b7c48af032ffc153826469"
+    },
+    {
+      "name": "assets/js/platform-ribbon.js",
+      "sha256": "27e4f00627f858784019167d232191aca54e662604dc329770b171602f656097"
+    },
+    {
+      "name": "assets/js/script.js",
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a"
+    },
+    {
+      "name": "assets/js/scroll-progress.js",
+      "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86"
+    },
+    {
+      "name": "assets/js/service-lead.js",
+      "sha256": "4b6ed60971d78f3b721d83faf38ca3de772b084d4f58fec9ae4ee56d2fd0b2b8"
+    },
+    {
+      "name": "assets/js/solutions-hero-flow.js",
+      "sha256": "60dc4130cd2514c46fa5ac9a8a04df097f661775a398bc3e8b7e47e1bec6f167"
+    },
+    {
+      "name": "assets/vendor/country-flag-icons.LICENSE.txt",
+      "sha256": "197bacbd1e1d9f40017ab2ae3dadd1383a5aa70bf7a2d749dcef474ec6e3c5eb"
+    },
+    {
+      "name": "assets/vendor/country-flags.css",
+      "sha256": "a4dbfb85e506e413b3ba3357b41c984d30ea4a0f307a932b84670554e3a4da28"
+    },
+    {
+      "name": "assets/whatsapp-redirect.html",
+      "sha256": "10dea39e87c1e6c58f9f6d3e9619bd4d4e6871b96a2371068aa82bc494f5cc45"
+    },
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "06f42574078d3d2e1d5222b8b576cb702bee653ea82f65e3096489209766d5c8"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "55b38f1df96ee5c2a831631a67df97e287623a2a088174627b248f8056c1cf54"
+    },
+    {
+      "name": "blog/is-seo-still-relevant-ai-search/index.html",
+      "sha256": "612d6aadb83dc12174248c83aa96e1e7db96731c6340dc3e240dba5d15777513"
+    },
+    {
+      "name": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "4388e2b654d7abc3c6864073133c37c721ee302ce0a44f3d490268e7a5ff2791"
+    },
+    {
+      "name": "blog/what-is-seo/index.html",
+      "sha256": "666bdcbe83a9d4a4ee373cc2eb4435f8243ef978bab438e4f136d8bca76e3d2b"
+    },
+    {
+      "name": "case-studies/index.html",
+      "sha256": "3316fd6dfef1694d4050d1bf2b7ef02f907fc06da5112ea8354cc34ca5351f0f"
+    },
+    {
+      "name": "contact/index.html",
+      "sha256": "4903085d28bf620a7f054043ea57583550dddd173d3e7e638edda93e8b9255fb"
+    },
+    {
+      "name": "cookies/index.html",
+      "sha256": "685d4434f001c348043895556412a0ab16285ade57a083c28ef878ffe0f261d6"
+    },
+    {
+      "name": "design-qa.md",
+      "sha256": "2d1442a70ad5406c0e78709f521f3a9f3ec245db324d9ffb46c7e888cde7ced9"
+    },
+    {
+      "name": "favicon-16x16.png",
+      "sha256": "ff6afa7511cbf4caf1c41b06b3f2822cf857ffe1ffccf5910d6bce72664b15e3"
+    },
+    {
+      "name": "favicon-192x192.png",
+      "sha256": "ed8d01cf77bdfebe34666982da91939fc2904a6e6abee9481f3575e03a759b25"
+    },
+    {
+      "name": "favicon-32x32.png",
+      "sha256": "b1b06575b1238218f7b6ccd8153e513da91e0e8b3c826ca05968bf0a679f0f9f"
+    },
+    {
+      "name": "favicon-48x48.png",
+      "sha256": "c678aa4cb04a60879b8ad4df0c7aeb2349d4225ceda3ed2edd85fe7b6e1e5380"
+    },
+    {
+      "name": "favicon-512x512.png",
+      "sha256": "befb2b205b8b5fe5498856427247be97add32012195016e35ef408493eb857a7"
+    },
+    {
+      "name": "favicon-96x96.png",
+      "sha256": "638b567cb3e2dd2a022a88e5bec7c3b468ac732dacd3008d152c6082c3b401f0"
+    },
+    {
+      "name": "favicon.ico",
+      "sha256": "e1c4d61f035348562f19c525206706a8a65da573dd44120ef9f933ed377ba27a"
+    },
+    {
+      "name": "index.html",
+      "sha256": "8c4f020435d6a7668b791ec0871441bcb1264245934f072e06d29c578bcfcc0d"
+    },
+    {
+      "name": "journey/index.html",
+      "sha256": "db89bf6ae24537914d7bc37c83fb23494ce44c287d565ece5e228dbe614cb6ac"
+    },
+    {
+      "name": "legal/index.html",
+      "sha256": "7fd241b7324e323203bb07ac42d24d2c23ce3eca6780e7dfa1c093996d142b89"
+    },
+    {
+      "name": "locations/australia/index.html",
+      "sha256": "6ae379e7dded7333d3a6e7a83ceec980dd61b0c6cbab758b3cb3e1fcdf94b003"
+    },
+    {
+      "name": "locations/index.html",
+      "sha256": "3c32c74bee27374371d2b1f1235f611ca4a7c200a58fcc9dd20feb154acace0d"
+    },
+    {
+      "name": "locations/latam/index.html",
+      "sha256": "def9162a01eab282a938383cad560dde54ea8cfecc413df5a3caa90a50fae63e"
+    },
+    {
+      "name": "locations/netherlands/index.html",
+      "sha256": "24cbfed6c5b44fd200b84c426ca85585890c2d5925971f779c6f69de51a61923"
+    },
+    {
+      "name": "premium-audit.json",
+      "sha256": "3d3d24b332739a889faadd0ecd27982b12c96bad2d6f5941d0ab0f16181fd24c"
+    },
+    {
+      "name": "privacy/index.html",
+      "sha256": "a6db2426b0ca8061f5936f1b56536c36c82065ef793eaee322029b7a9ad421ad"
+    },
+    {
+      "name": "proposals/titanium-gym-9c42e7/index.html",
+      "sha256": "4ae015e279c68222e18e8750e67c42d0e230583c4332886e4790868808a4f6ea"
+    },
+    {
+      "name": "proposals/titanium-gym-9c42e7/script.js",
+      "sha256": "ac3ef424ea8d13d3ebe386f1eb2c692025b7e0e286cdbd29ffd51bea8895c67b"
+    },
+    {
+      "name": "proposals/titanium-gym-9c42e7/styles.css",
+      "sha256": "07b1e748d2eefcf86a862c3deef17676d327e5ba343491e0e56935143eba42ae"
+    },
+    {
+      "name": "proposals/titanium-gym-9c42e7/wellness-recommendation/index.html",
+      "sha256": "469725f7862e0de827a4c56962b32ca95b802b932fa48e5e32dcef8889f0ccef"
+    },
+    {
+      "name": "proposals/titanium-gym-9c42e7/wellness-recommendation/styles.css",
+      "sha256": "6d398ba13e9388d3e88fe6389091a35b8b7f15ad93a17d1648368a01dc286baa"
+    },
+    {
+      "name": "proposals/whatsapp-booking/es/index.html",
+      "sha256": "022b4fe53a89c5219c7761815d052f9c010e85c29e752691157b74c987259e74"
+    },
+    {
+      "name": "proposals/whatsapp-booking/index.html",
+      "sha256": "a2800da73a2088b6c5cd243e5333b7803bd7e67fa77bf8087002368e564f9a0b"
+    },
+    {
+      "name": "proposals/whatsapp-booking/script.js",
+      "sha256": "9415bd32d519d8dc1602eca11b2f6ed9ee0dfe13e547fbac338e46f93e024744"
+    },
+    {
+      "name": "proposals/whatsapp-booking/styles.css",
+      "sha256": "d8eabfabd6dbd29d3f65e9160f7fbd5c9af233d2daa6ba838a2821b544ce4ea0"
+    },
+    {
+      "name": "proposals/winpress/es/index.html",
+      "sha256": "26658bc861991e2e607f62b03df3f3a57996a9d8eb30a1a23b7cdbe02ea93e51"
+    },
+    {
+      "name": "proposals/winpress/index.html",
+      "sha256": "ac0d671c21219ae537d7adbc0fb267e6b5abd4f7c4eca9eb7e9b7d25c4c10f36"
+    },
+    {
+      "name": "robots.txt",
+      "sha256": "240aae6b2488278cfb8543941701a161e71f0d9c08059d75517b4867051a88b4"
+    },
+    {
+      "name": "seo-audit-ai-automation.md",
+      "sha256": "f1c4378546c044df67597f3abb0cf4b76a3511cd5936e865ea5ab8924e8e27f8"
+    },
+    {
+      "name": "seo-audit-organic-discovery.md",
+      "sha256": "91eeb2a8083c9bebe9a52e937344e7f42ba988a11e4e3e094f9762151247237c"
+    },
+    {
+      "name": "site.webmanifest",
+      "sha256": "8dea2b17f6aa1875402e3cd7178561960c33f3fd2fd2bef0662604149c90e44a"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "7af11cd21af6f47cbbe644cc8564b30ac6da70b311efb4053c081f21fbbece41"
+    },
+    {
+      "name": "solutions/ai-automation/index.html",
+      "sha256": "51c922b0b4f1284899bad0d86c5a59f88fd1a3c93617921d08bc59668ce816a4"
+    },
+    {
+      "name": "solutions/index.html",
+      "sha256": "a0b5290a0f1412fe477b3677a3b420ac5ddd6df35a7dc69c2e5b6379c7f23e2a"
+    },
+    {
+      "name": "solutions/organic-discovery/index.html",
+      "sha256": "76cf33c88939f23a4de2e5f4ed835b8a565880df1c761d0a48d688e1dc942458"
+    },
+    {
+      "name": "solutions/paid-ads/index.html",
+      "sha256": "74307bc0f11cdb6a2a0ced3b1cddfd50f0d87f9fa953f2ecf87a334bda47d018"
+    },
+    {
+      "name": "tests/about-lighthouse.test.js",
+      "sha256": "627c83686bd928ffa8f1ac6841ace822f955ae10b95ea4635255f975908cc1c5"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "29ce639b503b1fa6f0138f777ab9dc89cbb4b1adc1df7072de59122a21646a96"
+    },
+    {
+      "name": "tests/ai-automation-page.test.js",
+      "sha256": "590dc382b4f9d0301d3d5dad8d1121cdff0c927a86571a52a161d68363dcfd42"
+    },
+    {
+      "name": "tests/australia-map-runtime.test.js",
+      "sha256": "186ed233f4279378032984021571ff4a19a71410f62c4bc52f45cdce6a995128"
+    },
+    {
+      "name": "tests/automation-conversation.test.js",
+      "sha256": "e0b444e60a4da908ee070710fa7bfb0c713202cca05313df06ec0df2b861cf40"
+    },
+    {
+      "name": "tests/blog-page.test.js",
+      "sha256": "3bd769d197a9a7dabb845db989725e97e0ef9c9d463b8b957c4c3a820eaddc11"
+    },
+    {
+      "name": "tests/contact-page.browser.cjs",
+      "sha256": "6b5be546322917b07ed4a2df74a3b8f5982dbf89a6e1bc5b4b665b83423a22a2"
+    },
+    {
+      "name": "tests/contact-page.test.js",
+      "sha256": "ac1a11fd773e16a50402fd8f43e6e5bea7abc4af60ad7fb5518b33953852046f"
+    },
+    {
+      "name": "tests/header-responsive.browser.cjs",
+      "sha256": "3057572470486c267663749fe07b45ba8a8ceae08dd616b2d9b5f008f1787123"
+    },
+    {
+      "name": "tests/header-scroll-surface.test.js",
+      "sha256": "5498a3a590ff98c2e2dbf02f0965ff5b301d34a1920f21b1be46b773658ad2e0"
+    },
+    {
+      "name": "tests/lead-capture-dialog.test.js",
+      "sha256": "0599bca0261de495734bffcb8fd42ea3d1f7b9484b245e8b598cd36894cc0f37"
+    },
+    {
+      "name": "tests/lead-capture-integration.test.js",
+      "sha256": "ea5af76916b4f159429ab2e32211cb6dfd583168bacb9377e0998c398e4e3bf9"
+    },
+    {
+      "name": "tests/lead-capture-state.test.js",
+      "sha256": "fb25426c985bbe478d6391bd5449bf544d4a3b6c3c6ae4238e0705f703af6751"
+    },
+    {
+      "name": "tests/lead-capture-styles.test.js",
+      "sha256": "8077697075c809af501f9bc3c7baab45f3dc8ddb6a2c662ada795567ec13a4a8"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "994622304d5603648cf814ac1586cc5e707fbafe8e6e03481ce405c0a62ae233"
+    },
+    {
+      "name": "tests/market-map-runtime.test.js",
+      "sha256": "c3483c9debbebf2661f4e07d3f956ae2e893145d325f78ae56d804fd3770bbf6"
+    },
+    {
+      "name": "tests/navigation-runtime.test.js",
+      "sha256": "abad9dea6fa42f398339a702f59d370b5bc295bca29d1af9023475afb2fa2272"
+    },
+    {
+      "name": "tests/next-case-card.test.js",
+      "sha256": "0cb740d849e1174a02004dd76af2e77afdd709b94ea46d44926e16d868b00276"
+    },
+    {
+      "name": "tests/organic-discovery-page.test.js",
+      "sha256": "cbf9657606725598eb2bec38734a797e3bce596b96f6600b4b5dfdb8debd8b9e"
+    },
+    {
+      "name": "tests/paid-ads-page.test.js",
+      "sha256": "03e897eb86be8f02aeb5f996d00753e65417219c427b1f7611640771ac87d67e"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "b79e01c4d4491cfb565db8b1eaa7ee733fbf52beb00c45d49fcf5d7b8d0d3786"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "989958c5c7f426e146b3ffe6dc438797f12588ced0b65fb1ea0b5ad55b5271df"
+    },
+    {
+      "name": "tests/service-selector.test.js",
+      "sha256": "2f0e64eec74200552491f7dbccaa0ba356b2bceb2b77c45a4f131e7a5114e54f"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "1be33de641aad76ff8f92ff5b2324be45acf34135ef62d226cc72001517369d1"
+    },
+    {
+      "name": "tests/solutions-page.test.js",
+      "sha256": "5d88977833390a62a2ec88e2ea4d87c28bd8ed6b381391737384541d025956eb"
+    },
+    {
+      "name": "tests/titanium-proposal.test.js",
+      "sha256": "8a8d335443b9dad33de15d4cea48657622863ac3646dc6d6806b5f70eba339c9"
+    },
+    {
+      "name": "tests/what-is-seo-blog.test.js",
+      "sha256": "d3778f999a50e9623a9298f7abe9c816d29328433562815cead371be43ea5d77"
+    },
+    {
+      "name": "tests/whatsapp-booking.test.js",
+      "sha256": "50501fb965dc68da76769ac1626ea5c5f73291703b27261d291526441e79343a"
+    },
+    {
+      "name": "tests/whatsapp-redirect.test.js",
+      "sha256": "3ba28837b83cfad01c083f8af1239576d8512745b61cf80d898d3eb78cace823"
+    },
+    {
+      "name": "tools/build_ranking_rebels_operating_agreement.py",
+      "sha256": "7b3390d548c715171276f0ef6eddc4bae88e39059c5e383348801efdc8089f5e"
+    },
+    {
+      "name": "tools/publish-ai-agents-blog.cjs",
+      "sha256": "edb512710a4b78371f4bdcf407826854f998c1dd9f9ee5f574a4f9ef1776dc7f"
+    },
+    {
+      "name": "tools/publish-blog.cjs",
+      "sha256": "c47a0575bd0e8165feabd185a8b206eed49b4626fca730c7a1cc8708d4e7aadc"
+    },
+    {
+      "name": "tools/publish-local-seo-blog.cjs",
+      "sha256": "3ef17c39002b81f5af879cd04ffea09d82b35f00c6e0ec53995a5aa0f6387465"
+    },
+    {
+      "name": "tools/publish-what-is-seo-blog.cjs",
+      "sha256": "527eb74bf67f36fab882099f38fdb361edacddce6022133d7406d52f3d6073ae"
+    },
+    {
+      "name": "worker/README.md",
+      "sha256": "e1a44ae2ede9e82d00130d2bf0a5525041c6923346703f3502fda8d123dd0b70"
+    },
+    {
+      "name": "worker/migrations/0001_create_leads.sql",
+      "sha256": "56c2e7f17b703cd41110828f9f2c47b8f7aec0942162e60ecb9a0fded0063700"
+    },
+    {
+      "name": "worker/migrations/0002_add_business_website.sql",
+      "sha256": "1b8e30844237e020c0fbec936b6f694a6545540367166b5c20df802cd8d5abce"
+    },
+    {
+      "name": "worker/migrations/0003_make_personal_fields_optional.sql",
+      "sha256": "6b85f9e34928b244aeb9dca011bdc7578146865ee44a57520672238e430af5b4"
+    },
+    {
+      "name": "worker/package-lock.json",
+      "sha256": "aad837f05fce7aecd9b3a064c5fbc020ac5fdb9c6b38701fbd70e32079c7ded7"
+    },
+    {
+      "name": "worker/package.json",
+      "sha256": "b80ec2ab6d85ab6e430df0aa2ea7838d949045bd78eace7d797308c8d98f0103"
+    },
+    {
+      "name": "worker/src/email.ts",
+      "sha256": "33715d250546c1e28165157d970fdf9925803428b74d193f076e5d00e95aeb8e"
+    },
+    {
+      "name": "worker/src/email.vitest.ts",
+      "sha256": "efc6bd237d6b7765bbc10e2ef2befad9558254d047dc1c73d405b6363251581e"
+    },
+    {
+      "name": "worker/src/index.ts",
+      "sha256": "3c4e75d8c218135cdc80bd451aa1708f6f63263d0d432ff48e4e711c4496ead1"
+    },
+    {
+      "name": "worker/src/index.vitest.ts",
+      "sha256": "3a344724898a6f268b361ea6b723ed4ff256943d862412dee23cb17b1ddf2917"
+    },
+    {
+      "name": "worker/src/leads-migration.vitest.ts",
+      "sha256": "1deb9fa428e61a172ad0cecbd085b8e5ec6188db251271bf1f9a554b6f9ced77"
+    },
+    {
+      "name": "worker/src/queue.ts",
+      "sha256": "e2556c97e27baadb1e4457fecb0c8a163c02384f04c470b457360fe8ab5c4702"
+    },
+    {
+      "name": "worker/src/queue.vitest.ts",
+      "sha256": "c9a1da3fade9dd2dba18eb39e8cbdb3442d728172eb94afd779a1d1486698b17"
+    },
+    {
+      "name": "worker/src/request-body.ts",
+      "sha256": "90feccecdd9448e4a3fb536130926b6fb0f84aaa4e53dcf2a2871b31a65c550f"
+    },
+    {
+      "name": "worker/src/request-body.vitest.ts",
+      "sha256": "e59ffc7932ed73d3566093340947874fad8cec144695758096b9ae093ee533e4"
+    },
+    {
+      "name": "worker/src/scheduled.ts",
+      "sha256": "6ae19b6d30815a07fffec42c6b42da74fd20ebda53465570283cb60be112470c"
+    },
+    {
+      "name": "worker/src/scheduled.vitest.ts",
+      "sha256": "d851658dee600540280078fd5acb338ed2998e7f22feb33df97dc0736db84c6f"
+    },
+    {
+      "name": "worker/src/security.ts",
+      "sha256": "c7da40673e0fd5c9f2a945e40976d2dc56b4f93f2bd425062c6bac901f2134c1"
+    },
+    {
+      "name": "worker/src/security.vitest.ts",
+      "sha256": "98cd50abfb42785a3e33b765952dfdad9f7bcff24acb3c3293321cce524fb99d"
+    },
+    {
+      "name": "worker/src/storage.ts",
+      "sha256": "deb5cb59c42124b3ff27e4b87330b64b56d52bc034e7fd8e8d980bb57461ee6c"
+    },
+    {
+      "name": "worker/src/storage.vitest.ts",
+      "sha256": "5635e6427f14286d0eaf9784a034926406390b4db359e8d5087315a0d76bcee0"
+    },
+    {
+      "name": "worker/src/turnstile.ts",
+      "sha256": "a4d0df73021ae280fd92ddd5feed79176cad3ac2fcac45dd7d644a726aa7a3e2"
+    },
+    {
+      "name": "worker/src/turnstile.vitest.ts",
+      "sha256": "90c05af107c9d0604d1ea5802b267d18e5a9c2abda91ea7ab43e4d1fb1159428"
+    },
+    {
+      "name": "worker/src/validation.ts",
+      "sha256": "de406836f401abe2500bf35e3a01caa769e472f71cbf650a00fdd027364fdec4"
+    },
+    {
+      "name": "worker/src/validation.vitest.ts",
+      "sha256": "40b8c08f7b6e5c4fee60b317bbc01ce49efa624370eae1c98ca0e0f1e3aeaddc"
+    },
+    {
+      "name": "worker/tsconfig.json",
+      "sha256": "11675be17510597eac3f0334c94bf5d91320201a7e2ca889997d08c321891e06"
+    },
+    {
+      "name": "worker/vitest.config.ts",
+      "sha256": "1b309293df63acf29bf46f7636675c1af2d321876391495d017bd00ce42cd70a"
+    },
+    {
+      "name": "worker/worker-configuration.d.ts",
+      "sha256": "e06ebdcae2392091ba784e8c9597bb0384c2a555194ae126da9c505c773aa7bc"
+    },
+    {
+      "name": "worker/wrangler.jsonc",
+      "sha256": "600bde35f0d8bf2c053eede4e85cb8f8cef5149a5bbc94e6aef3c6ad43040eac"
+    }
+  ]
+}

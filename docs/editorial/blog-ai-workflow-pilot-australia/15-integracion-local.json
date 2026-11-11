@@ -1,0 +1,899 @@
+{
+  "date": "2026-11-04",
+  "blog": 9,
+  "baselineDir": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\agency-website\\.cache\\blog9-release-baseline-20261104",
+  "baseline": [
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "64c8741171f4ef8a6056eff4e7aa152a81c3a51ae1b409661bbbda614a64b356"
+    },
+    {
+      "name": "blog/custom-software-benefits/index.html",
+      "sha256": "5b7fecbe95dd343c1d37edffe238f1bd89812dda7dd8d961ca2fcc5165d72282"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "5de83ed6c72a5f85ea1976d9148978511e95299a19cc53e2631bb4b161f85488"
+    },
+    {
+      "name": "blog/is-seo-still-relevant-ai-search/index.html",
+      "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+    },
+    {
+      "name": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+    },
+    {
+      "name": "blog/website-not-showing-up-on-google/index.html",
+      "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+    },
+    {
+      "name": "blog/website-visits-few-enquiries/index.html",
+      "sha256": "51b3cf9bede1c55a899098254fd791eb63179390630aabeabdf1a684ca2fd3aa"
+    },
+    {
+      "name": "blog/what-is-seo/index.html",
+      "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+    },
+    {
+      "name": "blog/which-business-processes-to-automate-first/index.html",
+      "sha256": "d742e548da2583decf5e23e6da72d3343b4855acb7cb82ddbe7d7225cf630a78"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-comparison-mobile.svg",
+      "sha256": "d7ef510a48abda63e097bbb0b510094152c5b109a46697688a2a9fa99edfa810"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-comparison.svg",
+      "sha256": "cffaf54643afccdc98c6eee79a99976842617cbf23bd544c7b50d402cdd8b595"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-illustration-1280.webp",
+      "sha256": "23b9aab868b6023ec5dd8e52407faa3a56cf2018d4f9117974b672ea2f206974"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658"
+    },
+    {
+      "name": "assets/images/blog/automation-prioritisation-illustration-v2-1280.webp",
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "name": "assets/images/blog/automation-prioritisation-illustration-v2-768.webp",
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    },
+    {
+      "name": "assets/images/blog/custom-software-illustration-v2-1280.webp",
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "assets/images/blog/custom-software-illustration-v2-768.webp",
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    },
+    {
+      "name": "assets/images/blog/enquiry-checks-mobile.svg",
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1"
+    },
+    {
+      "name": "assets/images/blog/enquiry-checks.svg",
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e"
+    },
+    {
+      "name": "assets/images/blog/google-visibility-illustration-1280.webp",
+      "sha256": "684083d21db56d421e350fac4561e27d527af264d2916b78e9c121551520a356"
+    },
+    {
+      "name": "assets/images/blog/google-visibility-illustration-768.webp",
+      "sha256": "97e3e2ea6de84970e37d95dcd65acb8465140d37b96b4524d325b89fec1c0cac"
+    },
+    {
+      "name": "assets/images/blog/local-seo-discovery-illustration-1280.webp",
+      "sha256": "f702c864f923bf947317d08f8db0b7b8f29ae45a52e5c930e5e380a3bf298a2b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-enquiry-journey-mobile.svg",
+      "sha256": "2b08475470decf3b145d5a00798dde0cf506b31469dc38640c4bcfaf7667791b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-enquiry-journey.svg",
+      "sha256": "6c8fb764dece230e51048d5d91a6210b27f93cbcbd2494fe0563cc20e8e544a2"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-brisbane-journey-mobile.svg",
+      "sha256": "30ca391778c8ecb99e0f927bc83b813ced0d51da90be5fc96c2c9062321a9cde"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-brisbane-journey.svg",
+      "sha256": "24846aedc48610f0479457e49962d75121f060fd776cf94d25aec649d26cfb84"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-discovery-illustration-1280.webp",
+      "sha256": "e17437da8d2cadd30b6625910e33c9755e111903a552477b6ef8ff8acb2e15c7"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-discovery-illustration-768.webp",
+      "sha256": "dabef7122ac3656c442ff264bfeb384b600c7cce3854ae584f0bf8ff4fbaed22"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-melbourne-journey-mobile.svg",
+      "sha256": "bbfbc544b1167b1d8a5866a6159e5c6bb9d47e41b7f2f90171d74536ae42f809"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-melbourne-journey.svg",
+      "sha256": "56d30f2b027cda14117de0f69338d8b89a383d7ef8091073c3724b6564ce8f52"
+    },
+    {
+      "name": "assets/images/blog/visibility-diagnosis-mobile.svg",
+      "sha256": "e13d4fd9b7f739ed436207efede783798bc2f2a3ababebb1fc8ef7995168bcac"
+    },
+    {
+      "name": "assets/images/blog/visibility-diagnosis.svg",
+      "sha256": "f3ef878a46e748e2bb3ffc05710607525b02221e236f4f67ab4dd3cf41025abe"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v2-1280.webp",
+      "sha256": "077a40fedebf960f07aaa8ccced411c4901916d6e7597c1839455a71e7ebc954"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v2-768.webp",
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v3-1280.webp",
+      "sha256": "9954d76dbd24ef881e1c8efbb9eb83503672b08e327a75f4215532e35dae5170"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v3-768.webp",
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-landscaping-illustration-1280.webp",
+      "sha256": "fa7dc491eb25b0f6932143dfde4854a9cbbbd2d02a6e51baab0a4d3259abc9c3"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-search-needs-mobile.svg",
+      "sha256": "fd899e38a63907bbaaae1d5ea41b6c84573451a457f335e306f33723ba14d769"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-search-needs.svg",
+      "sha256": "f0b82ad7d8a1be5bcc72e7e5293ef38a7ec33fec0db7b99a8a5cc4eff6d6024a"
+    },
+    {
+      "name": "tools/build_ranking_rebels_operating_agreement.py",
+      "sha256": "7b3390d548c715171276f0ef6eddc4bae88e39059c5e383348801efdc8089f5e"
+    },
+    {
+      "name": "tools/publish-ai-agents-blog.cjs",
+      "sha256": "a24c50db79e5b228610d4dc637129237866e65e75f415b120d256621b88cdec0"
+    },
+    {
+      "name": "tools/publish-automation-prioritisation-blog.cjs",
+      "sha256": "a58f735ee7c5bb0d396fafa2676645eb0a12695daec2462ab8ee9b65dccd7cca"
+    },
+    {
+      "name": "tools/publish-blog.cjs",
+      "sha256": "bff3ed2c12e9712a74f747a7b55eb26d680bc10ba8a6ca624e15b99d4ef148a9"
+    },
+    {
+      "name": "tools/publish-custom-software-blog.cjs",
+      "sha256": "3ebd5846260204a094e32096906ecfa5997baef72c28c4008a87f2513b3a90a6"
+    },
+    {
+      "name": "tools/publish-enquiries-blog.cjs",
+      "sha256": "f4f7b1e7ae562b7f2401cef196e462239d2ec5adaefc7b7b9d719ed5cbce18ec"
+    },
+    {
+      "name": "tools/publish-google-visibility-blog.cjs",
+      "sha256": "a4d42d138291041cbf9deb0db4efab9de672507d597c7ab2c0b25f08423a8cd1"
+    },
+    {
+      "name": "tools/publish-local-seo-blog.cjs",
+      "sha256": "d17f2da0cf5333820770155d36ff7c5d8e4b60a2f22a6c032eaf9f43b05ede4d"
+    },
+    {
+      "name": "tools/publish-what-is-seo-blog.cjs",
+      "sha256": "2f3831b851cba74594ceb01115542e11a62553bdc78e3b79e437816f4c689580"
+    },
+    {
+      "name": "tests/about-lighthouse.test.js",
+      "sha256": "627c83686bd928ffa8f1ac6841ace822f955ae10b95ea4635255f975908cc1c5"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "6803ee8db8aa2e2e35d5d26a430edc79887484077be912006876f55a571a0630"
+    },
+    {
+      "name": "tests/ai-automation-page.test.js",
+      "sha256": "590dc382b4f9d0301d3d5dad8d1121cdff0c927a86571a52a161d68363dcfd42"
+    },
+    {
+      "name": "tests/australia-map-runtime.test.js",
+      "sha256": "186ed233f4279378032984021571ff4a19a71410f62c4bc52f45cdce6a995128"
+    },
+    {
+      "name": "tests/automation-conversation.test.js",
+      "sha256": "e0b444e60a4da908ee070710fa7bfb0c713202cca05313df06ec0df2b861cf40"
+    },
+    {
+      "name": "tests/automation-prioritisation-blog.test.js",
+      "sha256": "de3d8cdd1dc5c4cdae5e497288ce9e117cf0ae55ac872308006ff074bd3a0939"
+    },
+    {
+      "name": "tests/blog-page.test.js",
+      "sha256": "70969f10f8a30ddcf8e491895afb17a9080314de0fec49a7d7d8615e749a90b9"
+    },
+    {
+      "name": "tests/contact-page.browser.cjs",
+      "sha256": "6b5be546322917b07ed4a2df74a3b8f5982dbf89a6e1bc5b4b665b83423a22a2"
+    },
+    {
+      "name": "tests/contact-page.test.js",
+      "sha256": "ac1a11fd773e16a50402fd8f43e6e5bea7abc4af60ad7fb5518b33953852046f"
+    },
+    {
+      "name": "tests/custom-software-blog.test.js",
+      "sha256": "bf717028da426d27f002d53d847bc1f8a8b3f4948be6d2f48e89f7f7446ef13e"
+    },
+    {
+      "name": "tests/enquiries-blog.test.js",
+      "sha256": "d989243e0cfadda0f74e60dd9ae616a36f4d5ebc764a9f25658e488a6ea70457"
+    },
+    {
+      "name": "tests/google-visibility-blog.test.js",
+      "sha256": "cfd96f2b63048c70199f00a1a9a5336e4a5665d0260791a7673a057c832e93c6"
+    },
+    {
+      "name": "tests/header-responsive.browser.cjs",
+      "sha256": "3057572470486c267663749fe07b45ba8a8ceae08dd616b2d9b5f008f1787123"
+    },
+    {
+      "name": "tests/header-scroll-surface.test.js",
+      "sha256": "5498a3a590ff98c2e2dbf02f0965ff5b301d34a1920f21b1be46b773658ad2e0"
+    },
+    {
+      "name": "tests/lead-capture-dialog.test.js",
+      "sha256": "0599bca0261de495734bffcb8fd42ea3d1f7b9484b245e8b598cd36894cc0f37"
+    },
+    {
+      "name": "tests/lead-capture-integration.test.js",
+      "sha256": "ea5af76916b4f159429ab2e32211cb6dfd583168bacb9377e0998c398e4e3bf9"
+    },
+    {
+      "name": "tests/lead-capture-state.test.js",
+      "sha256": "fb25426c985bbe478d6391bd5449bf544d4a3b6c3c6ae4238e0705f703af6751"
+    },
+    {
+      "name": "tests/lead-capture-styles.test.js",
+      "sha256": "8077697075c809af501f9bc3c7baab45f3dc8ddb6a2c662ada795567ec13a4a8"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "0f11c8cbe2ae82c61c3c98f6a18acc41e17bc846e9a020b1fd20c46019c0e95a"
+    },
+    {
+      "name": "tests/market-map-runtime.test.js",
+      "sha256": "c3483c9debbebf2661f4e07d3f956ae2e893145d325f78ae56d804fd3770bbf6"
+    },
+    {
+      "name": "tests/navigation-runtime.test.js",
+      "sha256": "abad9dea6fa42f398339a702f59d370b5bc295bca29d1af9023475afb2fa2272"
+    },
+    {
+      "name": "tests/next-case-card.test.js",
+      "sha256": "0cb740d849e1174a02004dd76af2e77afdd709b94ea46d44926e16d868b00276"
+    },
+    {
+      "name": "tests/organic-discovery-page.test.js",
+      "sha256": "cbf9657606725598eb2bec38734a797e3bce596b96f6600b4b5dfdb8debd8b9e"
+    },
+    {
+      "name": "tests/paid-ads-page.test.js",
+      "sha256": "03e897eb86be8f02aeb5f996d00753e65417219c427b1f7611640771ac87d67e"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "d733b019fbbea365da2d4b089f9ee548d458ae56ce3cc102a7b3ff28e51b22b0"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "4823afe71d7a8bb907c5654cfc8fa3929011d7a2b194a9e9cdccc9d4d9e6aa93"
+    },
+    {
+      "name": "tests/service-selector.test.js",
+      "sha256": "2f0e64eec74200552491f7dbccaa0ba356b2bceb2b77c45a4f131e7a5114e54f"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "3e5bef8e7ff5341a3ecea5dc7e0c2451af145d6d8a051a96af68d78ee03d23cf"
+    },
+    {
+      "name": "tests/solutions-page.test.js",
+      "sha256": "5d88977833390a62a2ec88e2ea4d87c28bd8ed6b381391737384541d025956eb"
+    },
+    {
+      "name": "tests/titanium-proposal.test.js",
+      "sha256": "8a8d335443b9dad33de15d4cea48657622863ac3646dc6d6806b5f70eba339c9"
+    },
+    {
+      "name": "tests/what-is-seo-blog.test.js",
+      "sha256": "c2d15ea09e20aad57d2547225e8bc3c89814219ff9a0d19307dc69f534c4f313"
+    },
+    {
+      "name": "tests/whatsapp-booking.test.js",
+      "sha256": "50501fb965dc68da76769ac1626ea5c5f73291703b27261d291526441e79343a"
+    },
+    {
+      "name": "tests/whatsapp-redirect.test.js",
+      "sha256": "3ba28837b83cfad01c083f8af1239576d8512745b61cf80d898d3eb78cace823"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "9c53f7716c50be0ed5b766f874d6ec2cc2757bfb2e64021e9dc9c131e5ef349d"
+    },
+    {
+      "name": "assets/css/blog.css",
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "name": "assets/css/styles.css",
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+    },
+    {
+      "name": "assets/js/blog.js",
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "sha256": "33531c98983e5bd4f3a63ad190e7a4a4bd6a845b222e49a3236f7cbb4be8256f"
+    },
+    {
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "sha256": "ebd816b4c696506b39b22f37613ad152b66ff06bffbdde1909ec1b895d7e8ab7"
+    },
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "sha256": "c71747cc9568c36fe02edada34b8ccbd6ca58c22ccfec6a48f94139bc0d83ee5"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "sha256": "ec29f3f8d58150d115f4740be99df26447dd2bc14d7e1f141f6ec451c7caa936"
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "sha256": "0813fbdbad9d982d1f9b11026f8c36dfdf7c933ee5371827dc78349fff3f2aa7"
+    },
+    {
+      "name": "docs/editorial/blog-google-visibility-diagnosis-australia/03-articulo-google-visibility-diagnosis-australia.md",
+      "sha256": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40"
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "sha256": "250ac1b927d3049e260e2a7d842162b2aeb2ebd27e39bfc675f3a0defdc74bb5"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "sha256": "de6c4b171e9740851b01932fae051e97bfe5c1f999763e09226c1a3b1c7d63c4"
+    },
+    {
+      "name": "docs/editorial/blog-ai-workflow-pilot-australia/03-articulo-ai-workflow-pilot-australia.md",
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b"
+    },
+    {
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4"
+    },
+    {
+      "name": "docs/editorial/blog-marketing-measurement-australia/03-articulo-marketing-measurement-australia.md",
+      "sha256": "04fe46f6f1c6c5c606351c7fc5b4d169bfc32eea57a451d17ab9c3777b1da440"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/03-articulo-business-apps-stopped-syncing-australia.md",
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/04-paquete-seo.md",
+      "sha256": "a66c67c75dc8c54ce5e8eee021b34d99cf36f308d101dcec82969f2567c170d6"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/07-integration-trace-and-recovery-card.md",
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/preview.html",
+      "sha256": "9a7347392614cfe9725cff03328d8991c8413e2bb7d3254d04a97da67c271321"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/preview-dark.html",
+      "sha256": "6fe9611ab32fb682b2b9c98c8325e0c7e41f7e3b5c62ce668f18383898fe0b8f"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/preview.css",
+      "sha256": "880ebb5c48a26e842737526659aea6991bbc27055724b5dbe98a543252142ed1"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/worksheet-preview.html",
+      "sha256": "ca14e9ee3d129b05c2247ff0d19147320d1bfe336785f78ff669eda44fea401f"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/render-preview.cjs",
+      "sha256": "03ee0aa0f36e9e88b27f508e8d707e59adf2517c8a596183b3720485a3aebed5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/integration-trace-illustration-1280.webp",
+      "sha256": "8e628b68aeb01bce69eefea9c8d1be696eb9b8defb236bfa3e595a3cc101d44a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/integration-trace-illustration-768.webp",
+      "sha256": "ef345213191c1b4de7ab0e6f8e53858a81daaa56f77becaa5e813ba7dec6ad9a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/uncertain-write.svg",
+      "sha256": "5364f86c7b843de0db87b9926f9d86166f7e7014c196236de6968dd46782010f"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/uncertain-write-mobile.svg",
+      "sha256": "a72c3af9dc9be01d7138faea7050d624a84ea4662664e7f9b4562686390186a5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/recursos/integration-trace-and-recovery-card.md",
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/integration-trace-illustration-original.png",
+      "sha256": "798c8b2780713a3496766609ed0388e359dc90ce26088e53cb3155bdd734d3ad"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/image-prompt.txt",
+      "sha256": "b028a031cabad656a70047d107628df8c340dd9d5ca60ff28cb3d9d004de453b"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/DESIGN.md",
+      "sha256": "b0eb8f79b9cf7fb6640a54080add79c7c00b54903cddec68ac5eb22def81986e"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/00-lectura-y-alcance.md",
+      "sha256": "050225da73a0fa77b8c68a12929a90f05765a864d76d9e877a79f61e46d7f287"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "f49eae77a54e4483eb20e9b0cac44316bf311b48e38f32b537cf616de95e7df4"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/02-auditoria-priorizada.md",
+      "sha256": "91e17f5451dc8e23446ee76e6a2a03c8672a3fcff8335f3ff7af87fc1c8b6ab5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "7c6ceb6eb78834ec9cab6d587a5785349cffe2459bb36b2d4decaf765ac21a25"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/06-imagenes-y-vistas.md",
+      "sha256": "c3d51abeb7ea27fd1955bcc450c753b79b8d0e9050ac8d9556f611c732dabea7"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/07-enlazado-propuesto.md",
+      "sha256": "c8d805c45c9994a5bb1f208a8889ced42f96a3407603639fc314221c0725bb96"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/07a-revision-enlaces.json",
+      "sha256": "90919b61b149d2ea76bc25620f6254ca7e02d3452916ff75d71237d7f4970236"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/08-control-editorial.md",
+      "sha256": "68b3e24bba0ed86115d2cc98b72d45fe294f8a212dbe3aeaf2b6a5573a443c92"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/10-listo-para-publicar.md",
+      "sha256": "751b66a0314d8f939f033274c4e4a843d6037e0aaab303d6fd90a9f801a7a098"
+    }
+  ],
+  "previousPublicRevision": "2a16ff6016460a0316889c1a9ea875f077cd98f0",
+  "publicationPending": false,
+  "reviewedFiles": [
+    {
+      "name": "03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16980,
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 3127,
+      "sha256": "d76bc3d7c7120778cf1ec8c4ffca346c2ae814652e4d0cbf0c7683d5a8b4182b"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27667,
+      "sha256": "6198437548311e29705cc3cd063466b90a57141c06ec29e91df6215c42892206"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27666,
+      "sha256": "396390250543e8ab1ff7d1884269159ae1b7f2c2c4fb28c8322682a10a629a66"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 6107,
+      "sha256": "219774c8167383f690e0b27e1f8d0604b61c0c77f89e6dc33e06f9ae5eaf2add"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9490,
+      "sha256": "623cb4be44400367dd0be3493c06251bb62845a109c0858ca5fc2cba4a4bd95d"
+    },
+    {
+      "name": "kit-preview.html",
+      "bytes": 25897,
+      "sha256": "294faaddf1a0431429a9b04f9a011ffd7366189ee0cbf8e053f7c4a3df928bdf"
+    },
+    {
+      "name": "render-kit.cjs",
+      "bytes": 7634,
+      "sha256": "83b7e6eba6750aded09dda7a61052e41434d2d7b16422b050f8ed649a6d79f7b"
+    },
+    {
+      "name": "recursos/07-pilot-kit.md",
+      "bytes": 12564,
+      "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+    },
+    {
+      "name": "recursos/08-synthetic-development-cases.csv",
+      "bytes": 3592,
+      "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+    },
+    {
+      "name": "recursos/09-development-results-template.csv",
+      "bytes": 390,
+      "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-1280.webp",
+      "bytes": 172356,
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-768.webp",
+      "bytes": 68604,
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    }
+  ],
+  "linkChanges": [
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "before": "A few successful demonstrations give you less evidence than repeated checks across the kinds of cases your team handles.",
+      "after": "A few successful demonstrations give you less evidence than repeated checks across the kinds of cases your team handles.\n\nFor a process you are ready to test, our guide to [building and measuring an AI workflow pilot](https://rankingrebels.com/blog/how-to-build-ai-workflow/) takes an enquiry handover through scope, review, exceptions and a decision about the next step."
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "before": "Distinguish a page's ability to generate contact from the team's ability to assess and handle it. Both matter to the eventual result, but they need different changes and measurements.",
+      "after": "Distinguish a page's ability to generate contact from the team's ability to assess and handle it. Both matter to the eventual result, but they need different changes and measurements.\n\nIf you choose an AI-assisted handover, start with a [small, measured workflow pilot](https://rankingrebels.com/blog/how-to-build-ai-workflow/) so you can check the complete result and the review work it leaves for your team."
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "before": "Finish the assessment with a provisional decision: investigate for a small trial, improve the process first, retain a human decision, or defer. State what evidence could change it.",
+      "after": "Finish the assessment with a provisional decision: investigate for a small trial, improve the process first, retain a human decision, or defer. State what evidence could change it.\n\nIf that first trial includes AI, use a [workflow pilot with defined checks and measurements](https://rankingrebels.com/blog/how-to-build-ai-workflow/) to turn the chosen process into a testable scope."
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "before": "Use the brief to discuss configuration, integration and custom development on comparable terms. Begin with the smallest useful scope that can test the important assumptions, and distinguish a prototype from a supported production service.",
+      "after": "Use the brief to discuss configuration, integration and custom development on comparable terms. Begin with the smallest useful scope that can test the important assumptions, and distinguish a prototype from a supported production service.\n\nWhere the component uses AI to interpret information, plan a [small workflow pilot](https://rankingrebels.com/blog/how-to-build-ai-workflow/) with a defined review step and a way to verify the complete result."
+    }
+  ],
+  "draft16FilesUnchanged": true,
+  "fullPageBrowserQA": false,
+  "releaseFiles": [
+    {
+      "name": "blog/how-to-build-ai-workflow/index.html",
+      "sha256": "1f7b6a1409a99a0a1bffb915007adfd1b73f947a5e4705bb79ba0ff71b74b733"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/pilot-kit/index.html",
+      "sha256": "f2a7166af4f7f93be3255cc0f7aface1adbaa0b5387ee6ec9bb7c09fbe5aa464"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/resources/07-pilot-kit.md",
+      "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/resources/08-synthetic-development-cases.csv",
+      "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/resources/09-development-results-template.csv",
+      "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+    },
+    {
+      "name": "assets/images/blog/ai-workflow-pilot-illustration-1280.webp",
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "assets/images/blog/ai-workflow-pilot-illustration-768.webp",
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    },
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "0053452423ac643c1bb0a21b1300a86cc65929ebd57797f7d3c9ae32fc37e675"
+    },
+    {
+      "name": "blog/website-visits-few-enquiries/index.html",
+      "sha256": "5775e91636a0c80ca9c31f555d00f2407ea48711708e292b013d5e3db8f9fa18"
+    },
+    {
+      "name": "blog/which-business-processes-to-automate-first/index.html",
+      "sha256": "d165fddefa8010a229102a0b7e8b648079d00e1101d05a18cf950caafc227582"
+    },
+    {
+      "name": "blog/custom-software-benefits/index.html",
+      "sha256": "0dd552f86b00ba08d2e5da0b1d1d61c051935baa0a2f3b69f44c83f16b272042"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "810502d8c2a2b4b877d88bd5088701eccd02188a089f826d401ae8e9ac015e7d"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "b955916cd2d82b1005f3c445f69a4a83935a578ea73cedf0e32648c9bcb49fc4"
+    },
+    {
+      "name": "tests/ai-workflow-pilot-blog.test.js",
+      "sha256": "1bd5e886c87fad2fb743729ced7b616d61df1d87896be50ae4f60c3b8a642d25"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "b7e9daf71195a74e4d40eb42e9e41733e83ed5171d14a77f38f6957350a675e6"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "8f63f18c355a84e1ce8cf991ac5384daa2166e8983f67ecea87f4a59e6ddd327"
+    },
+    {
+      "name": "tests/google-visibility-blog.test.js",
+      "sha256": "14598d1bcd7a90405f8bd4d9a7aaee94bb6e27f9dffcc17845d400cd46fd39ba"
+    },
+    {
+      "name": "tests/enquiries-publication.test.js",
+      "sha256": "2de5f3aa9d1d53fc6df4abca014055922129ce39a353a9dddc9bf28e47c06887"
+    },
+    {
+      "name": "tests/automation-prioritisation-blog.test.js",
+      "sha256": "c3c8974cef5be8abf743ff58e86411cba27e5c8259e619f7b009fe56b327c700"
+    },
+    {
+      "name": "tests/custom-software-blog.test.js",
+      "sha256": "c782de0d487a0deee54eb0ca55071da0c089270e9d0f4d4a47dfd74129538aff"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "4bd2afe604df8b9a3bf0aca61cc2f0de80e8a5c0724860249e4a128b12f12cbd"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "d111bea0b2870a4c72cca1fe29aee7a699595b355e1b59fe275184d27b4a1ec0"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "af4171998e3741029c277b2c9ce565cbcb2c0e8efda814caf2a4e4b88bc48552"
+    },
+    {
+      "name": "scripts/public-files.json",
+      "sha256": "422641148323b40b9a91d743a58bb4309a95e763d03187138470dad3c59934f7"
+    }
+  ],
+  "exportedInternalMaterial": false,
+  "publicationFiles": [
+    {
+      "name": "03-articulo-ai-workflow-pilot-australia.md",
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "sha256": "d76bc3d7c7120778cf1ec8c4ffca346c2ae814652e4d0cbf0c7683d5a8b4182b"
+    },
+    {
+      "name": "preview.html",
+      "sha256": "6198437548311e29705cc3cd063466b90a57141c06ec29e91df6215c42892206"
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "396390250543e8ab1ff7d1884269159ae1b7f2c2c4fb28c8322682a10a629a66"
+    },
+    {
+      "name": "preview.css",
+      "sha256": "219774c8167383f690e0b27e1f8d0604b61c0c77f89e6dc33e06f9ae5eaf2add"
+    },
+    {
+      "name": "render-preview.cjs",
+      "sha256": "623cb4be44400367dd0be3493c06251bb62845a109c0858ca5fc2cba4a4bd95d"
+    },
+    {
+      "name": "kit-preview.html",
+      "sha256": "294faaddf1a0431429a9b04f9a011ffd7366189ee0cbf8e053f7c4a3df928bdf"
+    },
+    {
+      "name": "render-kit.cjs",
+      "sha256": "83b7e6eba6750aded09dda7a61052e41434d2d7b16422b050f8ed649a6d79f7b"
+    },
+    {
+      "name": "recursos/07-pilot-kit.md",
+      "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+    },
+    {
+      "name": "recursos/08-synthetic-development-cases.csv",
+      "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+    },
+    {
+      "name": "recursos/09-development-results-template.csv",
+      "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-1280.webp",
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-768.webp",
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    }
+  ],
+  "hubReadingEstimatesUpdated": [
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "before": "10",
+      "after": "11"
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "before": "12",
+      "after": "13"
+    }
+  ],
+  "regeneration": {
+    "performed": true,
+    "allGeneratedOutputsByteIdentical": true,
+    "outputCount": 17,
+    "files": [
+      {
+        "name": "blog/ai-agents-vs-workflow-automation/index.html",
+        "sha256": "0053452423ac643c1bb0a21b1300a86cc65929ebd57797f7d3c9ae32fc37e675"
+      },
+      {
+        "name": "blog/custom-software-benefits/index.html",
+        "sha256": "0dd552f86b00ba08d2e5da0b1d1d61c051935baa0a2f3b69f44c83f16b272042"
+      },
+      {
+        "name": "blog/how-to-build-ai-workflow/index.html",
+        "sha256": "1f7b6a1409a99a0a1bffb915007adfd1b73f947a5e4705bb79ba0ff71b74b733"
+      },
+      {
+        "name": "blog/how-to-build-ai-workflow/pilot-kit/index.html",
+        "sha256": "f2a7166af4f7f93be3255cc0f7aface1adbaa0b5387ee6ec9bb7c09fbe5aa464"
+      },
+      {
+        "name": "blog/how-to-build-ai-workflow/resources/07-pilot-kit.md",
+        "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+      },
+      {
+        "name": "blog/how-to-build-ai-workflow/resources/08-synthetic-development-cases.csv",
+        "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+      },
+      {
+        "name": "blog/how-to-build-ai-workflow/resources/09-development-results-template.csv",
+        "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+      },
+      {
+        "name": "blog/index.html",
+        "sha256": "810502d8c2a2b4b877d88bd5088701eccd02188a089f826d401ae8e9ac015e7d"
+      },
+      {
+        "name": "blog/is-seo-still-relevant-ai-search/index.html",
+        "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+      },
+      {
+        "name": "blog/local-seo-google-maps-visibility/index.html",
+        "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+      },
+      {
+        "name": "blog/website-not-showing-up-on-google/index.html",
+        "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+      },
+      {
+        "name": "blog/website-visits-few-enquiries/index.html",
+        "sha256": "5775e91636a0c80ca9c31f555d00f2407ea48711708e292b013d5e3db8f9fa18"
+      },
+      {
+        "name": "blog/what-is-seo/index.html",
+        "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+      },
+      {
+        "name": "blog/which-business-processes-to-automate-first/index.html",
+        "sha256": "d165fddefa8010a229102a0b7e8b648079d00e1101d05a18cf950caafc227582"
+      },
+      {
+        "name": "sitemap.xml",
+        "sha256": "b955916cd2d82b1005f3c445f69a4a83935a578ea73cedf0e32648c9bcb49fc4"
+      },
+      {
+        "name": "assets/css/blog.css",
+        "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+      },
+      {
+        "name": "assets/js/blog.js",
+        "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+      }
+    ]
+  },
+  "previousHubCardsPreservedExceptUpdatedReadingEstimates": true,
+  "originalReviewedContentPreserved": true,
+  "publicCommit": "4dd7661b323f468dc36a5874f475b7f8f812d444",
+  "fixedReviewBase": "2a16ff6016460a0316889c1a9ea875f077cd98f0",
+  "publicCommitFiles": [
+    "assets/images/blog/ai-workflow-pilot-illustration-1280.webp",
+    "assets/images/blog/ai-workflow-pilot-illustration-768.webp",
+    "blog/ai-agents-vs-workflow-automation/index.html",
+    "blog/custom-software-benefits/index.html",
+    "blog/how-to-build-ai-workflow/index.html",
+    "blog/how-to-build-ai-workflow/pilot-kit/index.html",
+    "blog/how-to-build-ai-workflow/resources/07-pilot-kit.md",
+    "blog/how-to-build-ai-workflow/resources/08-synthetic-development-cases.csv",
+    "blog/how-to-build-ai-workflow/resources/09-development-results-template.csv",
+    "blog/index.html",
+    "blog/website-visits-few-enquiries/index.html",
+    "blog/which-business-processes-to-automate-first/index.html",
+    "scripts/public-files.json",
+    "sitemap.xml",
+    "tests/ai-agents-blog.test.js",
+    "tests/ai-workflow-pilot-blog.test.js",
+    "tests/automation-prioritisation-blog.test.js",
+    "tests/custom-software-blog.test.js",
+    "tests/enquiries-publication.test.js",
+    "tests/google-visibility-blog.test.js",
+    "tests/local-seo-blog.test.js",
+    "tests/privacy-policy.test.js",
+    "tests/scroll-progress.test.js",
+    "tests/site-structure.test.js"
+  ],
+  "pushedToOriginMain": true,
+  "productionVerified": true,
+  "productionVerificationFile": "19-verificacion-produccion.json",
+  "publicTestCount": 216,
+  "privateTestCount": 217,
+  "buildPassed": true,
+  "reviewAxes": {
+    "spec": "No actionable findings; read-only",
+    "standards": "No actionable findings; read-only"
+  },
+  "publishedCount": 9,
+  "preparedCount": 7,
+  "preparedBlogs": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ]
+}

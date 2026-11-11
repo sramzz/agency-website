@@ -1,0 +1,276 @@
+{
+  "date": "2026-11-04",
+  "blog": 17,
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/customer-reviews-testimonials-website/",
+  "changes": [
+    {
+      "before": "This guide explains how to choose, approve and display feedback on an Australian business website. It separates practical editorial recommendations from regulator guidance and platform rules.",
+      "after": "Suppose you shorten a comment about an installation. Removing the condition about when materials arrived can change what a reader understands. We will use that fictional editing exercise below, alongside the checks for choosing and displaying feedback on an Australian business website.",
+      "reason": "Adelantar el mismo caso ficticio de recorte, sin inventar cliente, ciudad o resultado. Las distinciones regulatorias siguen explicadas en sus apartados."
+    },
+    {
+      "before": "The following is an entirely fictional editing exercise, not customer feedback about Ranking Rebels:",
+      "after": "Return to the fictional installation comment from the introduction. This is an editing exercise, not customer feedback about Ranking Rebels:",
+      "reason": "Recuperar el ejemplo temprano, manteniendo ambas citas literalmente."
+    },
+    {
+      "before": "Equally, adding a quote cannot repair an unclear offer, a broken form or an unowned enquiry.",
+      "after": "Equally, adding a quote cannot repair an unclear offer, a broken form or an unowned enquiry. If that is the wider problem, our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you check the page and contact journey.",
+      "reason": "Ampliar una duda real al blog 5 publicado, sin atribuir conversión al testimonio."
+    },
+    {
+      "before": "prohibits selectively soliciting positive reviews and influencing their rating or content.",
+      "after": "prohibits selectively soliciting positive reviews and influencing their rating or content. If you are organising that process, our [Google Maps visibility guide](https://rankingrebels.com/blog/local-seo-google-maps-visibility/) explains how neutral review requests fit alongside an accurate business profile.",
+      "reason": "Ampliación al blog 2 público, conservando la política primaria junto a su afirmación."
+    },
+    {
+      "before": "## Reusing Google reviews requires more than installing a widget",
+      "after": "## Before you reuse Google reviews",
+      "reason": "Encabezado más breve para navegación y lectura, sin alterar requisitos."
+    }
+  ],
+  "sourceUrls": [
+    "https://www.accc.gov.au/business/advertising-and-promotions/online-reviews-for-product-and-services",
+    "https://support.google.com/contributionpolicy/answer/7400114?hl=en",
+    "https://policies.google.com/terms?gl=au&hl=en-AU",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business",
+    "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-6-app-6-use-or-disclosure-of-personal-information",
+    "https://www.accc.gov.au/business/advertising-and-promotions/false-or-misleading-claims",
+    "https://www.accc.gov.au/system/files/online-review-and-testimonials.pdf",
+    "https://www.w3.org/WAI/tutorials/carousels/",
+    "https://www.w3.org/WAI/media/av/",
+    "https://developers.google.com/maps/documentation/places/web-service/policies",
+    "https://developers.google.com/search/docs/appearance/structured-data/review-snippet#guidelines",
+    "https://rankingrebels.com/contact/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2666,
+      "sha256": "70032b51653bf8f6a6f5b60abe1393193f3b088cbb28dd5efc995fb70bf3f96e",
+      "readComplete": true,
+      "finalText": "ar el 17 en un trabajo de preparación, la siguiente pieza requiere elección o instrucción del usuario. La pauta de un blog cada cuatro días no programa investigación o publicación."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 10841,
+      "sha256": "ac7a633467edd1992d17a127bd71218917d3a98ea3fa0d60e00d137b00bd31d7",
+      "readComplete": true,
+      "finalText": " inventario de socios, URLs de blogs, integración y publicación. La preparación queda completa; no se certifica una colección de testimonios o cumplimiento jurídico de una empresa."
+    },
+    {
+      "name": "02-articulo-customer-reviews-testimonials-australia.md",
+      "bytes": 15679,
+      "sha256": "34d7f9eb42f707d0aa12e872dcf81577c671674a70ae91934708d0851bd3305b",
+      "readComplete": true,
+      "finalText": "ing your website's evidence and enquiry path clearer, [talk to Ranking Rebels](https://rankingrebels.com/contact/) about the page and the decision it needs to help a customer make."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 6654,
+      "sha256": "9c94d9573cbe64acd2c9d605e398ca5788d025e48ad6516d061cb49e23487992",
+      "readComplete": true,
+      "finalText": "s. Las fuentes y accesos fallidos están en 01/soporte. Preparación completa; la evidencia posterior se registra en 08 sin declarar publicación o autorización de uso por suposición."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 5496,
+      "sha256": "31618a3eaa2f5b9add6123c007c4e15321e8b4d9bec03aeafcef5920924ddea0",
+      "readComplete": true,
+      "finalText": " reales. No inventar reviewedBy o fecha pública.\n\n08 registra los pendientes y observaciones de ese chat. Preparar Markdown no demuestra integración, permisos reales o publicación."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 6626,
+      "sha256": "4511198f739a7c925dd670cc8fcc504d440651bdc0dc5eebda0b1731d73eae8f",
+      "readComplete": true,
+      "finalText": ". **Detente al cerrar 17**; no elijas la idea histórica 18 como próximo artículo por su número ni investigues otro tema sin instrucción. La pauta de cuatro días no programa tareas."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1141,
+      "sha256": "2184d7390f2d9fdf7ae5cb9f1d0e6c2bb75f2aa5f2929727d3bb5392b75cf76c",
+      "readComplete": true,
+      "finalText": "sin marcar ejecutado/publicado por leerlo. Ante «continúa», completa ese trabajo activo según sus autorizaciones; no saltes a una idea en reserva por haber acabado la comprobación."
+    },
+    {
+      "name": "07-testimonial-evidence-and-publication-card.md",
+      "bytes": 6862,
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23",
+      "readComplete": true,
+      "finalText": " | | |\n| E | | | | |\n\nThese exercises have not been executed. Do not turn proposed decisions or fictional permissions into real authorisations, test results or commercial evidence."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 2988,
+      "sha256": "aabf27f17b59025108dd5b641d706e338af258176e50d589b1867787ad702955",
+      "readComplete": true,
+      "finalText": "iete ideas del banco siguen en reserva; no hay un blog 18 de ejecución aprobado. No investigar otra pieza o crear programación por cerrar este paquete o por el paso de cuatro días."
+    },
+    {
+      "name": "soporte-estrategia-y-presentacion.md",
+      "bytes": 4732,
+      "sha256": "523182c1e052285c970c47447a82999eae23d57b3fa458d5d96013d890db1d08",
+      "readComplete": true,
+      "finalText": "rlas como prueba comercial. El marcado de la futura guía no debe convertir esas frases en `Review` sobre RR. Los pendientes de firma, experiencia humana e integración quedan en 08."
+    },
+    {
+      "name": "soporte-evidencia-y-permisos.md",
+      "bytes": 8830,
+      "sha256": "53c496df930d051ddf20c8d7bc5ff1d6c1ad0031205cc2103031de567f13dfa4",
+      "readComplete": true,
+      "finalText": " explicación jurídica detallada de esas páginas bloqueadas. Los ejemplos del paquete serán didácticos y ficticios, sin atribución a clientes ni resultados reales de Ranking Rebels."
+    },
+    {
+      "name": "soporte-google-y-datos-estructurados.md",
+      "bytes": 8405,
+      "sha256": "4cdc9fb13539212e4084ff6bc5c467b9e785e1049c117d1214a6f5f429d4f90c",
+      "readComplete": true,
+      "finalText": " consultaron contratos privados, código de widgets o excepciones jurídicas para casos concretos. No hay garantía de estrellas, ranking, conversiones ni autorización de publicación."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-customer-reviews-testimonials-australia.md",
+      "bytes": 16188,
+      "sha256": "87f3884fe96a4ce59662647ca0352454ae10e998d1c3ba4a2e764a8796fa97fd"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2475,
+      "sha256": "2ed9fca95f7aed567b89ed509724a2f0683b52f62d657b9e35c9bc9138150304"
+    },
+    {
+      "name": "07-testimonial-evidence-and-publication-card.md",
+      "bytes": 6862,
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 28060,
+      "sha256": "54d0f90a10eefd340e36c409eaf8cc5b04c923f7e58696b4bb87a175902d4596"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 28059,
+      "sha256": "c91235f0a9b007ca9261a88b6ec4ef2f00a020646cf0c1d43ff97aa07a3ad070"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8574,
+      "sha256": "83935eccfd7c3a7f88c7a0567c8bb171a9bd2876ca28c444f78881b01670eb93"
+    },
+    {
+      "name": "worksheet-preview.html",
+      "bytes": 11298,
+      "sha256": "50cea0349a1d7ef8a78a5e473d3c684d301a36a5d9742d0698d99f22050ab7cb"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 11269,
+      "sha256": "e67d04e3e19e10f9292715af3d4e5dc971a259b858d598f11223c043fa33a087"
+    },
+    {
+      "name": "media/testimonial-editing-illustration-1280.webp",
+      "bytes": 295174,
+      "sha256": "f9bb7d35cd64b05d197ab963821cd69eca0b28d61de7353d09709f0626b68002"
+    },
+    {
+      "name": "media/testimonial-editing-illustration-768.webp",
+      "bytes": 95674,
+      "sha256": "6b43c2def97833a44809025cf623e3d6444463cca6507ed379195fb283db68ff"
+    },
+    {
+      "name": "media/three-publication-checks.svg",
+      "bytes": 3487,
+      "sha256": "f161608f7c83f4a07de20b6d47aba788eae7d4fae2f5a863b84283807428bf8b"
+    },
+    {
+      "name": "media/three-publication-checks-mobile.svg",
+      "bytes": 4081,
+      "sha256": "b4a1765f6292b37621b69f95f8d5a5d1d93e40fb968465cf04a7403601cec8b1"
+    },
+    {
+      "name": "recursos/testimonial-evidence-and-publication-card.md",
+      "bytes": 6862,
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23"
+    },
+    {
+      "name": "media/testimonial-editing-illustration-original.png",
+      "bytes": 3954795,
+      "sha256": "f41759a0396c8506ecadcc1245253aaf39ac579166c7fc48169e8fa7451adeee"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 1814,
+      "sha256": "1be836def5a99ae4b6142c5066927f244e47b66262acef77c956903b67ee52ba"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1396,
+      "sha256": "3bf99dd91b3ab640d07d981447d12f845f3447f8bdee4c7237dc566b0758e2b7"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 1884,
+      "sha256": "8deb0c030956187f684fe292f9b53cf86dff95703a5ca87e2514871a3cce02f8"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1580,
+      "sha256": "a03d99468b520d071249e96e8721f424e824b6ed5352f7d11fcc7b1f535726bf"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2146,
+      "sha256": "556acf52db245162781170908233148066b15cdaf9e49357f09eea300cadbb18"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 5148,
+      "sha256": "cbe939c12ee266537590b0aa36e15cff51d04b097023de88e04ea6698d248aa3"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1241,
+      "sha256": "e33832235a50d4f0e42b074e23bd0109ad3dac227a7f1eb963faadbb72448549"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 10986,
+      "sha256": "2e7cd1df5e238f69630b07d23a520f81867599743e1636ce28c425b4494fa11d"
+    },
+    {
+      "name": "07a-revision-enlaces.json",
+      "bytes": 13586,
+      "sha256": "264e174a537cc4b0470e3ccfde53aa1c6d452d41b78b36568435737d95c73d74"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1165,
+      "sha256": "9c5ded65a8f3974045805bdbb3ca697378faf30b84c6578a11515306b415c675"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1573,
+      "sha256": "d9c6a1afd81a64f95ce9a7268649cde8c5cf949182d81c5e15b9ef793f590b0b"
+    }
+  ],
+  "wordCount": 2293,
+  "fullPageBrowserQA": false,
+  "preparedCount": 8,
+  "publishedCount": 9,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/testimonial-editing-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-6c17c602-acc6-4f49-9e39-7deaacec4d92.png",
+    "visualInspection": true
+  }
+}

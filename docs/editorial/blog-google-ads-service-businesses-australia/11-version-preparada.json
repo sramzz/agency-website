@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-28",
+  "publishingAuthorised": true,
+  "published": true,
+  "sourceFiles": 12,
+  "themeProposed": "light",
+  "comparison": "dark",
+  "illustration": "V1, dark editorial ink",
+  "title": "How Google Ads Works for Service Businesses: From Search to Enquiry",
+  "candidateRoute": "/blog/google-ads-for-service-businesses/",
+  "edits": [
+    {
+      "reason": "Hablar al dueño e identificar el ejemplo como hipotético desde su primera aparición.",
+      "before": "Consider a landscaping business that builds residential gardens in selected Perth suburbs. Someone searches for “landscaping quote Perth”.",
+      "after": "Say you run a landscaping business that builds residential gardens in selected Perth suburbs. This example is hypothetical. Someone searches for “landscaping quote Perth”."
+    },
+    {
+      "reason": "Ampliar recepción y respuesta con un destino público pertinente, conservando la prosa.",
+      "before": "Check the contact journey on mobile.",
+      "after": "Check the [contact journey](https://rankingrebels.com/blog/website-visits-few-enquiries/) on mobile."
+    },
+    {
+      "reason": "Situar la comprobación en las obligaciones aplicables al negocio, sin dar una receta jurídica universal.",
+      "before": "Understand what information is collected and shared, the disclosures and permissions required, and any sensitive information involved.",
+      "after": "Check which privacy obligations apply to your business, what information is collected and shared, the disclosures and permissions required, and any sensitive information involved."
+    },
+    {
+      "reason": "Reducir una advertencia repetida sin perder las condiciones del presupuesto.",
+      "before": "These rules have conditions, and changing the budget affects the calculation. They should not be applied indiscriminately to every campaign or budget type.",
+      "after": "The rules depend on the campaign and budget type, and changing the budget affects the calculation."
+    },
+    {
+      "reason": "Expresar la misma condición de maduración con una frase más natural.",
+      "before": "Assume one tracked group of ad clicks has had sufficient time for its resulting enquiries and sales to be assessed.",
+      "after": "For this example, enough time has passed to assess the enquiries and sales from one tracked group of ad clicks."
+    },
+    {
+      "reason": "Trasladar al artículo las reglas de provisionalidad y denominador cero que ya contiene la ficha.",
+      "before": "In practice, records may be incomplete and sales can take time. Keep recent enquiries with unresolved outcomes separate rather than treating them as lost or combining them with customers from older campaigns.",
+      "after": "In practice, records may be incomplete and sales can take time. Keep recent enquiries with unresolved outcomes separate rather than treating them as lost or combining them with customers from older campaigns. Label an unresolved group as provisional and record the reporting cut-off and follow-up period. If a denominator is zero, report that measure as unavailable."
+    },
+    {
+      "reason": "Dar acceso a los fundamentos de SEO sin repetir su guía.",
+      "before": "It can complement SEO, but paying for ads does not buy organic rankings.",
+      "after": "It can complement [SEO](https://rankingrebels.com/blog/what-is-seo/), but paying for ads does not buy organic rankings."
+    }
+  ],
+  "originalURLs": [
+    "https://support.google.com/google-ads/answer/7478529?hl=en",
+    "https://support.google.com/google-ads/answer/2453972?hl=en",
+    "https://support.google.com/google-ads/answer/2472708?hl=en-en",
+    "https://support.google.com/google-ads/answer/1722122?hl=en",
+    "https://support.google.com/google-ads/answer/6167118?hl=en",
+    "https://business.google.com/us/resources/articles/how-much-google-ads-cost/",
+    "https://support.google.com/google-ads/answer/6268632?hl=en",
+    "https://support.google.com/google-ads/answer/1722038",
+    "https://www.accc.gov.au/consumers/advertising-and-promotions/false-or-misleading-claims",
+    "https://support.google.com/google-ads/answer/11461796?hl=en",
+    "https://support.google.com/google-ads/answer/15713840?hl=en",
+    "https://support.google.com/google-ads/answer/7475709?hl=en",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations",
+    "https://support.google.com/google-ads/answer/6385083?hl=en-GB",
+    "https://support.google.com/google-ads/answer/10487143?hl=en",
+    "https://support.google.com/google-ads/answer/3097241?hl=en",
+    "https://rankingrebels.com/solutions/paid-ads/"
+  ],
+  "sections": [
+    "What happens between a search and a customer?",
+    "Keywords connect ads with searches, but they are different things",
+    "The auction considers more than the highest bid",
+    "Location settings need to match how customers buy",
+    "The ad and destination should make the same useful promise",
+    "Define a conversion before treating it as success",
+    "A daily budget is an average, not a fixed daily bill",
+    "A worked example: clicks, enquiries and customers have different costs",
+    "What should you investigate when results disappoint?",
+    "What can a well-managed Search campaign offer?"
+  ],
+  "files": [
+    {
+      "file": "03-articulo-google-ads-service-businesses-australia.md",
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4"
+    },
+    {
+      "file": "preview.html",
+      "sha256": "e93c14a864c7229b9ddba0417e409e513b7e9ffdfb1080ad64623864a24f1736"
+    },
+    {
+      "file": "preview-dark.html",
+      "sha256": "cf459fda02a38cce15e18abd65c849411c7955e5d4523d13d7c58437e5736c1a"
+    },
+    {
+      "file": "worksheet-preview.html",
+      "sha256": "fe3d0be5fd9b614ebb1d5f0e9ce56941715b8c6920391c3d46997f0c70d1bee4"
+    },
+    {
+      "file": "preview.css",
+      "sha256": "634fd0e38d23230bb776144d78007c7958d89df073abb7064214babeeca0b93b"
+    },
+    {
+      "file": "07-search-to-enquiry-worksheet.md",
+      "sha256": "6e06b107389ab7f0075c753a02be08d75d5343f9ccbd748c99eefdce644b15fd"
+    },
+    {
+      "file": "recursos/search-to-enquiry-worksheet.md",
+      "sha256": "6e06b107389ab7f0075c753a02be08d75d5343f9ccbd748c99eefdce644b15fd"
+    },
+    {
+      "file": "media/google-search-enquiry-illustration-1280.webp",
+      "sha256": "541f67b4ef071c78cad5ab9267ff4425a393b5d66329f70cc4c602e48da5d7fc"
+    },
+    {
+      "file": "media/google-search-enquiry-illustration-768.webp",
+      "sha256": "dadad67f0f9baaec723fc4dfdb02b4471e5d99130e3bf6a45d06f839016b1567"
+    },
+    {
+      "file": "media/search-to-enquiry.svg",
+      "sha256": "db6160546e61887a5bd2989267cdcac912346fd7d55ea7794a4bef6283dce479"
+    },
+    {
+      "file": "media/search-to-enquiry-mobile.svg",
+      "sha256": "fa01838d48c0b66880afabcd0a87469291ed08e072e12eb8b77e3f216f82b8f2"
+    }
+  ],
+  "checks": {
+    "semanticContentParts": 135,
+    "worksheetContentParts": 150,
+    "sourceCopies": 12,
+    "protectedFiles": 500,
+    "publicPages": 6,
+    "localResources": 23,
+    "fullPageBrowserQA": false
+  },
+  "finalReviewRequiredBeforePublishing": true,
+  "finalVersionApproved": true,
+  "publication": {
+    "date": "2026-11-05",
+    "revision": "d27fd3afa4bef12fc64ed7972a6d01ee84afeec0",
+    "verified": true,
+    "readingTheme": "light",
+    "illustration": "V1",
+    "publicRoute": "/blog/google-ads-for-service-businesses/",
+    "publicWorksheetRoute": "/blog/google-ads-for-service-businesses/worksheet/"
+  }
+}

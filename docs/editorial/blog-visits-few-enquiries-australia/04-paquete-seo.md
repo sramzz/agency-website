@@ -1,14 +1,14 @@
 # Paquete SEO · borrador del blog 5
 
-Preparado el 21 de octubre de 2026. Publicación prevista: lunes 26 de octubre, 13:00, Australia/Sydney. No publicado.
+Preparado el 21 de octubre de 2026. Publicado el 26 de octubre de 2026, Australia/Sydney, después de la aprobación visual y de la fecha mínima autorizada. URL y revisión verificadas en 16.
 
 | Campo | Valor |
 |---|---|
 | Title | Website Visits but Few Enquiries? What to Check |
 | H1 | Website Visits but Few Enquiries? What to Check First |
 | Meta description | Getting website visits but few enquiries? Check traffic fit, page clarity, forms, mobile usability and follow-up before choosing what to improve. |
-| Slug candidato | website-visits-few-enquiries |
-| URL candidata | https://rankingrebels.com/blog/website-visits-few-enquiries/ |
+| Slug | website-visits-few-enquiries |
+| URL | https://rankingrebels.com/blog/website-visits-few-enquiries/ |
 | OG title | Website Visits but Few Enquiries? Start Here |
 | OG description | Find the missing step between a visit and a useful enquiry, from traffic fit and page clarity to form delivery and follow-up. |
 | Keyword principal propuesta | website traffic but no leads |
@@ -23,9 +23,9 @@ No autor personal ni revisión profesional inventados. La fecha de publicación 
 
 ## Imágenes y diseño
 
-- Principal: `media/website-enquiries-illustration-v2-1280.webp`, 1280 × 720, variante 768 × 432. Ilustración propia generada con IA y revisada en V2 hacia grises, papel claro y rojo contenido, sin cliente real ni captura de cuenta. La variante anterior se conserva como histórico. Alt: “An illustrated landscaping business owner reviews a project brief beside a laptop and garden plan in a bright studio.”
+- Principal: `media/website-enquiries-illustration-v3-1280.webp`, 1280 × 720, variante 768 × 432. Ilustración propia generada con IA y revisada en V3 con papel neutro, negros profundos, rojo definido y verdes apagados en el jardín, sin cliente real ni captura de cuenta. La variante anterior se conserva como histórico. Alt: “An illustrated landscaping business owner reviews a project brief beside a laptop and garden plan in a bright studio.”
 - Gráfico editorial propio en SVG: `media/enquiry-checks.svg`, 1000 × 410, variante móvil 540 × 910. Distingue interacción registrada, consulta recuperable y seguimiento asignado. Sin tasas, resultados medidos o promesa de progresión automática.
-- Comparación local del mismo cuerpo: `preview.html` con lectura clara y `preview-dark.html` con lectura oscura. La selección está pendiente. No adoptar la variante clara como plantilla pública sin mostrarla y recoger la elección del usuario.
+- Comparación local del mismo cuerpo: `preview.html` con lectura clara y `preview-dark.html` con lectura oscura. El usuario aprobó lectura clara e ilustración V2 el 26. La elección se aplica a este artículo, sin cambiar las páginas anteriores.
 
 Los nombres públicos definitivos, og:image y dimensiones se comprobarán al integrar la publicación. No se requieren imágenes de internet para esta propuesta.
 

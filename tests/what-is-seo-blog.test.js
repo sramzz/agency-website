@@ -33,7 +33,7 @@ test('SEO foundations has truthful publication metadata and deployable responsiv
   assert.doesNotMatch(page,/noindex|Local preview|Not published|fonts.googleapis.com/);
   const schema = JSON.parse(page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   assert.equal(schema.datePublished,'2026-10-20');
-  assert.equal(schema.dateModified,'2026-10-20');
+  assert.equal(schema.dateModified, '2026-11-11');
   assert.equal(schema.inLanguage,'en-AU');
   assert.equal(schema.author,undefined);
   assert.equal(schema.publisher.name,'Ranking Rebels');

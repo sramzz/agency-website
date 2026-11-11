@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-27",
+  "scope": "Enlaces Read the article del índice",
+  "files": [
+    {
+      "name": "tools/publish-blog.cjs",
+      "before": "2d53b6dd3d04a649c76a375a0c9fd0c04bb2b885bcd108a7dd84533521bcb2ec",
+      "after": "c072a8616da4adb4c1b510dbcf014f32e37f4e1deeeebd3c1ebb31d80ba961e9"
+    },
+    {
+      "name": "tools/publish-local-seo-blog.cjs",
+      "before": "fe38e84b21bb00fe9b917ed649f0b4b78e9f54f32447bdc121ae0f46295f7605",
+      "after": "24682444075eb28bcfb95de5b171d8790d1d254b11ba1d39640a962b5acbd51e"
+    },
+    {
+      "name": "tools/publish-what-is-seo-blog.cjs",
+      "before": "f3fb13691bea399e27662ea44beeca2085f41c0c3a2638682141ca6a0305a0d0",
+      "after": "314f600c40d53b83de4df5904ce883723ed2843c6e5a2548708aaa2c817ec18c"
+    },
+    {
+      "name": "tools/publish-ai-agents-blog.cjs",
+      "before": "156d1e676b64ec7ab11eaf551848671891d1b1bb9e45e44854dbc21fcaa5bcc6",
+      "after": "ac07ed6544e4c1d100001a9b1f69eb2da3fd5c3ba9348d624086953825447061"
+    },
+    {
+      "name": "tools/publish-enquiries-blog.cjs",
+      "before": "2a3ca6c0d8a1be8d6846efe408cdef8c68d6da9239c9f7c04d3f8ecf4f87af43",
+      "after": "2008c0fd4876865c105e749596a7651ac54883bfff156ba5562e45a6bc972ff0"
+    },
+    {
+      "name": "blog/index.html",
+      "before": "a5fefe01af9cf58b069404c333940ec0d852025e54187682f2b1e1f0d31927a3",
+      "after": "6b5a98acea146eebce59224017ae05d28099d906dffced0824f299e67884e4e3"
+    },
+    {
+      "name": "assets/css/blog.css",
+      "before": "00f455d9bed991955672d92121d302148d2809bfb7f727649c01c3477d70cdc0",
+      "after": "ac8c6e0cdebd030fddff10fc5c7f7990dc5f0d68251eaa7997c151c0a297d315"
+    }
+  ],
+  "cards": 5,
+  "articleDestinations": [
+    "/blog/website-visits-few-enquiries/",
+    "/blog/ai-agents-vs-workflow-automation/",
+    "/blog/what-is-seo/",
+    "/blog/local-seo-google-maps-visibility/",
+    "/blog/is-seo-still-relevant-ai-search/"
+  ],
+  "contentAndOrderPreserved": true,
+  "permanentUnderline": true,
+  "hoverAndKeyboardFocus": true,
+  "reducedMotion": true,
+  "newArticlesPublished": 0,
+  "browserPageReview": false,
+  "publication": {
+    "confirmed": true,
+    "revision": "ea7a12c508e0ef1af945a4e842da9db7eed51d34",
+    "branch": "main",
+    "url": "https://rankingrebels.com/blog/",
+    "productionTestsPassed": 207,
+    "httpChecksPassed": 18,
+    "proof": "14-verificacion-enlaces-indice-produccion.json",
+    "newArticlesPublished": 0
+  }
+}

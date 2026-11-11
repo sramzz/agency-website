@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-05",
+  "timezone": "Australia/Sydney",
+  "blog": 10,
+  "userQuote": "confirmo y apruebo, quiero que tu hagas la ultima revision antes de publicar",
+  "reviewReminder": "Article, worksheet and exact incoming paragraphs from blogs4/5, light reading and current V1 illustration shown before approval",
+  "finalVersionApproved": true,
+  "readingTheme": "light",
+  "illustrationVersion": "V1",
+  "worksheetApproved": true,
+  "publicRoute": "/blog/google-ads-for-service-businesses/",
+  "publicWorksheetRoute": "/blog/google-ads-for-service-businesses/worksheet/",
+  "publicationDate": "2026-11-05",
+  "approvedFiles": [
+    {
+      "name": "03-articulo-google-ads-service-businesses-australia.md",
+      "bytes": 16903,
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 29306,
+      "sha256": "e93c14a864c7229b9ddba0417e409e513b7e9ffdfb1080ad64623864a24f1736"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 29305,
+      "sha256": "cf459fda02a38cce15e18abd65c849411c7955e5d4523d13d7c58437e5736c1a"
+    },
+    {
+      "name": "worksheet-preview.html",
+      "bytes": 11341,
+      "sha256": "fe3d0be5fd9b614ebb1d5f0e9ce56941715b8c6920391c3d46997f0c70d1bee4"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 7717,
+      "sha256": "634fd0e38d23230bb776144d78007c7958d89df073abb7064214babeeca0b93b"
+    },
+    {
+      "name": "07-search-to-enquiry-worksheet.md",
+      "bytes": 7532,
+      "sha256": "6e06b107389ab7f0075c753a02be08d75d5343f9ccbd748c99eefdce644b15fd"
+    },
+    {
+      "name": "recursos/search-to-enquiry-worksheet.md",
+      "bytes": 7532,
+      "sha256": "6e06b107389ab7f0075c753a02be08d75d5343f9ccbd748c99eefdce644b15fd"
+    },
+    {
+      "name": "media/google-search-enquiry-illustration-1280.webp",
+      "bytes": 329764,
+      "sha256": "541f67b4ef071c78cad5ab9267ff4425a393b5d66329f70cc4c602e48da5d7fc"
+    },
+    {
+      "name": "media/google-search-enquiry-illustration-768.webp",
+      "bytes": 128662,
+      "sha256": "dadad67f0f9baaec723fc4dfdb02b4471e5d99130e3bf6a45d06f839016b1567"
+    },
+    {
+      "name": "media/search-to-enquiry.svg",
+      "bytes": 4123,
+      "sha256": "db6160546e61887a5bd2989267cdcac912346fd7d55ea7794a4bef6283dce479"
+    },
+    {
+      "name": "media/search-to-enquiry-mobile.svg",
+      "bytes": 4167,
+      "sha256": "fa01838d48c0b66880afabcd0a87469291ed08e072e12eb8b77e3f216f82b8f2"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10213,
+      "sha256": "e0bc45d135d4d0cdef0814013752637fcda9c2ad9dc6d626fb5d2f58495dc5f9"
+    },
+    {
+      "name": "revision-enlaces.html",
+      "bytes": 2469,
+      "sha256": "991e8dfad6dbe7ea616aad365426e66a51462b339fa0054f757dc2e048f00d76"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 10346,
+      "sha256": "304df39a7b55ef8d9723732c092ccba8412938605d71442e20881ba458aea426"
+    },
+    {
+      "name": "13-revalidacion-fuentes-20261105.md",
+      "bytes": 4364,
+      "sha256": "639bb120f475d8ffffeea51c6acc07e805ee9768fafbff182bf0de81b711443a"
+    }
+  ]
+}

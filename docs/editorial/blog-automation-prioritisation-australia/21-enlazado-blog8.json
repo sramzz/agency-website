@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02",
+  "scope": "Authorised contextual links in blog8 release",
+  "published": true,
+  "revision": "2a16ff6016460a0316889c1a9ea875f077cd98f0",
+  "publicationDatePreserved": "2026-10-30",
+  "dateModified": "2026-11-02",
+  "directions": [
+    "7→8",
+    "8→7"
+  ],
+  "sourceAndHTMLSynced": true,
+  "originalReviewRecordPreserved": "15-aprobacion-publicacion.json",
+  "proof": "../blog-custom-software-australia/18-verificacion-produccion.json"
+}

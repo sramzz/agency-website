@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "semanticBlocksMatched": 129,
+  "headings": 8,
+  "subheadings": 5,
+  "tables": 3,
+  "tableColumnHeaders": 8,
+  "originalURLsRetained": 8,
+  "newBlogLinks": 1,
+  "figuresPerTheme": 1,
+  "allNumeralsPreserved": true,
+  "calculation120CasesMinutes": 400,
+  "calculation60CasesMinutes": 160,
+  "threePartSuccessCriterionPreserved": true,
+  "allOriginalCopiesMatch": true,
+  "publicTrackedFilesUnchanged": 258,
+  "publicCandidateRouteAbsent": true,
+  "metadataCharacters": {
+    "Title": 51,
+    "Meta description": 152
+  },
+  "assets": [
+    {
+      "name": "automation-prioritisation-illustration-1280.webp",
+      "bytes": 167800,
+      "sha256": "3ea5c076fe2ad14c913de3a88aba8b473db73e7b68e492d5cac41a874bdca5a0"
+    },
+    {
+      "name": "automation-prioritisation-illustration-768.webp",
+      "bytes": 64018,
+      "sha256": "40cd5cd27c34c91cf966c3b5202dc0be87fd6ea75918df89e3de067a71f338ce"
+    }
+  ],
+  "assetsVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "limitation": "Contenido, HTML, recursos e imagen comprobados. No se realizó revisión visual de página completa en navegador."
+}

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-27",
+  "blog": 7,
+  "scope": "Actualización local de ilustración V2",
+  "directionAuthorised": true,
+  "resultApproval": "Pendiente de revisión del usuario",
+  "readingThemeApproval": "Pendiente",
+  "published": false,
+  "assets": [
+    {
+      "name": "media/automation-prioritisation-illustration-v2-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 202480,
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "name": "media/automation-prioritisation-illustration-v2-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 77618,
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    }
+  ],
+  "oldAssetsPreserved": true,
+  "pages": [
+    {
+      "name": "preview.html",
+      "sha256": "907c9c870ce4272378da3e59b992a3dc0355b2d5838d314a28d6d6150f321802",
+      "articleTextUnchanged": true,
+      "articleLinksUnchanged": true,
+      "previousVersion": "preview-v1.html",
+      "previousHTMLPreservedExactly": true
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "4e42a69fcd78259f60b21c204829ed93b7021b26faf23c14784d29b5e1a07efd",
+      "articleTextUnchanged": true,
+      "articleLinksUnchanged": true,
+      "previousVersion": "preview-v1-dark.html",
+      "previousHTMLPreservedExactly": true
+    }
+  ],
+  "protectedFilesUnchanged": 314,
+  "blog6Unchanged": true,
+  "publicFilesUnchanged": true,
+  "manuscriptUnchanged": true,
+  "linkProposalsUnchanged": true,
+  "imagesVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "localHTTP": {
+    "date": "2026-10-27",
+    "checks": [
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-dark.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-v1.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-v1-dark.html",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/media/automation-prioritisation-illustration-v2-1280.webp",
+        "status": 200,
+        "exactBytes": true
+      },
+      {
+        "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/media/automation-prioritisation-illustration-v2-768.webp",
+        "status": 200,
+        "exactBytes": true
+      }
+    ],
+    "allPass": true
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "blog": 12,
+  "date": "2026-10-30",
+  "status": "Prepared for review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/facebook-instagram-advertising/",
+  "changes": [
+    {
+      "before": "Facebook and Instagram advertising can help a service business show its work, explain an offer and invite people to make contact. To decide whether it deserves investment, connect those possibilities to a service you can deliver, evidence you can show and enquiries your team can assess and handle.\n\nThe first question is what the campaign should achieve. The next is how you will recognise a useful result. A low cost per click or form submission can be encouraging, but it does not establish that suitable work is entering the business.\n\nThis guide covers the decisions to make before investing: objective, offer, audience, creative material, contact route, budget, measurement and follow-up. It focuses on Australian service businesses rather than a sequence of buttons in an advertising interface.\n",
+      "after": "Before you spend on Facebook and Instagram ads, be clear about the work you want to attract and what happens when someone responds. The campaign can show your service and prompt contact. Your team still needs to assess whether each request fits.\n\nSay you run a residential landscaping business serving selected Perth suburbs. You design and build gardens, but you do not offer routine maintenance. This is a hypothetical example. An ad that simply promises “all your garden needs” leaves people guessing and can bring requests you cannot take on.\n\nStart with an offer you can explain and support, then plan the creative, contact route and follow-up around it. A low cost per click or form submission is only part of the picture. You need to know what arrived, whether it suited your business and what it cost to handle.\n",
+      "reason": "Hablar al propietario y adelantar el caso hipotético existente de Perth; sin nuevos resultados o cifras."
+    },
+    {
+      "before": "Consider a **fictional** residential landscaping business serving selected Perth suburbs. If it designs and builds gardens but does not offer routine maintenance, the creative material and destination should make that scope understandable. A vague promise of “all your garden needs” could attract requests the team cannot fulfil.",
+      "after": "For the Perth landscaper, that means showing garden design and construction, making the service area clear and explaining what a quote request involves. If routine maintenance is not available, the ad and destination should make that clear too.",
+      "reason": "Recuperar el caso temprano sin repetir su presentación ni cambiar el servicio."
+    },
+    {
+      "before": "## Treat audience assumptions as things to check",
+      "after": "## Check who the campaign is meant to reach",
+      "reason": "Encabezado directo, conservando las precisiones de sugerencias y controles."
+    },
+    {
+      "before": "## Plan creative concepts, then adapt them to placements",
+      "after": "## Decide what the creative should explain",
+      "reason": "Navegación en lenguaje del propietario; concepto, formato y revisión de ubicaciones siguen en el cuerpo."
+    },
+    {
+      "before": "## A worked example: cheap enquiries can have a different cost after qualification",
+      "after": "## A worked example: when cheaper enquiries cost more",
+      "reason": "Título más breve; el cuerpo sigue definiendo coste de medios por consulta cualificada, sin beneficio o causalidad."
+    },
+    {
+      "before": "## Decide what you are testing and what would change the decision",
+      "after": "## Decide what you need to learn",
+      "reason": "Reducir longitud sin quitar condiciones del lanzamiento ni límites del experimento."
+    },
+    {
+      "before": "A simpler first step can still require substantial work after submission.",
+      "after": "A simpler first step can still require substantial work after submission. If people reach your website but few useful requests arrive, our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you check the page and contact journey.",
+      "reason": "Salida contextual a un destino publicado que amplía el problema de recepción; no enlazar borradores."
+    }
+  ],
+  "sourceUrls": [
+    "https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/",
+    "https://www.facebookblueprint.com/student/path/219699-selecting-objectives-course",
+    "https://www.accc.gov.au/business/advertising-and-promotions/social-media-promotions",
+    "https://about.fb.com/de/news/2023/05/ai-sandbox-fuer-werbetreibende-und-neue-funktionen-fuer-die-meta-advantage-suite/",
+    "https://www.facebookblueprint.com/student/path/253130-increase-campaign-performance-with-diversified-creative",
+    "https://about.fb.com/ltam/news/2023/11/ayudando-a-las-empresas-a-crecer-con-nuevas-herramientas-de-generacion-de-leads-funciones-de-ia-y-alianzas-de-crm/",
+    "https://www.facebookblueprint.com/student/activity/597555",
+    "https://about.fb.com/ltam/news/2026/04/eliminar-barreras-tecnicas-para-ayudar-a-empresas-de-todos-los-tamanos-a-aprovechar-mas-sus-anuncios/",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations",
+    "https://about.fb.com/ltam/news/2026/03/simplificando-la-medicion-de-anuncios-para-un-mundo-social-first/",
+    "https://www.facebookblueprint.com/student/path/219763-ab-test-conversion-brand-lift-course",
+    "https://rankingrebels.com/solutions/paid-ads/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2353,
+      "sha256": "5cb4ddcc800773ce751fc0d357a1cf6f7233d0e16e4f4a92b9d4e4b2801ca23c",
+      "readComplete": true,
+      "finalText": "Enquiries, Quotes and Customer Follow-Up**. La serie mantiene 14 temas y What Is SEO? en 4. El usuario decide cuándo investigar; pauta cada cuatro días sin programación automática."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 13533,
+      "sha256": "91e06fba21978b0ae96c5ecaee8bb8a83cc7cf9e06307b1592d9b9a0865f8210",
+      "readComplete": true,
+      "finalText": " preparación termina en 12; siguiente 13, sólo por nueva indicación del usuario. Cadencia prevista cada cuatro días con decisión manual; no se programa investigación o publicación."
+    },
+    {
+      "name": "02-articulo-facebook-instagram-advertising-australia.md",
+      "bytes": 16005,
+      "sha256": "27ae9c9118f1010491c8049eb720226dc7e6a8c8e2ab668a0e4fdc8c2b04a882",
+      "readComplete": true,
+      "finalText": "' paid advertising services](https://rankingrebels.com/solutions/paid-ads/). Bring your service, offer, available creative material and current enquiry process to the conversation."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 8175,
+      "sha256": "e79864546d97537ae46b336b0f688d14885824189b4cb9c3be85af944fe16588",
+      "readComplete": true,
+      "finalText": "ticas comprobadas. Los tres documentos compartidos indican preparación hasta12 y siguiente13. Esta comprobación no es un rastreo HTTP, prueba de cuenta o validación de publicación."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 6008,
+      "sha256": "6e738f3dad673088834c47c344cbff93ccce8068a772b1511e508f2c58ba04c5",
+      "readComplete": true,
+      "finalText": "Ls y datos reales. La pauta cada cuatro días no demuestra calidad ni frecuencia óptima universal de SEO. Preparación, publicación y actualización conservan fechas reales separadas."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 8641,
+      "sha256": "e1aeaa667674631ff8a2cdee5ca8fe8d307403cb87619ee9ccd4735c38b81a20",
+      "readComplete": true,
+      "finalText": " activo o avanza un solo tema tras una entrega terminada según evidencia del chat, no por carpeta de número mayor. Al cerrar, indicar entregado, límites concretos y siguiente tema."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1731,
+      "sha256": "46bb203097ca843ea79af319b272fa396cdc1e3b770a4257bc49711ce693bed5",
+      "readComplete": true,
+      "finalText": "o publicar, cambiar cuentas o enviar pruebas en esta comprobación.\n\nCuando diga después «continúa», ejecuta 05 del mismo blog 12. Esta revisión de recepción no completa su trabajo."
+    },
+    {
+      "name": "07-meta-campaign-planning-brief.md",
+      "bytes": 7501,
+      "sha256": "26549a9e8b8ce5232c930c413a188fe40af385db6bf1e438a27e915c106ce9fc",
+      "readComplete": true,
+      "finalText": "ate or a completed account audit. Use current primary documentation when implementing product settings, and keep private customer information out of public copies of this resource."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 3717,
+      "sha256": "a9ded92cd471f9500b181f1edae2e664de51bdde406c99cc2c6285f9c3d8d225",
+      "readComplete": true,
+      "finalText": "Enquiries, Quotes and Customer Follow-Up**. No iniciar 13 ni programar investigación/publicación al cerrar 12. El usuario decide manualmente cuándo avanzar para administrar tokens."
+    },
+    {
+      "name": "soporte-entrega-creatividad.md",
+      "bytes": 9131,
+      "sha256": "0df418ffa1c09b4176844d0205a03ea0114a097eb315961d1a8da8bbc6ab1855",
+      "readComplete": true,
+      "finalText": "s actuales de audiencia. Conservar esos límites en la investigación principal; resolverlos con evidencia adicional antes de convertirlos en afirmaciones específicas del manuscrito."
+    },
+    {
+      "name": "soporte-estrategia.md",
+      "bytes": 9868,
+      "sha256": "40322107a78233b0dab26d3af8c173658b59d992f48a4114b6dc8c76d44fb04f",
+      "readComplete": true,
+      "finalText": "*Eso no demuestra que no existan.** Mantener candidatos en notas y confirmar URL o ruta CMS autorizada al integrar; no adivinar slugs ni añadir enlaces locales al artículo público."
+    },
+    {
+      "name": "soporte-leads-medicion.md",
+      "bytes": 9325,
+      "sha256": "15ad45ae7066173667336b755a1bd6938b249eb4793d1a2488c018006291e393",
+      "readComplete": true,
+      "finalText": "o benchmarks de terceros. Los anuncios de producto de Meta respaldan descripciones y fechas, no mejoras universales, resultados propios ni disponibilidad idéntica para toda cuenta."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-facebook-instagram-advertising-australia.md",
+      "bytes": 16074,
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2209,
+      "sha256": "92f7c9e44ecc21844882fbaf048fe054126cd97c3bbb8b9a90ab8e96fbb3728d"
+    },
+    {
+      "name": "07-meta-campaign-planning-brief.md",
+      "bytes": 7501,
+      "sha256": "26549a9e8b8ce5232c930c413a188fe40af385db6bf1e438a27e915c106ce9fc"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27671,
+      "sha256": "a06aadc4ef4d79a49d4a65520105557e7dd4c103e9e5bb5a71d714f0a1eef741"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27670,
+      "sha256": "24a274b58469463a26f9aa68df4f7bf1d28576689972a54ec5bf0009804fa9f7"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8088,
+      "sha256": "537cf90474e4774c6075f8f3662309f514cf32d816e3f2a3751e2548c4a3be9d"
+    },
+    {
+      "name": "brief-preview.html",
+      "bytes": 10968,
+      "sha256": "e1b295691f3e6d2ff70593bd08e78fbfa6a98fdf7fab9e25d1faa6159bd1a654"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10234,
+      "sha256": "0af6beb78312272006b6d35ab25ed6e480a75726ddc037390bc384d146243506"
+    },
+    {
+      "name": "media/social-ads-creative-illustration-1280.webp",
+      "bytes": 411836,
+      "sha256": "1349013a26b21f55fa137c16f19555c8ebf3e422f363be0d017171578a4a2c78"
+    },
+    {
+      "name": "media/social-ads-creative-illustration-768.webp",
+      "bytes": 153572,
+      "sha256": "5973c10e19d61ba2f2303e6dfe9627d7c0b9a0af5031e852d482481ebb00ac82"
+    },
+    {
+      "name": "media/enquiry-costs.svg",
+      "bytes": 2831,
+      "sha256": "5e8439e817047e05e21a02d4b5a8b72e005fbfe4c037b7b99a86496f4143466b"
+    },
+    {
+      "name": "media/enquiry-costs-mobile.svg",
+      "bytes": 2899,
+      "sha256": "3f2384801f44c58fe1f1a34275023765143fd0ca4b4bae87e407668460a3c42b"
+    },
+    {
+      "name": "recursos/meta-campaign-planning-brief.md",
+      "bytes": 7501,
+      "sha256": "26549a9e8b8ce5232c930c413a188fe40af385db6bf1e438a27e915c106ce9fc"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1478,
+      "sha256": "99099b5509d3e326519fe0b44cb883101742d25eaf0dd8984557182fa09d8f70"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2319,
+      "sha256": "548604bcb182c34950c2c571e366b6c0dcd162d63f64e3f2fcf6458ec5690ea1"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 5730,
+      "sha256": "768079566e6739b5a1e782c2336c1fa143d17aea6e687acf52efc1c6efe93d9a"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1380,
+      "sha256": "fbf2ef2957606a4bcc35b265a35ed86e17b9605b05837201f803adb058016301"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 5651,
+      "sha256": "e10f4308d0432baa54708a146d3eb3ddfe2cbe1b32bc80dcdcc6a2f94a0d06d1"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1099,
+      "sha256": "6cec1da9d591bf2c218d296b8841310a6ba05ec257e3d817247d371e393522cc"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1549,
+      "sha256": "0900df8168b3ad3940062b2e643b2a7d02b7a9328f599f4b617bbc25011d7dc1"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1328,
+      "sha256": "430fac0a25ea8c21dd380a2ec1034de18debc0e2da6c5d5f4ab54158860268ca"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 2140,
+      "sha256": "08d245291b1c65c7395297a1c91c4fd63f483f4188f882acfeb06c17a720d0f9"
+    },
+    {
+      "name": "media/social-ads-creative-illustration-original.png",
+      "bytes": 4374305,
+      "sha256": "75efd16eded2fd17619927bf221aa44ac60f327820e9202ba29d3ad3c79959c1"
+    }
+  ],
+  "fullPageBrowserQA": false,
+  "wordCount": 2291,
+  "localPreview": "http://127.0.0.1:4177/docs/editorial/blog-facebook-instagram-advertising-australia/preview.html#article",
+  "darkPreview": "http://127.0.0.1:4177/docs/editorial/blog-facebook-instagram-advertising-australia/preview-dark.html#article",
+  "preparedSeries": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "publishedSeries": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "illustrationGeneration": "Built-in imagegen",
+  "nextTopicNotStarted": "13. What Is a CRM? How to Organise Enquiries, Quotes and Customer Follow-Up"
+}

@@ -1,0 +1,262 @@
+{
+  "blog": 11,
+  "date": "2026-10-29",
+  "status": "Published after user-delegated clarity review, correction and recheck",
+  "published": true,
+  "publicationAuthorised": true,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/measure-digital-marketing-results/",
+  "changes": [
+    {
+      "before": "Your digital marketing is working when it makes a useful contribution to an agreed business goal, at a cost and level of uncertainty you can accept. More visits, clicks or reported conversions can be encouraging, but they do not answer that question on their own.\n\nFor a service business, the review needs to connect relevant attention with received enquiries, their quality, customer outcomes and the economics of the work. It also needs to show where the evidence stops. An attributed sale is different from proof that marketing created an additional customer.\n\nYou do not need a dashboard containing every available metric. You need a small set of defined measures, reliable business records and a decision that the review will help you make.\n",
+      "after": "To judge whether your digital marketing is working, follow the useful enquiries and work it helps bring in, then compare those outcomes with the costs. Visits, clicks and reported conversions help explain part of that picture. They do not establish the business result on their own.\n\nSay you run a maintenance business in Adelaide. Your campaign report shows more conversions, but your team needs to know which requests fit the services you offer and which became worthwhile jobs. This is a hypothetical example, not a Ranking Rebels client case.\n\nStart with the outcome your business needs, keep reliable records and show where the evidence stops. An attributed sale is different from proof that marketing created an additional customer. A small set of defined measures gives you a more useful starting point than a dashboard containing every available metric.\n",
+      "reason": "Apertura directa al propietario y contexto australiano temprano. Escenario editorial explícitamente ficticio; sin nuevos resultados o cifras."
+    },
+    {
+      "before": "## Reconcile discrepancies before judging performance",
+      "after": "## Work out why the reports disagree",
+      "reason": "Encabezado comprensible sin perder el contenido técnico."
+    },
+    {
+      "before": "## Compare groups whose outcomes have had time to develop",
+      "after": "## Follow enquiries long enough to see the outcome",
+      "reason": "Explicar cohortes desde el seguimiento del negocio."
+    },
+    {
+      "before": "## Calculate costs and returns with explicit denominators",
+      "after": "## Define what each cost and rate includes",
+      "reason": "Evitar jerga en la navegación; fórmulas y denominadores se conservan."
+    },
+    {
+      "before": "## Separate attributed results from incremental impact",
+      "after": "## What attribution can and cannot tell you",
+      "reason": "Anticipar la pregunta del lector, conservando la distinción causal del cuerpo."
+    },
+    {
+      "before": "Assume records associate one paid campaign group with 30 unique enquiries:",
+      "after": "For the hypothetical Adelaide business, assume records associate one paid campaign group with 30 unique enquiries:",
+      "reason": "Recuperar el mismo caso sin cambiar los supuestos económicos."
+    },
+    {
+      "before": "A received call or message establishes contact.",
+      "after": "A received call or message establishes contact. If visits are arriving but useful requests are scarce, our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you investigate the page and contact route.",
+      "reason": "Única salida a un artículo público que amplía una duda concreta, sin repetir su auditoría."
+    }
+  ],
+  "sourceUrls": [
+    "https://support.google.com/analytics/answer/13965727?hl=en",
+    "https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console",
+    "https://support.google.com/analytics/answer/12923437?hl=en",
+    "https://support.google.com/analytics/answer/15258820?hl=en",
+    "https://support.google.com/google-ads/answer/2375435?hl=en",
+    "https://support.google.com/webmasters/answer/17010575?hl=en",
+    "https://support.google.com/analytics/answer/10917952?hl=en",
+    "https://support.google.com/analytics/answer/6366371?hl=en",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations",
+    "https://support.google.com/google-ads/answer/9347141?hl=en",
+    "https://support.google.com/google-ads/answer/14090?hl=en-AU",
+    "https://support.google.com/google-ads/answer/13064207?hl=en",
+    "https://support.google.com/analytics/answer/10596866?hl=en",
+    "https://support.google.com/google-ads/answer/12003020?hl=en",
+    "https://rankingrebels.com/contact/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2448,
+      "sha256": "d1c689463253d178209b382bea12870327dc38d75628a82b75e3156773e6986a",
+      "readComplete": true,
+      "finalText": "ore Investing**. Serie de14 temas, What Is SEO? permanece4. El usuario decide cuándo investigar; cadencia prevista cada cuatro días sin programación automática."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 13516,
+      "sha256": "0966ac4641bbc32aa15351df991c20bcf4be178a83cb51b8e5be26cb5e963dc5",
+      "readComplete": true,
+      "finalText": "te tema 12. Cadencia prevista cada cuatro días bajo decisión manual del usuario; no iniciar investigaciones futuras o programar acciones al cerrar este paquete."
+    },
+    {
+      "name": "02-articulo-marketing-measurement-australia.md",
+      "bytes": 17616,
+      "sha256": "31b7384740fc8471905a883c7952127126130a53ccaf4cb47a44ceec65f87be4",
+      "readComplete": true,
+      "finalText": "bout the service, the outcome and the point where the records stop agreeing. That is a concrete starting point for deciding what to measure or investigate next."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 8090,
+      "sha256": "7a15947682178aaa2170ce783f7e771acbcdfe9f5b5262c99166b2957bd2e258",
+      "readComplete": true,
+      "finalText": "s en investigación, title57/meta156 y nueve igualdades aritméticas comprobadas. Esto verifica coherencia de archivos, no respuestas HTTP, cuentas o publicación."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 6295,
+      "sha256": "ddedc70b7a0cbc8ca973d3797b0069551b8ede33232b4b83a5833c04de611a68",
+      "readComplete": true,
+      "finalText": "r fecha para parecer fresco sin cambios reales. Preparación y publicación son distintas; el cierre de11 no programa investigación, ejecución o publicación de12."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 8150,
+      "sha256": "0e4c2111997ddab28355d587781d0c13bfe41b4c20a1e1482337ddf101375082",
+      "readComplete": true,
+      "finalText": "o tema tras entrega completada según evidencia del chat, no por la carpeta de número mayor. Al cerrar, informa lo terminado, límites concretos y siguiente tema."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1878,
+      "sha256": "99893b60f6019b67867a7559ae23e93b013425ab584e2c06cee32fcd8264bed0",
+      "readComplete": true,
+      "finalText": "durante esta comprobación.\n\nCuando luego diga «continúa», ejecuta el prompt05 del mismo blog 11. Esta comprobación no lo da por terminado ni permite saltar a12."
+    },
+    {
+      "name": "07-marketing-results-scorecard.md",
+      "bytes": 8183,
+      "sha256": "287b83eee5e8510de9e790dd37be2bac06bb9d8bd39d98e9b4d5a13b5c6d1340",
+      "readComplete": true,
+      "finalText": " questions, business definitions and arithmetic are editorial synthesis. Check current product documentation and the actual configuration before implementation."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 3786,
+      "sha256": "7c1c9ec07eb33fe16cca64de6bf454f78b1de8b9d7a231e9955697233b918470",
+      "readComplete": true,
+      "finalText": "rstand Before Investing**. No iniciar12, recordar, programar o publicar por el paso de cuatro días; el usuario decide cuándo investigar para administrar tokens."
+    },
+    {
+      "name": "soporte-atribucion-economia.md",
+      "bytes": 8465,
+      "sha256": "86ec2842d2535eaf93160492c449bfe247d3caad4a82919bb4544190706f8e88",
+      "readComplete": true,
+      "finalText": "a cuando madure el grupo. Tres clientes sirven para ilustrar aritmética, no para demostrar estabilidad ni garantizar que duplicar inversión duplique resultados."
+    },
+    {
+      "name": "soporte-estrategia.md",
+      "bytes": 8968,
+      "sha256": "891afb66ec5ba03232e1d8023f5111fcbec7dd9cc33c9e1d34bd25bf9333d471",
+      "readComplete": true,
+      "finalText": "mada para estos candidatos: conservarlos en notas hasta comprobar inventario/CMS, sin inventar slugs, publicar rutas locales o afirmar que ya están disponibles."
+    },
+    {
+      "name": "soporte-plataformas-medicion.md",
+      "bytes": 9203,
+      "sha256": "d97d1190c3491736713053254d04fea416b1927cbe5c2a88e572503a93085efa",
+      "readComplete": true,
+      "finalText": "ientes ni promesas de exhaustividad. El manuscrito debe enseñar a formular y comprobar preguntas; no prometer que una herramienta reconstruya todo el recorrido."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-marketing-measurement-australia.md",
+      "bytes": 18183,
+      "sha256": "c929f4cc6ec082042b3f8afa49c148edfab91454e0a67791eeecc3d9cee58dec"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2277,
+      "sha256": "74545044d0398062685a6dff05a1294dce920f87cef158591a4a49f53af6d6b3"
+    },
+    {
+      "name": "07-marketing-results-scorecard.md",
+      "bytes": 8113,
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 29395,
+      "sha256": "6dc9cf2b244cbd1abf0953ac8d804a2984b646d742e25d47e8c53742ca4062fd"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 29394,
+      "sha256": "fcad3d0106a01f0d2e85a5acbb0e6e8b1394b340a75140be358831b72367c506"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8141,
+      "sha256": "2fed1566b7ee61b06e48fd5418d63cae9bbc6ec49ce51ca85718b273cd60a83f"
+    },
+    {
+      "name": "scorecard-preview.html",
+      "bytes": 11548,
+      "sha256": "267a5ec3d3e91e2db44b0a6c6d64f9b737ab2b49fb04f185a14909c4c3207c53"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10066,
+      "sha256": "225644b08ccf4b87a2b27a291a5eccdc339aee039165ec3cb7672da954b9f1f2"
+    },
+    {
+      "name": "media/marketing-results-illustration-1280.webp",
+      "bytes": 285490,
+      "sha256": "121e5db452494497abbe81bf8e0a1a5581e10dc2b8d4ce7bde1302e8a35b3731"
+    },
+    {
+      "name": "media/marketing-results-illustration-768.webp",
+      "bytes": 114812,
+      "sha256": "e1ea191455abb48a494551ec385a0bf399dff0678d1467f7df0e4e86222e37d5"
+    },
+    {
+      "name": "media/revenue-and-costs.svg",
+      "bytes": 2474,
+      "sha256": "8b513c4f59b27937a6d7529f17ae4b020ce2f79ebf70aa33f63cbd783a3e198a"
+    },
+    {
+      "name": "media/revenue-and-costs-mobile.svg",
+      "bytes": 2562,
+      "sha256": "39539b4612a22fffeb3dcecd2bab3c62e0c0b15a26f8b7a5da269376eb3c8cd4"
+    },
+    {
+      "name": "recursos/marketing-results-scorecard.md",
+      "bytes": 8113,
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 11571,
+      "sha256": "92b72af1de6cd07e3a1e5a3a7b35c3de9ad8bd4eccf6be3c3c5e6bfe86d35bed"
+    },
+    {
+      "name": "revision-enlaces.html",
+      "bytes": 4545,
+      "sha256": "4b40093ee1f43b6fe86eed0b630944054e1696e7cf2c758303a1f49ad9d132f7"
+    },
+    {
+      "name": "13-revalidacion-fuentes-20261110.md",
+      "bytes": 4652,
+      "sha256": "ccc8ab8277b33d087e16177330211a204c672ba2096a6c8c81f61d3b9faa5d67"
+    },
+    {
+      "name": "render-scorecard.cjs",
+      "bytes": 1950,
+      "sha256": "e50e510965154a4165d1446112ff961c2510cfc3690dc66a92b2217042051b4d"
+    },
+    {
+      "name": "13a-revision-claridad.md",
+      "bytes": 2734,
+      "sha256": "9c92a41854fbab1fa6776384504b5f802e0efda434a3f721c8f49d4290683f41"
+    },
+    {
+      "name": "13b-cambios-claridad.json",
+      "bytes": 7126,
+      "sha256": "3e52803fc8c84f8d120328a0023987ad4a11ac7fd2d8c19feb7a0d435a6f6d00"
+    }
+  ],
+  "fullPageBrowserQA": false,
+  "wordCount": 2617,
+  "finalVersionApproved": true,
+  "approvalKind": "Specific delegated conditional review satisfied",
+  "publication": {
+    "date": "2026-11-11",
+    "revision": "e584b314d65583062a6f6511abbe2ec509c71b19",
+    "verified": true,
+    "route": "/blog/measure-digital-marketing-results/",
+    "resourceRoute": "/blog/measure-digital-marketing-results/scorecard/",
+    "readingTheme": "light",
+    "illustrationVersion": "V1"
+  },
+  "clarityChangesRecord": "13b-cambios-claridad.json"
+}

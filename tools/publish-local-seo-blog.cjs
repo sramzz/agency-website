@@ -112,13 +112,13 @@ module.exports = ({ root, html: shell, title: firstTitle, date: firstDate, readi
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description,
       url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-      datePublished: '2026-10-19', dateModified: '2026-10-21', image: `https://rankingrebels.com${hero}`,
+      datePublished: '2026-10-19', dateModified: '2026-11-11', image: `https://rankingrebels.com${hero}`,
       publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
     })}</script>`);
   fs.mkdirSync(path.join(root, route), { recursive: true });
   fs.writeFileSync(path.join(root, route, 'index.html'), html);
 
-  const story = ({ href, image, category, number, date, minutes, title, excerpt }) => `<a class="blog-story" href="${href}"><img class="blog-story-image" src="${image}" width="768" height="432" loading="lazy" decoding="async" alt="" aria-hidden="true" /><div class="blog-story-body"><div class="blog-story-label"><span>${number} / ${category}</span><span>${date} · ${minutes} min read</span></div><h2>${escape(title)}</h2><p>${escape(excerpt)}</p><span class="blog-story-read">Read the article <span aria-hidden="true">↗</span></span></div></a>`;
+  const story = ({ href, image, category, number, date, minutes, title, excerpt }) => `<a class="blog-story" href="${href}"><img class="blog-story-image" src="${image}" width="768" height="432" loading="lazy" decoding="async" alt="" aria-hidden="true" /><div class="blog-story-body"><div class="blog-story-label"><span>${number} / ${category}</span><span>${date} · ${minutes} min read</span></div><h2>${escape(title)}</h2><p>${escape(excerpt)}</p><span class="blog-story-read">Read the article</span></div></a>`;
   let hub = fs.readFileSync(path.join(root, 'blog/index.html'), 'utf8');
   hub = hub.replace(/<section class="blog-list"[\s\S]*?<\/section>/, `<section class="blog-list" aria-label="Latest articles">${story({ href: route, image: asset('local-seo-discovery-illustration-768.webp'), category: 'Local SEO &amp; Google Maps', number: '02', date, minutes: readTime, title, excerpt })}${story({ href: '/blog/is-seo-still-relevant-ai-search/', image: asset('seo-ai-discovery-illustration-768.webp'), category: 'SEO &amp; AI search', number: '01', date: firstDate, minutes: firstReadTime, title: firstTitle, excerpt: 'How SEO still helps people find your business, what AI search changes, and what to improve next. Follow a Melbourne office-cleaning example.' })}</section>`)
     .replace('Practical reading on SEO and AI search for businesses that want to connect discovery with useful enquiries.', 'Practical reading on SEO, local search and AI for businesses that want to connect discovery with useful enquiries.')

@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-10-27T23:50:58.548Z",
+  "localDate": "2026-10-28",
+  "timezone": "Australia/Melbourne",
+  "method": "Google primary documentation opened with web tool; material passages read. Contact destination checked by HTTP without form submission.",
+  "sources": [
+    {
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-operators/all-search-site",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/9012289",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/7440203",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/crawling/docs/troubleshooting/http-status-codes",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/17011259?hl=en",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/17011364?hl=en",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/9044175",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/9044101",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://support.google.com/webmasters/answer/9689846?hl=en",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://rankingrebels.com/contact/",
+      "materialContentReviewed": false,
+      "destinationHttpChecked": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "materialContentReviewed": true
+    },
+    {
+      "url": "https://developers.google.com/search/docs/essentials/technical",
+      "materialContentReviewed": true
+    }
+  ],
+  "materialFactualChangesRequired": false,
+  "limits": [
+    "No account access, indexing request or diagnosis of a real customer",
+    "No search ranking, traffic or commercial results claimed",
+    "No complete-site reading claimed"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-27",
+  "blog": 9,
+  "status": "Preparado para revisión. No publicado.",
+  "articleApproval": "Pendiente",
+  "designApproval": "Pendiente",
+  "illustrationApproval": "Pendiente",
+  "illustrationVersion": "V1",
+  "proposedReadingTheme": "light",
+  "alternateReadingTheme": "dark",
+  "publicationAuthorised": false,
+  "publicationDate": null,
+  "automation": null,
+  "candidateSlug": "how-to-build-ai-workflow",
+  "publishedArticleCount": 5,
+  "preparedArticleNumbers": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "nextManualTopic": 10,
+  "files": [
+    {
+      "name": "03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16597,
+      "sha256": "037be4d53a92f884cc9b5df04f944c0d8844ea20736fbe2950c4d185735e23a1"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 3127,
+      "sha256": "d76bc3d7c7120778cf1ec8c4ffca346c2ae814652e4d0cbf0c7683d5a8b4182b"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27268,
+      "sha256": "555718b8ffdf350ed512e662e6c057fdd26f0672c4091849ad8019e660200083"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27267,
+      "sha256": "c02b8e871a2e256f997b209eeaacd8282a590ba1165b9a775f62ab520ea52416"
+    },
+    {
+      "name": "kit-preview.html",
+      "bytes": 25897,
+      "sha256": "294faaddf1a0431429a9b04f9a011ffd7366189ee0cbf8e053f7c4a3df928bdf"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 6107,
+      "sha256": "219774c8167383f690e0b27e1f8d0604b61c0c77f89e6dc33e06f9ae5eaf2add"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9496,
+      "sha256": "53147005bc7628c56c5e563bda0ff4ffa619c853ade2415ed7855365e02b8009"
+    },
+    {
+      "name": "render-kit.cjs",
+      "bytes": 7634,
+      "sha256": "83b7e6eba6750aded09dda7a61052e41434d2d7b16422b050f8ed649a6d79f7b"
+    },
+    {
+      "name": "recursos/07-pilot-kit.md",
+      "bytes": 12564,
+      "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+    },
+    {
+      "name": "recursos/08-synthetic-development-cases.csv",
+      "bytes": 3592,
+      "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+    },
+    {
+      "name": "recursos/09-development-results-template.csv",
+      "bytes": 390,
+      "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-1280.webp",
+      "bytes": 172356,
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-768.webp",
+      "bytes": 68604,
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    }
+  ],
+  "semanticBlocksMatched": 114,
+  "originalFilesReadAndPreserved": 14,
+  "syntheticScenarios": 12,
+  "uniqueEnquiryIds": 11,
+  "unrunResultRows": 12,
+  "observedResults": false,
+  "workflowExecuted": false,
+  "publicAndPreviousFilesUnchanged": true,
+  "fullPageBrowserQA": false,
+  "localPreview": "http://127.0.0.1:4177/docs/editorial/blog-ai-workflow-pilot-australia/preview.html",
+  "localKit": "http://127.0.0.1:4177/docs/editorial/blog-ai-workflow-pilot-australia/kit-preview.html",
+  "publicationInstructions": "10-listo-para-publicar.md"
+}

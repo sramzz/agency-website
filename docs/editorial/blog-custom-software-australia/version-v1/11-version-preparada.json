@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-26",
+  "blog": 8,
+  "status": "Preparado para revisión. No publicado.",
+  "articleApproval": "Pendiente",
+  "designApproval": "Pendiente",
+  "proposedReadingTheme": "light",
+  "alternateReadingTheme": "dark",
+  "publicationAuthorised": false,
+  "publicationDate": null,
+  "automation": null,
+  "candidateSlug": "custom-software-benefits",
+  "publishedArticleCount": 5,
+  "preparedArticleNumbers": [
+    6,
+    7,
+    8
+  ],
+  "nextManualTopic": 9,
+  "files": [
+    {
+      "name": "03-articulo-custom-software-australia.md",
+      "bytes": 17019,
+      "sha256": "9643420fcc197d908103e1661acfea168a834255272d8bf0bb498d5b4c40d831"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 3580,
+      "sha256": "7d34033324a7ebae4b345c1cce6bcfabfeab05cfb39028f58c161031daaff7a8"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 26893,
+      "sha256": "3ac6e77d7850c500e4e7d77cddf868491b2dc05a42cc028f411f096c72ef8968"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 26892,
+      "sha256": "614650a70c46003e812c90f5cc871d4bf2eaec6b41352041dff3778850b369ad"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 5582,
+      "sha256": "f994467e15467e0c5fe33a6232780e92aaeffa2f3f17de266fde02b31a241f35"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9094,
+      "sha256": "ec769f848155ea5b5913bb45e5dbfe3efbbb1ca759f6eb2291560060c1ff4b7d"
+    },
+    {
+      "name": "media/custom-software-illustration-1280.webp",
+      "bytes": 215346,
+      "sha256": "7c693bf4cb72891c5338ad7b894dd66399d3f2fcc89b04128cb6a9e8b7baebe7"
+    },
+    {
+      "name": "media/custom-software-illustration-768.webp",
+      "bytes": 83754,
+      "sha256": "918c4dacdc24c2bac695b0441c48030e5eec40b7cd23a7b14bd8760421e3bc5e"
+    }
+  ],
+  "semanticBlocksMatched": 108,
+  "publicAndPreviousFilesUnchanged": true,
+  "fullPageBrowserQA": false,
+  "localPreview": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview.html",
+  "publicationInstructions": "10-listo-para-publicar.md"
+}

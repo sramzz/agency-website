@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-27T23:52:43.690Z",
+  "fixedBase": "ea7a12c508e0ef1af945a4e842da9db7eed51d34",
+  "reviewDiff": "staged against fixed base before commit",
+  "standardsReview": {
+    "findings": [],
+    "reviewer": "blog6_standards_review"
+  },
+  "specReview": {
+    "findings": [],
+    "reviewer": "blog6_spec_review"
+  },
+  "specificTests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "productionTests": {
+    "passed": 209,
+    "failed": 0,
+    "initialFailure": "Expected page inventory 22; actual 23. Inventory updated, targeted test and complete rerun passed."
+  },
+  "buildPassed": true,
+  "stagedFiles": 21,
+  "syntaxCheckPassed": true,
+  "diffWhitespaceCheckPassed": true,
+  "browserFullPageReview": false,
+  "screenshotsAttached": false,
+  "visualLimit": "No new desktop/mobile screenshot review available; prepared light design and all original images retained.",
+  "published": true,
+  "publication": {
+    "confirmed": true,
+    "revision": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+    "verifiedAt": "2026-10-27T23:55:05.954Z",
+    "proof": "15-verificacion-produccion.json"
+  }
+}

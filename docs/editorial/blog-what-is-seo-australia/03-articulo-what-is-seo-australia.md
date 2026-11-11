@@ -32,6 +32,8 @@ Publishing a page does not guarantee that Google will index it. Being indexed do
 
 The distinction helps you work out what needs attention. If Google cannot access your landscaping service page, rewriting its sales copy will not fix the access problem. If the page is indexed but gives prospective customers little useful information, submitting it again will not fix that mismatch either.
 
+If you cannot find an important page in Google, our [step-by-step diagnosis of a missing Google result](https://rankingrebels.com/blog/website-not-showing-up-on-google/) explains how to check the exact URL, its indexing status and the searches where you expected it to appear.
+
 SEO improves the parts you can control, including access, content and connections between pages. Search engines decide which results to show, while competing pages and the results themselves can change.
 
 ## What does SEO actually involve?
@@ -98,6 +100,8 @@ SEO concerns unpaid visibility. Google Ads buys advertising opportunities under 
 
 Neither is automatically the better choice. You might use advertising to test an offer while improving important website pages. A short campaign may need a different plan from an ongoing service. A confusing offer or a broken form can waste visits from either source.
 
+For the paid-search side, our guide to [how Google Ads works for service businesses](https://rankingrebels.com/blog/google-ads-for-service-businesses/) follows a search through the ad, contact route and enquiry, with the costs and outcomes kept separate.
+
 ## How long does SEO take, and is it ongoing?
 
 There is no universal deadline. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says some changes can take effect in hours, while others can take several months. It generally recommends allowing a few weeks before assessing changes in Search results.
@@ -124,11 +128,15 @@ Start with what you want to understand. Are relevant people finding the page? Ca
 
 In GA4, you can designate important measured actions as [key events](https://support.google.com/analytics/answer/13965727). Choose actions that match your goals and check that they record what you intend. A contact-button click and a successfully received enquiry are different things.
 
+If your website is getting visits but few useful requests, our guide to [what to check when visits are not becoming enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you review the audience, page and contact route before choosing a fix.
+
 For the landscaping business, that means checking the services and locations people asked about, whether the team responded and which enquiries became projects. More enquiries will be difficult to turn into work if the team has no capacity to respond or deliver it.
 
 Compare relevant pages and searches over meaningful periods, allowing for seasonality, brand activity and other changes. [Search Console clicks and analytics sessions measure different things](https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console), so do not expect the totals to match exactly.
 
 Include writing, development, specialist and maintenance costs when assessing the investment. State the attribution method and its limitations. An average ranking or total traffic figure cannot tell the whole story, and a dashboard alone does not prove the extra revenue caused by each change.
+
+For a fuller review of enquiry quality, customer outcomes and costs, our guide to [measuring digital marketing results](https://rankingrebels.com/blog/measure-digital-marketing-results/) explains what the records can establish and where uncertainty remains.
 
 ## Does AI search change the fundamentals?
 

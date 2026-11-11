@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-28",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "semanticContentParts": 135,
+  "worksheetContentParts": 150,
+  "originalURLsRetained": 17,
+  "newBlogLinks": 2,
+  "allNumeralsPreserved": true,
+  "calculationsVerified": [
+    10,
+    50,
+    125,
+    500,
+    700
+  ],
+  "sections": 10,
+  "subheadings": 2,
+  "tables": 4,
+  "figures": 2,
+  "worksheetTables": 5,
+  "sourceCopiesMatch": 12,
+  "resourceByteIdentical": true,
+  "protectedFilesUnchanged": 500,
+  "localResourcesChecked": 23,
+  "assets": [
+    {
+      "file": "media/google-search-enquiry-illustration-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 329764,
+      "sha256": "541f67b4ef071c78cad5ab9267ff4425a393b5d66329f70cc4c602e48da5d7fc"
+    },
+    {
+      "file": "media/google-search-enquiry-illustration-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 128662,
+      "sha256": "dadad67f0f9baaec723fc4dfdb02b4471e5d99130e3bf6a45d06f839016b1567"
+    }
+  ],
+  "assetsVisuallyInspected": true,
+  "diagramsVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "published": false,
+  "publicationAuthorised": false,
+  "noCampaignOrTrackingTestExecuted": true,
+  "limitation": "Texto, HTML, recursos, ilustración y diagramas comprobados. No se realizó revisión visual de página completa en navegador ni prueba de cuenta publicitaria.",
+  "metadataCharacters": {
+    "Title": 43,
+    "Meta description": 158
+  },
+  "wordCount": 2451,
+  "automaticTabOpeningConfirmed": false
+}

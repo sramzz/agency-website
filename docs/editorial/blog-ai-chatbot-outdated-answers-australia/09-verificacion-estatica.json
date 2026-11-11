@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-11",
+  "blog": 19,
+  "published": false,
+  "publicationAuthorised": false,
+  "originalFiles": 11,
+  "originalCopiesByteIdentical": true,
+  "mainSemanticParts": 90,
+  "cardSemanticParts": 87,
+  "originalArticleURLsRetained": 11,
+  "allOriginalNumeralValuesPreserved": true,
+  "completeTextReconstructsOriginal": true,
+  "h2": 6,
+  "h3": 6,
+  "mainTables": 2,
+  "mainFigures": 2,
+  "cardTables": 4,
+  "cardByteIdentical": true,
+  "developmentExercises": 8,
+  "observedResults": false,
+  "actualFieldsBlank": 34,
+  "caseWords": 215,
+  "caseClarityQuestions": 9,
+  "assets": [
+    {
+      "name": "media/chatbot-evidence-illustration-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 255488,
+      "sha256": "13954fabcecb923ef457a5825b72bbcfe7a3f7809a21c8f50cfb843db3fe9391"
+    },
+    {
+      "name": "media/chatbot-evidence-illustration-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 80168,
+      "sha256": "b240b8b9133d03954304d09779b62f22c0deeab34ad6deb71e33f4598928643d"
+    }
+  ],
+  "wordCount": 2246,
+  "titleCharacters": 49,
+  "descriptionCharacters": 155,
+  "activeOutgoing": [
+    "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+    "https://rankingrebels.com/blog/how-to-build-ai-workflow/"
+  ],
+  "protectedFiles": 852,
+  "previousFilesUnchanged": true,
+  "previousArticleSources": [
+    {
+      "number": 1,
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "bytes": 16015,
+      "sha256": "418384aeee2aaa6325dfea5d289146022ed5e07f63ef0a010066d284321dd4f8",
+      "previousReadingHash": "33531c98983e5bd4f3a63ad190e7a4a4bd6a845b222e49a3236f7cbb4be8256f",
+      "publication11InsertionReconciled": true,
+      "readingBasis": "Complete prior reading plus exact publication11 insertion, reconstructed against prior hash"
+    },
+    {
+      "number": 2,
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "bytes": 19205,
+      "sha256": "dfccaf5bca01db91d03f391b87c1b08915b88c7e0acc6838184a0afdbd444dd3",
+      "previousReadingHash": "ebd816b4c696506b39b22f37613ad152b66ff06bffbdde1909ec1b895d7e8ab7",
+      "publication11InsertionReconciled": true,
+      "readingBasis": "Complete prior reading plus exact publication11 insertion, reconstructed against prior hash"
+    },
+    {
+      "number": 3,
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "bytes": 17896,
+      "sha256": "819f49d756778b319f8e8e0fe8a3f07a3198453cab1d55c2c8724ffcffbd388f",
+      "previousReadingHash": "819f49d756778b319f8e8e0fe8a3f07a3198453cab1d55c2c8724ffcffbd388f",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 4,
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "bytes": 16498,
+      "sha256": "f67c492739e99fa91bf533b6cc33060e7827e1fa5b1108e9a693b0a91193bbf3",
+      "previousReadingHash": "9d449f60e47c5a62931b47131fbf7189d82be851be281d1e4c44f3079f53748a",
+      "publication11InsertionReconciled": true,
+      "readingBasis": "Complete prior reading plus exact publication11 insertion, reconstructed against prior hash"
+    },
+    {
+      "number": 5,
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "bytes": 15568,
+      "sha256": "18e47c115f6cb34b51efa4a10406496084568e886dea450e8c385eac6f37f59b",
+      "previousReadingHash": "e2a8242c2587feaf33407ed6c0fbd252d8039675801f3f5db38ca8605458e5bb",
+      "publication11InsertionReconciled": true,
+      "readingBasis": "Complete prior reading plus exact publication11 insertion, reconstructed against prior hash"
+    },
+    {
+      "number": 6,
+      "name": "docs/editorial/blog-google-visibility-diagnosis-australia/03-articulo-google-visibility-diagnosis-australia.md",
+      "bytes": 16436,
+      "sha256": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40",
+      "previousReadingHash": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 7,
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "bytes": 16917,
+      "sha256": "fce55cf86c4eee0070a6e22faadb89b0c6e001178ca2151f75e00cf9ed51e685",
+      "previousReadingHash": "fce55cf86c4eee0070a6e22faadb89b0c6e001178ca2151f75e00cf9ed51e685",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 8,
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "bytes": 17433,
+      "sha256": "ea78596fd1af9d3692a72257fcc6d1e786972f5a922749b9721431fcc18eaea3",
+      "previousReadingHash": "ea78596fd1af9d3692a72257fcc6d1e786972f5a922749b9721431fcc18eaea3",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 9,
+      "name": "docs/editorial/blog-ai-workflow-pilot-australia/03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16980,
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b",
+      "previousReadingHash": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 10,
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "bytes": 17149,
+      "sha256": "834e421b40ec98879f92fcbc7da112a21b6e023dacfced3e444d9f02a7bb1123",
+      "previousReadingHash": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4",
+      "publication11InsertionReconciled": true,
+      "readingBasis": "Complete prior reading plus exact publication11 insertion, reconstructed against prior hash"
+    },
+    {
+      "number": 11,
+      "name": "docs/editorial/blog-marketing-measurement-australia/03-articulo-marketing-measurement-australia.md",
+      "bytes": 18183,
+      "sha256": "c929f4cc6ec082042b3f8afa49c148edfab91454e0a67791eeecc3d9cee58dec",
+      "readingBasis": "Complete final reading and clarity review during publication11; exact delegated-approved final hash"
+    },
+    {
+      "number": 12,
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "bytes": 16074,
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5",
+      "previousReadingHash": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 13,
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "bytes": 17641,
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f",
+      "previousReadingHash": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 14,
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "bytes": 17803,
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039",
+      "previousReadingHash": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 15,
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "bytes": 15983,
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5",
+      "previousReadingHash": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 16,
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/03-articulo-business-apps-stopped-syncing-australia.md",
+      "bytes": 16321,
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d",
+      "previousReadingHash": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 17,
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/03-articulo-customer-reviews-testimonials-australia.md",
+      "bytes": 16188,
+      "sha256": "87f3884fe96a4ce59662647ca0352454ae10e998d1c3ba4a2e764a8796fa97fd",
+      "previousReadingHash": "87f3884fe96a4ce59662647ca0352454ae10e998d1c3ba4a2e764a8796fa97fd",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    },
+    {
+      "number": 18,
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/03-articulo-seo-or-google-ads-australia.md",
+      "bytes": 16175,
+      "sha256": "e81668474eb64d50be4d54a07284fb0c1682aa812e859ea58c8859d4163cecc2",
+      "previousReadingHash": "e81668474eb64d50be4d54a07284fb0c1682aa812e859ea58c8859d4163cecc2",
+      "publication11InsertionReconciled": false,
+      "readingBasis": "Complete prior reading, current version unchanged against publication11 review hash"
+    }
+  ],
+  "internalLinkDirectionsConsidered": 36,
+  "privateLinkProposals": 4,
+  "omissions": 30,
+  "primarySourceBodiesConsulted": 15,
+  "ctaBodyConsulted": true,
+  "fullPageBrowserQA": false,
+  "assetVisualInspection": true,
+  "liveChatbotTests": false,
+  "publicCodeTestsNotRerun": "Isolated preparation: previous deployable files, tools, tests and shared UI unchanged by protected hashes."
+}

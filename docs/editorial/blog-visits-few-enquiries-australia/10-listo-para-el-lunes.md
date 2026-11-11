@@ -1,12 +1,14 @@
 # Blog 5 · publicación del lunes
 
-Preparado el 21 de octubre de 2026. No publicado.
+Preparado el 21 de octubre de 2026. Integración de publicación en curso el 26; la confirmación pública se registrará tras verificar el despliegue.
+
+**Versión aprobada el 26 de octubre:** cabecera oscura, lectura clara en blanco roto e ilustración V2. El usuario respondió «hagamoslo segun tu consejo» después de recomendar expresamente esos tres elementos. La autorización previa de publicar automáticamente la versión aprobada sigue vigente y ya se cumplió la fecha mínima. Evidencia y hashes en `13-aprobacion-y-enlazado.json`.
 
 **Fecha más temprana: lunes 26 de octubre de 2026, 13:00, Australia/Sydney.** Equivale a 2026-10-26T02:00:00Z. Respetar la fecha del encargo; no usar la del servidor o una planificación histórica para adelantarlo.
 
 El usuario pidió preparar el siguiente blog y respondió expresamente: **“Publicar automáticamente la versión aprobada”**. La herramienta creó `publicar-blog-de-visitas-y-consultas`, activa en este chat para una sola ocurrencia el lunes a las 13:00. Se inspeccionó la configuración guardada. El prompt exige respetar la fecha, comprobar aprobación y verificar publicación.
 
-## Aprobación pendiente
+## Historial de la aprobación pendiente, resuelto el 26
 
 Actualización del 23 de octubre: el usuario pidió continuar la revisión de imagen tras señalar que V1 era demasiado colorida y el cambio resultaba brusco. Las dos vistas locales usan ahora la ilustración V2, más sobria, identificada en `06` y `11-version-preparada.json`. La respuesta no aprueba el fondo de lectura ni la nueva ilustración. Confirmar ambos aspectos de la versión concreta antes de ejecutar la publicación automática. La fecha del lunes 26 a las 13:00 de Sídney se mantiene.
 
@@ -30,4 +32,10 @@ Artículo en `03`, diagnóstico y auditoría en `01` y `02`, SEO en `04`, fuente
 8. Confirmar éxito y coincidencia de `/_deployment.json` con la revisión. Verificar HTTP, canonical, artículo completo, CSS, imágenes, hub, sitemap y las seis conexiones nuevas dentro de los cuerpos servidos, preservando las diez anteriores. No afirmar rastreo o indexación de Google.
 9. Actualizar inventario y prueba de publicación. Eliminar la automatización única cuando se complete o deje de ser útil. Avisar del resultado verificado o del impedimento concreto. Conservar la limitación de revisión visual si no existe evidencia nueva.
 
-Este encargo no autoriza publicar otros temas. El siguiente del plan para un encargo posterior es “Why Isn't My Website Showing Up on Google? A Step-by-Step SEO Diagnosis”.
+Este encargo no autoriza publicar otros temas. Los blogs 6 y 7 ya están preparados como borradores separados y mantienen su propia aprobación y publicación pendientes.
+
+## Publicación confirmada, 26 de octubre
+
+Publicado en https://rankingrebels.com/blog/website-visits-few-enquiries/. Cloudflare confirmó e0941333-7991-4bd9-86a8-6da0aa182c56, revisión 5b8f620b70bbf5182aefdd549b0ff5c1809dfcdb, rama main. El dominio devolvió esa misma revisión, los cinco artículos completos revisados, recursos correctos y 16 menciones contextuales. Pasaron 206 comprobaciones de producción y el build. La automatización única publicar-blog-de-visitas-y-consultas fue eliminada tras la confirmación. Evidencia HTTP en 16-verificacion-produccion.json.
+
+El repositorio público recibió sólo páginas, cuatro imágenes optimizadas, manifiesto y pruebas (20 archivos cambiados). Los manuscritos activos y registros se conservan en el proyecto de trabajo y no se exportaron documentos editoriales nuevos ni generadores. La fuente aprobada del artículo permanece intacta. No se efectuó una nueva revisión visual de página completa en navegador ni se afirma indexación.

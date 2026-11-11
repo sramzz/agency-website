@@ -1,0 +1,21 @@
+{
+  "published": true,
+  "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+  "datePublished": "2026-10-28",
+  "timezone": "Australia/Melbourne",
+  "notBefore": "2026-10-28T07:30:00+11:00",
+  "revision": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+  "branch": "main",
+  "publicArticles": 6,
+  "preparedUnpublished": [
+    7,
+    8,
+    9
+  ],
+  "protectedDraftFiles": 130,
+  "automationId": "publicar-blog-6-de-diagn-stico-en-google",
+  "automationDeletion": "deleted",
+  "proof": "15-verificacion-produccion.json",
+  "automationToolConfirmed": true,
+  "closedAt": "2026-10-27T23:57:51.426Z"
+}

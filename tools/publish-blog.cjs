@@ -32,7 +32,7 @@ html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', ''
   <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title,
     description, url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-    datePublished: '2026-10-16', dateModified: '2026-10-21',
+    datePublished: '2026-10-16', dateModified: '2026-11-11',
     publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
   })}</script>
   <script src="/assets/js/google-analytics.js?v=20260920" defer></script>
@@ -50,7 +50,7 @@ const hubBody = `    <section class="blog-cover blog-hub" aria-labelledby="blog-
       <div class="blog-cover-bottom"><p>Practical reading on SEO and AI search for businesses that want to connect discovery with useful enquiries.</p></div>
       <div class="blog-cover-rule"><span>THE LATEST</span><span>SEO &amp; AI SEARCH</span></div>
     </section>
-    <section class="blog-list" aria-label="Latest articles"><a class="blog-story" href="${route}"><div class="blog-story-label"><span>01 / SEO &amp; AI search</span><span>${date} · ${readingMinutes} min read</span></div><h2>${title}</h2><p>How SEO still helps people find your business, what AI search changes, and what to improve next. Follow a Melbourne office-cleaning example.</p><span class="blog-story-read">Read the article <span aria-hidden="true">↗</span></span></a></section>
+    <section class="blog-list" aria-label="Latest articles"><a class="blog-story" href="${route}"><div class="blog-story-label"><span>01 / SEO &amp; AI search</span><span>${date} · ${readingMinutes} min read</span></div><h2>${title}</h2><p>How SEO still helps people find your business, what AI search changes, and what to improve next. Follow a Melbourne office-cleaning example.</p><span class="blog-story-read">Read the article</span></a></section>
 `;
 let hub = html.slice(0, articleStart) + hubBody + html.slice(articleEnd);
 hub = hub.replace(/<title>[^<]+<\/title>/, '<title>SEO &amp; AI Search Blog | Ranking Rebels</title>')
@@ -75,9 +75,11 @@ const css = fontFaces + '\n' + progressCSS + '\n' + fs.readFileSync(path.join(ed
 .blog-story-label > span:first-child { color: var(--tertiary); }
 .blog-story h2 { max-width: 850px; margin: 28px 0 20px; font: 500 clamp(30px, 4vw, 48px)/1.2 'Oswald', sans-serif; color: var(--neutral); }
 .blog-story p { max-width: 690px; color: var(--blog-copy); font-size: 16px; line-height: 1.8; }
-.blog-story-read { display: inline-block; margin-top: 15px; color: var(--neutral); font-size: 13px; }
-.blog-story-read > span { margin-left: 20px; color: var(--tertiary); }
-.blog-story:hover h2 { color: var(--tertiary); }
+.blog-story-read { display: inline-block; margin-top: 15px; color: var(--neutral); font-size: 13px; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .24em; transition: color 140ms ease; }
+.blog-story:is(:hover, :focus-visible) .blog-story-read { color: var(--tertiary); }
+.blog-story:active .blog-story-read { text-decoration-thickness: 2px; }
+.blog-story:is(:hover, :focus-visible) h2 { color: var(--tertiary); }
+@media (prefers-reduced-motion: reduce) { .blog-story-read { transition: none; } }
 .blog-preview .blog-cover-top nav { flex-wrap: wrap; }
 @media (max-width: 1300px) { .blog-list { margin-inline: var(--page-gutter); } }
 @media (max-width: 760px) { .blog-list { padding-block: 10px 60px; } .blog-story-label { flex-direction: column; gap: 6px; } .blog-cover-top { align-items: flex-start; } .blog-version { white-space: nowrap; } }
@@ -87,4 +89,13 @@ fs.copyFileSync(path.join(editorial, 'preview.js'), path.join(root, 'assets/js/b
 require('./publish-local-seo-blog.cjs')({ root, html, title, date, readingMinutes });
 require('./publish-what-is-seo-blog.cjs')({ root, html });
 require('./publish-ai-agents-blog.cjs')({ root });
+require('./publish-enquiries-blog.cjs')({ root });
+require('./publish-google-visibility-blog.cjs')({ root });
+require('./publish-automation-prioritisation-blog.cjs')({ root });
+require('./publish-custom-software-blog.cjs')({ root });
+require('./publish-ai-workflow-pilot-blog.cjs')({ root });
+require('./publish-google-ads-blog.cjs')({ root });
+require('./publish-marketing-results-blog.cjs')({ root });
+const finalHubPath = path.join(root, 'blog/index.html');
+fs.writeFileSync(finalHubPath, fs.readFileSync(finalHubPath, 'utf8').replace(/href="\/assets\/css\/blog\.css(?:\?[^"]*)?"/, 'href="/assets/css/blog.css?v=20261027-underlined-links"'));
 console.log('Generated public blog hub, complete articles and shared assets.');

@@ -1,0 +1,13 @@
+# Preparación terminada — blog 16
+
+4 de noviembre de 2026. Why Have Your Business Apps Stopped Syncing? Artículo de 2323 palabras, ocho H2, cinco H3, dos tablas y una cita del resultado esperado. Cuatro mejoras limitadas, original reconstruible y catorce URLs/numerales conservados. Doce materiales específicos completos y copias idénticas. Trece páginas primarias abiertas, pasajes materiales revalidados y límites registrados. Sin demanda australiana medida, cliente, experiencia o resultados inventados.
+
+Diagnóstico, auditoría priorizada, artículo australiano, SEO, fuentes/no confirmado, ilustración original, gráfico de escritorio/móvil y ficha íntegra preparados. Ficha con ocho tablas, seis ejercicios A–F y celdas observadas vacías; impresión y descarga idéntica. E104/C42 y premisa posterior O104 conservadas, E105 distinta, sin recuperación ejecutada. Imagen hecha con imagegen integrado y guardada en el proyecto con su prompt. Gráficos nativos inspeccionados sin recortes.
+
+Pasaron controles de 102 partes del artículo, 134 de la ficha, 23 recursos locales y 20 solicitudes públicas. Ocho cuerpos/canonicals públicos coinciden con los locales, hub y sitemap comprobados; candidatos 9–16 con 404 y fuera de índices. Revisión exacta servida: 2a16ff6016460a0316889c1a9ea875f077cd98f0, main. Las dos vistas conservan el mismo cuerpo; noindex, sin canonical público, fechas públicas, autor o schema inventados. Sin nueva inspección de página completa en navegador o auditoría completa de accesibilidad.
+
+Los quince anteriores se consideraron en ambas direcciones: treinta decisiones, seis propuestas privadas y veinticuatro omisiones. No hay destinos de borrador activos; fuentes técnicas y CTA conservados. Versiones leídas contrastadas por hash, incluidas las dos modificaciones actuales del 9. No se cambiaron manuscritos ni HTML anteriores. Al publicar, reabrir el conjunto vigente y activar lo útil en ambas representaciones juntas, preservar fechas y comprobar páginas servidas.
+
+Los 669 archivos anteriores permanecieron exactos antes del registro. Después sólo cambiaron estado e inventario privados. Páginas, hub, sitemap, imágenes públicas, herramientas compartidas y pruebas sin cambios; repositorio público limpio. No se repiten build/pruebas de producción de archivos idénticos. Evidencia 09/09a y versión 11.
+
+No hubo push, despliegue, programación, mensaje, formulario, cuenta, permiso, credencial, workflow o replay. La publicación del 9 sigue pendiente de la confirmación de revisión final ya solicitada; su autorización genérica no satisface la regla expresa del usuario del 27 de octubre. Ocho publicados y ocho preparados 9–16. El siguiente paquete nuevo sería 17, sin iniciar. El 16 no está aprobado o autorizado para publicar.

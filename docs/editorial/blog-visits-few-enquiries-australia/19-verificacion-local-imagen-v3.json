@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-29",
+  "scope": "Approved blog 5 image update only",
+  "production": false,
+  "revision": null,
+  "checks": [
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "bytes": 9122,
+      "sha256": "7616757192d81e2102441c001eb39c86046426c323ae9c2e7e9a30a9fde11639"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "bytes": 33341,
+      "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 30591,
+      "sha256": "51b3cf9bede1c55a899098254fd791eb63179390630aabeabdf1a684ca2fd3aa"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 29669,
+      "sha256": "834879d32829c950d6411c0e16ce70344e12e9d7d6545e626c953db7585297c6"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28748,
+      "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32571,
+      "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27620,
+      "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+    },
+    {
+      "url": "http://127.0.0.1:4177/sitemap.xml",
+      "status": 200,
+      "bytes": 1899,
+      "sha256": "9b880f1f61b8beffddf838a7da943c65574a030d38f04f15882b25950db36450"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/website-enquiries-illustration-v3-1280.webp",
+      "status": 200,
+      "bytes": 266018,
+      "sha256": "9954d76dbd24ef881e1c8efbb9eb83503672b08e327a75f4215532e35dae5170"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/website-enquiries-illustration-v3-768.webp",
+      "status": 200,
+      "bytes": 117832,
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/enquiry-checks.svg",
+      "status": 200,
+      "bytes": 2401,
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/images/blog/enquiry-checks-mobile.svg",
+      "status": 200,
+      "bytes": 2398,
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15608,
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css",
+      "status": 200,
+      "bytes": 302227,
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js",
+      "status": 200,
+      "bytes": 1331,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2641,
+      "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-visits-few-enquiries-australia/preview.html",
+      "status": 200,
+      "bytes": 24760,
+      "sha256": "5b276ed8145212b6e37656a79d08d1fa8c34a6cc8d2a1f1fc276157bd18adf4a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-visits-few-enquiries-australia/preview-dark.html",
+      "status": 200,
+      "bytes": 24759,
+      "sha256": "a37bb71eb2e84e8b6602e6cd77a89f0d9881b36f1cc56c7ed645d07e785d0c38"
+    }
+  ],
+  "contextualLinks": [
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    }
+  ],
+  "articleCount": 6,
+  "protectedExistingFiles": 428,
+  "changedPrivateFiles": [
+    "blog/index.html",
+    "blog/website-visits-few-enquiries/index.html",
+    "docs/editorial/blog-visits-few-enquiries-australia/04-paquete-seo.md",
+    "docs/editorial/blog-visits-few-enquiries-australia/06-imagenes-y-vista-local.md",
+    "docs/editorial/blog-visits-few-enquiries-australia/11-version-preparada.json",
+    "docs/editorial/blog-visits-few-enquiries-australia/DESIGN.md",
+    "docs/editorial/blog-visits-few-enquiries-australia/preview-dark.html",
+    "docs/editorial/blog-visits-few-enquiries-australia/preview.html",
+    "docs/editorial/blog-visits-few-enquiries-australia/render-preview.cjs",
+    "docs/editorial/criterios-ranking-rebels.md",
+    "docs/editorial/enlazado-interno.md",
+    "tools/publish-enquiries-blog.cjs",
+    "tools/publish-google-visibility-blog.cjs",
+    "tests/enquiries-blog.test.js",
+    "tests/google-visibility-blog.test.js",
+    "sitemap.xml"
+  ],
+  "remainingExistingFilesUnchanged": 412,
+  "productionTests": 209,
+  "privateTargetedTests": 5,
+  "publicTargetedTests": 5,
+  "buildPassed": true,
+  "manuscriptAndLinksPreserved": true,
+  "publicationDatePreserved": "2026-10-26",
+  "fullPageBrowserQA": false,
+  "fullPageBrowserQALimit": "No new browser automation or screenshots; approved image and optimized asset inspected visually; fixed image geometry and all other markup preserved.",
+  "review": {
+    "base": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+    "standards": "No findings after source-owner follow-up",
+    "spec": "No remaining findings. Sitemap regeneration issue fixed and verified in read-only in-memory full regeneration.",
+    "regeneration": {
+      "articleMatches": true,
+      "hubMatches": true,
+      "sitemapMatches": true,
+      "imageVersion": "V3",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-29",
+      "hubAndArticleSitemapLastmod": "2026-10-29"
+    }
+  },
+  "publicFilesChanged": 8,
+  "newPrivateMaterialExported": 0,
+  "commit": "a9c751c1a915cd7ef2df53b617de6e210580c6cb"
+}

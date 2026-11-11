@@ -1,0 +1,286 @@
+{
+  "date": "2026-11-11",
+  "local": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/preview.html",
+      "status": 200,
+      "bytes": 26100,
+      "sha256": "9358413d0e8eee7fa22a45689ba7a1f1b76afda5f17d4e99e1c0d34c62e574a1"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/preview-dark.html",
+      "status": 200,
+      "bytes": 26099,
+      "sha256": "b8289470e604a9b7a875720678096c6307ecca3bde9d3cdc209e8292f36c8ead"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/preview.css",
+      "status": 200,
+      "bytes": 8794,
+      "sha256": "b5cc716fa809f1a245aa76d6627ce2085f72d23edc206c566d055b680e272285"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/worksheet-preview.html",
+      "status": 200,
+      "bytes": 9625,
+      "sha256": "1057bf0d693ffb17ace5fb48386f471d07da824cf8dd052078901fb0a1107978"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/recursos/chatbot-answer-evidence-card.md",
+      "status": 200,
+      "bytes": 6235,
+      "sha256": "7e553f63616bb7ac2526390032a4c8a9b6b4ad44bac346561c338801700c4011"
+    },
+    {
+      "url": "http://127.0.0.1:4177/favicon.ico",
+      "status": 200,
+      "bytes": 15086,
+      "sha256": "e1c4d61f035348562f19c525206706a8a65da573dd44120ef9f933ed377ba27a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css",
+      "status": 200,
+      "bytes": 302227,
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15608,
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2641,
+      "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js",
+      "status": 200,
+      "bytes": 1331,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/",
+      "status": 200,
+      "bytes": 24001,
+      "sha256": "8c4f020435d6a7668b791ec0871441bcb1264245934f072e06d29c578bcfcc0d"
+    },
+    {
+      "url": "http://127.0.0.1:4177/contact/",
+      "status": 200,
+      "bytes": 14931,
+      "sha256": "4903085d28bf620a7f054043ea57583550dddd173d3e7e638edda93e8b9255fb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "bytes": 13771,
+      "sha256": "cba3ea2293bc9e44ac81af72e8ac93dfdc838cce7919884f759da597a57c355a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/media/chatbot-evidence-illustration-1280.webp",
+      "status": 200,
+      "bytes": 255488,
+      "sha256": "13954fabcecb923ef457a5825b72bbcfe7a3f7809a21c8f50cfb843db3fe9391"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/media/chatbot-evidence-illustration-768.webp",
+      "status": 200,
+      "bytes": 80168,
+      "sha256": "b240b8b9133d03954304d09779b62f22c0deeab34ad6deb71e33f4598928643d"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/media/saturday-answer-evidence-mobile.svg",
+      "status": 200,
+      "bytes": 4318,
+      "sha256": "e69ce86a3f381bdc0c79e0bd57ae255489b0c76f966faa011e96f44a7ffb6f00"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-ai-chatbot-outdated-answers-australia/media/saturday-answer-evidence.svg",
+      "status": 200,
+      "bytes": 4204,
+      "sha256": "8b371d590740b36cdb4d01c47ac8b23a0d3e7b2db3181daf41109b69e9faf290"
+    },
+    {
+      "url": "http://127.0.0.1:4177/solutions/",
+      "status": 200,
+      "bytes": 12225,
+      "sha256": "a0b5290a0f1412fe477b3677a3b420ac5ddd6df35a7dc69c2e5b6379c7f23e2a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/about/",
+      "status": 200,
+      "bytes": 15054,
+      "sha256": "40038bc1e24a3223fdc8108514e6a07938148baa5ad299863ba58b3370138ecf"
+    },
+    {
+      "url": "http://127.0.0.1:4177/privacy/",
+      "status": 200,
+      "bytes": 12110,
+      "sha256": "a6db2426b0ca8061f5936f1b56536c36c82065ef793eaee322029b7a9ad421ad"
+    },
+    {
+      "url": "http://127.0.0.1:4177/cookies/",
+      "status": 200,
+      "bytes": 7440,
+      "sha256": "685d4434f001c348043895556412a0ab16285ade57a083c28ef878ffe0f261d6"
+    },
+    {
+      "url": "http://127.0.0.1:4177/legal/",
+      "status": 200,
+      "bytes": 6620,
+      "sha256": "7fd241b7324e323203bb07ac42d24d2c23ce3eca6780e7dfa1c093996d142b89"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/script.js",
+      "status": 200,
+      "bytes": 16310,
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a"
+    }
+  ],
+  "public": [
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "0835d860b76262018d449b300a8d0009876afedcc5f2f9390d284ba77e0a7837"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "bytes": 13985,
+      "sha256": "cfa9ddd7e4c94d251a80ff1cc42307ab0e1562636322f71e99dbfde86ce47403"
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "bytes": 2485,
+      "sha256": "017f58d4d852368b43a579644b8261d28ae44ff7d9f921353da42f9e7cb80da3"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/measure-digital-marketing-results/",
+      "status": 200,
+      "bytes": 38920,
+      "sha256": "fec746d946e1ccdbed26a8afc223281278f7035cf70a5f4626a8ed21d38b3b3e"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/google-ads-for-service-businesses/",
+      "status": 200,
+      "bytes": 38596,
+      "sha256": "22b7cbed6ff14b88aaa63a94096779d59bd07f48f3303ca74ded66ab80b20e92"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-to-build-ai-workflow/",
+      "status": 200,
+      "bytes": 35045,
+      "sha256": "e971ff741030720557f16b32abd4e8b9ab02785fabe43113ec469d48885faf33"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/custom-software-benefits/",
+      "status": 200,
+      "bytes": 34198,
+      "sha256": "3a07d205181b5626fa0d8680ca9f1c02fc696ed4f5f02f176a5ff1d50b868920"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 200,
+      "bytes": 33288,
+      "sha256": "5865a4663fcd9ac35a9873ef78b2c388bfd22df14a6b8fc213c232dc8d1effe2"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "bytes": 33555,
+      "sha256": "6a71388b5b6d3cca89fb95f9e975cd9e6911c29f899b6d8f821b137c07ab0a4c"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 31611,
+      "sha256": "45bc995735fa35c96722cfeffe1b9fd64dea4da47e2bd7f58d7e22d9efaba7de"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 30740,
+      "sha256": "f093f2f72aca7c6a8f02ec940044c27759fe6d85f9d1b03c0e1165e2b31c8517"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 29511,
+      "sha256": "b2ed0250d2ede8431ee874217f6af81676a78a984fd870d2d164ef80f4f64036"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 33019,
+      "sha256": "249d5fcd4afe4e69e3ca5d899f25def4cebbdaae34ad661fec96bb291343316a"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 28111,
+      "sha256": "98f64378451079b6a235edc5afad9741c0f61a72b6d318ff7036ec56845c5b1b"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/facebook-instagram-advertising/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-crm/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-tiktok-ads-works/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/update-or-delete-old-blog-posts/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/business-apps-stopped-syncing/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/customer-reviews-testimonials-website/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/seo-or-google-ads-budget/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-chatbot-outdated-answers/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/solutions/ai-automation/",
+      "status": 200,
+      "bytes": 23198,
+      "sha256": "3a563ceca9ff7e7b43e2ed36730aee6ddccb0f58923618a92fbae4033bcc91b8"
+    }
+  ],
+  "publicRevision": "e584b314d65583062a6f6511abbe2ec509c71b19",
+  "allPass": true,
+  "published": false
+}

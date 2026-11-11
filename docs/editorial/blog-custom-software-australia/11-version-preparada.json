@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-27",
+  "blog": 8,
+  "status": "Publicado y verificado",
+  "articleApproval": "Aprobado tras vista final, 2 de noviembre",
+  "designApproval": "Lectura clara e ilustraciónV2 aprobadas",
+  "proposedReadingTheme": "light",
+  "alternateReadingTheme": "dark",
+  "publicationAuthorised": true,
+  "publicationDate": "2026-11-02",
+  "automation": null,
+  "candidateSlug": "custom-software-benefits",
+  "publishedArticleCount": 8,
+  "preparedArticleNumbers": [
+    9,
+    10,
+    11,
+    12
+  ],
+  "nextManualTopic": 9,
+  "files": [
+    {
+      "name": "03-articulo-custom-software-australia.md",
+      "bytes": 17222,
+      "sha256": "de6c4b171e9740851b01932fae051e97bfe5c1f999763e09226c1a3b1c7d63c4"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 4067,
+      "sha256": "4c45b894982daac873d813f793e6ef61f04905803342453eab97d2aac64c7d4e"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27169,
+      "sha256": "698b74867449d17e183ed7ca6837066aa3f6316aa50797b6a23f1fa0cac0bed7"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27173,
+      "sha256": "fe70342e561279309d142ca3906a8991830f4139cb1617ffb4d66bb41942b262"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 5582,
+      "sha256": "f994467e15467e0c5fe33a6232780e92aaeffa2f3f17de266fde02b31a241f35"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 9197,
+      "sha256": "0d0c79dc407f557a5ab289ce25e0c59964e9d1fe226d367ce08f920fe34ed1b1"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-1280.webp",
+      "bytes": 240466,
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "media/custom-software-illustration-v2-768.webp",
+      "bytes": 100746,
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    }
+  ],
+  "semanticBlocksMatched": 108,
+  "publicAndPreviousFilesUnchanged": true,
+  "fullPageBrowserQA": false,
+  "localPreview": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview.html",
+  "publicationInstructions": "10-listo-para-publicar.md",
+  "illustrationVersion": "V2",
+  "illustrationDirectionAuthorised": true,
+  "illustrationApproval": "Aprobada",
+  "published": true,
+  "productionURL": "https://rankingrebels.com/blog/custom-software-benefits/",
+  "productionRevision": "2a16ff6016460a0316889c1a9ea875f077cd98f0",
+  "originalReviewedVersion": "13-aprobacion-publicacion.json",
+  "authorisedLinkChanges": "14-integracion-local.json"
+}

@@ -1,0 +1,357 @@
+{
+  "date": "2026-11-05",
+  "blog": 18,
+  "publicCount": 9,
+  "preparedPriorCount": 8,
+  "articleSources": [
+    {
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "bytes": 15755,
+      "sha256": "33531c98983e5bd4f3a63ad190e7a4a4bd6a845b222e49a3236f7cbb4be8256f",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "bytes": 18988,
+      "sha256": "ebd816b4c696506b39b22f37613ad152b66ff06bffbdde1909ec1b895d7e8ab7",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "bytes": 17896,
+      "sha256": "819f49d756778b319f8e8e0fe8a3f07a3198453cab1d55c2c8724ffcffbd388f",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "bytes": 15983,
+      "sha256": "ec29f3f8d58150d115f4740be99df26447dd2bc14d7e1f141f6ec451c7caa936",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "bytes": 15039,
+      "sha256": "9f4cda6770dd531ddedb4266a9c9a857402ccf64b2829ee46cda9359b5fc8a09",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-google-visibility-diagnosis-australia/03-articulo-google-visibility-diagnosis-australia.md",
+      "bytes": 16436,
+      "sha256": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "bytes": 16917,
+      "sha256": "fce55cf86c4eee0070a6e22faadb89b0c6e001178ca2151f75e00cf9ed51e685",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "bytes": 17433,
+      "sha256": "ea78596fd1af9d3692a72257fcc6d1e786972f5a922749b9721431fcc18eaea3",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-ai-workflow-pilot-australia/03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16980,
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "bytes": 16903,
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-marketing-measurement-australia/03-articulo-marketing-measurement-australia.md",
+      "bytes": 17937,
+      "sha256": "04fe46f6f1c6c5c606351c7fc5b4d169bfc32eea57a451d17ab9c3777b1da440",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "bytes": 16074,
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "bytes": 17641,
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "bytes": 17803,
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "bytes": 15983,
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/03-articulo-business-apps-stopped-syncing-australia.md",
+      "bytes": 16321,
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d",
+      "readingBasis": "Complete previous reading, current version unchanged from preparation17 hash"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/03-articulo-customer-reviews-testimonials-australia.md",
+      "bytes": 16188,
+      "sha256": "87f3884fe96a4ce59662647ca0352454ae10e998d1c3ba4a2e764a8796fa97fd",
+      "readingBasis": "Complete reading during preparation17; current manifest unchanged"
+    }
+  ],
+  "directions": [
+    {
+      "from": 18,
+      "to": 1,
+      "title": "SEO and AI search",
+      "status": "omit",
+      "reason": "El primer blog responde si SEO sigue siendo útil ante IA y ya deriva a fundamentos. No necesita convertir esa respuesta en planificación de presupuesto ni añadir otro desvío desde 18."
+    },
+    {
+      "from": 1,
+      "to": 18,
+      "title": "SEO and AI search",
+      "status": "omit",
+      "reason": "El primer blog responde si SEO sigue siendo útil ante IA y ya deriva a fundamentos. No necesita convertir esa respuesta en planificación de presupuesto ni añadir otro desvío desde 18."
+    },
+    {
+      "from": 18,
+      "to": 2,
+      "title": "Local SEO and Maps",
+      "status": "omit",
+      "reason": "Intención de perfil y visibilidad local; el 18 no compara Google Maps ni exige esa especialidad para decidir la próxima tarea."
+    },
+    {
+      "from": 2,
+      "to": 18,
+      "title": "Local SEO and Maps",
+      "status": "omit",
+      "reason": "Intención de perfil y visibilidad local; el 18 no compara Google Maps ni exige esa especialidad para decidir la próxima tarea."
+    },
+    {
+      "from": 18,
+      "to": 3,
+      "title": "Agents vs workflows",
+      "status": "omit",
+      "reason": "Arquitectura de agentes/workflows no resuelve la asignación de presupuesto de búsqueda."
+    },
+    {
+      "from": 3,
+      "to": 18,
+      "title": "Agents vs workflows",
+      "status": "omit",
+      "reason": "Arquitectura de agentes/workflows no resuelve la asignación de presupuesto de búsqueda."
+    },
+    {
+      "from": 18,
+      "to": 4,
+      "title": "What is SEO",
+      "status": "applied in draft",
+      "reason": "Tras definir ambos canales, ampliar los fundamentos de SEO; URL pública, implementado en manuscrito y dos vistas."
+    },
+    {
+      "from": 4,
+      "to": 18,
+      "title": "What is SEO",
+      "status": "private proposal",
+      "reason": "En «SEO vs Google Ads: what is the difference?», después de «Neither is automatically the better choice…»: “When funds are limited, compare [the next SEO task or Search ads test](https://rankingrebels.com/blog/seo-or-google-ads-budget/) by readiness, complete cost and what would justify continuing.” Activar sólo tras publicar 18, fuente y HTML juntos."
+    },
+    {
+      "from": 18,
+      "to": 5,
+      "title": "Visits but few enquiries",
+      "status": "applied in draft",
+      "reason": "En preparación página/equipo, ampliar problemas de oferta y contacto; URL pública, implementado en manuscrito y dos vistas."
+    },
+    {
+      "from": 5,
+      "to": 18,
+      "title": "Visits but few enquiries",
+      "status": "omit",
+      "reason": "La guía 5 cierra sobre resolver oferta/contacto y seguimiento; una salida adicional de inversión no desarrolla su diagnóstico. Omitida aunque la relación inversa sí ayuda."
+    },
+    {
+      "from": 18,
+      "to": 6,
+      "title": "Website not on Google",
+      "status": "omit",
+      "reason": "La elección ya deriva a fundamentos y preparación. Añadir diagnóstico técnico completo distrae; la guía 6 debe resolver visibilidad antes de elegir inversión."
+    },
+    {
+      "from": 6,
+      "to": 18,
+      "title": "Website not on Google",
+      "status": "omit",
+      "reason": "La elección ya deriva a fundamentos y preparación. Añadir diagnóstico técnico completo distrae; la guía 6 debe resolver visibilidad antes de elegir inversión."
+    },
+    {
+      "from": 18,
+      "to": 7,
+      "title": "Automation prioritisation",
+      "status": "omit",
+      "reason": "Priorización de trabajo operativo, distinta de inversión en adquisición de demanda."
+    },
+    {
+      "from": 7,
+      "to": 18,
+      "title": "Automation prioritisation",
+      "status": "omit",
+      "reason": "Priorización de trabajo operativo, distinta de inversión en adquisición de demanda."
+    },
+    {
+      "from": 18,
+      "to": 8,
+      "title": "Custom software",
+      "status": "omit",
+      "reason": "Decidir configuración/integración/software es una compra distinta de financiar SEO/Search."
+    },
+    {
+      "from": 8,
+      "to": 18,
+      "title": "Custom software",
+      "status": "omit",
+      "reason": "Decidir configuración/integración/software es una compra distinta de financiar SEO/Search."
+    },
+    {
+      "from": 18,
+      "to": 9,
+      "title": "AI workflow pilot",
+      "status": "omit",
+      "reason": "Diseñar y evaluar un piloto operativo no requiere ampliar esta decisión de marketing."
+    },
+    {
+      "from": 9,
+      "to": 18,
+      "title": "AI workflow pilot",
+      "status": "omit",
+      "reason": "Diseñar y evaluar un piloto operativo no requiere ampliar esta decisión de marketing."
+    },
+    {
+      "from": 18,
+      "to": 10,
+      "title": "Google Ads",
+      "status": "private proposal",
+      "reason": "En «When Google Ads may deserve the first allocation», tras el primer párrafo: “Before setting the scope, see [how a Search campaign moves from search to enquiry](https://rankingrebels.com/blog/google-ads-for-service-businesses/).” Privado hasta publicar 10; no activo ahora."
+    },
+    {
+      "from": 10,
+      "to": 18,
+      "title": "Google Ads",
+      "status": "private proposal",
+      "reason": "En «What can a well-managed Search campaign offer?», después de su párrafo sobre complementar SEO: “If you are deciding which work to fund first, compare [SEO and Search ads against your next business need](https://rankingrebels.com/blog/seo-or-google-ads-budget/), including shared costs and review conditions.” Privado hasta que ambos destinos sean públicos."
+    },
+    {
+      "from": 18,
+      "to": 11,
+      "title": "Marketing measurement",
+      "status": "private proposal",
+      "reason": "En «Compare combined business outcomes without double counting», tras el párrafo de reconciliar resultados únicos: “For a wider review, use our guide to [checking whether digital marketing is working](https://rankingrebels.com/blog/measure-digital-marketing-results/) to keep business records, attributed credit and causal claims separate.” Privado hasta publicar 11."
+    },
+    {
+      "from": 11,
+      "to": 18,
+      "title": "Marketing measurement",
+      "status": "omit",
+      "reason": "La guía 11 evalúa marketing existente. No exige escoger SEO/Ads y ya ofrece el marco de evidencia; no forzar reciprocidad."
+    },
+    {
+      "from": 18,
+      "to": 12,
+      "title": "Facebook/Instagram",
+      "status": "omit",
+      "reason": "Comparar SEO/Search no requiere recomendar otro canal. La guía Meta conserva su evaluación específica y salida a medición."
+    },
+    {
+      "from": 12,
+      "to": 18,
+      "title": "Facebook/Instagram",
+      "status": "omit",
+      "reason": "Comparar SEO/Search no requiere recomendar otro canal. La guía Meta conserva su evaluación específica y salida a medición."
+    },
+    {
+      "from": 18,
+      "to": 13,
+      "title": "CRM",
+      "status": "omit",
+      "reason": "Organizar seguimiento no equivale a elegir canal; el 18 necesita registros fiables, no implantar CRM universal."
+    },
+    {
+      "from": 13,
+      "to": 18,
+      "title": "CRM",
+      "status": "omit",
+      "reason": "Organizar seguimiento no equivale a elegir canal; el 18 necesita registros fiables, no implantar CRM universal."
+    },
+    {
+      "from": 18,
+      "to": 14,
+      "title": "TikTok Ads",
+      "status": "omit",
+      "reason": "La elección de TikTok depende de formato/uso propios. No añadir una tercera plataforma para forzar relación."
+    },
+    {
+      "from": 14,
+      "to": 18,
+      "title": "TikTok Ads",
+      "status": "omit",
+      "reason": "La elección de TikTok depende de formato/uso propios. No añadir una tercera plataforma para forzar relación."
+    },
+    {
+      "from": 18,
+      "to": 15,
+      "title": "Old content decisions",
+      "status": "omit",
+      "reason": "Gestionar contenido/URL antiguo no exige comparar presupuestos. En 18 la tarea SEO ya está acotada sin imponer una poda de contenidos."
+    },
+    {
+      "from": 15,
+      "to": 18,
+      "title": "Old content decisions",
+      "status": "omit",
+      "reason": "Gestionar contenido/URL antiguo no exige comparar presupuestos. En 18 la tarea SEO ya está acotada sin imponer una poda de contenidos."
+    },
+    {
+      "from": 18,
+      "to": 16,
+      "title": "Apps stopped syncing",
+      "status": "omit",
+      "reason": "Diagnóstico y recuperación de conexiones no amplía una decisión entre SEO y Search."
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "title": "Apps stopped syncing",
+      "status": "omit",
+      "reason": "Diagnóstico y recuperación de conexiones no amplía una decisión entre SEO y Search."
+    },
+    {
+      "from": 18,
+      "to": 17,
+      "title": "Customer reviews and testimonials",
+      "status": "omit",
+      "reason": "Publicar feedback con significado y base de uso no determina presupuesto de adquisición; no suponer que toda evidencia requiere testimonios."
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "title": "Customer reviews and testimonials",
+      "status": "omit",
+      "reason": "Publicar feedback con significado y base de uso no determina presupuesto de adquisición; no suponer que toda evidencia requiere testimonios."
+    }
+  ],
+  "activeOutgoingBlogURLs": [
+    "https://rankingrebels.com/blog/what-is-seo/",
+    "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+  ],
+  "privateProposals": 4,
+  "omissions": 28,
+  "olderManuscriptsOrHTMLChanged": false
+}

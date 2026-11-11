@@ -197,6 +197,16 @@ a {
   display: none;
 }
 
+/* Keep the pointer inside the menu while crossing its 25px visual gap. */
+.solutions-panel::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 26px;
+}
+
 .solutions-panel-heading {
   display: flex;
   align-items: end;

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "media/ai-workflow-pilot-illustration-1280.webp",
+    "width": 1280,
+    "height": 720,
+    "bytes": 172356,
+    "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+  },
+  {
+    "name": "media/ai-workflow-pilot-illustration-768.webp",
+    "width": 768,
+    "height": 432,
+    "bytes": 68604,
+    "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+  }
+]

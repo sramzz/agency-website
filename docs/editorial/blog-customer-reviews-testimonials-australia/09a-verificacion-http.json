@@ -1,0 +1,274 @@
+{
+  "date": "2026-11-04",
+  "local": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/preview.html",
+      "status": 200,
+      "bytes": 28060,
+      "sha256": "54d0f90a10eefd340e36c409eaf8cc5b04c923f7e58696b4bb87a175902d4596"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/preview-dark.html",
+      "status": 200,
+      "bytes": 28059,
+      "sha256": "c91235f0a9b007ca9261a88b6ec4ef2f00a020646cf0c1d43ff97aa07a3ad070"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/preview.css",
+      "status": 200,
+      "bytes": 8574,
+      "sha256": "83935eccfd7c3a7f88c7a0567c8bb171a9bd2876ca28c444f78881b01670eb93"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/worksheet-preview.html",
+      "status": 200,
+      "bytes": 11298,
+      "sha256": "50cea0349a1d7ef8a78a5e473d3c684d301a36a5d9742d0698d99f22050ab7cb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/recursos/testimonial-evidence-and-publication-card.md",
+      "status": 200,
+      "bytes": 6862,
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23"
+    },
+    {
+      "url": "http://127.0.0.1:4177/favicon.ico",
+      "status": 200,
+      "bytes": 15086,
+      "sha256": "e1c4d61f035348562f19c525206706a8a65da573dd44120ef9f933ed377ba27a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css",
+      "status": 200,
+      "bytes": 302227,
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15608,
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2641,
+      "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js",
+      "status": 200,
+      "bytes": 1331,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/",
+      "status": 200,
+      "bytes": 24001,
+      "sha256": "8c4f020435d6a7668b791ec0871441bcb1264245934f072e06d29c578bcfcc0d"
+    },
+    {
+      "url": "http://127.0.0.1:4177/contact/",
+      "status": 200,
+      "bytes": 14931,
+      "sha256": "4903085d28bf620a7f054043ea57583550dddd173d3e7e638edda93e8b9255fb"
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "bytes": 11947,
+      "sha256": "810502d8c2a2b4b877d88bd5088701eccd02188a089f826d401ae8e9ac015e7d"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/media/testimonial-editing-illustration-1280.webp",
+      "status": 200,
+      "bytes": 295174,
+      "sha256": "f9bb7d35cd64b05d197ab963821cd69eca0b28d61de7353d09709f0626b68002"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/media/testimonial-editing-illustration-768.webp",
+      "status": 200,
+      "bytes": 95674,
+      "sha256": "6b43c2def97833a44809025cf623e3d6444463cca6507ed379195fb283db68ff"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/media/three-publication-checks-mobile.svg",
+      "status": 200,
+      "bytes": 4081,
+      "sha256": "b4a1765f6292b37621b69f95f8d5a5d1d93e40fb968465cf04a7403601cec8b1"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-customer-reviews-testimonials-australia/media/three-publication-checks.svg",
+      "status": 200,
+      "bytes": 3487,
+      "sha256": "f161608f7c83f4a07de20b6d47aba788eae7d4fae2f5a863b84283807428bf8b"
+    },
+    {
+      "url": "http://127.0.0.1:4177/solutions/",
+      "status": 200,
+      "bytes": 12225,
+      "sha256": "a0b5290a0f1412fe477b3677a3b420ac5ddd6df35a7dc69c2e5b6379c7f23e2a"
+    },
+    {
+      "url": "http://127.0.0.1:4177/about/",
+      "status": 200,
+      "bytes": 15054,
+      "sha256": "40038bc1e24a3223fdc8108514e6a07938148baa5ad299863ba58b3370138ecf"
+    },
+    {
+      "url": "http://127.0.0.1:4177/privacy/",
+      "status": 200,
+      "bytes": 12110,
+      "sha256": "a6db2426b0ca8061f5936f1b56536c36c82065ef793eaee322029b7a9ad421ad"
+    },
+    {
+      "url": "http://127.0.0.1:4177/cookies/",
+      "status": 200,
+      "bytes": 7440,
+      "sha256": "685d4434f001c348043895556412a0ab16285ade57a083c28ef878ffe0f261d6"
+    },
+    {
+      "url": "http://127.0.0.1:4177/legal/",
+      "status": 200,
+      "bytes": 6620,
+      "sha256": "7fd241b7324e323203bb07ac42d24d2c23ce3eca6780e7dfa1c093996d142b89"
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/script.js",
+      "status": 200,
+      "bytes": 16310,
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a"
+    }
+  ],
+  "public": [
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "c04935b7b590a05c152a1ed6b8f79067bceb3f4ffbc0957b78221a5cab5a31cc"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "bytes": 12161,
+      "sha256": "06331eb0368b1a19e479e7f00f0d178f9b6e17a5c10a48b6bc0feb545ac83030"
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "bytes": 2247,
+      "sha256": "b955916cd2d82b1005f3c445f69a4a83935a578ea73cedf0e32648c9bcb49fc4"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-to-build-ai-workflow/",
+      "status": 200,
+      "bytes": 35045,
+      "sha256": "e971ff741030720557f16b32abd4e8b9ab02785fabe43113ec469d48885faf33"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/custom-software-benefits/",
+      "status": 200,
+      "bytes": 34198,
+      "sha256": "3a07d205181b5626fa0d8680ca9f1c02fc696ed4f5f02f176a5ff1d50b868920"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 200,
+      "bytes": 33288,
+      "sha256": "5865a4663fcd9ac35a9873ef78b2c388bfd22df14a6b8fc213c232dc8d1effe2"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "bytes": 33555,
+      "sha256": "6a71388b5b6d3cca89fb95f9e975cd9e6911c29f899b6d8f821b137c07ab0a4c"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 31048,
+      "sha256": "fd2efdd6606b7f9bbddf6801087134f04ca5f36128e55017fda37e1bf9dc815b"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 30740,
+      "sha256": "f093f2f72aca7c6a8f02ec940044c27759fe6d85f9d1b03c0e1165e2b31c8517"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28962,
+      "sha256": "9e16b8715a8b738b3ee229c939780b2f753e5228ce331c1d6ba02890b3c726fc"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32785,
+      "sha256": "35f3a54302bab2eee8b597a8cd8c6eb7d375dc5710e60509cec8c3152709d589"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27834,
+      "sha256": "d190169b2868830607dc452ddb9b54997b0f549410adab555ae1284189b30901"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/google-ads-for-service-businesses/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/measure-digital-marketing-results/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/facebook-instagram-advertising/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-crm/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-tiktok-ads-works/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/update-or-delete-old-blog-posts/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/business-apps-stopped-syncing/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/customer-reviews-testimonials-website/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/contact/",
+      "status": 200,
+      "bytes": 15172,
+      "sha256": "cde4027917eecac2b80e1f3fe3d091730e5ffd5e2592a638dd9103122dfb6b03"
+    }
+  ],
+  "publicRevision": "4dd7661b323f468dc36a5874f475b7f8f812d444",
+  "allPass": true,
+  "published": false
+}

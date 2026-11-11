@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-30",
+  "blog": 7,
+  "publicationRequested": true,
+  "versionUnchanged": true,
+  "files": [
+    {
+      "name": "03-articulo-automation-prioritisation-australia.md",
+      "sha256": "0d37cb0a7141270ef204d9012e379f103478ea536631232ea7da11b45c6ccc14"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "sha256": "e6fb78ecdcd8fc1e876d8c303cf6608411c6396204bd5ee6c5787784e003933d"
+    },
+    {
+      "name": "preview.html",
+      "sha256": "907c9c870ce4272378da3e59b992a3dc0355b2d5838d314a28d6d6150f321802"
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "4e42a69fcd78259f60b21c204829ed93b7021b26faf23c14784d29b5e1a07efd"
+    },
+    {
+      "name": "preview.css",
+      "sha256": "ccab15a5be85f34ad1ceb35b3d5be9ff894883b11a12dd40cbfe34dba9d298b3"
+    },
+    {
+      "name": "render-preview.cjs",
+      "sha256": "42dab51a91132984873873a4b5d3ecdad2e621ff3e8bec5559ae5104f8631c56"
+    },
+    {
+      "name": "media/automation-prioritisation-illustration-v2-1280.webp",
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "name": "media/automation-prioritisation-illustration-v2-768.webp",
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    }
+  ],
+  "recommendedReadingTheme": "light",
+  "illustrationVersion": "V2",
+  "localChecks": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.html",
+      "status": 200,
+      "sha256": "907c9c870ce4272378da3e59b992a3dc0355b2d5838d314a28d6d6150f321802"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-dark.html",
+      "status": 200,
+      "sha256": "4e42a69fcd78259f60b21c204829ed93b7021b26faf23c14784d29b5e1a07efd"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.css",
+      "status": 200,
+      "sha256": "ccab15a5be85f34ad1ceb35b3d5be9ff894883b11a12dd40cbfe34dba9d298b3"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/media/automation-prioritisation-illustration-v2-1280.webp",
+      "status": 200,
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/media/automation-prioritisation-illustration-v2-768.webp",
+      "status": 200,
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    }
+  ],
+  "productionRevision": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+  "publicRoutes": [
+    "/blog/website-not-showing-up-on-google/",
+    "/blog/website-visits-few-enquiries/",
+    "/blog/ai-agents-vs-workflow-automation/",
+    "/blog/what-is-seo/",
+    "/blog/local-seo-google-maps-visibility/",
+    "/blog/is-seo-still-relevant-ai-search/"
+  ],
+  "candidateStatus": 404,
+  "internalLinkDirectionsConsidered": 20,
+  "additionalBlog11Decisions": "Omit both directions: operational capacity and marketing acquisition use different scopes and units.",
+  "incomingParagraph": "If you have several tasks in mind, first compare [which business processes to automate first](https://rankingrebels.com/blog/which-business-processes-to-automate-first/). That guide helps you weigh the work, remaining effort and unknowns before choosing a task to demonstrate.",
+  "finalVersionApproval": false,
+  "approvalRequiredBy": "Explicit user review-before-publication instruction of27 October",
+  "published": false,
+  "pushPerformed": false,
+  "deploymentPerformed": false,
+  "fullPageBrowserQA": false
+}

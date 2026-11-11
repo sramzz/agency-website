@@ -46,6 +46,8 @@ Google's [DebugView documentation](https://support.google.com/analytics/answer/7
 
 Look beyond the total visit count. Compare service pages with information pages, paid with organic visits, and relevant locations with places outside your scope. Our guide to [what SEO involves](https://rankingrebels.com/blog/what-is-seo/) explains why a service search and a general advice question need different pages.
 
+If those visits come from Google Search ads, check the query and ad promise alongside the page. Our guide to [Google Ads for service businesses](https://rankingrebels.com/blog/google-ads-for-service-businesses/) explains that route and how to assess the enquiries it produces.
+
 For example, an article answering a general gardening question might attract people who want advice rather than a landscaping quote. That can be a useful content outcome, but it should not be judged as though every reader had searched for a local contractor.
 
 For Google organic search, [Search Console](https://support.google.com/webmasters/answer/7576553) can show the queries and pages associated with impressions and clicks. Analytics can help examine what visitors do afterwards, where measurement is configured correctly. [The two tools measure different things](https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console), so clicks and sessions should not be expected to match exactly.
@@ -58,6 +60,8 @@ Look for evidence of a mismatch:
 - Educational pages account for most of the growth, while relevant service-page visits have barely changed.
 
 Use those patterns to decide what to investigate. Compare the search data with the page, campaign and actual enquiries before changing how you attract visitors.
+
+If an important service page is not appearing in Google, start with [a visibility diagnosis](https://rankingrebels.com/blog/website-not-showing-up-on-google/) before changing the enquiry form.
 
 ## 4. Check whether the page helps a suitable visitor decide
 
@@ -109,6 +113,8 @@ Keep a practical record of received enquiries, responsibility, status and outcom
 
 Distinguish a page's ability to generate contact from the team's ability to assess and handle it. Both matter to the eventual result, but they need different changes and measurements.
 
+If you choose an AI-assisted handover, start with a [small, measured workflow pilot](https://rankingrebels.com/blog/how-to-build-ai-workflow/) so you can check the complete result and the review work it leaves for your team.
+
 ## Decide what to fix and how to evaluate it
 
 Choose a change that addresses what you found. For the Perth landscaper, that could mean repairing delivery, clarifying project scope or assigning someone to each received request. Use this table as a decision aid:
@@ -126,6 +132,8 @@ For reporting, decide what your rate actually measures. A session-based completi
 If you cannot reliably connect a received enquiry with a measured session, report those counts separately and state the limitation. Do not invent a visitor-level connection to make a funnel look complete. Review valid enquiries as well as recorded submissions so a rise in spam does not appear to be success.
 
 Record what changed and compare relevant audiences over a meaningful period. With few enquiries, a small numerical change can produce a large percentage swing. Different traffic sources, seasonality and simultaneous campaigns can also change the mix. A before-and-after improvement is evidence to examine, rather than proof that one edit caused it.
+
+Once enquiries are reaching the team, our guide to [evaluating marketing results from visits to customers](https://rankingrebels.com/blog/measure-digital-marketing-results/) helps you follow their outcomes and assess the costs on a consistent basis.
 
 [A/B testing needs a defined hypothesis, metrics and evaluation design](https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/). It can help answer a question when there are enough observations for the decision. Set the outcome and evaluation plan before judging the result. Do not call a test a winner after a handful of convenient outcomes. Repair and verify broken functionality as soon as possible rather than leaving it broken for an experiment.
 

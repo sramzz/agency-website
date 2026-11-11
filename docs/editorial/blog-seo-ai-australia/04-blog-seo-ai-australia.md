@@ -116,6 +116,8 @@ Start with a problem you can identify. This table is a decision aid, rather than
 | You don't know how the business appears in AI search | Observe a small, defined set of relevant questions | Mentions, linked sources, accuracy and attributable visits |
 | Budget or delivery capacity is tight | Compare the next SEO improvement with other priorities | Full costs, demand, margins and the work you can fulfil |
 
+If an important service page is not appearing in Google, our [website visibility diagnosis](https://rankingrebels.com/blog/website-not-showing-up-on-google/) helps you distinguish an access or indexing issue from limited visibility for a particular search.
+
 The next step may be a repair, a better service page or a limited test. If demand, margins or delivery capacity are constrained, another priority may deserve the resources first. SEO's continued relevance doesn't establish the value of every proposed project.
 
 Agree on review points around the work and the evidence you can collect. Completing a page update, appearing in a result and winning a job are separate outcomes.
@@ -136,6 +138,8 @@ Aleyda Solis's prompt-library framework offers a professional method for choosin
 
 For the Melbourne company, a useful review would connect the revised page with the requests received and what happened to those requests. Keeping the stages separate helps identify where a problem remains.
 
+If visits are arriving but useful requests are scarce, our guide to [checking the website enquiry journey](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you work out whether to investigate the audience, page or contact route first.
+
 | Stage | What you can record | What it tells you |
 |---|---|---|
 | Website readiness | Access and indexing checks | Whether technical obstacles were found or resolved |
@@ -147,6 +151,8 @@ For the Melbourne company, a useful review would connect the revised page with t
 As checked on 16 October 2026, Google's Generative AI performance report documents impressions for AI Overviews and AI Mode, with dimensions including pages, countries and devices. It may be absent when impressions are insufficient. The documented fields aren't a complete query, click or revenue report. [Search Console report help](https://support.google.com/webmasters/answer/16984139).
 
 People may encounter your business without clicking, return directly or use several channels before contacting you. Record what you can connect to an enquiry and where information is missing. Consider seasonality, advertising, platform changes and competitors before attributing a change to a page edit.
+
+To connect those records with costs and a decision, our guide to [measuring digital marketing results](https://rankingrebels.com/blog/measure-digital-marketing-results/) explains how to compare enquiry groups and keep attributed revenue separate from profit.
 
 ## Two questions to ask an agency
 

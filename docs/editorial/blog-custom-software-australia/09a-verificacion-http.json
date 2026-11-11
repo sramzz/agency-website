@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-26",
+  "local": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview.html",
+      "status": 200,
+      "exactFile": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/favicon.ico",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css?v=20261013-autoplay-only",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css?v=20261019-local-seo",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview.css?v=1",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js?v=20261019-melbourne",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview.html",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview-dark.html",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/media/custom-software-illustration-1280.webp",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/script.js?v=20260926-header-surface-global",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/media/custom-software-illustration-768.webp",
+      "status": 200,
+      "exactBytes": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-custom-software-australia/preview-dark.html",
+      "status": 200,
+      "exactFile": true
+    }
+  ],
+  "publicChecks": [
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog8Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog8Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog8Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog8Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog8Link": true
+    }
+  ],
+  "publicHubArticles": [
+    "/blog/ai-agents-vs-workflow-automation/",
+    "/blog/is-seo-still-relevant-ai-search/",
+    "/blog/local-seo-google-maps-visibility/",
+    "/blog/website-visits-few-enquiries/",
+    "/blog/what-is-seo/"
+  ],
+  "pending": [
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 404
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 404
+    },
+    {
+      "url": "https://rankingrebels.com/blog/custom-software-benefits/",
+      "status": 404
+    }
+  ],
+  "candidatesNotInPublicHubOrSitemap": true,
+  "deployment": {
+    "revision": "5b8f620b70bbf5182aefdd549b0ff5c1809dfcdb",
+    "branch": "main"
+  },
+  "contactStatus": 200,
+  "formsSubmitted": false,
+  "fullPageBrowserQA": false,
+  "newDeploymentPerformed": false
+}

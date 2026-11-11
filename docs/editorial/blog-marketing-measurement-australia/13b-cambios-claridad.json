@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-10",
+  "blog": 11,
+  "scope": "User-authorised clarity review, justified correction, recheck and publication. No further approval required for these corrections.",
+  "userQuote": "puedes por favor revisar que el ejemplo sea claro y no sea confuso para los lectores? si pasa tu pueba lo publicamos, si no lo corregimos, vuelves a revisar y publicamos",
+  "baselineDir": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\agency-website\\.cache\\blog11-clarity-20261110",
+  "changes": [
+    {
+      "before": "For the hypothetical Adelaide business, assume records associate one paid campaign group with 30 unique enquiries: 18 are disqualified and 12 qualified. After a defined follow-up period, three qualified enquiries each produced one accepted job and the other nine were lost. Those three jobs belong to three distinct first-time customers. There are no pending assessments or unresolved sales. The work has been completed, with revenue and the stated delivery costs recorded.",
+      "after": "For the hypothetical Adelaide business, one campaign is linked to 30 separate enquiries: 12 suitable and 18 unsuitable. Three suitable enquiries become completed jobs for three different first-time customers; the other nine are lost. All enquiries have been assessed and no sales outcomes remain open."
+    },
+    {
+      "before": "| Qualification rate | 12 ÷ 30 | 40% |\n| Qualified-enquiry win rate | 3 won enquiries ÷ 12 qualified enquiries | 25% |",
+      "after": "| Enquiries that fit the business | 12 ÷ 30 | 40% |\n| Suitable enquiries that become jobs | 3 won enquiries ÷ 12 suitable enquiries | 25% |"
+    },
+    {
+      "before": "| Revenue from those customers' completed work | Given | AUD 7,500 |\n| Contribution after stated delivery costs | 7,500 − 3,600 | AUD 3,900 |\n| Contribution after included marketing costs | 3,900 − 2,100 | AUD 1,800 |",
+      "after": "| Revenue from the three completed jobs | Given | AUD 7,500 |\n| Delivery costs for those jobs | Given | AUD 3,600 |\n| What remains after delivery costs | 7,500 − 3,600 | AUD 3,900 |\n| What remains after included marketing costs | 3,900 − 2,100 | AUD 1,800 |"
+    },
+    {
+      "before": "The AUD 700 includes only the stated marketing costs; it is not complete company-wide customer acquisition cost. The AUD 1,800 remains before other overheads and costs, so it is not net business profit. The 5× means five dollars of attributed revenue per dollar of media spend. It does not mean five dollars of profit, a complete ROI calculation or proof of additional sales caused by the campaign.",
+      "after": "ROAS counts revenue against media spend only: AUD 7,500 ÷ AUD 1,500 = 5×. It leaves out the AUD 600 of campaign and page work and the AUD 3,600 delivery costs.\n\nThe AUD 1,800 is what remains after delivery and included marketing costs, before other overheads and costs. It is not net business profit. The AUD 700 includes only the stated marketing costs, rather than complete company-wide customer acquisition cost.\n\nThese attributed results do not prove that advertising caused additional customers or provide a complete ROI calculation."
+    }
+  ],
+  "scorecardChange": {
+    "before": "This is a hypothetical acquired group, not a calendar month's new enquiries mixed with older customers. At the observation cut-off, all 30 unique enquiries have been assessed: 18 are disqualified and 12 qualified. Three of the qualified enquiries each produced one accepted job and the other nine were lost. The three jobs belong to three distinct first-time customers. No assessment or sales outcome remains pending. The work has been completed; revenue and the stated delivery costs are recorded for that work.",
+    "after": "For the hypothetical Adelaide business, one campaign is linked to 30 separate enquiries: 12 suitable and 18 unsuitable. Three suitable enquiries become completed jobs for three different first-time customers; the other nine are lost. All enquiries have been assessed and no sales outcomes remain open. The revenue and delivery costs below relate to those completed jobs, rather than a calendar month that mixes new enquiries with older sales."
+  },
+  "facts": {
+    "received": 30,
+    "unsuitable": 18,
+    "suitable": 12,
+    "wonEnquiries": 3,
+    "lostSuitable": 9,
+    "completedJobs": 3,
+    "firstTimeCustomers": 3,
+    "pending": 0,
+    "media": 1500,
+    "otherMarketing": 600,
+    "totalMarketing": 2100,
+    "revenue": 7500,
+    "delivery": 3600,
+    "beforeMarketing": 3900,
+    "beforeOverheads": 1800,
+    "qualificationPercent": 40,
+    "winPercent": 25,
+    "costPerNewCustomer": 700,
+    "revenueROAS": 5,
+    "currency": "AUD",
+    "gst": "excluded",
+    "realResults": false,
+    "netProfitEstablished": false,
+    "causalityEstablished": false
+  },
+  "originalArticleSHA256": "0f79be5202b188aa92a7d8c6078a4faac795d8ec7fe785aa046a941c048fd129",
+  "articleSHA256": "c929f4cc6ec082042b3f8afa49c148edfab91454e0a67791eeecc3d9cee58dec",
+  "originalScorecardSHA256": "287b83eee5e8510de9e790dd37be2bac06bb9d8bd39d98e9b4d5a13b5c6d1340",
+  "scorecardSHA256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44",
+  "exampleWordCountBefore": 291,
+  "exampleWordCountAfter": 303,
+  "readingReview": {
+    "kind": "Assisted editorial comprehension review, not a human reader study",
+    "initialResult": "Needs clearer sequence and an explicit delivery-cost input",
+    "recheckPending": false,
+    "result": "Pass after correction",
+    "criteria": [
+      {
+        "question": "Which enquiries belong together?",
+        "evidence": "one campaign is linked to 30 separate enquiries",
+        "pass": true
+      },
+      {
+        "question": "Which enquiries fit?",
+        "evidence": "12 suitable and 18 unsuitable",
+        "pass": true
+      },
+      {
+        "question": "How many jobs and distinct first-time customers?",
+        "evidence": "Three suitable enquiries become completed jobs for three different first-time customers",
+        "pass": true
+      },
+      {
+        "question": "Are outcomes pending?",
+        "evidence": "no sales outcomes remain open",
+        "pass": true
+      },
+      {
+        "question": "What is included in marketing?",
+        "evidence": "AUD 1,500 media + AUD 600 allocated management/page work",
+        "pass": true
+      },
+      {
+        "question": "Where are delivery costs stated?",
+        "evidence": "| Delivery costs for those jobs | Given | AUD 3,600 |",
+        "pass": true
+      },
+      {
+        "question": "What does 5× count?",
+        "evidence": "ROAS counts revenue against media spend only",
+        "pass": true
+      },
+      {
+        "question": "Is 1,800 net profit?",
+        "evidence": "before other overheads and costs. It is not net business profit",
+        "pass": true
+      },
+      {
+        "question": "Does attribution establish additional customers?",
+        "evidence": "do not prove that advertising caused additional customers",
+        "pass": true
+      }
+    ],
+    "mathsPass": true,
+    "factsPreserved": true,
+    "exampleWords": 303
+  }
+}

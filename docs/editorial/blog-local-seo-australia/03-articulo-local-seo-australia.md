@@ -110,6 +110,8 @@ A critical review is not automatically a policy violation. Google explains that 
 
 A profile may be where someone discovers the business. The website can help them establish whether it fits their needs. The destination page should explain the relevant service, actual coverage, process, evidence and way to contact the team.
 
+If the service page itself is missing from Google, check that URL separately from the Business Profile. Our guide to [diagnosing website visibility in Google](https://rankingrebels.com/blog/website-not-showing-up-on-google/) explains which evidence to ask your web team for.
+
 The website can also help people who arrive through other search tools. Our article on [SEO in the age of ChatGPT and AI search](https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/) looks at how service pages support that decision.
 
 For the Brisbane plumber, that means explaining the types of jobs accepted, how to request help and what the team needs to assess a request. Clear coverage information also helps someone recognise when they need a different provider.
@@ -126,6 +128,8 @@ Google Business Profile Performance defines calls as clicks on the call button a
 
 For our plumbing company, a rise in phone clicks would be a reason to check what happened next. The team would still need to establish which calls connected, whether the jobs fitted its service and which requests progressed.
 
+If people reach your website but few useful requests follow, our guide to [diagnosing website visits without enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) explains how to check the page, form delivery and what happens after a message arrives.
+
 | Measure | Useful question | What still needs checking |
 |---|---|---|
 | Profile visibility or observed search appearance | Is the business appearing for relevant searches and locations? | Coverage, measurement conditions and whether contacts later prove suitable |
@@ -138,6 +142,8 @@ Google documents a connection between Business Profile and Analytics that brings
 Website tracking and commercial records can help connect parts of the journey. Keep enquiries, their source where known, qualification and later status distinct. The Analytics connection does not establish which individual click became a customer.
 
 Review campaigns, seasonal demand and operational changes alongside visibility. An increase after an edit is not automatically caused by that edit.
+
+When you review the business result, use [defined enquiry groups and costs](https://rankingrebels.com/blog/measure-digital-marketing-results/) so profile activity, won work and revenue do not become interchangeable.
 
 ### Use location-based observations as a sample
 

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-26",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "semanticBlocksMatched": 108,
+  "headings": 10,
+  "subheadings": 5,
+  "tables": 2,
+  "tableColumnHeaders": 5,
+  "orderedCasesPreservedExactly": 4,
+  "originalURLsRetained": 7,
+  "newBlogLinks": 1,
+  "figuresPerTheme": 1,
+  "allNumeralsPreserved": true,
+  "decisionDistinctionsPreserved": true,
+  "allOriginalCopiesMatch": 10,
+  "baselineFilesUnchanged": 263,
+  "previousManuscriptsUnchanged": 7,
+  "publicCandidateRouteAbsent": true,
+  "metadataCharacters": {
+    "Title": 49,
+    "Meta description": 147
+  },
+  "assets": [
+    {
+      "name": "custom-software-illustration-1280.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 215346,
+      "sha256": "7c693bf4cb72891c5338ad7b894dd66399d3f2fcc89b04128cb6a9e8b7baebe7"
+    },
+    {
+      "name": "custom-software-illustration-768.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 83754,
+      "sha256": "918c4dacdc24c2bac695b0441c48030e5eec40b7cd23a7b14bd8760421e3bc5e"
+    }
+  ],
+  "assetsVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "limitation": "Contenido, HTML, recursos e imagen comprobados. No se realizó revisión visual de página completa en navegador."
+}

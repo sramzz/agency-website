@@ -1,0 +1,186 @@
+{
+  "checkedAt": "2026-10-28T08:08:08.836Z",
+  "deployment": {
+    "revision": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+    "branch": "main"
+  },
+  "publicChecks": [
+    {
+      "route": "/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "canonical": true,
+      "bodyMatches": true
+    },
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "canonical": true,
+      "bodyMatches": true
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "canonical": true,
+      "bodyMatches": true
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "status": 200,
+      "canonical": true,
+      "bodyMatches": true
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "canonical": true,
+      "bodyMatches": true
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "canonical": true,
+      "bodyMatches": true
+    },
+    {
+      "route": "/blog/google-ads-for-service-businesses/",
+      "status": 404
+    },
+    {
+      "route": "/blog/which-business-processes-to-automate-first/",
+      "status": 404
+    },
+    {
+      "route": "/blog/custom-software-benefits/",
+      "status": 404
+    },
+    {
+      "route": "/blog/how-to-build-ai-workflow/",
+      "status": 404
+    },
+    {
+      "route": "/solutions/paid-ads/",
+      "status": 200,
+      "formSubmitted": false
+    }
+  ],
+  "localChecks": [
+    {
+      "route": "/favicon.ico",
+      "status": 200,
+      "bytes": 15086
+    },
+    {
+      "route": "/assets/css/styles.css",
+      "status": 200,
+      "bytes": 302227
+    },
+    {
+      "route": "/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15608
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/preview.css",
+      "status": 200,
+      "bytes": 7717
+    },
+    {
+      "route": "/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2641
+    },
+    {
+      "route": "/assets/js/blog.js",
+      "status": 200,
+      "bytes": 1331
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "bytes": 24001
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "bytes": 14931
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/preview.html",
+      "status": 200,
+      "bytes": 29306
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/preview-dark.html",
+      "status": 200,
+      "bytes": 29305
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "bytes": 9122
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/media/google-search-enquiry-illustration-1280.webp",
+      "status": 200,
+      "bytes": 329764
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/media/search-to-enquiry.svg",
+      "status": 200,
+      "bytes": 4123
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/worksheet-preview.html",
+      "status": 200,
+      "bytes": 11341
+    },
+    {
+      "route": "/solutions/",
+      "status": 200,
+      "bytes": 12225
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "bytes": 15054
+    },
+    {
+      "route": "/privacy/",
+      "status": 200,
+      "bytes": 12110
+    },
+    {
+      "route": "/cookies/",
+      "status": 200,
+      "bytes": 7440
+    },
+    {
+      "route": "/legal/",
+      "status": 200,
+      "bytes": 6620
+    },
+    {
+      "route": "/assets/js/script.js",
+      "status": 200,
+      "bytes": 16310
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/media/google-search-enquiry-illustration-768.webp",
+      "status": 200,
+      "bytes": 128662
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/media/search-to-enquiry-mobile.svg",
+      "status": 200,
+      "bytes": 4167
+    },
+    {
+      "route": "/docs/editorial/blog-google-ads-service-businesses-australia/recursos/search-to-enquiry-worksheet.md",
+      "status": 200,
+      "bytes": 7532
+    }
+  ],
+  "publicHubArticles": 6,
+  "candidateAbsent": true,
+  "newPublication": false
+}

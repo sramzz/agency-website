@@ -1,0 +1,467 @@
+{
+  "date": "2026-11-02",
+  "blog": 7,
+  "published": true,
+  "revision": "5ebc58b519d32daef7146a5340de205d44af3fe1",
+  "approvalQuote": "revisado, publicalo",
+  "approvedFilesUnchanged": true,
+  "semanticParts": 129,
+  "allManuscriptLinksPreserved": true,
+  "articles": [
+    {
+      "route": "/blog/which-business-processes-to-automate-first/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Which Business Processes Should You Automate First? A Practical Prioritisation Guide",
+        "description": "Choose which business processes to automate first. Compare value, readiness, costs and exceptions with practical examples and a reusable decision brief.",
+        "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-30",
+        "dateModified": "2026-10-30",
+        "image": "https://rankingrebels.com/assets/images/blog/automation-prioritisation-illustration-v2-1280.webp",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    },
+    {
+      "route": "/blog/website-not-showing-up-on-google/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why Isn't My Website Showing Up on Google? A Step-by-Step SEO Diagnosis",
+        "description": "Find out why your website is not showing on Google. Check URL Inspection, indexing barriers, canonical URLs and search visibility before choosing a fix.",
+        "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-28",
+        "dateModified": "2026-10-28",
+        "image": "https://rankingrebels.com/assets/images/blog/google-visibility-illustration-1280.webp",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    },
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Website Visits but Few Enquiries? What to Check First",
+        "description": "Getting website visits but few enquiries? Check traffic fit, page clarity, forms, mobile usability and follow-up before choosing what to improve.",
+        "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-26",
+        "dateModified": "2026-10-29",
+        "image": "https://rankingrebels.com/assets/images/blog/website-enquiries-illustration-v3-1280.webp",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "AI Agents vs Workflow Automation: What Can They Do for Your Business?",
+        "description": "Compare AI agents and workflow automation through a Brisbane service business. See what each can do, what stays with your team and how to judge the results.",
+        "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-21",
+        "dateModified": "2026-10-30",
+        "image": "https://rankingrebels.com/assets/images/blog/ai-agents-workflow-illustration-1280.webp",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "What Is SEO? How Search Engine Optimisation Works for Your Business",
+        "description": "What is SEO, and what does it do for a business? Understand organic search, the work involved and how to measure progress, with a Perth landscaping example.",
+        "url": "https://rankingrebels.com/blog/what-is-seo/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/what-is-seo/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-20",
+        "dateModified": "2026-10-28",
+        "image": "https://rankingrebels.com/assets/images/blog/what-is-seo-landscaping-illustration-1280.webp",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Local SEO: How to Improve Your Business's Visibility on Google Maps",
+        "description": "Help customers find your business on Google Maps. Learn what to check first, how to ask for reviews and how to measure useful local enquiries.",
+        "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-19",
+        "dateModified": "2026-10-28",
+        "image": "https://rankingrebels.com/assets/images/blog/local-seo-discovery-illustration-1280.webp",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "bodyMatches": true,
+      "canonicalMatches": true,
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Is SEO Still Relevant in the Age of ChatGPT and AI Search?",
+        "description": "See how SEO helps customers find your business as Google and ChatGPT change search, with a Melbourne example and practical steps for your website.",
+        "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+        "mainEntityOfPage": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+        "inLanguage": "en-AU",
+        "datePublished": "2026-10-16",
+        "dateModified": "2026-10-28",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ranking Rebels",
+          "url": "https://rankingrebels.com/"
+        }
+      }
+    }
+  ],
+  "contextualLinks": [
+    {
+      "from": "/blog/which-business-processes-to-automate-first/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "bytes": 10316,
+      "sha256": "c5a9e73c6e96ea68c90614cde9a8e9e0fc722883952008898618566cdfead4fc"
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "bytes": 2027,
+      "sha256": "9f854bbfbc581d5d068483d77ea0da73a39998134ee4aec8a779d2d3d9f071c6"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 200,
+      "bytes": 32964,
+      "sha256": "39ddbc659629a8a7a7a9d9b69ef39c6941a22165c989be1e6782afffac0280d0"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "bytes": 33555,
+      "sha256": "6a71388b5b6d3cca89fb95f9e975cd9e6911c29f899b6d8f821b137c07ab0a4c"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 30805,
+      "sha256": "37dd3242998188c450f58980a659bb7ad3c25bfab243dd6bdae54ab2078e5a9a"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 30178,
+      "sha256": "64f5ad4af8408cb187f18337c42d761fa7a09fc1f54929ac0b105d9092d2c709"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28962,
+      "sha256": "9e16b8715a8b738b3ee229c939780b2f753e5228ce331c1d6ba02890b3c726fc"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32785,
+      "sha256": "35f3a54302bab2eee8b597a8cd8c6eb7d375dc5710e60509cec8c3152709d589"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27834,
+      "sha256": "d190169b2868830607dc452ddb9b54997b0f549410adab555ae1284189b30901"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/automation-prioritisation-illustration-v2-1280.webp",
+      "status": 200,
+      "bytes": 202480,
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/automation-prioritisation-illustration-v2-768.webp",
+      "status": 200,
+      "bytes": 77618,
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15580,
+      "sha256": "ac8c6e0cdebd030fddff10fc5c7f7990dc5f0d68251eaa7997c151c0a297d315",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/css/styles.css",
+      "status": 200,
+      "bytes": 242477,
+      "sha256": "1705cf973b5ee54849a2d2de3811eae342713dbb20c54b2d3448b65e8870ea6e",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/js/blog.js",
+      "status": 200,
+      "bytes": 1331,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2538,
+      "sha256": "a39b2d99a39ce3b0dbf0ba8aad5f6c23a74dbb08a936540fe20f7536037e9251",
+      "comparison": "Only CRLF/LF differs"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/js/google-analytics.js",
+      "status": 200,
+      "bytes": 949,
+      "sha256": "3405bb111fb8f6092932c6ef73ed299bed8a9decb09586accc0fe91af79f75e7",
+      "comparison": "Only CRLF/LF differs"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/js/script.js",
+      "status": 200,
+      "bytes": 16310,
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/google-visibility-illustration-768.webp",
+      "status": 200,
+      "bytes": 77562,
+      "sha256": "97e3e2ea6de84970e37d95dcd65acb8465140d37b96b4524d325b89fec1c0cac",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/website-enquiries-illustration-v3-768.webp",
+      "status": 200,
+      "bytes": 117832,
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "status": 200,
+      "bytes": 94574,
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "status": 200,
+      "bytes": 114344,
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "status": 200,
+      "bytes": 96420,
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/seo-ai-discovery-illustration-768.webp",
+      "status": 200,
+      "bytes": 45924,
+      "sha256": "dabef7122ac3656c442ff264bfeb384b600c7cce3854ae584f0bf8ff4fbaed22",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/custom-software-benefits/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-to-build-ai-workflow/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/google-ads-for-service-businesses/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/measure-digital-marketing-results/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/facebook-instagram-advertising/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "44e67865db3de5a84e640e88d18124e64be81b026c81cfa9059e727b11a471c9"
+    }
+  ],
+  "unrelatedPreviousPublicFilesUnchanged": true,
+  "fullPageBrowserQA": false,
+  "liveAccountOrFormTests": false,
+  "readingTheme": "light",
+  "illustrationVersion": "V2",
+  "verificationTimezone": "Australia/Sydney",
+  "publicationDate": "2026-10-30",
+  "publicTestsPassed": 211,
+  "privateTestsPassed": 212,
+  "buildPassed": true
+}

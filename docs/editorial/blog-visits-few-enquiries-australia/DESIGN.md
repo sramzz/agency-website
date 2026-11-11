@@ -11,3 +11,8 @@ Both previews use one Markdown manuscript, one renderer, the same restrained V2 
 The hero is an edited editorial illustration of a hypothetical owner in a light studio. Following user feedback that V1 was too colourful and departed abruptly from the earlier articles, V2 uses near-monochrome greys, off-white paper, dark ink outlines and restrained red accents. Preserve the daylight and scene without vivid foliage, blue sky or photographic colour. V2 is a proposal pending review, not an approved series-wide redesign. The SVG diagram is authored in the repository because it is a deterministic explanation, with legible desktop/mobile layouts and text alternatives. It has no measured funnel counts or automatic success arrows.
 
 Review the full-page appearance in the user's local preview before choosing the public version. Asset inspection, content and geometry checks are recorded separately from browser QA. No claim of full-page visual or WCAG conformance is made from static checks alone.
+
+
+## Approved image palette, 29 October 2026
+
+For this blog only, the user approved V3 after viewing the exact proposed illustration: neutral off-white paper, deeper charcoal and crisp crimson, with muted eucalyptus/forest greens in the outdoor garden. Preserve the existing bright studio, ink drawing, light reading background and reserved image dimensions. The source is media/website-enquiries-original-v3.png; responsive V3 WebP variants are the active page, hub and social images. V2 remains available as history. This decision does not mandate green or this brightness for other blogs.

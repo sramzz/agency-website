@@ -62,8 +62,8 @@ class FakeElement {
     this.listeners.set(type, listeners);
   }
 
-  dispatch(type, target = this) {
-    for (const listener of this.listeners.get(type) || []) listener({ type, target });
+  dispatch(type, target = this, details = {}) {
+    for (const listener of this.listeners.get(type) || []) listener({ type, target, ...details });
   }
 
   contains(target) {
@@ -96,13 +96,16 @@ class FakeElement {
   }
 }
 
-const createNavigationFixture = () => {
+const createNavigationFixture = ({ desktop = false, canHover = true } = {}) => {
   const body = new FakeElement("body");
   const siteHeader = new FakeElement("header");
   const mobileNav = new FakeElement("nav");
   const menuToggle = new FakeElement("button");
   const documentListeners = new Map();
   const windowListeners = new Map();
+  const desktopNav = desktop ? new FakeElement("nav") : null;
+  const timers = new Map();
+  let timerId = 0;
 
   menuToggle.setAttribute("aria-expanded", "false");
   menuToggle.setAttribute("aria-label", "Open navigation");
@@ -112,7 +115,7 @@ const createNavigationFixture = () => {
     createElement: (tagName) => new FakeElement(tagName),
     querySelector: (selector) => ({
       ".site-header": siteHeader,
-      ".desktop-nav": null,
+      ".desktop-nav": desktopNav,
       "#mobile-nav": mobileNav,
       ".menu-toggle": menuToggle,
     })[selector] ?? null,
@@ -124,6 +127,7 @@ const createNavigationFixture = () => {
   };
 
   const window = {
+    matchMedia: () => ({ matches: canHover }),
     location: { pathname: "/", hash: "" },
     addEventListener: (type, listener) => {
       const listeners = windowListeners.get(type) || [];
@@ -140,9 +144,11 @@ const createNavigationFixture = () => {
   };
 
   const script = fs.readFileSync(path.resolve(__dirname, "../assets/js/script.js"), "utf8");
-  vm.runInNewContext(script, { document, window });
+  vm.runInNewContext(script, { document, window, setTimeout: (callback) => { timers.set(++timerId, callback); return timerId; }, clearTimeout: (id) => timers.delete(id) });
 
-  return { body, dispatchDocument, menuToggle, mobileNav };
+  const flushTimers = () => { const pending = [...timers.values()]; timers.clear(); pending.forEach((callback) => callback()); };
+  const dispatchWindow = (type, event) => { for (const listener of windowListeners.get(type) || []) listener(event); };
+  return { body, dispatchDocument, dispatchWindow, document, desktopNav, menuToggle, mobileNav, flushTimers };
 };
 
 test("mobile navigation responds to real outside and inside interaction events", () => {
@@ -174,4 +180,57 @@ test("mobile navigation responds to real outside and inside interaction events",
   dispatchDocument("click", menuToggle);
   dispatchDocument("click", outsideTarget);
   assert.equal(mobileNav.classList.contains("is-open"), false, "outside clicks should close the menu");
+});
+
+test("desktop Solutions opens on hover, allows re-entry and closes after leaving", () => {
+  const f = createNavigationFixture({ desktop: true });
+  const menu = f.desktopNav.children[0];
+  const [trigger, panel] = menu.children;
+  menu.dispatch("pointerenter", menu, { pointerType: "mouse" });
+  assert.equal(panel.hidden, false);
+  assert.equal(trigger.getAttribute("aria-expanded"), "true");
+  menu.dispatch("pointerleave", menu, { pointerType: "mouse" });
+  assert.equal(panel.hidden, false, "the exit grace period keeps the menu reachable");
+  menu.dispatch("pointerenter", menu, { pointerType: "mouse" });
+  f.flushTimers();
+  assert.equal(panel.hidden, false, "re-entering cancels the pending close");
+  menu.dispatch("pointerleave", menu, { pointerType: "mouse" });
+  f.flushTimers();
+  assert.equal(panel.hidden, true);
+  assert.equal(trigger.getAttribute("aria-expanded"), "false");
+});
+
+test("hover ignores touch and coarse pointers while click still works", () => {
+  for (const canHover of [true, false]) {
+    const f = createNavigationFixture({ desktop: true, canHover });
+    const menu = f.desktopNav.children[0];
+    const [trigger, panel] = menu.children;
+    menu.dispatch("pointerenter", menu, { pointerType: "touch" });
+    assert.equal(panel.hidden, true);
+    if (!canHover) {
+      menu.dispatch("pointerenter", menu, { pointerType: "mouse" });
+      assert.equal(panel.hidden, true);
+    }
+    trigger.dispatch("click");
+    assert.equal(panel.hidden, false);
+  }
+});
+
+test("keyboard navigation retains focused menu links and Escape dismisses pending hover", () => {
+  const f = createNavigationFixture({ desktop: true });
+  const menu = f.desktopNav.children[0];
+  const [trigger, panel] = menu.children;
+  trigger.dispatch("keydown", trigger, { key: "ArrowDown", preventDefault() {} });
+  assert.equal(panel.hidden, false);
+  f.document.activeElement = panel.querySelector("a");
+  menu.dispatch("pointerleave", menu, { pointerType: "mouse" });
+  f.flushTimers();
+  assert.equal(panel.hidden, false, "the pointer cannot close a keyboard-focused menu");
+  menu.dispatch("focusout", panel, { relatedTarget: new FakeElement("a") });
+  assert.equal(panel.hidden, true);
+  menu.dispatch("pointerenter", menu, { pointerType: "mouse" });
+  menu.dispatch("pointerleave", menu, { pointerType: "mouse" });
+  f.dispatchWindow("keydown", { key: "Escape" });
+  f.flushTimers();
+  assert.equal(panel.hidden, true);
 });

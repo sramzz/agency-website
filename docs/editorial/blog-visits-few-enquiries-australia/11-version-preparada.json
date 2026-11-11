@@ -4,18 +4,18 @@
   "timezone": "Australia/Sydney",
   "automaticPublicationAuthorised": true,
   "authorisation": "Publicar automáticamente la versión aprobada",
-  "selectedTheme": null,
-  "versionApproved": false,
-  "approvalPending": "Revisión de la ilustración V2 con menos color y elección del fondo de lectura. El usuario no ha aprobado todavía una versión concreta.",
+  "selectedTheme": "light",
+  "versionApproved": true,
+  "approvalPending": null,
   "automationId": "publicar-blog-de-visitas-y-consultas",
   "files": [
     {
       "name": "03-articulo-visits-few-enquiries-australia.md",
-      "sha256": "6813b3ea1c3ff8829a1c62403ea2fd4fb9f05de178e5118fd685b461ed121f87"
+      "sha256": "0813fbdbad9d982d1f9b11026f8c36dfdf7c933ee5371827dc78349fff3f2aa7"
     },
     {
       "name": "04-paquete-seo.md",
-      "sha256": "471a0ecf17dc73a14e81a7765728e3a83ebbf8226d7f110f84f77c9dfa2f0540"
+      "sha256": "4be5239f06b44b5256d56221498816655796b952dd9f0818a5a747f6735fd6a2"
     },
     {
       "name": "preview.css",
@@ -23,15 +23,15 @@
     },
     {
       "name": "preview.html",
-      "sha256": "364a0029d23513da96bd289d94501787b70347e345e845b8ea17b58f20f2b0be"
+      "sha256": "5b276ed8145212b6e37656a79d08d1fa8c34a6cc8d2a1f1fc276157bd18adf4a"
     },
     {
       "name": "preview-dark.html",
-      "sha256": "cdc9b1533bbb42b49f651a2a00694e323c2e66dca6b034b88bab5bbe525e1ecf"
+      "sha256": "a37bb71eb2e84e8b6602e6cd77a89f0d9881b36f1cc56c7ed645d07e785d0c38"
     },
     {
       "name": "render-preview.cjs",
-      "sha256": "e360da5a1a9ca17308aca8e5cee97653def042626013a3a12cf72dca8d0a2282"
+      "sha256": "bdea5ace582efc08586ca54e86f5d0984ec2dcab1c36c627e2406bb9fcbdba21"
     },
     {
       "name": "media/enquiry-checks-mobile.svg",
@@ -64,9 +64,34 @@
     {
       "name": "media/website-enquiries-illustration-v2-768.webp",
       "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
+    },
+    {
+      "name": "media/website-enquiries-original-v3.png",
+      "sha256": "16b37e0ce32605328599dc2053d069dfa2cc8fa550c805fdf87cfa225f2322ea"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v3-1280.webp",
+      "sha256": "9954d76dbd24ef881e1c8efbb9eb83503672b08e327a75f4215532e35dae5170"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v3-768.webp",
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456"
     }
   ],
   "updatedOn": "2026-10-23",
-  "visualVersion": "V2",
-  "hero": "media/website-enquiries-illustration-v2-1280.webp"
+  "visualVersion": "V3",
+  "hero": "media/website-enquiries-illustration-v3-1280.webp",
+  "approvedOn": "2026-10-26",
+  "approvalEvidence": "El usuario respondió «hagamoslo segun tu consejo» después de recomendar expresamente cabecera oscura, lectura clara e ilustración V2.",
+  "publicationStatus": "Publicado y verificado",
+  "publishedOn": "2026-10-26",
+  "publicURL": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+  "revision": "5b8f620b70bbf5182aefdd549b0ff5c1809dfcdb",
+  "deploymentId": "e0941333-7991-4bd9-86a8-6da0aa182c56",
+  "automationDeleted": true,
+  "imageApprovedOn": "2026-10-29",
+  "imageApprovalEvidence": "El usuario vio la propuesta con verdes apagados en el jardín y respondió: «perfecto, apruebo esta, apliquemos el cambio». La aprobación se limita a esta imagen del blog 5.",
+  "imageUpdateStatus": "Publicada y verificada",
+  "imageUpdateRevision": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+  "imageUpdatedOn": "2026-10-29"
 }

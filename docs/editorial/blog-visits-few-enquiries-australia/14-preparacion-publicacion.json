@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-26",
+  "previousRevision": "1c25a15f41235be9802b94b2a81c5912ae45fa79",
+  "publicFiles": [
+    "blog/index.html",
+    "blog/is-seo-still-relevant-ai-search/index.html",
+    "blog/local-seo-google-maps-visibility/index.html",
+    "blog/what-is-seo/index.html",
+    "blog/ai-agents-vs-workflow-automation/index.html",
+    "blog/website-visits-few-enquiries/index.html",
+    "sitemap.xml",
+    "assets/images/blog/website-enquiries-illustration-v2-1280.webp",
+    "assets/images/blog/website-enquiries-illustration-v2-768.webp",
+    "assets/images/blog/enquiry-checks.svg",
+    "assets/images/blog/enquiry-checks-mobile.svg"
+  ],
+  "publicManifestFiles": 176,
+  "privateFilesExcludedFromDeployment": true,
+  "publicCopiesMatch": true,
+  "readingCSS": "Inline, scoped to the approved article; existing two external CSS requests retained."
+}

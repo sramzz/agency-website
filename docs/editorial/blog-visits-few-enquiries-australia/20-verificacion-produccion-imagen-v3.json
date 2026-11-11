@@ -1,0 +1,265 @@
+{
+  "date": "2026-10-29",
+  "scope": "Approved blog 5 image update only",
+  "production": true,
+  "revision": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+  "checks": [
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "bytes": 9336,
+      "sha256": "1984a4105241acd45e3054cbdabef3be7abf295036e66f4f8447638bb0616353"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "bytes": 33555,
+      "sha256": "6a71388b5b6d3cca89fb95f9e975cd9e6911c29f899b6d8f821b137c07ab0a4c"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "bytes": 30805,
+      "sha256": "37dd3242998188c450f58980a659bb7ad3c25bfab243dd6bdae54ab2078e5a9a"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "bytes": 29883,
+      "sha256": "2f655d2d36223c839972d0b2975e364c45b751c5879e326919e79215c9a79c19"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "bytes": 28962,
+      "sha256": "9e16b8715a8b738b3ee229c939780b2f753e5228ce331c1d6ba02890b3c726fc"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "bytes": 32785,
+      "sha256": "35f3a54302bab2eee8b597a8cd8c6eb7d375dc5710e60509cec8c3152709d589"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "bytes": 27834,
+      "sha256": "d190169b2868830607dc452ddb9b54997b0f549410adab555ae1284189b30901"
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "bytes": 1899,
+      "sha256": "9b880f1f61b8beffddf838a7da943c65574a030d38f04f15882b25950db36450"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/website-enquiries-illustration-v3-1280.webp",
+      "status": 200,
+      "bytes": 266018,
+      "sha256": "9954d76dbd24ef881e1c8efbb9eb83503672b08e327a75f4215532e35dae5170",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/website-enquiries-illustration-v3-768.webp",
+      "status": 200,
+      "bytes": 117832,
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/enquiry-checks.svg",
+      "status": 200,
+      "bytes": 2401,
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/images/blog/enquiry-checks-mobile.svg",
+      "status": 200,
+      "bytes": 2398,
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/css/blog.css",
+      "status": 200,
+      "bytes": 15580,
+      "sha256": "ac8c6e0cdebd030fddff10fc5c7f7990dc5f0d68251eaa7997c151c0a297d315",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/css/styles.css",
+      "status": 200,
+      "bytes": 242477,
+      "sha256": "1705cf973b5ee54849a2d2de3811eae342713dbb20c54b2d3448b65e8870ea6e",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/js/blog.js",
+      "status": 200,
+      "bytes": 1331,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb",
+      "comparison": "Exact bytes"
+    },
+    {
+      "url": "https://rankingrebels.com/assets/js/scroll-progress.js",
+      "status": 200,
+      "bytes": 2538,
+      "sha256": "a39b2d99a39ce3b0dbf0ba8aad5f6c23a74dbb08a936540fe20f7536037e9251",
+      "comparison": "Only CRLF/LF line endings differ"
+    },
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "bytes": 81,
+      "sha256": "cc8dd7dac91e5e0b4ac7c31bdb547de53103ad0496146f948d53662d788c176e"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/custom-software-benefits/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-to-build-ai-workflow/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    },
+    {
+      "url": "https://rankingrebels.com/blog/google-ads-for-service-businesses/",
+      "status": 404,
+      "bytes": 3589,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb"
+    }
+  ],
+  "contextualLinks": [
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/what-is-seo/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "https://rankingrebels.com/blog/website-visits-few-enquiries/"
+    }
+  ],
+  "articleCount": 6,
+  "protectedExistingFiles": 428,
+  "changedPrivateFiles": [
+    "blog/index.html",
+    "blog/website-visits-few-enquiries/index.html",
+    "docs/editorial/blog-visits-few-enquiries-australia/04-paquete-seo.md",
+    "docs/editorial/blog-visits-few-enquiries-australia/06-imagenes-y-vista-local.md",
+    "docs/editorial/blog-visits-few-enquiries-australia/11-version-preparada.json",
+    "docs/editorial/blog-visits-few-enquiries-australia/DESIGN.md",
+    "docs/editorial/blog-visits-few-enquiries-australia/preview-dark.html",
+    "docs/editorial/blog-visits-few-enquiries-australia/preview.html",
+    "docs/editorial/blog-visits-few-enquiries-australia/render-preview.cjs",
+    "docs/editorial/criterios-ranking-rebels.md",
+    "docs/editorial/enlazado-interno.md",
+    "tools/publish-enquiries-blog.cjs",
+    "tools/publish-google-visibility-blog.cjs",
+    "tests/enquiries-blog.test.js",
+    "tests/google-visibility-blog.test.js",
+    "sitemap.xml"
+  ],
+  "remainingExistingFilesUnchanged": 412,
+  "productionTests": 209,
+  "privateTargetedTests": 5,
+  "publicTargetedTests": 5,
+  "buildPassed": true,
+  "manuscriptAndLinksPreserved": true,
+  "publicationDatePreserved": "2026-10-26",
+  "fullPageBrowserQA": false,
+  "fullPageBrowserQALimit": "No new browser automation or screenshots; approved image and optimized asset inspected visually; fixed image geometry and all other markup preserved."
+}

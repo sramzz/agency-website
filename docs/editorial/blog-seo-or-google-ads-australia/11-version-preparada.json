@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-05",
+  "blog": 18,
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/seo-or-google-ads-budget/",
+  "changes": [
+    {
+      "before": "This guide focuses on Australian service businesses and Google Search advertising. Other Google Ads campaign types have different mechanics. The framework and numerical example are educational; they are not a forecast, Australian benchmark or Ranking Rebels client result.",
+      "after": "Suppose your next choice is between fixing an important service page and testing Search ads for one service you can fulfil. Which task can you fund properly and evaluate?\n\nThis guide focuses on Australian service businesses and Google Search advertising. Other Google Ads campaign types have different mechanics. The framework and numerical example are educational; they are not a forecast, Australian benchmark or Ranking Rebels client result.",
+      "reason": "Adelantar una elección hipotética concreta, conservando alcance y etiquetas del original, sin ciudad o cliente inventado."
+    },
+    {
+      "before": "Both can support relevant discovery and enquiries, but neither completes the sale for you.",
+      "after": "If you need to unpack that work, our [guide to how SEO works for a business](https://rankingrebels.com/blog/what-is-seo/) explains the foundations.\n\nBoth can support relevant discovery and enquiries, but neither completes the sale for you.",
+      "reason": "Ampliar la definición de SEO con el blog 4 público."
+    },
+    {
+      "before": "A broken form, misleading offer or unanswered contact route affects the value of both channels. Repair the specific problem; this does not mean every business needs a new website before marketing.",
+      "after": "A broken form, misleading offer or unanswered contact route affects the value of both channels. Repair the specific problem; this does not mean every business needs a new website before marketing. Our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you investigate that page and contact journey.",
+      "reason": "Ampliar la comprobación de preparación con el blog 5 público."
+    },
+    {
+      "before": "## When to repair first, combine the channels or hold the decision open",
+      "after": "## Repair first, combine or investigate further",
+      "reason": "Abreviar la navegación sin cambiar las alternativas."
+    }
+  ],
+  "sourceUrls": [
+    "https://developers.google.com/search/docs/fundamentals/do-i-need-seo",
+    "https://business.gov.au/planning/business-plans/develop-your-marketing-plan",
+    "https://support.google.com/google-ads/answer/3022575?hl=en",
+    "https://support.google.com/google-ads/answer/1722120?hl=en",
+    "https://support.google.com/google-ads/answer/6366577?hl=en",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://support.google.com/google-ads/answer/10486938?hl=en",
+    "https://support.google.com/google-ads/answer/9347141?hl=en",
+    "https://support.google.com/google-ads/answer/3097241?hl=en",
+    "https://support.google.com/google-ads/answer/12003020?hl=en",
+    "https://rankingrebels.com/contact/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2531,
+      "sha256": "04fde9112328a136c8afd30c4e67343b5f119cc96c785b131f5ac69198fdd6ee",
+      "readComplete": true,
+      "finalText": "sta de un blog cada cuatro días no programa investigación, gasto o publicación. Un chat ejecutor continúa por su propio último artículo terminado, no por el número mayor preparado."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 9977,
+      "sha256": "472e151c5e53b754c7c017ba4bf5e0177eb60228e5783a4ebeea58bf3b002098",
+      "readComplete": true,
+      "finalText": " publicación. Preparar el paquete no lanza campaña, compromete gasto o crea programación. Tras 18 quedan seis ideas en reserva; no se inicia una 19 sin nueva selección/instrucción."
+    },
+    {
+      "name": "02-articulo-seo-or-google-ads-australia.md",
+      "bytes": 15715,
+      "sha256": "623cf8c293b019a588cc7a3975e10d9284e9746cc8dc527942628288a43a9163",
+      "readComplete": true,
+      "finalText": "ant to grow, your current page, available evidence and complete budget. A useful recommendation should explain the proposed work, its assumptions and what would justify continuing."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 6182,
+      "sha256": "e18cc8160fcbb36870dd2f382897e6224a0e411b880833a918984abd94f39d04",
+      "readComplete": true,
+      "finalText": " demanda cuantitativa australiana, datos propios, revisión humana, integración o publicación; no se declaran como hechos. Preparación editorial completa; estados posteriores en 08."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 4762,
+      "sha256": "a35d80c84bc2cfd5539eafee32d30cac186e785e98def4b0d7a3566729343dbd",
+      "readComplete": true,
+      "finalText": "tes. Verificar marcado servido cuando exista; Markdown no prueba render o accesibilidad. Guardar observaciones en 08. No crear o modificar campañas por preparar una guía editorial."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 6639,
+      "sha256": "8232974fab808e6eb0c8db2cb1e26336c81c44be713e6c475752c01ef064d550",
+      "readComplete": true,
+      "finalText": " seis ideas en reserva, sin un blog 19 de ejecución aprobado. Detente al terminar; no seleccionar el siguiente por su ID histórico ni programar trabajo por la pauta de cuatro días."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1055,
+      "sha256": "0048e7801500d1f305e350b571e0b54ffb55d97e1aca4394e35b6008b4b0b605",
+      "readComplete": true,
+      "finalText": "e. Confirma 05 como prompt vigente; no marques ejecutado por leerlo. Ante «continúa», completa ese trabajo activo con las autorizaciones del chat, sin saltar a una idea en reserva."
+    },
+    {
+      "name": "07-search-investment-decision-card.md",
+      "bytes": 5951,
+      "sha256": "edff86a61469512c8664ec2f5eedc5ee7af34000b25c7b7cb5a764ad0c199a37",
+      "readComplete": true,
+      "finalText": "t review | |\n\nNo implementation or outcome is recorded in this worksheet. Expected benefits, arithmetic and planned controls are not test results or authority to launch a campaign."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 2865,
+      "sha256": "7946856f0a9071b006b3aa12cadfc569ba4b8993a957fdd8dab4d49c18f3bb42",
+      "readComplete": true,
+      "finalText": ". Seis ideas del banco siguen en reserva; no hay ejecución 19 aprobada. Esperar selección/instrucción manual sin iniciar investigación o crear programación por cerrar este paquete."
+    },
+    {
+      "name": "soporte-canales-y-demanda.md",
+      "bytes": 8183,
+      "sha256": "65fd459cef0ae13ec51359f5dae24b0ddc1d18bd04d63ffaba1fc2daab4ab10f",
+      "readComplete": true,
+      "finalText": "variante sin `ref_topic` del artículo 6334502 redirigió a un control de acceso; la URL enlazada arriba sí devolvió cuerpo legible. Ningún claim depende de esas respuestas fallidas."
+    },
+    {
+      "name": "soporte-estrategia-y-alcance.md",
+      "bytes": 4993,
+      "sha256": "811a55ce131754116061e125d6aab53e88eb2e62de9959bcc7a44dc0f0cb7d2d",
+      "readComplete": true,
+      "finalText": "cción quedan seis en reserva. Ninguna pasa automáticamente a ejecución 19. No se accedió a cuentas, crearon campañas, establecieron presupuestos reales o programaron publicaciones."
+    },
+    {
+      "name": "soporte-presupuesto-y-medicion.md",
+      "bytes": 8488,
+      "sha256": "e4c33008a215fbaccb1b1d04d89245297cf157d4543fe685a2f6a4e49f8b0287",
+      "readComplete": true,
+      "finalText": "a empresa debe añadir su ciclo comercial. Un test pequeño puede terminar inconcluso. Revisar evidencia y economía antes de ampliar, sin imponer duración ni porcentaje fijo SEO/Ads."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-seo-or-google-ads-australia.md",
+      "bytes": 16175,
+      "sha256": "e81668474eb64d50be4d54a07284fb0c1682aa812e859ea58c8859d4163cecc2"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2223,
+      "sha256": "89fc3133139dffcddeaa640593a724a2cc0f6e57b8cd57449aea48108d20fc1e"
+    },
+    {
+      "name": "07-search-investment-decision-card.md",
+      "bytes": 5951,
+      "sha256": "edff86a61469512c8664ec2f5eedc5ee7af34000b25c7b7cb5a764ad0c199a37"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 28270,
+      "sha256": "b5a56ecaf2ec512884c87815c07b28c52fabfe85d2ee165f7a2b762637073c00"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 28269,
+      "sha256": "c0a1f21f7a541c744c613ab942f18ad641dc177d72b85dad6b30355179b6cbdc"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8849,
+      "sha256": "ac22bf6c577b8fbad50cbe6931c17349585303214c496de485ad3191c2f2e3c2"
+    },
+    {
+      "name": "worksheet-preview.html",
+      "bytes": 10358,
+      "sha256": "88da39754d7b62940225b5560f1f179835d4bb58d779e788adf025600cf30a9d"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 11327,
+      "sha256": "e228fa39be912c8ae1fd0134bb5ec9ef344a7055b9e28635685fc7d07807af18"
+    },
+    {
+      "name": "media/search-investment-illustration-1280.webp",
+      "bytes": 337728,
+      "sha256": "69baa8cae48950f1eccd9af11d949ea3f91c6ba7e72db139008e8fc39589ad60"
+    },
+    {
+      "name": "media/search-investment-illustration-768.webp",
+      "bytes": 126914,
+      "sha256": "c54eb98f9c7b1b4e143811a92b0fb95ede84adc8cfe565c999961c7b85d4d310"
+    },
+    {
+      "name": "media/search-test-allowance.svg",
+      "bytes": 4055,
+      "sha256": "b41c40c7607295c5744307e8680a9c99a266d3605068a0604de430b778b0b4de"
+    },
+    {
+      "name": "media/search-test-allowance-mobile.svg",
+      "bytes": 4559,
+      "sha256": "709cf4ab37a9cd660bc98007a8bbdf5d7f177efd393a14fbe1acdaff4161305c"
+    },
+    {
+      "name": "recursos/search-investment-decision-card.md",
+      "bytes": 5951,
+      "sha256": "edff86a61469512c8664ec2f5eedc5ee7af34000b25c7b7cb5a764ad0c199a37"
+    },
+    {
+      "name": "media/search-investment-illustration-original.png",
+      "bytes": 4009099,
+      "sha256": "048f7a2b33196d01a45c2fde23f99b358508faaf9c268d82ebfea1d60a94d1f7"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 1886,
+      "sha256": "0074d8a243058c96511a01773c1212e89335e860ede7bae503c014a903734c6c"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1263,
+      "sha256": "0448187865e6c0b5379903cf885a7e29d3bb02e7fdc51ee23cab04beb05f8e1f"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 1806,
+      "sha256": "16df92acc5989cfe6bfc79c9815dead0180c948d009f140d2076745bb4e34024"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1569,
+      "sha256": "17c4c9716c25e9bdfa2b47829df8df2f6aa3df6804b073a310b00a761c554533"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2038,
+      "sha256": "de533e2ab18639f890e97a5e02cd8886f6f268a1125daf2824450ef798ffe463"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 4493,
+      "sha256": "e8b063ea3ffe682a42496e525007247c75afc4c9ab6f5259ad897fb511bb31cb"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1229,
+      "sha256": "65591ce3f5eb23fb0125e25aaf433818e6f4547aef95898a5227640a7fc2f5db"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 12443,
+      "sha256": "8b2121772d767dffbf1f3c6dc3bdf64b4da1847fb81f36cd59b56d6245e6efcb"
+    },
+    {
+      "name": "07a-revision-enlaces.json",
+      "bytes": 15423,
+      "sha256": "4826342abb4fc0a91a7de69a29f3ded21a6734663d4578dfe6c897aefab62acc"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1138,
+      "sha256": "5ba0e220ed631b70cdaa4a91e5e2e01e264008de6cbd20cb359421df72da1812"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1419,
+      "sha256": "7bda06dcbb98c922d76100108a1c4668e9963b6ac6f8a183df85e8fc8558af50"
+    },
+    {
+      "name": "12-cierre-preparacion.md",
+      "bytes": 2999,
+      "sha256": "fef9041f8b8876ea34c4eabec9b33ff34f0ec7878e9b6fe4afdbe54ff4c26940"
+    }
+  ],
+  "wordCount": 2364,
+  "fullPageBrowserQA": false,
+  "preparedCount": 9,
+  "publishedCount": 9,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/search-investment-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-f432ab9f-0554-4a71-b73a-2f00e5851a36.png",
+    "visualInspection": true
+  },
+  "nextToReviewOrPublish": 10,
+  "nextNewPackage": 19
+}

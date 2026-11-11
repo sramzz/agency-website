@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-30",
+  "baselineDir": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\agency-website\\.cache\\blog7-release-baseline",
+  "baseline": [
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "834879d32829c950d6411c0e16ce70344e12e9d7d6545e626c953db7585297c6"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "7616757192d81e2102441c001eb39c86046426c323ae9c2e7e9a30a9fde11639"
+    },
+    {
+      "name": "blog/is-seo-still-relevant-ai-search/index.html",
+      "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+    },
+    {
+      "name": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+    },
+    {
+      "name": "blog/website-not-showing-up-on-google/index.html",
+      "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+    },
+    {
+      "name": "blog/website-visits-few-enquiries/index.html",
+      "sha256": "51b3cf9bede1c55a899098254fd791eb63179390630aabeabdf1a684ca2fd3aa"
+    },
+    {
+      "name": "blog/what-is-seo/index.html",
+      "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "9b880f1f61b8beffddf838a7da943c65574a030d38f04f15882b25950db36450"
+    },
+    {
+      "name": "assets/css/blog.css",
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "name": "assets/js/blog.js",
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    }
+  ],
+  "approvedContentUnchanged": true,
+  "publicationPending": false,
+  "previousPublicRevision": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+  "releaseFiles": [
+    {
+      "name": "assets/images/blog/automation-prioritisation-illustration-v2-1280.webp",
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "name": "assets/images/blog/automation-prioritisation-illustration-v2-768.webp",
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    },
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "42258473cee23d51712ee7237057eeebe9df27d79039ebf1841ba0ebda9a9298"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "7f8a61698ff0b8f4654cd4692775cc602f1980b96bcf885a1b0c357967990605"
+    },
+    {
+      "name": "blog/which-business-processes-to-automate-first/index.html",
+      "sha256": "986ea1bb5b0a042fcda3e7c05cab73750f2d8da5e7fa8d953dbd19e78865503a"
+    },
+    {
+      "name": "scripts/public-files.json",
+      "sha256": "dd6cd5c184a37fbe21cbfb1a083737092217aa8c04ee5dbf38da5275a92aa7cf"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "9f854bbfbc581d5d068483d77ea0da73a39998134ee4aec8a779d2d3d9f071c6"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "6745ccaba6cebc953d27c7bc1f407803fb3c2b7a7c638265e77799094a1acf51"
+    },
+    {
+      "name": "tests/automation-prioritisation-blog.test.js",
+      "sha256": "c433381f1b9327496aa6661aecb17a272ef3fa2068c93bb9157c6b29a84831a1"
+    },
+    {
+      "name": "tests/enquiries-publication.test.js",
+      "sha256": "c86100911a83b864961ff0036663a0294ce4afdf84bb8d9153044fb6d8fa1f83"
+    },
+    {
+      "name": "tests/google-visibility-blog.test.js",
+      "sha256": "c1cdd683de5d443817ff7fbbe5f7638d4378b0c9c08571fe28ee9a1a2fda9fab"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "0678c8221bf69cce58d8a0d98a9663f349bc775ff71f5c089d785aaf598bdba9"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "56931ba217d5610aa6b9be81167398c12000ef582a04110066edb3504c37a52b"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "2800e89b5b008a74f3c4db5e18e3e50f54e527044d9e5e2877bca116ffd51205"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "be20f7626f632a0ae674b93c3f543d05d469a7bce9f511dce521711729233040"
+    }
+  ],
+  "publicRevision": "5ebc58b519d32daef7146a5340de205d44af3fe1",
+  "regeneration": {
+    "performed": true,
+    "files": [
+      {
+        "name": "blog/ai-agents-vs-workflow-automation/index.html",
+        "sha256": "42258473cee23d51712ee7237057eeebe9df27d79039ebf1841ba0ebda9a9298"
+      },
+      {
+        "name": "blog/is-seo-still-relevant-ai-search/index.html",
+        "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+      },
+      {
+        "name": "blog/local-seo-google-maps-visibility/index.html",
+        "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+      },
+      {
+        "name": "blog/website-not-showing-up-on-google/index.html",
+        "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+      },
+      {
+        "name": "blog/website-visits-few-enquiries/index.html",
+        "sha256": "51b3cf9bede1c55a899098254fd791eb63179390630aabeabdf1a684ca2fd3aa"
+      },
+      {
+        "name": "blog/what-is-seo/index.html",
+        "sha256": "95409e5a7f782bff42ee3ba073f5f7c579f74bf74dbf0fa697837f9de35883d7"
+      },
+      {
+        "name": "blog/which-business-processes-to-automate-first/index.html",
+        "sha256": "986ea1bb5b0a042fcda3e7c05cab73750f2d8da5e7fa8d953dbd19e78865503a"
+      },
+      {
+        "name": "blog/index.html",
+        "sha256": "7f8a61698ff0b8f4654cd4692775cc602f1980b96bcf885a1b0c357967990605"
+      },
+      {
+        "name": "sitemap.xml",
+        "sha256": "9f854bbfbc581d5d068483d77ea0da73a39998134ee4aec8a779d2d3d9f071c6"
+      },
+      {
+        "name": "assets/css/blog.css",
+        "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+      },
+      {
+        "name": "assets/js/blog.js",
+        "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+      }
+    ],
+    "allGeneratedOutputsByteIdentical": true,
+    "outputCount": 11
+  },
+  "privateTestsPassed": 212,
+  "publicTestsPassed": 211,
+  "buildPassed": true,
+  "fullPageBrowserQA": false,
+  "reviews": {
+    "standards": "No actionable findings",
+    "spec": "No actionable findings",
+    "reviewBase": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+    "reviewHead": "5ebc58b519d32daef7146a5340de205d44af3fe1"
+  },
+  "reviewHarnessIncident": {
+    "path": "assets/css/blog.css",
+    "cause": "Subagent mock omitted appendFileSync",
+    "extraBytes": 1527,
+    "recoveredFrom": ".cache/blog7-release-baseline/assets/css/blog.css",
+    "recoveredSHA256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c",
+    "publicCheckoutAffected": false
+  },
+  "published": true,
+  "productionVerification": "19-verificacion-produccion.json"
+}

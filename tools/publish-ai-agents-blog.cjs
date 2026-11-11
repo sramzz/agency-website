@@ -32,7 +32,7 @@ module.exports = ({ root }) => {
   const schema = {
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title,
     description, url: canonical, mainEntityOfPage: canonical, inLanguage: 'en-AU',
-    datePublished: '2026-10-21', dateModified: '2026-10-21', image: hero,
+    datePublished: '2026-10-21', dateModified: '2026-11-04', image: hero,
     publisher: { '@type': 'Organization', name: 'Ranking Rebels', url: 'https://rankingrebels.com/' }
   };
   html = html.replace('  <meta name="robots" content="noindex, nofollow" />\n', '')
@@ -61,7 +61,7 @@ module.exports = ({ root }) => {
   let hub = fs.readFileSync(hubPath, 'utf8');
   const readTime = Math.ceil(source.replace(/\]\([^)]+\)/g, ']').split(/\s+/).length / 220);
   const excerpt = 'An enquiry arrives, details are missing and someone has to follow it up. See when rules, an AI workflow or an agent can help, and what your team should check before handing over more decisions.';
-  const story = `<a class="blog-story" href="${route}"><img class="blog-story-image" src="${asset(names[1])}" width="768" height="432" loading="lazy" decoding="async" alt="" aria-hidden="true" /><div class="blog-story-body"><div class="blog-story-label"><span>AI agents &amp; workflows</span><span>${date} · ${readTime} min read</span></div><h2>${escape(title)}</h2><p>${escape(excerpt)}</p><span class="blog-story-read">Read the article <span aria-hidden="true">↗</span></span></div></a>`;
+  const story = `<a class="blog-story" href="${route}"><img class="blog-story-image" src="${asset(names[1])}" width="768" height="432" loading="lazy" decoding="async" alt="" aria-hidden="true" /><div class="blog-story-body"><div class="blog-story-label"><span>AI agents &amp; workflows</span><span>${date} · ${readTime} min read</span></div><h2>${escape(title)}</h2><p>${escape(excerpt)}</p><span class="blog-story-read">Read the article</span></div></a>`;
   const hubTitle = 'SEO & AI Automation Blog | Ranking Rebels';
   const hubDescription = 'Practical reading on SEO, Google Maps, AI search and automation for Australian service businesses. Read the Ranking Rebels blog.';
   hub = hub.replace('<section class="blog-list" aria-label="Latest articles">', `<section class="blog-list" aria-label="Latest articles">${story}`)

@@ -124,7 +124,14 @@ if (desktopNav) {
   solutions.append(solutionsTrigger, solutionsPanel);
   desktopNav.replaceChildren(solutions, ...primaryLinks.map((link) => createPrimaryLink(link)));
 
+  let solutionsCloseTimer = null;
+  let solutionsPointerInside = false;
+  const cancelSolutionsClose = () => {
+    clearTimeout(solutionsCloseTimer);
+    solutionsCloseTimer = null;
+  };
   closeSolutionsPanel = (returnFocus = false) => {
+    cancelSolutionsClose();
     const wasOpen = !solutionsPanel.hidden;
     solutionsPanel.hidden = true;
     solutionsTrigger.setAttribute("aria-expanded", "false");
@@ -132,11 +139,29 @@ if (desktopNav) {
     if (returnFocus && wasOpen) solutionsTrigger.focus();
   };
   const openSolutionsPanel = () => {
+    cancelSolutionsClose();
     closeLocationPanel();
     solutionsPanel.hidden = false;
     solutionsTrigger.setAttribute("aria-expanded", "true");
     solutions.classList.add("is-open");
   };
+  solutions.addEventListener("pointerenter", (event) => {
+    if (event.pointerType !== "mouse" || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    solutionsPointerInside = true;
+    openSolutionsPanel();
+  });
+  solutions.addEventListener("pointerleave", (event) => {
+    if (event.pointerType !== "mouse") return;
+    solutionsPointerInside = false;
+    cancelSolutionsClose();
+    solutionsCloseTimer = setTimeout(() => {
+      solutionsCloseTimer = null;
+      if (!solutionsPanel.contains(document.activeElement)) closeSolutionsPanel();
+    }, 180);
+  });
+  solutions.addEventListener("focusout", (event) => {
+    if (!solutionsPointerInside && !solutions.contains(event.relatedTarget)) closeSolutionsPanel();
+  });
   solutionsTrigger.addEventListener("click", () => solutionsPanel.hidden ? openSolutionsPanel() : closeSolutionsPanel());
   solutionsTrigger.addEventListener("keydown", (event) => {
     if (event.key === "ArrowDown") {

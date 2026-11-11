@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-04",
+  "blog": 17,
+  "publicCount": 9,
+  "preparedPriorCount": 7,
+  "articleSources": [
+    {
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "bytes": 15755,
+      "sha256": "33531c98983e5bd4f3a63ad190e7a4a4bd6a845b222e49a3236f7cbb4be8256f",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "bytes": 18988,
+      "sha256": "ebd816b4c696506b39b22f37613ad152b66ff06bffbdde1909ec1b895d7e8ab7",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "bytes": 17896,
+      "sha256": "819f49d756778b319f8e8e0fe8a3f07a3198453cab1d55c2c8724ffcffbd388f",
+      "readingBasis": "Complete previous reading plus exact incoming-link change from publication9"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "bytes": 15983,
+      "sha256": "ec29f3f8d58150d115f4740be99df26447dd2bc14d7e1f141f6ec451c7caa936",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "bytes": 15039,
+      "sha256": "9f4cda6770dd531ddedb4266a9c9a857402ccf64b2829ee46cda9359b5fc8a09",
+      "readingBasis": "Complete previous reading plus exact incoming-link change from publication9"
+    },
+    {
+      "name": "docs/editorial/blog-google-visibility-diagnosis-australia/03-articulo-google-visibility-diagnosis-australia.md",
+      "bytes": 16436,
+      "sha256": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "bytes": 16917,
+      "sha256": "fce55cf86c4eee0070a6e22faadb89b0c6e001178ca2151f75e00cf9ed51e685",
+      "readingBasis": "Complete previous reading plus exact incoming-link change from publication9"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "bytes": 17433,
+      "sha256": "ea78596fd1af9d3692a72257fcc6d1e786972f5a922749b9721431fcc18eaea3",
+      "readingBasis": "Complete previous reading plus exact incoming-link change from publication9"
+    },
+    {
+      "name": "docs/editorial/blog-ai-workflow-pilot-australia/03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16980,
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "bytes": 16903,
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-marketing-measurement-australia/03-articulo-marketing-measurement-australia.md",
+      "bytes": 17937,
+      "sha256": "04fe46f6f1c6c5c606351c7fc5b4d169bfc32eea57a451d17ab9c3777b1da440",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "bytes": 16074,
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "bytes": 17641,
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "bytes": 17803,
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "bytes": 15983,
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5",
+      "readingBasis": "Complete previous reading; unchanged hash"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/03-articulo-business-apps-stopped-syncing-australia.md",
+      "bytes": 16321,
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d",
+      "readingBasis": "Complete previous reading during preparation16; unchanged manifest"
+    }
+  ],
+  "directions": [
+    {
+      "from": 17,
+      "to": 1,
+      "title": "SEO and AI search",
+      "status": "omit",
+      "reason": "El papel de SEO en búsquedas con IA no requiere una guía de edición/bases de testimonios; ya deriva a evidencia y páginas útiles."
+    },
+    {
+      "from": 1,
+      "to": 17,
+      "title": "SEO and AI search",
+      "status": "omit",
+      "reason": "El papel de SEO en búsquedas con IA no requiere una guía de edición/bases de testimonios; ya deriva a evidencia y páginas útiles."
+    },
+    {
+      "from": 17,
+      "to": 2,
+      "title": "Local SEO and Maps",
+      "status": "applied in draft",
+      "reason": "Después de la política de Google, ampliar cómo la solicitud neutral encaja con el perfil real. URL pública confirmada."
+    },
+    {
+      "from": 2,
+      "to": 17,
+      "title": "Local SEO and Maps",
+      "status": "private proposal",
+      "reason": "Tras el párrafo de solicitud neutral o al cerrar la sección de reviews: “If you want to feature that feedback on your own website, [check its meaning, reuse basis and presentation](https://rankingrebels.com/blog/customer-reviews-testimonials-website/) before copying it.” Separar solicitud Google de publicación propia; no modificar ahora."
+    },
+    {
+      "from": 17,
+      "to": 3,
+      "title": "Agents vs workflows",
+      "status": "omit",
+      "reason": "La arquitectura y supervisión de agentes no abren una duda de feedback publicitario."
+    },
+    {
+      "from": 3,
+      "to": 17,
+      "title": "Agents vs workflows",
+      "status": "omit",
+      "reason": "La arquitectura y supervisión de agentes no abren una duda de feedback publicitario."
+    },
+    {
+      "from": 17,
+      "to": 4,
+      "title": "What is SEO",
+      "status": "omit",
+      "reason": "Fundamentos de descubrimiento orgánico; la pieza 17 no amplía ese fundamento sin desvío."
+    },
+    {
+      "from": 4,
+      "to": 17,
+      "title": "What is SEO",
+      "status": "omit",
+      "reason": "Fundamentos de descubrimiento orgánico; la pieza 17 no amplía ese fundamento sin desvío."
+    },
+    {
+      "from": 17,
+      "to": 5,
+      "title": "Visits but few enquiries",
+      "status": "applied in draft",
+      "reason": "En beneficios: cuando un quote no resuelve la oferta, formulario o seguimiento, ampliar el diagnóstico de página/contacto. URL pública confirmada."
+    },
+    {
+      "from": 5,
+      "to": 17,
+      "title": "Visits but few enquiries",
+      "status": "private proposal",
+      "reason": "En «Show evidence people can assess», tras el párrafo ACCC: “Before featuring a quote or copying a public review, check the [source, meaning and basis for publishing customer feedback](https://rankingrebels.com/blog/customer-reviews-testimonials-website/).” No modificar ahora."
+    },
+    {
+      "from": 17,
+      "to": 6,
+      "title": "Website not on Google",
+      "status": "omit",
+      "reason": "Indexación y visibilidad técnica son una intención distinta de uso de feedback."
+    },
+    {
+      "from": 6,
+      "to": 17,
+      "title": "Website not on Google",
+      "status": "omit",
+      "reason": "Indexación y visibilidad técnica son una intención distinta de uso de feedback."
+    },
+    {
+      "from": 17,
+      "to": 7,
+      "title": "Automation prioritisation",
+      "status": "omit",
+      "reason": "Elegir procesos automatizables no desarrolla la decisión de publicar una experiencia de cliente."
+    },
+    {
+      "from": 7,
+      "to": 17,
+      "title": "Automation prioritisation",
+      "status": "omit",
+      "reason": "Elegir procesos automatizables no desarrolla la decisión de publicar una experiencia de cliente."
+    },
+    {
+      "from": 17,
+      "to": 8,
+      "title": "Custom software",
+      "status": "omit",
+      "reason": "Comparar configuración, integración y software no necesita ampliar bases de testimonios."
+    },
+    {
+      "from": 8,
+      "to": 17,
+      "title": "Custom software",
+      "status": "omit",
+      "reason": "Comparar configuración, integración y software no necesita ampliar bases de testimonios."
+    },
+    {
+      "from": 17,
+      "to": 9,
+      "title": "AI workflow pilot",
+      "status": "omit",
+      "reason": "Diseñar un piloto operativo y sus pruebas no se resuelve mediante reseñas comerciales."
+    },
+    {
+      "from": 9,
+      "to": 17,
+      "title": "AI workflow pilot",
+      "status": "omit",
+      "reason": "Diseñar un piloto operativo y sus pruebas no se resuelve mediante reseñas comerciales."
+    },
+    {
+      "from": 17,
+      "to": 10,
+      "title": "Google Ads",
+      "status": "omit",
+      "reason": "Search Ads ya deriva a la página/contacto en 5; no añadir otra salida general sin una duda de testimonial específica."
+    },
+    {
+      "from": 10,
+      "to": 17,
+      "title": "Google Ads",
+      "status": "omit",
+      "reason": "Search Ads ya deriva a la página/contacto en 5; no añadir otra salida general sin una duda de testimonial específica."
+    },
+    {
+      "from": 17,
+      "to": 11,
+      "title": "Marketing measurement",
+      "status": "omit",
+      "reason": "La guía de medición no valida el contenido de una cita individual; no mezclar atribución con derechos de publicación."
+    },
+    {
+      "from": 11,
+      "to": 17,
+      "title": "Marketing measurement",
+      "status": "omit",
+      "reason": "La guía de medición no valida el contenido de una cita individual; no mezclar atribución con derechos de publicación."
+    },
+    {
+      "from": 17,
+      "to": 12,
+      "title": "Facebook/Instagram",
+      "status": "omit",
+      "reason": "El 17 no elige una plataforma publicitaria ni autoriza reutilización en ads. La entrada inversa es condicional a una página web con feedback."
+    },
+    {
+      "from": 12,
+      "to": 17,
+      "title": "Facebook/Instagram",
+      "status": "private proposal",
+      "reason": "Propuesta privada: tras el párrafo de evidencia real en «Make the offer and its evidence clear»: “For feedback on the website an ad sends visitors to, check the [quote, supporting claims and basis of use](https://rankingrebels.com/blog/customer-reviews-testimonials-website/).” Activar sólo cuando ambos artículos sean públicos; no afirmar permiso para campañas por permiso web."
+    },
+    {
+      "from": 17,
+      "to": 13,
+      "title": "CRM",
+      "status": "omit",
+      "reason": "Registrar clientes y seguimiento no equivale a autorizar usos publicitarios; la duda testimonial no necesita otra explicación de CRM."
+    },
+    {
+      "from": 13,
+      "to": 17,
+      "title": "CRM",
+      "status": "omit",
+      "reason": "Registrar clientes y seguimiento no equivale a autorizar usos publicitarios; la duda testimonial no necesita otra explicación de CRM."
+    },
+    {
+      "from": 17,
+      "to": 14,
+      "title": "TikTok Ads",
+      "status": "omit",
+      "reason": "Creatividad y evidencia de un servicio no implican usar testimonios; no añadir esa suposición para forzar enlace."
+    },
+    {
+      "from": 14,
+      "to": 17,
+      "title": "TikTok Ads",
+      "status": "omit",
+      "reason": "Creatividad y evidencia de un servicio no implican usar testimonios; no añadir esa suposición para forzar enlace."
+    },
+    {
+      "from": 17,
+      "to": 15,
+      "title": "Old content decisions",
+      "status": "omit",
+      "reason": "Actualización de páginas y tratamiento de URL; no repetir esa guía para revisar contexto de un quote ni imponer una relación indirecta."
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "title": "Old content decisions",
+      "status": "omit",
+      "reason": "Actualización de páginas y tratamiento de URL; no repetir esa guía para revisar contexto de un quote ni imponer una relación indirecta."
+    },
+    {
+      "from": 17,
+      "to": 16,
+      "title": "Apps stopped syncing",
+      "status": "omit",
+      "reason": "Diagnosticar una conexión y recuperar registros no plantea selección de feedback web."
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "title": "Apps stopped syncing",
+      "status": "omit",
+      "reason": "Diagnosticar una conexión y recuperar registros no plantea selección de feedback web."
+    }
+  ],
+  "activeOutgoingBlogURLs": [
+    "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+    "https://rankingrebels.com/blog/local-seo-google-maps-visibility/"
+  ],
+  "privateProposals": 3,
+  "omissions": 27,
+  "olderManuscriptsOrHTMLChanged": false
+}

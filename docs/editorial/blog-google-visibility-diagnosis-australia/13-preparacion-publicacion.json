@@ -1,0 +1,156 @@
+{
+  "checkedAt": "2026-10-27T23:50:58.551Z",
+  "base": "ea7a12c508e0ef1af945a4e842da9db7eed51d34",
+  "notBefore": "2026-10-28T07:30:00+11:00",
+  "authorisation": "11-autorizacion-publicacion.md",
+  "selectedTheme": "light",
+  "illustration": "original preserved",
+  "approvedProsePreserved": true,
+  "newOutgoingLink": "visit-to-enquiry journey",
+  "semanticContentPartsVerified": 651,
+  "articlesChecked": 6,
+  "contextualLinks": [
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "work involved in SEO"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "website visibility diagnosis"
+    },
+    {
+      "from": "/blog/is-seo-still-relevant-ai-search/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "checking the website enquiry journey"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "search engine optimisation (SEO)"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "diagnosing website visibility in Google"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "diagnosing website visits without enquiries"
+    },
+    {
+      "from": "/blog/local-seo-google-maps-visibility/",
+      "to": "/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "step-by-step diagnosis of a missing Google result"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving your visibility on Google Maps"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "what to check when visits are not becoming enquiries"
+    },
+    {
+      "from": "/blog/what-is-seo/",
+      "to": "/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "website visits but few enquiries"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "improving visibility on Google Maps"
+    },
+    {
+      "from": "/blog/ai-agents-vs-workflow-automation/",
+      "to": "/blog/is-seo-still-relevant-ai-search/",
+      "anchor": "SEO in the age of ChatGPT and AI search"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "what SEO involves"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "/blog/website-not-showing-up-on-google/",
+      "anchor": "a visibility diagnosis"
+    },
+    {
+      "from": "/blog/website-visits-few-enquiries/",
+      "to": "/blog/ai-agents-vs-workflow-automation/",
+      "anchor": "AI agents and workflow automation"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "/blog/local-seo-google-maps-visibility/",
+      "anchor": "local visibility on Google Maps"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "/blog/website-visits-few-enquiries/",
+      "anchor": "visit-to-enquiry journey"
+    },
+    {
+      "from": "/blog/website-not-showing-up-on-google/",
+      "to": "/blog/what-is-seo/",
+      "anchor": "how SEO works for your business"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/images/blog/google-visibility-illustration-1280.webp",
+      "sha256": "684083d21db56d421e350fac4561e27d527af264d2916b78e9c121551520a356"
+    },
+    {
+      "file": "assets/images/blog/google-visibility-illustration-768.webp",
+      "sha256": "97e3e2ea6de84970e37d95dcd65acb8465140d37b96b4524d325b89fec1c0cac"
+    },
+    {
+      "file": "assets/images/blog/visibility-diagnosis.svg",
+      "sha256": "f3ef878a46e748e2bb3ffc05710607525b02221e236f4f67ab4dd3cf41025abe"
+    },
+    {
+      "file": "assets/images/blog/visibility-diagnosis-mobile.svg",
+      "sha256": "e13d4fd9b7f739ed436207efede783798bc2f2a3ababebb1fc8ef7995168bcac"
+    }
+  ],
+  "protectedDraftFiles": 130,
+  "published": true,
+  "browserFullPageReview": false,
+  "publication": {
+    "confirmed": true,
+    "revision": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+    "verifiedAt": "2026-10-27T23:55:05.954Z",
+    "proof": "15-verificacion-produccion.json"
+  }
+}

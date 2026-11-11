@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-29",
+  "publicRevision": "a9c751c1a915cd7ef2df53b617de6e210580c6cb",
+  "local": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/preview.html",
+      "status": 200,
+      "sha256": "f379563d9d8546fa37449f23b4073db23d20ffe79fd9a4511a2231819f8b3f93",
+      "bytes": 29095
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/preview-dark.html",
+      "status": 200,
+      "sha256": "71bbd6d615b85cae90d9b9e042583cd21de09c3da9aa292c3b341059ecea84ce",
+      "bytes": 29094
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/preview.css",
+      "status": 200,
+      "sha256": "2fed1566b7ee61b06e48fd5418d63cae9bbc6ec49ce51ca85718b273cd60a83f",
+      "bytes": 8141
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/scorecard-preview.html",
+      "status": 200,
+      "sha256": "235dd2032249b78159789f9907de6c3432bf36cd945cdb7341fb5a7e0b79c67e",
+      "bytes": 11546
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/recursos/marketing-results-scorecard.md",
+      "status": 200,
+      "sha256": "287b83eee5e8510de9e790dd37be2bac06bb9d8bd39d98e9b4d5a13b5c6d1340",
+      "bytes": 8183
+    },
+    {
+      "url": "http://127.0.0.1:4177/favicon.ico",
+      "status": 200,
+      "sha256": "e1c4d61f035348562f19c525206706a8a65da573dd44120ef9f933ed377ba27a",
+      "bytes": 15086
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css",
+      "status": 200,
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f",
+      "bytes": 302227
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c",
+      "bytes": 15608
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200,
+      "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86",
+      "bytes": 2641
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js",
+      "status": 200,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb",
+      "bytes": 1331
+    },
+    {
+      "url": "http://127.0.0.1:4177/",
+      "status": 200,
+      "sha256": "8c4f020435d6a7668b791ec0871441bcb1264245934f072e06d29c578bcfcc0d",
+      "bytes": 24001
+    },
+    {
+      "url": "http://127.0.0.1:4177/contact/",
+      "status": 200,
+      "sha256": "4903085d28bf620a7f054043ea57583550dddd173d3e7e638edda93e8b9255fb",
+      "bytes": 14931
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "sha256": "7616757192d81e2102441c001eb39c86046426c323ae9c2e7e9a30a9fde11639",
+      "bytes": 9122
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/media/marketing-results-illustration-1280.webp",
+      "status": 200,
+      "sha256": "121e5db452494497abbe81bf8e0a1a5581e10dc2b8d4ce7bde1302e8a35b3731",
+      "bytes": 285490
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/media/marketing-results-illustration-768.webp",
+      "status": 200,
+      "sha256": "e1ea191455abb48a494551ec385a0bf399dff0678d1467f7df0e4e86222e37d5",
+      "bytes": 114812
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/media/revenue-and-costs-mobile.svg",
+      "status": 200,
+      "sha256": "39539b4612a22fffeb3dcecd2bab3c62e0c0b15a26f8b7a5da269376eb3c8cd4",
+      "bytes": 2562
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-marketing-measurement-australia/media/revenue-and-costs.svg",
+      "status": 200,
+      "sha256": "8b513c4f59b27937a6d7529f17ae4b020ce2f79ebf70aa33f63cbd783a3e198a",
+      "bytes": 2474
+    },
+    {
+      "url": "http://127.0.0.1:4177/solutions/",
+      "status": 200,
+      "sha256": "a0b5290a0f1412fe477b3677a3b420ac5ddd6df35a7dc69c2e5b6379c7f23e2a",
+      "bytes": 12225
+    },
+    {
+      "url": "http://127.0.0.1:4177/about/",
+      "status": 200,
+      "sha256": "40038bc1e24a3223fdc8108514e6a07938148baa5ad299863ba58b3370138ecf",
+      "bytes": 15054
+    },
+    {
+      "url": "http://127.0.0.1:4177/privacy/",
+      "status": 200,
+      "sha256": "a6db2426b0ca8061f5936f1b56536c36c82065ef793eaee322029b7a9ad421ad",
+      "bytes": 12110
+    },
+    {
+      "url": "http://127.0.0.1:4177/cookies/",
+      "status": 200,
+      "sha256": "685d4434f001c348043895556412a0ab16285ade57a083c28ef878ffe0f261d6",
+      "bytes": 7440
+    },
+    {
+      "url": "http://127.0.0.1:4177/legal/",
+      "status": 200,
+      "sha256": "7fd241b7324e323203bb07ac42d24d2c23ce3eca6780e7dfa1c093996d142b89",
+      "bytes": 6620
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/script.js",
+      "status": 200,
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a",
+      "bytes": 16310
+    }
+  ],
+  "public": [
+    {
+      "url": "https://rankingrebels.com/_deployment.json",
+      "status": 200,
+      "sha256": "cc8dd7dac91e5e0b4ac7c31bdb547de53103ad0496146f948d53662d788c176e",
+      "bytes": 81
+    },
+    {
+      "url": "https://rankingrebels.com/blog/",
+      "status": 200,
+      "sha256": "1984a4105241acd45e3054cbdabef3be7abf295036e66f4f8447638bb0616353",
+      "bytes": 9336
+    },
+    {
+      "url": "https://rankingrebels.com/sitemap.xml",
+      "status": 200,
+      "sha256": "9b880f1f61b8beffddf838a7da943c65574a030d38f04f15882b25950db36450",
+      "bytes": 1899
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 200,
+      "sha256": "6a71388b5b6d3cca89fb95f9e975cd9e6911c29f899b6d8f821b137c07ab0a4c",
+      "bytes": 33555
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 200,
+      "sha256": "37dd3242998188c450f58980a659bb7ad3c25bfab243dd6bdae54ab2078e5a9a",
+      "bytes": 30805
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "sha256": "2f655d2d36223c839972d0b2975e364c45b751c5879e326919e79215c9a79c19",
+      "bytes": 29883
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "sha256": "9e16b8715a8b738b3ee229c939780b2f753e5228ce331c1d6ba02890b3c726fc",
+      "bytes": 28962
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "sha256": "35f3a54302bab2eee8b597a8cd8c6eb7d375dc5710e60509cec8c3152709d589",
+      "bytes": 32785
+    },
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "sha256": "d190169b2868830607dc452ddb9b54997b0f549410adab555ae1284189b30901",
+      "bytes": 27834
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 404,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "bytes": 3589
+    },
+    {
+      "url": "https://rankingrebels.com/blog/custom-software-benefits/",
+      "status": 404,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "bytes": 3589
+    },
+    {
+      "url": "https://rankingrebels.com/blog/how-to-build-ai-workflow/",
+      "status": 404,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "bytes": 3589
+    },
+    {
+      "url": "https://rankingrebels.com/blog/google-ads-for-service-businesses/",
+      "status": 404,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "bytes": 3589
+    },
+    {
+      "url": "https://rankingrebels.com/blog/measure-digital-marketing-results/",
+      "status": 404,
+      "sha256": "4fb3dbe01437be1d2a8c0abec1452cb7d9c035ed54bf32de650ab857567006eb",
+      "bytes": 3589
+    },
+    {
+      "url": "https://rankingrebels.com/contact/",
+      "status": 200,
+      "sha256": "55b70e5493feea417501fc61ef2aa2688008e5e4898697e2779cbf0de651d826",
+      "bytes": 15172
+    }
+  ],
+  "allPass": true,
+  "published": false
+}

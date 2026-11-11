@@ -1,0 +1,289 @@
+{
+  "blog": 13,
+  "date": "2026-11-02",
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/what-is-crm/",
+  "changes": [
+    {
+      "before": "A customer asks for a quote through your website, calls to clarify the scope, then emails a change. One team member has the form, another remembers the call, and the latest quote is somewhere in an inbox. The customer is waiting, but nobody is certain who should act next.",
+      "after": "Say you run a landscaping business in Perth. A customer asks for a quote through your website, calls to clarify the scope, then emails a change. You have the form, a colleague remembers the call, and the latest quote is somewhere in an inbox. The customer is waiting. Who should act next?\n\nThat is the fictional situation we will use throughout this guide.",
+      "reason": "Adelantar el caso existente y hablar directamente al propietario; mantenerlo explícitamente ficticio."
+    },
+    {
+      "before": "This guide explains what a CRM does, how to organise enquiries and quotes, and how to decide whether your current tools are enough.",
+      "after": "You may already have enough software. The first step is to agree how your team records enquiries, quotes and the next action.",
+      "reason": "Sustituir anuncio genérico del artículo por una decisión concreta que el manuscrito ya sostiene."
+    },
+    {
+      "before": "Consider a fictional landscaping business serving selected Perth suburbs. The identifiers below are educational references, not customer data or results from a tested CRM.",
+      "after": "Return to the fictional landscaping business serving selected Perth suburbs. The identifiers below are educational references, not customer data or results from a tested CRM.",
+      "reason": "Recuperar el caso temprano sin presentarlo como un segundo negocio."
+    },
+    {
+      "before": "## Check integrations and data quality before relying on them",
+      "after": "## Check the connections and the records",
+      "reason": "H2 más corto; el cuerpo conserva campos, conflictos, permisos e identidad."
+    },
+    {
+      "before": "## Introduce the system through a controlled pilot",
+      "after": "## Test a small setup first",
+      "reason": "Etiqueta cotidiana; el cuerpo conserva piloto sintético y reconciliación."
+    },
+    {
+      "before": "## Handle customer information and marketing preferences carefully",
+      "after": "## Look after customer information and preferences",
+      "reason": "H2 más directo, sin retirar los matices de privacidad o marketing."
+    },
+    {
+      "before": "Custom development becomes a separate decision only if a verified requirement justifies it.",
+      "after": "Custom development becomes a separate decision only if a verified requirement justifies it. Our guide to [choosing between existing tools and custom software](https://rankingrebels.com/blog/custom-software-benefits/) can help you compare those options.",
+      "reason": "Salida contextual a8 público desde la decisión configurar/conectar/construir."
+    },
+    {
+      "before": "A reliable reminder can be more useful than a complex workflow the team cannot supervise.",
+      "after": "A reliable reminder can be more useful than a complex workflow the team cannot supervise. If several steps need attention, use our guide to [which business processes to automate first](https://rankingrebels.com/blog/which-business-processes-to-automate-first/) to choose a manageable starting point.",
+      "reason": "Salida contextual a7 público para priorizar, sin rehacer ese artículo."
+    }
+  ],
+  "sourceUrls": [
+    "https://www.microsoft.com/en-us/dynamics-365/resources/what-is-crm",
+    "https://knowledge.hubspot.com/records/associate-records",
+    "https://knowledge.hubspot.com/records/use-lifecycle-stages",
+    "https://support.pipedrive.com/en/article/activities",
+    "https://learn.microsoft.com/en-us/dynamics365/sales/sales-transactions",
+    "https://business.gov.au/online-and-digital/digital-tools-for-business",
+    "https://knowledge.hubspot.com/integrations/understand-your-data-sync-field-mappings",
+    "https://knowledge.hubspot.com/records/deduplication-of-records",
+    "https://knowledge.hubspot.com/import-and-export/set-up-your-import-file",
+    "https://knowledge.hubspot.com/import-and-export/export-records",
+    "https://knowledge.hubspot.com/workflows/set-your-workflow-enrollment-triggers",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business",
+    "https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-guidelines/chapter-11-app-11-security-of-personal-information",
+    "https://www.acma.gov.au/avoid-sending-spam",
+    "https://rankingrebels.com/contact/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2813,
+      "sha256": "2f85308b09b5863c3e83cd16e83b1c40ed1bc7d2a2bfd8c71678a853009a3381",
+      "readComplete": true,
+      "finalText": "ess.** La serie tiene 14 temas; What Is SEO? permanece 4. El usuario decide manualmente cuándo investigar; un blog cada cuatro días no programa acciones. Esta entrega no inicia 14."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 13048,
+      "sha256": "1d7153ba0e7766fb0d5dc294672d53050850100da128c03eeddf10459731bf60",
+      "readComplete": true,
+      "finalText": "a e indexación. No se inventan para cerrar el paquete. 08 enumera qué evidencia permitiría incorporarlos. Investigación y preparación del 23 de octubre no son fecha de publicación."
+    },
+    {
+      "name": "02-articulo-what-is-crm-australia.md",
+      "bytes": 17249,
+      "sha256": "c08984a05c6d6600fa818a1cc3fa01a564a99a4655e524b9810e928702fd75cb",
+      "readComplete": true,
+      "finalText": "nkingrebels.com/contact/) about the workflow you want to improve. Bring an example of where context or responsibility gets lost so the discussion can start with the actual problem."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 7852,
+      "sha256": "83c8ee27e67fb02a6558d0e108364a3f46fb9c35fd1c60f07c4f9c473d6a372b",
+      "readComplete": true,
+      "finalText": " demanda/posiciones, inventario completo, HTML, URL y publicación. No se incluyen como hechos. El cierre editorial no exige inventarlos ni bloquea la entrega del paquete preparado."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 6661,
+      "sha256": "63aaaf35b30c0e9edbec757dec17c639805a89c63492eb983fbb3f7ddc87c5bb",
+      "readComplete": true,
+      "finalText": " o publicado.\n\nNo se emite puntuación SEO ni previsión de tráfico sin datos. La revisión del manuscrito está en 03; la contribución humana y comprobaciones reales pendientes en 08."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 8656,
+      "sha256": "231740a694e616629ebefa1e0780a5cb6bd07d1eae0fbf29a620628297ddddb0",
+      "readComplete": true,
+      "finalText": "a administrar tokens; la cadencia prevista de cuatro días no programa acciones. Al cerrar 13, indicar entrega, límites y siguiente tema, sin empezar 14 hasta una nueva instrucción."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 2048,
+      "sha256": "5fde6eaea57f15f17072bf759ab9555e71a306af1587f9d6f1854d316246d65d",
+      "readComplete": true,
+      "finalText": "14 o ejecutes 05 durante esta comprobación. Tras confirmar recepción, el siguiente comando del usuario se interpretará según las reglas compartidas y el progreso real de este chat."
+    },
+    {
+      "name": "07-crm-workflow-planning-card.md",
+      "bytes": 8336,
+      "sha256": "66ec9a788a6a1612056fb79b6812cdbf31587a68240861e5993b84233f9a0ed1",
+      "readComplete": true,
+      "finalText": ".\n\nDecide what to simplify or repair, who owns the change and when to review it. The benefit of the card is a clearer working agreement; its commercial effect still needs evidence."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 3758,
+      "sha256": "37a603c323a7db39d822f6893656d04e259185d670f398663d4d6eaf3df287e3",
+      "readComplete": true,
+      "finalText": "her It Fits Your Business**. El usuario autoriza manualmente la investigación para administrar tokens. Terminar 13 no inicia 14 ni programa recordatorios, campañas o publicaciones."
+    },
+    {
+      "name": "soporte-estrategia.md",
+      "bytes": 9136,
+      "sha256": "994dfce289b8503143f325feb7f993eeed505897a3a5ce57e2e24b374386a73d",
+      "readComplete": true,
+      "finalText": "11 para medición,7 para priorización y8 para soluciones en notas hasta verificar destino público o ruta CMS autorizada. No inventar slugs, enlaces o publicación; tampoco iniciar14."
+    },
+    {
+      "name": "soporte-modelo-proceso.md",
+      "bytes": 9632,
+      "sha256": "9159adcf3e01514a0ca5816f5d5882d53c56d6f834d8785ba932e8aca3ac8a9f",
+      "readComplete": true,
+      "finalText": "o a clientes o resultados reales. Las fuentes sostienen posibilidades y estructuras; las prácticas propuestas requieren acuerdos, mantenimiento de datos y evaluación en el negocio."
+    },
+    {
+      "name": "soporte-seleccion-datos.md",
+      "bytes": 8599,
+      "sha256": "71253932989ed42c742104678993b1844d87ba9b1037cf452777eb63e1b46f81",
+      "readComplete": true,
+      "finalText": "entar. El manuscrito puede recomendar organizar el seguimiento y medir el piloto; no puede prometer ventas, migración sin pérdidas o automatización autónoma basándose en esta nota."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-what-is-crm-australia.md",
+      "bytes": 17641,
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 1868,
+      "sha256": "a0027ba312c0cdf47fa314883f2a1c9af1416f830ab5d9c3215ed7fb55e1224a"
+    },
+    {
+      "name": "07-crm-workflow-planning-card.md",
+      "bytes": 8336,
+      "sha256": "66ec9a788a6a1612056fb79b6812cdbf31587a68240861e5993b84233f9a0ed1"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 29327,
+      "sha256": "46aa55ed06b774b1501fc21933256f43a0efd31363b431e3d9899d7712f35681"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 29326,
+      "sha256": "348b6ab7157580d7c6d8c5a1497a34b5bab4b12725d6b322f77d0f1148c33475"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 7717,
+      "sha256": "394eccf4db5e871543a3a4ea802f971bcf30a91402b46275162884363e75e305"
+    },
+    {
+      "name": "card-preview.html",
+      "bytes": 11521,
+      "sha256": "eb18251525f7feeff0644bd37de43bede4855c117b0ea6d39191b6ce11e1eab7"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10645,
+      "sha256": "ceb8d67684bfa4e95353368464b65dadc2cf32295c7a165b19f802820406a8f2"
+    },
+    {
+      "name": "media/crm-handover-illustration-1280.webp",
+      "bytes": 285800,
+      "sha256": "59465bfa82c09bcfb943c06ab9fd825f46b081e76533d8b3f1d83719c32b1777"
+    },
+    {
+      "name": "media/crm-handover-illustration-768.webp",
+      "bytes": 112634,
+      "sha256": "8ab487ac130f3405e505c86da410055afb6215657e29d11611e91cce989b4659"
+    },
+    {
+      "name": "media/crm-records.svg",
+      "bytes": 4397,
+      "sha256": "b5d563da9eb460182572e75e7cb74c28080eb07952f9919639ad370ac935101b"
+    },
+    {
+      "name": "media/crm-records-mobile.svg",
+      "bytes": 4601,
+      "sha256": "2817800c8a801f5bf701715a7b9155535a473c84caf4aab50bef21e2991c5a74"
+    },
+    {
+      "name": "recursos/crm-workflow-planning-card.md",
+      "bytes": 8336,
+      "sha256": "66ec9a788a6a1612056fb79b6812cdbf31587a68240861e5993b84233f9a0ed1"
+    },
+    {
+      "name": "media/crm-handover-illustration-original.png",
+      "bytes": 3520211,
+      "sha256": "113eb4f2ec191d7da4443295126dacf73c944d51361f066a81ed6b7f32457f50"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 1722,
+      "sha256": "e88adc52528c04bd7288c58fb9608a1dbac3c9934b0d74b220648e19b80a9f4c"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1124,
+      "sha256": "22f6545b0fd21291695a28b29e17b61686b3a29618796dcdfef12b4c9a20c8e6"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 1707,
+      "sha256": "202cd120ada68ca7ea9192f0786cc25ec89a453ee5e2e4182370dcf2e699bc0b"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1519,
+      "sha256": "efc5637220c36e56be78a50f222fb3087fee51ed3dc48b1130ee12a738b1f8e3"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2057,
+      "sha256": "c2a10cd3d7153bce73fb4d1302d5e177534590b8863dae8951d9c7e58a8ae224"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 5149,
+      "sha256": "f7e76c35ed6bed322558b2ecf1d7f88e1a4edf5d111dd4611d3c5fcb49ca179d"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1580,
+      "sha256": "97c13167e80e0ebefa16e841814dcce589d185bc198bdc8551ead14b29ed34c9"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 6090,
+      "sha256": "487812c6fe443df597740043ba9431a2274259eecd711622cc53d16e7a07b65b"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 990,
+      "sha256": "0244ccd7fb672764fb4bba4f83c63616dc51480471e865bfb31d04d592dd4cc8"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1597,
+      "sha256": "056eb60e389ea8a36d06fee32550a231a4e8e971ca5b4b34065de3443a9bc6b0"
+    }
+  ],
+  "fullPageBrowserQA": false,
+  "wordCount": 2501,
+  "preparedCount": 5,
+  "publishedCount": 8,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/crm-handover-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-0fdcf102-7093-457a-ace4-6f7a900cee05.png",
+    "visualInspection": true
+  }
+}

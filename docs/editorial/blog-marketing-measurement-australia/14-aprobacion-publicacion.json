@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Australia/Sydney",
+  "blog": 11,
+  "userQuote": "puedes por favor revisar que el ejemplo sea claro y no sea confuso para los lectores? si pasa tu pueba lo publicamos, si no lo corregimos, vuelves a revisar y publicamos",
+  "authorisationKind": "User-delegated conditional clarity review, correction, recheck and publication",
+  "finalVersionApproved": true,
+  "clarityReviewPassed": true,
+  "approvalBasis": "Later specific user instruction authorises publication after the assistant clarity check, including justified corrections; no new confirmation needed for11",
+  "readingTheme": "light",
+  "illustrationVersion": "V1",
+  "publicRoute": "/blog/measure-digital-marketing-results/",
+  "publicScorecardRoute": "/blog/measure-digital-marketing-results/scorecard/",
+  "publicWorksheetRoute": "/blog/measure-digital-marketing-results/scorecard/",
+  "publicationDate": "2026-11-11",
+  "approvedFiles": [
+    {
+      "name": "03-articulo-marketing-measurement-australia.md",
+      "bytes": 18183,
+      "sha256": "c929f4cc6ec082042b3f8afa49c148edfab91454e0a67791eeecc3d9cee58dec"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2277,
+      "sha256": "74545044d0398062685a6dff05a1294dce920f87cef158591a4a49f53af6d6b3"
+    },
+    {
+      "name": "07-marketing-results-scorecard.md",
+      "bytes": 8113,
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 29395,
+      "sha256": "6dc9cf2b244cbd1abf0953ac8d804a2984b646d742e25d47e8c53742ca4062fd"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 29394,
+      "sha256": "fcad3d0106a01f0d2e85a5acbb0e6e8b1394b340a75140be358831b72367c506"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8141,
+      "sha256": "2fed1566b7ee61b06e48fd5418d63cae9bbc6ec49ce51ca85718b273cd60a83f"
+    },
+    {
+      "name": "scorecard-preview.html",
+      "bytes": 11548,
+      "sha256": "267a5ec3d3e91e2db44b0a6c6d64f9b737ab2b49fb04f185a14909c4c3207c53"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10066,
+      "sha256": "225644b08ccf4b87a2b27a291a5eccdc339aee039165ec3cb7672da954b9f1f2"
+    },
+    {
+      "name": "media/marketing-results-illustration-1280.webp",
+      "bytes": 285490,
+      "sha256": "121e5db452494497abbe81bf8e0a1a5581e10dc2b8d4ce7bde1302e8a35b3731"
+    },
+    {
+      "name": "media/marketing-results-illustration-768.webp",
+      "bytes": 114812,
+      "sha256": "e1ea191455abb48a494551ec385a0bf399dff0678d1467f7df0e4e86222e37d5"
+    },
+    {
+      "name": "media/revenue-and-costs.svg",
+      "bytes": 2474,
+      "sha256": "8b513c4f59b27937a6d7529f17ae4b020ce2f79ebf70aa33f63cbd783a3e198a"
+    },
+    {
+      "name": "media/revenue-and-costs-mobile.svg",
+      "bytes": 2562,
+      "sha256": "39539b4612a22fffeb3dcecd2bab3c62e0c0b15a26f8b7a5da269376eb3c8cd4"
+    },
+    {
+      "name": "recursos/marketing-results-scorecard.md",
+      "bytes": 8113,
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 11571,
+      "sha256": "92b72af1de6cd07e3a1e5a3a7b35c3de9ad8bd4eccf6be3c3c5e6bfe86d35bed"
+    },
+    {
+      "name": "revision-enlaces.html",
+      "bytes": 4545,
+      "sha256": "4b40093ee1f43b6fe86eed0b630944054e1696e7cf2c758303a1f49ad9d132f7"
+    },
+    {
+      "name": "13-revalidacion-fuentes-20261110.md",
+      "bytes": 4652,
+      "sha256": "ccc8ab8277b33d087e16177330211a204c672ba2096a6c8c81f61d3b9faa5d67"
+    },
+    {
+      "name": "render-scorecard.cjs",
+      "bytes": 1950,
+      "sha256": "e50e510965154a4165d1446112ff961c2510cfc3690dc66a92b2217042051b4d"
+    },
+    {
+      "name": "13a-revision-claridad.md",
+      "bytes": 2734,
+      "sha256": "9c92a41854fbab1fa6776384504b5f802e0efda434a3f721c8f49d4290683f41"
+    },
+    {
+      "name": "13b-cambios-claridad.json",
+      "bytes": 7126,
+      "sha256": "3e52803fc8c84f8d120328a0023987ad4a11ac7fd2d8c19feb7a0d435a6f6d00"
+    }
+  ],
+  "publicationDateRollover": "Preparation and delegated review on10Nov; still unpublished at Sydney midnight. Actual publication11Nov (UTC clock10Nov13:00:21). Approval and source-access dates remain historical."
+}

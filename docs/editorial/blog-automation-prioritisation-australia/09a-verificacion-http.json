@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-23",
+  "local": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.html",
+      "status": 200,
+      "exactFile": true
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css?v=20261013-autoplay-only",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css?v=20261019-local-seo",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.css?v=1",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js?v=20261019-melbourne",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-dark.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/media/automation-prioritisation-illustration-1280.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/script.js?v=20260926-header-surface-global",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/media/automation-prioritisation-illustration-768.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-dark.html",
+      "status": 200,
+      "exactFile": true
+    }
+  ],
+  "publicChecks": [
+    {
+      "url": "https://rankingrebels.com/blog/is-seo-still-relevant-ai-search/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog7Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/local-seo-google-maps-visibility/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog7Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/what-is-seo/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog7Link": true
+    },
+    {
+      "url": "https://rankingrebels.com/blog/ai-agents-vs-workflow-automation/",
+      "status": 200,
+      "canonical": true,
+      "inHub": true,
+      "inSitemap": true,
+      "wholeArticleMatchesLocal": true,
+      "noPrematureBlog7Link": true
+    }
+  ],
+  "pending": [
+    {
+      "url": "https://rankingrebels.com/blog/website-visits-few-enquiries/",
+      "status": 404
+    },
+    {
+      "url": "https://rankingrebels.com/blog/website-not-showing-up-on-google/",
+      "status": 404
+    },
+    {
+      "url": "https://rankingrebels.com/blog/which-business-processes-to-automate-first/",
+      "status": 404
+    }
+  ],
+  "candidatesNotInPublicHubOrSitemap": true,
+  "formsSubmitted": false,
+  "fullPageBrowserQA": false
+}

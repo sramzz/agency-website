@@ -1,0 +1,1986 @@
+{
+  "date": "2026-11-10",
+  "blog": 11,
+  "baselineDir": "C:\\Users\\Kelly Serna\\OneDrive\\Documentos\\Juan David\\agency-website\\.cache\\blog11-release-baseline-20261110",
+  "baseline": [
+    {
+      "name": "blog/ai-agents-vs-workflow-automation/index.html",
+      "sha256": "0053452423ac643c1bb0a21b1300a86cc65929ebd57797f7d3c9ae32fc37e675"
+    },
+    {
+      "name": "blog/custom-software-benefits/index.html",
+      "sha256": "0dd552f86b00ba08d2e5da0b1d1d61c051935baa0a2f3b69f44c83f16b272042"
+    },
+    {
+      "name": "blog/google-ads-for-service-businesses/index.html",
+      "sha256": "3ff885d42fd2ec037f2212fdcf62b9daf41ac4d98c2697e433860ba1a7cf9b22"
+    },
+    {
+      "name": "blog/google-ads-for-service-businesses/resources/search-to-enquiry-worksheet.md",
+      "sha256": "6e06b107389ab7f0075c753a02be08d75d5343f9ccbd748c99eefdce644b15fd"
+    },
+    {
+      "name": "blog/google-ads-for-service-businesses/worksheet/index.html",
+      "sha256": "21e6a96ab24b8cc9dea4045c2f845ed247564a42919ba35fddd625558607b4cb"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/index.html",
+      "sha256": "1f7b6a1409a99a0a1bffb915007adfd1b73f947a5e4705bb79ba0ff71b74b733"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/pilot-kit/index.html",
+      "sha256": "f2a7166af4f7f93be3255cc0f7aface1adbaa0b5387ee6ec9bb7c09fbe5aa464"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/resources/07-pilot-kit.md",
+      "sha256": "a5c6be5ef0eeb815db50570c34dfcc80c4678d6b363972226199d097bd92037e"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/resources/08-synthetic-development-cases.csv",
+      "sha256": "c7ae8e184f937acf823f7f81238554ef73955106bcd87965d71731a60506c293"
+    },
+    {
+      "name": "blog/how-to-build-ai-workflow/resources/09-development-results-template.csv",
+      "sha256": "8065416da3b4dfccc6864f4578c22306e8dc1d597569271a801b59137a838e67"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "8082528aa83929bdea089b04b7f2648494f3e6873c6d9c38e702b8807d92f0dc"
+    },
+    {
+      "name": "blog/is-seo-still-relevant-ai-search/index.html",
+      "sha256": "6216da82b034d15ed412f4b7878a67775dd44ccf87d68c0994a4990d7574ef13"
+    },
+    {
+      "name": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "3763ca86ecb4e474124e1596f175b2f926588453b3d592813228458ca686c99f"
+    },
+    {
+      "name": "blog/website-not-showing-up-on-google/index.html",
+      "sha256": "7eb5f3a3d90a2935dc05bd91f1e9744035af382632c97a0aff92342bc3e7847e"
+    },
+    {
+      "name": "blog/website-visits-few-enquiries/index.html",
+      "sha256": "19a3aa2a228f78a8005e72d07b95c131129a9c40af5b90b4d64fe7cfb8353b68"
+    },
+    {
+      "name": "blog/what-is-seo/index.html",
+      "sha256": "2ff44ccfcd08023097a8b5efe8d9a6cc880a9784eeb8f53b9f538f7b38668d21"
+    },
+    {
+      "name": "blog/which-business-processes-to-automate-first/index.html",
+      "sha256": "d165fddefa8010a229102a0b7e8b648079d00e1101d05a18cf950caafc227582"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-comparison-mobile.svg",
+      "sha256": "d7ef510a48abda63e097bbb0b510094152c5b109a46697688a2a9fa99edfa810"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-comparison.svg",
+      "sha256": "cffaf54643afccdc98c6eee79a99976842617cbf23bd544c7b50d402cdd8b595"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-illustration-1280.webp",
+      "sha256": "23b9aab868b6023ec5dd8e52407faa3a56cf2018d4f9117974b672ea2f206974"
+    },
+    {
+      "name": "assets/images/blog/ai-agents-workflow-illustration-768.webp",
+      "sha256": "6dbacdca17f8a6c86b53d16a57d9cee35092bff5058206b096c08e1f1a1a5658"
+    },
+    {
+      "name": "assets/images/blog/ai-workflow-pilot-illustration-1280.webp",
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "assets/images/blog/ai-workflow-pilot-illustration-768.webp",
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    },
+    {
+      "name": "assets/images/blog/automation-prioritisation-illustration-v2-1280.webp",
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "name": "assets/images/blog/automation-prioritisation-illustration-v2-768.webp",
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    },
+    {
+      "name": "assets/images/blog/custom-software-illustration-v2-1280.webp",
+      "sha256": "fc218bcafecb6211fdffc9e33fa1035e5a4bee1a381a08ef8887b307c9bb8edb"
+    },
+    {
+      "name": "assets/images/blog/custom-software-illustration-v2-768.webp",
+      "sha256": "53c9159a5959d751b16f482117af7689960762ab64019b885aa59beac3933779"
+    },
+    {
+      "name": "assets/images/blog/enquiry-checks-mobile.svg",
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1"
+    },
+    {
+      "name": "assets/images/blog/enquiry-checks.svg",
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e"
+    },
+    {
+      "name": "assets/images/blog/google-search-enquiry-illustration-1280.webp",
+      "sha256": "541f67b4ef071c78cad5ab9267ff4425a393b5d66329f70cc4c602e48da5d7fc"
+    },
+    {
+      "name": "assets/images/blog/google-search-enquiry-illustration-768.webp",
+      "sha256": "dadad67f0f9baaec723fc4dfdb02b4471e5d99130e3bf6a45d06f839016b1567"
+    },
+    {
+      "name": "assets/images/blog/google-visibility-illustration-1280.webp",
+      "sha256": "684083d21db56d421e350fac4561e27d527af264d2916b78e9c121551520a356"
+    },
+    {
+      "name": "assets/images/blog/google-visibility-illustration-768.webp",
+      "sha256": "97e3e2ea6de84970e37d95dcd65acb8465140d37b96b4524d325b89fec1c0cac"
+    },
+    {
+      "name": "assets/images/blog/local-seo-discovery-illustration-1280.webp",
+      "sha256": "f702c864f923bf947317d08f8db0b7b8f29ae45a52e5c930e5e380a3bf298a2b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-discovery-illustration-768.webp",
+      "sha256": "1a78922870a3d0bc2ef5406f64bf3bb0ccc15e18030f67d3d57c85d485577b1b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-enquiry-journey-mobile.svg",
+      "sha256": "2b08475470decf3b145d5a00798dde0cf506b31469dc38640c4bcfaf7667791b"
+    },
+    {
+      "name": "assets/images/blog/local-seo-enquiry-journey.svg",
+      "sha256": "6c8fb764dece230e51048d5d91a6210b27f93cbcbd2494fe0563cc20e8e544a2"
+    },
+    {
+      "name": "assets/images/blog/search-to-enquiry-mobile.svg",
+      "sha256": "fa01838d48c0b66880afabcd0a87469291ed08e072e12eb8b77e3f216f82b8f2"
+    },
+    {
+      "name": "assets/images/blog/search-to-enquiry.svg",
+      "sha256": "db6160546e61887a5bd2989267cdcac912346fd7d55ea7794a4bef6283dce479"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-brisbane-journey-mobile.svg",
+      "sha256": "30ca391778c8ecb99e0f927bc83b813ced0d51da90be5fc96c2c9062321a9cde"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-brisbane-journey.svg",
+      "sha256": "24846aedc48610f0479457e49962d75121f060fd776cf94d25aec649d26cfb84"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-discovery-illustration-1280.webp",
+      "sha256": "e17437da8d2cadd30b6625910e33c9755e111903a552477b6ef8ff8acb2e15c7"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-discovery-illustration-768.webp",
+      "sha256": "dabef7122ac3656c442ff264bfeb384b600c7cce3854ae584f0bf8ff4fbaed22"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-melbourne-journey-mobile.svg",
+      "sha256": "bbfbc544b1167b1d8a5866a6159e5c6bb9d47e41b7f2f90171d74536ae42f809"
+    },
+    {
+      "name": "assets/images/blog/seo-ai-melbourne-journey.svg",
+      "sha256": "56d30f2b027cda14117de0f69338d8b89a383d7ef8091073c3724b6564ce8f52"
+    },
+    {
+      "name": "assets/images/blog/visibility-diagnosis-mobile.svg",
+      "sha256": "e13d4fd9b7f739ed436207efede783798bc2f2a3ababebb1fc8ef7995168bcac"
+    },
+    {
+      "name": "assets/images/blog/visibility-diagnosis.svg",
+      "sha256": "f3ef878a46e748e2bb3ffc05710607525b02221e236f4f67ab4dd3cf41025abe"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v2-1280.webp",
+      "sha256": "077a40fedebf960f07aaa8ccced411c4901916d6e7597c1839455a71e7ebc954"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v2-768.webp",
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v3-1280.webp",
+      "sha256": "9954d76dbd24ef881e1c8efbb9eb83503672b08e327a75f4215532e35dae5170"
+    },
+    {
+      "name": "assets/images/blog/website-enquiries-illustration-v3-768.webp",
+      "sha256": "b4ab311590fc77ba0dc85c92de58ac628d2617614570f9f33c961fb96173a456"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-landscaping-illustration-1280.webp",
+      "sha256": "fa7dc491eb25b0f6932143dfde4854a9cbbbd2d02a6e51baab0a4d3259abc9c3"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-landscaping-illustration-768.webp",
+      "sha256": "73201a06ef05e4112fca1b0a37b078dfcc7d9fb90d4e3a7d15a1097e40137885"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-search-needs-mobile.svg",
+      "sha256": "fd899e38a63907bbaaae1d5ea41b6c84573451a457f335e306f33723ba14d769"
+    },
+    {
+      "name": "assets/images/blog/what-is-seo-search-needs.svg",
+      "sha256": "f0b82ad7d8a1be5bcc72e7e5293ef38a7ec33fec0db7b99a8a5cc4eff6d6024a"
+    },
+    {
+      "name": "tools/build_ranking_rebels_operating_agreement.py",
+      "sha256": "7b3390d548c715171276f0ef6eddc4bae88e39059c5e383348801efdc8089f5e"
+    },
+    {
+      "name": "tools/publish-ai-agents-blog.cjs",
+      "sha256": "9cd14bfcfad81f8019b8830780c0b7c2a5c650d5f76a6c42261dd32448323944"
+    },
+    {
+      "name": "tools/publish-ai-workflow-pilot-blog.cjs",
+      "sha256": "3b83e916b084b4ee876492b66bfbf29208d38efde662ee468331f4931584c826"
+    },
+    {
+      "name": "tools/publish-automation-prioritisation-blog.cjs",
+      "sha256": "c3c5636f9c51647dfad40eafd154a445c7ab50c4154a6290f66ba5dcbdcad86b"
+    },
+    {
+      "name": "tools/publish-blog.cjs",
+      "sha256": "bde47cfb1355bfb8ecf9d10beb6580c00f71f2b837bc941c679668af18da35b9"
+    },
+    {
+      "name": "tools/publish-custom-software-blog.cjs",
+      "sha256": "e5085d8a146f3a3ea5b39f208c0733ae1ab5404a9bf607f43e1d8a7afbe5ebad"
+    },
+    {
+      "name": "tools/publish-enquiries-blog.cjs",
+      "sha256": "6ca784d8462434e0c8dc360db1ec6727918a24dea9d26d68b054d7e68f1613f4"
+    },
+    {
+      "name": "tools/publish-google-ads-blog.cjs",
+      "sha256": "5c9d2397adbd3cde9ce07aac218c39e86cc6d02d80ab09cf89e2a092c86e3294"
+    },
+    {
+      "name": "tools/publish-google-visibility-blog.cjs",
+      "sha256": "a4d42d138291041cbf9deb0db4efab9de672507d597c7ab2c0b25f08423a8cd1"
+    },
+    {
+      "name": "tools/publish-local-seo-blog.cjs",
+      "sha256": "d17f2da0cf5333820770155d36ff7c5d8e4b60a2f22a6c032eaf9f43b05ede4d"
+    },
+    {
+      "name": "tools/publish-what-is-seo-blog.cjs",
+      "sha256": "d7f301bc3bd2f8824eef1fe728613ac81030c1e3c1b34ea6bbd7dbaf09aae3fc"
+    },
+    {
+      "name": "tests/about-lighthouse.test.js",
+      "sha256": "627c83686bd928ffa8f1ac6841ace822f955ae10b95ea4635255f975908cc1c5"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "c3117129b529f92d770a0a4e4c15935b289da0c2ea53e2e4700519743d678833"
+    },
+    {
+      "name": "tests/ai-automation-page.test.js",
+      "sha256": "590dc382b4f9d0301d3d5dad8d1121cdff0c927a86571a52a161d68363dcfd42"
+    },
+    {
+      "name": "tests/ai-workflow-pilot-blog.test.js",
+      "sha256": "221d91311a4733e14ca338ea390b64845ddffb4ed63a77fe92973fb3002e525b"
+    },
+    {
+      "name": "tests/australia-map-runtime.test.js",
+      "sha256": "186ed233f4279378032984021571ff4a19a71410f62c4bc52f45cdce6a995128"
+    },
+    {
+      "name": "tests/automation-conversation.test.js",
+      "sha256": "e0b444e60a4da908ee070710fa7bfb0c713202cca05313df06ec0df2b861cf40"
+    },
+    {
+      "name": "tests/automation-prioritisation-blog.test.js",
+      "sha256": "f396f006d3429b509c0dfbe8b37e595813aacd2bfc4362a928361f64c63f1ba9"
+    },
+    {
+      "name": "tests/blog-page.test.js",
+      "sha256": "70969f10f8a30ddcf8e491895afb17a9080314de0fec49a7d7d8615e749a90b9"
+    },
+    {
+      "name": "tests/contact-page.browser.cjs",
+      "sha256": "6b5be546322917b07ed4a2df74a3b8f5982dbf89a6e1bc5b4b665b83423a22a2"
+    },
+    {
+      "name": "tests/contact-page.test.js",
+      "sha256": "ac1a11fd773e16a50402fd8f43e6e5bea7abc4af60ad7fb5518b33953852046f"
+    },
+    {
+      "name": "tests/custom-software-blog.test.js",
+      "sha256": "29d83f1343a48c028fc4b897f972b95e44755cc822e6c7626c647e3195eab59d"
+    },
+    {
+      "name": "tests/enquiries-blog.test.js",
+      "sha256": "cc7cb6122af4aa127160399ef1cbb74ebd6d78586ec5b0095df953e6c141c851"
+    },
+    {
+      "name": "tests/google-ads-blog.test.js",
+      "sha256": "c1e5d020ea1d8f293db32e8ebad0d015597ad1de8b2242b35fc627ee0f3f4519"
+    },
+    {
+      "name": "tests/google-visibility-blog.test.js",
+      "sha256": "a0e5673989a57eade190b1fa3da056f36321ec812e789748cc413a6d55be22eb"
+    },
+    {
+      "name": "tests/header-responsive.browser.cjs",
+      "sha256": "3057572470486c267663749fe07b45ba8a8ceae08dd616b2d9b5f008f1787123"
+    },
+    {
+      "name": "tests/header-scroll-surface.test.js",
+      "sha256": "5498a3a590ff98c2e2dbf02f0965ff5b301d34a1920f21b1be46b773658ad2e0"
+    },
+    {
+      "name": "tests/lead-capture-dialog.test.js",
+      "sha256": "0599bca0261de495734bffcb8fd42ea3d1f7b9484b245e8b598cd36894cc0f37"
+    },
+    {
+      "name": "tests/lead-capture-integration.test.js",
+      "sha256": "ea5af76916b4f159429ab2e32211cb6dfd583168bacb9377e0998c398e4e3bf9"
+    },
+    {
+      "name": "tests/lead-capture-state.test.js",
+      "sha256": "fb25426c985bbe478d6391bd5449bf544d4a3b6c3c6ae4238e0705f703af6751"
+    },
+    {
+      "name": "tests/lead-capture-styles.test.js",
+      "sha256": "8077697075c809af501f9bc3c7baab45f3dc8ddb6a2c662ada795567ec13a4a8"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "b808b238bf26d82a73e3f3cf3a4de20e09e99bdf22095d695f42cd50e470e4f0"
+    },
+    {
+      "name": "tests/market-map-runtime.test.js",
+      "sha256": "c3483c9debbebf2661f4e07d3f956ae2e893145d325f78ae56d804fd3770bbf6"
+    },
+    {
+      "name": "tests/navigation-runtime.test.js",
+      "sha256": "abad9dea6fa42f398339a702f59d370b5bc295bca29d1af9023475afb2fa2272"
+    },
+    {
+      "name": "tests/next-case-card.test.js",
+      "sha256": "0cb740d849e1174a02004dd76af2e77afdd709b94ea46d44926e16d868b00276"
+    },
+    {
+      "name": "tests/organic-discovery-page.test.js",
+      "sha256": "cbf9657606725598eb2bec38734a797e3bce596b96f6600b4b5dfdb8debd8b9e"
+    },
+    {
+      "name": "tests/paid-ads-page.test.js",
+      "sha256": "03e897eb86be8f02aeb5f996d00753e65417219c427b1f7611640771ac87d67e"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "1a4bda2af18d54e210be81d142032f6b7f1f0765cb0e0cc5c5f928972c05d6a8"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "a39a923db72239d3daa8cc9c70e6055c936580ba7213ab6a6c9a1cf197fa127c"
+    },
+    {
+      "name": "tests/service-selector.test.js",
+      "sha256": "2f0e64eec74200552491f7dbccaa0ba356b2bceb2b77c45a4f131e7a5114e54f"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "b1eba674b035e99bae06bfc1c379a6d264a8964308f90ff5fe841945c0962613"
+    },
+    {
+      "name": "tests/solutions-page.test.js",
+      "sha256": "5d88977833390a62a2ec88e2ea4d87c28bd8ed6b381391737384541d025956eb"
+    },
+    {
+      "name": "tests/titanium-proposal.test.js",
+      "sha256": "8a8d335443b9dad33de15d4cea48657622863ac3646dc6d6806b5f70eba339c9"
+    },
+    {
+      "name": "tests/what-is-seo-blog.test.js",
+      "sha256": "5ceef045939796c2939550e4c2bdac0a285f6007f083314bc5af9af11ed933c9"
+    },
+    {
+      "name": "tests/whatsapp-booking.test.js",
+      "sha256": "50501fb965dc68da76769ac1626ea5c5f73291703b27261d291526441e79343a"
+    },
+    {
+      "name": "tests/whatsapp-redirect.test.js",
+      "sha256": "3ba28837b83cfad01c083f8af1239576d8512745b61cf80d898d3eb78cace823"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "653a8799e6b8e02f07b6e39580cd92ac1a2ffe53eb78f864c4163593ce6ac3f2"
+    },
+    {
+      "name": "assets/css/blog.css",
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c"
+    },
+    {
+      "name": "assets/css/styles.css",
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f"
+    },
+    {
+      "name": "assets/js/blog.js",
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb"
+    },
+    {
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "sha256": "33531c98983e5bd4f3a63ad190e7a4a4bd6a845b222e49a3236f7cbb4be8256f"
+    },
+    {
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "sha256": "ebd816b4c696506b39b22f37613ad152b66ff06bffbdde1909ec1b895d7e8ab7"
+    },
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "sha256": "819f49d756778b319f8e8e0fe8a3f07a3198453cab1d55c2c8724ffcffbd388f"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "sha256": "9d449f60e47c5a62931b47131fbf7189d82be851be281d1e4c44f3079f53748a"
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "sha256": "e2a8242c2587feaf33407ed6c0fbd252d8039675801f3f5db38ca8605458e5bb"
+    },
+    {
+      "name": "docs/editorial/blog-google-visibility-diagnosis-australia/03-articulo-google-visibility-diagnosis-australia.md",
+      "sha256": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40"
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "sha256": "fce55cf86c4eee0070a6e22faadb89b0c6e001178ca2151f75e00cf9ed51e685"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "sha256": "ea78596fd1af9d3692a72257fcc6d1e786972f5a922749b9721431fcc18eaea3"
+    },
+    {
+      "name": "docs/editorial/blog-ai-workflow-pilot-australia/03-articulo-ai-workflow-pilot-australia.md",
+      "sha256": "2e5bbc3177b8345c863f31aae65d847da32dc84291596e0a79b0a8f863a6b20b"
+    },
+    {
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/03-articulo-business-apps-stopped-syncing-australia.md",
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/03-articulo-customer-reviews-testimonials-australia.md",
+      "sha256": "87f3884fe96a4ce59662647ca0352454ae10e998d1c3ba4a2e764a8796fa97fd"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/03-articulo-seo-or-google-ads-australia.md",
+      "sha256": "e81668474eb64d50be4d54a07284fb0c1682aa812e859ea58c8859d4163cecc2"
+    }
+  ],
+  "draftBaseline": [
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/00-comprobacion-materiales.json",
+      "sha256": "0b046b77d7d0bc36159847125e34e6ac9a20526d67b97b2c00a3cffa2aee4b59"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/00-lectura-y-alcance.md",
+      "sha256": "09e0463f28fba88869cafeade2b6a5a11e063c509a2a0a5514c1e34677acd050"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "99099b5509d3e326519fe0b44cb883101742d25eaf0dd8984557182fa09d8f70"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/02-auditoria-priorizada.md",
+      "sha256": "548604bcb182c34950c2c571e366b6c0dcd162d63f64e3f2fcf6458ec5690ea1"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/04-paquete-seo.md",
+      "sha256": "92f7c9e44ecc21844882fbaf048fe054126cd97c3bbb8b9a90ab8e96fbb3728d"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "768079566e6739b5a1e782c2336c1fa143d17aea6e687acf52efc1c6efe93d9a"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/06-imagenes-y-vistas.md",
+      "sha256": "fbf2ef2957606a4bcc35b265a35ed86e17b9605b05837201f803adb058016301"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/07-enlazado-propuesto.md",
+      "sha256": "e10f4308d0432baa54708a146d3eb3ddfe2cbe1b32bc80dcdcc6a2f94a0d06d1"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/07-meta-campaign-planning-brief.md",
+      "sha256": "26549a9e8b8ce5232c930c413a188fe40af385db6bf1e438a27e915c106ce9fc"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/08-control-editorial.md",
+      "sha256": "6cec1da9d591bf2c218d296b8841310a6ba05ec257e3d817247d371e393522cc"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/09-verificacion.json",
+      "sha256": "a6829177f6a0fffec149038073194eff5110625f91466c0682ac180257719a6d"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/09a-verificacion-http.json",
+      "sha256": "0bc6994c41e0a61ec26b25ee42faa349fb6672429a06ac751f267b4db893c4e7"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/10-listo-para-publicar.md",
+      "sha256": "0900df8168b3ad3940062b2e643b2a7d02b7a9328f599f4b617bbc25011d7dc1"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/11-version-preparada.json",
+      "sha256": "13f79d8144ffb82d92bd9e87cf371963601eca9b372cdb6f2cf0e7141b98ffa5"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/brief-preview.html",
+      "sha256": "e1b295691f3e6d2ff70593bd08e78fbfa6a98fdf7fab9e25d1faa6159bd1a654"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/DESIGN.md",
+      "sha256": "430fac0a25ea8c21dd380a2ec1034de18debc0e2da6c5d5f4ab54158860268ca"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/image-prompt.txt",
+      "sha256": "08d245291b1c65c7395297a1c91c4fd63f483f4188f882acfeb06c17a720d0f9"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/media/enquiry-costs-mobile.svg",
+      "sha256": "3f2384801f44c58fe1f1a34275023765143fd0ca4b4bae87e407668460a3c42b"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/media/enquiry-costs.svg",
+      "sha256": "5e8439e817047e05e21a02d4b5a8b72e005fbfe4c037b7b99a86496f4143466b"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/media/social-ads-creative-illustration-1280.webp",
+      "sha256": "1349013a26b21f55fa137c16f19555c8ebf3e422f363be0d017171578a4a2c78"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/media/social-ads-creative-illustration-768.webp",
+      "sha256": "5973c10e19d61ba2f2303e6dfe9627d7c0b9a0af5031e852d482481ebb00ac82"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/media/social-ads-creative-illustration-original.png",
+      "sha256": "75efd16eded2fd17619927bf221aa44ac60f327820e9202ba29d3ad3c79959c1"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/00-LEEME.md",
+      "sha256": "5cb4ddcc800773ce751fc0d357a1cf6f7233d0e16e4f4a92b9d4e4b2801ca23c"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/01-dossier-investigacion.md",
+      "sha256": "91e06fba21978b0ae96c5ecaee8bb8a83cc7cf9e06307b1592d9b9a0865f8210"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/02-articulo-facebook-instagram-advertising-australia.md",
+      "sha256": "27ae9c9118f1010491c8049eb720226dc7e6a8c8e2ab668a0e4fdc8c2b04a882"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/03-auditoria-editorial.md",
+      "sha256": "e79864546d97537ae46b336b0f688d14885824189b4cb9c3be85af944fe16588"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/04-paquete-seo.md",
+      "sha256": "6e738f3dad673088834c47c344cbff93ccce8068a772b1511e508f2c58ba04c5"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/05-prompt-final-codex.md",
+      "sha256": "e1aeaa667674631ff8a2cdee5ca8fe8d307403cb87619ee9ccd4735c38b81a20"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "46bb203097ca843ea79af319b272fa396cdc1e3b770a4257bc49711ce693bed5"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/07-meta-campaign-planning-brief.md",
+      "sha256": "26549a9e8b8ce5232c930c413a188fe40af385db6bf1e438a27e915c106ce9fc"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "a9ded92cd471f9500b181f1edae2e664de51bdde406c99cc2c6285f9c3d8d225"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/soporte-entrega-creatividad.md",
+      "sha256": "0df418ffa1c09b4176844d0205a03ea0114a097eb315961d1a8da8bbc6ab1855"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/soporte-estrategia.md",
+      "sha256": "40322107a78233b0dab26d3af8c173658b59d992f48a4114b6dc8c76d44fb04f"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/originales/soporte-leads-medicion.md",
+      "sha256": "15ad45ae7066173667336b755a1bd6938b249eb4793d1a2488c018006291e393"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/preview-dark.html",
+      "sha256": "24a274b58469463a26f9aa68df4f7bf1d28576689972a54ec5bf0009804fa9f7"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/preview.css",
+      "sha256": "537cf90474e4774c6075f8f3662309f514cf32d816e3f2a3751e2548c4a3be9d"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/preview.html",
+      "sha256": "a06aadc4ef4d79a49d4a65520105557e7dd4c103e9e5bb5a71d714f0a1eef741"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/recursos/meta-campaign-planning-brief.md",
+      "sha256": "26549a9e8b8ce5232c930c413a188fe40af385db6bf1e438a27e915c106ce9fc"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/render-preview.cjs",
+      "sha256": "0af6beb78312272006b6d35ab25ed6e480a75726ddc037390bc384d146243506"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/00-comprobacion-materiales.json",
+      "sha256": "d2ec7e87695c5db57ea7f138514090781374f8164f113cfe1d3bb5c40dc8f73f"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/00-lectura-y-alcance.md",
+      "sha256": "202cd120ada68ca7ea9192f0786cc25ec89a453ee5e2e4182370dcf2e699bc0b"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "efc5637220c36e56be78a50f222fb3087fee51ed3dc48b1130ee12a738b1f8e3"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/02-auditoria-priorizada.md",
+      "sha256": "c2a10cd3d7153bce73fb4d1302d5e177534590b8863dae8951d9c7e58a8ae224"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/04-paquete-seo.md",
+      "sha256": "a0027ba312c0cdf47fa314883f2a1c9af1416f830ab5d9c3215ed7fb55e1224a"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "f7e76c35ed6bed322558b2ecf1d7f88e1a4edf5d111dd4611d3c5fcb49ca179d"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/06-imagenes-y-vistas.md",
+      "sha256": "97c13167e80e0ebefa16e841814dcce589d185bc198bdc8551ead14b29ed34c9"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/07-crm-workflow-planning-card.md",
+      "sha256": "66ec9a788a6a1612056fb79b6812cdbf31587a68240861e5993b84233f9a0ed1"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/07-enlazado-propuesto.md",
+      "sha256": "487812c6fe443df597740043ba9431a2274259eecd711622cc53d16e7a07b65b"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/08-control-editorial.md",
+      "sha256": "0244ccd7fb672764fb4bba4f83c63616dc51480471e865bfb31d04d592dd4cc8"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/09-verificacion.json",
+      "sha256": "1712260be506469b966f04a0ed18f3adaf0a2666742c37912e5bdd8cc18c7768"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/09a-verificacion-http.json",
+      "sha256": "a6747a89d0e17bea1046fe8f0cd13beafc5b234aa46c376b2edcaf9f9c4cf92d"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/10-listo-para-publicar.md",
+      "sha256": "056eb60e389ea8a36d06fee32550a231a4e8e971ca5b4b34065de3443a9bc6b0"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/11-version-preparada.json",
+      "sha256": "a3915a601473a9ff60eb737e9d348ba5dbebbb3cf0fc9fa6d33b942e20652183"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/12-cierre-preparacion.md",
+      "sha256": "f5dbdf73b713bb28636d811ffc78d3245816424753f3ced00012f8098d7a5718"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/card-preview.html",
+      "sha256": "eb18251525f7feeff0644bd37de43bede4855c117b0ea6d39191b6ce11e1eab7"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/DESIGN.md",
+      "sha256": "22f6545b0fd21291695a28b29e17b61686b3a29618796dcdfef12b4c9a20c8e6"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/image-prompt.txt",
+      "sha256": "e88adc52528c04bd7288c58fb9608a1dbac3c9934b0d74b220648e19b80a9f4c"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/media/crm-handover-illustration-1280.webp",
+      "sha256": "59465bfa82c09bcfb943c06ab9fd825f46b081e76533d8b3f1d83719c32b1777"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/media/crm-handover-illustration-768.webp",
+      "sha256": "8ab487ac130f3405e505c86da410055afb6215657e29d11611e91cce989b4659"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/media/crm-handover-illustration-original.png",
+      "sha256": "113eb4f2ec191d7da4443295126dacf73c944d51361f066a81ed6b7f32457f50"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/media/crm-records-mobile.svg",
+      "sha256": "2817800c8a801f5bf701715a7b9155535a473c84caf4aab50bef21e2991c5a74"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/media/crm-records.svg",
+      "sha256": "b5d563da9eb460182572e75e7cb74c28080eb07952f9919639ad370ac935101b"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/00-LEEME.md",
+      "sha256": "2f85308b09b5863c3e83cd16e83b1c40ed1bc7d2a2bfd8c71678a853009a3381"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/01-dossier-investigacion.md",
+      "sha256": "1d7153ba0e7766fb0d5dc294672d53050850100da128c03eeddf10459731bf60"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/02-articulo-what-is-crm-australia.md",
+      "sha256": "c08984a05c6d6600fa818a1cc3fa01a564a99a4655e524b9810e928702fd75cb"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/03-auditoria-editorial.md",
+      "sha256": "83c8ee27e67fb02a6558d0e108364a3f46fb9c35fd1c60f07c4f9c473d6a372b"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/04-paquete-seo.md",
+      "sha256": "63aaaf35b30c0e9edbec757dec17c639805a89c63492eb983fbb3f7ddc87c5bb"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/05-prompt-final-codex.md",
+      "sha256": "231740a694e616629ebefa1e0780a5cb6bd07d1eae0fbf29a620628297ddddb0"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "5fde6eaea57f15f17072bf759ab9555e71a306af1587f9d6f1854d316246d65d"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/07-crm-workflow-planning-card.md",
+      "sha256": "66ec9a788a6a1612056fb79b6812cdbf31587a68240861e5993b84233f9a0ed1"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "37a603c323a7db39d822f6893656d04e259185d670f398663d4d6eaf3df287e3"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/soporte-estrategia.md",
+      "sha256": "994dfce289b8503143f325feb7f993eeed505897a3a5ce57e2e24b374386a73d"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/soporte-modelo-proceso.md",
+      "sha256": "9159adcf3e01514a0ca5816f5d5882d53c56d6f834d8785ba932e8aca3ac8a9f"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/originales/soporte-seleccion-datos.md",
+      "sha256": "71253932989ed42c742104678993b1844d87ba9b1037cf452777eb63e1b46f81"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/preview-dark.html",
+      "sha256": "348b6ab7157580d7c6d8c5a1497a34b5bab4b12725d6b322f77d0f1148c33475"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/preview.css",
+      "sha256": "394eccf4db5e871543a3a4ea802f971bcf30a91402b46275162884363e75e305"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/preview.html",
+      "sha256": "46aa55ed06b774b1501fc21933256f43a0efd31363b431e3d9899d7712f35681"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/recursos/crm-workflow-planning-card.md",
+      "sha256": "66ec9a788a6a1612056fb79b6812cdbf31587a68240861e5993b84233f9a0ed1"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/render-preview.cjs",
+      "sha256": "ceb8d67684bfa4e95353368464b65dadc2cf32295c7a165b19f802820406a8f2"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/00-comprobacion-materiales.json",
+      "sha256": "131645f688d5eabf9dc7d52f14534431a39c63020d7c00773b31f3ebbe14b882"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/00-lectura-y-alcance.md",
+      "sha256": "b777b55f17c8860be80d54cff1b67eea3aca6e2eed06d0d20a21ea6436072cd6"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "5c5f71f7d51a5da7826f268e02e7c4f6861c9cb59f43152df83136a1a132ea17"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/02-auditoria-priorizada.md",
+      "sha256": "2007f834de833d1a8fddc24549d47609e3985022aba235407b05fbba6a718aff"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/04-paquete-seo.md",
+      "sha256": "91311c1cd70d0927d1c9d9ce17789cefe626930fa1640dd00307d4d86b8acb07"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "2950942de807fe0c75c172ef60ba6aee7936be51c45b79e6ff36d6d5ec375ec4"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/06-imagenes-y-vistas.md",
+      "sha256": "2c68f312aaf3335143bf8f5ee8c04ce8374fb176fba06748185300333a626400"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/07-enlazado-propuesto.md",
+      "sha256": "95e9277bd5848a6e6e3e43bf17a9ae6b9e557068effe142d759cca8b1b07d4e1"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/07-tiktok-fit-and-test-brief.md",
+      "sha256": "9ed7051703a66a50d514b121c7a3f4383796219f1301b08238e07dea9eb901ce"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/08-control-editorial.md",
+      "sha256": "6cc9fe0cdb83569b6a65803cac049f0d7da9342f8ffb266d37c03cb48ef2d5fb"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/09-verificacion.json",
+      "sha256": "5fc0542b5bcda8d4cec2bc1b68c3e8f11556ad3b242960e2b910a7a730303831"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/09a-verificacion-http.json",
+      "sha256": "6abd49699d2f6fb8ca60536651c1afb3c195ad5430cbc04df5794fb62a02ef2f"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/10-listo-para-publicar.md",
+      "sha256": "5880fa3d8180f1979fb26e2b5f029e453fb1f8cee41577b307d422ed6bded72d"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/11-version-preparada.json",
+      "sha256": "8510ad17724b545c2d56c3a4fad550d8de286b821dda13e12f7f21730a08d6dc"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/12-cierre-preparacion.md",
+      "sha256": "fef8ad4daf84957379803daacb5b201e194f017f9ced7c40ec0ab222ae94333a"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/brief-preview.html",
+      "sha256": "009eb86359290f03e4728e5ca6e5d1b3800ed9b9c8236fdf51a46de5a86daad4"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/DESIGN.md",
+      "sha256": "40ceebd35af033704285b7fc36fb6394d89f668ec042b68360c1bdacfc6f9902"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/image-prompt.txt",
+      "sha256": "39a29d3ed014f5717d5166bc2d2be2668dc65461b5b63c0ae0f235ef23758db1"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/media/decision-options-mobile.svg",
+      "sha256": "8173d7c5b3baf908f4cfaa553e3d3a8e6dd30df57795bb1dccda5d20060a877f"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/media/decision-options.svg",
+      "sha256": "7f8bc5545fa8d588ddd4892ded1118780233cd6bb1e1380a4745dc9badef9eb2"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/media/tiktok-service-illustration-1280.webp",
+      "sha256": "63e69c4fcfe44b8c7d917d312e0569a5dca4166b7a659571e81cf4e5e8940e84"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/media/tiktok-service-illustration-768.webp",
+      "sha256": "bebaca40d1701f8b6a4f1ef6291bd46f4f9319d980d47911209f3a1ca023efab"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/media/tiktok-service-illustration-original.png",
+      "sha256": "cd866fbf3896c0b8c0f33b8d6803eb0658e8bb37bd77e93e9c5bd9d7cf790a7b"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/00-LEEME.md",
+      "sha256": "faf90911f6f2d723161121a3290d0288e201acf8c30b9e028af260086075c986"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/01-dossier-investigacion.md",
+      "sha256": "29ffb96574c8ab8c915df938a5c69adb935be1d752c259450cee90b244cf7346"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/02-articulo-tiktok-ads-australia.md",
+      "sha256": "3ead7b27209f351bd21723e8a8eaf9b4dc1ac07966665be2f643251c4743ecb4"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/03-auditoria-editorial.md",
+      "sha256": "4b446354c0bfb6688925b31661c3d978d3668dd5fe8774a34f266df2cb5f4fbd"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/04-paquete-seo.md",
+      "sha256": "8e49d46a7014d609d7815ddd43587063e8d564ce4545012e2f31f4b87c596ad3"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/05-prompt-final-codex.md",
+      "sha256": "1cddb291d4c97d15e3221a36c4001dde10f37858e24183b37685da7202b9dd1a"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "4561f43468bcb31abee798d8874c17d2d10710f019a8f7674b5207dba2fead0b"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/07-tiktok-fit-and-test-brief.md",
+      "sha256": "9ed7051703a66a50d514b121c7a3f4383796219f1301b08238e07dea9eb901ce"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "d6e52cb9cf988b45ae33a66b7963c4bc2a28edf18cf9b1272e63537e31337a11"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/soporte-entrega-creatividad.md",
+      "sha256": "69e28eb363d75b057b34a329eae126ed8d4b65b88b10199ef41aeb9b30ffbebd"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/originales/soporte-leads-medicion.md",
+      "sha256": "e6e1a7795331604ee44f46f2793c046d52cf8371962d2a397779ce2df5c00e66"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/preview-dark.html",
+      "sha256": "8c1ac2644fd797393b8c8fec563b113adbefa497fbb3bb4c169381c3e6d41c7d"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/preview.css",
+      "sha256": "30d97505038d0adba912723ad59577ecef15819be425ce01ce145ac96a109f92"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/preview.html",
+      "sha256": "d3066a56269bcede61bcb3fcb1f4947c7f038cf54fb5877de21e684292d57a4c"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/recursos/tiktok-fit-and-test-brief.md",
+      "sha256": "9ed7051703a66a50d514b121c7a3f4383796219f1301b08238e07dea9eb901ce"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/render-preview.cjs",
+      "sha256": "b2dd59764b6f114fd4e9e88f54feca5d54e64ee428c3f3ce71c909262a3d186f"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/00-comprobacion-materiales.json",
+      "sha256": "e7b9af57b3ad2ec8af413f43524c1fe1b4ec11e4a23100e3315140b59cea8cfd"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/00-lectura-y-alcance.md",
+      "sha256": "1e4230d850d1166edfb89d328730b3d92df9df64d45c5cc631aa74914afbb2ca"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "66c20a134577617860436a8defb393dbac9f37607596b08d03e3fdebf3076732"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/02-auditoria-priorizada.md",
+      "sha256": "9de529e138e016338545010ec15285e70910fc4dda2094f9ba25934bd5cdf20e"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/03-articulo-update-or-delete-old-blog-posts-australia.md",
+      "sha256": "99edd9dbdb63b8dd154eca86a7baf00e6b01f13bc23198b2f53d0e7301b231f5"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/04-paquete-seo.md",
+      "sha256": "c191b488605ba8ff2550da3d1df5019a8a0201ea180eee6681d8dbcabca60cd4"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "997338efa23da3e80680273fc82b4c49ec04e8a5a8d8d676fa53a25aeec827ff"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/06-imagenes-y-vistas.md",
+      "sha256": "a141547d97c4679fcb7a697a8287d67fe1655eec980a3c24907fc4139a4daaba"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/07-content-review-decision-log.md",
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/07-enlazado-propuesto.md",
+      "sha256": "4a0ef29e53a3950e58ddc9d2605970b8441d9d0d3e4f8a526a02c6cedb201a20"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/08-control-editorial.md",
+      "sha256": "a4377e38664374918ca2a8b7a375329a502ab535c810600736e406f6d7dcf0a4"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/09-verificacion.json",
+      "sha256": "ecffcee84184c5fce0ea9a89219b6850c2fbcf7617a221781fc783de03b516bb"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/09a-verificacion-http.json",
+      "sha256": "1b17c453eb3882b85253b2c292b9c296f8c0c4a9a84ed4f2e6aa8c1c43e02108"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/10-listo-para-publicar.md",
+      "sha256": "94ab7af6c21bb2cba4277224b5f2b1609837ccf632cccdf3ad91406bbed8e5a6"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/11-version-preparada.json",
+      "sha256": "ab2f03772986fcf6b7ed9710e44e2fabc7c87753302f16dc76977e86f7683485"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/12-cierre-preparacion.md",
+      "sha256": "ceca70c377e824e859a74661fb2d12b078c56e5fab2c336b3a5818b7ea92dc89"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/DESIGN.md",
+      "sha256": "34b230df54c8e08a1724a0395aece1fcb584365e1da9d908217bea9af62cdd62"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/image-prompt.txt",
+      "sha256": "d1075938064b51fce9389bb0cd6678532ba235a7a4c348a8e1d94ee031710ed8"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-and-url-mobile.svg",
+      "sha256": "9e0b6e529686663826b8e0960b62437622d5dc6e5652fc63e97aeb1b3241351e"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-and-url.svg",
+      "sha256": "d79443f976c8be24c2accaff12f2164ea68d042fa8648ae75ef0c12cf799d03e"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-review-illustration-1280.webp",
+      "sha256": "5b7e499c503077766ffb3bc1b4ff8637d86b4a91e1b9dd0d526fb173387e21f6"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-review-illustration-768.webp",
+      "sha256": "94b91696806347d59ec3d765bfb2b830cbd65e4cf333a3fa380ec282a94881f4"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-review-illustration-original.png",
+      "sha256": "cb120c7a01b30f6ee4c094687a2bf30885fe8760a636f376f7f964f367dc831c"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/00-LEEME.md",
+      "sha256": "4631801b46dfbffa45af5cf3b3b17fe0594b3aa0c0f94bcec54d889ad8fc368a"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/01-dossier-investigacion.md",
+      "sha256": "46f39c75a5c9fe317ff073c0d97290980186f697c345f655a9525e607f6c26b0"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/02-articulo-update-or-delete-old-blog-posts-australia.md",
+      "sha256": "8737595157af0882458318ba7086ec32f0c8a320446539526ab3105f055c0167"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/03-auditoria-editorial.md",
+      "sha256": "40549e724de358668187abba3ece8da934abd037db072bbd621f784e18e5c952"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/04-paquete-seo.md",
+      "sha256": "64e6231742eba642478dd97b024935f367bb5857be8cf3b7e2b13c1b9b7b1e03"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/05-prompt-final-codex.md",
+      "sha256": "a292ddf52d0c42ef5c76fd17f14029c739e95cb2efcbcd81609805dd8190d5d9"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "a288405cb9d251a6c3cc2b1e690b3e1449e5dd01cf7a786c416d1d1f6fa663c0"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/07-content-review-decision-log.md",
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "7967baa6aa6b1b6b1885ffbbdeb022afca7bd016826bf7deee9dd050bf679cd3"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/soporte-calidad-editorial.md",
+      "sha256": "ea51a548e569558c57bc020fdaba2068643530a2f652b60bad5bf7f3a893d6e0"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/soporte-evidencia-estrategia.md",
+      "sha256": "5a8e5f40c2ba6556ae9a00a6a94cf07eb7b25bf8d95c2afa66fdc92005cd8eaa"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/originales/soporte-url-y-retirada.md",
+      "sha256": "36f385bf0c33ffeb94324bdcb300dc39b74bbc09fffbe836cf554cfa9b95da3e"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/preview-dark.html",
+      "sha256": "33b4758f6fe50b0cdeb10b97b4bfbe7f599e38d98f9c60f6fd4e10bc55a866ab"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/preview.css",
+      "sha256": "2dfaa084e5c9b2fca15f4e400d124e45a68c09e3d676d195f4ae1999e9b0af4f"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/preview.html",
+      "sha256": "71e14a8ed04dd0b8da267f2bddc546e0f91fbb53dc303242eefc4e1405c0630a"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/recursos/content-review-decision-log.md",
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/render-preview.cjs",
+      "sha256": "acc3f7bf32165810b2cd2783299ba853dada92a82b24bd5f17f0beca764bd00d"
+    },
+    {
+      "name": "docs/editorial/blog-update-or-delete-old-blog-posts-australia/worksheet-preview.html",
+      "sha256": "f1856b40106d0ca726d26ccc576f4b16496f9dd07dece1d50a5dcbe7db59ef82"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/00-comprobacion-materiales.json",
+      "sha256": "1dafdb04400442b0ff4a2cf00cf89ecec1d24a350c0b4398db87fb9abcd05439"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/00-lectura-y-alcance.md",
+      "sha256": "050225da73a0fa77b8c68a12929a90f05765a864d76d9e877a79f61e46d7f287"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "f49eae77a54e4483eb20e9b0cac44316bf311b48e38f32b537cf616de95e7df4"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/02-auditoria-priorizada.md",
+      "sha256": "91e17f5451dc8e23446ee76e6a2a03c8672a3fcff8335f3ff7af87fc1c8b6ab5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/03-articulo-business-apps-stopped-syncing-australia.md",
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/04-paquete-seo.md",
+      "sha256": "a66c67c75dc8c54ce5e8eee021b34d99cf36f308d101dcec82969f2567c170d6"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "7c6ceb6eb78834ec9cab6d587a5785349cffe2459bb36b2d4decaf765ac21a25"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/06-imagenes-y-vistas.md",
+      "sha256": "c3d51abeb7ea27fd1955bcc450c753b79b8d0e9050ac8d9556f611c732dabea7"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/07-enlazado-propuesto.md",
+      "sha256": "c8d805c45c9994a5bb1f208a8889ced42f96a3407603639fc314221c0725bb96"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/07-integration-trace-and-recovery-card.md",
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/07a-revision-enlaces.json",
+      "sha256": "90919b61b149d2ea76bc25620f6254ca7e02d3452916ff75d71237d7f4970236"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/08-control-editorial.md",
+      "sha256": "68b3e24bba0ed86115d2cc98b72d45fe294f8a212dbe3aeaf2b6a5573a443c92"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/09-verificacion.json",
+      "sha256": "0fec5e42c375734bf81e91bbe94ba94aba4fc5845365f6653991c28ff0eac3af"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/09a-verificacion-http.json",
+      "sha256": "bf7265d23e439a28f8dc369b3478776784a647c9bd40dbdfc5b96896d31ad7cc"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/10-listo-para-publicar.md",
+      "sha256": "751b66a0314d8f939f033274c4e4a843d6037e0aaab303d6fd90a9f801a7a098"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/11-version-preparada.json",
+      "sha256": "f71809e97f60d2ff28b45b9d3af89a778591e85733201855f79b335cfe70720e"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/12-cierre-preparacion.md",
+      "sha256": "6f87e12c5f200bc3a33c68c07b27f66595dc6eac1b4a518eeb5cc1e2048daecc"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/DESIGN.md",
+      "sha256": "b0eb8f79b9cf7fb6640a54080add79c7c00b54903cddec68ac5eb22def81986e"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/image-prompt.txt",
+      "sha256": "b028a031cabad656a70047d107628df8c340dd9d5ca60ff28cb3d9d004de453b"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/integration-trace-illustration-1280.webp",
+      "sha256": "8e628b68aeb01bce69eefea9c8d1be696eb9b8defb236bfa3e595a3cc101d44a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/integration-trace-illustration-768.webp",
+      "sha256": "ef345213191c1b4de7ab0e6f8e53858a81daaa56f77becaa5e813ba7dec6ad9a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/integration-trace-illustration-original.png",
+      "sha256": "798c8b2780713a3496766609ed0388e359dc90ce26088e53cb3155bdd734d3ad"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/uncertain-write-mobile.svg",
+      "sha256": "a72c3af9dc9be01d7138faea7050d624a84ea4662664e7f9b4562686390186a5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/media/uncertain-write.svg",
+      "sha256": "5364f86c7b843de0db87b9926f9d86166f7e7014c196236de6968dd46782010f"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/00-LEEME.md",
+      "sha256": "5fa68bdaa6a15caf282b71dcaba0fa3e6328dc2d6658fdc08f84384fe2d0211c"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/01-dossier-investigacion.md",
+      "sha256": "a731f63c25eaf43cf24d23ffeb6d8c071b2e51e912f6117b5ffc28b0122d924d"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/02-articulo-business-apps-stopped-syncing-australia.md",
+      "sha256": "448cb7e9332d7638189c05f1bd97a041bc4d2e162f68cde60647686f42aa10f1"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/03-auditoria-editorial.md",
+      "sha256": "4b5aca080271733fb8a77bb5eb9bb9ba76b904ec0dad68b9a17accbfb577e6f6"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/04-paquete-seo.md",
+      "sha256": "10425bded82fe3de82a323876ad6adf3311f54c5079766b4981610d295c91e5d"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/05-prompt-final-codex.md",
+      "sha256": "c4996f4e4dd9c98c1a5f0b42965b37c9812d819937506f6898397966e6f43970"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "d57cc2abcae13a86ae0fa1522f498dab3c11989e2aba3ccf44dd0e0f841b1628"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/07-integration-trace-and-recovery-card.md",
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "601c716422310a4d191e7d261665282d2074265c843bd4d82e8208dd10a2b326"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/soporte-conexiones-y-diagnostico.md",
+      "sha256": "b0ca591af219aff6680f420e2e9c7551ae2a8fac2b40a4034d35d74c5eef12c3"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/soporte-entrega-y-recuperacion.md",
+      "sha256": "f3defb86f7e87f74b2ec2c0ede6abd9572e737ee27ddb70b829f2d0d636ae0b3"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/originales/soporte-estrategia-y-operacion.md",
+      "sha256": "c7c48f83a6e33b640d3327d232e89fc892d36e30e535784226f6de002b52be2e"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/preview-dark.html",
+      "sha256": "6fe9611ab32fb682b2b9c98c8325e0c7e41f7e3b5c62ce668f18383898fe0b8f"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/preview.css",
+      "sha256": "880ebb5c48a26e842737526659aea6991bbc27055724b5dbe98a543252142ed1"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/preview.html",
+      "sha256": "9a7347392614cfe9725cff03328d8991c8413e2bb7d3254d04a97da67c271321"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/recursos/integration-trace-and-recovery-card.md",
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/render-preview.cjs",
+      "sha256": "03ee0aa0f36e9e88b27f508e8d707e59adf2517c8a596183b3720485a3aebed5"
+    },
+    {
+      "name": "docs/editorial/blog-business-apps-stopped-syncing-australia/worksheet-preview.html",
+      "sha256": "ca14e9ee3d129b05c2247ff0d19147320d1bfe336785f78ff669eda44fea401f"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/00-comprobacion-materiales.json",
+      "sha256": "dd2e96d58e12950764d919006f4d0738dfe5f9c1e67a51de08049b9adb369df0"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/00-lectura-y-alcance.md",
+      "sha256": "8deb0c030956187f684fe292f9b53cf86dff95703a5ca87e2514871a3cce02f8"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "a03d99468b520d071249e96e8721f424e824b6ed5352f7d11fcc7b1f535726bf"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/02-auditoria-priorizada.md",
+      "sha256": "556acf52db245162781170908233148066b15cdaf9e49357f09eea300cadbb18"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/03-articulo-customer-reviews-testimonials-australia.md",
+      "sha256": "87f3884fe96a4ce59662647ca0352454ae10e998d1c3ba4a2e764a8796fa97fd"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/04-paquete-seo.md",
+      "sha256": "2ed9fca95f7aed567b89ed509724a2f0683b52f62d657b9e35c9bc9138150304"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "cbe939c12ee266537590b0aa36e15cff51d04b097023de88e04ea6698d248aa3"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/06-imagenes-y-vistas.md",
+      "sha256": "e33832235a50d4f0e42b074e23bd0109ad3dac227a7f1eb963faadbb72448549"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/07-enlazado-propuesto.md",
+      "sha256": "2e7cd1df5e238f69630b07d23a520f81867599743e1636ce28c425b4494fa11d"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/07-testimonial-evidence-and-publication-card.md",
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/07a-revision-enlaces.json",
+      "sha256": "264e174a537cc4b0470e3ccfde53aa1c6d452d41b78b36568435737d95c73d74"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/08-control-editorial.md",
+      "sha256": "9c5ded65a8f3974045805bdbb3ca697378faf30b84c6578a11515306b415c675"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/09-verificacion.json",
+      "sha256": "af688fcf8c6dd3c3ef25e07d00cf9f928bbbc98e09e3ec70c54ec9e604162a10"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/09a-verificacion-http.json",
+      "sha256": "77473c1d2e5175755a459b9895e62ccca0b182c968f6b826522d58ef2121ad09"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/10-listo-para-publicar.md",
+      "sha256": "d9c6a1afd81a64f95ce9a7268649cde8c5cf949182d81c5e15b9ef793f590b0b"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/11-version-preparada.json",
+      "sha256": "17827e5a6850705aefbfc8bda63852c3ed6484dd10700e6877889c6417fc6f58"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/12-cierre-preparacion.md",
+      "sha256": "f68b6804ff49a83c3acfc20e65ad2e44d7404ff623a3d22c7fc855e5cb7e88c4"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/DESIGN.md",
+      "sha256": "3bf99dd91b3ab640d07d981447d12f845f3447f8bdee4c7237dc566b0758e2b7"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/image-prompt.txt",
+      "sha256": "1be836def5a99ae4b6142c5066927f244e47b66262acef77c956903b67ee52ba"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/media/testimonial-editing-illustration-1280.webp",
+      "sha256": "f9bb7d35cd64b05d197ab963821cd69eca0b28d61de7353d09709f0626b68002"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/media/testimonial-editing-illustration-768.webp",
+      "sha256": "6b43c2def97833a44809025cf623e3d6444463cca6507ed379195fb283db68ff"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/media/testimonial-editing-illustration-original.png",
+      "sha256": "f41759a0396c8506ecadcc1245253aaf39ac579166c7fc48169e8fa7451adeee"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/media/three-publication-checks-mobile.svg",
+      "sha256": "b4a1765f6292b37621b69f95f8d5a5d1d93e40fb968465cf04a7403601cec8b1"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/media/three-publication-checks.svg",
+      "sha256": "f161608f7c83f4a07de20b6d47aba788eae7d4fae2f5a863b84283807428bf8b"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/00-LEEME.md",
+      "sha256": "70032b51653bf8f6a6f5b60abe1393193f3b088cbb28dd5efc995fb70bf3f96e"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/01-dossier-investigacion.md",
+      "sha256": "ac7a633467edd1992d17a127bd71218917d3a98ea3fa0d60e00d137b00bd31d7"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/02-articulo-customer-reviews-testimonials-australia.md",
+      "sha256": "34d7f9eb42f707d0aa12e872dcf81577c671674a70ae91934708d0851bd3305b"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/03-auditoria-editorial.md",
+      "sha256": "9c94d9573cbe64acd2c9d605e398ca5788d025e48ad6516d061cb49e23487992"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/04-paquete-seo.md",
+      "sha256": "31618a3eaa2f5b9add6123c007c4e15321e8b4d9bec03aeafcef5920924ddea0"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/05-prompt-final-codex.md",
+      "sha256": "4511198f739a7c925dd670cc8fcc504d440651bdc0dc5eebda0b1731d73eae8f"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "2184d7390f2d9fdf7ae5cb9f1d0e6c2bb75f2aa5f2929727d3bb5392b75cf76c"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/07-testimonial-evidence-and-publication-card.md",
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "aabf27f17b59025108dd5b641d706e338af258176e50d589b1867787ad702955"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/soporte-estrategia-y-presentacion.md",
+      "sha256": "523182c1e052285c970c47447a82999eae23d57b3fa458d5d96013d890db1d08"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/soporte-evidencia-y-permisos.md",
+      "sha256": "53c496df930d051ddf20c8d7bc5ff1d6c1ad0031205cc2103031de567f13dfa4"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/originales/soporte-google-y-datos-estructurados.md",
+      "sha256": "4cdc9fb13539212e4084ff6bc5c467b9e785e1049c117d1214a6f5f429d4f90c"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/preview-dark.html",
+      "sha256": "c91235f0a9b007ca9261a88b6ec4ef2f00a020646cf0c1d43ff97aa07a3ad070"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/preview.css",
+      "sha256": "83935eccfd7c3a7f88c7a0567c8bb171a9bd2876ca28c444f78881b01670eb93"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/preview.html",
+      "sha256": "54d0f90a10eefd340e36c409eaf8cc5b04c923f7e58696b4bb87a175902d4596"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/recursos/testimonial-evidence-and-publication-card.md",
+      "sha256": "f88f13056baefb3fa9515614c1589510b8a980246b1f3ba9273db17c47f4fd23"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/render-preview.cjs",
+      "sha256": "e67d04e3e19e10f9292715af3d4e5dc971a259b858d598f11223c043fa33a087"
+    },
+    {
+      "name": "docs/editorial/blog-customer-reviews-testimonials-australia/worksheet-preview.html",
+      "sha256": "50cea0349a1d7ef8a78a5e473d3c684d301a36a5d9742d0698d99f22050ab7cb"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/00-comprobacion-materiales.json",
+      "sha256": "fa8aca9bfced384753f58c2320113ef54a7ccb995668efbfafa7f4f4757497de"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/00-lectura-y-alcance.md",
+      "sha256": "16df92acc5989cfe6bfc79c9815dead0180c948d009f140d2076745bb4e34024"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/01-diagnostico-ejecutivo.md",
+      "sha256": "17c4c9716c25e9bdfa2b47829df8df2f6aa3df6804b073a310b00a761c554533"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/02-auditoria-priorizada.md",
+      "sha256": "de533e2ab18639f890e97a5e02cd8886f6f268a1125daf2824450ef798ffe463"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/03-articulo-seo-or-google-ads-australia.md",
+      "sha256": "e81668474eb64d50be4d54a07284fb0c1682aa812e859ea58c8859d4163cecc2"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/04-paquete-seo.md",
+      "sha256": "89fc3133139dffcddeaa640593a724a2cc0f6e57b8cd57449aea48108d20fc1e"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/05-fuentes-y-no-confirmado.md",
+      "sha256": "e8b063ea3ffe682a42496e525007247c75afc4c9ab6f5259ad897fb511bb31cb"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/06-imagenes-y-vistas.md",
+      "sha256": "65591ce3f5eb23fb0125e25aaf433818e6f4547aef95898a5227640a7fc2f5db"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/07-enlazado-propuesto.md",
+      "sha256": "8b2121772d767dffbf1f3c6dc3bdf64b4da1847fb81f36cd59b56d6245e6efcb"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/07-search-investment-decision-card.md",
+      "sha256": "edff86a61469512c8664ec2f5eedc5ee7af34000b25c7b7cb5a764ad0c199a37"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/07a-revision-enlaces.json",
+      "sha256": "4826342abb4fc0a91a7de69a29f3ded21a6734663d4578dfe6c897aefab62acc"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/08-control-editorial.md",
+      "sha256": "5ba0e220ed631b70cdaa4a91e5e2e01e264008de6cbd20cb359421df72da1812"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/09-verificacion.json",
+      "sha256": "5c85166376998b083e7064d76c05771952ae3e08bc0c52f614092ee61e40b85d"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/09a-verificacion-http.json",
+      "sha256": "1b8e3ba64f8f1a68ffbe1b4c6bc3f164b7709801eba017ce1fa4c0ad063d8593"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/10-listo-para-publicar.md",
+      "sha256": "7bda06dcbb98c922d76100108a1c4668e9963b6ac6f8a183df85e8fc8558af50"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/11-version-preparada.json",
+      "sha256": "787a9015a0250a8b8404ba0be20f54c09498294bb5419d16b73eb6a777780e71"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/12-cierre-preparacion.md",
+      "sha256": "fef9041f8b8876ea34c4eabec9b33ff34f0ec7878e9b6fe4afdbe54ff4c26940"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/DESIGN.md",
+      "sha256": "0448187865e6c0b5379903cf885a7e29d3bb02e7fdc51ee23cab04beb05f8e1f"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/image-prompt.txt",
+      "sha256": "0074d8a243058c96511a01773c1212e89335e860ede7bae503c014a903734c6c"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/media/search-investment-illustration-1280.webp",
+      "sha256": "69baa8cae48950f1eccd9af11d949ea3f91c6ba7e72db139008e8fc39589ad60"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/media/search-investment-illustration-768.webp",
+      "sha256": "c54eb98f9c7b1b4e143811a92b0fb95ede84adc8cfe565c999961c7b85d4d310"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/media/search-investment-illustration-original.png",
+      "sha256": "048f7a2b33196d01a45c2fde23f99b358508faaf9c268d82ebfea1d60a94d1f7"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/media/search-test-allowance-mobile.svg",
+      "sha256": "709cf4ab37a9cd660bc98007a8bbdf5d7f177efd393a14fbe1acdaff4161305c"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/media/search-test-allowance.svg",
+      "sha256": "b41c40c7607295c5744307e8680a9c99a266d3605068a0604de430b778b0b4de"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/00-LEEME.md",
+      "sha256": "04fde9112328a136c8afd30c4e67343b5f119cc96c785b131f5ac69198fdd6ee"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/01-dossier-investigacion.md",
+      "sha256": "472e151c5e53b754c7c017ba4bf5e0177eb60228e5783a4ebeea58bf3b002098"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/02-articulo-seo-or-google-ads-australia.md",
+      "sha256": "623cf8c293b019a588cc7a3975e10d9284e9746cc8dc527942628288a43a9163"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/03-auditoria-editorial.md",
+      "sha256": "e18cc8160fcbb36870dd2f382897e6224a0e411b880833a918984abd94f39d04"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/04-paquete-seo.md",
+      "sha256": "a35d80c84bc2cfd5539eafee32d30cac186e785e98def4b0d7a3566729343dbd"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/05-prompt-final-codex.md",
+      "sha256": "8232974fab808e6eb0c8db2cb1e26336c81c44be713e6c475752c01ef064d550"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/06-prompt-comprobar-archivos.md",
+      "sha256": "0048e7801500d1f305e350b571e0b54ffb55d97e1aca4394e35b6008b4b0b605"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/07-search-investment-decision-card.md",
+      "sha256": "edff86a61469512c8664ec2f5eedc5ee7af34000b25c7b7cb5a764ad0c199a37"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/08-aporte-equipo-y-publicacion.md",
+      "sha256": "7946856f0a9071b006b3aa12cadfc569ba4b8993a957fdd8dab4d49c18f3bb42"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/soporte-canales-y-demanda.md",
+      "sha256": "65fd459cef0ae13ec51359f5dae24b0ddc1d18bd04d63ffaba1fc2daab4ab10f"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/soporte-estrategia-y-alcance.md",
+      "sha256": "811a55ce131754116061e125d6aab53e88eb2e62de9959bcc7a44dc0f0cb7d2d"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/originales/soporte-presupuesto-y-medicion.md",
+      "sha256": "e4c33008a215fbaccb1b1d04d89245297cf157d4543fe685a2f6a4e49f8b0287"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/preview-dark.html",
+      "sha256": "c0a1f21f7a541c744c613ab942f18ad641dc177d72b85dad6b30355179b6cbdc"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/preview.css",
+      "sha256": "ac22bf6c577b8fbad50cbe6931c17349585303214c496de485ad3191c2f2e3c2"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/preview.html",
+      "sha256": "b5a56ecaf2ec512884c87815c07b28c52fabfe85d2ee165f7a2b762637073c00"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/recursos/search-investment-decision-card.md",
+      "sha256": "edff86a61469512c8664ec2f5eedc5ee7af34000b25c7b7cb5a764ad0c199a37"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/render-preview.cjs",
+      "sha256": "e228fa39be912c8ae1fd0134bb5ec9ef344a7055b9e28635685fc7d07807af18"
+    },
+    {
+      "name": "docs/editorial/blog-seo-or-google-ads-australia/worksheet-preview.html",
+      "sha256": "88da39754d7b62940225b5560f1f179835d4bb58d779e788adf025600cf30a9d"
+    }
+  ],
+  "previousPublicRevision": "d27fd3afa4bef12fc64ed7972a6d01ee84afeec0",
+  "publicationPending": false,
+  "reviewedFiles": [
+    {
+      "name": "03-articulo-marketing-measurement-australia.md",
+      "bytes": 18183,
+      "sha256": "c929f4cc6ec082042b3f8afa49c148edfab91454e0a67791eeecc3d9cee58dec"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2277,
+      "sha256": "74545044d0398062685a6dff05a1294dce920f87cef158591a4a49f53af6d6b3"
+    },
+    {
+      "name": "07-marketing-results-scorecard.md",
+      "bytes": 8113,
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 29395,
+      "sha256": "6dc9cf2b244cbd1abf0953ac8d804a2984b646d742e25d47e8c53742ca4062fd"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 29394,
+      "sha256": "fcad3d0106a01f0d2e85a5acbb0e6e8b1394b340a75140be358831b72367c506"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8141,
+      "sha256": "2fed1566b7ee61b06e48fd5418d63cae9bbc6ec49ce51ca85718b273cd60a83f"
+    },
+    {
+      "name": "scorecard-preview.html",
+      "bytes": 11548,
+      "sha256": "267a5ec3d3e91e2db44b0a6c6d64f9b737ab2b49fb04f185a14909c4c3207c53"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10066,
+      "sha256": "225644b08ccf4b87a2b27a291a5eccdc339aee039165ec3cb7672da954b9f1f2"
+    },
+    {
+      "name": "media/marketing-results-illustration-1280.webp",
+      "bytes": 285490,
+      "sha256": "121e5db452494497abbe81bf8e0a1a5581e10dc2b8d4ce7bde1302e8a35b3731"
+    },
+    {
+      "name": "media/marketing-results-illustration-768.webp",
+      "bytes": 114812,
+      "sha256": "e1ea191455abb48a494551ec385a0bf399dff0678d1467f7df0e4e86222e37d5"
+    },
+    {
+      "name": "media/revenue-and-costs.svg",
+      "bytes": 2474,
+      "sha256": "8b513c4f59b27937a6d7529f17ae4b020ce2f79ebf70aa33f63cbd783a3e198a"
+    },
+    {
+      "name": "media/revenue-and-costs-mobile.svg",
+      "bytes": 2562,
+      "sha256": "39539b4612a22fffeb3dcecd2bab3c62e0c0b15a26f8b7a5da269376eb3c8cd4"
+    },
+    {
+      "name": "recursos/marketing-results-scorecard.md",
+      "bytes": 8113,
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 11571,
+      "sha256": "92b72af1de6cd07e3a1e5a3a7b35c3de9ad8bd4eccf6be3c3c5e6bfe86d35bed"
+    },
+    {
+      "name": "revision-enlaces.html",
+      "bytes": 4545,
+      "sha256": "4b40093ee1f43b6fe86eed0b630944054e1696e7cf2c758303a1f49ad9d132f7"
+    },
+    {
+      "name": "13-revalidacion-fuentes-20261110.md",
+      "bytes": 4652,
+      "sha256": "ccc8ab8277b33d087e16177330211a204c672ba2096a6c8c81f61d3b9faa5d67"
+    },
+    {
+      "name": "render-scorecard.cjs",
+      "bytes": 1950,
+      "sha256": "e50e510965154a4165d1446112ff961c2510cfc3690dc66a92b2217042051b4d"
+    },
+    {
+      "name": "13a-revision-claridad.md",
+      "bytes": 2734,
+      "sha256": "9c92a41854fbab1fa6776384504b5f802e0efda434a3f721c8f49d4290683f41"
+    },
+    {
+      "name": "13b-cambios-claridad.json",
+      "bytes": 7126,
+      "sha256": "3e52803fc8c84f8d120328a0023987ad4a11ac7fd2d8c19feb7a0d435a6f6d00"
+    }
+  ],
+  "linkChanges": [
+    {
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "before": "People may encounter your business without clicking, return directly or use several channels before contacting you. Record what you can connect to an enquiry and where information is missing. Consider seasonality, advertising, platform changes and competitors before attributing a change to a page edit.",
+      "after": "People may encounter your business without clicking, return directly or use several channels before contacting you. Record what you can connect to an enquiry and where information is missing. Consider seasonality, advertising, platform changes and competitors before attributing a change to a page edit.\n\nTo connect those records with costs and a decision, our guide to [measuring digital marketing results](https://rankingrebels.com/blog/measure-digital-marketing-results/) explains how to compare enquiry groups and keep attributed revenue separate from profit."
+    },
+    {
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "before": "Review campaigns, seasonal demand and operational changes alongside visibility. An increase after an edit is not automatically caused by that edit.",
+      "after": "Review campaigns, seasonal demand and operational changes alongside visibility. An increase after an edit is not automatically caused by that edit.\n\nWhen you review the business result, use [defined enquiry groups and costs](https://rankingrebels.com/blog/measure-digital-marketing-results/) so profile activity, won work and revenue do not become interchangeable."
+    },
+    {
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "route": "/blog/what-is-seo/",
+      "before": "Include writing, development, specialist and maintenance costs when assessing the investment. State the attribution method and its limitations. An average ranking or total traffic figure cannot tell the whole story, and a dashboard alone does not prove the extra revenue caused by each change.",
+      "after": "Include writing, development, specialist and maintenance costs when assessing the investment. State the attribution method and its limitations. An average ranking or total traffic figure cannot tell the whole story, and a dashboard alone does not prove the extra revenue caused by each change.\n\nFor a fuller review of enquiry quality, customer outcomes and costs, our guide to [measuring digital marketing results](https://rankingrebels.com/blog/measure-digital-marketing-results/) explains what the records can establish and where uncertainty remains."
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "route": "/blog/website-visits-few-enquiries/",
+      "before": "Record what changed and compare relevant audiences over a meaningful period. With few enquiries, a small numerical change can produce a large percentage swing. Different traffic sources, seasonality and simultaneous campaigns can also change the mix. A before-and-after improvement is evidence to examine, rather than proof that one edit caused it.",
+      "after": "Record what changed and compare relevant audiences over a meaningful period. With few enquiries, a small numerical change can produce a large percentage swing. Different traffic sources, seasonality and simultaneous campaigns can also change the mix. A before-and-after improvement is evidence to examine, rather than proof that one edit caused it.\n\nOnce enquiries are reaching the team, our guide to [evaluating marketing results from visits to customers](https://rankingrebels.com/blog/measure-digital-marketing-results/) helps you follow their outcomes and assess the costs on a consistent basis."
+    },
+    {
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "route": "/blog/google-ads-for-service-businesses/",
+      "before": "In practice, records may be incomplete and sales can take time. Keep recent enquiries with unresolved outcomes separate rather than treating them as lost or combining them with customers from older campaigns. Label an unresolved group as provisional and record the reporting cut-off and follow-up period. If a denominator is zero, report that measure as unavailable.",
+      "after": "In practice, records may be incomplete and sales can take time. Keep recent enquiries with unresolved outcomes separate rather than treating them as lost or combining them with customers from older campaigns. Label an unresolved group as provisional and record the reporting cut-off and follow-up period. If a denominator is zero, report that measure as unavailable.\n\nTo extend that review to completed work and the business’s costs, our guide to [measuring marketing results](https://rankingrebels.com/blog/measure-digital-marketing-results/) separates attributed revenue, contribution and incremental impact."
+    }
+  ],
+  "clarityReviewPassed": true,
+  "fullPageBrowserQA": false,
+  "releaseFiles": [
+    {
+      "name": "blog/measure-digital-marketing-results/index.html",
+      "sha256": "06d924356746f7e7459e1def83212b5671eb463eeefb0056df69a5e7a9fe6d08"
+    },
+    {
+      "name": "blog/measure-digital-marketing-results/scorecard/index.html",
+      "sha256": "7b7908df8d2e05760d138b4b35f3649621bbe4110dccd75d57ce682f8a9b208a"
+    },
+    {
+      "name": "blog/measure-digital-marketing-results/resources/marketing-results-scorecard.md",
+      "sha256": "037e55dadff7179965e9b929d45fed00459df3bcd6d5d3479f3f07bcbfae5e44"
+    },
+    {
+      "name": "assets/images/blog/marketing-results-illustration-1280.webp",
+      "sha256": "121e5db452494497abbe81bf8e0a1a5581e10dc2b8d4ce7bde1302e8a35b3731"
+    },
+    {
+      "name": "assets/images/blog/marketing-results-illustration-768.webp",
+      "sha256": "e1ea191455abb48a494551ec385a0bf399dff0678d1467f7df0e4e86222e37d5"
+    },
+    {
+      "name": "assets/images/blog/revenue-and-costs.svg",
+      "sha256": "8b513c4f59b27937a6d7529f17ae4b020ce2f79ebf70aa33f63cbd783a3e198a"
+    },
+    {
+      "name": "assets/images/blog/revenue-and-costs-mobile.svg",
+      "sha256": "39539b4612a22fffeb3dcecd2bab3c62e0c0b15a26f8b7a5da269376eb3c8cd4"
+    },
+    {
+      "name": "blog/is-seo-still-relevant-ai-search/index.html",
+      "sha256": "ce1bba407c41538b16f90504ad4df966ee0db97bd14fbac1dac3ccf978956c70"
+    },
+    {
+      "name": "blog/local-seo-google-maps-visibility/index.html",
+      "sha256": "a99e518a1325b4c722424e7f85583fb7c74cf321eb1251dcc72a2e6c215cd519"
+    },
+    {
+      "name": "blog/what-is-seo/index.html",
+      "sha256": "b9522d1a7642ccbf8d6f2bbda0afa036f6bd42ff4e0506dd396f2b2419dd71ca"
+    },
+    {
+      "name": "blog/website-visits-few-enquiries/index.html",
+      "sha256": "56bc1e7cb183732c0343c01a7ea4d462ece36a82b0a94a4e3ddd8a3fb2c8c448"
+    },
+    {
+      "name": "blog/google-ads-for-service-businesses/index.html",
+      "sha256": "a19d6082e19aadba6fee3f5ccee915edfdba5c0ba374ccee6bb18f1b9023d529"
+    },
+    {
+      "name": "blog/index.html",
+      "sha256": "cba3ea2293bc9e44ac81af72e8ac93dfdc838cce7919884f759da597a57c355a"
+    },
+    {
+      "name": "sitemap.xml",
+      "sha256": "017f58d4d852368b43a579644b8261d28ae44ff7d9f921353da42f9e7cb80da3"
+    },
+    {
+      "name": "tests/marketing-results-blog.test.js",
+      "sha256": "f0df0a1c12bf589624facc3f89e43083c04b9847073495bd3bd2241938a86443"
+    },
+    {
+      "name": "tests/ai-agents-blog.test.js",
+      "sha256": "029385348e3b37c17a64f8c6ae2dce3f065314c8a49058001a08d1c479ef632f"
+    },
+    {
+      "name": "tests/ai-workflow-pilot-blog.test.js",
+      "sha256": "fcfa1c0443fd48c40b0105c8ddcfbcd91bb4206bc00de9d08c4fa2ccd643b574"
+    },
+    {
+      "name": "tests/automation-prioritisation-blog.test.js",
+      "sha256": "c66ecf7e13ebc7bcfaa643325ae006a1d2cd00eff9ce9d68b9880109e2b9fc87"
+    },
+    {
+      "name": "tests/blog-page.test.js",
+      "sha256": "32843352281dff1ad67ae26eb689048dc81adbf792cced3c606d338fae2c52bb"
+    },
+    {
+      "name": "tests/custom-software-blog.test.js",
+      "sha256": "27229ced7eef44fc531c13a3d4b0cd5135013f0427085e65fc8aff54e5d7f1a6"
+    },
+    {
+      "name": "tests/google-ads-blog.test.js",
+      "sha256": "371ebfe9281974c60eb4623226a78f80ecc3c4c5642e348d7f103f98da568649"
+    },
+    {
+      "name": "tests/google-visibility-blog.test.js",
+      "sha256": "d7c3b3869abef99ba4e1edd1f23cb98ab93beb9af21c55edb05f8eb6a8f60997"
+    },
+    {
+      "name": "tests/local-seo-blog.test.js",
+      "sha256": "91065d51c7ec0d10ecc37d285869c3bfdc917ea2e0d52c6cb256739e56e68b72"
+    },
+    {
+      "name": "tests/what-is-seo-blog.test.js",
+      "sha256": "f7628c6dddf571927bb02eb8bc620060c9452e500ec6be3f177e2370001453a3"
+    },
+    {
+      "name": "tests/site-structure.test.js",
+      "sha256": "d5c825aa65a9cfec3b97219b31f3ce795dd342667b1e0e7c2b618d08b94e2809"
+    },
+    {
+      "name": "tests/privacy-policy.test.js",
+      "sha256": "223edf9d973bbbbe9827fb0d6b88c6364df9487bd2bbded5bebcb3e41bef0fe0"
+    },
+    {
+      "name": "tests/scroll-progress.test.js",
+      "sha256": "14116d9ffdf3c1bfcd171c0d9b1d7f506bf0f3d91a44ec7dda0b5f93dae9f491"
+    },
+    {
+      "name": "tests/enquiries-publication.test.js",
+      "sha256": "3b4c455531246715376c9e667fcff61af498c78a72761087d7a5f5126867c18a"
+    },
+    {
+      "name": "scripts/public-files.json",
+      "sha256": "8e84db5cf64cf60ded1485107041dfd7b51b3589a7572f9639faa4d485ae50cc"
+    }
+  ],
+  "exportedInternalMaterial": false,
+  "regeneration": {
+    "allPass": true,
+    "publicOutputsIdentical": 65,
+    "approvedFilesUnchanged": true
+  },
+  "publicCommit": "e584b314d65583062a6f6511abbe2ec509c71b19",
+  "fixedReviewBase": "d27fd3afa4bef12fc64ed7972a6d01ee84afeec0",
+  "publicCommitFiles": [
+    "assets/images/blog/marketing-results-illustration-1280.webp",
+    "assets/images/blog/marketing-results-illustration-768.webp",
+    "assets/images/blog/revenue-and-costs-mobile.svg",
+    "assets/images/blog/revenue-and-costs.svg",
+    "blog/google-ads-for-service-businesses/index.html",
+    "blog/index.html",
+    "blog/is-seo-still-relevant-ai-search/index.html",
+    "blog/local-seo-google-maps-visibility/index.html",
+    "blog/measure-digital-marketing-results/index.html",
+    "blog/measure-digital-marketing-results/resources/marketing-results-scorecard.md",
+    "blog/measure-digital-marketing-results/scorecard/index.html",
+    "blog/website-visits-few-enquiries/index.html",
+    "blog/what-is-seo/index.html",
+    "scripts/public-files.json",
+    "sitemap.xml",
+    "tests/ai-agents-blog.test.js",
+    "tests/ai-workflow-pilot-blog.test.js",
+    "tests/automation-prioritisation-blog.test.js",
+    "tests/blog-page.test.js",
+    "tests/custom-software-blog.test.js",
+    "tests/enquiries-publication.test.js",
+    "tests/google-ads-blog.test.js",
+    "tests/google-visibility-blog.test.js",
+    "tests/local-seo-blog.test.js",
+    "tests/marketing-results-blog.test.js",
+    "tests/privacy-policy.test.js",
+    "tests/scroll-progress.test.js",
+    "tests/site-structure.test.js",
+    "tests/what-is-seo-blog.test.js"
+  ],
+  "publicationDate": "2026-11-11",
+  "publicationDateRollover": true,
+  "reviewFix": {
+    "issue": "Rollover left the newly added sitemap route with10Nov",
+    "resolution": "Include new route in durable lastmod update and assert exact11Nov in regression"
+  },
+  "reviewAxes": {
+    "spec": {
+      "status": "No actionable findings",
+      "agent": "blog11_spec_review",
+      "base": "d27fd3afa4bef12fc64ed7972a6d01ee84afeec0",
+      "head": "e584b314d65583062a6f6511abbe2ec509c71b19",
+      "readOnly": true
+    },
+    "standards": {
+      "status": "Sitemap rollover date resolved; no remaining actionable findings",
+      "agent": "blog11_standards_review",
+      "base": "d27fd3afa4bef12fc64ed7972a6d01ee84afeec0",
+      "head": "e584b314d65583062a6f6511abbe2ec509c71b19",
+      "readOnly": true
+    }
+  },
+  "tests": {
+    "privateJavaScript": 223,
+    "publicJavaScript": 221,
+    "publicBuildTest": 1,
+    "publicTotal": 222,
+    "failuresRemaining": 0,
+    "sitemapFixTargetedTests": 3
+  },
+  "pushedToOriginMain": true,
+  "finalCommitBuildPassed": true,
+  "productionVerified": true,
+  "productionVerificationFile": "19-verificacion-produccion.json",
+  "publishedCount": 11,
+  "preparedCount": 7,
+  "preparedBlogs": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "nextToReviewOrPublish": 12,
+  "nextNewPackage": 19
+}

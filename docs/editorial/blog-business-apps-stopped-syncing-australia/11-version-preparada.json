@@ -1,0 +1,273 @@
+{
+  "blog": 16,
+  "date": "2026-11-04",
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/business-apps-stopped-syncing/",
+  "changes": [
+    {
+      "before": "This guide explains how to investigate an existing connection and plan recovery. The examples are fictional; they are not incidents, tests or client results from Ranking Rebels.",
+      "after": "Suppose an enquiry reaches your CRM and returns a contact reference, but the opportunity request times out and the follow-up task is never reached. You need to establish what was saved before deciding what to repeat. We will follow that fictional enquiry below. It is a teaching example, not an incident, test or client result from Ranking Rebels.",
+      "reason": "Adelantar el caso recibido y hablar al propietario; ningún incidente, ciudad o resultado nuevo."
+    },
+    {
+      "before": "If a website form creates a CRM opportunity,",
+      "after": "If a website form creates an opportunity in your customer relationship management (CRM) system,",
+      "reason": "Definir CRM en su primera explicación para el propietario sin añadir funciones de producto."
+    },
+    {
+      "before": "### 1. The trigger is watching the wrong thing—or has not collected it yet",
+      "after": "### 1. The trigger is watching a different event or has not collected it yet",
+      "reason": "Sustituir expresión vaga e inciso por un encabezado directo."
+    },
+    {
+      "before": "Consider enquiry **E104**.",
+      "after": "Return to the fictional enquiry, **E104**.",
+      "reason": "Recuperar el caso temprano conservando todas las premisas e identificadores."
+    }
+  ],
+  "sourceUrls": [
+    "https://knowledge.hubspot.com/integrations/connect-and-use-hubspot-data-sync",
+    "https://help.zapier.com/hc/en-us/articles/30582278131597-Zap-is-not-working",
+    "https://help.zapier.com/hc/en-us/articles/20512774106125-View-specific-Zap-run-details",
+    "https://help.zapier.com/hc/en-us/articles/8496244568589-How-Zap-triggers-work",
+    "https://help.make.com/connect-an-application",
+    "https://help.zapier.com/hc/en-us/articles/8496199667981-Zap-is-not-sending-data",
+    "https://help.zapier.com/hc/en-us/articles/8496181445261-Zap-limits",
+    "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry",
+    "https://help.make.com/webhooks",
+    "https://docs.stripe.com/webhooks#event-delivery-behaviors",
+    "https://help.zapier.com/hc/en-us/articles/19220226086797-What-is-replay",
+    "https://help.zapier.com/hc/en-us/articles/8496241726989-Replay-Zap-runs",
+    "https://docs.n8n.io/build/understand-workflows/understand-executions/view-all-executions.md",
+    "https://rankingrebels.com/solutions/ai-automation/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2750,
+      "sha256": "5fa68bdaa6a15caf282b71dcaba0fa3e6328dc2d6658fdc08f84384fe2d0211c",
+      "readComplete": true,
+      "finalText": "grama investigación, ejecución o publicación, ni asigna fechas públicas. Un chat ejecutor usa su propio progreso real para continuar; no salta al 16 porque sea el último preparado."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 11971,
+      "sha256": "a731f63c25eaf43cf24d23ffeb6d8c071b2e51e912f6117b5ffc28b0122d924d",
+      "readComplete": true,
+      "finalText": "aviso de plantilla; n8n redirigió rutas históricas a `.md` vigentes. No se accedió a material privado. El artículo está preparado para revisión/integración posterior, no publicado."
+    },
+    {
+      "name": "02-articulo-business-apps-stopped-syncing-australia.md",
+      "bytes": 16084,
+      "sha256": "448cb7e9332d7638189c05f1bd97a041bc4d2e162f68cde60647686f42aa10f1",
+      "readComplete": true,
+      "finalText": "utomation approach](https://rankingrebels.com/solutions/ai-automation/). Bring one affected workflow, the expected outcome and a redacted example of where the evidence breaks down."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 7053,
+      "sha256": "4b5aca080271733fb8a77bb5eb9bb9ba76b904ec0dad68b9a17accbfb577e6f6",
+      "readComplete": true,
+      "finalText": "ación; no se declaran como hechos. El paquete queda completo editorialmente, con esos estados separados en 08. Ninguna revisión documental se reporta como reparación o prueba real."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 5595,
+      "sha256": "10425bded82fe3de82a323876ad6adf3311f54c5079766b4981610d295c91e5d",
+      "readComplete": true,
+      "finalText": "bilidad o validación técnica.\n\nConservar en 08 los resultados reales del ejecutor. Sin datos de publicación o cuentas no se atribuye desempeño, recuperación o retorno a esta pieza."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 7333,
+      "sha256": "c4996f4e4dd9c98c1a5f0b42965b37c9812d819937506f6898397966e6f43970",
+      "readComplete": true,
+      "finalText": "blishing**, ID 24 del banco/favorito 10. Detente: su investigación necesita la siguiente instrucción manual. La cadencia de cuatro días no autoriza tareas o publicación automática."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1225,
+      "sha256": "d57cc2abcae13a86ae0fa1522f498dab3c11989e2aba3ccf44dd0e0f841b1628",
+      "readComplete": true,
+      "finalText": "bación de recepción no termina el artículo: ante «continúa», ejecuta su trabajo activo según ese prompt y las autorizaciones del chat; no saltes al 17 por haber leído los archivos."
+    },
+    {
+      "name": "07-integration-trace-and-recovery-card.md",
+      "bytes": 8272,
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a",
+      "readComplete": true,
+      "finalText": "| E | | | | |\n| F | | | | |\n\nThe cases have not been run. Do not convert expected behaviour or fictional premises into observed results, client evidence or a guarantee of recovery."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 3030,
+      "sha256": "601c716422310a4d191e7d261665282d2074265c843bd4d82e8208dd10a2b326",
+      "readComplete": true,
+      "finalText": "termina con este paquete. El 17 sobre testimonios sigue pendiente para la próxima instrucción manual; no programar investigación o publicación por la pauta prevista de cuatro días."
+    },
+    {
+      "name": "soporte-conexiones-y-diagnostico.md",
+      "bytes": 9423,
+      "sha256": "b0ca591af219aff6680f420e2e9c7551ae2a8fac2b40a4034d35d74c5eef12c3",
+      "readComplete": true,
+      "finalText": "dencias vigentes ni comportamiento de cuentas de Ranking Rebels. Las cifras y opciones deben comprobarse al ejecutar; esta nota no demuestra fallos reales ni recuperación de datos."
+    },
+    {
+      "name": "soporte-entrega-y-recuperacion.md",
+      "bytes": 8537,
+      "sha256": "f3defb86f7e87f74b2ec2c0ede6abd9572e737ee27ddb70b829f2d0d636ae0b3",
+      "readComplete": true,
+      "finalText": "ctual citada. No hubo cuerpos citados inaccesibles. Los extractos de búsquedas secundarias se descartaron. No se verificaron versiones, planes o configuración de cuentas concretas."
+    },
+    {
+      "name": "soporte-estrategia-y-operacion.md",
+      "bytes": 5186,
+      "sha256": "c7c48f83a6e33b640d3327d232e89fc892d36e30e535784226f6de002b52be2e",
+      "readComplete": true,
+      "finalText": "vers comprobables y recuperación consistente como beneficios posibles. El mecanismo y coste deben evaluarse en el caso; no se prometen menos fallos, ventas o retorno cuantificados."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-business-apps-stopped-syncing-australia.md",
+      "bytes": 16321,
+      "sha256": "dd45f379b610a0b7c22e082aee8165164ac39577e2552bfcb718a226f69dc91d"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2201,
+      "sha256": "a66c67c75dc8c54ce5e8eee021b34d99cf36f308d101dcec82969f2567c170d6"
+    },
+    {
+      "name": "07-integration-trace-and-recovery-card.md",
+      "bytes": 8272,
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 27546,
+      "sha256": "9a7347392614cfe9725cff03328d8991c8413e2bb7d3254d04a97da67c271321"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 27545,
+      "sha256": "6fe9611ab32fb682b2b9c98c8325e0c7e41f7e3b5c62ce668f18383898fe0b8f"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 8519,
+      "sha256": "880ebb5c48a26e842737526659aea6991bbc27055724b5dbe98a543252142ed1"
+    },
+    {
+      "name": "worksheet-preview.html",
+      "bytes": 13238,
+      "sha256": "ca14e9ee3d129b05c2247ff0d19147320d1bfe336785f78ff669eda44fea401f"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10950,
+      "sha256": "03ee0aa0f36e9e88b27f508e8d707e59adf2517c8a596183b3720485a3aebed5"
+    },
+    {
+      "name": "media/integration-trace-illustration-1280.webp",
+      "bytes": 310468,
+      "sha256": "8e628b68aeb01bce69eefea9c8d1be696eb9b8defb236bfa3e595a3cc101d44a"
+    },
+    {
+      "name": "media/integration-trace-illustration-768.webp",
+      "bytes": 109354,
+      "sha256": "ef345213191c1b4de7ab0e6f8e53858a81daaa56f77becaa5e813ba7dec6ad9a"
+    },
+    {
+      "name": "media/uncertain-write.svg",
+      "bytes": 5097,
+      "sha256": "5364f86c7b843de0db87b9926f9d86166f7e7014c196236de6968dd46782010f"
+    },
+    {
+      "name": "media/uncertain-write-mobile.svg",
+      "bytes": 5052,
+      "sha256": "a72c3af9dc9be01d7138faea7050d624a84ea4662664e7f9b4562686390186a5"
+    },
+    {
+      "name": "recursos/integration-trace-and-recovery-card.md",
+      "bytes": 8272,
+      "sha256": "5a40c3a34a6509028aa6578ae1aaab87c466cf9140fd23ad851cbb55533a523a"
+    },
+    {
+      "name": "media/integration-trace-illustration-original.png",
+      "bytes": 3862920,
+      "sha256": "798c8b2780713a3496766609ed0388e359dc90ce26088e53cb3155bdd734d3ad"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 1903,
+      "sha256": "b028a031cabad656a70047d107628df8c340dd9d5ca60ff28cb3d9d004de453b"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1481,
+      "sha256": "b0eb8f79b9cf7fb6640a54080add79c7c00b54903cddec68ac5eb22def81986e"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 1871,
+      "sha256": "050225da73a0fa77b8c68a12929a90f05765a864d76d9e877a79f61e46d7f287"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1630,
+      "sha256": "f49eae77a54e4483eb20e9b0cac44316bf311b48e38f32b537cf616de95e7df4"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2340,
+      "sha256": "91e17f5451dc8e23446ee76e6a2a03c8672a3fcff8335f3ff7af87fc1c8b6ab5"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 4939,
+      "sha256": "7c6ceb6eb78834ec9cab6d587a5785349cffe2459bb36b2d4decaf765ac21a25"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1405,
+      "sha256": "c3d51abeb7ea27fd1955bcc450c753b79b8d0e9050ac8d9556f611c732dabea7"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 10875,
+      "sha256": "c8d805c45c9994a5bb1f208a8889ced42f96a3407603639fc314221c0725bb96"
+    },
+    {
+      "name": "07a-revision-enlaces.json",
+      "bytes": 12560,
+      "sha256": "90919b61b149d2ea76bc25620f6254ca7e02d3452916ff75d71237d7f4970236"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1030,
+      "sha256": "68b3e24bba0ed86115d2cc98b72d45fe294f8a212dbe3aeaf2b6a5573a443c92"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1435,
+      "sha256": "751b66a0314d8f939f033274c4e4a843d6037e0aaab303d6fd90a9f801a7a098"
+    }
+  ],
+  "wordCount": 2323,
+  "fullPageBrowserQA": false,
+  "preparedCount": 8,
+  "publishedCount": 8,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/integration-trace-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-e396323f-965c-400b-af78-d0786ef22445.png",
+    "visualInspection": true
+  }
+}

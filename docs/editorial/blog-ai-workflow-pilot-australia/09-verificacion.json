@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-27",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "semanticBlocksMatched": 114,
+  "headings": 9,
+  "subheadings": 0,
+  "tables": 3,
+  "tableColumnHeaders": 8,
+  "originalURLsRetained": 9,
+  "newBlogLinks": 1,
+  "allNumeralsPreserved": true,
+  "allOriginalCopiesMatch": 14,
+  "protectedFilesUnchanged": 389,
+  "publicCandidateRouteAbsent": true,
+  "syntheticCases": 12,
+  "uniqueScenarioIds": 12,
+  "uniqueEnquiryIds": 11,
+  "duplicateE001Intentional": true,
+  "s08FixtureIndependent": true,
+  "resultsNotRun": 12,
+  "observationCellsRemainBlank": true,
+  "resourcesByteIdentical": 3,
+  "kitCaseCards": 12,
+  "kitStatusRows": 12,
+  "noWorkflowModelOrConnectorExecuted": true,
+  "metadataCharacters": {
+    "Title": 52,
+    "Meta description": 152
+  },
+  "assets": [
+    {
+      "name": "media/ai-workflow-pilot-illustration-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 172356,
+      "sha256": "34bfcc6becf7484525993c6434e874bcaa34d4408642c0912545c0d21b89a0bb"
+    },
+    {
+      "name": "media/ai-workflow-pilot-illustration-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 68604,
+      "sha256": "8dda22bceb74f47d427f1ffc14a4300482b8556de015525ec0c782d34f0df6fe"
+    }
+  ],
+  "assetsVisuallyInspected": true,
+  "fullPageBrowserQA": false,
+  "limitation": "Texto, HTML, recursos e imagen comprobados. No se hizo revisión visual de página completa ni pruebas del workflow."
+}

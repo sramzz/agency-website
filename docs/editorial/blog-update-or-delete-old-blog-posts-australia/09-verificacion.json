@@ -1,0 +1,346 @@
+{
+  "date": "2026-11-03",
+  "blog": 15,
+  "published": false,
+  "publicationAuthorised": false,
+  "originalFiles": 12,
+  "originalCopiesByteIdentical": true,
+  "mainSemanticParts": 102,
+  "scorecardSemanticParts": 102,
+  "originalArticleURLsRetained": 12,
+  "allOriginalNumeralsPreserved": true,
+  "h2": 9,
+  "h3": 6,
+  "mainTables": 2,
+  "mainBlockquotes": 1,
+  "mainFigures": 2,
+  "scorecardTables": 6,
+  "scorecardByteIdentical": true,
+  "completeTextReconstructsOriginal": true,
+  "sourceClaimsReviewed": 17,
+  "readingRecord": "Reuse complete previous readings; all fourteen current manuscript hashes match prior records and final manifest; relevant passages reopened on 3 November.",
+  "localBlogLinks": [
+    "https://rankingrebels.com/blog/website-not-showing-up-on-google/"
+  ],
+  "fictionalCases": {
+    "A": {
+      "content": "keep",
+      "url": "retain"
+    },
+    "B": {
+      "content": "update",
+      "url": "retain and test route"
+    },
+    "C": {
+      "content": "combine useful details",
+      "url": "verify equivalent replacement before permanent redirect"
+    },
+    "D": {
+      "content": "remove if no continuing purpose",
+      "url": "404 or 410 without equivalent replacement"
+    },
+    "E": {
+      "content": "investigate first",
+      "url": "retain pending investigation"
+    }
+  },
+  "titleCharacters": 54,
+  "descriptionCharacters": 141,
+  "wordCount": 2337,
+  "assets": [
+    {
+      "name": "media/content-review-illustration-1280.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 336910,
+      "sha256": "5b7e499c503077766ffb3bc1b4ff8637d86b4a91e1b9dd0d526fb173387e21f6"
+    },
+    {
+      "name": "media/content-review-illustration-768.webp",
+      "width": 768,
+      "height": 432,
+      "bytes": 121504,
+      "sha256": "94b91696806347d59ec3d765bfb2b830cbd65e4cf333a3fa380ec282a94881f4"
+    }
+  ],
+  "protectedFiles": 626,
+  "previousFilesUnchanged": true,
+  "localResourceChecks": [
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/preview.html",
+      "status": 200,
+      "sha256": "71e14a8ed04dd0b8da267f2bddc546e0f91fbb53dc303242eefc4e1405c0630a",
+      "bytes": 27159
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/preview-dark.html",
+      "status": 200,
+      "sha256": "33b4758f6fe50b0cdeb10b97b4bfbe7f599e38d98f9c60f6fd4e10bc55a866ab",
+      "bytes": 27158
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/preview.css",
+      "status": 200,
+      "sha256": "2dfaa084e5c9b2fca15f4e400d124e45a68c09e3d676d195f4ae1999e9b0af4f",
+      "bytes": 8519
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/worksheet-preview.html",
+      "status": 200,
+      "sha256": "f1856b40106d0ca726d26ccc576f4b16496f9dd07dece1d50a5dcbe7db59ef82",
+      "bytes": 10517
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/recursos/content-review-decision-log.md",
+      "status": 200,
+      "sha256": "67d08ab1b5cc4b70b4cc9b169e40afe31f41bd7a027216691e3cb988fd1ecc84",
+      "bytes": 6512
+    },
+    {
+      "url": "http://127.0.0.1:4177/favicon.ico",
+      "status": 200,
+      "sha256": "e1c4d61f035348562f19c525206706a8a65da573dd44120ef9f933ed377ba27a",
+      "bytes": 15086
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/styles.css",
+      "status": 200,
+      "sha256": "8adb719ec0db95ea3d7213e061fc2a13f646d6ce21030b2240ef5e72f0d8be1f",
+      "bytes": 302227
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/css/blog.css",
+      "status": 200,
+      "sha256": "97b24cde9020634a2b492fbacc94d79cdc1e9bbf22a981dd157a3cd2bbe4086c",
+      "bytes": 15608
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/scroll-progress.js",
+      "status": 200,
+      "sha256": "e3bc61a12a6237cb615b6f9310b5ed46b89e71b8879b90efb87b76da0275fc86",
+      "bytes": 2641
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/blog.js",
+      "status": 200,
+      "sha256": "5a84a5451cf9304ce0dcd082bcc810236cf5a3aa7f10bb24b8ccb0a7abac48cb",
+      "bytes": 1331
+    },
+    {
+      "url": "http://127.0.0.1:4177/",
+      "status": 200,
+      "sha256": "8c4f020435d6a7668b791ec0871441bcb1264245934f072e06d29c578bcfcc0d",
+      "bytes": 24001
+    },
+    {
+      "url": "http://127.0.0.1:4177/contact/",
+      "status": 200,
+      "sha256": "4903085d28bf620a7f054043ea57583550dddd173d3e7e638edda93e8b9255fb",
+      "bytes": 14931
+    },
+    {
+      "url": "http://127.0.0.1:4177/blog/",
+      "status": 200,
+      "sha256": "5de83ed6c72a5f85ea1976d9148978511e95299a19cc53e2631bb4b161f85488",
+      "bytes": 11018
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-review-illustration-1280.webp",
+      "status": 200,
+      "sha256": "5b7e499c503077766ffb3bc1b4ff8637d86b4a91e1b9dd0d526fb173387e21f6",
+      "bytes": 336910
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-review-illustration-768.webp",
+      "status": 200,
+      "sha256": "94b91696806347d59ec3d765bfb2b830cbd65e4cf333a3fa380ec282a94881f4",
+      "bytes": 121504
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-and-url-mobile.svg",
+      "status": 200,
+      "sha256": "9e0b6e529686663826b8e0960b62437622d5dc6e5652fc63e97aeb1b3241351e",
+      "bytes": 5310
+    },
+    {
+      "url": "http://127.0.0.1:4177/docs/editorial/blog-update-or-delete-old-blog-posts-australia/media/content-and-url.svg",
+      "status": 200,
+      "sha256": "d79443f976c8be24c2accaff12f2164ea68d042fa8648ae75ef0c12cf799d03e",
+      "bytes": 4526
+    },
+    {
+      "url": "http://127.0.0.1:4177/solutions/",
+      "status": 200,
+      "sha256": "a0b5290a0f1412fe477b3677a3b420ac5ddd6df35a7dc69c2e5b6379c7f23e2a",
+      "bytes": 12225
+    },
+    {
+      "url": "http://127.0.0.1:4177/about/",
+      "status": 200,
+      "sha256": "40038bc1e24a3223fdc8108514e6a07938148baa5ad299863ba58b3370138ecf",
+      "bytes": 15054
+    },
+    {
+      "url": "http://127.0.0.1:4177/privacy/",
+      "status": 200,
+      "sha256": "a6db2426b0ca8061f5936f1b56536c36c82065ef793eaee322029b7a9ad421ad",
+      "bytes": 12110
+    },
+    {
+      "url": "http://127.0.0.1:4177/cookies/",
+      "status": 200,
+      "sha256": "685d4434f001c348043895556412a0ab16285ade57a083c28ef878ffe0f261d6",
+      "bytes": 7440
+    },
+    {
+      "url": "http://127.0.0.1:4177/legal/",
+      "status": 200,
+      "sha256": "7fd241b7324e323203bb07ac42d24d2c23ce3eca6780e7dfa1c093996d142b89",
+      "bytes": 6620
+    },
+    {
+      "url": "http://127.0.0.1:4177/assets/js/script.js",
+      "status": 200,
+      "sha256": "c93c3157f7e43517f439e5ed5c096f69e82210287407e0e42b4ec345ec5ac34a",
+      "bytes": 16310
+    }
+  ],
+  "publicArticles": [
+    {
+      "route": "/blog/custom-software-benefits/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/which-business-processes-to-automate-first/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/website-not-showing-up-on-google/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/website-visits-few-enquiries/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/ai-agents-vs-workflow-automation/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/what-is-seo/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/local-seo-google-maps-visibility/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    },
+    {
+      "route": "/blog/is-seo-still-relevant-ai-search/",
+      "bodyMatches": true,
+      "canonicalMatches": true
+    }
+  ],
+  "publicRevision": "2a16ff6016460a0316889c1a9ea875f077cd98f0",
+  "publicBlogCount": 8,
+  "previousArticleSources": [
+    {
+      "name": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "bytes": 15755,
+      "sha256": "33531c98983e5bd4f3a63ad190e7a4a4bd6a845b222e49a3236f7cbb4be8256f"
+    },
+    {
+      "name": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "bytes": 18988,
+      "sha256": "ebd816b4c696506b39b22f37613ad152b66ff06bffbdde1909ec1b895d7e8ab7"
+    },
+    {
+      "name": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "bytes": 17645,
+      "sha256": "c71747cc9568c36fe02edada34b8ccbd6ca58c22ccfec6a48f94139bc0d83ee5"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "bytes": 15983,
+      "sha256": "ec29f3f8d58150d115f4740be99df26447dd2bc14d7e1f141f6ec451c7caa936"
+    },
+    {
+      "name": "docs/editorial/blog-visits-few-enquiries-australia/03-articulo-visits-few-enquiries-australia.md",
+      "bytes": 14813,
+      "sha256": "0813fbdbad9d982d1f9b11026f8c36dfdf7c933ee5371827dc78349fff3f2aa7"
+    },
+    {
+      "name": "docs/editorial/blog-google-visibility-diagnosis-australia/03-articulo-google-visibility-diagnosis-australia.md",
+      "bytes": 16436,
+      "sha256": "6fc4f716cb3ffed8d675b81110064dedbd2f61c6a7c9afdd173162b962b88c40"
+    },
+    {
+      "name": "docs/editorial/blog-automation-prioritisation-australia/03-articulo-automation-prioritisation-australia.md",
+      "bytes": 16715,
+      "sha256": "250ac1b927d3049e260e2a7d842162b2aeb2ebd27e39bfc675f3a0defdc74bb5"
+    },
+    {
+      "name": "docs/editorial/blog-custom-software-australia/03-articulo-custom-software-australia.md",
+      "bytes": 17222,
+      "sha256": "de6c4b171e9740851b01932fae051e97bfe5c1f999763e09226c1a3b1c7d63c4"
+    },
+    {
+      "name": "docs/editorial/blog-ai-workflow-pilot-australia/03-articulo-ai-workflow-pilot-australia.md",
+      "bytes": 16597,
+      "sha256": "037be4d53a92f884cc9b5df04f944c0d8844ea20736fbe2950c4d185735e23a1"
+    },
+    {
+      "name": "docs/editorial/blog-google-ads-service-businesses-australia/03-articulo-google-ads-service-businesses-australia.md",
+      "bytes": 16903,
+      "sha256": "876eaaf4ed4b5856ce75e3aff04903d4c8da059bcd9156fe22215ff375675ed4"
+    },
+    {
+      "name": "docs/editorial/blog-marketing-measurement-australia/03-articulo-marketing-measurement-australia.md",
+      "bytes": 17937,
+      "sha256": "04fe46f6f1c6c5c606351c7fc5b4d169bfc32eea57a451d17ab9c3777b1da440"
+    },
+    {
+      "name": "docs/editorial/blog-facebook-instagram-advertising-australia/03-articulo-facebook-instagram-advertising-australia.md",
+      "bytes": 16074,
+      "sha256": "0fb0068f825030cd766e5c659ec601495221d8dc46186b9a4c4bfcb21098dca5"
+    },
+    {
+      "name": "docs/editorial/blog-what-is-crm-australia/03-articulo-what-is-crm-australia.md",
+      "bytes": 17641,
+      "sha256": "2b0c7af9aad30a75a23b507133d1f35bac44dc26d4365a87358422295684418f"
+    },
+    {
+      "name": "docs/editorial/blog-tiktok-ads-australia/03-articulo-tiktok-ads-australia.md",
+      "bytes": 17803,
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039"
+    }
+  ],
+  "internalLinkDirectionsConsidered": 28,
+  "fullPageBrowserQA": false,
+  "assetVisualInspection": true,
+  "liveAccountOrTrackingTests": false,
+  "publicCodeTestsNotRerun": "Preparation-only folder; every prior deployable file and tests unchanged by hash.",
+  "postDocumentationUpdate": {
+    "allowedPrivateFilesChanged": [
+      "docs/editorial/00-estado-serie.md",
+      "docs/editorial/enlazado-interno.md"
+    ],
+    "allOtherProtectedFilesUnchanged": true,
+    "publicFilesChanged": false,
+    "publicRepositoryStatus": "Clean; read-only git status confirmed",
+    "rasterAndBothDiagramVariantsInspected": true
+  },
+  "previewServer": {
+    "address": "127.0.0.1",
+    "port": 4177,
+    "pid": 11088,
+    "readOnly": true,
+    "restartedAfterInitialConnectionRefused": true
+  }
+}

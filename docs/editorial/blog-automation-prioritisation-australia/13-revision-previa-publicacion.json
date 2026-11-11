@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-29",
+  "blog": 7,
+  "title": "Which Business Processes Should You Automate First? A Practical Prioritisation Guide",
+  "publicationRequested": true,
+  "userRequest": "publiquemos el siguiente blog",
+  "finalVersionApproval": false,
+  "finalReviewReminderRequiredBy": "User instruction, 27 October 2026; criterios-ranking-rebels.md",
+  "recommendedReadingTheme": "light",
+  "illustrationVersion": "V2",
+  "localPreview": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview.html",
+  "alternateLocalPreview": "http://127.0.0.1:4177/docs/editorial/blog-automation-prioritisation-australia/preview-dark.html",
+  "files": [
+    {
+      "name": "03-articulo-automation-prioritisation-australia.md",
+      "sha256": "0d37cb0a7141270ef204d9012e379f103478ea536631232ea7da11b45c6ccc14"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "sha256": "e6fb78ecdcd8fc1e876d8c303cf6608411c6396204bd5ee6c5787784e003933d"
+    },
+    {
+      "name": "preview.html",
+      "sha256": "907c9c870ce4272378da3e59b992a3dc0355b2d5838d314a28d6d6150f321802"
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "4e42a69fcd78259f60b21c204829ed93b7021b26faf23c14784d29b5e1a07efd"
+    },
+    {
+      "name": "preview.css",
+      "sha256": "ccab15a5be85f34ad1ceb35b3d5be9ff894883b11a12dd40cbfe34dba9d298b3"
+    },
+    {
+      "name": "render-preview.cjs",
+      "sha256": "42dab51a91132984873873a4b5d3ecdad2e621ff3e8bec5559ae5104f8631c56"
+    },
+    {
+      "name": "media/automation-prioritisation-illustration-v2-1280.webp",
+      "sha256": "e706d4c20ee08b29b2cf2b9c1f0ab96c13d13861877921ecd3d97bc6f4f7759e"
+    },
+    {
+      "name": "media/automation-prioritisation-illustration-v2-768.webp",
+      "sha256": "fb32067e9898e8ff6d717469f0ed591698b903248f2acdeb5d234037b58026c9"
+    }
+  ],
+  "productionRevision": "3a28b8ef5d6988b30eaafb7e60b4ea7ff056af61",
+  "publicArticleBodiesMatched": 6,
+  "localResourcesMatched": 5,
+  "candidateStatus": 404,
+  "fullPageBrowserQA": false,
+  "incomingParagraph": "If you have several tasks in mind, first compare [which business processes to automate first](https://rankingrebels.com/blog/which-business-processes-to-automate-first/). That guide helps you weigh the work, remaining effort and unknowns before choosing a task to demonstrate.",
+  "incomingPlacement": "AI Agents vs Workflow Automation: Questions to ask before buying an AI agent; before Ask a prospective provider...",
+  "incomingChangeApplied": false,
+  "internalLinkDirectionsConsidered": 18,
+  "published": false,
+  "pushPerformed": false,
+  "deploymentPerformed": false,
+  "automation": null
+}

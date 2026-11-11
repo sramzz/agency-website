@@ -1,0 +1,283 @@
+{
+  "blog": 14,
+  "date": "2026-11-02",
+  "status": "Prepared for final review; not published",
+  "published": false,
+  "publicationAuthorised": false,
+  "finalReviewRequiredBeforePublishing": true,
+  "imageApproval": "Pending",
+  "readingThemeApproval": "Pending",
+  "candidateRoute": "/blog/how-tiktok-ads-works/",
+  "changes": [
+    {
+      "before": "TikTok Ads is paid advertising that lets a business promote a message to eligible audiences through TikTok's advertising tools. For a service business, the useful question is whether that message can reach suitable people, explain something that matters and lead to a conversation the team can handle.",
+      "after": "TikTok Ads is paid advertising that lets a business promote a message to eligible audiences through TikTok's advertising tools.\n\nSay you run a landscaping business in Perth. You could explain what a customer needs before asking for a quote, which projects you handle or what happens after an enquiry. Would those explanations reach suitable people and lead to conversations your team can handle?\n\nWe will use that fictional business throughout this guide. No campaign or results are represented.",
+      "reason": "Adelantar el caso ya recibido y hablar al propietario; no inventar campaña, público probado o resultados."
+    },
+    {
+      "before": "This guide explains the main decisions for Australian service businesses. It focuses on feed-based creative and enquiry generation, while recognising that TikTok also offers other placements and formats under specific availability rules.",
+      "after": "For an Australian service business, that means checking the creative work, contact route and costs before committing to a test. Feed-based creative is the focus here. Other placements and formats have their own availability rules.",
+      "reason": "Sustituir anuncio genérico de la guía por decisiones concretas, conservando el alcance."
+    },
+    {
+      "before": "## Measure attention, enquiries and customers separately",
+      "after": "## Keep attention, enquiries and customers distinct",
+      "reason": "Encabezado más directo; no cambia las unidades o reglas de medición."
+    },
+    {
+      "before": "### Attribution is not the same as additional business caused",
+      "after": "### What attribution can tell you",
+      "reason": "Subtítulo breve; el cuerpo conserva atribución frente a incremento causal."
+    },
+    {
+      "before": "Consider a fictional landscaping business serving selected Perth suburbs. It wants to investigate whether a clear explanation can generate enquiries for the project types it actually handles. No campaign or results are represented here.",
+      "after": "Return to the fictional landscaping business serving selected Perth suburbs. It wants to investigate whether a clear explanation can generate enquiries for the project types it actually handles. No campaign or results are represented here.",
+      "reason": "Recuperar el mismo caso temprano, sin presentarlo como otro negocio."
+    },
+    {
+      "before": "## Decide whether to test, repair or choose another priority",
+      "after": "## Decide what to test or repair",
+      "reason": "Acortar navegación; el cuerpo y gráfico conservan la opción de cambiar de prioridad."
+    },
+    {
+      "before": "Confirm where the information goes and who takes the next action.",
+      "after": "Confirm where the information goes and who takes the next action. If you choose a website route, our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you check the page, contact journey and receipt before increasing traffic.",
+      "reason": "Salida al blog5 público desde la ruta web, útil para revisar recepción y página sin repetir el diagnóstico."
+    }
+  ],
+  "sourceUrls": [
+    "https://ads.tiktok.com/resources/help/article/choose-right-objective?lang=en",
+    "https://ads.tiktok.com/resources/help/article/bidding-strategies?lang=en",
+    "https://ads.tiktok.com/resources/help/article/creative-best-practices",
+    "https://ads.tiktok.com/resources/help/article/tiktok-auction-in-feed-ads?lang=en",
+    "https://ads.tiktok.com/resources/help/article/spark-ads?lang=en",
+    "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide",
+    "https://ads.tiktok.com/resources/help/article/commercial-music-library",
+    "https://ads.tiktok.com/resources/help/article/location-targeting",
+    "https://ads.tiktok.com/resources/help/article/search-ads-campaign-availability?lang=en",
+    "https://ads.tiktok.com/resources/help/article/lead-generation-objective?lang=en",
+    "https://ads.tiktok.com/resources/help/article/about-tiktok-messaging-ads?lang=en",
+    "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/tracking-pixels-and-privacy-obligations",
+    "https://ads.tiktok.com/resources/help/article/budget?lang=en",
+    "https://ads.tiktok.com/resources/help/article/about-dynamic-daily-budget?lang=en",
+    "https://ads.us.tiktok.com/resources/help/article/about-the-lead-optimization-goal?lang=en",
+    "https://ads.tiktok.com/resources/help/article/tiktok-pixel",
+    "https://ads.tiktok.com/resources/help/article/events-api?lang=en",
+    "https://ads.tiktok.com/resources/help/article/website-data-connection-setup-methods?lang=en",
+    "https://ads.us.tiktok.com/resources/help/article/about-attribution-windows-at-the-ad-group-level",
+    "https://ads.tiktok.com/resources/help/article/about-conversion-lift-study?lang=en",
+    "https://rankingrebels.com/solutions/paid-ads/"
+  ],
+  "sourceFiles": [
+    {
+      "name": "00-LEEME.md",
+      "bytes": 2341,
+      "sha256": "faf90911f6f2d723161121a3290d0288e201acf8c30b9e028af260086075c986",
+      "readComplete": true,
+      "finalText": "das.md` para elección; no artículos completos u orden posterior aprobado. What Is SEO? sigue4. El usuario controla cuándo investigar y la pauta de cuatro días no programa acciones."
+    },
+    {
+      "name": "01-dossier-investigacion.md",
+      "bytes": 13886,
+      "sha256": "29ffb96574c8ab8c915df938a5c69adb935be1d752c259450cee90b244cf7346",
+      "readComplete": true,
+      "finalText": ", HTML, schema, canonical, accesibilidad e indexación. Preparación no equivale a publicación. Las diez ideas nuevas son propuestas aparte para escoger; no se empieza15 al cerrar14."
+    },
+    {
+      "name": "02-articulo-tiktok-ads-australia.md",
+      "bytes": 17452,
+      "sha256": "3ead7b27209f351bd21723e8a8eaf9b4dc1ac07966665be2f643251c4743ecb4",
+      "readComplete": true,
+      "finalText": ", where you can deliver it, the creative you can genuinely support and how enquiries will be handled. Those details make the channel discussion more useful than a view count alone."
+    },
+    {
+      "name": "03-auditoria-editorial.md",
+      "bytes": 7575,
+      "sha256": "4b446354c0bfb6688925b31661c3d978d3668dd5fe8774a34f266df2cb5f4fbd",
+      "readComplete": true,
+      "finalText": "entario de socios, HTML, recurso público, URL e indexación/publicación.08 precisa qué evidencia permitiría incorporarlos. Esta preparación no inicia ninguna de las diez ideas15–24."
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 5619,
+      "sha256": "8e49d46a7014d609d7815ddd43587063e8d564ce4545012e2f31f4b87c596ad3",
+      "readComplete": true,
+      "finalText": "tible de cambio.\n\n03 contiene auditoría del material preparado;08 separa aportación humana y comprobaciones pendientes. No se emite puntuación SEO o previsión de tráfico sin datos."
+    },
+    {
+      "name": "05-prompt-final-codex.md",
+      "bytes": 7999,
+      "sha256": "1cddb291d4c97d15e3221a36c4001dde10f37858e24183b37685da7202b9dd1a",
+      "readComplete": true,
+      "finalText": "tes ni un orden posterior ya aprobado. Al cerrar14, indicar entrega y pendientes; no empezar15 o programar acciones. El usuario mantiene control manual de investigación y cadencia."
+    },
+    {
+      "name": "06-prompt-comprobar-archivos.md",
+      "bytes": 1576,
+      "sha256": "4561f43468bcb31abee798d8874c17d2d10710f019a8f7674b5207dba2fead0b",
+      "readComplete": true,
+      "finalText": "i inventar historial ajeno. No ejecutar05 o investigar ideas futuras durante esta comprobación. El siguiente comando del usuario se interpreta por progreso y autorizaciones reales."
+    },
+    {
+      "name": "07-tiktok-fit-and-test-brief.md",
+      "bytes": 6373,
+      "sha256": "9ed7051703a66a50d514b121c7a3f4383796219f1301b08238e07dea9eb901ce",
+      "readComplete": true,
+      "finalText": ". Record why the evidence supports the action, who owns it and what remains uncertain. Ordinary platform attribution is different from a study of additional outcomes caused by ads."
+    },
+    {
+      "name": "08-aporte-equipo-y-publicacion.md",
+      "bytes": 3309,
+      "sha256": "d6e52cb9cf988b45ae33a66b7963c4bc2a28edf18cf9b1272e63537e31337a11",
+      "readComplete": true,
+      "finalText": "/01-diez-ideas-priorizadas.md`, para que el usuario escoja. No son paquetes completos ni un orden posterior ya aceptado. No empezar una de ellas o programar acciones al terminar14."
+    },
+    {
+      "name": "soporte-entrega-creatividad.md",
+      "bytes": 9918,
+      "sha256": "69e28eb363d75b057b34a329eae126ed8d4b65b88b10199ef41aeb9b30ffbebd",
+      "readComplete": true,
+      "finalText": " recibidas. Distinguir paid/organic y objetivo/resultado comercial. Las fuentes describen funciones; no demuestran que TikTok sea adecuado o rentable para toda empresa australiana."
+    },
+    {
+      "name": "soporte-leads-medicion.md",
+      "bytes": 9397,
+      "sha256": "e6e1a7795331604ee44f46f2793c046d52cf8371962d2a397779ce2df5c00e66",
+      "readComplete": true,
+      "finalText": "emplea como evidencia. No se investigaron TikTok Shop Australia, campañas de una cuenta, benchmarks ni implementaciones. Revalidar reglas materiales antes de configurar o publicar."
+    }
+  ],
+  "files": [
+    {
+      "name": "03-articulo-tiktok-ads-australia.md",
+      "bytes": 17803,
+      "sha256": "b24ff6932ef8fd15c137ad1f097eec36ac2a3316712bef8d45761e6ec290c039"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "bytes": 2096,
+      "sha256": "91311c1cd70d0927d1c9d9ce17789cefe626930fa1640dd00307d4d86b8acb07"
+    },
+    {
+      "name": "07-tiktok-fit-and-test-brief.md",
+      "bytes": 6373,
+      "sha256": "9ed7051703a66a50d514b121c7a3f4383796219f1301b08238e07dea9eb901ce"
+    },
+    {
+      "name": "preview.html",
+      "bytes": 29750,
+      "sha256": "d3066a56269bcede61bcb3fcb1f4947c7f038cf54fb5877de21e684292d57a4c"
+    },
+    {
+      "name": "preview-dark.html",
+      "bytes": 29749,
+      "sha256": "8c1ac2644fd797393b8c8fec563b113adbefa497fbb3bb4c169381c3e6d41c7d"
+    },
+    {
+      "name": "preview.css",
+      "bytes": 7876,
+      "sha256": "30d97505038d0adba912723ad59577ecef15819be425ce01ce145ac96a109f92"
+    },
+    {
+      "name": "brief-preview.html",
+      "bytes": 9846,
+      "sha256": "009eb86359290f03e4728e5ca6e5d1b3800ed9b9c8236fdf51a46de5a86daad4"
+    },
+    {
+      "name": "render-preview.cjs",
+      "bytes": 10604,
+      "sha256": "b2dd59764b6f114fd4e9e88f54feca5d54e64ee428c3f3ce71c909262a3d186f"
+    },
+    {
+      "name": "media/tiktok-service-illustration-1280.webp",
+      "bytes": 294286,
+      "sha256": "63e69c4fcfe44b8c7d917d312e0569a5dca4166b7a659571e81cf4e5e8940e84"
+    },
+    {
+      "name": "media/tiktok-service-illustration-768.webp",
+      "bytes": 118124,
+      "sha256": "bebaca40d1701f8b6a4f1ef6291bd46f4f9319d980d47911209f3a1ca023efab"
+    },
+    {
+      "name": "media/decision-options.svg",
+      "bytes": 4039,
+      "sha256": "7f8bc5545fa8d588ddd4892ded1118780233cd6bb1e1380a4745dc9badef9eb2"
+    },
+    {
+      "name": "media/decision-options-mobile.svg",
+      "bytes": 4103,
+      "sha256": "8173d7c5b3baf908f4cfaa553e3d3a8e6dd30df57795bb1dccda5d20060a877f"
+    },
+    {
+      "name": "recursos/tiktok-fit-and-test-brief.md",
+      "bytes": 6373,
+      "sha256": "9ed7051703a66a50d514b121c7a3f4383796219f1301b08238e07dea9eb901ce"
+    },
+    {
+      "name": "media/tiktok-service-illustration-original.png",
+      "bytes": 3677811,
+      "sha256": "cd866fbf3896c0b8c0f33b8d6803eb0658e8bb37bd77e93e9c5bd9d7cf790a7b"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 2077,
+      "sha256": "39a29d3ed014f5717d5166bc2d2be2668dc65461b5b63c0ae0f235ef23758db1"
+    },
+    {
+      "name": "DESIGN.md",
+      "bytes": 1215,
+      "sha256": "40ceebd35af033704285b7fc36fb6394d89f668ec042b68360c1bdacfc6f9902"
+    },
+    {
+      "name": "00-lectura-y-alcance.md",
+      "bytes": 1836,
+      "sha256": "b777b55f17c8860be80d54cff1b67eea3aca6e2eed06d0d20a21ea6436072cd6"
+    },
+    {
+      "name": "01-diagnostico-ejecutivo.md",
+      "bytes": 1577,
+      "sha256": "5c5f71f7d51a5da7826f268e02e7c4f6861c9cb59f43152df83136a1a132ea17"
+    },
+    {
+      "name": "02-auditoria-priorizada.md",
+      "bytes": 2166,
+      "sha256": "2007f834de833d1a8fddc24549d47609e3985022aba235407b05fbba6a718aff"
+    },
+    {
+      "name": "05-fuentes-y-no-confirmado.md",
+      "bytes": 7362,
+      "sha256": "2950942de807fe0c75c172ef60ba6aee7936be51c45b79e6ff36d6d5ec375ec4"
+    },
+    {
+      "name": "06-imagenes-y-vistas.md",
+      "bytes": 1321,
+      "sha256": "2c68f312aaf3335143bf8f5ee8c04ce8374fb176fba06748185300333a626400"
+    },
+    {
+      "name": "07-enlazado-propuesto.md",
+      "bytes": 7023,
+      "sha256": "95e9277bd5848a6e6e3e43bf17a9ae6b9e557068effe142d759cca8b1b07d4e1"
+    },
+    {
+      "name": "08-control-editorial.md",
+      "bytes": 1020,
+      "sha256": "6cc9fe0cdb83569b6a65803cac049f0d7da9342f8ffb266d37c03cb48ef2d5fb"
+    },
+    {
+      "name": "10-listo-para-publicar.md",
+      "bytes": 1507,
+      "sha256": "5880fa3d8180f1979fb26e2b5f029e453fb1f8cee41577b307d422ed6bded72d"
+    }
+  ],
+  "fullPageBrowserQA": false,
+  "wordCount": 2436,
+  "preparedCount": 6,
+  "publishedCount": 8,
+  "image": {
+    "tool": "Built-in imagegen",
+    "prompt": "image-prompt.txt",
+    "original": "media/tiktok-service-illustration-original.png",
+    "selectedSource": "C:/Users/Kelly Serna/.codex/generated_images/01a143f9-843e-7f92-bfeb-5f814421a1f5/exec-c459e4ea-f3c9-423e-831d-79f9f05e19fd.png",
+    "visualInspection": true
+  }
+}

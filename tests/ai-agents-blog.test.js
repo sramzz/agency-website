@@ -36,7 +36,7 @@ test('agents page has indexable publication metadata, real dates and responsive 
   assert.match(html, /<time datetime="2026-10-21">21 October 2026<\/time>/);
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   assert.equal(schema.datePublished, '2026-10-21');
-  assert.equal(schema.dateModified, '2026-10-21');
+  assert.equal(schema.dateModified, '2026-11-04');
   assert.equal(schema.inLanguage, 'en-AU');
   assert.equal(schema.author, undefined);
   assert.equal(schema.publisher.name, 'Ranking Rebels');
@@ -60,10 +60,10 @@ test('new article is discoverable and preserves the contextual links with older 
     assert.ok(article(read(other.slice(1) + 'index.html')).includes(`href="https://rankingrebels.com${route}"`));
   }
   const hub = read('blog/index.html');
-  assert.equal((hub.match(/<a class="blog-story"/g) || []).length, 4);
+  assert.equal((hub.match(/<a class="blog-story"/g) || []).length, 11);
   assert.ok(hub.includes(`href="${route}"`));
   const schema = JSON.parse(hub.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
-  assert.equal(schema.hasPart.length, 4);
-  assert.equal(schema.hasPart[0].url, 'https://rankingrebels.com' + route);
-  assert.ok(read('sitemap.xml').includes(`<loc>https://rankingrebels.com${route}</loc><lastmod>2026-10-21</lastmod>`));
+  assert.equal(schema.hasPart.length, 11);
+  assert.equal(schema.hasPart[0].url, 'https://rankingrebels.com/blog/measure-digital-marketing-results/');
+  assert.ok(read('sitemap.xml').includes(`<loc>https://rankingrebels.com${route}</loc><lastmod>2026-11-04</lastmod>`));
 });

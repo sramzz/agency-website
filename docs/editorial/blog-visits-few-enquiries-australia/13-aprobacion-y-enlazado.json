@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Australia/Sydney",
+  "selectedTheme": "light",
+  "illustration": "V2",
+  "approvalEvidence": "El usuario respondió «hagamoslo segun tu consejo» después de recomendar expresamente cabecera oscura, lectura clara e ilustración V2.",
+  "approvedFiles": [
+    {
+      "name": "03-articulo-visits-few-enquiries-australia.md",
+      "sha256": "6813b3ea1c3ff8829a1c62403ea2fd4fb9f05de178e5118fd685b461ed121f87"
+    },
+    {
+      "name": "04-paquete-seo.md",
+      "sha256": "471a0ecf17dc73a14e81a7765728e3a83ebbf8226d7f110f84f77c9dfa2f0540"
+    },
+    {
+      "name": "preview.css",
+      "sha256": "600b095c0302ec5ae5f72fb9595273df6095da2f316e8c676671509e0ca1e8eb"
+    },
+    {
+      "name": "preview.html",
+      "sha256": "364a0029d23513da96bd289d94501787b70347e345e845b8ea17b58f20f2b0be"
+    },
+    {
+      "name": "preview-dark.html",
+      "sha256": "cdc9b1533bbb42b49f651a2a00694e323c2e66dca6b034b88bab5bbe525e1ecf"
+    },
+    {
+      "name": "render-preview.cjs",
+      "sha256": "e360da5a1a9ca17308aca8e5cee97653def042626013a3a12cf72dca8d0a2282"
+    },
+    {
+      "name": "media/enquiry-checks-mobile.svg",
+      "sha256": "54faaab63d5e6404d9919303ac2296702ad1fd1f0838175840e68dde78a014e1"
+    },
+    {
+      "name": "media/enquiry-checks.svg",
+      "sha256": "efdd8e5714eab88c0b7c15ed291d2aa8f07f7cd5356ec891e1d25bfa0ec5e81e"
+    },
+    {
+      "name": "media/website-enquiries-illustration-1280.webp",
+      "sha256": "d59cb8b3056f9fc51a38bd2e1e13d197d85151296fcaf9841686514e4ce280f2"
+    },
+    {
+      "name": "media/website-enquiries-illustration-768.webp",
+      "sha256": "7f0453ed0a14a39c7eb9d4e17056035243d05d8e0768596295ec597233d399d7"
+    },
+    {
+      "name": "media/website-enquiries-original.png",
+      "sha256": "0821bf9ebf2ea0afbe706878ca5d7285f0c94b6c71994978bfa3fdad0561dc6e"
+    },
+    {
+      "name": "media/website-enquiries-original-v2.png",
+      "sha256": "485f5f29785bb9a5d5d150c9fce98358b2fc02b58a3ac7f19dd15c02aec90fba"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v2-1280.webp",
+      "sha256": "077a40fedebf960f07aaa8ccced411c4901916d6e7597c1839455a71e7ebc954"
+    },
+    {
+      "name": "media/website-enquiries-illustration-v2-768.webp",
+      "sha256": "ad4924646a73182f74fa2176e5479993df28ddfb293f3a17c049d5ff0d7e1b70"
+    }
+  ],
+  "oldManuscriptChanges": [
+    {
+      "file": "docs/editorial/blog-what-is-seo-australia/03-articulo-what-is-seo-australia.md",
+      "beforeSHA256": "61ffd762223b16451eaa8d3f69902ac735d7810584c0d71dcfb7d318874d191f",
+      "addition": "If your website is getting visits but few useful requests, our guide to [what to check when visits are not becoming enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you review the audience, page and contact route before choosing a fix.",
+      "afterSHA256": "391f1e6f6bafe4351bace706e27f03677406fdc9b9d183d1fd4ef97874341fea"
+    },
+    {
+      "file": "docs/editorial/blog-ai-agents-workflows-australia/03-articulo-ai-agents-workflows-australia.md",
+      "beforeSHA256": "cf8638aa9cda1fba46e1922eaa1d107333cebfc51a65e003187d61f1b0e5e0fc",
+      "addition": "If few requests are reaching the team in the first place, check the contact route before automating how you handle them. Our guide to [website visits but few enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) explains how to separate audience, page and delivery problems.",
+      "afterSHA256": "2dede4f5ad7099ab5697b7d159de1e09aab63a20a1046e3669a9b20d865b0b06"
+    },
+    {
+      "file": "docs/editorial/blog-seo-ai-australia/04-blog-seo-ai-australia.md",
+      "beforeSHA256": "7a6b29d0658ee94edf11cc55c205dbe33ebe062eb0043fa935047399fe325883",
+      "addition": "If visits are arriving but useful requests are scarce, our guide to [checking the website enquiry journey](https://rankingrebels.com/blog/website-visits-few-enquiries/) helps you work out whether to investigate the audience, page or contact route first.",
+      "afterSHA256": "44951e58373e8540eb3da268f951f08e99bb71e7857973159663066db9034bcd"
+    },
+    {
+      "file": "docs/editorial/blog-local-seo-australia/03-articulo-local-seo-australia.md",
+      "beforeSHA256": "485bf9afeface4d50f4aa785185e85116bd980c2c9ad9d74a8b78d1e6afa4852",
+      "addition": "If people reach your website but few useful requests follow, our guide to [diagnosing website visits without enquiries](https://rankingrebels.com/blog/website-visits-few-enquiries/) explains how to check the page, form delivery and what happens after a message arrives.",
+      "afterSHA256": "9ef9018a80ace02ad496a7734455de5f5fd06fe04189f2545bc8298faa205504"
+    }
+  ],
+  "published": true,
+  "revision": "5b8f620b70bbf5182aefdd549b0ff5c1809dfcdb",
+  "deploymentId": "e0941333-7991-4bd9-86a8-6da0aa182c56"
+}
